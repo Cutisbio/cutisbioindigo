@@ -127,7 +127,7 @@ function App() {
             </div>
             <div>
               <p>Seoul, Republic of Korea</p>
-              <p>Email: info@cutisbio.com</p>
+              <p>Email: contact@cutisbio.com</p>
             </div>
           </div>
           <div className="footer-bottom">
