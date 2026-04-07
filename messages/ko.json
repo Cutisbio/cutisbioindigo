@@ -33,23 +33,38 @@
   "About": {
     "title": "합성생물학으로 패션의 미래를 다시 그리다",
     "missionTitle": "Our Mission",
-    "missionText": "CutisBio는 지구 환경과 인류의 건강을 지키기 위해, 유해한 화학물질을 대체하는 혁신적인 바이오 솔루션을 개발합니다. 우리의 목표는 패션 산업에서 가장 오염이 심한 데님 염색 공정을 완전히 정화하는 것입니다.",
+    "missionText": "\"Design living cells to make tomorrow greener and better.\"\\n내일을 더 푸르고 더 좋게 만들기 위해 살아있는 세포를 설계합니다.",
     "visionTitle": "Our Vision",
-    "visionText": "미생물 공학을 통해 전 세계 섬유 산업에 가장 깨끗하고 안전한 '지속 가능한 색(Sustainable Color)'을 제공하는 글로벌 리더가 됩니다.",
-    "aboutImageAlt": "CutisBio 연구원들이 첨단 바이오 리액터(생물 반응기)에서 배양 과정을 연구하는 모습",
+    "visionText": "인류의 지속 가능한 삶을 위해 미생물 유전자 조작 기술로 고성능 바이오 소재를 양산하여, 미래 세대에게 더 깨끗한 지구를 물려주는 화이트 바이오 선도 기업이 됩니다.",
+    "aboutImageAlt": "큐티스바이오 연구원들의 심도 있는 바이오 연구 전경",
+    "coreBusinessTitle": "선도적인 바이오 기반 특수 소재 개발",
+    "medicalTitle": "의료 (Medical)",
+    "medicalText": "환경과 인체를 생각하는 맞춤형 친환경 의약품 원료 및 바이오 의약 소재 개발",
+    "beautyTitle": "미용 (Beauty)",
+    "beautyText": "피부 빅데이터 및 합성생물학을 융합한 정밀 뷰티 솔루션 고부가가치 소재 (글로벌 뷰티 기업 협력)",
+    "fashionTitle": "패션 (Fashion)",
+    "fashionText": "100% 무독성 아닐린 프리 'A-Indigo' 상용화를 통한 섬유 산업 내 완벽한 친환경 순환 공정 완성",
     "historyTitle": "주요 연혁 및 성과",
     "historyList": [
       {
-        "year": "2026",
-        "event": "바이오 인디고 상업용 스케일업(Scale-up) 시설 확충 및 글로벌 데님 브랜드 테스트 진행"
-      },
-      {
-        "year": "2025",
-        "event": "100% 아닐린 프리(Aniline-free) 인디고 미생물 균주 최적화 완료"
-      },
-      {
         "year": "2024",
-        "event": "합성생물학 기반 친환경 염료 개발 프로젝트 착수 및 초기 투자 유치"
+        "event": "A-Indigo 바이오 염료 대량 생산 시스템 구축 및 본격적인 상용화 전개"
+      },
+      {
+        "year": "2023",
+        "event": "로레알 글로벌 프로젝트 등 글로벌 뷰티 기업과의 기술 협력 확대"
+      },
+      {
+        "year": "2022",
+        "event": "대웅제약 그룹과 친환경 의약품 소재 개발을 위한 ESG 파트너십 체결"
+      },
+      {
+        "year": "2021",
+        "event": "미생물 기반 친환경 인디고 염료 원천 기술 확보"
+      },
+      {
+        "year": "2020",
+        "event": "큐티스바이오(CutisBio) 설립"
       }
     ]
   },

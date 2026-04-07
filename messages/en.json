@@ -33,23 +33,38 @@
   "About": {
     "title": "Redrawing the Future of Fashion with Synthetic Biology",
     "missionTitle": "Our Mission",
-    "missionText": "CutisBio develops innovative bio-solutions that replace harmful chemicals to protect the global environment and human health. Our goal is to completely purify the most polluting denim dyeing process in the fashion industry.",
+    "missionText": "\"Design living cells to make tomorrow greener and better.\"\\nWe design living cells to create a greener and better tomorrow.",
     "visionTitle": "Our Vision",
-    "visionText": "To become a global leader providing the cleanest and safest 'Sustainable Color' to the worldwide textile industry through microbial engineering.",
-    "aboutImageAlt": "CutisBio researchers studying the cultivation process in an advanced bioreactor",
+    "visionText": "To become a leading white bio company that mass-produces highly functional biomaterials using microbial genetic engineering, bequeathing a cleaner earth to future generations.",
+    "aboutImageAlt": "In-depth bio research view by CutisBio researchers",
+    "coreBusinessTitle": "Developing Leading Bio-based Specialty Materials",
+    "medicalTitle": "Medical",
+    "medicalText": "Development of customized eco-friendly pharmaceutical ingredients and biomedicine materials that care for the environment and human health.",
+    "beautyTitle": "Beauty",
+    "beautyText": "Precision beauty solutions and high value-added materials converging skin big data and synthetic biology (in cooperation with global beauty enterprises).",
+    "fashionTitle": "Fashion",
+    "fashionText": "Completion of a perfect eco-friendly circular process within the textile industry through the commercialization of 100% non-toxic, aniline-free 'A-Indigo'.",
     "historyTitle": "Key Milestones and Achievements",
     "historyList": [
       {
-        "year": "2026",
-        "event": "Expansion of commercial scale-up facilities for bio-indigo and testing with global denim brands"
-      },
-      {
-        "year": "2025",
-        "event": "Optimization of 100% Aniline-free indigo microbial strain completed"
-      },
-      {
         "year": "2024",
-        "event": "Initiation of synthetic biology-based eco-friendly dye development project and securing initial investment"
+        "event": "Established massive production system for A-Indigo bio dye and initiated full-scale commercialization"
+      },
+      {
+        "year": "2023",
+        "event": "Expanded technological cooperation with global beauty enterprises including the L'Oréal global project"
+      },
+      {
+        "year": "2022",
+        "event": "Signed an ESG partnership with Daewoong Pharmaceutical Group for the development of eco-friendly pharmaceutical materials"
+      },
+      {
+        "year": "2021",
+        "event": "Secured original technology for eco-friendly microbial-based indigo dyes"
+      },
+      {
+        "year": "2020",
+        "event": "CutisBio Co., Ltd. established"
       }
     ]
   },

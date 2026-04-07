@@ -33,23 +33,38 @@
   "About": {
     "title": "用合成生物学重绘时尚的未来",
     "missionTitle": "Our Mission",
-    "missionText": "CutisBio开发创新的生物解决方案以替代有害化学物质，从而保护地球环境与人类健康。我们的目标是完全净化时尚产业中污染最严重的牛仔染色工艺。",
+    "missionText": "\"Design living cells to make tomorrow greener and better.\"\\n设计活细胞，让明天变得更绿、更美好。",
     "visionTitle": "Our Vision",
-    "visionText": "通过微生物工程，成为向全球纺织行业提供最清洁、最安全“可持续色彩（Sustainable Color）”的全球领导者。",
-    "aboutImageAlt": "CutisBio研究员在先进生物反应器中研究培养过程",
+    "visionText": "为了人类的可持续生活，利用微生物基因工程技术量产高性能生物材料，成为将更清洁的地球留给子孙后代的白色生物领先企业。",
+    "aboutImageAlt": "CutisBio研究员正在进行深入的生物研究",
+    "coreBusinessTitle": "开发领先的生物基特殊材料",
+    "medicalTitle": "医疗 (Medical)",
+    "medicalText": "开发兼顾环境与人体的定制型环保医药原料及生物医药材料",
+    "beautyTitle": "美容 (Beauty)",
+    "beautyText": "融合皮肤大数据与合成生物学的精准美容解决方案高附加值材料（与全球美容企业合作）",
+    "fashionTitle": "时尚 (Fashion)",
+    "fashionText": "通过100%无毒、无苯胺“A-Indigo”的商业化，在纺织行业内实现完美的环保循环流程",
     "historyTitle": "主要发展历程与成就",
     "historyList": [
       {
-        "year": "2026",
-        "event": "扩建生物靛蓝商业化量产（Scale-up）设施并进行全球牛仔品牌测试"
-      },
-      {
-        "year": "2025",
-        "event": "完成100%无苯胺微生物菌株的优化"
-      },
-      {
         "year": "2024",
-        "event": "启动基于合成生物学的环保染料开发项目并吸引初期投资"
+        "event": "建立A-Indigo生物染料的大规模生产系统并展开全面商业化"
+      },
+      {
+        "year": "2023",
+        "event": "扩大了与全球美容企业的技术合作，包括欧莱雅全球项目"
+      },
+      {
+        "year": "2022",
+        "event": "与大熊制药集团签署旨在开发环保医药材料的ESG合作伙伴关系"
+      },
+      {
+        "year": "2021",
+        "event": "确保了基于微生物的环保靛蓝染料的核心技术"
+      },
+      {
+        "year": "2020",
+        "event": "CutisBio株式会社成立"
       }
     ]
   },
