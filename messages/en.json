@@ -131,5 +131,28 @@
     "emailTitle": "Email",
     "emailAddress": "contact@cutisbio.com",
     "mapTitle": "Location Map"
+  },
+  "ProblemSolution": {
+    "problemTitle": "The Hidden Cost of Our Denim",
+    "problemText": "Traditional dyeing processes rely on petrochemicals, leaving severe environmental pollution and health threats. 'Aniline', in particular, is one of the most critical issues.",
+    "solutionTitle": "CutisBio's Innovative Answer",
+    "solutionText": "100% aniline-free dye completely devoid of toxic substances through microbial fermentation. Providing perfect sustainability safe for both humans and nature."
+  },
+  "Process": {
+    "title": "Microbial Fermentation Process",
+    "subtitle": "Advanced synthetic biology mechanism mimicking nature",
+    "step1Title": "1. DNA Design",
+    "step1Text": "Specially redesigning microbial DNA based on enzyme pathways existing in nature.",
+    "step2Title": "2. Microbial Cultivation",
+    "step2Text": "In a precise fermentation environment, microbes naturally produce indigo precursors like plants.",
+    "step3Title": "3. Indigo Extraction",
+    "step3Text": "Completing a transparent and pure 100% bio-based dye through an eco-friendly purification process.",
+    "step4Title": "4. Drop-in Dyeing",
+    "step4Text": "Immediately applicable to existing dyeing factory infrastructure without need for additional equipment replacement."
+  },
+  "Partners": {
+    "title": "Leading Brands Joining the Future of Global Fashion",
+    "testimonial": "\"CutisBio's microbial-based indigo is a true game changer that simultaneously meets environmental protection and business competitiveness.\"",
+    "testimonialAuthor": "Forbes Innovation Review"
   }
 }
