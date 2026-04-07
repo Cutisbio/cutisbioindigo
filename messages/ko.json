@@ -30,29 +30,29 @@
     "ctaText": "CutisBio의 혁신적인 미생물 기반 인디고 염료가 어떻게 전통 염색 공정을 대체하는지 확인해 보세요.",
     "ctaButton": "기술 상세 보기"
   },
-  "About": {
-    "title": "합성생물학으로 패션의 미래를 다시 그리다",
+  "About us": {
+    "title": "합성생물학으로 일상을 더 아름답게 디자인하다",
     "missionTitle": "Our Mission",
-    "missionText": "\"Design living cells to make tomorrow greener and better.\"\\n내일을 더 푸르고 더 좋게 만들기 위해 살아있는 세포를 설계합니다.",
+    "missionText": "\"Design living cells to make everyday life better.\"\\n내일을 더 푸르고 더 좋게 만들기 위해 살아있는 세포를 설계합니다.",
     "visionTitle": "Our Vision",
-    "visionText": "인류의 지속 가능한 삶을 위해 미생물 유전자 조작 기술로 고성능 바이오 소재를 양산하여, 미래 세대에게 더 깨끗한 지구를 물려주는 화이트 바이오 선도 기업이 됩니다.",
+    "visionText": "합성생물학 기술로 고성능 바이오 소재를 양산하여, 일상의 지속가능성을 확장한다.",
     "aboutImageAlt": "큐티스바이오 연구원들의 심도 있는 바이오 연구 전경",
     "coreBusinessTitle": "선도적인 바이오 기반 특수 소재 개발",
     "medicalTitle": "의료 (Medical)",
-    "medicalText": "환경과 인체를 생각하는 맞춤형 친환경 의약품 원료 및 바이오 의약 소재 개발",
+    "medicalText": "바이오공정으로만 가능한 의약품 원료소재 개발",
     "beautyTitle": "미용 (Beauty)",
-    "beautyText": "피부 빅데이터 및 합성생물학을 융합한 정밀 뷰티 솔루션 고부가가치 소재 (글로벌 뷰티 기업 협력)",
+    "beautyText": "피부 마이크로바이옴 빅데이터 및 합성생물학을 융합한 정밀 뷰티 솔루션 고부가가치 소재 및 제품개발",
     "fashionTitle": "패션 (Fashion)",
-    "fashionText": "100% 무독성 아닐린 프리 'A-Indigo' 상용화를 통한 섬유 산업 내 완벽한 친환경 순환 공정 완성",
+    "fashionText": "100% 무독성 아닐린 프리 'Bio-Indigo' 상용화를 통한 인체안전 및 친환경 데님 패션완성",
     "historyTitle": "주요 연혁 및 성과",
     "historyList": [
       {
         "year": "2024",
-        "event": "A-Indigo 바이오 염료 대량 생산 시스템 구축 및 본격적인 상용화 전개"
+        "event": "Bio-Indigo 바이오 염료 대량 생산 시스템 구축 및 본격적인 상용화 전개"
       },
       {
         "year": "2023",
-        "event": "로레알 글로벌 프로젝트 등 글로벌 뷰티 기업과의 기술 협력 확대"
+        "event": "로레알 글로벌 프로젝트 등 글로벌 뷰티 기업과의 기술 협력 MOU"
       },
       {
         "year": "2022",
