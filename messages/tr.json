@@ -31,28 +31,28 @@
     "ctaButton": "Teknoloji Detaylarını İncele"
   },
   "About": {
-    "title": "Sentetik Biyoloji ile Modanın Geleceğini Yeniden Çizmek",
+    "title": "Sentetik Biyoloji ile günlük hayatı daha güzel tasarlamak",
     "missionTitle": "Our Mission",
     "missionText": "\"Design living cells to make tomorrow greener and better.\"\\nYarınları daha yeşil ve daha iyi yapmak için canlı hücreler tasarlıyoruz.",
     "visionTitle": "Our Vision",
-    "visionText": "İnsanlığın sürdürülebilir yaşamı için mikrobiyal genetik mühendisliği ile yüksek performanslı biyo-materyaller üreterek gelecek nesillere daha temiz bir dünya bırakan öncü beyaz biyo şirketi olmak.",
+    "visionText": "Sentetik biyoloji teknolojisiyle yüksek performanslı biyo-materyaller üreterek günlük yaşamın sürdürülebilirliğini genişletmek.",
     "aboutImageAlt": "CutisBio araştırmacıları tarafından yürütülen derinlemesine biyo araştırmalarından bir görünüm",
     "coreBusinessTitle": "Öncü Biyo-tabanlı Özel Materyallerin Geliştirilmesi",
     "medicalTitle": "Tıbbi (Medical)",
-    "medicalText": "Çevreye ve insan vücuduna duyarlı, özelleştirilmiş çevre dostu farmasötik ham maddeler ve biyo-medikal materyallerin geliştirilmesi",
+    "medicalText": "Sadece biyo-süreçlerle mümkün olan farmasötik ham maddelerin geliştirilmesi",
     "beautyTitle": "Güzellik (Beauty)",
-    "beautyText": "Cilt büyük verisi ve sentetik biyolojiyi birleştiren hassas güzellik çözümleri yüksek katma değerli malzemeler (küresel güzellik şirketleriyle işbirliği)",
+    "beautyText": "Cilt mikrobiyomu büyük verisi ve sentetik biyolojiyi birleştiren hassas güzellik çözümleri, yüksek katma değerli ürün ve materyallerin geliştirilmesi",
     "fashionTitle": "Moda (Fashion)",
-    "fashionText": "%100 toksik olmayan, anilinsiz 'A-Indigo'nun ticarileştirilmesi yoluyla tekstil endüstrisinde mükemmel çevre dostu döngüsel sürecin tamamlanması",
+    "fashionText": "%100 toksik olmayan, anilinsiz 'Bio-Indigo'nun ticarileştirilmesi yoluyla insan için güvenli ve çevre dostu denim modasının tamamlanması",
     "historyTitle": "Önemli Kilometre Taşları ve Başarılar",
     "historyList": [
       {
         "year": "2024",
-        "event": "A-Indigo biyo boya seri üretim sisteminin kurulması ve tam ölçekli ticarileştirmenin başlatılması"
+        "event": "Bio-Indigo biyo boya seri üretim sisteminin kurulması ve tam ölçekli ticarileştirmenin başlatılması"
       },
       {
         "year": "2023",
-        "event": "L'Oréal küresel projesi dahil olmak üzere küresel güzellik şirketleriyle teknolojik işbirliğinin genişletilmesi"
+        "event": "L'Oréal küresel projesi dahil olmak üzere küresel güzellik şirketleriyle teknolojik işbirliği için MOU"
       },
       {
         "year": "2022",

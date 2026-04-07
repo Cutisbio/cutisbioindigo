@@ -31,28 +31,28 @@
     "ctaButton": "技術の詳細を見る"
   },
   "About": {
-    "title": "合成生物学でファッションの未来を描き直す",
+    "title": "合成生物学で日常をより美しくデザインする",
     "missionTitle": "Our Mission",
     "missionText": "\"Design living cells to make tomorrow greener and better.\"\\n明日をより青く、より良くするために生きた細胞を設計します。",
     "visionTitle": "Our Vision",
-    "visionText": "人類の持続可能な生活のために、微生物遺伝子操作技術により高性能バイオ素材を量産し、未来の世代によりクリーンな地球を受け継ぐホワイトバイオのリーディングカンパニーになります。",
+    "visionText": "合成生物学技術により高性能バイオ素材を量産し、日常の持続可能性を拡張する。",
     "aboutImageAlt": "CutisBioの研究員による緻密なバイオ研究の様子",
     "coreBusinessTitle": "先導的なバイオベース特殊素材の開発",
     "medicalTitle": "医療 (Medical)",
-    "medicalText": "環境と人体を配慮したカスタマイズ型の環境配慮型医薬品原料およびバイオ医薬素材の開発",
+    "medicalText": "バイオプロセスでのみ可能な医薬品原料素材の開発",
     "beautyTitle": "美容 (Beauty)",
-    "beautyText": "肌のビッグデータと合成生物学を融合した精密美容ソリューションの高付加価値素材（グローバル美容企業と協力）",
+    "beautyText": "皮膚マイクロバイオームのビッグデータと合成生物学を融合した精密美容ソリューションの高付加価値素材および製品開発",
     "fashionTitle": "ファッション (Fashion)",
-    "fashionText": "100%無毒性アニリンフリー「A-Indigo」の商用化を通じた繊維業界における完璧なエコ循環プロセスの完成",
+    "fashionText": "100%無毒性アニリンフリー「Bio-Indigo」の商用化を通じた人体に安全で環境に優しいデニムファッションの完成",
     "historyTitle": "主な沿革と成果",
     "historyList": [
       {
         "year": "2024",
-        "event": "A-Indigoバイオ染料の大量生産システムの構築および本格的な商用化の展開"
+        "event": "Bio-Indigoバイオ染料の大量生産システムの構築および本格的な商用化の展開"
       },
       {
         "year": "2023",
-        "event": "ロレアルグローバルプロジェクトなど、グローバル美容企業との技術協力の拡大"
+        "event": "ロレアルグローバルプロジェクトなど、グローバル美容企業との技術協力MOU"
       },
       {
         "year": "2022",
