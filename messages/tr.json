@@ -127,9 +127,32 @@
     "title": "İletişim",
     "description": "CutisBio hakkında herhangi bir sorunuz varsa lütfen mesaj bırakın, size en kısa sürede dönüş yapacağız.",
     "addressTitle": "Adres",
-    "addressDetail": "8. Kat, Apgujeong Binası, 842 Nonhyeon-ro, Gangnam-gu, Seul",
+    "addressDetail": "8F, Apgujeong Bldg, 842 Nonhyeon-ro, Gangnam-gu, Seul",
     "emailTitle": "E-posta",
     "emailAddress": "contact@cutisbio.com",
     "mapTitle": "Konum Haritası"
+  },
+  "ProblemSolution": {
+    "problemTitle": "Girdiğimiz Denimlerin Gizli Bedeli",
+    "problemText": "Geleneksel boyama süreçleri petrokimyasallara dayanır, ciddi çevre kirliliği ve sağlık tehditleri bırakır. Özellikle 'anilin' en ölümcül sorunlardan biridir.",
+    "solutionTitle": "CutisBio'nun Yenilikçi Çözümü",
+    "solutionText": "Mikrobiyal fermantasyon yoluyla toksik maddeleri tamamen dışarıda bırakan %100 anilinsiz boya. Hem insan hem de doğa için güvenli, mükemmel sürdürülebilirlik sunar."
+  },
+  "Process": {
+    "title": "Mikrobiyal Fermantasyon Süreci",
+    "subtitle": "Doğayı taklit eden gelişmiş sentetik biyoloji mekanizması",
+    "step1Title": "1. DNA Tasarımı",
+    "step1Text": "Mikroorganizmaların DNA'sı, doğada bulunan enzim yollarına dayanarak özel olarak yeniden tasarlanır.",
+    "step2Title": "2. Mikrobiyal Kültivasyon",
+    "step2Text": "Hassas bir fermantasyon ortamında, mikroplar tıpkı bitkiler gibi kendiliğinden indigo öncülleri üretir.",
+    "step3Title": "3. İndigo Ekstraksiyonu",
+    "step3Text": "Çevre dostu bir saflaştırma süreciyle, şeffaf ve saf %100 biyo-tabanlı boya tamamlanır.",
+    "step4Title": "4. Drop-in Boyama",
+    "step4Text": "Mevcut boya fabrikası altyapısını değiştirmeden, ek ekipman değişimi gerektirmeden anında uygulanabilir."
+  },
+  "Partners": {
+    "title": "Küresel Modanın Geleceğine Katılan Lider Markalar",
+    "testimonial": "\"CutisBio'nun mikrop tabanlı indigosu, çevre koruma ve iş rekabetini aynı anda karşılayan gerçek bir oyun değiştiricidir.\"",
+    "testimonialAuthor": "Forbes Innovation Review"
   }
 }

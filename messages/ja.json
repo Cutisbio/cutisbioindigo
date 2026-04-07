@@ -131,5 +131,28 @@
     "emailTitle": "Eメール",
     "emailAddress": "contact@cutisbio.com",
     "mapTitle": "マップ"
+  },
+  "ProblemSolution": {
+    "problemTitle": "私たちが着るデニムの隠された代償",
+    "problemText": "伝統的な染色プロセスは石油化学物質に依存しており、深刻な環境汚染と健康への脅威を残します。特に「アニリン」は最も致命的な問題の一つです。",
+    "solutionTitle": "CutisBioの革新的な解答",
+    "solutionText": "微生物発酵を通じて毒性物質を完全に排除した100%アニリンフリー染料。人と自然の双方に安全な完全なる持続可能性を提供します。"
+  },
+  "Process": {
+    "title": "微生物発酵プロセス",
+    "subtitle": "自然を模倣した先端合成生物学メカニズム",
+    "step1Title": "1. DNA設計",
+    "step1Text": "自然に存在する酵素経路を元に微生物のDNAを特殊に再設計します。",
+    "step2Title": "2. 微生物培養",
+    "step2Text": "精密な発酵環境において、微生物が植物のように自らインディゴ前駆体を生産します。",
+    "step3Title": "3. インディゴ抽出",
+    "step3Text": "環境に配慮した精製プロセスを通じて、透明で純粋な100%バイオベースの染料を完成させます。",
+    "step4Title": "4. Drop-in 染色",
+    "step4Text": "既存の染色インフラをそのまま使用し、追加の設備交換なしに即座に適用可能です。"
+  },
+  "Partners": {
+    "title": "グローバルファッションの未来を共にするリーディングブランド",
+    "testimonial": "\"CutisBioの微生物ベースのインディゴは、環境保護とビジネス競争力を同時に満たす真のゲームチェンジャーだ。\"",
+    "testimonialAuthor": "Forbes Innovation Review"
   }
 }
