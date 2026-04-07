@@ -57,9 +57,12 @@ export default async function RootLayout({
                 <Link href="/">CutisBio Indigo</Link>
               </div>
               <div className="flex items-center space-x-6">
-                <ul className="flex space-x-6">
-                  <li><Link href="/" className="hover:text-blue-600 transition">{t('home')}</Link></li>
-                  <li><Link href="/blog/sustainable-indigo" className="hover:text-blue-600 transition">{t('tech')}</Link></li>
+                <ul className="flex space-x-4 sm:space-x-6">
+                  <li><Link href="/" className="hover:text-blue-600 transition text-sm sm:text-base">{t('home')}</Link></li>
+                  <li><Link href="/about" className="hover:text-blue-600 transition text-sm sm:text-base">{t('about')}</Link></li>
+                  <li><Link href="/blog/sustainable-indigo" className="hover:text-blue-600 transition text-sm sm:text-base">{t('tech')}</Link></li>
+                  <li><Link href="/news" className="hover:text-blue-600 transition text-sm sm:text-base">{t('news')}</Link></li>
+                  <li><Link href="/contact" className="hover:text-blue-600 transition text-sm sm:text-base">{t('contact')}</Link></li>
                 </ul>
                 <div className="border-l pl-4 border-gray-300">
                   <LanguageSwitcher />
