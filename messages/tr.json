@@ -1,0 +1,42 @@
+{
+  "Layout": {
+    "home": "Ana Sayfa",
+    "tech": "Teknoloji",
+    "footerText": "Sustainable Denim Dye. Aniline free - Human safe."
+  },
+  "Home": {
+    "title": "Yeni Nesil Sürdürülebilir Denim Boyası, CutisBio Indigo",
+    "subtitle": "Doğaya zarar vermeyen ve insan sağlığı için güvenli denim boyası. Anilin gibi toksik maddeler olmadan, mikrobiyal fermantasyon teknolojisiyle üretilen en sürdürülebilir indigo boya çözümü.",
+    "coreValuesTitle": "CutisBio Teknolojisinin Temel Değerleri",
+    "column1": "Çözülen Temel Teknik Zorluklar",
+    "column2": "Doğaya ve Moda Endüstrisine Faydaları",
+    "feature1": "Mikrobiyal Fermantasyon (Microbial Fermentation)",
+    "benefit1": "Sürdürülebilir biyosentetik süreç",
+    "feature2": "Anilin İçermez (Aniline-Free)",
+    "benefit2": "Güvenli, kanserojen veya toksik madde içermez",
+    "feature3": "Sürdürülebilir İndigo (Sustainable Indigo)",
+    "benefit3": "Su kirliliğini en aza indirir ve moda endüstrisinde devrim yaratır",
+    "conclusionTitle": "Sürdürülebilir Bir Gelecek İçin Bir Seçim",
+    "conclusionText": "Mikrobiyal tabanlı indigo boyanın geleneksel boyama süreçlerinin yerini neden alması gerektiği hakkında detaylı gerçekleri öğrenmek için üst menüdeki <techLink>Teknoloji</techLink> sayfasını inceleyin."
+  },
+  "Blog": {
+    "title": "Mikrobiyal Fermantasyon ile Sürdürülebilir Denim Boyama",
+    "description": "CutisBio'nun Anilin içermeyen indigo boya gelişiminin arka planı ve çevre dostu denim modasının geleceği.",
+    "author": "Yazar: CutisBio Ar-Ge Ekibi",
+    "date": "Yayın Tarihi: 7 Nisan 2026",
+    "intro": "En sevilen moda ürünü, <denim>Mavi Denim (Blue Denim)</denim>. Ancak bu güzel rengin ardında doğayı ve sağlığı tehdit eden kimyasal bir madde olan 'Anilin' gizliydi. CutisBio bu sorunu kökten çözüyor.",
+    "section1Title": "1. Anilin İçermemesinin Önemi",
+    "section1Text": "Anilin, DSÖ'ye bağlı Uluslararası Kanser Araştırmaları Ajansı (IARC) tarafından potansiyel kanserojen olarak sınıflandırılmış tehlikeli bir maddedir. Denim fabrikalarının çevresindeki su kaynaklarına kontrolsüzce deşarj edilerek sadece ekosistemi tahrip etmekle kalmaz, aynı zamanda ciltleriyle uzun süre temas eden kot pantolon tüketicilerini de etkiler.",
+    "imageText": "Geleneksel Kimyasal Sentez (Anilin Kullanır)\\nVS\\nMikrobiyal Biyosentez (%100 Toksik Olmayan)",
+    "imageCaption": "Güvenli ve temiz biyoteknoloji, mikrobiyal fermantasyon tabanlı boya üretim süreci",
+    "section2Title": "2. CutisBio'nun Yeniliği: Mikrobiyal Fermantasyon",
+    "section2Text": "Doğada bir cevap vardı. Mikropları genetik olarak bitkilere benzer bir metabolik yola sahip olacak şekilde tasarladık, böylece kendi başlarına indigo öncülleri üretebilmelerini sağladık. Bu süreç, anilin gibi ölümcül kimyasalların kullanımını temelden engeller.",
+    "faqTitle": "Sıkça Sorulan Sorular (SSS)",
+    "faqQ1": "Geleneksel indigo boyamanın sorunları nelerdir?",
+    "faqA1": "Geleneksel sentetik indigo boyalar, anilin ve hidrojen siyanür gibi petrokimyasallar kullanılarak üretilir. Bu, ciddi su kirliliğine neden olur ve hem işçilerin hem de son tüketicilerin sağlığını tehdit eder.",
+    "faqQ2": "Mikrobiyal fermantasyon tabanlı indigo boya nedir?",
+    "faqA2": "CutisBio'nun teknolojisi, doğal fermantasyon süreci ile indigo öncüleri üretmek için özel olarak tasarlanmış mikropları kullanır. Kimyasal sentez yerine biyolojik mekanizmaları kullanarak %100 anilin içermeyen bir boya yaratıyoruz.",
+    "faqQ3": "Kumaş kalitesinde herhangi bir fark var mı?",
+    "faqA3": "Geleneksel indigo denim boyamasıyla eşit veya daha üstün bir kalite, renk derinliği (Shade) ve sürtünme haslığı elde eder. Kaliteden ödün vermeden mükemmel sürdürülebilirliğe ulaştık."
+  }
+}

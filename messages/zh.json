@@ -1,0 +1,42 @@
+{
+  "Layout": {
+    "home": "主页",
+    "tech": "技术介绍",
+    "footerText": "Sustainable Denim Dye. Aniline free - Human safe."
+  },
+  "Home": {
+    "title": "新一代环保牛仔染料，CutisBio Indigo",
+    "subtitle": "不破坏自然且对人体安全的牛仔染料。基于微生物发酵技术，不含毒性物质（苯胺），是最具可持续性的靛蓝染色解决方案。",
+    "coreValuesTitle": "CutisBio技术的核心价值",
+    "column1": "解决的主要技术难题",
+    "column2": "对自然和时尚产业的益处",
+    "feature1": "微生物发酵 (Microbial Fermentation)",
+    "benefit1": "可持续的生物合成过程",
+    "feature2": "无苯胺 (Aniline-Free)",
+    "benefit2": "无致癌物或毒性的安全性",
+    "feature3": "环保靛蓝 (Sustainable Indigo)",
+    "benefit3": "最大限度地减少水污染并引领时尚产业革命",
+    "conclusionTitle": "为了可持续未来的选择",
+    "conclusionText": "请查看顶部导航中的<techLink>技术介绍</techLink>页面，详细了解为何基于微生物的靛蓝染料必须取代传统的染色工艺。"
+  },
+  "Blog": {
+    "title": "通过微生物发酵实现可持续的牛仔染色",
+    "description": "介绍CutisBio无苯胺(Aniline-free)靛蓝染料的开发背景及环保牛仔时尚的未来。",
+    "author": "作者: CutisBio R&D Team",
+    "date": "发布日期: 2026-04-07",
+    "intro": "最受喜爱的时尚单品<denim>蓝色牛仔布(Blue Denim)</denim>。然而，在它那美丽的色彩背后，隐藏着威胁环境和健康的化学物质“苯胺(Aniline)”。CutisBio从根本上解决了这个问题。",
+    "section1Title": "1. 无苯胺(Aniline-Free)的重要性",
+    "section1Text": "苯胺被WHO下属的国际癌症研究机构列为潜在致癌物。它被随意排入牛仔布厂周边的水资源中，不仅破坏了生态系统，还影响了与牛仔裤长时间接触的消费者。",
+    "imageText": "传统化学合成 (使用苯胺)\\nVS\\n微生物发酵生物合成 (100% 无毒性)",
+    "imageCaption": "安全清洁的生物技术，基于微生物发酵的染料生产工艺",
+    "section2Title": "2. CutisBio的创新：微生物发酵",
+    "section2Text": "大自然给出了答案。我们对微生物进行了基因工程改造，使其具有类似于植物的代谢途径，能够自主产生靛蓝前体。这一过程从根本上阻断了苯胺等致命化学物质的使用。",
+    "faqTitle": "常见问题解答 (FAQ)",
+    "faqQ1": "传统靛蓝染色有什么问题？",
+    "faqA1": "传统合成靛蓝染料是使用苯胺和氰化氢等石油化工产品生产的。这不仅造成严重的水质污染，还对工人和最终消费者的健康构成威胁。",
+    "faqQ2": "什么是基于微生物发酵的靛蓝染料？",
+    "faqA2": "CutisBio的技术利用经过特殊改造的微生物，通过自然发酵过程来生产靛蓝前体。由于利用生物机制代替了化学合成，我们可以制造出100%无苯胺的染料。",
+    "faqQ3": "服装的品质会有差异吗？",
+    "faqA3": "这种染料能够实现与传统靛蓝染色相同或更好的染衣质量、深色调(Shade)和耐摩擦色牢度。我们在不牺牲质量的前提下完美实现了可持续性。"
+  }
+}
