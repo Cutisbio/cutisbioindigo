@@ -26,39 +26,39 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
   return (
     <>
       <SchemaOrg schema={orgSchema} />
-      <div className="max-w-4xl mx-auto space-y-12 py-12 px-4">
+      <div className="max-w-4xl mx-auto space-y-10 sm:space-y-12 py-8 sm:py-12 px-4 sm:px-6">
         <section className="text-center">
-          <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 mb-6 border-b pb-4 inline-block">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-4 sm:mb-6 border-b pb-3 sm:pb-4 inline-block">
             {t('title')}
           </h1>
-          <p className="text-xl text-gray-600">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 px-2 sm:px-0 leading-relaxed">
             {t('description')}
           </p>
         </section>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12 bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-          <div className="space-y-8 flex flex-col justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 mt-8 sm:mt-12 bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-gray-100 mx-2 sm:mx-0">
+          <div className="space-y-6 sm:space-y-8 flex flex-col justify-center">
             <div>
-              <h2 className="text-xl font-bold text-gray-800 flex items-center mb-3">
-                <svg className="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <h2 className="text-lg sm:text-xl font-bold text-gray-800 flex items-center mb-2 sm:mb-3">
+                <svg className="w-5 sm:w-6 h-5 sm:h-6 mr-2 sm:mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
                 {t('addressTitle')}
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed font-medium pl-8">
+              <p className="text-base sm:text-lg text-gray-600 leading-relaxed font-medium pl-7 sm:pl-9">
                 {t('addressDetail')}
               </p>
             </div>
 
             <div>
-              <h2 className="text-xl font-bold text-gray-800 flex items-center mb-3">
-                <svg className="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <h2 className="text-lg sm:text-xl font-bold text-gray-800 flex items-center mb-2 sm:mb-3">
+                <svg className="w-5 sm:w-6 h-5 sm:h-6 mr-2 sm:mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
                 {t('emailTitle')}
               </h2>
-              <a href={`mailto:contact@cutisbio.com`} className="text-lg text-blue-600 hover:text-blue-800 transition font-medium pl-8 inline-block">
+              <a href={`mailto:contact@cutisbio.com`} className="text-base sm:text-lg text-blue-600 hover:text-blue-800 transition font-medium pl-7 sm:pl-9 inline-block break-all">
                 {t('emailAddress')}
               </a>
             </div>
