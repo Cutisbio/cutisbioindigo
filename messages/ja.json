@@ -122,5 +122,14 @@
         "thumbnailAlt": "青いデニム生地を背景に立つCutisBio代表取締役の姿"
       }
     ]
+  },
+  "Contact": {
+    "title": "お問い合わせ",
+    "description": "CutisBioに関するお問い合わせがございましたら、メッセージを残してください。すぐにお返事いたします。",
+    "addressTitle": "住所",
+    "addressDetail": "ソウル特別市江南区論峴路842 狎鴎亭ビル8階",
+    "emailTitle": "Eメール",
+    "emailAddress": "contact@cutisbio.com",
+    "mapTitle": "マップ"
   }
 }

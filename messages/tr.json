@@ -122,5 +122,14 @@
         "thumbnailAlt": "CutisBio CEO'su mavi denim zemin önünde duruyor"
       }
     ]
+  },
+  "Contact": {
+    "title": "İletişim",
+    "description": "CutisBio hakkında herhangi bir sorunuz varsa lütfen mesaj bırakın, size en kısa sürede dönüş yapacağız.",
+    "addressTitle": "Adres",
+    "addressDetail": "8. Kat, Apgujeong Binası, 842 Nonhyeon-ro, Gangnam-gu, Seul",
+    "emailTitle": "E-posta",
+    "emailAddress": "contact@cutisbio.com",
+    "mapTitle": "Konum Haritası"
   }
 }

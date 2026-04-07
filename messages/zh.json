@@ -122,5 +122,14 @@
         "thumbnailAlt": "CutisBio首席执行官站在蓝色牛仔面料背景前"
       }
     ]
+  },
+  "Contact": {
+    "title": "联系我们",
+    "description": "如果您对CutisBio有任何疑问，请留言，我们将尽快给您回复。",
+    "addressTitle": "地址",
+    "addressDetail": "首尔特别市江南区论岘路842 狎鸥亭大厦8层",
+    "emailTitle": "电子邮件",
+    "emailAddress": "contact@cutisbio.com",
+    "mapTitle": "位置地图"
   }
 }

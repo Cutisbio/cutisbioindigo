@@ -122,5 +122,14 @@
         "thumbnailAlt": "CutisBio এর সিইও নীল ডেনিমের সামনে দাঁড়িয়ে আছেন"
       }
     ]
+  },
+  "Contact": {
+    "title": "যোগাযোগ",
+    "description": "CutisBio সম্পর্কে আপনার কোন প্রশ্ন থাকলে দয়া করে একটি বার্তা দিন এবং আমরা দ্রুত আপনার কাছে ফিরে আসব।",
+    "addressTitle": "ঠিকানা",
+    "addressDetail": "৮ম তলা, আপগুজেওং ভবন, ৮৪২ ননহিয়ন-রো, গাংনাম-গু, সিউল",
+    "emailTitle": "ইমেইল",
+    "emailAddress": "contact@cutisbio.com",
+    "mapTitle": "অবস্থান মানচিত্র"
   }
 }

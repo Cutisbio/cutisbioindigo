@@ -122,5 +122,14 @@
         "thumbnailAlt": "푸른색 데님 원단을 배경으로 서 있는 CutisBio 대표이사의 모습"
       }
     ]
+  },
+  "Contact": {
+    "title": "문의하기",
+    "description": "큐티스바이오에 대한 문의사항을 남겨주시면 빠르게 답변해 드리겠습니다.",
+    "addressTitle": "오시는 길",
+    "addressDetail": "서울시 강남구 논현로 842 압구정빌딩 8층",
+    "emailTitle": "이메일",
+    "emailAddress": "contact@cutisbio.com",
+    "mapTitle": "구글 지도"
   }
 }
