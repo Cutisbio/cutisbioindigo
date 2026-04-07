@@ -23,12 +23,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: {
       template: '%s | CutisBio Indigo',
-      default: t('title'),
+      default: t('heroTitle'),
     },
-    description: t('subtitle'),
+    description: t('heroSubtitle'),
     openGraph: {
-      title: t('title'),
-      description: t('subtitle'),
+      title: t('heroTitle'),
+      description: t('heroSubtitle'),
       siteName: 'CutisBio Indigo',
       locale: locale === 'ko' ? 'ko_KR' : 'en_US',
       type: 'website',

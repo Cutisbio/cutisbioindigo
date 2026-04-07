@@ -1,42 +1,111 @@
 {
   "Layout": {
-    "home": "主页",
+    "home": "首页",
+    "about": "关于我们",
     "tech": "技术介绍",
-    "footerText": "Sustainable Denim Dye. Aniline free - Human safe."
+    "news": "最新消息",
+    "contact": "联系我们",
+    "footerText": "Sustainable Denim Dye. Aniline free - Human safe. © 2026 CutisBio. All rights reserved."
   },
   "Home": {
-    "title": "新一代环保牛仔染料，CutisBio Indigo",
-    "subtitle": "不破坏自然且对人体安全的牛仔染料。基于微生物发酵技术，不含毒性物质（苯胺），是最具可持续性的靛蓝染色解决方案。",
+    "heroTitle": "新一代环保牛仔染料，CutisBio Indigo",
+    "heroSubtitle": "不破坏自然且对人体安全的牛仔染料。基于微生物发酵技术，不含毒性物质（苯胺），是最具可持续性的靛蓝染色解决方案。",
+    "heroImageAlt": "直观的环保外观，蓝色牛仔面料与纯净水滴交织",
+    "impactMetricsTitle": "CutisBio带来的积极改变",
+    "metric1Value": "100%",
+    "metric1Text": "Aniline-Free（完全阻断毒性物质）",
+    "metric2Value": "Drop-in",
+    "metric2Text": "可立即应用于现有染色工厂设备",
+    "metric3Value": "Eco-friendly",
+    "metric3Text": "最大程度减少生产过程中的水污染和碳排放",
     "coreValuesTitle": "CutisBio技术的核心价值",
-    "column1": "解决的主要技术难题",
-    "column2": "对自然和时尚产业的益处",
+    "coreValuesDesc": "通过合成生物学（Synthetic Biology）革新传统的石化基染色产业。",
     "feature1": "微生物发酵 (Microbial Fermentation)",
-    "benefit1": "可持续的生物合成过程",
+    "benefit1": "以可持续生物合成过程模仿自然生态系统",
     "feature2": "无苯胺 (Aniline-Free)",
-    "benefit2": "无致癌物或毒性的安全性",
+    "benefit2": "从根本上排除威胁工人和消费者的致癌物质",
     "feature3": "环保靛蓝 (Sustainable Indigo)",
-    "benefit3": "最大限度地减少水污染并引领时尚产业革命",
-    "conclusionTitle": "为了可持续未来的选择",
-    "conclusionText": "请查看顶部导航中的<techLink>技术介绍</techLink>页面，详细了解为何基于微生物的靛蓝染料必须取代传统的染色工艺。"
+    "benefit3": "最大程度减少水污染，实现时尚产业循环经济",
+    "ctaTitle": "您愿意加入可持续时尚的未来吗？",
+    "ctaText": "了解CutisBio的创新微生物靛蓝染料如何取代传统染色工艺。",
+    "ctaButton": "查看技术详情"
   },
-  "Blog": {
-    "title": "通过微生物发酵实现可持续的牛仔染色",
-    "description": "介绍CutisBio无苯胺(Aniline-free)靛蓝染料的开发背景及环保牛仔时尚的未来。",
-    "author": "作者: CutisBio R&D Team",
-    "date": "发布日期: 2026-04-07",
-    "intro": "最受喜爱的时尚单品<denim>蓝色牛仔布(Blue Denim)</denim>。然而，在它那美丽的色彩背后，隐藏着威胁环境和健康的化学物质“苯胺(Aniline)”。CutisBio从根本上解决了这个问题。",
-    "section1Title": "1. 无苯胺(Aniline-Free)的重要性",
-    "section1Text": "苯胺被WHO下属的国际癌症研究机构列为潜在致癌物。它被随意排入牛仔布厂周边的水资源中，不仅破坏了生态系统，还影响了与牛仔裤长时间接触的消费者。",
-    "imageText": "传统化学合成 (使用苯胺)\\nVS\\n微生物发酵生物合成 (100% 无毒性)",
-    "imageCaption": "安全清洁的生物技术，基于微生物发酵的染料生产工艺",
-    "section2Title": "2. CutisBio的创新：微生物发酵",
-    "section2Text": "大自然给出了答案。我们对微生物进行了基因工程改造，使其具有类似于植物的代谢途径，能够自主产生靛蓝前体。这一过程从根本上阻断了苯胺等致命化学物质的使用。",
+  "About": {
+    "title": "用合成生物学重绘时尚的未来",
+    "missionTitle": "Our Mission",
+    "missionText": "CutisBio开发创新的生物解决方案以替代有害化学物质，从而保护地球环境与人类健康。我们的目标是完全净化时尚产业中污染最严重的牛仔染色工艺。",
+    "visionTitle": "Our Vision",
+    "visionText": "通过微生物工程，成为向全球纺织行业提供最清洁、最安全“可持续色彩（Sustainable Color）”的全球领导者。",
+    "aboutImageAlt": "CutisBio研究员在先进生物反应器中研究培养过程",
+    "historyTitle": "主要发展历程与成就",
+    "historyList": [
+      {
+        "year": "2026",
+        "event": "扩建生物靛蓝商业化量产（Scale-up）设施并进行全球牛仔品牌测试"
+      },
+      {
+        "year": "2025",
+        "event": "完成100%无苯胺微生物菌株的优化"
+      },
+      {
+        "year": "2024",
+        "event": "启动基于合成生物学的环保染料开发项目并吸引初期投资"
+      }
+    ]
+  },
+  "Tech": {
+    "title": "通过微生物发酵实现可持续牛仔染色",
+    "description": "介绍CutisBio无苯胺靛蓝染料的开发背景及环保牛仔时尚的未来。",
+    "intro": "最受喜爱的时尚单品“蓝色牛仔（Blue Denim）”。然而，在其美丽颜色的背后，隐藏着威胁环境与健康的石化衍生化学物质“苯胺”。CutisBio利用微生物从根本上解决了这一问题。",
+    "section1Title": "1. 无苯胺（Aniline-Free）的绝对必要性",
+    "section1Text": "苯胺被WHO下属的国际癌症研究机构列为潜在致癌物。在牛仔生产过程中，苯胺被随意排入水资源，不仅破坏生态系统，还对需要长时间接触布料的最终消费者产生负面影响。",
+    "comparisonImageAlt": "比较传统化学合成（石油符号、打叉）和微生物发酵生物合成（树叶符号、打勾）的信息图",
+    "comparisonCaption": "安全清洁的生物技术：化学合成 VS 微生物发酵",
+    "section2Title": "2. CutisBio的创新：让微生物成为工厂",
+    "section2Text": "大自然给出了答案。我们利用尖端的合成生物学技术，赋予特殊微生物类似植物的代谢途径。这些微生物自发生成靛蓝前体，该过程从根本上杜绝了苯胺等致命化学物质的使用。",
+    "section3Title": "3. 不妥协质量的“Drop-in”解决方案",
+    "section3Text": "环保并不意味着必须放弃质量。CutisBio的生物靛蓝采用“Drop-in”模式，可直接投入现有工厂基础设施而无需更改设备。它能完美重现与现有化学染料相同的颜色深度（Shade）和耐摩擦色牢度。",
     "faqTitle": "常见问题解答 (FAQ)",
-    "faqQ1": "传统靛蓝染色有什么问题？",
-    "faqA1": "传统合成靛蓝染料是使用苯胺和氰化氢等石油化工产品生产的。这不仅造成严重的水质污染，还对工人和最终消费者的健康构成威胁。",
-    "faqQ2": "什么是基于微生物发酵的靛蓝染料？",
-    "faqA2": "CutisBio的技术利用经过特殊改造的微生物，通过自然发酵过程来生产靛蓝前体。由于利用生物机制代替了化学合成，我们可以制造出100%无苯胺的染料。",
-    "faqQ3": "服装的品质会有差异吗？",
-    "faqA3": "这种染料能够实现与传统靛蓝染色相同或更好的染衣质量、深色调(Shade)和耐摩擦色牢度。我们在不牺牲质量的前提下完美实现了可持续性。"
+    "faqList": [
+      {
+        "question": "传统靛蓝染色有什么问题？",
+        "answer": "传统合成靛蓝染料是使用苯胺和氰化氢等石油化工产品生产的。这引起了严重的水污染，并对工人和最终消费者的健康构成威胁。"
+      },
+      {
+        "question": "什么是基于微生物发酵的靛蓝染料？",
+        "answer": "CutisBio的技术利用经过特殊改造的微生物，通过自然发酵过程来生产靛蓝前体。利用生物机制代替化学合成，我们创造出100%无苯胺的染料。"
+      },
+      {
+        "question": "它和传统衣物的质量有区别吗？",
+        "answer": "没有。该染料可达到与传统牛仔染色相同或更高的品质、颜色深度以及耐洗/耐摩擦色牢度。我们在不破坏质量的前提下，实现了完美的循环可持续性。"
+      }
+    ]
+  },
+  "News": {
+    "title": "CutisBio 新闻中心",
+    "description": "查看合成生物学推动环保时尚的最新消息。",
+    "articles": [
+      {
+        "date": "2026-04-02",
+        "category": "新闻稿",
+        "title": "CutisBio 成功实现环保生物靛蓝的量产放大（Scale-up）",
+        "summary": "通过1万升生物反应器的成功发酵测试，为后续商业化大批量生产奠定了基础。",
+        "thumbnailAlt": "排列着大型生物反应器设备的研究生产设施全景"
+      },
+      {
+        "date": "2026-03-15",
+        "category": "合作伙伴关系",
+        "title": "与全球牛仔品牌签署“无苯胺”胶囊系列谅解备忘录 (MOU)",
+        "summary": "首个采用CutisBio染料的商业用牛仔服饰系列预计将于明年上半年在全球市场发布。",
+        "thumbnailAlt": "CutisBio高管与全球品牌代表正在签署协议"
+      },
+      {
+        "date": "2026-02-10",
+        "category": "专访",
+        "title": "【CEO专访】为什么一定要把苯胺从牛仔裤中去除？",
+        "summary": "接受可持续时尚杂志专访，阐述CutisBio的技术发展历程与未来愿景。",
+        "thumbnailAlt": "CutisBio首席执行官站在蓝色牛仔面料背景前"
+      }
+    ]
   }
 }

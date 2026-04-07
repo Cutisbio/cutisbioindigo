@@ -1,42 +1,111 @@
 {
   "Layout": {
     "home": "Home",
+    "about": "About Us",
     "tech": "Technology",
-    "footerText": "Sustainable Denim Dye. Aniline free - Human safe."
+    "news": "News",
+    "contact": "Contact Us",
+    "footerText": "Sustainable Denim Dye. Aniline free - Human safe. © 2026 CutisBio. All rights reserved."
   },
   "Home": {
-    "title": "Next-Generation Sustainable Denim Dye, CutisBio Indigo",
-    "subtitle": "Denim dye that is safe for humans and harmless to nature. The most sustainable indigo dyeing solution, born from microbial fermentation technology without toxic substances like aniline.",
+    "heroTitle": "Next-Generation Sustainable Denim Dye, CutisBio Indigo",
+    "heroSubtitle": "Denim dye that is safe for humans and harmless to nature. The most sustainable indigo dyeing solution, born from microbial fermentation technology without toxic substances like aniline.",
+    "heroImageAlt": "Intuitive eco-friendly image intertwining blue denim fabric and clean water drops",
+    "impactMetricsTitle": "Positive Changes Created by CutisBio",
+    "metric1Value": "100%",
+    "metric1Text": "Aniline-Free (Perfect block of toxic substances)",
+    "metric2Value": "Drop-in",
+    "metric2Text": "Immediately applicable to existing dyeing factory facilities",
+    "metric3Value": "Eco-friendly",
+    "metric3Text": "Minimization of water pollution and carbon emissions during production",
     "coreValuesTitle": "Core Values of CutisBio Technology",
-    "column1": "Key Technical Challenges Solved",
-    "column2": "Benefits for Nature and the Fashion Industry",
+    "coreValuesDesc": "We revolutionize the traditional petrochemical-based dyeing industry through Synthetic Biology.",
     "feature1": "Microbial Fermentation",
-    "benefit1": "Sustainable biosynthetic process",
+    "benefit1": "Mimicking natural ecosystems with sustainable biosynthesis",
     "feature2": "Aniline-Free",
-    "benefit2": "Safe, free from carcinogens and toxins",
+    "benefit2": "Fundamental elimination of carcinogens threatening workers and consumers",
     "feature3": "Sustainable Indigo",
-    "benefit3": "Minimizes water pollution and revolutionizes the fashion industry",
-    "conclusionTitle": "A Choice for a Sustainable Future",
-    "conclusionText": "Check out the <techLink>Technology</techLink> page from the navigation above to discover detailed facts on why microbial-based indigo dye must replace traditional dyeing processes."
+    "benefit3": "Minimization of water pollution and achieving a circular economy in the fashion industry",
+    "ctaTitle": "Will you join the future of sustainable fashion?",
+    "ctaText": "Discover how CutisBio's innovative microbial-based indigo dye is replacing traditional dyeing processes.",
+    "ctaButton": "View Technology Details"
   },
-  "Blog": {
+  "About": {
+    "title": "Redrawing the Future of Fashion with Synthetic Biology",
+    "missionTitle": "Our Mission",
+    "missionText": "CutisBio develops innovative bio-solutions that replace harmful chemicals to protect the global environment and human health. Our goal is to completely purify the most polluting denim dyeing process in the fashion industry.",
+    "visionTitle": "Our Vision",
+    "visionText": "To become a global leader providing the cleanest and safest 'Sustainable Color' to the worldwide textile industry through microbial engineering.",
+    "aboutImageAlt": "CutisBio researchers studying the cultivation process in an advanced bioreactor",
+    "historyTitle": "Key Milestones and Achievements",
+    "historyList": [
+      {
+        "year": "2026",
+        "event": "Expansion of commercial scale-up facilities for bio-indigo and testing with global denim brands"
+      },
+      {
+        "year": "2025",
+        "event": "Optimization of 100% Aniline-free indigo microbial strain completed"
+      },
+      {
+        "year": "2024",
+        "event": "Initiation of synthetic biology-based eco-friendly dye development project and securing initial investment"
+      }
+    ]
+  },
+  "Tech": {
     "title": "Sustainable Denim Dyeing through Microbial Fermentation",
     "description": "Introducing the background of CutisBio's Aniline-free indigo dye development and the future of eco-friendly denim fashion.",
-    "author": "Author: CutisBio R&D Team",
-    "date": "Published: April 7, 2026",
-    "intro": "The most loved fashion item, <denim>Blue Denim</denim>. However, behind its beautiful color lurked 'aniline', a chemical that threatens health and the environment. CutisBio fundamentally solves this problem.",
-    "section1Title": "1. The Importance of Being Aniline-Free",
-    "section1Text": "Aniline is a hazardous substance classified as a potential carcinogen by the International Agency for Research on Cancer (IARC) under the WHO. It is indiscriminately discharged into water resources around denim factories, destroying ecosystems and affecting denim consumers who have long-term skin contact.",
-    "imageText": "Traditional Chemical Synthesis (Uses Aniline)\\nVS\\nMicrobial Biosynthesis (100% Non-toxic)",
-    "imageCaption": "Safe and clean biotechnology, microbial fermentation-based dye production process",
-    "section2Title": "2. CutisBio's Innovation: Microbial Fermentation",
-    "section2Text": "Nature had the answer. We engineered microbes to have metabolic pathways similar to plants, allowing them to produce indigo precursors on their own. This process fundamentally blocks the use of fatal chemicals like aniline.",
+    "intro": "The most loved fashion item, 'Blue Denim'. However, behind its beautiful color lurked 'aniline', a petrochemical-derived substance that threatens health and the environment. CutisBio fundamentally solves this problem using microbes.",
+    "section1Title": "1. The Absolute Necessity of Being Aniline-Free",
+    "section1Text": "Aniline is a hazardous substance classified as a potential carcinogen by the International Agency for Research on Cancer (IARC) under the WHO. It is indiscriminately discharged into water resources during denim production, destroying ecosystems and adversely affecting end consumers who have long-term skin contact.",
+    "comparisonImageAlt": "Infographic comparing traditional chemical synthesis (petroleum symbol, cross) and microbial fermentation biosynthesis (leaf symbol, checkmark)",
+    "comparisonCaption": "Safe and Clean Biotechnology: Chemical Synthesis VS Microbial Fermentation",
+    "section2Title": "2. CutisBio's Innovation: Turning Microbes into Factories",
+    "section2Text": "Nature had the answer. Using advanced synthetic biology technology, we endowed special microbes with metabolic pathways similar to plants. These microbes produce indigo precursors on their own, fundamentally blocking the use of fatal chemicals like aniline.",
+    "section3Title": "3. A 'Drop-in' Solution Without Compromising Quality",
+    "section3Text": "Being eco-friendly doesn't mean compromising on quality. CutisBio's bio-indigo takes a 'Drop-in' form that can be immediately introduced without modifying the infrastructure of existing dyeing factories. It perfectly replicates the same color depth (Shade) and rubbing fastness as conventional chemical dyes.",
     "faqTitle": "Frequently Asked Questions (FAQ)",
-    "faqQ1": "What are the problems with traditional indigo dyeing?",
-    "faqA1": "Conventional synthetic indigo dyes are produced using petrochemicals such as aniline and hydrogen cyanide. This causes severe water pollution and poses health threats to workers and end consumers.",
-    "faqQ2": "What is microbial fermentation-based indigo dye?",
-    "faqA2": "CutisBio's technology uses specially engineered microbes to produce indigo precursors through a natural fermentation process. By using biological mechanisms instead of chemical synthesis, we create 100% aniline-free dye.",
-    "faqQ3": "Is there any difference in garment quality?",
-    "faqA3": "It achieves equal or superior quality, color depth (shade), and rubbing fastness compared to traditional indigo denim dyeing. We have achieved perfect sustainability without compromising quality."
+    "faqList": [
+      {
+        "question": "What are the problems with traditional indigo dyeing?",
+        "answer": "Conventional synthetic indigo dyes are produced using petrochemicals such as aniline and hydrogen cyanide. This causes severe water pollution and poses health threats to workers and end consumers."
+      },
+      {
+        "question": "What is microbial fermentation-based indigo dye?",
+        "answer": "CutisBio's technology uses specially engineered microbes to produce indigo precursors through a natural fermentation process. By using biological mechanisms instead of chemical synthesis, we create 100% aniline-free dye."
+      },
+      {
+        "question": "Is there any difference in conventional garment quality?",
+        "answer": "No. It achieves equal or superior quality, color depth, and washing/rubbing fastness compared to traditional indigo denim dyeing. We have achieved perfect sustainability without compromising quality."
+      }
+    ]
+  },
+  "News": {
+    "title": "CutisBio Newsroom",
+    "description": "Check out the latest news on eco-friendly fashion driven by synthetic biology.",
+    "articles": [
+      {
+        "date": "2026-04-02",
+        "category": "Press Release",
+        "title": "CutisBio Succeeds in Scale-up Mass Production of Eco-friendly Bio-Indigo",
+        "summary": "We have laid the foundation for commercial mass production through successful fermentation tests in a 10,000-liter class bioreactor.",
+        "thumbnailAlt": "Panoramic view of research and production facility lined with large bioreactor equipment"
+      },
+      {
+        "date": "2026-03-15",
+        "category": "Partnership",
+        "title": "MOU Signed for 'Aniline-Free' Capsule Collection with Global Denim Brand",
+        "summary": "The first commercial denim clothing line featuring CutisBio's dye is scheduled to be launched in the global market in the first half of next year.",
+        "thumbnailAlt": "CutisBio executives and global brand representatives signing an agreement"
+      },
+      {
+        "date": "2026-02-10",
+        "category": "Interview",
+        "title": "[CEO Interview] \"Why must we remove aniline from jeans?\"",
+        "summary": "CutisBio's technological journey and future vision revealed in an interview with a sustainable fashion magazine.",
+        "thumbnailAlt": "CutisBio CEO standing against a blue denim fabric background"
+      }
+    ]
   }
 }
