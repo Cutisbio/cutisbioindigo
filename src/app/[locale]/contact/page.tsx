@@ -71,7 +71,6 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
               width="100%" 
               height="100%" 
               className="absolute top-0 left-0 border-0"
-              style={{ border: 0 }} 
               allowFullScreen={false} 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
