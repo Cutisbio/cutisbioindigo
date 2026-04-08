@@ -35,8 +35,8 @@ export default function Header() {
   const iconColor = isTransparent ? 'text-white drop-shadow-sm' : 'text-gray-600';
 
   return (
-    <header className={`w-full fixed top-0 z-50 transition-all duration-300 ${headerBg}`}>
-      <nav className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <header className={`w-full fixed top-0 z-50 transition-all duration-300 pt-6 sm:pt-10 pb-3 sm:pb-4 ${headerBg}`}>
+      <nav className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between">
         <div className={`text-xl font-bold whitespace-nowrap break-keep transition-colors duration-300 ${logoColor}`}>
           <Link href="/">CutisBio Indigo</Link>
         </div>
@@ -75,7 +75,7 @@ export default function Header() {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-b absolute w-full left-0 top-16 shadow-lg text-gray-800">
+        <div className="md:hidden bg-white border-b absolute w-full left-0 top-full shadow-lg text-gray-800">
           <ul className="flex flex-col px-4 pt-2 pb-4 space-y-2">
             <li><Link href="/" onClick={toggleMobileMenu} className="block py-3 hover:text-blue-600 transition whitespace-nowrap break-keep text-base font-medium">{t('home')}</Link></li>
             <li><Link href="/about" onClick={toggleMobileMenu} className="block py-3 hover:text-blue-600 transition whitespace-nowrap break-keep text-base font-medium">{t('about')}</Link></li>

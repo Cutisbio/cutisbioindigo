@@ -12,13 +12,16 @@ export default function HeroSection() {
     <section className="relative w-[100vw] h-[100vh] flex items-center justify-center bg-black text-white overflow-hidden left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
       {/* Background Video */}
       <video
-        src="/jeanforest.mp4"
         autoPlay
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0"
-      />
+        preload="auto"
+        disablePictureInPicture
+        className="absolute inset-0 w-full h-full object-cover z-0 bg-blue-950"
+      >
+        <source src="/jeanforest.mp4" type="video/mp4" />
+      </video>
       
       {/* 40% Black Semi-transparent Overlay */}
       <div className="absolute inset-0 bg-black/40 z-0"></div>
