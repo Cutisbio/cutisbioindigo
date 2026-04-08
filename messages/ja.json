@@ -9,7 +9,7 @@
   },
   "Home": {
     "heroTitle": "次世代の持続可能なデニム染料、CutisBio Indigo",
-    "heroSubtitle": "自然を傷つけず人体に安全なデニム染料。毒性物質（アニリン）を使わずに微生物発酵技術から生まれた最も持続可能なインディゴ染色ソリューションです。",
+    "heroSubtitle": "私たちの肌に安全なインディゴ染料。合成生物学技術により、有毒物質（アニリン）を使用せずに誕生した、最も持続可能なデニム染色ソリューションです。",
     "heroImageAlt": "青いデニム生地ときれいな水滴が交差する直感的なエコイメージ",
     "impactMetricsTitle": "CutisBioがもたらすポジティブな変化",
     "metric1Value": "100%",
@@ -33,7 +33,7 @@
   "About": {
     "title": "合成生物学で日常をより美しくデザインする",
     "missionTitle": "Our Mission",
-    "missionText": "\"Design living cells to make tomorrow greener and better.\"\\n明日をより青く、より良くするために生きた細胞を設計します。",
+    "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
     "visionText": "合成生物学技術により高性能バイオ素材を量産し、日常の持続可能性を拡張する。",
     "aboutImageAlt": "CutisBioの研究員による緻密なバイオ研究の様子",

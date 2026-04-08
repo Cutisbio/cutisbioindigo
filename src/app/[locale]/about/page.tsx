@@ -1,6 +1,7 @@
 import React from 'react';
 import { getTranslations } from 'next-intl/server';
 import SchemaOrg, { buildOrganizationSchema } from '@/components/seo/SchemaOrg';
+import Image from 'next/image';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -27,23 +28,32 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       <div className="max-w-5xl mx-auto space-y-16 sm:space-y-20 py-8 sm:py-12 px-4 sm:px-6">
         
         {/* Hero Section */}
-        <section className="text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 sm:mb-6 drop-shadow-sm leading-tight">
+        <section className="text-center flex flex-col items-center">
+          <div className="mb-12 relative w-48 h-16 sm:w-56 sm:h-20 lg:w-64 lg:h-24 mx-auto mix-blend-multiply opacity-90 hover:opacity-100 transition-opacity duration-300">
+            <Image
+              src="/logo.png"
+              alt="CutisBio Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-6 sm:mb-8 drop-shadow-sm leading-tight">
             {t('title')}
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto italic border-l-4 border-blue-500 pl-4 sm:pl-6 py-3 sm:py-4 bg-gray-50 rounded-r-lg whitespace-pre-wrap leading-relaxed shadow-sm">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto italic border-l-4 border-blue-500 pl-4 sm:pl-6 py-3 sm:py-4 bg-gray-50 rounded-r-lg whitespace-pre-line leading-relaxed shadow-sm text-left">
             {t('missionText')}
           </p>
         </section>
 
         {/* Vision Banner */}
-        <section className="bg-gradient-to-br from-blue-900 to-indigo-800 text-white p-8 sm:p-10 md:p-14 rounded-2xl shadow-xl relative overflow-hidden mx-2 sm:mx-0">
-          <div className="absolute inset-0 bg-blue-500 opacity-10 mix-blend-overlay"></div>
+        <section className="bg-gradient-to-br from-indigo-900 via-blue-800 to-indigo-900 text-white py-16 sm:py-20 px-8 sm:px-10 md:px-14 rounded-3xl shadow-2xl relative overflow-hidden mx-2 sm:mx-0">
+          <div className="absolute inset-0 bg-blue-500 opacity-20 mix-blend-overlay"></div>
           <div className="relative z-10 text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-blue-200 uppercase tracking-widest">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-blue-200 uppercase tracking-widest drop-shadow-md">
               {t('visionTitle')}
             </h2>
-            <p className="text-base sm:text-lg md:text-2xl font-light leading-relaxed max-w-4xl mx-auto px-2 sm:px-0">
+            <p className="text-lg sm:text-xl md:text-2xl font-light leading-relaxed max-w-4xl mx-auto px-2 sm:px-0 drop-shadow-sm">
               {t('visionText')}
             </p>
           </div>
@@ -57,27 +67,27 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             
-            <div className="bg-white border rounded-xl shadow-sm hover:shadow-lg transition flex flex-col items-center text-center p-6 sm:p-8 group">
-              <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition duration-300">
+            <div className="bg-white border border-gray-100 rounded-3xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center p-6 sm:p-8 group">
+              <div className="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition duration-300 shadow-inner">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
               </div>
-              <h3 className="text-xl font-bold mb-3">{t('medicalTitle')}</h3>
-              <p className="text-gray-600">{t('medicalText')}</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-800">{t('medicalTitle')}</h3>
+              <p className="text-gray-600 leading-relaxed">{t('medicalText')}</p>
             </div>
 
-            <div className="bg-white border rounded-xl shadow-sm hover:shadow-lg transition flex flex-col items-center text-center p-6 sm:p-8 group">
-              <div className="w-14 sm:w-16 h-14 sm:h-16 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-pink-600 group-hover:text-white transition duration-300">
+            <div className="bg-white border border-gray-100 rounded-3xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center p-6 sm:p-8 group">
+              <div className="w-14 sm:w-16 h-14 sm:h-16 bg-pink-50 text-pink-600 rounded-full flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-pink-600 group-hover:text-white transition duration-300 shadow-inner">
                 <svg className="w-7 sm:w-8 h-7 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" /></svg>
               </div>
-              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">{t('beautyTitle')}</h3>
+              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-gray-800">{t('beautyTitle')}</h3>
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{t('beautyText')}</p>
             </div>
 
-            <div className="bg-white border rounded-xl shadow-sm hover:shadow-lg transition flex flex-col items-center text-center p-6 sm:p-8 group sm:col-span-2 md:col-span-1 border-blue-50">
-              <div className="w-14 sm:w-16 h-14 sm:h-16 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-indigo-600 group-hover:text-white transition duration-300">
+            <div className="bg-white border border-gray-100 rounded-3xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center p-6 sm:p-8 group sm:col-span-2 md:col-span-1">
+              <div className="w-14 sm:w-16 h-14 sm:h-16 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-indigo-600 group-hover:text-white transition duration-300 shadow-inner">
                 <svg className="w-7 sm:w-8 h-7 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" /></svg>
               </div>
-              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">{t('fashionTitle')}</h3>
+              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-gray-800">{t('fashionTitle')}</h3>
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{t('fashionText')}</p>
             </div>
           </div>

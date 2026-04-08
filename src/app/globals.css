@@ -24,3 +24,28 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* CJK i18n Typography & Layout Fixes */
+/* 
+ * The Tailwind .break-keep class uses `word-break: keep-all`, which works perfectly for Korean 
+ * by keeping words together based on spaces. However, Japanese and Chinese do not use spaces, 
+ * so keep-all forces entire paragraphs into a single line, breaking layouts.
+ * We override it here globally based on the HTML lang attribute.
+ */
+:lang(ja) .break-keep,
+:lang(zh) .break-keep {
+  word-break: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+/* Beautiful native typography fallbacks for Chinese and Japanese readability */
+:lang(ja) body {
+  font-family: var(--font-geist-sans), "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+:lang(zh) body {
+  font-family: var(--font-geist-sans), "PingFang SC", "Microsoft YaHei", sans-serif;
+  letter-spacing: 0.02em;
+}
