@@ -51,7 +51,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
         >
           <Link 
-            href="/tech" 
+            href="/blog/sustainable-indigo" 
             className="inline-block px-8 py-3 sm:px-10 sm:py-4 border-2 border-white text-white rounded-full bg-transparent hover:bg-white hover:text-black transition-all duration-300 font-semibold text-base sm:text-lg tracking-wide shadow-sm"
           >
             자세히 보기
