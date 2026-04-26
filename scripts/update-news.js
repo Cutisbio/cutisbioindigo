@@ -109,9 +109,9 @@ async function updateNews() {
     }
   }
 
-  // Filter out any articles before 2020 and sort by date
+  // Filter out any articles before June 2020 and sort by date
   mergedArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
-  const finalArticles = mergedArticles.filter(a => new Date(a.date) >= new Date('2020-01-01'));
+  const finalArticles = mergedArticles.filter(a => new Date(a.date) >= new Date('2020-06-01'));
 
 
   // Update logic for all locales
