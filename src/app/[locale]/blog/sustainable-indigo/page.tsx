@@ -57,7 +57,7 @@ export default async function SustainableIndigoPage({ params }: { params: Promis
           <figure className="my-8 bg-gray-50 flex flex-col items-center justify-center p-8 border border-dashed rounded-lg text-gray-400">
              <div className="relative w-full h-64 bg-blue-100 flex items-center justify-center rounded overflow-hidden">
                 <StrictImage
-                  src="/cutisbio-microbe.jpg"
+                  src="/aniline-health.png"
                   alt={t('comparisonImageAlt')}
                   fill
                    className="object-cover opacity-90" 
@@ -77,6 +77,27 @@ export default async function SustainableIndigoPage({ params }: { params: Promis
           <p className="mb-6 text-gray-700">
             {t('section3Text')}
           </p>
+        </section>
+
+        <section className="mb-12 bg-white shadow-sm p-8 rounded-lg border">
+          <h2 className="text-2xl font-bold mb-4 border-b pb-2">{t('certSectionTitle')}</h2>
+          <p className="mb-8 text-gray-700">
+            {t('certSectionText')}
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+            <div className="relative w-full h-32">
+              <StrictImage src="/1okbiobased.png" alt={t('certOkbiobased')} fill className="object-contain" />
+            </div>
+            <div className="relative w-full h-32">
+              <StrictImage src="/2BioPreferredLabel.PNG" alt={t('certBioPreferred')} fill className="object-contain" />
+            </div>
+            <div className="relative w-full h-32">
+              <StrictImage src="/3OEKO-TEX® Eco Passport_logo.png" alt={t('certOekoTex')} fill className="object-contain" />
+            </div>
+            <div className="relative w-full h-32">
+              <StrictImage src="/4ZDHC.png" alt={t('certZdhc')} fill className="object-contain" />
+            </div>
+          </div>
         </section>
 
         <section className="mb-12 bg-white shadow-sm p-8 rounded-lg border">
