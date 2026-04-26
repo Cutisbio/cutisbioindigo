@@ -28,7 +28,11 @@
     "benefit3": "Minimization of water pollution and achieving a circular economy in the fashion industry",
     "ctaTitle": "Will you join the future of sustainable fashion?",
     "ctaText": "Discover how CutisBio's innovative microbial-based indigo dye is replacing traditional dyeing processes.",
-    "ctaButton": "View Technology Details"
+    "ctaButton": "View Technology Details",
+    "qualityTitle": "Superior Dyeability and Fastness Verified",
+    "qualitySubtitle": "Thorough comparative tests by a premium Japanese denim dyeing company proved that CutisBio Indigo exhibits deeper color and superior durability compared to conventional chemical indigo.",
+    "qualityImageAlt": "Denim dyeing and fastness test result image",
+    "qualityBadge": "Quality Proven"
   },
   "About": {
     "title": "Designing a more beautiful everyday life with synthetic biology",
@@ -52,7 +56,7 @@
       },
       {
         "year": "2023",
-        "event": "MOU for technological cooperation with global beauty enterprises including the L'Oréal global project"
+        "event": "Signed MOU with Kolon FnC for Bio-Indigo cooperation"
       },
       {
         "year": "2022",

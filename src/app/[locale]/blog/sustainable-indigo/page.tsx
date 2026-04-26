@@ -2,6 +2,7 @@ import React from 'react';
 import SchemaOrg, { buildArticleSchema, buildFAQSchema } from '@/components/seo/SchemaOrg';
 import StrictImage from '@/components/ui/StrictImage';
 import QnaSection from '@/components/ui/QnaSection';
+import CertificationsSection from '@/components/shared/CertificationsSection';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -79,26 +80,7 @@ export default async function SustainableIndigoPage({ params }: { params: Promis
           </p>
         </section>
 
-        <section className="mb-12 bg-white shadow-sm p-8 rounded-lg border">
-          <h2 className="text-2xl font-bold mb-4 border-b pb-2">{t('certSectionTitle')}</h2>
-          <p className="mb-8 text-gray-700">
-            {t('certSectionText')}
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-            <div className="relative w-full h-32">
-              <StrictImage src="/1okbiobased.png" alt={t('certOkbiobased')} fill className="object-contain" />
-            </div>
-            <div className="relative w-full h-32">
-              <StrictImage src="/2BioPreferredLabel.PNG" alt={t('certBioPreferred')} fill className="object-contain" />
-            </div>
-            <div className="relative w-full h-32">
-              <StrictImage src="/3OEKO-TEX® Eco Passport_logo.png" alt={t('certOekoTex')} fill className="object-contain" />
-            </div>
-            <div className="relative w-full h-32">
-              <StrictImage src="/4ZDHC.png" alt={t('certZdhc')} fill className="object-contain" />
-            </div>
-          </div>
-        </section>
+        <CertificationsSection />
 
         <section className="mb-12 bg-white shadow-sm p-8 rounded-lg border">
           <h2 className="text-2xl font-bold mb-6 border-b pb-2">{t('faqTitle')}</h2>

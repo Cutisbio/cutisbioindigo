@@ -2,12 +2,13 @@
 
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import StrictImage from '@/components/ui/StrictImage';
 
 export default function TechnologyProcess() {
   const t = useTranslations('Process');
 
   const steps = [
-    { num: '01', titleKey: 'step1Title', textKey: 'step1Text' },
+    { num: '01', titleKey: 'step1Title', textKey: 'step1Text', image: '/dna-design.webp' },
     { num: '02', titleKey: 'step2Title', textKey: 'step2Text' },
     { num: '03', titleKey: 'step3Title', textKey: 'step3Text' },
     { num: '04', titleKey: 'step4Title', textKey: 'step4Text' },
@@ -38,12 +39,22 @@ export default function TechnologyProcess() {
               }`}
             >
               <div className="flex-1 w-full">
-                {/* Visual placeholder */}
                 <div className="aspect-square sm:aspect-[4/3] w-full bg-slate-200 rounded-[2rem] shadow-sm flex items-center justify-center relative overflow-hidden group">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-slate-300 to-slate-100 opacity-50 group-hover:scale-105 transition-transform duration-700" />
-                  <div className="text-[10rem] sm:text-[15rem] font-black text-white/70 absolute select-none tracking-tighter drop-shadow-md">
-                    {step.num}
-                  </div>
+                  {step.image ? (
+                    <StrictImage
+                      src={step.image}
+                      alt={t(step.titleKey as any)}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                  ) : (
+                    <>
+                      <div className="absolute inset-0 bg-gradient-to-tr from-slate-300 to-slate-100 opacity-50 group-hover:scale-105 transition-transform duration-700" />
+                      <div className="text-[10rem] sm:text-[15rem] font-black text-white/70 absolute select-none tracking-tighter drop-shadow-md">
+                        {step.num}
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
 

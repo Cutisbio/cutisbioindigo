@@ -7,6 +7,8 @@ import HeroSection from '@/components/home/HeroSection';
 import ProblemSolution from '@/components/home/ProblemSolution';
 import TechnologyProcess from '@/components/home/TechnologyProcess';
 import PartnersPress from '@/components/home/PartnersPress';
+import CertificationsSection from '@/components/shared/CertificationsSection';
+import QualityTestSection from '@/components/home/QualityTestSection';
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -26,6 +28,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <div className="flex flex-col w-full">
         <HeroSection />
         <ProblemSolution />
+        <CertificationsSection />
+        <QualityTestSection />
         <TechnologyProcess />
         <PartnersPress />
         

@@ -28,7 +28,11 @@
     "benefit3": "最大程度减少水污染，实现时尚产业循环经济",
     "ctaTitle": "您愿意加入可持续时尚的未来吗？",
     "ctaText": "了解CutisBio的创新微生物靛蓝染料如何取代传统染色工艺。",
-    "ctaButton": "查看技术详情"
+    "ctaButton": "查看技术详情",
+    "qualityTitle": "卓越的染色性和色牢度验证",
+    "qualitySubtitle": "经日本高端牛仔布染色公司的彻底比较测试，证明CutisBio靛蓝与传统化学靛蓝相比，展现出更深邃、更出色的色泽和卓越的耐久性。",
+    "qualityImageAlt": "牛仔布染色及色牢度测试结果图片",
+    "qualityBadge": "Quality Proven"
   },
   "About": {
     "title": "用合成生物学重绘时尚的未来",
@@ -52,7 +56,7 @@
       },
       {
         "year": "2023",
-        "event": "扩大了与全球美容企业的技术合作，包括欧莱雅全球项目"
+        "event": "与Kolon FnC签订生物靛蓝合作谅解备忘录"
       },
       {
         "year": "2022",
