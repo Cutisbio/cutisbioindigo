@@ -1,13 +1,13 @@
 "use client";
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import StrictImage from '@/components/ui/StrictImage';
 
 export default function CertificationsSection() {
   const t = useTranslations('Tech');
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -17,7 +17,7 @@ export default function CertificationsSection() {
     }
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 40 },
     visible: { 
       opacity: 1, 
