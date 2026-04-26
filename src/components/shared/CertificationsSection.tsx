@@ -37,7 +37,7 @@ export default function CertificationsSection() {
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.8 }}
         >
           <div className="inline-block mb-4 px-4 py-1.5 rounded-full bg-blue-900/30 border border-blue-700/30 text-blue-300 text-sm font-semibold tracking-wider uppercase">
@@ -56,7 +56,7 @@ export default function CertificationsSection() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           {[
             { src: "/1okbiobased.png", altKey: "certOkbiobased" },
