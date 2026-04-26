@@ -107,25 +107,36 @@
     "description": "합성생물학으로 만들어가는 친환경 패션의 최신 소식을 확인하세요.",
     "articles": [
       {
-        "date": "2026-04-02",
+        "date": "2025-11-19",
         "category": "보도자료",
-        "title": "CutisBio, 친환경 바이오 인디고 대량 생산(Scale-up) 성공",
-        "summary": "1만 리터 급 바이오 리액터에서의 성공적인 발효 테스트를 통해 상업적 대량 생산의 기틀을 마련했습니다.",
-        "thumbnailAlt": "대형 바이오 리액터 설비가 늘어선 연구 생산 시설 전경"
+        "title": "(주)에스스킨 × 큐티스바이오 MOU... 스킨부스터용 융합폴리펩타이드 소재 사업화 협업",
+        "summary": "큐티스바이오에 관한 최근 언론 보도입니다. 상세 내용은 링크를 확인해 주세요.",
+        "thumbnailAlt": "News thumbnail",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UZFRlVjlLNjVfbkxkNFYyOTJlTThaRDdUQmVQdWxPeVFDVnJoZGFSWE80OWdiSG9yZzJJMzhpLVBVUmtHQmtIVTBRazE2WVRGSHBXN1cteU41eVFrQVg0WjQydw?oc=5"
       },
       {
-        "date": "2026-03-15",
-        "category": "파트너십",
-        "title": "글로벌 데님 브랜드와 '아닐린 프리' 캡슐 컬렉션 MOU 체결",
-        "summary": "CutisBio의 염료를 적용한 첫 번째 상업용 데님 의류 라인이 내년 상반기 글로벌 시장에 출시될 예정입니다.",
-        "thumbnailAlt": "CutisBio 경영진과 글로벌 브랜드 대표가 협약서에 서명하는 모습"
+        "date": "2025-05-06",
+        "category": "보도자료",
+        "title": "[기고]\"합성생물학, 첨단바이오제조 실증허브부터 구축해야\"",
+        "summary": "큐티스바이오에 관한 최근 언론 보도입니다. 상세 내용은 링크를 확인해 주세요.",
+        "thumbnailAlt": "News thumbnail",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5xeC1RWVJiSmJtZjh4NExKR2xzN29hQUdNXzZNYmNWRGI5MG1JWHFORDFPcGY1dlBvNU84TmI0T254cUh4QkhmbWs5cEwxRUdydnJ4XzlR?oc=5"
       },
       {
-        "date": "2026-02-10",
-        "category": "인터뷰",
-        "title": "[CEO 인터뷰] \"왜 청바지에서 아닐린을 빼야만 하는가?\"",
-        "summary": "지속가능한 패션 전문 매거진과의 인터뷰에서 밝힌 CutisBio의 기술적 여정과 앞으로의 비전.",
-        "thumbnailAlt": "푸른색 데님 원단을 배경으로 서 있는 CutisBio 대표이사의 모습"
+        "date": "2024-08-27",
+        "category": "보도자료",
+        "title": "인디고 염색의 ‘표준화 및 상용화’",
+        "summary": "큐티스바이오에 관한 최근 언론 보도입니다. 상세 내용은 링크를 확인해 주세요.",
+        "thumbnailAlt": "News thumbnail",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8yZTRHUWFXU2dMdHp0WS1PMTVNcmQxX2ZmMDR5M2MwQzlQMTc3YkFOMEpZNkdvX3JmaFhBb1FsSnVSZ21Vemc?oc=5"
+      },
+      {
+        "date": "2024-08-20",
+        "category": "보도자료",
+        "title": "르캐시미어, 친환경 염색공법 알린다",
+        "summary": "큐티스바이오에 관한 최근 언론 보도입니다. 상세 내용은 링크를 확인해 주세요.",
+        "thumbnailAlt": "News thumbnail",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1UT2h6V1FnaGdDaTB0amwzT1N1Q2NtWjJvZ3hienpSZldNZ2FyMVVOTzk5cUppaXJ6aDl6MlBJZ0RqeHBJTHc?oc=5"
       }
     ]
   },

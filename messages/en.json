@@ -107,25 +107,36 @@
     "description": "Check out the latest news on eco-friendly fashion driven by synthetic biology.",
     "articles": [
       {
-        "date": "2026-04-02",
-        "category": "Press Release",
-        "title": "CutisBio Succeeds in Scale-up Mass Production of Eco-friendly Bio-Indigo",
-        "summary": "We have laid the foundation for commercial mass production through successful fermentation tests in a 10,000-liter class bioreactor.",
-        "thumbnailAlt": "Panoramic view of research and production facility lined with large bioreactor equipment"
+        "date": "2025-11-19",
+        "category": "press release",
+        "title": "S-Skin Co., Ltd. × CutisBio MOU... Collaboration on commercialization of fusion polypeptide material for skin booster",
+        "summary": "This is a recent media report about CutisBio. Please check the link for details.",
+        "thumbnailAlt": "News thumbnail",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UZFRlVjlLNjVfbkxkNFYyOTJlTThaRDdUQmVQdWxPeVFDVnJoZGFSWE80OWdiSG9yZzJJMzhpLVBVUmtHQmtIVTBRazE2WVRGSHBXN1cteU41eVFrQVg0WjQydw?oc=5"
       },
       {
-        "date": "2026-03-15",
-        "category": "Partnership",
-        "title": "MOU Signed for 'Aniline-Free' Capsule Collection with Global Denim Brand",
-        "summary": "The first commercial denim clothing line featuring CutisBio's dye is scheduled to be launched in the global market in the first half of next year.",
-        "thumbnailAlt": "CutisBio executives and global brand representatives signing an agreement"
+        "date": "2025-05-06",
+        "category": "press release",
+        "title": "[Contribution] \"Synthetic biology and advanced biomanufacturing demonstration hub must be established first.\"",
+        "summary": "This is a recent media report about CutisBio. Please check the link for details.",
+        "thumbnailAlt": "News thumbnail",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5xeC1RWVJiSmJtZjh4NExKR2xzN29hQUdNXzZNYmNWRGI5MG1JWHFORDFPcGY1dlBvNU84TmI0T254cUh4QkhmbWs5cEwxRUdydnJ4XzlR?oc=5"
       },
       {
-        "date": "2026-02-10",
-        "category": "Interview",
-        "title": "[CEO Interview] \"Why must we remove aniline from jeans?\"",
-        "summary": "CutisBio's technological journey and future vision revealed in an interview with a sustainable fashion magazine.",
-        "thumbnailAlt": "CutisBio CEO standing against a blue denim fabric background"
+        "date": "2024-08-27",
+        "category": "press release",
+        "title": "‘Standardization and commercialization’ of indigo dyeing",
+        "summary": "This is a recent media report about CutisBio. Please check the link for details.",
+        "thumbnailAlt": "News thumbnail",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8yZTRHUWFXU2dMdHp0WS1PMTVNcmQxX2ZmMDR5M2MwQzlQMTc3YkFOMEpZNkdvX3JmaFhBb1FsSnVSZ21Vemc?oc=5"
+      },
+      {
+        "date": "2024-08-20",
+        "category": "press release",
+        "title": "Le Cashmere announces eco-friendly dyeing method",
+        "summary": "This is a recent media report about CutisBio. Please check the link for details.",
+        "thumbnailAlt": "News thumbnail",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1UT2h6V1FnaGdDaTB0amwzT1N1Q2NtWjJvZ3hienpSZldNZ2FyMVVOTzk5cUppaXJ6aDl6MlBJZ0RqeHBJTHc?oc=5"
       }
     ]
   },

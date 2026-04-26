@@ -107,25 +107,36 @@
     "description": "合成生物学で創るエコファッションの最新ニュースをご確認ください。",
     "articles": [
       {
-        "date": "2026-04-02",
+        "date": "2025-11-19",
         "category": "プレスリリース",
-        "title": "CutisBio、エコなバイオインディゴの大量生産(Scale-up)に成功",
-        "summary": "1万リットル級のバイオリアクターでの発酵テストの成功により、商業的パイル生産の基盤を築きました。",
-        "thumbnailAlt": "大型バイオリアクター設備が並ぶ研究生産施設の全景"
+        "title": "（株）エススキン×キューティスバイオMOU…スキンブースター用融合ポリペプチド素材事業化協業",
+        "summary": "キューティスバイオに関する最近のメディア報道です。 詳細はリンクをご確認ください。",
+        "thumbnailAlt": "ニュースのサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UZFRlVjlLNjVfbkxkNFYyOTJlTThaRDdUQmVQdWxPeVFDVnJoZGFSWE80OWdiSG9yZzJJMzhpLVBVUmtHQmtIVTBRazE2WVRGSHBXN1cteU41eVFrQVg0WjQydw?oc=5"
       },
       {
-        "date": "2026-03-15",
-        "category": "パートナーシップ",
-        "title": "グローバルデニムブランドと「アニリンフリー」カプセルコレクションMOU締結",
-        "summary": "CutisBioの染料を適用した初の商業用デニム衣料ラインが来年上半期にグローバル市場で発売される予定です。",
-        "thumbnailAlt": "協約書に署名するCutisBioの経営陣とグローバルブランドの代表"
+        "date": "2025-05-06",
+        "category": "プレスリリース",
+        "title": "[寄稿]「合成生物学、先端バイオ製造実証ハブから構築すべき」",
+        "summary": "キューティスバイオに関する最近のメディア報道です。 詳細はリンクをご確認ください。",
+        "thumbnailAlt": "ニュースのサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5xeC1RWVJiSmJtZjh4NExKR2xzN29hQUdNXzZNYmNWRGI5MG1JWHFORDFPcGY1dlBvNU84TmI0T254cUh4QkhmbWs5cEwxRUdydnJ4XzlR?oc=5"
       },
       {
-        "date": "2026-02-10",
-        "category": "インタビュー",
-        "title": "[CEOインタビュー] 「なぜジーンズからアニリンを抜かなければならないのか？」",
-        "summary": "持続可能なファッション専門マガジンとのインタビューで明かしたCutisBioの技術的な旅路と今後のビジョン。",
-        "thumbnailAlt": "青いデニム生地を背景に立つCutisBio代表取締役の姿"
+        "date": "2024-08-27",
+        "category": "プレスリリース",
+        "title": "インディゴ染色の「標準化および商用化」",
+        "summary": "キューティスバイオに関する最近のメディア報道です。 詳細はリンクをご確認ください。",
+        "thumbnailAlt": "ニュースのサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8yZTRHUWFXU2dMdHp0WS1PMTVNcmQxX2ZmMDR5M2MwQzlQMTc3YkFOMEpZNkdvX3JmaFhBb1FsSnVSZ21Vemc?oc=5"
+      },
+      {
+        "date": "2024-08-20",
+        "category": "プレスリリース",
+        "title": "ルカシミア、環境にやさしい染色工法を知らせる",
+        "summary": "キューティスバイオに関する最近のメディア報道です。 詳細はリンクをご確認ください。",
+        "thumbnailAlt": "ニュースのサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1UT2h6V1FnaGdDaTB0amwzT1N1Q2NtWjJvZ3hienpSZldNZ2FyMVVOTzk5cUppaXJ6aDl6MlBJZ0RqeHBJTHc?oc=5"
       }
     ]
   },

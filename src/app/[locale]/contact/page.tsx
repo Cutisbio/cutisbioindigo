@@ -27,7 +27,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
     <>
       <SchemaOrg schema={orgSchema} />
       <div className="max-w-4xl mx-auto space-y-10 sm:space-y-12 py-8 sm:py-12 px-4 sm:px-6">
-        <section className="text-center">
+        <section className="text-center mt-10 sm:mt-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-4 sm:mb-6 border-b pb-3 sm:pb-4 inline-block">
             {t('title')}
           </h1>
