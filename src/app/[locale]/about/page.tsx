@@ -29,7 +29,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         
         {/* Hero Section */}
         <section className="text-center flex flex-col items-center">
-          <div className="mb-12 relative w-48 h-16 sm:w-56 sm:h-20 lg:w-64 lg:h-24 mx-auto mix-blend-multiply opacity-90 hover:opacity-100 transition-opacity duration-300">
+          <div className="mt-8 mb-12 relative w-60 h-20 sm:w-72 sm:h-24 lg:w-80 lg:h-28 mx-auto mix-blend-multiply opacity-90 hover:opacity-100 transition-opacity duration-300">
             <Image
               src="/logo.png"
               alt="CutisBio Logo"
