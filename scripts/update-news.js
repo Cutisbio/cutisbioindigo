@@ -77,6 +77,11 @@ async function updateNews() {
       continue;
     }
 
+    // Filter out Daewoong exclusive articles (mentions Daewoong Bio/Pharm but not CutisBio in title)
+    if ((cleanTitle.includes('대웅바이오') || cleanTitle.includes('대웅제약')) && !cleanTitle.includes('큐티스바이오')) {
+      continue;
+    }
+
     const pubDate = new Date(item.pubDate);
     const dateStr = pubDate.toISOString().split('T')[0];
 
