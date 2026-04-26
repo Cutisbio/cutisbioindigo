@@ -80,17 +80,23 @@ async function updateNews() {
     const pubDate = new Date(item.pubDate);
     const dateStr = pubDate.toISOString().split('T')[0];
 
+    // Use the actual rss snippet if available, up to 120 characters to keep it brief
+    let snippet = item.contentSnippet || item.content || "상세 내용은 원문 기사를 확인해 주세요.";
+    if (snippet.length > 130) {
+      snippet = snippet.substring(0, 130) + "...";
+    }
+
     newKoArticles.push({
       date: dateStr,
       category: "보도자료",
       title: cleanTitle,
-      summary: "큐티스바이오에 관한 최근 언론 보도입니다. 상세 내용은 링크를 확인해 주세요.",
+      summary: snippet,
       thumbnailAlt: "News thumbnail",
       link: item.link
     });
   }
 
-  // Merge with hardcoded to always have at least 4 articles
+  // Merge with hardcoded to ensure we have historical data
   const mergedArticles = [...newKoArticles];
   for (let hc of hardcodedNews) {
     if (!mergedArticles.find(a => a.link === hc.link || a.title === hc.title)) {
@@ -98,9 +104,10 @@ async function updateNews() {
     }
   }
 
-  // Pick top 4 sorted by date roughly
+  // Filter out any articles before 2020 and sort by date
   mergedArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
-  const finalArticles = mergedArticles.slice(0, 4);
+  const finalArticles = mergedArticles.filter(a => new Date(a.date) >= new Date('2020-01-01'));
+
 
   // Update logic for all locales
   for (const locale of locales) {
