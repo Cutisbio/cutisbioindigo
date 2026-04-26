@@ -34,12 +34,12 @@ export default async function SustainableIndigoPage({ params }: { params: Promis
       <SchemaOrg schema={articleSchema} />
       <SchemaOrg schema={faqSchema} />
 
-      <article className="max-w-3xl mx-auto py-8">
-        <header className="mb-10">
-          <h1 className="text-4xl font-extrabold mb-4 leading-tight">
+      <article className="max-w-3xl mx-auto py-8 mt-10 sm:mt-16">
+        <header className="mb-10 text-center sm:text-left">
+          <h1 className="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight text-gray-900 tracking-tight">
             {t('title')}
           </h1>
-          <div className="text-gray-500 text-sm">
+          <div className="text-gray-500 text-sm font-medium">
             CutisBio R&D Team
           </div>
         </header>
@@ -54,16 +54,16 @@ export default async function SustainableIndigoPage({ params }: { params: Promis
             {t('section1Text')}
           </p>
 
-          <figure className="my-8 bg-gray-50 flex flex-col items-center justify-center p-8 border border-dashed rounded-lg text-gray-400">
-             <div className="relative w-full h-64 bg-blue-100 flex items-center justify-center rounded overflow-hidden">
+          <figure className="my-10 bg-white flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 border border-gray-200 shadow-sm rounded-2xl">
+             <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] bg-slate-50 flex items-center justify-center rounded-xl overflow-hidden shadow-inner">
                 <StrictImage
-                  src="/aniline-health.png"
+                  src="/aniline-infographic.png"
                   alt={t('comparisonImageAlt')}
                   fill
-                   className="object-cover opacity-90" 
+                  className="object-contain p-2 sm:p-4 hover:scale-105 transition-transform duration-500 ease-in-out" 
                 />
              </div>
-             <figcaption className="mt-3 text-sm text-center font-medium">
+             <figcaption className="mt-4 sm:mt-5 text-sm sm:text-base text-gray-600 text-center font-medium max-w-2xl px-2 leading-relaxed">
                {t('comparisonCaption')}
              </figcaption>
           </figure>
