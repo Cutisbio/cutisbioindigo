@@ -31,7 +31,7 @@ export default function PartnersPress() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-3xl sm:text-5xl md:text-6xl font-serif italic text-slate-800 leading-snug sm:leading-normal mb-10 break-keep"
+          className="text-2xl sm:text-3xl md:text-4xl font-serif text-slate-800 leading-relaxed sm:leading-relaxed mb-8 break-keep px-4 sm:px-8 border-l-4 border-blue-200 ml-4 sm:ml-8 text-left italic"
         >
           {t('testimonial')}
         </motion.h2>
@@ -41,7 +41,7 @@ export default function PartnersPress() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg sm:text-2xl font-bold text-slate-400 uppercase tracking-widest"
+          className="text-base sm:text-lg font-medium text-blue-600 font-sans mt-6 text-left ml-4 sm:ml-8 pl-4 sm:pl-8"
         >
           — {t('testimonialAuthor')}
         </motion.p>
