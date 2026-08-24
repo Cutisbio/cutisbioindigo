@@ -9,9 +9,9 @@ export default function TechnologyProcess() {
 
   const steps = [
     { num: '01', titleKey: 'step1Title', textKey: 'step1Text', image: '/dna-design.webp' },
-    { num: '02', titleKey: 'step2Title', textKey: 'step2Text' },
-    { num: '03', titleKey: 'step3Title', textKey: 'step3Text' },
-    { num: '04', titleKey: 'step4Title', textKey: 'step4Text' },
+    { num: '02', titleKey: 'step2Title', textKey: 'step2Text', image: '/step2-fermentation.jpg' },
+    { num: '03', titleKey: 'step3Title', textKey: 'step3Text', image: '/step3-purification.jpg' },
+    { num: '04', titleKey: 'step4Title', textKey: 'step4Text', image: '/step4-dyeing.jpg' },
   ];
 
   return (
