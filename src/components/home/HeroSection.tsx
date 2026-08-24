@@ -54,7 +54,7 @@ export default function HeroSection() {
             href="/blog/sustainable-indigo" 
             className="inline-block px-8 py-3 sm:px-10 sm:py-4 border-2 border-white text-white rounded-full bg-transparent hover:bg-white hover:text-black transition-all duration-300 font-semibold text-base sm:text-lg tracking-wide shadow-sm"
           >
-            자세히 보기
+            {t('ctaButton')}
           </Link>
         </motion.div>
       </div>

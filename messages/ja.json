@@ -1,4 +1,12 @@
 {
+  "Blog": {
+    "eyebrow": "インサイト & テクノロジー",
+    "title": "ブログ",
+    "description": "CutisBioの合成生物学技術とサステナブルファッションに関する深掘り記事。",
+    "categoryTech": "テクノロジー",
+    "readMore": "続きを読む",
+    "readTime": "{minutes}分で読める"
+  },
   "Layout": {
     "home": "ホーム",
     "about": "会社紹介",

@@ -1,4 +1,12 @@
 {
+  "Blog": {
+    "eyebrow": "Görüşler & Teknoloji",
+    "title": "Blog",
+    "description": "CutisBio'nun sentetik biyoloji teknolojisi ve sürdürülebilir moda hakkında derinlemesine makaleler.",
+    "categoryTech": "Teknoloji",
+    "readMore": "Devamını Oku",
+    "readTime": "{minutes} dk okuma"
+  },
   "Layout": {
     "home": "Ana Sayfa",
     "about": "Hakkımızda",

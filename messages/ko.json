@@ -1,4 +1,12 @@
 {
+  "Blog": {
+    "eyebrow": "인사이트 & 기술",
+    "title": "블로그",
+    "description": "CutisBio의 합성생물학 기술과 친환경 패션에 관한 심층 아티클을 소개합니다.",
+    "categoryTech": "기술 소개",
+    "readMore": "자세히 읽기",
+    "readTime": "{minutes}분 읽기"
+  },
   "Layout": {
     "home": "홈",
     "about": "회사 소개",

@@ -1,4 +1,12 @@
 {
+  "Blog": {
+    "eyebrow": "洞察 & 技术",
+    "title": "博客",
+    "description": "深入介绍 CutisBio 合成生物学技术和可持续时尚的文章。",
+    "categoryTech": "技术",
+    "readMore": "阅读更多",
+    "readTime": "{minutes} 分钟阅读"
+  },
   "Layout": {
     "home": "首页",
     "about": "关于我们",

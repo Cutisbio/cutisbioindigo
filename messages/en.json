@@ -1,4 +1,12 @@
 {
+  "Blog": {
+    "eyebrow": "Insights & Technology",
+    "title": "Blog",
+    "description": "In-depth articles on CutisBio's synthetic biology technology and sustainable fashion.",
+    "categoryTech": "Technology",
+    "readMore": "Read More",
+    "readTime": "{minutes} min read"
+  },
   "Layout": {
     "home": "Home",
     "about": "About Us",
