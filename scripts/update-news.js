@@ -54,6 +54,34 @@ async function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+// Google Translate drops everything after a "×" (multiplication sign) in
+// headlines such as "A×B, ...", returning only the first company name.
+// Normalise such symbols before translating.
+function prepareForTranslation(text) {
+  return (text || '').replace(/[×✕✖]/g, '-');
+}
+
+// Keep the company name consistent in English output
+// (Google renders 큐티스바이오 as "Qtis Bio", "Cutis Bio", etc.).
+function fixBrandName(text, targetLang) {
+  if (targetLang !== 'en') return text;
+  return text.replace(/\b(?:Qtis|Cutis|Cutis-|Kutis)\s?Bio\b/gi, 'CutisBio');
+}
+
+async function translateText(text, targetLang) {
+  const source = prepareForTranslation(text);
+  const res = await translate(source, { to: targetLang });
+  let out = res.text;
+  // Guard against silently truncated translations (result far shorter than source).
+  if (source.length > 20 && out.length < source.length * 0.4) {
+    console.warn(`Suspiciously short translation for ${targetLang}: "${source}" -> "${out}", retrying...`);
+    await delay(1500);
+    const retry = await translate(source.replace(/[,，]/g, ' -'), { to: targetLang });
+    if (retry.text.length > out.length) out = retry.text;
+  }
+  return fixBrandName(out, targetLang);
+}
+
 async function updateNews() {
   console.log('Fetching RSS feed...');
   let feed;
@@ -101,13 +129,31 @@ async function updateNews() {
     });
   }
 
-  // Merge with hardcoded to ensure we have historical data
-  const mergedArticles = [...newKoArticles];
-  for (let hc of hardcodedNews) {
-    if (!mergedArticles.find(a => a.link === hc.link || a.title === hc.title)) {
-      mergedArticles.push(hc);
-    }
+  // Load previously collected Korean articles so that items no longer in the
+  // RSS feed (Google News only returns the most recent ~20-100 results) are
+  // not silently dropped from the site.
+  const koFilePath = path.join(__dirname, '../messages/ko.json');
+  let existingKoArticles = [];
+  try {
+    const koJson = JSON.parse(fs.readFileSync(koFilePath, 'utf8'));
+    existingKoArticles = (koJson.News && koJson.News.articles) || [];
+  } catch (e) {
+    console.error('Could not read existing ko.json articles:', e.message);
   }
+
+  // Merge: new RSS items first, then previously stored, then hardcoded history.
+  // De-duplicate by link or title.
+  const mergedArticles = [];
+  const normTitle = (t) => (t || '').toLowerCase().replace(/[\s\p{P}\p{S}]/gu, '');
+  const pushUnique = (article) => {
+    const key = normTitle(article.title);
+    if (!mergedArticles.find(a => a.link === article.link || normTitle(a.title) === key)) {
+      mergedArticles.push(article);
+    }
+  };
+  newKoArticles.forEach(pushUnique);
+  existingKoArticles.forEach(pushUnique);
+  hardcodedNews.forEach(pushUnique);
 
   // Filter out any articles before June 2020 and sort by date
   mergedArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -130,21 +176,32 @@ async function updateNews() {
       fileJson.News.articles = finalArticles;
     } else {
       const targetLang = targetLanguages[locale];
+      // Reuse translations that already exist for this locale (keyed by link)
+      // so only newly added articles hit the translation API.
+      const existingByLink = new Map();
+      for (const a of ((fileJson.News && fileJson.News.articles) || [])) {
+        if (a.link) existingByLink.set(a.link, a);
+      }
       const translatedArticles = [];
       for (const article of finalArticles) {
+        const prev = existingByLink.get(article.link);
+        if (prev && prev.title !== article.title) {
+          translatedArticles.push({ ...prev, date: article.date });
+          continue;
+        }
         try {
           console.log(`Translating article for ${locale}...`);
-          const resCategory = await translate(article.category, {to: targetLang});
-          const resTitle = await translate(article.title, {to: targetLang});
-          const resSummary = await translate(article.summary, {to: targetLang});
-          const resThumb = await translate(article.thumbnailAlt, {to: targetLang});
-          
+          const category = await translateText(article.category, targetLang);
+          const title = await translateText(article.title, targetLang);
+          const summary = await translateText(article.summary, targetLang);
+          const thumbnailAlt = await translateText(article.thumbnailAlt, targetLang);
+
           translatedArticles.push({
             date: article.date,
-            category: resCategory.text,
-            title: resTitle.text,
-            summary: resSummary.text,
-            thumbnailAlt: resThumb.text,
+            category,
+            title,
+            summary,
+            thumbnailAlt,
             link: article.link
           });
           await delay(1500); // Prevent translation API block
