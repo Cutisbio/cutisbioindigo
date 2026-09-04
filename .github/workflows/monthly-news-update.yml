@@ -7,6 +7,10 @@ on:
   # Allow manual trigger
   workflow_dispatch:
 
+# Allow the workflow's GITHUB_TOKEN to push the updated message files
+permissions:
+  contents: write
+
 jobs:
   update-news:
     runs-on: ubuntu-latest
