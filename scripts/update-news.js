@@ -15,11 +15,19 @@ const searchUrls = NEWS_TOPICS.map(
     `https://news.google.com/rss/search?q=${encodeURIComponent(`${NEWS_COMPANY} ${topic}`)}&hl=ko&gl=KR&ceid=KR:ko`
 );
 
-// Google broadens a query when it finds few exact matches, so "큐티스바이오 패션" also
-// returns generic Kolon FnC corporate stories. Keep an item only when the company or one
-// of the subject words actually appears in it. Verified against the live feed: this keeps
-// the indigo/dyeing coverage and drops the unrelated fashion-business items.
-const RELEVANT = /큐티스바이오|cutisbio|인디고|염료|염색|데님/i;
+// An article is published automatically only when the company is named in it. Everything
+// else goes to content/news-candidates.json for a human to approve.
+//
+// Why it is split this way: Google News RSS carries no real summary — contentSnippet is the
+// headline plus the outlet name — and its links are javascript-gated news.google.com stubs,
+// so the article body cannot be read either. Requiring the company AND a subject word in the
+// text therefore reduces to "both must be in the headline", which matched 0 of 19 live items
+// and 1 of 49 published ones: real coverage names the partner brand (르캐시미어, 코오롱FnC)
+// rather than CutisBio. So the machine publishes what it can verify, and a person decides
+// the rest. See docs/blugene-운영-메모.md §4.
+const COMPANY_RE = /큐티스바이오|cutisbio/i;
+const TOPIC_RE = /인디고|염료|데님|염색/i;
+const CANDIDATES_PATH = path.join(__dirname, '../content/news-candidates.json');
 
 /** `--dry-run` 이면 수집 결과만 출력하고 messages/*.json 을 건드리지 않는다 */
 const DRY_RUN = process.argv.includes('--dry-run');
@@ -152,11 +160,6 @@ async function updateNews() {
       continue;
     }
 
-    // Drop items the search returned only by broadening the query (see RELEVANT above)
-    if (!RELEVANT.test(`${cleanTitle} ${item.contentSnippet || ''}`)) {
-      console.log(`  skipped (off topic): ${cleanTitle}`);
-      continue;
-    }
 
     const pubDate = new Date(item.pubDate);
     const dateStr = pubDate.toISOString().split('T')[0];
@@ -205,20 +208,76 @@ async function updateNews() {
 
   // Filter out any articles before June 2020 and sort by date
   mergedArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
-  const finalArticles = mergedArticles.filter(a => new Date(a.date) >= new Date('2020-06-01'));
+  const datedArticles = mergedArticles.filter(a => new Date(a.date) >= new Date('2020-06-01'));
 
-  // `node scripts/update-news.js --dry-run` shows what the searches would publish without
-  // touching messages/*.json and without calling the translation API. Use it after changing
-  // NEWS_TOPICS or RELEVANT.
+  // Previously reviewed candidates. `approved: true` publishes the article; the flag is the
+  // only thing a person edits, so it must survive every run.
+  let previousCandidates = [];
+  try {
+    previousCandidates = JSON.parse(fs.readFileSync(CANDIDATES_PATH, 'utf8'));
+  } catch (e) {
+    if (e.code !== 'ENOENT') console.error('Could not read news-candidates.json:', e.message);
+  }
+  const approvedByLink = new Map(previousCandidates.map((c) => [c.link, c.approved === true]));
+
+  // Two lanes: the company is named -> publish automatically. Everything else is written to
+  // the candidates ledger and published only while its `approved` flag is true. Approved
+  // entries stay in the ledger — dropping them would lose the flag and unpublish the article
+  // on the next run. Nothing is ever deleted, so any article can be brought back.
+  const finalArticles = [];
+  const candidates = [];
+  let approvedCount = 0;
+  for (const article of datedArticles) {
+    const text = `${article.title} ${article.summary || ''}`;
+    if (COMPANY_RE.test(text)) {
+      finalArticles.push(article);
+      continue;
+    }
+    const approved = approvedByLink.get(article.link) === true;
+    if (approved) {
+      finalArticles.push(article);
+      approvedCount++;
+    }
+    candidates.push({
+      ...article,
+      approved,
+      // Written for the reviewer: true means it is about indigo/dyeing but the headline
+      // names a partner brand instead of CutisBio — usually worth approving.
+      onTopic: TOPIC_RE.test(text),
+    });
+  }
+  candidates.sort(
+    (a, b) =>
+      Number(b.approved) - Number(a.approved) ||
+      Number(b.onTopic) - Number(a.onTopic) ||
+      b.date.localeCompare(a.date)
+  );
+
+  console.log(
+    `Publishing ${finalArticles.length} articles ` +
+      `(${finalArticles.length - approvedCount} name the company, ${approvedCount} approved by hand); ` +
+      `${candidates.length - approvedCount} waiting for review ` +
+      `(${candidates.filter((c) => !c.approved && c.onTopic).length} on topic).`
+  );
+
+  // `node scripts/update-news.js --dry-run` shows what would be published without touching
+  // messages/*.json or content/news-candidates.json, and without calling the translation API.
   if (DRY_RUN) {
     const existingLinks = new Set(existingKoArticles.map((a) => a.link));
     const added = finalArticles.filter((a) => !existingLinks.has(a.link));
-    console.log(`\n[dry-run] 수집 ${newKoArticles.length}건 · 기존 ${existingKoArticles.length}건 · 최종 ${finalArticles.length}건`);
-    console.log(`[dry-run] 이번에 새로 추가될 기사 ${added.length}건`);
+    console.log(`\n[dry-run] 수집 ${newKoArticles.length}건 · 기존 ${existingKoArticles.length}건`);
+    console.log(`[dry-run] 노출 ${finalArticles.length}건 · 승인 대기 ${candidates.length}건`);
+    console.log(`[dry-run] 이번에 새로 노출될 기사 ${added.length}건`);
     for (const a of added) console.log(`   + ${a.date}  ${a.title}`);
+    const freshCandidates = candidates.filter((c) => !c.approved && !approvedByLink.has(c.link));
+    console.log(`[dry-run] 새로 후보에 오르는 기사 ${freshCandidates.length}건`);
+    for (const c of freshCandidates) console.log(`   ? ${c.onTopic ? '[주제O]' : '[주제X]'} ${c.date}  ${c.title}`);
     console.log('[dry-run] 파일을 쓰지 않고 종료합니다.');
     return;
   }
+
+  fs.mkdirSync(path.dirname(CANDIDATES_PATH), { recursive: true });
+  fs.writeFileSync(CANDIDATES_PATH, JSON.stringify(candidates, null, 2) + '\n');
 
   // Update logic for all locales
   for (const locale of locales) {

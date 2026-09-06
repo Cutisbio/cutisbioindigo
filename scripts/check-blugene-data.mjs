@@ -298,7 +298,12 @@ for (const locale of LOCALES) {
     // 비-한국어 파일에 한국어가 그대로 남았는지는 확인한다.
     const isNewsValue = key.startsWith('News.articles');
 
-    if (locale !== 'ko' && HANGUL.test(value)) {
+    // `sourceTitle` · `sourceSummary` 는 **일부러** 한국어 원문을 보관하는 대조용 필드다.
+    // update-news.js 가 이 값을 현재 한국어와 비교해, 바뀌지 않았으면 번역을 다시 하지 않는다
+    // (화면에는 나오지 않는다). 여기서 걸러내지 않으면 정상 동작이 오류로 잡힌다.
+    const isTranslationMarker = /\.(sourceTitle|sourceSummary)$/.test(key);
+
+    if (locale !== 'ko' && !isTranslationMarker && HANGUL.test(value)) {
       const where = isNewsValue ? '뉴스 자동 번역' : '메시지';
       errors.push(`[i18n] ${locale} ${key}: ${where}에 한국어 원문이 그대로 남아 있습니다 → "${value.slice(0, 50)}…"`);
     }
