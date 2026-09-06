@@ -40,7 +40,8 @@ OEKO-TEX ECO PASSPORT(E2AGHSST4) 문서에 적힌 유효기한이 2026-10-31 이
 | `/ko` `/ko/brand` `/ko/technology` `/ko/dyeing-printing` `/ko/data-certifications` | 200 | 신규 페이지 |
 | `/ko/contact` `/ko/about` `/ko/news` `/ko/blog` `/ko/blog/sustainable-indigo` | 200 | **기존 URL 그대로 유지** |
 | `/en` `/ja` `/zh` `/bn` `/tr` | 200 | 6개 언어 모두 |
-| `/ko/nonexistent-page` | 404 | 사이트 껍데기 안에서 안내 화면 렌더 |
+| `/ko/nonexistent-page` | 404 | 사이트 껍데기(헤더·푸터·메뉴) 안에서 언어별 안내 화면 렌더 — §11 참조 |
+| `/nope.foo` (언어 접두사 없음) | 404 | 루트 안내 화면(언어 선택만) |
 | `/ko/tech` → `/ko/technology` | 308 | 영구 리디렉션 |
 | `/ko/certifications` → `/ko/data-certifications` | 308 | 영구 리디렉션 |
 | `/ko/products` → `/ko/dyeing-printing` | 308 | 영구 리디렉션 |
@@ -236,7 +237,47 @@ bn `সিন্থেটিক বায়োলজি` / tr `sentetik biyoloj
 
 ---
 
-## 10. 다음 점검일
+## 11. 404 관련 조치 (2026-09-06)
+
+**신고 내용**: 상단 메뉴의 `큐티스바이오 소개` 를 눌렀더니 내용이 없고 오류가 났다.
+
+### 원인 1 — 로컬 개발 서버의 캐시 손상 (코드 문제 아님)
+
+로컬 `next dev` 가 앱 라우트를 하나도 인식하지 못해 `/ko` 를 포함한 **모든 주소가 404** 였다.
+서버 로그에 `Compiling /[locale]/about ...` 이 아예 찍히지 않았고, 같은 시점의 프로덕션 빌드는
+`/ko/about` 을 정상 생성(`.next/server/app/ko/about.html`, 55.9 KB)하고 있었다.
+Next 16.1 부터 개발용 Turbopack 캐시가 기본 활성이라 `.next/dev/cache/turbopack` 에 계속 쌓이는데,
+이 프로젝트 폴더가 OneDrive 동기화 대상 안에 있다(`next dev` 도 `⚠ Slow filesystem detected` 경고를 띄운다).
+
+- `.next` 삭제 후 재시작 → 6개 언어 전 경로 200 회복. 소스 코드는 고칠 것이 없었다.
+- 재현 시도: 개발 서버 실행 중 `npm run build`, 빌드 산출물 위에서 개발 서버 재시작 — **둘 다 정상**.
+  즉 특정 명령 순서가 아니라 캐시가 깨진 상태 자체가 원인이다.
+- 조치: `npm run dev:clean` (= `.next` 삭제 후 `next dev`) 추가, 운영 메모 §8 에 증상·해결 기록.
+
+### 원인 2 — 그때 사용자가 본 화면 (실제 결함)
+
+404 일 때 뜨던 화면은 헤더·푸터·번역이 없는 **루트** `src/app/not-found.tsx` 였다.
+"내용이 없다" 는 신고가 이 화면을 가리킨다. 두 가지를 고쳤다.
+
+| 결함 | 고친 내용 |
+|---|---|
+| 루트 404 가 `<html>` · `<body>` 를 직접 그려 하이드레이션 오류(콘솔 에러) 발생. 이 프로젝트에는 루트 `layout.tsx` 가 없어 Next 가 기본 레이아웃을 씌우는데 그 안에서 `<html>` 을 또 그린 것 | `not-found.js` 규약대로 `<div>` 만 반환하도록 변경하고 `globals.css` 를 직접 불러 사이트 색·서체를 유지. 콘솔 오류 사라짐(`<html>` 1개, `body margin 0`, 스타일시트 1개 확인) |
+| 언어별 404 인 `src/app/[locale]/not-found.tsx` 가 **한 번도 렌더링되지 않는 죽은 코드**였다. App Router 는 어떤 라우트에도 걸리지 않은 주소를 루트 `not-found` 로 보내기 때문 | `src/app/[locale]/[...rest]/page.tsx` 를 추가해 `notFound()` 를 던지게 했다. 이제 `/ko/없는주소` 가 언어 레이아웃 안에서 렌더링된다 |
+
+확인 결과 (`next build` → `next start`):
+
+| 경로 | 상태 | 화면 |
+|---|---|---|
+| `/ko/no-such-page` | 404 | `찾으시는 페이지가 없습니다.` + 헤더·푸터·전체 메뉴 버튼, `html lang="ko"`, 스타일 적용 |
+| `/nope.foo` | 404 | 루트 안내 화면, `<html>` 1개, 하이드레이션 오류 없음, `noindex` |
+| 기존 10개 경로 × 6개 언어 | 200 | 모두 SSG 유지 (`ƒ /[locale]/[...rest]` 만 온디맨드) |
+
+남은 사소한 항목: 프로덕션에서 404 응답의 `<title>` 이 기본(홈) 제목으로 나온다.
+상태 코드 404 와 `noindex` 는 정상이므로 색인에는 영향이 없다.
+
+---
+
+## 12. 다음 점검일
 
 | 항목 | 시점 |
 |---|---|

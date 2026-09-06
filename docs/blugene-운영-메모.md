@@ -37,14 +37,14 @@
 | 데이터·인증 페이지 | `DataHub`, `Certifications` |
 | 문의 화면 | `Inquiry`, `Contact` |
 | 상단 메뉴 · 푸터 | `Nav`, `Footer` |
+| 브랜드 페이지 | `Brand` |
+| 기술 페이지 | `Technology` |
+| 회사 소개 · 소식 · 블로그 | `About`, `News`, `Blog`, `Tech` |
 
 상단 메뉴에 **항목을 넣거나 뺄 때**는 `src/data/blugene/site.ts` 의 `PRIMARY_NAV` 를 고칩니다.
 같은 항목을 `FOOTER_NAV` 에도 넣으면 푸터에 두 번 나오니 주의하세요(푸터는 두 목록을 이어 붙입니다).
 항목을 늘렸다면 폭이 가장 긴 언어(보통 영어·튀르키예어)에서 메뉴가 넘치지 않는지
 `npm run screens` 로 확인하세요. 현재 가로 메뉴는 화면 폭 1280px 이상에서만 펼쳐집니다.
-| 브랜드 페이지 | `Brand` |
-| 기술 페이지 | `Technology` |
-| 회사 소개 · 소식 · 블로그 | `About`, `News`, `Blog`, `Tech` |
 
 ### 규칙 세 가지
 
@@ -161,7 +161,42 @@ npm run dev
 
 ---
 
-## 8. 함께 볼 문서
+## 8. 문제가 생겼을 때
+
+### 로컬 미리보기에서 **모든 페이지가 404**로 나온다
+
+증상: `npm run dev` 는 정상적으로 뜨는데, 화면을 열면 헤더·푸터도 없이
+"요청하신 페이지를 찾을 수 없습니다 / The page you requested was not found." 만 나옵니다.
+터미널에는 `GET /ko/about 404` 처럼 찍히고, `Compiling ...` 줄은 나오지 않습니다.
+
+원인: `.next` 폴더(개발 중 만들어지는 임시 폴더)의 캐시가 깨진 것입니다.
+Next 16 은 개발 캐시를 `.next/dev/cache/turbopack` 에 계속 저장해 두는데,
+이 프로젝트 폴더가 OneDrive 동기화 폴더 안에 있어서 캐시 파일이 어긋나는 일이 생깁니다.
+(`next dev` 가 띄우는 `⚠ Slow filesystem detected` 경고가 같은 이야기입니다.)
+**소스 코드 문제가 아니므로 코드를 고칠 필요가 없습니다.**
+
+해결: 개발 서버를 끄고(터미널에서 `Ctrl + C`) 아래를 실행합니다.
+`.next` 를 지우고 다시 띄우는 명령입니다. 지워도 되는 폴더이니 안심하세요.
+
+```bash
+npm run dev:clean
+```
+
+처음 한 번은 화면이 뜨기까지 1~2분 걸릴 수 있습니다. 그 뒤로는 평소처럼 `npm run dev` 를 쓰면 됩니다.
+
+> 재발을 줄이려면 OneDrive 설정에서 이 프로젝트의 `.next` 와 `node_modules` 폴더를
+> 동기화 대상에서 제외하세요. 두 폴더 모두 지워도 다시 만들어지는 임시 폴더라 백업할 필요가 없습니다.
+
+### 배포된 사이트에서 특정 페이지만 404 로 나온다
+
+이때는 캐시 문제가 아니라 주소가 실제로 없는 경우입니다.
+`src/data/blugene/site.ts` 의 `PRIMARY_NAV` · `FOOTER_NAV` 에 적은 주소와
+`src/app/[locale]/` 아래 폴더 이름이 같은지 확인하세요
+(예: `/about` 항목은 `src/app/[locale]/about/page.tsx` 가 있어야 합니다).
+
+---
+
+## 9. 함께 볼 문서
 
 | 문서 | 내용 |
 |---|---|
