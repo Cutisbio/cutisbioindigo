@@ -91,6 +91,8 @@
 | 새 사진을 추가하고 싶다 | 파일을 `public/blugene/` 아래 알맞은 폴더에 넣고, `scripts/build-blugene-assets.py` 의 목록에도 추가 |
 | 첫 화면 큰 사진을 바꾸고 싶다 | `public/blugene/brand/hero-family-denim.webp` 를 교체 (가로 1732px 권장, 200~350KB) |
 | 사진 설명(alt)을 고치고 싶다 | `messages/*.json` 의 `...Alt` 로 끝나는 항목 |
+| **CutisBio 로고를 바꾸고 싶다** | `public/brand/cutisbio-logo.svg`(밝은 배경용)와 `cutisbio-logo-white.svg`(어두운 배경용) **두 파일을 함께** 교체. 가로세로비가 달라지면 `src/components/blugene/Wordmark.tsx` 의 `SCALE` 숫자도 조정 |
+| 로고 크기를 키우거나 줄이고 싶다 | `src/components/blugene/Wordmark.tsx` 의 `SCALE` (sm/md/lg 의 `logoW`·`logoH`) |
 
 **주의**: 원단·색상 견본·인증서 사진에는 색보정을 하지 마세요. 색 자체가 근거 자료입니다.
 그리고 **글자를 이미지에 넣지 마세요** — 번역도 안 되고 검사도 통과하지 못합니다.

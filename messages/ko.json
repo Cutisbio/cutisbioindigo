@@ -77,9 +77,9 @@
     "chartCaption": "카탈로그 p.5 Figure 2-2 · Table 2-3 의 9개 시판 샘플. 세로축은 mg/kg 이며 0에서 시작합니다."
   },
   "Science": {
-    "eyebrow": "BIOTECHNOLOGY",
+    "eyebrow": "SYNTHETIC BIOLOGY",
     "title": "인디고의 DNA를, 새롭게 쓰다.",
-    "body": "큐티스바이오는 미생물의 생합성 경로와 발효를 활용해 인디고를 생산합니다. 오래 사랑받아 온 파랑을 만드는 방식에 생물공학을 더했습니다.",
+    "body": "큐티스바이오는 미생물의 생합성 경로와 발효를 활용해 인디고를 생산합니다. 오래 사랑받아 온 파랑을 만드는 방식에 합성생물학을 더했습니다.",
     "metaphorNote": "‘인디고의 DNA를 다시 쓴다’는 브랜드의 비유입니다. 인디고 분자 자체에 유전자가 있다는 뜻이 아니라, 미생물의 생합성 경로와 발효로 인디고를 만든다는 의미입니다.",
     "cta": "기술 자세히 보기",
     "diagramTitle": "원료에서 원단까지",
@@ -371,9 +371,9 @@
     "metaDescription": "Blugene은 평생 함께하는 데님을 위해 인디고를 다시 만드는 큐티스바이오의 바이오 인디고 브랜드입니다.",
     "heroEyebrow": "THE STORY",
     "heroTitle": "평생 입는 옷이기에, 색부터 다시 묻습니다.",
-    "heroBody": "생물공학을 통해 인디고를 만드는 방식을 새로 썼습니다. 데님은 인종과 국가를 넘어 우리의 일상과 평생을 함께하는 옷입니다. 그래서 우리는 그 안의 작은 불순물에도 타협하지 않습니다. 피부와 환경을 생각하며 인디고를 다시 만듭니다. 그것이 Blugene 입니다.",
+    "heroBody": "합성생물학을 통해 인디고를 만드는 방식을 새로 썼습니다. 데님은 인종과 국가를 넘어 우리의 일상과 평생을 함께하는 옷입니다. 그래서 우리는 그 안의 작은 불순물에도 타협하지 않습니다. 피부와 환경을 생각하며 인디고를 다시 만듭니다. 그것이 Blugene 입니다.",
     "nameTitle": "이름에 담은 뜻",
-    "nameBody": "Blue 와 Gene 을 합친 이름입니다. 오래 사랑받아 온 파랑을, 생물공학의 방식으로 다시 만든다는 뜻을 담았습니다.",
+    "nameBody": "Blue 와 Gene 을 합친 이름입니다. 오래 사랑받아 온 파랑을, 합성생물학의 방식으로 다시 만든다는 뜻을 담았습니다.",
     "nameNote": "‘인디고의 DNA를 다시 쓴다’는 비유입니다. 인디고 분자에 유전자가 들어 있다는 뜻이 아닙니다.",
     "promiseTitle": "우리가 약속하는 것",
     "promiseBody": "우리가 약속할 수 있는 것은 확인할 수 있는 자료입니다. 무엇으로 만들었는지, 어떤 불순물이 남는지, 그 결과를 어떻게 확인할 수 있는지를 공개합니다.",
@@ -553,6 +553,17 @@
     "categoryTech": "기술 소개",
     "readMore": "자세히 읽기",
     "readTime": "{minutes}분 읽기"
+  },
+  "Contact": {
+    "title": "문의하기",
+    "description": "Blugene 샘플과 기술 · 인증자료에 대해 문의해 주세요. 원단 염색, 디지털 프린팅, 색상 공동개발, 기술자료 가운데 필요한 내용을 선택하실 수 있습니다.",
+    "addressDetail": "서울특별시 강남구 논현로 842 압구정빌딩 8층 (우 06025)\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
+    "mapTitle": "찾아오시는 길"
+  },
+  "NotFound": {
+    "title": "찾으시는 페이지가 없습니다.",
+    "body": "주소가 바뀌었거나 삭제된 페이지일 수 있습니다. 아래에서 필요한 내용을 찾아보세요.",
+    "backHome": "홈으로 가기"
   },
   "News": {
     "title": "CutisBio 뉴스룸",
@@ -951,16 +962,5 @@
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE14N2VtOWxvOEdlNmJuVUJVenVnZk5PbnE3VGhwWFdCQWVrSWZ5THhheHhCTHR6UWtZMkJmQ19XbzVnLUo3VllMblRVbVpCZ0QtZ0xGNGdJNUtnYTdKenk0N3ZoNnZGUkdJTGRj0gFvQVVfeXFMTmtBZ0swRkhRZ056M21TRURIdHFWSTBHSHpvWWxVNVZ6a1F5VWx6VEJoRnZObHZCZjZwVTVPYzVjdFMzSHBiWW1BV0JDRmZCME9OVUQzd1ctdXdVc3JFVXh4UlZ3QWZwM3RGMWpxWEZ3?oc=5"
       }
     ]
-  },
-  "Contact": {
-    "title": "문의하기",
-    "description": "Blugene 샘플과 기술 · 인증자료에 대해 문의해 주세요. 원단 염색, 디지털 프린팅, 색상 공동개발, 기술자료 가운데 필요한 내용을 선택하실 수 있습니다.",
-    "addressDetail": "서울특별시 강남구 논현로 842 압구정빌딩 8층 (우 06025)\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
-    "mapTitle": "찾아오시는 길"
-  },
-  "NotFound": {
-    "title": "찾으시는 페이지가 없습니다.",
-    "body": "주소가 바뀌었거나 삭제된 페이지일 수 있습니다. 아래에서 필요한 내용을 찾아보세요.",
-    "backHome": "홈으로 가기"
   }
 }

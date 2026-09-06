@@ -77,9 +77,9 @@
     "chartCaption": "The nine commercial samples from catalogue p.5 Figure 2-2 and Table 2-3. The vertical axis is in mg/kg and starts at 0."
   },
   "Science": {
-    "eyebrow": "BIOTECHNOLOGY",
+    "eyebrow": "SYNTHETIC BIOLOGY",
     "title": "Rewriting the DNA of indigo.",
-    "body": "CutisBio produces indigo using the biosynthetic pathways of microorganisms together with fermentation. We have brought bioengineering to the way a long-loved blue is made.",
+    "body": "CutisBio produces indigo using the biosynthetic pathways of microorganisms together with fermentation. We have brought synthetic biology to the way a long-loved blue is made.",
     "metaphorNote": "“Rewriting the DNA of indigo” is a brand metaphor. It does not mean that the indigo molecule itself carries genes; it means that indigo is made through the biosynthetic pathways of microorganisms and fermentation.",
     "cta": "Explore the technology",
     "diagramTitle": "From feedstock to fabric",
@@ -371,9 +371,9 @@
     "metaDescription": "Blugene is the CutisBio bio indigo brand, remaking indigo for denim that stays with you for a lifetime.",
     "heroEyebrow": "THE STORY",
     "heroTitle": "Clothes worn for a lifetime. So we start by questioning the color.",
-    "heroBody": "Through bioengineering we have rewritten the way indigo is made. Denim crosses ethnicities and borders and stays with us for a lifetime. That is why we do not compromise, even on the smallest impurity within it. We remake indigo with skin and the environment in mind. That is Blugene.",
+    "heroBody": "Through synthetic biology we have rewritten the way indigo is made. Denim crosses ethnicities and borders and stays with us for a lifetime. That is why we do not compromise, even on the smallest impurity within it. We remake indigo with skin and the environment in mind. That is Blugene.",
     "nameTitle": "The meaning in the name",
-    "nameBody": "The name combines Blue and Gene. It carries the idea of remaking a long-loved blue through the methods of bioengineering.",
+    "nameBody": "The name combines Blue and Gene. It carries the idea of remaking a long-loved blue through the methods of synthetic biology.",
     "nameNote": "“Rewriting the DNA of indigo” is a metaphor. It does not mean that the indigo molecule contains genes.",
     "promiseTitle": "What we promise",
     "promiseBody": "What we can promise is material you can verify. We disclose what it is made from, what impurities remain and how the results can be checked.",
@@ -553,6 +553,17 @@
     "categoryTech": "Technology",
     "readMore": "Read more",
     "readTime": "{minutes} min read"
+  },
+  "Contact": {
+    "title": "Contact",
+    "description": "Get in touch about Blugene samples and technical or certification documents. You can choose from fabric dyeing, digital printing, joint shade development and technical documentation.",
+    "addressDetail": "8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
+    "mapTitle": "How to find us"
+  },
+  "NotFound": {
+    "title": "We couldn't find that page.",
+    "body": "The address may have changed or the page may have been removed. Try one of the sections below.",
+    "backHome": "Go to home"
   },
   "News": {
     "title": "CutisBio Newsroom",
@@ -951,16 +962,5 @@
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE14N2VtOWxvOEdlNmJuVUJVenVnZk5PbnE3VGhwWFdCQWVrSWZ5THhheHhCTHR6UWtZMkJmQ19XbzVnLUo3VllMblRVbVpCZ0QtZ0xGNGdJNUtnYTdKenk0N3ZoNnZGUkdJTGRj0gFvQVVfeXFMTmtBZ0swRkhRZ056M21TRURIdHFWSTBHSHpvWWxVNVZ6a1F5VWx6VEJoRnZObHZCZjZwVTVPYzVjdFMzSHBiWW1BV0JDRmZCME9OVUQzd1ctdXdVc3JFVXh4UlZ3QWZwM3RGMWpxWEZ3?oc=5"
       }
     ]
-  },
-  "Contact": {
-    "title": "Contact",
-    "description": "Get in touch about Blugene samples and technical or certification documents. You can choose from fabric dyeing, digital printing, joint shade development and technical documentation.",
-    "addressDetail": "8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
-    "mapTitle": "How to find us"
-  },
-  "NotFound": {
-    "title": "We couldn't find that page.",
-    "body": "The address may have changed or the page may have been removed. Try one of the sections below.",
-    "backHome": "Go to home"
   }
 }

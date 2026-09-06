@@ -77,9 +77,9 @@
     "chartCaption": "Katalog s.5 Şekil 2-2 · Tablo 2-3'te yer alan 9 ticari numune. Dikey eksen mg/kg birimindedir ve 0'dan başlar."
   },
   "Science": {
-    "eyebrow": "BIOTECHNOLOGY",
+    "eyebrow": "SYNTHETIC BIOLOGY",
     "title": "İndigonun DNA'sını yeniden yazmak.",
-    "body": "CutisBio, mikroorganizmaların biyosentez yolaklarını ve fermantasyonu kullanarak indigo üretir. Uzun zamandır sevilen bu mavinin üretim biçimine biyoteknolojiyi ekledik.",
+    "body": "CutisBio, mikroorganizmaların biyosentez yolaklarını ve fermantasyonu kullanarak indigo üretir. Uzun zamandır sevilen bu mavinin üretim biçimine sentetik biyolojiyi ekledik.",
     "metaphorNote": "'İndigonun DNA'sını yeniden yazmak' markanın kullandığı bir benzetmedir. İndigo molekülünün kendisinde gen bulunduğu anlamına gelmez; indigonun mikroorganizmaların biyosentez yolakları ve fermantasyon yoluyla üretildiğini ifade eder.",
     "cta": "Teknolojiyi ayrıntılı inceleyin",
     "diagramTitle": "Hammaddeden kumaşa",
@@ -371,9 +371,9 @@
     "metaDescription": "Blugene, ömür boyu sürecek denim için indigoyu yeniden üreten CutisBio'nun biyo indigo markasıdır.",
     "heroEyebrow": "THE STORY",
     "heroTitle": "Ömür boyu giyilen bir giysi olduğu için, önce rengi sorguluyoruz.",
-    "heroBody": "Biyoteknoloji sayesinde indigo üretme biçimini yeniden yazdık. Denim; ırkları ve ülkeleri aşarak günlük hayatımıza ve tüm ömrümüze eşlik eden bir giysidir. Bu yüzden içindeki en küçük safsızlıktan bile ödün vermiyoruz. Cildi ve çevreyi düşünerek indigoyu yeniden üretiyoruz. İşte Blugene budur.",
+    "heroBody": "Sentetik biyoloji sayesinde indigo üretme biçimini yeniden yazdık. Denim; ırkları ve ülkeleri aşarak günlük hayatımıza ve tüm ömrümüze eşlik eden bir giysidir. Bu yüzden içindeki en küçük safsızlıktan bile ödün vermiyoruz. Cildi ve çevreyi düşünerek indigoyu yeniden üretiyoruz. İşte Blugene budur.",
     "nameTitle": "İsmin anlamı",
-    "nameBody": "Blue ve Gene kelimelerinin birleşiminden oluşan bir isimdir. Uzun zamandır sevilen mavinin, biyoteknolojinin yöntemleriyle yeniden üretilmesi anlamını taşır.",
+    "nameBody": "Blue ve Gene kelimelerinin birleşiminden oluşan bir isimdir. Uzun zamandır sevilen mavinin, sentetik biyolojinin yöntemleriyle yeniden üretilmesi anlamını taşır.",
     "nameNote": "'İndigonun DNA'sını yeniden yazmak' bir benzetmedir. İndigo molekülünün içinde gen bulunduğu anlamına gelmez.",
     "promiseTitle": "Söz verdiklerimiz",
     "promiseBody": "Söz verebileceğimiz şey, doğrulanabilir verilerdir. Neyden üretildiğini, geriye hangi safsızlıkların kaldığını ve bu sonucun nasıl doğrulanabileceğini açıklıyoruz.",
@@ -553,6 +553,17 @@
     "categoryTech": "Teknoloji tanıtımı",
     "readMore": "Devamını okuyun",
     "readTime": "{minutes} dakikalık okuma"
+  },
+  "Contact": {
+    "title": "İletişim",
+    "description": "Blugene numuneleri ile teknik ve sertifika belgeleri hakkında bize ulaşın. Kumaş boyama, dijital baskı, ortak renk geliştirme ve teknik belgeler arasından ihtiyacınız olanı seçebilirsiniz.",
+    "addressDetail": "Apgujeong Binası 8. kat, Nonhyeon-ro 842, Gangnam-gu, Seul 06025, Kore\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
+    "mapTitle": "Yol tarifi"
+  },
+  "NotFound": {
+    "title": "Aradığınız sayfa bulunamadı.",
+    "body": "Adres değişmiş ya da sayfa kaldırılmış olabilir. Aşağıdaki bölümlerden aradığınızı bulabilirsiniz.",
+    "backHome": "Ana sayfaya git"
   },
   "News": {
     "title": "CutisBio Haber Odası",
@@ -951,16 +962,5 @@
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE14N2VtOWxvOEdlNmJuVUJVenVnZk5PbnE3VGhwWFdCQWVrSWZ5THhheHhCTHR6UWtZMkJmQ19XbzVnLUo3VllMblRVbVpCZ0QtZ0xGNGdJNUtnYTdKenk0N3ZoNnZGUkdJTGRj0gFvQVVfeXFMTmtBZ0swRkhRZ056M21TRURIdHFWSTBHSHpvWWxVNVZ6a1F5VWx6VEJoRnZObHZCZjZwVTVPYzVjdFMzSHBiWW1BV0JDRmZCME9OVUQzd1ctdXdVc3JFVXh4UlZ3QWZwM3RGMWpxWEZ3?oc=5"
       }
     ]
-  },
-  "Contact": {
-    "title": "İletişim",
-    "description": "Blugene numuneleri ile teknik ve sertifika belgeleri hakkında bize ulaşın. Kumaş boyama, dijital baskı, ortak renk geliştirme ve teknik belgeler arasından ihtiyacınız olanı seçebilirsiniz.",
-    "addressDetail": "Apgujeong Binası 8. kat, Nonhyeon-ro 842, Gangnam-gu, Seul 06025, Kore\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
-    "mapTitle": "Yol tarifi"
-  },
-  "NotFound": {
-    "title": "Aradığınız sayfa bulunamadı.",
-    "body": "Adres değişmiş ya da sayfa kaldırılmış olabilir. Aşağıdaki bölümlerden aradığınızı bulabilirsiniz.",
-    "backHome": "Ana sayfaya git"
   }
 }

@@ -77,9 +77,9 @@
     "chartCaption": "产品目录 p.5 Figure 2-2 · Table 2-3 中的 9 个市售样品。纵轴单位为 mg/kg，自 0 起始。"
   },
   "Science": {
-    "eyebrow": "BIOTECHNOLOGY",
+    "eyebrow": "SYNTHETIC BIOLOGY",
     "title": "重新书写靛蓝的 DNA。",
-    "body": "CutisBio 利用微生物的生物合成途径与发酵来生产靛蓝，为这份长久受人喜爱的蓝，在制法中融入了生物工程。",
+    "body": "CutisBio 利用微生物的生物合成途径与发酵来生产靛蓝，为这份长久受人喜爱的蓝，在制法中融入了合成生物学。",
     "metaphorNote": "“重写靛蓝的 DNA” 是品牌的比喻说法。这并非指靛蓝分子本身含有基因，而是指借助微生物的生物合成途径与发酵来制造靛蓝。",
     "cta": "了解技术详情",
     "diagramTitle": "从原料到面料",
@@ -371,9 +371,9 @@
     "metaDescription": "Blugene 是 CutisBio 为相伴一生的丹宁而重新打造靛蓝的生物靛蓝品牌。",
     "heroEyebrow": "THE STORY",
     "heroTitle": "因为要穿一辈子，我们从颜色开始重新发问。",
-    "heroBody": "我们借助生物工程，重新书写了制造靛蓝的方式。丹宁跨越种族与国界，是伴随我们日常与一生的衣服。因此，即便是其中细微的杂质，我们也不妥协。为肌肤与环境着想，重新打造靛蓝——这就是 Blugene。",
+    "heroBody": "我们借助合成生物学，重新书写了制造靛蓝的方式。丹宁跨越种族与国界，是伴随我们日常与一生的衣服。因此，即便是其中细微的杂质，我们也不妥协。为肌肤与环境着想，重新打造靛蓝——这就是 Blugene。",
     "nameTitle": "名字的含义",
-    "nameBody": "这是 Blue 与 Gene 结合而成的名字，寓意以生物工程的方式，重新打造这份长久受人喜爱的蓝。",
+    "nameBody": "这是 Blue 与 Gene 结合而成的名字，寓意以合成生物学的方式，重新打造这份长久受人喜爱的蓝。",
     "nameNote": "“重写靛蓝的 DNA” 是一种比喻，并非指靛蓝分子中含有基因。",
     "promiseTitle": "我们所承诺的",
     "promiseBody": "我们能够承诺的，是可供验证的资料。我们公开产品用什么制成、残留哪些杂质，以及如何验证这些结果。",
@@ -553,6 +553,17 @@
     "categoryTech": "技术介绍",
     "readMore": "阅读全文",
     "readTime": "阅读需 {minutes} 分钟"
+  },
+  "Contact": {
+    "title": "联系我们",
+    "description": "欢迎就 Blugene 样品与技术 · 认证资料向我们咨询。您可从面料染色、数码印花、色彩共同开发、技术资料中选择所需内容。",
+    "addressDetail": "韩国首尔特别市江南区论岘路 842 号 狎鸥亭大厦 8 层（邮编 06025）\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
+    "mapTitle": "交通指引"
+  },
+  "NotFound": {
+    "title": "未找到您访问的页面。",
+    "body": "该地址可能已更改，或页面已被删除。请从以下栏目中查找所需内容。",
+    "backHome": "返回首页"
   },
   "News": {
     "title": "CutisBio 新闻中心",
@@ -951,16 +962,5 @@
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE14N2VtOWxvOEdlNmJuVUJVenVnZk5PbnE3VGhwWFdCQWVrSWZ5THhheHhCTHR6UWtZMkJmQ19XbzVnLUo3VllMblRVbVpCZ0QtZ0xGNGdJNUtnYTdKenk0N3ZoNnZGUkdJTGRj0gFvQVVfeXFMTmtBZ0swRkhRZ056M21TRURIdHFWSTBHSHpvWWxVNVZ6a1F5VWx6VEJoRnZObHZCZjZwVTVPYzVjdFMzSHBiWW1BV0JDRmZCME9OVUQzd1ctdXdVc3JFVXh4UlZ3QWZwM3RGMWpxWEZ3?oc=5"
       }
     ]
-  },
-  "Contact": {
-    "title": "联系我们",
-    "description": "欢迎就 Blugene 样品与技术 · 认证资料向我们咨询。您可从面料染色、数码印花、色彩共同开发、技术资料中选择所需内容。",
-    "addressDetail": "韩国首尔特别市江南区论岘路 842 号 狎鸥亭大厦 8 层（邮编 06025）\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
-    "mapTitle": "交通指引"
-  },
-  "NotFound": {
-    "title": "未找到您访问的页面。",
-    "body": "该地址可能已更改，或页面已被删除。请从以下栏目中查找所需内容。",
-    "backHome": "返回首页"
   }
 }

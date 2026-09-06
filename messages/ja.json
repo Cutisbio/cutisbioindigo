@@ -77,9 +77,9 @@
     "chartCaption": "カタログ p.5 Figure 2-2・Table 2-3 の市販9サンプル。縦軸は mg/kg で、0から始まります。"
   },
   "Science": {
-    "eyebrow": "BIOTECHNOLOGY",
+    "eyebrow": "SYNTHETIC BIOLOGY",
     "title": "インディゴのDNAを、新たに書く。",
-    "body": "キューティスバイオは、微生物の生合成経路と発酵を活用してインディゴを生産します。長く愛されてきた青をつくる方法に、生物工学を加えました。",
+    "body": "キューティスバイオは、微生物の生合成経路と発酵を活用してインディゴを生産します。長く愛されてきた青をつくる方法に、合成生物学を加えました。",
     "metaphorNote": "「インディゴのDNAを書き換える」はブランドの比喩表現です。インディゴ分子そのものに遺伝子があるという意味ではなく、微生物の生合成経路と発酵によってインディゴをつくるという意味です。",
     "cta": "技術を詳しく見る",
     "diagramTitle": "原料から生地まで",
@@ -371,9 +371,9 @@
     "metaDescription": "Blugene は、一生をともにするデニムのためにインディゴをつくり直す、キューティスバイオのバイオインディゴブランドです。",
     "heroEyebrow": "THE STORY",
     "heroTitle": "一生着る服だからこそ、色から問い直します。",
-    "heroBody": "生物工学によって、インディゴをつくる方法を新たに書き直しました。デニムは人種や国を越えて、私たちの日常と生涯をともにする服です。だからこそ、私たちはそのなかのわずかな不純物にも妥協しません。肌と環境を思いながら、インディゴをつくり直す。それが Blugene です。",
+    "heroBody": "合成生物学によって、インディゴをつくる方法を新たに書き直しました。デニムは人種や国を越えて、私たちの日常と生涯をともにする服です。だからこそ、私たちはそのなかのわずかな不純物にも妥協しません。肌と環境を思いながら、インディゴをつくり直す。それが Blugene です。",
     "nameTitle": "名前に込めた意味",
-    "nameBody": "Blue と Gene を合わせた名前です。長く愛されてきた青を、生物工学の方法でつくり直すという意味を込めました。",
+    "nameBody": "Blue と Gene を合わせた名前です。長く愛されてきた青を、合成生物学の方法でつくり直すという意味を込めました。",
     "nameNote": "「インディゴのDNAを書き換える」は比喩表現です。インディゴ分子に遺伝子が入っているという意味ではありません。",
     "promiseTitle": "私たちがお約束すること",
     "promiseBody": "私たちがお約束できるのは、確認できる資料です。何からつくられているのか、どんな不純物が残るのか、その結果をどのように確認できるのかを公開します。",
@@ -553,6 +553,17 @@
     "categoryTech": "技術紹介",
     "readMore": "詳しく読む",
     "readTime": "{minutes}分で読めます"
+  },
+  "Contact": {
+    "title": "お問い合わせ",
+    "description": "Blugene のサンプルおよび技術・認証資料についてお問い合わせください。生地染色、デジタルプリント、色の共同開発、技術資料のうち、必要な内容をお選びいただけます。",
+    "addressDetail": "ソウル特別市江南区論峴路842 狎鴎亭ビル8階 (06025)\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
+    "mapTitle": "アクセス"
+  },
+  "NotFound": {
+    "title": "お探しのページが見つかりません。",
+    "body": "アドレスが変わったか、削除されたページの可能性があります。以下からお探しの内容をご覧ください。",
+    "backHome": "ホームへ"
   },
   "News": {
     "title": "CutisBio ニュースルーム",
@@ -951,16 +962,5 @@
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE14N2VtOWxvOEdlNmJuVUJVenVnZk5PbnE3VGhwWFdCQWVrSWZ5THhheHhCTHR6UWtZMkJmQ19XbzVnLUo3VllMblRVbVpCZ0QtZ0xGNGdJNUtnYTdKenk0N3ZoNnZGUkdJTGRj0gFvQVVfeXFMTmtBZ0swRkhRZ056M21TRURIdHFWSTBHSHpvWWxVNVZ6a1F5VWx6VEJoRnZObHZCZjZwVTVPYzVjdFMzSHBiWW1BV0JDRmZCME9OVUQzd1ctdXdVc3JFVXh4UlZ3QWZwM3RGMWpxWEZ3?oc=5"
       }
     ]
-  },
-  "Contact": {
-    "title": "お問い合わせ",
-    "description": "Blugene のサンプルおよび技術・認証資料についてお問い合わせください。生地染色、デジタルプリント、色の共同開発、技術資料のうち、必要な内容をお選びいただけます。",
-    "addressDetail": "ソウル特別市江南区論峴路842 狎鴎亭ビル8階 (06025)\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
-    "mapTitle": "アクセス"
-  },
-  "NotFound": {
-    "title": "お探しのページが見つかりません。",
-    "body": "アドレスが変わったか、削除されたページの可能性があります。以下からお探しの内容をご覧ください。",
-    "backHome": "ホームへ"
   }
 }

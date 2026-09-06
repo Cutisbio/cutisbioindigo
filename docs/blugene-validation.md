@@ -219,7 +219,21 @@ OEKO-TEX ECO PASSPORT(E2AGHSST4) 문서에 적힌 유효기한이 2026-10-31 이
 
 ---
 
-## 9. 다음 점검일
+## 9. 추가 반영 사항 (2026-09-06, 최초 작업 이후)
+
+| 항목 | 내용 |
+|---|---|
+| CutisBio 로고 적용 | 헤더·푸터·브랜드 페이지의 `by CutisBio` 를 제공받은 실제 로고 SVG 로 교체. 밝은 배경은 원본 색, 어두운 배경(푸터)은 단색 흰색 판본. 원본 viewBox 의 여백을 실측 bbox 기준으로 잘라내고 Illustrator 잔재 흰색 도형만 제거했으며 형태는 유지 |
+| 표현 통일 | 화면 문구의 `생물공학` 을 **`합성생물학`** 으로 변경 (6개 언어 각 3곳). 영문 eyebrow `BIOTECHNOLOGY` → `SYNTHETIC BIOLOGY` |
+| 재검증 | typecheck · lint · check:blugene · build(65개 페이지) 통과, 360/390/768/1440px 에서 가로 넘침 없음 |
+
+각 언어의 대응 표기: en `synthetic biology` / ja `合成生物学` / zh `合成生物学` /
+bn `সিন্থেটিক বায়োলজি` / tr `sentetik biyoloji` — 기존 Hero 본문에서 쓰던 용어와 일치시켰다.
+`News.articles` 의 외부 기사 제목에 남아 있는 `biyoteknoloji` / `জৈবপ্রযুক্তি` 는 언론사 원문이므로 바꾸지 않았다.
+
+---
+
+## 10. 다음 점검일
 
 | 항목 | 시점 |
 |---|---|
