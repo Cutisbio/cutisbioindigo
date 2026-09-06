@@ -568,6 +568,9 @@
   "News": {
     "title": "CutisBio Newsroom",
     "description": "Check out the latest news on eco-friendly fashion driven by synthetic biology.",
+    "categoryVideo": "Video",
+    "categoryPost": "Update",
+    "playVideo": "Play video",
     "articles": [
       {
         "date": "2025-11-19",

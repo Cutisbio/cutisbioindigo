@@ -1,8 +1,12 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import SchemaOrg, { buildOrganizationSchema } from '@/components/seo/SchemaOrg';
 import SectionHeading from '@/components/blugene/SectionHeading';
+import NewsPostCard from '@/components/blugene/NewsPostCard';
 import { BRAND, LOCALES, SITE_URL, buildPageMetadata } from '@/data/blugene/site';
+import { pick, type NewsPost } from '@/data/blugene/newsPosts';
+import { readNewsPosts } from '@/data/blugene/newsPosts.server';
 
 export function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -32,6 +36,9 @@ type Article = {
   link?: string;
 };
 
+/** 목록에 함께 늘어놓기 위해, 직접 쓴 소식을 기사와 같은 모양으로 바꾼다 */
+type Entry = Article & { post?: NewsPost };
+
 export default async function NewsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
@@ -40,6 +47,24 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
   const tCommon = await getTranslations({ locale, namespace: 'Common' });
   const articles = t.raw('articles') as Article[];
   const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/brand/cutisbio-logo.png`);
+
+  // 직접 쓴 소식은 언어별 메시지 파일이 아니라 content/news-posts.json 에 있다.
+  // 자동 수집 스크립트가 News.articles 를 통째로 다시 쓰기 때문에 파일을 나눠 두었다.
+  const posts = readNewsPosts();
+  const entries: Entry[] = [
+    ...posts.map((post) => ({
+      date: post.date,
+      category:
+        pick(post.category, locale) ||
+        (post.type === 'youtube' ? t('categoryVideo') : t('categoryPost')),
+      title: pick(post.title, locale),
+      summary: pick(post.summary, locale),
+      thumbnailAlt: pick(post.imageAlt, locale),
+      link: post.link,
+      post,
+    })),
+    ...articles.map((article) => ({ ...article })),
+  ].sort((a, b) => b.date.localeCompare(a.date));
 
   return (
     <>
@@ -54,8 +79,8 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
       <section className="w-full bg-white">
         <div className="mx-auto max-w-[900px] px-4 py-14 sm:px-6 sm:py-16">
           <ul className="divide-y divide-[color:var(--color-washed)]">
-            {articles.map((article, index) => (
-              <li key={`${article.date}-${index}`} className="py-7 first:pt-0">
+            {entries.map((article, index) => (
+              <li key={article.post?.id ?? `${article.date}-${index}`} className="py-7 first:pt-0">
                 <div className="flex flex-wrap items-center gap-3 text-xs text-[var(--color-slate-muted)]">
                   <span className="rounded-full bg-[var(--color-ivory)] px-3 py-1 font-semibold text-[var(--color-denim)]">
                     {article.category}
@@ -65,7 +90,27 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
                 <h2 className="mt-3 text-lg leading-snug font-semibold break-keep text-[var(--color-indigo-deep)] sm:text-xl">
                   {article.title}
                 </h2>
-                <p className="mt-2 text-base leading-relaxed break-keep text-[var(--color-ink)]/80">
+
+                {article.post?.type === 'youtube' && article.post.youtubeId && (
+                  <NewsPostCard
+                    youtubeId={article.post.youtubeId}
+                    title={article.title}
+                    playLabel={t('playVideo')}
+                  />
+                )}
+
+                {article.post?.type === 'post' && article.post.image && (
+                  <Image
+                    src={article.post.image}
+                    alt={article.thumbnailAlt}
+                    width={article.post.imageWidth ?? 1600}
+                    height={article.post.imageHeight ?? 900}
+                    className="mt-4 h-auto w-full rounded-md"
+                    sizes="(max-width: 900px) 100vw, 900px"
+                  />
+                )}
+
+                <p className="mt-3 text-base leading-relaxed break-keep whitespace-pre-line text-[var(--color-ink)]/80">
                   {article.summary}
                 </p>
                 {article.link && (

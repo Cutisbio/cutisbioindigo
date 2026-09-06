@@ -568,6 +568,9 @@
   "News": {
     "title": "CutisBio 新闻中心",
     "description": "查看合成生物学推动环保时尚的最新消息。",
+    "categoryVideo": "视频",
+    "categoryPost": "动态",
+    "playVideo": "播放视频",
     "articles": [
       {
         "date": "2025-11-19",

@@ -568,6 +568,9 @@
   "News": {
     "title": "CutisBio ニュースルーム",
     "description": "合成生物学で創るエコファッションの最新ニュースをご確認ください。",
+    "categoryVideo": "動画",
+    "categoryPost": "お知らせ",
+    "playVideo": "動画を再生",
     "articles": [
       {
         "date": "2025-11-19",

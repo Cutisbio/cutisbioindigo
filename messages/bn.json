@@ -568,6 +568,9 @@
   "News": {
     "title": "CutisBio নিউজ রুম",
     "description": "সিন্থেটিক বায়োলজির দ্বারা পরিচালিত ইকো-ফ্যাশনের সর্বশেষ খবর দেখুন।",
+    "categoryVideo": "ভিডিও",
+    "categoryPost": "আপডেট",
+    "playVideo": "ভিডিও চালান",
     "articles": [
       {
         "date": "2025-11-19",

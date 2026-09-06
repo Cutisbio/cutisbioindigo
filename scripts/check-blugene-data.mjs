@@ -355,6 +355,55 @@ for (const ref of referenced) {
 }
 
 /* ------------------------------------------------------------------ */
+/* 8. 직접 쓴 소식(content/news-posts.json)                              */
+/* ------------------------------------------------------------------ */
+/* 관리자 화면이 저장하지만 손으로도 고칠 수 있어, 6개 언어가 다 찼는지 여기서 막는다.
+   한 언어라도 비면 그 언어 화면에서만 글이 빈 채로 나온다. */
+let newsPosts = [];
+if (exists('content/news-posts.json')) {
+  try {
+    newsPosts = readJson('content/news-posts.json');
+    if (!Array.isArray(newsPosts)) {
+      errors.push('[소식] content/news-posts.json 은 배열이어야 합니다.');
+      newsPosts = [];
+    }
+  } catch (e) {
+    errors.push(`[소식] content/news-posts.json 을 읽지 못했습니다: ${e.message}`);
+  }
+}
+const seenPostIds = new Set();
+for (const post of newsPosts) {
+  const label = `${post.date || '날짜없음'} "${(post.title?.ko || '제목없음').slice(0, 24)}"`;
+  if (!post.id) errors.push(`[소식] ${label}: id 가 없습니다.`);
+  else if (seenPostIds.has(post.id)) errors.push(`[소식] ${label}: id 가 중복입니다 (${post.id}).`);
+  else seenPostIds.add(post.id);
+
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(post.date || '')) {
+    errors.push(`[소식] ${label}: 날짜는 YYYY-MM-DD 형식이어야 합니다.`);
+  }
+  for (const [name, value] of [['제목', post.title], ['내용', post.summary]]) {
+    const missing = LOCALES.filter((l) => !value?.[l] || !String(value[l]).trim());
+    if (missing.length) errors.push(`[소식] ${label}: ${name}에 ${missing.join(', ')} 가 비어 있습니다.`);
+  }
+  if (post.type === 'youtube') {
+    if (!/^[\w-]{11}$/.test(post.youtubeId || '')) {
+      errors.push(`[소식] ${label}: 유튜브 영상 ID 가 올바르지 않습니다.`);
+    }
+  } else if (post.type === 'post') {
+    if (!post.image) errors.push(`[소식] ${label}: 사진 경로가 없습니다.`);
+    else if (!exists(path.join('public', post.image))) {
+      errors.push(`[소식] ${label}: 사진 파일이 public 에 없습니다 (${post.image}).`);
+    }
+    const missingAlt = LOCALES.filter((l) => !post.imageAlt?.[l] || !String(post.imageAlt[l]).trim());
+    if (missingAlt.length) {
+      warnings.push(`[소식] ${label}: 사진 설명(alt)에 ${missingAlt.join(', ')} 가 비어 있습니다.`);
+    }
+  } else {
+    errors.push(`[소식] ${label}: type 은 youtube 또는 post 여야 합니다.`);
+  }
+}
+
+/* ------------------------------------------------------------------ */
 /* 결과                                                                 */
 /* ------------------------------------------------------------------ */
 const line = (s) => console.log(s);

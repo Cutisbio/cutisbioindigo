@@ -568,6 +568,9 @@
   "News": {
     "title": "CutisBio Haber Odası",
     "description": "Sentetik biyolojiyle şekillenen çevre dostu modanın en son haberlerine göz atın.",
+    "categoryVideo": "Video",
+    "categoryPost": "Güncelleme",
+    "playVideo": "Videoyu oynat",
     "articles": [
       {
         "date": "2025-11-19",

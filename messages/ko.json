@@ -568,6 +568,9 @@
   "News": {
     "title": "CutisBio 뉴스룸",
     "description": "합성생물학으로 만들어가는 친환경 패션의 최신 소식을 확인하세요.",
+    "categoryVideo": "영상",
+    "categoryPost": "소식",
+    "playVideo": "영상 재생",
     "articles": [
       {
         "date": "2025-11-19",
