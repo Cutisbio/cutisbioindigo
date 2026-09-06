@@ -169,9 +169,13 @@ const placeholders = (s) =>
 
 const ko = readJson('messages/ko.json');
 const koLeaves = flattenLeaves(ko);
-// News.articles 는 자동 수집 스크립트가 채우므로 개수·내용 차이를 허용한다.
+// News.articles 의 **내용**은 자동 수집 스크립트가 번역해 채우므로 언어마다 달라도 된다.
+// 다만 **개수**는 반드시 같아야 한다 — 화면이 언어별 배열을 그대로 훑기 때문에,
+// 개수가 어긋나면 그 언어에서만 기사가 빠져 보인다.
+// (실제로 update-news.js 가 번역 도중 끊겨 ko·en·ja 22건 / zh·bn·tr 14건으로 갈린 적이 있다.)
 const isNews = (k) => k.startsWith('News.articles');
 const koKeys = [...koLeaves.keys()].filter((k) => !isNews(k));
+const koArticleCount = (ko.News?.articles || []).length;
 
 for (const locale of LOCALES.filter((l) => l !== 'ko')) {
   const file = `messages/${locale}.json`;
@@ -179,8 +183,17 @@ for (const locale of LOCALES.filter((l) => l !== 'ko')) {
     errors.push(`[i18n] ${file} 이 없습니다.`);
     continue;
   }
-  const otherLeaves = flattenLeaves(readJson(file));
+  const otherJson = readJson(file);
+  const otherLeaves = flattenLeaves(otherJson);
   const otherKeys = new Set([...otherLeaves.keys()].filter((k) => !isNews(k)));
+
+  const otherArticleCount = (otherJson.News?.articles || []).length;
+  if (otherArticleCount !== koArticleCount) {
+    errors.push(
+      `[i18n] ${locale}: 소식 기사가 ${otherArticleCount}건인데 한국어는 ${koArticleCount}건입니다. ` +
+        `번역이 도중에 끊겼을 수 있습니다 — \`node scripts/update-news.js\` 를 다시 실행하세요.`
+    );
+  }
 
   const missing = koKeys.filter((k) => !otherKeys.has(k));
   const extra = [...otherKeys].filter((k) => !koLeaves.has(k));

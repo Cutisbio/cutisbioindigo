@@ -186,15 +186,38 @@ function CandidateReview({
     }
   };
 
+  // 반영은 기사 수에 따라 몇 분이 걸린다. 요청 하나로 끝까지 기다리면 HTTP 가 먼저
+  // 끊겨 화면만 실패로 보이고 뒤에서는 계속 돌아간다. 시작시킨 뒤 진행 상황을 물어본다.
   const publish = async () => {
     setBusy(true);
     setPublishLog('');
-    setStatus('소식란에 반영 중… 새 기사를 번역하느라 1~2분 걸릴 수 있습니다.');
+    setStatus('반영을 시작합니다…');
     try {
       const res = await fetch('/api/admin/publish', { method: 'POST' });
       const data = await res.json();
-      setPublishLog(data.summary || '');
-      setStatus(data.ok ? '반영을 마쳤습니다. 소식 페이지를 확인하세요.' : `실패: ${data.error}`);
+      if (!res.ok) throw new Error(data.error || '시작하지 못했습니다.');
+      if (data.alreadyRunning) setStatus('이미 반영 중입니다. 끝날 때까지 기다려 주세요.');
+
+      // 끝날 때까지 2초마다 확인
+      for (;;) {
+        await new Promise((resolve) => setTimeout(resolve, 2000));
+        const poll = await fetch('/api/admin/publish');
+        const state = await poll.json();
+        setPublishLog((state.log ?? []).join('\n'));
+        if (state.running) {
+          setStatus(`반영 중… ${state.seconds}초 경과 (언어별로 번역하느라 몇 분 걸릴 수 있습니다)`);
+          continue;
+        }
+        const failedLines = (state.log ?? []).filter((l: string) =>
+          /Translation error|skipping|failed/.test(l)
+        );
+        setStatus(
+          state.exitCode === 0 && failedLines.length === 0
+            ? '반영을 마쳤습니다. 소식 페이지를 확인하세요.'
+            : '일부 기사가 번역되지 않았습니다. 아래 기록을 확인하고 한 번 더 눌러 주세요 (실패한 것만 다시 시도합니다).'
+        );
+        break;
+      }
       onSaved();
     } catch (error) {
       setStatus((error as Error).message);
