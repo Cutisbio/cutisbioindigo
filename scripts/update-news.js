@@ -4,7 +4,25 @@ const Parser = require('rss-parser');
 const translate = require('google-translate-api-x');
 
 const parser = new Parser();
-const searchUrl = 'https://news.google.com/rss/search?q=%ED%81%90%ED%8B%B0%EC%8A%A4%EB%B0%94%EC%9D%B4%EC%98%A4&hl=ko&gl=KR&ceid=KR:ko';
+
+// Google News is searched once per topic, always paired with the company name, and the
+// results are merged. Searching the company name alone pulled in unrelated pharma and
+// cosmetics coverage; these four pairs keep the newsroom on the indigo business.
+const NEWS_COMPANY = '큐티스바이오';
+const NEWS_TOPICS = ['인디고', '염료', '데님', '패션'];
+const searchUrls = NEWS_TOPICS.map(
+  (topic) =>
+    `https://news.google.com/rss/search?q=${encodeURIComponent(`${NEWS_COMPANY} ${topic}`)}&hl=ko&gl=KR&ceid=KR:ko`
+);
+
+// Google broadens a query when it finds few exact matches, so "큐티스바이오 패션" also
+// returns generic Kolon FnC corporate stories. Keep an item only when the company or one
+// of the subject words actually appears in it. Verified against the live feed: this keeps
+// the indigo/dyeing coverage and drops the unrelated fashion-business items.
+const RELEVANT = /큐티스바이오|cutisbio|인디고|염료|염색|데님/i;
+
+/** `--dry-run` 이면 수집 결과만 출력하고 messages/*.json 을 건드리지 않는다 */
+const DRY_RUN = process.argv.includes('--dry-run');
 
 const locales = ['ko', 'en', 'ja', 'zh', 'tr', 'bn'];
 const targetLanguages = {
@@ -97,17 +115,27 @@ async function translateText(text, targetLang) {
 }
 
 async function updateNews() {
-  console.log('Fetching RSS feed...');
-  let feed;
-  try {
-    feed = await parser.parseURL(searchUrl);
-  } catch (err) {
-    console.error('Error fetching RSS:', err);
-    feed = { items: [] };
+  // Fetch every topic feed. One failing feed must not lose the others, and if all of them
+  // fail we simply keep whatever is already published (see the merge step below).
+  const rssItems = [];
+  let feedFailures = 0;
+  for (let i = 0; i < searchUrls.length; i++) {
+    const label = `${NEWS_COMPANY} ${NEWS_TOPICS[i]}`;
+    try {
+      const feed = await parser.parseURL(searchUrls[i]);
+      const items = feed.items || [];
+      console.log(`Fetched "${label}": ${items.length} items`);
+      rssItems.push(...items);
+    } catch (err) {
+      feedFailures++;
+      console.error(`Error fetching "${label}":`, err.message);
+    }
+  }
+  if (feedFailures === searchUrls.length) {
+    console.error('All news searches failed; keeping the previously published articles.');
+    process.exitCode = 1;
   }
 
-  // Get RSS items
-  const rssItems = feed.items || [];
   let newKoArticles = [];
 
   for (let item of rssItems) {
@@ -121,6 +149,12 @@ async function updateNews() {
 
     // Filter out Daewoong exclusive articles (mentions Daewoong Bio/Pharm but not CutisBio in title)
     if ((cleanTitle.includes('대웅바이오') || cleanTitle.includes('대웅제약')) && !cleanTitle.includes('큐티스바이오')) {
+      continue;
+    }
+
+    // Drop items the search returned only by broadening the query (see RELEVANT above)
+    if (!RELEVANT.test(`${cleanTitle} ${item.contentSnippet || ''}`)) {
+      console.log(`  skipped (off topic): ${cleanTitle}`);
       continue;
     }
 
@@ -173,6 +207,18 @@ async function updateNews() {
   mergedArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
   const finalArticles = mergedArticles.filter(a => new Date(a.date) >= new Date('2020-06-01'));
 
+  // `node scripts/update-news.js --dry-run` shows what the searches would publish without
+  // touching messages/*.json and without calling the translation API. Use it after changing
+  // NEWS_TOPICS or RELEVANT.
+  if (DRY_RUN) {
+    const existingLinks = new Set(existingKoArticles.map((a) => a.link));
+    const added = finalArticles.filter((a) => !existingLinks.has(a.link));
+    console.log(`\n[dry-run] 수집 ${newKoArticles.length}건 · 기존 ${existingKoArticles.length}건 · 최종 ${finalArticles.length}건`);
+    console.log(`[dry-run] 이번에 새로 추가될 기사 ${added.length}건`);
+    for (const a of added) console.log(`   + ${a.date}  ${a.title}`);
+    console.log('[dry-run] 파일을 쓰지 않고 종료합니다.');
+    return;
+  }
 
   // Update logic for all locales
   for (const locale of locales) {

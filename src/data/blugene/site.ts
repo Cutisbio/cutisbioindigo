@@ -62,8 +62,11 @@ export const ROUTES = [
 
 /**
  * 상단 메뉴.
- * 제품·근거를 앞에 두고 회사 소개를 마지막에 둔다.
- * 라벨은 messages 의 `Nav.<key>` 에서 온다 (ko: 큐티스바이오 소개 / en: About CutisBio).
+ * 제품·근거를 앞에 두고 회사·소식을 뒤에 둔다.
+ * 라벨은 messages 의 `Nav.<key>` 에서 온다 (ko: 회사소개 / en: About Us).
+ *
+ * ⚠ 항목을 늘리면 라벨이 긴 언어(영어·튀르키예어)에서 헤더를 넘칠 수 있다.
+ *   추가한 뒤에는 6개 언어 × 1024/1280/1440px 폭을 반드시 실측한다.
  */
 export const PRIMARY_NAV = [
   { key: 'brand', href: '/brand' },
@@ -71,11 +74,11 @@ export const PRIMARY_NAV = [
   { key: 'dyeingPrinting', href: '/dyeing-printing' },
   { key: 'dataCertifications', href: '/data-certifications' },
   { key: 'about', href: '/about' },
+  { key: 'news', href: '/news' },
 ] as const;
 
 /** 푸터 전용 항목. 상단 메뉴와 중복되지 않게 유지한다 (푸터는 PRIMARY_NAV + FOOTER_NAV 를 이어 붙인다). */
 export const FOOTER_NAV = [
-  { key: 'news', href: '/news' },
   { key: 'blog', href: '/blog' },
   { key: 'contact', href: '/contact' },
 ] as const;

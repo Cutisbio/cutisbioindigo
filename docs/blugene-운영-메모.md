@@ -106,12 +106,44 @@
 
 ## 4. 소식(뉴스)
 
-`/ko/news` 의 기사 목록은 매달 GitHub Actions 가 자동으로 수집·번역합니다
+`/ko/news` 의 기사 목록은 **매달 1일** GitHub Actions 가 자동으로 수집·번역합니다
 (`.github/workflows/monthly-news-update.yml` → `scripts/update-news.js`).
+
+### 무엇을 검색하나
+
+회사 이름과 주제어를 **짝지어** 4번 검색하고 결과를 합칩니다.
+
+| 검색어 |
+|---|
+| 큐티스바이오 인디고 |
+| 큐티스바이오 염료 |
+| 큐티스바이오 데님 |
+| 큐티스바이오 패션 |
+
+주제를 바꾸려면 `scripts/update-news.js` 위쪽의 `NEWS_TOPICS` 를 고칩니다.
+
+검색어가 적게 걸리면 Google 이 범위를 넓혀서 관련 없는 기사(예: 코오롱FnC 일반 회사 소식)까지
+같이 내려줍니다. 그래서 제목·요약에 `큐티스바이오 / CutisBio / 인디고 / 염료 / 염색 / 데님` 중
+하나가 실제로 들어 있는 기사만 싣습니다(`RELEVANT`).
+
+### 바꾸기 전에 확인하는 법
+
+`NEWS_TOPICS` 나 `RELEVANT` 를 고친 뒤에는 아래를 실행하세요.
+**무엇이 실릴지만 보여 주고 파일은 건드리지 않습니다.**
+
+```bash
+node scripts/update-news.js --dry-run
+```
+
+### 그 밖에
 
 - 손으로 고칠 일은 거의 없습니다.
 - 번역이 실패하면 **이전 번역을 유지하거나 그 기사를 건너뜁니다.** 한국어가 다른 언어 화면에 새지 않습니다.
 - 직접 기사를 추가하려면 `scripts/update-news.js` 위쪽의 `hardcodedNews` 목록에 넣으세요.
+- 이미 실린 기사는 검색 결과에서 사라져도 그대로 남습니다(Google News 는 최근 것만 돌려줍니다).
+  빼고 싶은 기사가 있으면 `messages/*.json` 의 `News.articles` 에서 **6개 언어 모두** 지워야 합니다.
+- 자동 수집 기사의 요약은 Google News 가 본문 대신 "제목 + 매체명" 을 주는 탓에
+  제목과 거의 같습니다. 중요한 기사는 `hardcodedNews` 에 요약을 직접 써 넣는 편이 낫습니다.
 
 ---
 

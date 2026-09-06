@@ -44,6 +44,7 @@ const SHOTS = [
   ['/ko/data-certifications', 'desktop-ko-data', 1440, 900, true],
   ['/ko/contact', 'desktop-ko-contact', 1440, 900, true],
   ['/ko/about', 'desktop-ko-about', 1440, 900, true],
+  ['/ko/news', 'desktop-ko-news', 1440, 900, true],
   // 없는 주소 — 언어별 404 가 사이트 껍데기 안에서 나오는지 확인용
   ['/ko/no-such-page', 'desktop-ko-404', 1440, 900, true],
   ['/ko', 'mobile390-ko-home', 390, 844, true],
