@@ -8,8 +8,10 @@
  *  모바일 폭이 제대로 반영되지 않는다.)
  *
  * 사용:
- *   node scripts/capture-screens.mjs [baseUrl] [outDir]
- *   기본값: http://localhost:3001  docs/screenshots
+ *   node scripts/capture-screens.mjs [baseUrl] [outDir] [이름필터]
+ *   기본값: http://localhost:3001  docs/screenshots  (필터 없으면 전체)
+ *   예) node scripts/capture-screens.mjs http://localhost:3000 docs/screenshots about
+ *       → 파일명에 'about' 이 들어간 화면만 다시 찍는다(나머지 파일은 건드리지 않는다).
  *
  * 이 스크립트는 개발·검증용이며 빌드나 배포에 관여하지 않는다.
  */
@@ -21,6 +23,8 @@ import os from 'node:os';
 
 const BASE = process.argv[2] || 'http://localhost:3001';
 const OUT = path.resolve(process.argv[3] || 'docs/screenshots');
+/** 파일명 부분 일치 필터. 없으면 전체를 찍는다. */
+const ONLY = process.argv[4] || '';
 
 const CHROME_CANDIDATES = [
   'C:/Program Files/Google/Chrome/Application/chrome.exe',
@@ -39,7 +43,11 @@ const SHOTS = [
   ['/ko/dyeing-printing', 'desktop-ko-dyeing-printing', 1440, 900, true],
   ['/ko/data-certifications', 'desktop-ko-data', 1440, 900, true],
   ['/ko/contact', 'desktop-ko-contact', 1440, 900, true],
+  ['/ko/about', 'desktop-ko-about', 1440, 900, true],
+  // 없는 주소 — 언어별 404 가 사이트 껍데기 안에서 나오는지 확인용
+  ['/ko/no-such-page', 'desktop-ko-404', 1440, 900, true],
   ['/ko', 'mobile390-ko-home', 390, 844, true],
+  ['/ko/about', 'mobile390-ko-about', 390, 844, true],
   ['/ko/dyeing-printing', 'mobile390-ko-dyeing-printing', 390, 844, true],
   ['/ko/data-certifications', 'mobile390-ko-data', 390, 844, true],
   ['/ko/contact', 'mobile390-ko-contact', 390, 844, true],
@@ -153,6 +161,7 @@ async function main() {
   const results = [];
 
   for (const [route, name, width, height, fullPage] of SHOTS) {
+    if (ONLY && !name.includes(ONLY)) continue;
     const mobile = width < 768;
     await page.send('Emulation.setDeviceMetricsOverride', {
       width,

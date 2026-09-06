@@ -97,7 +97,10 @@ OEKO-TEX ECO PASSPORT(E2AGHSST4) 문서에 적힌 유효기한이 2026-10-31 이
 
 ## 4. 화면 캡처
 
-경로: `docs/screenshots/` (검증용으로 JPEG 압축, 총 4.2 MB)
+경로: `docs/screenshots/` (검증용으로 JPEG 압축)
+
+특정 화면만 다시 찍으려면 파일명 일부를 세 번째 인자로 넘긴다 —
+`node scripts/capture-screens.mjs http://localhost:3000 docs/screenshots about`
 
 | 파일 | 화면 | 뷰포트 |
 |---|---|---|
@@ -107,7 +110,10 @@ OEKO-TEX ECO PASSPORT(E2AGHSST4) 문서에 적힌 유효기한이 2026-10-31 이
 | `desktop-ko-dyeing-printing.jpg` | 염색·프린팅 (전체) | 1440px |
 | `desktop-ko-data.jpg` | 데이터·인증 (전체) | 1440px |
 | `desktop-ko-contact.jpg` | 문의 (전체) | 1440px |
+| `desktop-ko-about.jpg` | 큐티스바이오 소개 (전체) | 1440px |
+| `desktop-ko-404.jpg` | 없는 주소 안내 화면 | 1440px |
 | `mobile390-ko-home.jpg` | 홈 | 390px |
+| `mobile390-ko-about.jpg` | 큐티스바이오 소개 | 390px |
 | `mobile390-ko-dyeing-printing.jpg` | 염색·프린팅 | 390px |
 | `mobile390-ko-data.jpg` | 데이터·인증 | 390px |
 | `mobile390-ko-contact.jpg` | 문의 | 390px |
@@ -272,8 +278,13 @@ Next 16.1 부터 개발용 Turbopack 캐시가 기본 활성이라 `.next/dev/ca
 | `/nope.foo` | 404 | 루트 안내 화면, `<html>` 1개, 하이드레이션 오류 없음, `noindex` |
 | 기존 10개 경로 × 6개 언어 | 200 | 모두 SSG 유지 (`ƒ /[locale]/[...rest]` 만 온디맨드) |
 
-남은 사소한 항목: 프로덕션에서 404 응답의 `<title>` 이 기본(홈) 제목으로 나온다.
-상태 코드 404 와 `noindex` 는 정상이므로 색인에는 영향이 없다.
+남은 사소한 항목 두 가지 — 둘 다 화면·색인에는 영향이 없다.
+
+- 프로덕션에서 404 응답의 `<title>` 이 기본(홈) 제목으로 나온다. 상태 코드 404 와 `noindex` 는 정상이다.
+- **`npm run dev` 로 404 화면을 열면** 개발 도구 배지에 이슈 1건이 뜨고 콘솔에
+  `Failed to execute 'measure' on 'Performance': 'LocaleCatchAll' cannot have a negative time stamp` 가 찍힌다.
+  React 개발 빌드의 서버 컴포넌트 시간 측정 계측이 내는 것으로, `next build` → `next start` 로 확인한
+  프로덕션에서는 나오지 않는다(같은 화면에서 콘솔 오류 없음).
 
 ---
 
