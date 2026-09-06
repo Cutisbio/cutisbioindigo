@@ -34,7 +34,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   const t = await getTranslations({ locale, namespace: 'About' });
   const tNav = await getTranslations({ locale, namespace: 'Nav' });
   const history = t.raw('historyList') as { year: string; event: string }[];
-  const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/logo.png`);
+  const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/brand/cutisbio-logo.png`);
 
   const areas = [
     { title: t('medicalTitle'), text: t('medicalText'), highlight: false },
@@ -48,16 +48,16 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 
       <section className="w-full border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-          <div className="relative mb-10 h-16 w-52 sm:h-20 sm:w-64">
-            <Image
-              src="/logo.png"
-              alt={BRAND.companyLegal}
-              fill
-              sizes="256px"
-              className="object-contain object-left"
-              preload
-            />
-          </div>
+          {/* 원본 로고 SVG. 가로세로비 296.05:62.35 ≈ 4.7482:1 을 그대로 지킨다 */}
+          <Image
+            src="/brand/cutisbio-logo.svg"
+            alt={BRAND.companyLegal}
+            width={247}
+            height={52}
+            unoptimized
+            preload
+            className="mb-10 h-auto w-[200px] sm:w-[247px]"
+          />
           <SectionHeading headingLevel="h1" title={t('title')} body={t('missionText')} size="lg" />
         </div>
       </section>

@@ -60,16 +60,21 @@ export const ROUTES = [
   { path: '/blog/sustainable-indigo', priority: 0.5, changeFrequency: 'yearly' as const },
 ];
 
-/** 상단 메뉴 — 간결하게 5개. 회사 소개·소식은 푸터에서 접근한다. */
+/**
+ * 상단 메뉴.
+ * 제품·근거를 앞에 두고 회사 소개를 마지막에 둔다.
+ * 라벨은 messages 의 `Nav.<key>` 에서 온다 (ko: 큐티스바이오 소개 / en: About CutisBio).
+ */
 export const PRIMARY_NAV = [
   { key: 'brand', href: '/brand' },
   { key: 'technology', href: '/technology' },
   { key: 'dyeingPrinting', href: '/dyeing-printing' },
   { key: 'dataCertifications', href: '/data-certifications' },
+  { key: 'about', href: '/about' },
 ] as const;
 
+/** 푸터 전용 항목. 상단 메뉴와 중복되지 않게 유지한다 (푸터는 PRIMARY_NAV + FOOTER_NAV 를 이어 붙인다). */
 export const FOOTER_NAV = [
-  { key: 'about', href: '/about' },
   { key: 'news', href: '/news' },
   { key: 'blog', href: '/blog' },
   { key: 'contact', href: '/contact' },

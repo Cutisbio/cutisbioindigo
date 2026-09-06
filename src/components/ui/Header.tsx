@@ -12,6 +12,10 @@ import { PRIMARY_NAV } from '@/data/blugene/site';
  *
  * 밝은 콘텐츠 위에서도 항상 읽히도록 **불투명 배경**을 유지한다(투명 헤더를 쓰지 않는다).
  * 언어 선택기는 데스크톱·모바일 모두 오른쪽 상단에 항상 보인다.
+ *
+ * 가로 메뉴는 xl(1280px) 이상에서만 편다. 메뉴가 5개이고 언어별 라벨 길이가 달라
+ * (영어 About CutisBio / 튀르키예어 CutisBio hakkında 등) 1024px 에서는 넘쳤다.
+ * 그 아래 폭에서는 햄버거 메뉴로 같은 항목을 모두 노출한다.
  */
 export default function Header() {
   const t = useTranslations('Nav');
@@ -55,7 +59,7 @@ export default function Header() {
         <Wordmark size="md" label={t('homeAria')} />
 
         {/* 데스크톱 메뉴 */}
-        <ul className="hidden items-center gap-7 lg:flex">
+        <ul className="hidden items-center gap-6 xl:flex">
           {PRIMARY_NAV.map((item) => (
             <li key={item.key}>
               <Link
@@ -93,7 +97,7 @@ export default function Header() {
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? t('closeMenu') : t('openMenu')}
-            className="-mr-1 rounded-md p-2 text-[var(--color-ink)] lg:hidden"
+            className="-mr-1 rounded-md p-2 text-[var(--color-ink)] xl:hidden"
           >
             <svg
               aria-hidden="true"
@@ -118,7 +122,7 @@ export default function Header() {
       {open && (
         <div
           id="mobile-menu"
-          className="border-t border-[color:var(--color-washed)] bg-[var(--color-ivory)] lg:hidden"
+          className="border-t border-[color:var(--color-washed)] bg-[var(--color-ivory)] xl:hidden"
         >
           <ul className="mx-auto flex max-w-[1280px] flex-col px-4 py-3 sm:px-6">
             {PRIMARY_NAV.map((item) => (

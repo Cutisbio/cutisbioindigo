@@ -51,7 +51,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'DataHub' });
-  const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/logo.png`);
+  const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/brand/cutisbio-logo.png`);
 
   return (
     <>

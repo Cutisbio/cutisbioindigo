@@ -62,8 +62,13 @@
 
 | 웹 경로 | 용도 | 크기 |
 |---|---|---|
-| `/brand/cutisbio-logo.svg` | 밝은 배경 — 헤더 · 브랜드 페이지 락업 | viewBox 296.05 × 62.35 (약 4.75 : 1) |
+| `/brand/cutisbio-logo.svg` | 밝은 배경 — 헤더 락업 · 브랜드 페이지 락업 · **회사 소개 페이지 상단** | viewBox 296.05 × 62.35 (약 4.75 : 1) |
 | `/brand/cutisbio-logo-white.svg` | 어두운 배경 — 푸터 (딥 인디고 위) | 같음 |
+| `/brand/cutisbio-logo.png` | **구조화 데이터(JSON-LD) 전용** — Organization.logo · Article.publisher.logo | 595 × 128 (흰 배경) |
+
+`.png` 는 화면에 쓰지 않는다. schema.org 로고는 검색엔진이 읽는 값이고 Google 은 래스터(JPG/PNG/GIF)를
+요구하므로, 같은 SVG 를 헤드리스 Chrome 으로 592px 폭에 렌더링한 뒤 내용 경계로 잘라 만들었다.
+기존 `/logo.png` 는 여백이 매우 넓은 판본이라 더 이상 참조하지 않는다(파일은 저장소에 남아 있다).
 
 원본에서 손댄 것은 두 가지뿐이며 **형태는 바꾸지 않았다.**
 
@@ -77,7 +82,9 @@
 어두운 배경용 판본은 위와 같은 형태에 **색만 흰색 단색으로** 바꿨다(로고 단색 사용의 일반적인 처리).
 방패 안쪽의 얇은 검정 헤어라인(`.st2`)은 흰 실루엣에서 의미가 없어 지웠다.
 
-표시 크기는 `src/components/blugene/Wordmark.tsx` 의 `SCALE` 한 곳에서 관리한다.
+락업(헤더 · 푸터 · 브랜드 페이지)의 표시 크기는 `src/components/blugene/Wordmark.tsx` 의 `SCALE` 한 곳에서 관리한다.
+회사 소개 페이지 상단의 단독 로고는 `about/page.tsx` 에서 `w-[200px] sm:w-[247px] h-auto` 로 지정하며,
+`height` 를 고정하지 않아 원본 비율이 그대로 유지된다.
 로고 안에서 글자는 방패보다 낮아(약 69%) 보이므로, 글자가 읽히도록 높이를 조금 넉넉히 잡았다
 (헤더 18px · 브랜드 페이지 24px · 작은 크기 13px).
 
@@ -88,7 +95,7 @@
 
 | 웹 경로 | 성격 | 용도 |
 |---|---|---|
-| `/logo.png` | 브랜드 이미지 | 회사 소개 페이지 상단의 CutisBio 로고 (기존 래스터 파일) |
+| `/logo.png` | 브랜드 이미지 | **현재 미사용.** 여백이 넓은 예전 래스터 판본. 회사 소개 페이지와 구조화 데이터 모두 `/brand/cutisbio-logo.*` 로 교체됨 |
 | `/4ZDHC.png`, `/oeko-tex-eco-passport-logo.png`, `/2BioPreferredLabel.PNG`, `/1okbiobased.png` | 인증 마크 | 인증 카드의 마크. 정식 인증 마크 파일이다. (`3OEKO-TEX® Eco Passport_logo.png` → 특수문자·공백 없는 이름으로 변경) |
 | `/test.png` | 시험 사진 | 추가 원단 평가 사례 (일본어 라벨). 출처 미확인을 화면에 명시하고 카탈로그 시험과 분리해 표시 |
 | `/favicon.svg`, `/favicon.ico` | 아이콘 | 그대로 |

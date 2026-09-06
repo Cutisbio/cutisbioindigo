@@ -39,7 +39,7 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
   const t = await getTranslations({ locale, namespace: 'News' });
   const tCommon = await getTranslations({ locale, namespace: 'Common' });
   const articles = t.raw('articles') as Article[];
-  const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/logo.png`);
+  const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/brand/cutisbio-logo.png`);
 
   return (
     <>

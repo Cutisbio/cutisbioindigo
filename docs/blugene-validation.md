@@ -225,7 +225,10 @@ OEKO-TEX ECO PASSPORT(E2AGHSST4) 문서에 적힌 유효기한이 2026-10-31 이
 |---|---|
 | CutisBio 로고 적용 | 헤더·푸터·브랜드 페이지의 `by CutisBio` 를 제공받은 실제 로고 SVG 로 교체. 밝은 배경은 원본 색, 어두운 배경(푸터)은 단색 흰색 판본. 원본 viewBox 의 여백을 실측 bbox 기준으로 잘라내고 Illustrator 잔재 흰색 도형만 제거했으며 형태는 유지 |
 | 표현 통일 | 화면 문구의 `생물공학` 을 **`합성생물학`** 으로 변경 (6개 언어 각 3곳). 영문 eyebrow `BIOTECHNOLOGY` → `SYNTHETIC BIOLOGY` |
-| 재검증 | typecheck · lint · check:blugene · build(65개 페이지) 통과, 360/390/768/1440px 에서 가로 넘침 없음 |
+| 상단 메뉴에 회사 소개 추가 | `PRIMARY_NAV` 에 `/about` 추가. 라벨은 ko `큐티스바이오 소개` / en `About CutisBio` / ja `CutisBio について` / zh `关于 CutisBio` / bn `CutisBio পরিচিতি` / tr `CutisBio hakkında`. 푸터에서는 중복을 없앴다 |
+| 가로 메뉴 기준점 조정 | 메뉴가 5개로 늘면서 **1024px 에서 en · ja · bn · tr 라벨이 헤더를 넘쳤다**(예: en 1007px / 가용 945px). 기준점을 `lg`(1024) → `xl`(1280)로 올리고 간격을 gap-7 → gap-6 으로 줄였다. 재측정 결과 1280px 최악값이 en 991px / 가용 1201px 로 여유가 생겼고, 1280px 미만에서는 햄버거 메뉴가 같은 6개 항목을 모두 노출한다 |
+| 회사 소개 페이지 로고 | 여백이 넓은 `/logo.png`(3.25:1 상자에 object-contain) → 원본 SVG 를 4.7482:1 비율 그대로. 구조화 데이터용 래스터도 SVG 에서 새로 생성 |
+| 재검증 | typecheck · lint · check:blugene · build(65개 페이지) 통과. 6개 언어 × 390/1024/1280/1440px 에서 가로 넘침 없음(전수 측정), 캡처 17장 재생성 |
 
 각 언어의 대응 표기: en `synthetic biology` / ja `合成生物学` / zh `合成生物学` /
 bn `সিন্থেটিক বায়োলজি` / tr `sentetik biyoloji` — 기존 Hero 본문에서 쓰던 용어와 일치시켰다.

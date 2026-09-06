@@ -46,7 +46,7 @@ export default async function SustainableIndigoPage({
     image: [`${SITE_URL}/blugene/brand/og-cover.jpg`],
     authorName: `${BRAND.company} R&D Team`,
     publisherName: BRAND.company,
-    publisherLogo: `${SITE_URL}/logo.png`,
+    publisherLogo: `${SITE_URL}/brand/cutisbio-logo.png`,
     datePublished: '2026-04-07T00:00:00Z',
     dateModified: '2026-09-06T00:00:00Z',
     url: canonicalUrl(locale, '/blog/sustainable-indigo'),

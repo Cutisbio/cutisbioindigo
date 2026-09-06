@@ -37,6 +37,11 @@
 | 데이터·인증 페이지 | `DataHub`, `Certifications` |
 | 문의 화면 | `Inquiry`, `Contact` |
 | 상단 메뉴 · 푸터 | `Nav`, `Footer` |
+
+상단 메뉴에 **항목을 넣거나 뺄 때**는 `src/data/blugene/site.ts` 의 `PRIMARY_NAV` 를 고칩니다.
+같은 항목을 `FOOTER_NAV` 에도 넣으면 푸터에 두 번 나오니 주의하세요(푸터는 두 목록을 이어 붙입니다).
+항목을 늘렸다면 폭이 가장 긴 언어(보통 영어·튀르키예어)에서 메뉴가 넘치지 않는지
+`npm run screens` 로 확인하세요. 현재 가로 메뉴는 화면 폭 1280px 이상에서만 펼쳐집니다.
 | 브랜드 페이지 | `Brand` |
 | 기술 페이지 | `Technology` |
 | 회사 소개 · 소식 · 블로그 | `About`, `News`, `Blog`, `Tech` |

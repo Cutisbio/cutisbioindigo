@@ -30,7 +30,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
   const t = await getTranslations({ locale, namespace: 'Contact' });
   const tInq = await getTranslations({ locale, namespace: 'Inquiry' });
-  const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/logo.png`);
+  const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/brand/cutisbio-logo.png`);
 
   return (
     <>
