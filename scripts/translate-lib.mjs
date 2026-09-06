@@ -89,7 +89,13 @@ export function findStale(koLeaves, state, locale) {
   return stale;
 }
 
-const ENGINE_FILES = { claude: 'claude.mjs', openai: 'openai.mjs', gemini: 'gemini.mjs' };
+const ENGINE_FILES = {
+  claude: 'claude.mjs',
+  openai: 'openai.mjs',
+  gemini: 'gemini.mjs',
+  // 전용 번역 엔진. 앞의 셋과 달리 규칙을 지시할 수 없다 — google-mt.mjs 주석 참고.
+  'google-mt': 'google-mt.mjs',
+};
 
 export async function loadEngine(name) {
   const file = ENGINE_FILES[name];

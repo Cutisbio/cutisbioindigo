@@ -44,3 +44,7 @@ next-env.d.ts
 
 # 이전 Vite 템플릿 잔재 (빈 node_modules 폴더만 남아 있음)
 /geo-template/
+
+# GCP 업로드용 용어집 TSV — `npm run glossary:export` 로 언제든 다시 만듭니다.
+# 원본(content/glossary.json)만 관리하면 되고, 이 파일이 낡는 일을 막습니다.
+/content/glossary-gcp/

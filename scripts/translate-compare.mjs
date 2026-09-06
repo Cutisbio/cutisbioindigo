@@ -1,12 +1,15 @@
 #!/usr/bin/env node
 /**
- * 번역 엔진 비교 — 같은 문장을 세 엔진에 똑같이 보내고 결과를 나란히 놓는다.
+ * 번역 엔진 비교 — 같은 문장을 여러 엔진에 보내고 결과를 나란히 놓는다.
  * =========================================================================
- * 세 엔진 모두 **같은 용어집과 같은 지시문**을 받는다(`translate-engines/prompt.mjs`).
- * 그래야 모델 차이만 남는다.
+ * 언어 모델(claude · openai · gemini)은 **같은 용어집과 같은 지시문**을 받는다
+ * (`translate-engines/prompt.mjs`). 그래야 모델 차이만 남는다.
+ *
+ * `google-mt`(Cloud Translation v3)는 전용 번역 엔진이라 문장 규칙을 받을 수 없다.
+ * 그 차이는 보고서 맨 위 표에 그대로 적힌다 — 감추지 않는다.
  *
  * 사용:
- *   node scripts/translate-compare.mjs                       세 엔진 · en·ja·zh·bn·tr
+ *   node scripts/translate-compare.mjs                       가능한 엔진 전부 · en·ja·zh·bn·tr
  *   node scripts/translate-compare.mjs --locale=bn           한 언어만
  *   node scripts/translate-compare.mjs --engines=claude,openai
  *   node scripts/translate-compare.mjs --limit=6             문장 수 줄이기
@@ -100,16 +103,34 @@ const lines = [
   `생성: ${new Date().toISOString().slice(0, 10)}`,
   `엔진: ${engines.map((e) => `**${e.label}** (\`${e.model()}\`)`).join(' · ')}`,
   '',
-  '세 엔진 모두 `content/glossary.json` 의 같은 용어집과 같은 지시문을 받았습니다.',
   '자동 채점이 아닙니다 — 각 문장 아래 **볼 것** 을 보고 직접 판단하세요.',
+  '',
+  '## 각 엔진이 무엇을 지시받았나',
+  '',
+  '조건이 같아야 비교가 성립하지만, **엔진에 따라 받을 수 있는 것이 다릅니다.**',
+  '언어 모델은 용어집과 규칙을 지시문으로 받고, 전용 번역 엔진은 용어집만 받습니다.',
+  '',
+  '| 엔진 | 모델 | 용어 고정 | 문장 규칙 |',
+  '|---|---|---|---|',
+  ...engines.map((e) => {
+    const cap = e.capabilities ?? { glossary: true, rules: true };
+    const termControl = cap.glossary === true ? '○ 지시문' : cap.glossary === false ? '**×**' : '○ 리소스';
+    const rules = cap.rules === false ? '**× 전달 불가**' : '○ 10가지';
+    return `| ${e.label} | \`${e.model()}\` | ${termControl} | ${rules} |`;
+  }),
+  '',
+  ...engines
+    .filter((e) => e.capabilities?.note)
+    .map((e) => `> **${e.label}**: ${e.capabilities.note}`),
   '',
   '## 토큰과 시간',
   '',
-  '| 엔진 | 모델 | 입력 토큰 | 출력 토큰 | 소요 | 실패 |',
-  '|---|---|---|---|---|---|',
+  '| 엔진 | 입력 | 출력 | 소요 | 실패 |',
+  '|---|---|---|---|---|',
   ...engines.map((e) => {
     const s = stats[e.id] ?? { input: 0, output: 0, ms: 0, failures: 0 };
-    return `| ${e.label} | \`${e.model()}\` | ${s.input.toLocaleString()} | ${s.output.toLocaleString()} | ${Math.round(s.ms / 1000)}초 | ${s.failures} |`;
+    const unit = e.capabilities?.rules === false ? '자' : '토큰';
+    return `| ${e.label} | ${s.input.toLocaleString()}${unit} | ${s.output.toLocaleString()} | ${Math.round(s.ms / 1000)}초 | ${s.failures} |`;
   }),
   '',
 ];

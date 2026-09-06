@@ -58,11 +58,25 @@ npm run translate:compare
 `content/translation-eval.json` 의 문장 24개를 **세 엔진에 똑같이** 보내고
 결과를 `docs/translation-comparison.md` 에 나란히 씁니다.
 
-| 엔진 | 파일 | 키 | 기본 모델 |
+| 엔진 | 파일 | 인증 | 기본 모델 |
 |---|---|---|---|
 | Claude | `scripts/translate-engines/claude.mjs` | `ANTHROPIC_API_KEY` | `claude-opus-5` |
 | OpenAI | `scripts/translate-engines/openai.mjs` | `OPENAI_API_KEY` | `gpt-4o` |
 | Gemini | `scripts/translate-engines/gemini.mjs` | `GEMINI_API_KEY` | `gemini-2.5-pro` |
+| Google Cloud Translation v3 | `scripts/translate-engines/google-mt.mjs` | **GCP 인증** (아래) | v3 |
+
+### 넷이 같은 조건이 아닙니다
+
+앞의 셋은 언어 모델이라 용어집과 규칙을 **지시문으로** 받습니다. Cloud Translation v3 는
+전용 번역 엔진이라 받을 수 있는 것이 `glossary` 하나뿐입니다.
+
+| | 용어 고정 | 문장 규칙 10가지 |
+|---|---|---|
+| Claude · OpenAI · Gemini | 지시문 | ○ |
+| Cloud Translation v3 | GCP glossary 리소스 | **× 전달할 방법 없음** |
+
+**이 차이 자체가 비교의 결과물입니다.** 보고서 맨 위 표에 그대로 적히니, 결과를 보실 때
+"불검출을 0 으로 옮기지 마라" 같은 규칙을 못 받은 엔진이라는 점을 감안하세요.
 
 - 지시문은 `translate-engines/prompt.mjs` 한 곳에서 만듭니다. **세 엔진이 같은 것을 받습니다** —
   프롬프트가 다르면 비교가 성립하지 않습니다.
@@ -79,17 +93,70 @@ npm run translate:compare
 **벵골어와 튀르키예어가 승부처입니다** — 영어 · 일본어 · 중국어는 어느 엔진이든 무난하고,
 전문 용어가 무너지는 곳은 이 두 언어입니다.
 
-### Google 은 왜 Gemini 인가
+### Google 이 둘인 이유
 
-Claude · OpenAI 와 **같은 조건으로 겨루게** 하기 위해서입니다. 세 엔진 모두 같은 용어집과
-같은 규칙을 지시받습니다.
-
-Google 의 전용 번역 제품인 **Cloud Translation v3** 는 성격이 다릅니다. 용어집(glossary)은
-있지만 "불검출을 0 으로 옮기지 마라" 같은 규칙을 지시할 방법이 없고, API 키가 아니라
-GCP 서비스 계정 인증이 필요합니다. 그쪽도 비교하고 싶으면 어댑터를 하나 더 붙이면 됩니다.
+**Gemini** 는 언어 모델이라 Claude · OpenAI 와 같은 조건으로 겨룹니다.
+**Cloud Translation v3** 는 Google 의 전용 번역 제품으로, 성격이 다릅니다. 둘 다 넣어
+"같은 회사의 범용 모델과 전용 번역 엔진 중 무엇이 이 사이트에 맞는지"를 볼 수 있게 했습니다.
 
 **DeepL 은 후보에서 뺐습니다 — 벵골어를 지원하지 않습니다.** 품질은 좋지만
 6개 언어 중 하나가 빠지면 결국 두 번째 엔진을 붙여야 합니다.
+
+## Cloud Translation v3 준비
+
+다른 셋과 달리 **API 키만으로는 안 됩니다.** v3 는 OAuth 를 요구합니다.
+이것이 실질적인 도입 장벽 차이입니다.
+
+### 1. 인증
+
+둘 중 하나를 고릅니다.
+
+```bash
+# (권장) 서비스 계정 — .env.local 에
+# GOOGLE_CLOUD_PROJECT=my-project-id
+# GOOGLE_APPLICATION_CREDENTIALS=C:/keys/service-account.json
+```
+
+```bash
+# (임시) 1시간짜리 토큰으로 잠깐 확인만 할 때
+gcloud auth print-access-token
+# 결과를 .env.local 의 GOOGLE_ACCESS_TOKEN 에 넣습니다
+```
+
+Cloud Translation API 를 프로젝트에서 사용 설정해야 하고, 서비스 계정에
+`roles/cloudtranslate.user` 권한이 필요합니다.
+
+이것만 해도 번역은 됩니다. 다만 **용어가 고정되지 않습니다** — `Blugene` · `CutisBio` ·
+`견뢰도` 같은 말이 엔진 마음대로 나옵니다. 그래서 아래를 이어서 합니다.
+
+### 2. 용어집 만들기
+
+```bash
+npm run glossary:export
+```
+
+`content/glossary.json` 을 v3 가 읽는 TSV 로 바꿔 `content/glossary-gcp/` 에 언어쌍별로
+5개 파일(각 31줄)을 만듭니다. 용어 15개 + 그대로 둘 표기 16개입니다.
+
+그다음은 GCP 에서 해야 합니다 (계정이 필요해 스크립트가 대신 못 합니다).
+
+```bash
+gsutil cp content/glossary-gcp/*.tsv gs://<버킷>/
+```
+
+그 뒤 언어쌍마다 glossary 리소스를 만들고, `.env.local` 에 적습니다.
+
+```
+GOOGLE_TRANSLATE_LOCATION=us-central1
+GOOGLE_TRANSLATE_GLOSSARY=blugene-ko-en
+```
+
+> **`global` 리전에는 glossary 를 둘 수 없습니다.** 반드시 `us-central1` 같은 리전을 쓰세요.
+> 어댑터가 이 조합을 미리 확인해 오류로 알려 줍니다.
+
+> 용어집으로 고정되는 것은 **단어뿐입니다.** "불검출을 0 으로 옮기지 마라",
+> "4-5 를 4.5 로 바꾸지 마라" 같은 문장 단위 규칙은 v3 에 전달할 방법이 없습니다.
+> 운영에 쓰려면 번역 결과를 사후 검사하는 단계가 따로 필요합니다.
 
 ## 비용
 
