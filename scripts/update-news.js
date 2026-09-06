@@ -50,6 +50,20 @@ const hardcodedNews = [
   }
 ];
 
+// Machine translation sometimes splits or transliterates the company and brand names
+// ("Cutis Bio", "Cutis Biyo", ...). Restore the canonical spellings after translating.
+function restoreProperNouns(text) {
+  if (typeof text !== 'string') return text;
+  return text
+    .replace(/Cutis\s*[- ]?\s*(Bio|Biyo)/gi, 'CutisBio')
+    .replace(/Blu\s*[- ]?\s*gene/gi, 'Blugene')
+    .replace(/BluGene/g, 'Blugene')
+    .replace(/Bluegene/g, 'Blugene');
+}
+
+// Set when any article fails to translate, so CI does not silently publish gaps.
+let translationFailed = false;
+
 async function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -167,7 +181,7 @@ async function updateNews() {
     let fileJson;
     try {
       fileJson = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    } catch(e) {
+    } catch {
       console.error(`Missing ${locale}.json`);
       continue;
     }
@@ -176,8 +190,8 @@ async function updateNews() {
       fileJson.News.articles = finalArticles;
     } else {
       const targetLang = targetLanguages[locale];
-      // Reuse translations that already exist for this locale (keyed by link)
-      // so only newly added articles hit the translation API.
+      // Reuse translations that already exist for this locale (keyed by link) so only
+      // new or changed articles hit the translation API.
       const existingByLink = new Map();
       for (const a of ((fileJson.News && fileJson.News.articles) || [])) {
         if (a.link) existingByLink.set(a.link, a);
@@ -185,10 +199,20 @@ async function updateNews() {
       const translatedArticles = [];
       for (const article of finalArticles) {
         const prev = existingByLink.get(article.link);
-        if (prev && prev.title !== article.title) {
+
+        // Reuse only when the *Korean source* is unchanged. We store the source strings
+        // alongside the translation so a later edit to the Korean text is picked up.
+        // Entries written before this field existed have no sourceTitle, so they are
+        // re-translated once and then carry the marker.
+        const sourceUnchanged =
+          prev &&
+          prev.sourceTitle === article.title &&
+          prev.sourceSummary === article.summary;
+        if (sourceUnchanged) {
           translatedArticles.push({ ...prev, date: article.date });
           continue;
         }
+
         try {
           console.log(`Translating article for ${locale}...`);
           const category = await translateText(article.category, targetLang);
@@ -198,17 +222,26 @@ async function updateNews() {
 
           translatedArticles.push({
             date: article.date,
-            category,
-            title,
-            summary,
-            thumbnailAlt,
-            link: article.link
+            category: restoreProperNouns(category),
+            title: restoreProperNouns(title),
+            summary: restoreProperNouns(summary),
+            thumbnailAlt: restoreProperNouns(thumbnailAlt),
+            link: article.link,
+            sourceTitle: article.title,
+            sourceSummary: article.summary
           });
           await delay(1500); // Prevent translation API block
         } catch(e) {
-          console.error(`Translation error for ${locale}:`, e);
-          // fallback to korean
-          translatedArticles.push(article);
+          console.error(`Translation error for ${locale}:`, e.message);
+          translationFailed = true;
+          if (prev) {
+            // Keep the previous translation rather than regressing to Korean.
+            translatedArticles.push({ ...prev, date: article.date });
+          } else {
+            // Never write Korean text into a non-Korean locale file: drop the article
+            // from this locale for now. The next run will try again.
+            console.error(`  -> skipping "${article.title}" in ${locale}.json (no previous translation)`);
+          }
         }
       }
       fileJson.News.articles = translatedArticles;
@@ -219,4 +252,16 @@ async function updateNews() {
   }
 }
 
-updateNews().then(() => console.log('Done!')).catch(console.error);
+updateNews()
+  .then(() => {
+    if (translationFailed) {
+      console.error('Some articles could not be translated. Existing translations were kept and untranslated articles were skipped.');
+      process.exitCode = 1;
+    } else {
+      console.log('Done!');
+    }
+  })
+  .catch((e) => {
+    console.error(e);
+    process.exitCode = 1;
+  });

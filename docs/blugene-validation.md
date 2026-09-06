@@ -1,0 +1,230 @@
+# Blugene 검증 기록
+
+작업 브랜치: `feat/blugene-rebrand`
+검증 실행일: **2026-09-06**
+검증 환경: Windows 11 · Node v24.14.1 · Next.js 16.2.2 (Turbopack) · 로컬 프로덕션 빌드 (`localhost:3001`)
+
+---
+
+## 1. 실제로 실행한 검증
+
+| 항목 | 명령 | 결과 |
+|---|---|---|
+| 타입 검사 | `npm run typecheck` (`tsc --noEmit`) | **통과** (오류 0) |
+| 린트 | `npm run lint` (`eslint .`) | **통과** (오류 0, 경고 0) |
+| 콘텐츠 정합성 | `npm run check:blugene` | **통과** (오류 0, 경고 1 — 아래 참조) |
+| 프로덕션 빌드 | `npm run build` | **성공**. 10개 라우트 × 6개 언어 = **65개 페이지 정적 생성** |
+| 라우트 응답 | 프로덕션 서버에 curl | 아래 표 참조 |
+| 화면 캡처 · 가로 넘침 | `npm run screens` | **17장 캡처. 모든 화면에서 본문 가로 넘침 없음** |
+| LCP · CLS | `npm run vitals` | **최대 LCP 1,428 ms · 최대 CLS 0** (로컬 참고치) |
+
+`npm run build` 는 `prebuild` 로 `check:blugene` 를 먼저 실행하므로, 데이터가 어긋나면 빌드가 멈춘다.
+
+### 남아 있는 경고 1건 (결함이 아니라 업무 항목)
+
+```
+! [인증] oeko: 문서상 유효기간 2026-10-31 까지 55일 남았습니다. 갱신 자료를 확인하세요.
+```
+
+OEKO-TEX ECO PASSPORT(E2AGHSST4) 문서에 적힌 유효기한이 2026-10-31 이다.
+만료 후에도 사이트는 자동으로 "문서 기재 유효기간이 지났습니다 · 최신 자료를 문의해 주세요"로 표시된다
+(`documentStatus()` + `revalidate = 86400`). 갱신 인증서를 받으면
+`src/data/blugene/certifications.ts` 의 `validUntil` 만 고치면 된다.
+
+---
+
+## 2. 라우트 응답 확인 (프로덕션 빌드)
+
+| 경로 | 상태 | 비고 |
+|---|---|---|
+| `/ko` `/ko/brand` `/ko/technology` `/ko/dyeing-printing` `/ko/data-certifications` | 200 | 신규 페이지 |
+| `/ko/contact` `/ko/about` `/ko/news` `/ko/blog` `/ko/blog/sustainable-indigo` | 200 | **기존 URL 그대로 유지** |
+| `/en` `/ja` `/zh` `/bn` `/tr` | 200 | 6개 언어 모두 |
+| `/ko/nonexistent-page` | 404 | 사이트 껍데기 안에서 안내 화면 렌더 |
+| `/ko/tech` → `/ko/technology` | 308 | 영구 리디렉션 |
+| `/ko/certifications` → `/ko/data-certifications` | 308 | 영구 리디렉션 |
+| `/ko/products` → `/ko/dyeing-printing` | 308 | 영구 리디렉션 |
+
+메타데이터도 함께 확인했다.
+
+- `<title>`: `Blugene by CutisBio | 인디고DNA와 발효로 빚어낸 푸른색.` (홈), `브랜드 이야기 | Blugene by CutisBio` (하위 페이지)
+- `<link rel="canonical" href="https://blugene.co/ko/brand">` — 경로·언어별로 정확
+- `<link rel="alternate" hrefLang="ko|en|ja|zh|bn|tr|x-default">` — 7개 항목 모두 출력
+- `sitemap.xml` — 6개 언어 × 10개 경로 = 60개 URL, 각 항목에 hreflang 대체 URL 포함
+
+---
+
+## 3. 데이터 정확성 검증
+
+### 견뢰도 표 (카탈로그 p.6 Table 3-1 ~ 3-4)
+
+렌더링된 HTML 표를 브라우저에서 읽어 **원본 도판 이미지와 셀 단위로 대조**했다.
+
+| 표 | 결과 |
+|---|---|
+| 3-1 세탁 (7행 × 9열) | 일치. #2 색변화 3-4, #9 아세테이트 4, #3·#6 나일론 4, #7·#8 나일론 4, #9 나일론 3-4 모두 보존 |
+| 3-2 일광 (1행 × 9열) | 일치 (`4 / 4-5 / 4-5 / 4 / 4 / 4-5 / 4 / 4-5 / 4-5`) |
+| 3-3 마찰 (2행 × 18열) | 일치. **#6 건조 1·2**, **#9 건조 2·2-3** 등 낮은 등급 전부 표시됨 |
+| 3-4 땀 (7행 × 18열) | 일치. **#8 알칼리 색변화 3** 보존 |
+
+등급은 모두 문자열(`4-5`)로 출력되며 소수(`4.5`)로 바뀐 곳이 없다.
+
+### 9개 시판 샘플 (p.3 Table 1-1 · p.5 Table 2-3)
+
+`scripts/check-blugene-data.mjs` 가 카탈로그 원문 전사값과 `evidence.ts` 를 **매 빌드마다 1:1 대조**한다
+(pMC · 바이오 기반 탄소 % · 아닐린 · N-메틸아닐린 · 시험성적서 번호 · 시험일자, 총 72개 값).
+
+- 이 검사로 **실제 오류 1건을 발견해 수정**했다: Company H(식물)의 C14 시험성적서 번호가
+  `SBED25-00000211` 로 잘못 입력되어 있었다 → 원문대로 `SBED25-00000153-1` 로 정정.
+- 불검출은 `mg()` 가 아니라 `ND` 로 표기되어야 통과한다. 그래프에서도 0 막대로 그리지 않는다.
+
+### 인증서 (p.10 · p.11)
+
+인증서 원본 이미지 4장을 직접 열어 판독해 대조했다.
+
+| 인증 | 번호 | 기간 | 확인 사항 |
+|---|---|---|---|
+| ZDHC MRSL Level 1 v3.1 | H682-25-00154 | 2025-06-10 ~ 2027-06-09 | 발행기관이 FITI Testing & Research Institute 임을 확인 |
+| OEKO-TEX ECO PASSPORT | E2AGHSST4 | ~ 2026-10-31 (발행 2025-10-23) | Centexbel 발행. `PRODUCT: See attached enclosure` — 별첨이 없어 적용 제품 범위를 특정하지 않음 |
+| USDA BioPreferred | 4295FD7FF6695D3B1D293DB7DDEE34A5 | 라벨 취득 2026-02-03, 만료 미기재 | 라벨 표시 98% |
+| TÜV AUSTRIA OK biobased Class 5 | TA8072609668 | 2026-02-17 ~ 2031-02-17 | 97% ≤ BCC ≤ 100%, EN 16640 / OK 20 edition D |
+
+**이 대조로 오귀속 1건을 발견해 수정**했다. `±3%(절대값)` 정밀도 각주는 카탈로그 p.11 원본에서
+**USDA 라벨 아래**에 있으며 OK biobased 인증서 문구가 아니다. 6개 언어에서 `okbiobasedScope` → `usdaScope` 로 옮겼다.
+
+---
+
+## 4. 화면 캡처
+
+경로: `docs/screenshots/` (검증용으로 JPEG 압축, 총 4.2 MB)
+
+| 파일 | 화면 | 뷰포트 |
+|---|---|---|
+| `desktop-ko-home.jpg` | 홈 (전체) | 1440px |
+| `desktop-ko-brand.jpg` | 브랜드 (전체) | 1440px |
+| `desktop-ko-technology.jpg` | 기술 (전체) | 1440px |
+| `desktop-ko-dyeing-printing.jpg` | 염색·프린팅 (전체) | 1440px |
+| `desktop-ko-data.jpg` | 데이터·인증 (전체) | 1440px |
+| `desktop-ko-contact.jpg` | 문의 (전체) | 1440px |
+| `mobile390-ko-home.jpg` | 홈 | 390px |
+| `mobile390-ko-dyeing-printing.jpg` | 염색·프린팅 | 390px |
+| `mobile390-ko-data.jpg` | 데이터·인증 | 390px |
+| `mobile390-ko-contact.jpg` | 문의 | 390px |
+| `mobile360-ko-home.jpg` | 홈 (첫 화면) | 360px |
+| `tablet768-ko-home.jpg` | 홈 (첫 화면) | 768px |
+| `desktop-{en,ja,zh,bn,tr}-home.jpg` | 각 언어 홈 (첫 화면) | 1440px |
+
+캡처 스크립트(`scripts/capture-screens.mjs`)는 캡처와 동시에
+`document.documentElement.scrollWidth > clientWidth` 여부를 재서 **가로 넘침을 자동으로 검출**한다.
+
+> 참고: `--window-size` 만 쓰는 헤드리스 캡처는 Windows 의 최소 창 너비 때문에 모바일 폭이
+> 제대로 반영되지 않는다. 그래서 CDP `Emulation.setDeviceMetricsOverride` 로 실제 뷰포트를 지정한다.
+> 이 차이 때문에 처음에는 모바일에서 잘린 것처럼 보이는 잘못된 캡처가 나왔다.
+
+### 이 캡처로 발견해 고친 문제
+
+**모바일 390px 에서 `/ko/dyeing-printing` 만 문서 전체에 가로 스크롤이 생겼다** (scrollWidth 1045px).
+원인은 견뢰도 표 안의 `.sr-only` 요소였다. `sr-only` 는 `position: absolute` 인데 위치 지정된 조상이
+없으면 초기 컨테이닝 블록(html)을 기준으로 배치되고, 가로로 스크롤되는 704px 표 안의 정적 위치가
+뷰포트 밖으로 나가 문서를 넓혔다. `globals.css` 의 `.table-scroll` 에 `position: relative` 를 추가해 해결했다.
+
+---
+
+## 5. 성능 측정 (로컬 참고치)
+
+`npm run vitals` — 로컬 프로덕션 서버를 헤드리스 Chrome 으로 열어 측정. 캐시는 매번 비웠다.
+
+| 화면 | 뷰포트 | LCP | CLS | LCP 요소 |
+|---|---|---|---|---|
+| `/ko` | desktop 1440 | **1,428 ms** | 0 | Hero 이미지 |
+| `/ko/dyeing-printing` | desktop | 540 ms | 0 | 원단 비교 이미지 |
+| `/ko/data-certifications` | desktop | 316 ms | 0 | 본문 텍스트 |
+| `/ko/contact` | desktop | 236 ms | 0 | 본문 텍스트 |
+| `/ko` | mobile 390 | 400 ms | 0 | Hero 이미지 |
+| `/ko/dyeing-printing` | mobile | 204 ms | 0 | 본문 텍스트 |
+| `/ko/data-certifications` | mobile | 268 ms | 0 | 본문 텍스트 |
+| `/ko/contact` | mobile | 180 ms | 0 | 본문 텍스트 |
+
+목표(LCP 2.5초 이하 · CLS 0.1 이하)를 모두 만족한다.
+
+> **이 값은 개발 PC 에서 로컬 서버를 상대로 잰 참고치이며, 실제 사용자 환경의 성능을 보증하지 않는다.**
+> 네트워크 지연 · 실제 기기 · CDN 이 반영되지 않았다. 배포 후 실사용자 지표를 별도로 측정해야 한다.
+
+주요 자산 크기: Hero 204KB (목표 200~350KB 범위), OG 이미지 150KB, `public/blugene` 전체 6.0MB
+(카탈로그 12쪽 미리보기와 1.9MB PDF 포함, 모두 지연 로딩 또는 클릭 시 로드).
+
+---
+
+## 6. 화면에서 직접 확인한 동작
+
+프로덕션 빌드를 브라우저로 열어 확인했다.
+
+- [x] 6개 언어 홈이 모두 렌더링되고, 언어 선택기가 데스크톱·모바일 모두 **헤더 오른쪽 상단에 항상** 보인다
+- [x] 언어를 바꿔도 현재 경로가 유지된다 (홈으로 튕기지 않음). 쿼리스트링(`?shade=A4`)도 함께 유지된다
+- [x] 헤더가 항상 불투명이라 밝은 콘텐츠 위에서도 메뉴가 읽힌다
+- [x] 견뢰도 4개 표 · 시험 결과 2개 표가 좁은 화면에서 **표 안에서만** 가로 스크롤된다 (본문은 넘치지 않음)
+- [x] 아닐린 비교 그래프에서 불검출이 0 막대가 아니라 `N.D.` 표식으로 그려진다. 축은 0 에서 시작한다
+- [x] 색상 견본 12칸이 이산형으로 선택되고, A6·B1 의 중복 사용이 화면에 밝혀져 있다
+- [x] 인증서 4종이 확대되고 Esc 로 닫힌다. 인증 배지가 문서 기간에 따라 자동으로 바뀐다
+- [x] 카탈로그 12쪽 뷰어가 지연 로딩되고, 모달을 열었을 때만 큰 이미지를 받는다
+- [x] PDF 내려받기(1.9 MB)가 동작한다
+- [x] 404 페이지가 사이트 껍데기 안에서 렌더되고 주요 메뉴로 안내한다
+
+---
+
+## 7. 실행하지 않은 검증과 그 이유
+
+| 항목 | 이유 |
+|---|---|
+| **운영 사이트 배포 · DNS 변경** | 지시문에서 제외했다. 로컬 빌드와 미리보기까지만 수행했다. `netlify.toml` 의 `blugene.co` 설정은 준비만 해 두었고, 이전 도메인(cutisbioindigo.kr) 리디렉션은 **주석 처리**해 두었다. |
+| **실제 문의 메일 발송** | 지시문에서 금지했다. `SampleInquiry` 는 `mailto:` 로 이메일 작성기를 열 뿐이며 네트워크 요청을 보내지 않는다. 화면에도 "이 화면에서 정보를 외부로 전송하지 않는다"고 표시한다. 메일 본문 조립 로직만 확인했다. |
+| **번역 API 호출** | 지시문에서 금지했다. 5개 언어 번역은 전량 사람(에이전트)이 직접 수행했고 API 키를 쓰지 않았다. `scripts/update-news.js` 는 실행하지 않는 것이 원칙이나, 검증 중 실수로 한 번 실행되어 `messages/ko.json` 의 뉴스만 갱신됐다. **반쪽 적용을 남기지 않도록 커밋 상태로 되돌렸다** (6개 언어 모두 49건으로 동일). |
+| **인증기관 데이터베이스 조회** | 인증 상태를 기관에서 실시간 조회하지 않았다. 사이트는 "문서에 적힌 날짜를 확인한 것이며 기관 조회 결과가 아니다"라고 항상 명시한다. |
+| **원시험성적서 전문 확인** | 제공 자료는 카탈로그뿐이다. 성적서 번호와 요약값만 전사했다. |
+| **실사용자 성능 측정 (RUM)** | 배포 전이라 불가능하다. 위 값은 로컬 참고치다. |
+| **스크린리더 실기기 테스트** | 코드 수준(역할 · 이름 · 관계 · 키보드 조작)에서 검토했고, NVDA/VoiceOver 실기기 확인은 하지 않았다. |
+| **인쇄 스타일 · 구형 브라우저** | 요구사항에 없어 검토하지 않았다. `<dialog>` 와 `:focus-visible` 은 최신 브라우저 기준이다. |
+
+---
+
+## 8. 이번 작업에서 발견해 고친 결함 (요약)
+
+8개 관점(수치 정확성 · 과장 주장 · 접근성 · 다국어 · Next.js 구현 · SEO · 자산 · 브랜드 카피)으로 감사한 뒤
+발견 사항을 반증 검증해 확정된 것만 고쳤다. 주요 항목:
+
+| 심각도 | 문제 | 조치 |
+|---|---|---|
+| 치명 | `public/aniline-infographic.png` 에 `Bladder Cancer Risks` · `cutisbio indigo: Aniline-Free & Safe` 가 픽셀로 인쇄되어 6개 언어 전부에 노출 | 이미지 삭제, 정확한 구조식 SVG(`AnilineStructures.tsx`)로 대체 |
+| 치명 | Company H 의 C14 시험성적서 번호 오기 | 원문대로 정정 + 매 빌드 자동 대조 규칙 추가 |
+| 중대 | `±3%` 각주를 OK biobased 인증서 내용으로 오귀속 | USDA 항목으로 이동 (6개 언어) |
+| 중대 | 모바일 390px 에서 `/ko/dyeing-printing` 가로 넘침 | `.table-scroll { position: relative }` |
+| 중대 | 27개 전체 메시지 번들이 모든 페이지의 클라이언트 페이로드에 직렬화 | 클라이언트가 쓰는 5개 네임스페이스만 전달 |
+| 중대 | 색상 견본 격자가 `role="group"` 위에 roving tabindex — Tab 으로 1개만 도달 | `role="radiogroup"` + `role="radio"` 로 교체하고 키보드 안내 문구 추가 |
+| 중대 | 카탈로그 뷰어 모달에서 첫·마지막 쪽 도달 시 버튼이 사라져 포커스 유실 | 항상 렌더 + `disabled`, 쪽 번호에 `aria-live` |
+| 중대 | 하위 페이지의 `og:url`·`og:title` 이 각 언어 홈으로 고정 | `buildPageMetadata()` 헬퍼로 페이지별 지정 |
+| 중대 | 404 페이지 없음 | `[locale]/not-found.tsx` + `app/not-found.tsx` 추가 |
+| 중대 | 홈·블로그의 인증 배지가 빌드 시점에 고정 | `revalidate = 86400` 추가 |
+| 중대 | 뉴스 번역 실패 시 한국어 원문을 다른 언어 파일에 기록 | 실패 시 기존 번역 유지 또는 해당 기사 제외 + 종료코드 1 |
+| 보통 | 견본 12장을 '사진'으로 표기 (실제로는 인쇄된 색상 견본) | 전용 안내 문구 + `카탈로그 도판` 배지 |
+| 보통 | 견뢰도 표의 `scope="rowgroup"` / `"colgroup"` 오용 | `scope="row"` / `"col"` 로 정정 |
+| 보통 | 가로 스크롤 표를 키보드로 스크롤할 수 없음 (WCAG 2.1.1) | `tabIndex={0}` + `role="region"` + `aria-label` |
+| 보통 | Next 16 에서 deprecated 된 `priority` 사용 | `preload` 로 치환 |
+| 보통 | 지도 iframe 이 한국어 검색어로 고정 | 로마자 주소 + `hl={locale}` |
+| 보통 | Article 구조화 데이터의 author 가 `Person` | `Organization` + `publisher` + `mainEntityOfPage` |
+| 보통 | 사이트맵 `lastmod` 가 배포 시각이라 60개 URL 전부 '변경됨' | 콘텐츠 기준일 고정, `/news` 만 동적 |
+| 보통 | 뉴스 번역에 법인명이 `Cutis Bio` 로 분리 표기 | 6개 언어 정정 + 고유명사 보호 규칙 추가 |
+| 낮음 | 죽은 메시지 키 22개 × 6개 언어, 미사용 컴포넌트 | 삭제 |
+
+기각한 지적도 있다. 예: "도메인 blugene.co 가 근거 없다" — 사용자가 이 도메인을 쓰겠다고 직접 지정했다.
+
+---
+
+## 9. 다음 점검일
+
+| 항목 | 시점 |
+|---|---|
+| **OEKO-TEX ECO PASSPORT 갱신 확인** | **2026-10-31 이전** (`npm run check:blugene` 가 90일 전부터 경고) |
+| ZDHC MRSL 갱신 확인 | 2027-06-09 이전 |
+| OK biobased 갱신 확인 | 2031-02-17 이전 |
+| 인증기관 온라인 조회로 현재 상태 확인 | 배포 전 1회 권장 |
+| 실사용자 성능(RUM) 측정 | 배포 후 |

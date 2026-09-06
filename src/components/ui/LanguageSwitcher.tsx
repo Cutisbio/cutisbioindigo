@@ -1,36 +1,78 @@
 'use client';
 
+import { useId, useTransition } from 'react';
 import { usePathname, useRouter } from '@/i18n/routing';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
+import { LOCALES, LOCALE_LABELS, type Locale } from '@/data/blugene/site';
 
+/**
+ * 언어 선택기.
+ * - 데스크톱과 모바일 모두 헤더 최상단 오른쪽에 **항상** 노출한다 (햄버거 안에 숨기지 않는다).
+ * - 현재 페이지 경로와 쿼리스트링을 유지한 채 언어만 바꾼다. 언어 변경 시 홈으로 보내지 않는다.
+ * - 언어 이름은 자체 표기를 우선한다. 국기만으로 언어를 나타내지 않는다.
+ */
 export default function LanguageSwitcher() {
-  const locale = useLocale();
+  const locale = useLocale() as Locale;
   const router = useRouter();
   const pathname = usePathname();
+  const t = useTranslations('Nav');
+  const selectId = useId();
+  const [isPending, startTransition] = useTransition();
 
-  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const nextLocale = e.target.value;
-    router.replace(pathname, { locale: nextLocale });
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const next = e.target.value as Locale;
+    if (next === locale) return;
+    // 이 헤더는 모든 정적 페이지에 렌더되므로 useSearchParams 로 Suspense 경계를 만들지 않는다.
+    // 이 핸들러는 사용자 상호작용 시점(클라이언트)에만 실행되므로 SSR 에 영향이 없다.
+    const search = typeof window !== 'undefined' ? window.location.search : '';
+    startTransition(() => {
+      // pathname 은 locale 접두사를 제외한 현재 경로다 — 같은 화면과 선택 상태를 유지한 채 언어만 바꾼다.
+      router.replace(search ? `${pathname}${search}` : pathname, { locale: next });
+    });
   };
 
   return (
-    <div className="flex items-center space-x-2 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-200 hover:bg-gray-100 transition-colors">
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-      <select
-        value={locale}
-        onChange={handleLanguageChange}
-        aria-label="Select language"
-        className="bg-transparent text-sm font-medium focus:outline-none appearance-none cursor-pointer pr-4 text-gray-700"
+    <div
+      className={`relative inline-flex items-center gap-1.5 rounded-full border border-[color:var(--color-washed)] px-3 py-1.5 text-[var(--color-ink)] transition-colors hover:bg-[var(--color-ivory)] ${
+        isPending ? 'opacity-60' : ''
+      }`}
+    >
+      <svg
+        aria-hidden="true"
+        className="h-4 w-4 shrink-0 opacity-70"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.7}
       >
-        <option value="ko">🇰🇷 한국어 (KO)</option>
-        <option value="en">🇺🇸 English (EN)</option>
-        <option value="ja">🇯🇵 日本語 (JA)</option>
-        <option value="zh">🇨🇳 中文 (ZH)</option>
-        <option value="bn">🇧🇩 বাংলা (BN)</option>
-        <option value="tr">🇹🇷 Türkçe (TR)</option>
+        <circle cx="12" cy="12" r="9" />
+        <path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18Z" />
+      </svg>
+      <label htmlFor={selectId} className="sr-only">
+        {t('languageLabel')}
+      </label>
+      <select
+        id={selectId}
+        value={locale}
+        onChange={handleChange}
+        className="cursor-pointer appearance-none bg-transparent pr-4 text-sm font-medium focus:outline-none"
+      >
+        {LOCALES.map((l) => (
+          <option key={l} value={l} className="text-[var(--color-ink)]">
+            {LOCALE_LABELS[l].native}
+          </option>
+        ))}
       </select>
+      <svg
+        aria-hidden="true"
+        className="pointer-events-none absolute right-2.5 h-3.5 w-3.5 opacity-60"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path d="m6 9 6 6 6-6" />
+      </svg>
     </div>
   );
 }

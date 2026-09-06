@@ -1,0 +1,68 @@
+{
+  "source": "CutisBio_CB_Bioindigo_Catalogue_(EN)_July 2026.pdf",
+  "source_date": "2026-07",
+  "review_date": "2026-09-06",
+  "evidence_scope": "Transcribed from the supplied catalogue; the underlying complete laboratory reports and current online certificate status have not been independently verified.",
+  "carbon_test": {
+    "page": 3,
+    "table": "1-1",
+    "test_lab": "KATRI",
+    "test_method": "ASTM D6866-24a Method B (AMS)",
+    "cutisbio_report_number": "SBED25-00000153-1",
+    "cutisbio_report_date": "2025-05-22",
+    "cutisbio_pmc": 97.73,
+    "cutisbio_biobased_carbon_percent": 98,
+    "interpretation": "Percentage of biobased carbon; not indigo chemical purity, not percent reduction in emissions, and not a lifetime safety endpoint."
+  },
+  "aniline_test": {
+    "page": 5,
+    "table": "2-3",
+    "test_lab": "KOTERI",
+    "test_method": "KS K 0734 2019",
+    "cutisbio_report_number": "2025-0604-1132-C03",
+    "cutisbio_report_date": "2025-06-10",
+    "method_detection_limit_mg_kg": 5,
+    "aniline": {"status":"not_detected","value":null,"unit":"mg/kg"},
+    "n_methylaniline": {"status":"not_detected","value":null,"unit":"mg/kg"},
+    "interpretation": "Not detected under the stated method, with method detection limit 5 mg/kg. Never convert non-detects to measured zero."
+  },
+  "market_comparison_samples": [
+    {"id":"chemical-s","type":"chemical","label":"Company S","pmc":1.07,"biobased_carbon_percent":1,"aniline_mg_kg":1524,"n_methylaniline_mg_kg":828},
+    {"id":"chemical-m","type":"chemical","label":"Company M","pmc":19.20,"biobased_carbon_percent":19,"aniline_mg_kg":369,"n_methylaniline_mg_kg":225},
+    {"id":"chemical-z","type":"chemical","label":"Company Z","pmc":0.30,"biobased_carbon_percent":0,"aniline_mg_kg":1229,"n_methylaniline_mg_kg":1127},
+    {"id":"plant-m","type":"plant","label":"Company M","pmc":100.39,"biobased_carbon_percent":100,"aniline_mg_kg":null,"n_methylaniline_mg_kg":null},
+    {"id":"plant-xt","type":"plant","label":"Company XT","pmc":51.15,"biobased_carbon_percent":51,"aniline_mg_kg":131,"n_methylaniline_mg_kg":85},
+    {"id":"plant-i","type":"plant","label":"Company I","pmc":18.34,"biobased_carbon_percent":18,"aniline_mg_kg":null,"n_methylaniline_mg_kg":null},
+    {"id":"plant-xb","type":"plant","label":"Company XB","pmc":96.82,"biobased_carbon_percent":97,"aniline_mg_kg":null,"n_methylaniline_mg_kg":null},
+    {"id":"plant-h","type":"plant","label":"Company H","pmc":33.66,"biobased_carbon_percent":34,"aniline_mg_kg":2652,"n_methylaniline_mg_kg":2375},
+    {"id":"bio-cutisbio","type":"bio","label":"CutisBio","pmc":97.73,"biobased_carbon_percent":98,"aniline_mg_kg":null,"n_methylaniline_mg_kg":null}
+  ],
+  "comparison_notes": [
+    "null in the two aniline fields means not detected; never use null as zero.",
+    "The measured carbon percentage 0 for Company Z is the rounded table value, not a missing value.",
+    "Retain category in IDs because Company M occurs in two categories.",
+    "These are catalogue sample comparisons, not representative statistics for the whole market.",
+    "Carbon and aniline test methods, dates and reports differ; do not combine into a new assay."
+  ],
+  "fabric_sample_map": [
+    {"id":1,"indigo":"plant","fiber":"cotton"},
+    {"id":2,"indigo":"plant","fiber":"silk"},
+    {"id":3,"indigo":"plant","fiber":"cashmere"},
+    {"id":4,"indigo":"chemical","fiber":"cotton"},
+    {"id":5,"indigo":"chemical","fiber":"silk"},
+    {"id":6,"indigo":"chemical","fiber":"cashmere"},
+    {"id":7,"indigo":"bio","fiber":"cotton"},
+    {"id":8,"indigo":"bio","fiber":"silk"},
+    {"id":9,"indigo":"bio","fiber":"cashmere"}
+  ],
+  "fabric_performance_note": "Page 6 reports comparable performance; source data include lower rubbing scores in some cases. Preserve every value and warp/weft label. Do not claim uniformly superior fastness or turn an ordinal 4-5 into numeric 4.5.",
+  "certificates": [
+    {"id":"zdhc","page":10,"display_name":"ZDHC MRSL Level 1 Version 3.1","catalogue_number":"H682-25-00154","holder":"CutisBio Co., Ltd.","product_on_certificate":"CB Bio Indigo Dye Powder","valid_from_on_image":"2025-06-10","valid_until_on_image":"2027-06-09","certificate_asset":"assets/catalogue/embedded/p10-xref171.png","status":"catalogue_documented_not_live_verified"},
+    {"id":"oeko","page":10,"display_name":"OEKO-TEX ECO PASSPORT","catalogue_number":"E2AGHSST4","holder":"CutisBio Co., Ltd.","product_on_certificate":"See attached enclosure; Product category 2.9 Natural dyes","valid_until_on_image":"2026-10-31","certificate_asset":"assets/catalogue/embedded/p10-xref172.png","scope_note":"The image is page 1 of 2; product enclosure is not reproduced here. Do not claim all Blugene products or finished garments are certified.","status":"catalogue_documented_not_live_verified"},
+    {"id":"usda","page":11,"display_name":"USDA BioPreferred","catalogue_number":"4295FD7FF6695D3B1D293DB7DDEE34A5","product_on_certificate":"CB Bio Indigo Dye Powder","label_percent":98,"award_date_as_printed":"02/03/2026","certificate_asset":"assets/catalogue/embedded/p11-xref179.png","status":"catalogue_documented_not_live_verified"},
+    {"id":"ok-biobased","page":11,"display_name":"TUV AUSTRIA OK biobased Class 5","catalogue_number":"TA8072609668","product_on_certificate":"CB Bio Indigo Dye Powder","class_percent_range":[97,100],"valid_from_on_image":"2026-02-17","valid_until_on_image":"2031-02-17","certificate_asset":"assets/catalogue/embedded/p11-xref177.png","status":"catalogue_documented_not_live_verified"}
+  ],
+  "product_summary": {"page":11,"source_name":"Bio Indigo Dye Powder (Microbial Fermentation)","new_brand_name":"Blugene","cas":"482-89-3","samples":"Available upon request","email":"contact@cutisbio.com"},
+  "contact": {"page":12,"email":"contact@cutisbio.com","telephone":"+82-70-4914-2525","address":"8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea"},
+  "unsubstantiated_by_supplied_catalogue": ["Lifetime dermal safety","Safety for all skin types, infants, or patients with eczema","Complete absence of all harmful chemicals","98% indigo purity","100% biobased carbon as an exact measured value","Product-specific quantified carbon or water savings","Carbon neutrality","Biodegradability or harmless environmental discharge","All listed certificates cover the new trade name Blugene and the ink formulation"]
+}

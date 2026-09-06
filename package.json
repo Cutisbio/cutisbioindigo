@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "check:blugene": "node scripts/check-blugene-data.mjs",
+    "assets:blugene": "python scripts/build-blugene-assets.py",
+    "prebuild": "node scripts/check-blugene-data.mjs",
+    "screens": "node scripts/capture-screens.mjs",
+    "vitals": "node scripts/measure-web-vitals.mjs"
   },
   "dependencies": {
     "framer-motion": "^12.38.0",

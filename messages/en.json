@@ -1,62 +1,525 @@
 {
-  "Blog": {
-    "eyebrow": "Insights & Technology",
-    "title": "Blog",
-    "description": "In-depth articles on CutisBio's synthetic biology technology and sustainable fashion.",
-    "categoryTech": "Technology",
-    "readMore": "Read More",
-    "readTime": "{minutes} min read"
-  },
-  "Layout": {
-    "home": "Home",
-    "about": "About Us",
-    "tech": "Technology",
+  "Nav": {
+    "brand": "Brand",
+    "technology": "Technology",
+    "dyeingPrinting": "Dyeing & Printing",
+    "dataCertifications": "Data & Certifications",
+    "sampleInquiry": "Sample Inquiry",
+    "about": "About",
     "news": "News",
-    "contact": "Contact Us",
-    "footerText": "Sustainable Denim Dye. Aniline free - Human safe. © 2026 CutisBio. All rights reserved."
+    "blog": "Insights",
+    "contact": "Contact",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "languageLabel": "Select language",
+    "skipToContent": "Skip to content",
+    "homeAria": "Blugene by CutisBio home"
+  },
+  "Footer": {
+    "tagline": "Denim for a lifetime. A safer blue.",
+    "sitemapTitle": "Site map",
+    "contactTitle": "Contact",
+    "legalTitle": "About this material",
+    "sourceNote": "The test values and certification details on this site are taken from the CutisBio catalogue published in July 2026. Data as of {date}.",
+    "companyLine": "CutisBio Co., Ltd.",
+    "rights": "© 2026 CutisBio Co., Ltd. All rights reserved.",
+    "catalogueLink": "Download the original catalogue (PDF)"
   },
   "Home": {
-    "heroTitle": "Next-Generation Sustainable Denim Dye, CutisBio Indigo",
-    "heroSubtitle": "Indigo dye safe for our skin. The most sustainable denim dyeing solution, born from synthetic biology technology without toxic substances (aniline).",
-    "heroImageAlt": "Intuitive eco-friendly image intertwining blue denim fabric and clean water drops",
-    "impactMetricsTitle": "Positive Changes Created by CutisBio",
-    "metric1Value": "100%",
-    "metric1Text": "Aniline-Free (Perfect block of toxic substances)",
-    "metric2Value": "Drop-in",
-    "metric2Text": "Immediately applicable to existing dyeing factory facilities",
-    "metric3Value": "Eco-friendly",
-    "metric3Text": "Minimization of water pollution and carbon emissions during production",
-    "coreValuesTitle": "Core Values of CutisBio Technology",
-    "coreValuesDesc": "We revolutionize the traditional petrochemical-based dyeing industry through Synthetic Biology.",
-    "feature1": "Precision Fermentation",
-    "benefit1": "Mimicking natural ecosystems with sustainable biosynthesis",
-    "feature2": "Aniline-Free",
-    "benefit2": "Fundamental elimination of carcinogens threatening workers and consumers",
-    "feature3": "Sustainable Indigo",
-    "benefit3": "Minimization of water pollution and achieving a circular economy in the fashion industry",
-    "ctaTitle": "Will you join the future of sustainable fashion?",
-    "ctaText": "Discover how CutisBio's innovative microbial-based indigo dye is replacing traditional dyeing processes.",
-    "ctaButton": "View Technology Details",
-    "qualityTitle": "Superior Dyeability and Fastness Verified",
-    "qualitySubtitle": "Thorough comparative tests by a premium Japanese denim dyeing company proved that CutisBio Indigo exhibits deeper color and superior durability compared to conventional chemical indigo.",
-    "qualityImageAlt": "Denim dyeing and fastness test result image",
-    "qualityBadge": "Quality Proven"
+    "metaTitle": "Blue, crafted through indigo DNA and fermentation.",
+    "metaDescription": "Blugene is a bio indigo made by microbial fermentation — 98% biobased carbon, aniline and N-methylaniline not detected (detection limit 5 mg/kg).",
+    "ctaTitle": "Let's create your next blue.",
+    "ctaText": "We welcome inquiries from denim brands, fabric mills, dye houses, and printing companies.",
+    "ctaButton": "Request a Blugene sample"
+  },
+  "Hero": {
+    "descriptor": "Blue, crafted through indigo DNA and fermentation.",
+    "titleLine1": "Denim for a lifetime.",
+    "titleLine2": "A safer blue.",
+    "body": "The blue that touches your skin throughout life has been reborn through synthetic biology. For skin health, Blugene is an indigo that never compromises—even on the smallest risks.",
+    "ctaPrimary": "Request a Blugene sample",
+    "ctaSecondary": "Explore data & certifications",
+    "tagline": "Denim for a lifetime. A safer blue.",
+    "imageAlt": "A caregiver in a denim jacket holds a child while looking out over cornfields, meadows and water. This is the brand image used on the cover of the supplied catalogue.",
+    "imageCredit": "Image from catalogue p.1 · brand concept image"
+  },
+  "EvidenceStrip": {
+    "carbonValue": "98%",
+    "carbonLabel": "Biobased carbon content",
+    "anilineValue": "Not detected",
+    "anilineLabel": "Aniline",
+    "nMethylanilineValue": "Not detected",
+    "nMethylanilineLabel": "N-methylaniline",
+    "note": "These are test results from the supplied catalogue. Not detected means below the method detection limit of 5 mg/kg under the stated test method; it does not mean a content of 0. The 98% figure is biobased carbon content, not indigo purity or an emissions reduction rate.",
+    "sourceCarbon": "Source: catalogue p.3 Table 1-1 (KATRI, ASTM D6866-24a Method B)",
+    "sourceAniline": "Source: catalogue p.5 Table 2-3 (KOTERI, KS K 0734 2019)",
+    "cta": "See the detailed test data"
+  },
+  "Manifesto": {
+    "eyebrow": "ACROSS BORDERS. ACROSS GENERATIONS.",
+    "title": "Because what we wear stays with us.",
+    "body": "Wherever we live, whatever age we reach, denim stays part of daily life. Because it is worn for years and sits against the skin, we go back to the very process that makes the color and ask again. What is it made from? What impurities remain? Can the results be verified? Blugene began with these questions.",
+    "questions": [
+      "What is it made from",
+      "What impurities remain",
+      "Can the results be verified"
+    ],
+    "cta": "Read the brand story"
+  },
+  "Impurity": {
+    "eyebrow": "WHAT REMAINS MATTERS",
+    "title": "Our standards reach beyond what you can see.",
+    "body": "What we do not compromise on is the standard by which impurities are checked and controlled. In the tests presented in the catalogue, aniline and N-methylaniline were not detected in the CutisBio bio indigo on which Blugene is built.",
+    "context": "Aniline and N-methylaniline are used as starting materials or intermediates in chemical synthesis routes, and they can remain as unreacted residues in the final indigo powder. A number of certification standards limit the permitted concentration of these substances in textile dyes and in finished products.",
+    "cta": "See the full comparison data",
+    "chartTitle": "Aniline and N-methylaniline analysis of commercial indigo dyes",
+    "chartCaption": "The nine commercial samples from catalogue p.5 Figure 2-2 and Table 2-3. The vertical axis is in mg/kg and starts at 0."
+  },
+  "Science": {
+    "eyebrow": "BIOTECHNOLOGY",
+    "title": "Rewriting the DNA of indigo.",
+    "body": "CutisBio produces indigo using the biosynthetic pathways of microorganisms together with fermentation. We have brought bioengineering to the way a long-loved blue is made.",
+    "metaphorNote": "“Rewriting the DNA of indigo” is a brand metaphor. It does not mean that the indigo molecule itself carries genes; it means that indigo is made through the biosynthetic pathways of microorganisms and fermentation.",
+    "cta": "Explore the technology",
+    "diagramTitle": "From feedstock to fabric",
+    "diagramNote": "This is a conceptual diagram. The actual process requires energy and process inputs, and the illustration is a simplified view of the path taken by the feedstock carbon.",
+    "steps": [
+      {
+        "title": "Renewable feedstock",
+        "text": "Renewable carbon from biomass such as corn is the starting point."
+      },
+      {
+        "title": "Microbial fermentation",
+        "text": "Indigo is made by fermentation that draws on the biosynthetic pathways of microorganisms."
+      },
+      {
+        "title": "Indigo recovery and product forms",
+        "text": "After recovery and purification, it is made into powder and digital printing ink."
+      },
+      {
+        "title": "Fabric dyeing and printing",
+        "text": "It is applied to cotton, silk and cashmere dyeing and to digital printing."
+      }
+    ]
+  },
+  "Environment": {
+    "eyebrow": "FROM RENEWABLE CARBON",
+    "title": "Thinking of the wearer. And of how it is made.",
+    "body": "An indigo that starts from renewable carbon. From the origin of the feedstock through to compositional analysis, we explain our approach with material you can verify.",
+    "carbonCardTitle": "98% biobased carbon content",
+    "carbonCardText": "This is the share of the carbon in the product that comes from renewable feedstock. It is based on the measured value in catalogue p.3 Table 1-1 (pMC 97.73), and it is not indigo purity or a carbon emissions reduction rate.",
+    "scopeNote": "Product-level life cycle assessment (LCA), water use, energy and carbon emissions data are not included in this catalogue. Environmental performance figures outside the verified scope are not shown on this site.",
+    "cta": "See the supporting material",
+    "imageAlt": "A conceptual value-chain image running from feedstock crops through fermentation equipment and blue fabric to a person wearing denim. These are not photographs of an actual CutisBio plant or staff."
+  },
+  "Performance": {
+    "eyebrow": "PERFORMANCE",
+    "title": "Dyeability confirmed on real fabric.",
+    "body": "Cotton, silk and cashmere were dyed with plant, chemical and bio indigo and compared. The catalogue records comparable performance in colorfastness to laundering, light, rubbing and perspiration.",
+    "fabricAlt": "Photograph of nine fabric swatches. From the left: cotton, silk and cashmere dyed with plant indigo (#1–#3), then chemical indigo (#4–#6), then bio indigo (#7–#9).",
+    "fabricCaption": "Catalogue p.6 Figure 3-1. Samples #1–#3 are plant indigo, #4–#6 chemical indigo and #7–#9 bio indigo, and within each group the order is cotton, silk, cashmere.",
+    "sampleLegendPlant": "Plant indigo",
+    "sampleLegendChemical": "Chemical indigo",
+    "sampleLegendBio": "Bio indigo",
+    "fiberCotton": "Cotton",
+    "fiberSilk": "Silk",
+    "fiberCashmere": "Cashmere",
+    "cta": "See the full colorfastness tables",
+    "honestNote": "This does not mean superiority in every category. Lower grades are also recorded for some colorfastness to rubbing items, and they appear in the tables exactly as recorded.",
+    "additionalCaseTitle": "Additional fabric evaluation case",
+    "additionalCaseBody": "A separate dyeing evaluation photograph held in the archive. It is labelled in Japanese with 4, 6 and 8 dyeing cycles and with バイオ②-1 / 合成 (synthetic) / バイオ②-2.",
+    "additionalCaseAlt": "Photograph comparing fabrics dyed with バイオ②-1, 合成 and バイオ②-2 under 4, 6 and 8 dyeing cycles",
+    "additionalCaseProvenance": "The testing institute, test method, test date and client are not confirmed, so this is shown separately from the tests on catalogue p.6. It is different material from samples #1–#9 in the table above.",
+    "additionalCaseCyclesLabel": "Dyeing cycles",
+    "additionalCaseRowsLabel": "Categories"
+  },
+  "Fastness": {
+    "title": "Colorfastness test results",
+    "intro": "These tables reproduce catalogue p.6 Tables 3-1 to 3-4 as they appear. Grades keep the ranking notation of the source (for example 4-5) and have not been converted into decimals.",
+    "sampleHeader": "Sample",
+    "itemHeader": "Test item",
+    "methodLabel": "Test method",
+    "tableLaundering": "Colorfastness to laundering",
+    "tableLight": "Colorfastness to light",
+    "tableRubbing": "Colorfastness to rubbing",
+    "tablePerspiration": "Colorfastness to perspiration",
+    "captionLaundering": "Table 3-1. Colorfastness to laundering test results (samples #1–#9)",
+    "captionLight": "Table 3-2. Colorfastness to light test results (samples #1–#9)",
+    "captionRubbing": "Table 3-3. Colorfastness to rubbing test results (samples #1–#9, warp and weft)",
+    "captionPerspiration": "Table 3-4. Colorfastness to perspiration test results (samples #1–#9, acid and alkaline)",
+    "groupChange": "Color change",
+    "groupStain": "Staining",
+    "rowColorChange": "Color change",
+    "rowAcetate": "Acetate",
+    "rowCotton": "Cotton",
+    "rowNylon": "Nylon",
+    "rowPolyester": "Polyester",
+    "rowAcrylic": "Acrylic",
+    "rowWool": "Wool",
+    "rowDry": "Dry",
+    "rowWet": "Wet",
+    "subWarp": "Warp",
+    "subWeft": "Weft",
+    "subAcid": "Acid",
+    "subAlkali": "Alkaline",
+    "sourceImageCta": "View the original table image",
+    "sourceImageAlt": "Original image of colorfastness Tables 3-1 to 3-4 on catalogue p.6",
+    "gradeNote": "Grades are ranking values from 1 (low) to 5 (high), and “4-5” is the notation used in the source for a result between two grades."
+  },
+  "ShadeLibrary": {
+    "eyebrow": "SHADE LIBRARY",
+    "title": "Your brand. Your blue.",
+    "body": "Shade depth changes with dye concentration and the number of dyeing cycles. Adjusting the ratio of indigo to indirubin makes it possible to create a shade that belongs to your brand alone.",
+    "gridTitle": "Catalogue swatches by concentration",
+    "gridHelp": "Select a swatch to view it enlarged. The catalogue does not give concentration values for the individual swatches, so they are identified by position (A1–B6).",
+    "axisLow": "Low",
+    "axisHigh": "High",
+    "axisLabel": "Blugene concentration",
+    "rowA": "Row 1",
+    "rowB": "Row 2",
+    "swatchLabel": "Catalogue swatch {code}",
+    "swatchAlt": "Dyed swatch {code} by concentration from catalogue p.7 Figure 4-1",
+    "duplicateNote": "In the source, the same swatch image is used at positions A6 and B1. The positions have been preserved as they appear.",
+    "indirubinTitle": "How indirubin shifts the shade",
+    "indirubinBody": "Indirubin is the red isomer of indigo. Adjusting the composition of indigo and indirubin produced by microbial fermentation makes it possible to create a blue that is unique to your brand.",
+    "indirubinAltA": "Photograph of denim fabric dyed with 100% indigo (catalogue p.7 Figure 4-2)",
+    "indirubinAltB": "Photograph of denim fabric dyed with 94% indigo and 6% indirubin (catalogue p.7 Figure 4-2)",
+    "indirubinLabelA": "Indigo 100%",
+    "indirubinLabelB": "Indigo 94%, indirubin 6%",
+    "indirubinToggle": "Compare the two compositions",
+    "indirubinNote": "These are photographs of the two compositions presented in the catalogue. Mixing ratios in between are not provided, so we do not generate those colors on screen.",
+    "colorDisclaimer": "Actual color may differ depending on the screen, the fabric and the dyeing conditions. Please confirm with a fabric sample.",
+    "inquiryCta": "Request a sample in this shade",
+    "medicalNote": "The pharmacological activity of indirubin is not covered on this site. We describe it only from the perspective of shade control and product development.",
+    "keyboardHint": "Use the arrow keys (← → ↑ ↓) and Home · End to move between swatches."
+  },
+  "Products": {
+    "eyebrow": "PRODUCT FORMS",
+    "title": "Two forms: powder and printing ink.",
+    "body": "Indigo made by microbial fermentation is supplied as a powder for fabric dyeing and as an ink for digital printing.",
+    "powderTitle": "Blugene Indigo Powder",
+    "powderText": "Indigo powder produced by microbial fermentation. Dyeing evaluation data for cotton, silk and cashmere is included in the catalogue.",
+    "powderAlt": "Deep blue bio indigo powder in a dish (catalogue p.9)",
+    "inkTitle": "Blugene Digital Printing Ink",
+    "inkText": "A bio indigo ink for digital printing. We are glad to discuss applications and samples with you.",
+    "inkAlt": "A glass bottle of deep blue bio indigo digital printing ink (catalogue p.9)",
+    "nameNote": "The product names above are the web-facing names of the new brand. In the catalogue and the certificates the original product name is “{catalogueName}”.",
+    "specNote": "Particle size, viscosity, shelf life, minimum order quantity, production capacity and pricing are not in the supplied material and are therefore not shown. Please contact us and we will confirm the specifications you need.",
+    "cyclesTitle": "Color development by number of dyeing cycles",
+    "cyclesCaption": "Catalogue p.8 Figure 5-1. A comparison of cotton fabric dyed 1 to 4 times with chemical indigo (powder), bio indigo (powder) and bio indigo (digital printing ink).",
+    "cyclesAlt": "A three-row, four-column comparison plate. The rows are chemical indigo powder, bio indigo powder and bio indigo digital printing ink; the columns are 1 to 4 dyeing cycles.",
+    "cyclesNote": "For this example the catalogue records color strength as “digital printing ink > chemical indigo ≈ bio indigo powder”. The shade depth in the photograph has not been converted into K/S values or ΔE color difference measurements, and it does not imply superior performance under all conditions.",
+    "cta": "Request product information"
+  },
+  "Printing": {
+    "eyebrow": "PRINTED IN BLUE",
+    "title": "Printing widens what color can say.",
+    "body": "Digital printing places color exactly where it is needed and renders intricate patterns. Here are results printed with bio indigo ink, shown alongside the original images.",
+    "pairOriginal": "Original image",
+    "pairPrinted": "Printed with bio indigo ink",
+    "pairAltOriginal": "Original image {index} used for digital printing (catalogue p.9 Figure 6-2)",
+    "pairAltPrinted": "The same image {index} digitally printed with bio indigo ink (catalogue p.9 Figure 6-2)",
+    "pairNote": "On the left is the original image used for printing, and on the right is the result printed with bio indigo ink. These are not before-and-after photographs showing a performance improvement, and the supplied material contains no information about the original creator, the customer or the delivery destination.",
+    "processTitle": "Ink manufacturing flow",
+    "processCaption": "The stages shown in catalogue p.9 Figure 6-1. The original labels are given alongside.",
+    "processAlt": "Diagram of the ink manufacturing flow from raw material preparation through premixing, milling and filtration to formation (catalogue p.9)",
+    "processNote": "The final stage in the catalogue is written as “Formation”. We keep the original wording rather than replacing it with a settled process term. This is not a disclosure of the exact production recipe.",
+    "steps": [
+      {
+        "title": "Raw Material Preparation",
+        "text": "The bio indigo powder and auxiliary materials are weighed out and prepared."
+      },
+      {
+        "title": "Premixing",
+        "text": "The materials are pre-mixed with the dispersion medium."
+      },
+      {
+        "title": "Milling",
+        "text": "The particles are ground and dispersed uniformly."
+      },
+      {
+        "title": "Filtration",
+        "text": "Residual particles are filtered out to bring the ink to a state suited to printing."
+      },
+      {
+        "title": "Formation",
+        "text": "The ink is adjusted into its final form. (Original catalogue label: Formation)"
+      }
+    ],
+    "advantagesTitle": "Characteristics of digital printing",
+    "advantages": [
+      "High-resolution patterns and color combinations that are difficult to achieve with conventional dyeing become possible.",
+      "Color is placed only where it is needed, which also suits small production runs.",
+      "Complex designs are easy to reproduce consistently."
+    ],
+    "advantagesNote": "Catalogue p.9 mentions ranges for water and waste reduction in digital printing generally, but these were not measured on Blugene products, so no figures are shown on this site."
+  },
+  "DataHub": {
+    "eyebrow": "DATA & CERTIFICATIONS",
+    "title": "Trust you can check against the source.",
+    "body": "Test results and certificates are gathered in one place. Each item is shown with its testing institute, test method, report number and data as-of date, and the original can be viewed.",
+    "carbonSectionTitle": "Biobased carbon (C14)",
+    "carbonSectionBody": "Results of measuring the biobased (renewable) carbon share of commercial indigo dyes.",
+    "anilineSectionTitle": "Aniline and N-methylaniline analysis",
+    "anilineSectionBody": "Results of analyzing the aniline and N-methylaniline remaining in commercial indigo dyes.",
+    "tableLab": "Testing institute",
+    "tableMethod": "Test method",
+    "tableReport": "Test report number",
+    "tableReportDate": "Test date",
+    "tableDetectionLimit": "Method detection limit",
+    "tableType": "Indigo type",
+    "tableSample": "Sample",
+    "tablePmc": "pMC",
+    "tableBiobased": "Biobased carbon content (%)",
+    "tableAniline": "Aniline (mg/kg)",
+    "tableNMethylaniline": "N-methylaniline (mg/kg)",
+    "typeChemical": "Chemical",
+    "typePlant": "Plant",
+    "typeBio": "Bio",
+    "notDetected": "Not detected",
+    "notDetectedShort": "N.D.",
+    "notDetectedExplain": "Not detected (N.D.) means below the method detection limit under the stated test method. It is not a measured value of 0, and it is not shown as a zero bar in the charts.",
+    "sameLabelNote": "Company M appears under both chemical indigo and plant indigo. It is labelled with its type so the two can be told apart.",
+    "anonymousNote": "Company names follow the anonymized labels used in the catalogue. We do not speculate about the actual company names.",
+    "sampleScopeNote": "These values are a comparison of the nine samples included in the catalogue and are not statistics representing the market as a whole. The carbon test and the aniline test differ in institute, method and date, so they have not been combined into a single indicator.",
+    "chartCarbonTitle": "Biobased carbon content comparison (%)",
+    "chartAnilineTitle": "Aniline and N-methylaniline comparison (mg/kg)",
+    "chartAccessibleNote": "Every value in the charts can also be found in the tables below.",
+    "regulatoryOmitted": "The regulatory and certification limit tables on catalogue p.4 apply differently by country and product category and require checking against the current source, so this site does not reproduce or interpret those figures in its own text. You can read page 4 as printed under “Original catalogue” below; for the limits that actually apply, please consult the current text of each regulation.",
+    "catalogueTitle": "The original catalogue",
+    "catalogueBody": "All 12 pages of the supplied catalogue can be viewed.",
+    "cataloguePage": "Page {page}",
+    "cataloguePageAlt": "CutisBio bio indigo catalogue page {page}",
+    "catalogueDownload": "Download PDF ({size})",
+    "catalogueAnchorNote": "If your browser does not support jumping to a PDF page, please use the page numbers shown above to navigate manually.",
+    "carbonZeroNote": "Company Z's biobased carbon content is printed as 0 (pMC 0.30) in catalogue Table 1-1 and as N.D. in Figure 1-3. This table reproduces the Table 1-1 value."
+  },
+  "Certifications": {
+    "title": "Global certifications",
+    "body": "These are the certificates included in the supplied catalogue. Each is shown with its certification body, certificate number, covered product and the validity period stated in the document, and the original certificate can be viewed enlarged.",
+    "numberLabel": "Certificate number",
+    "issuerLabel": "Certification body",
+    "productLabel": "Covered product",
+    "validityLabel": "Validity period stated in the document",
+    "issuedLabel": "Document issue date",
+    "pageLabel": "Catalogue page",
+    "certificateAlt": "Original image of the {name} certificate",
+    "logoAlt": "{name} certification mark",
+    "noExpiry": "No expiry date is stated in the document",
+    "statusDocumented": "Certification material included in the July 2026 catalogue",
+    "statusWithinPeriod": "Within the validity period stated in the document",
+    "statusPastPeriod": "The validity period stated in the document has passed. Please contact us for the latest documentation.",
+    "verificationNote": "We have confirmed the dates written in the documents; this is not a check of current certification status in the certification body's database.",
+    "brandNameNote": "The product name on the certificates is “CB Bio Indigo Dye Powder”. Blugene is the new brand name for the CutisBio bio indigo business, which includes this product, and the product names in the certificate images have not been changed.",
+    "scopeNote": "The certification scope is limited to the product named on each certificate. It does not mean that digital printing ink or finished denim garments are automatically certified.",
+    "asOfLabel": "Data as of",
+    "nextReviewLabel": "Recommended date for the next certification status check",
+    "requestLatest": "Request the latest certification documents",
+    "zdhcScope": "The scope covers the chemical formulation named on the certificate (CB Bio Indigo Dye Powder). The use category is Natural dyes (1.7.27).",
+    "oekoScope": "The product list is in the enclosure to the certificate and is not included in the catalogue. The product class is 2.9 Natural dyes. Until the enclosure has been checked, we do not specify the range of covered products.",
+    "usdaScope": "A participation certificate confirming that the USDA Certified Biobased Product Label was obtained; the label states 98%. Catalogue p.11 footnotes the precision of this result as ±3% (absolute).",
+    "okbiobasedScope": "Class 5 means a biobased carbon content of 97% or more and up to 100%. The certificate cites method EN 16640 and certification scheme OK 20 edition D.",
+    "zoomOpen": "View the certificate enlarged",
+    "zoomClose": "Close",
+    "zoomHint": "Press Esc to close."
+  },
+  "Inquiry": {
+    "eyebrow": "SAMPLE INQUIRY",
+    "title": "Let's create your next blue.",
+    "body": "Tell us what you need — fabric dyeing, digital printing, joint shade development, or technical and certification documents.",
+    "topicLabel": "Inquiry type",
+    "topicFabricDyeing": "Fabric dyeing",
+    "topicDigitalPrinting": "Digital printing",
+    "topicShadeDevelopment": "Joint shade development",
+    "topicTechnicalData": "Technical and certification documents",
+    "messageLabel": "Details that help us respond",
+    "messagePlaceholder": "Company name, contact person, fabric type, the quantity and timeline you need, and so on.",
+    "submit": "Send an email inquiry",
+    "submitHint": "Selecting the button opens your default email application with the recipient, subject and message already filled in. No information is sent from this screen; the message goes out only after you have checked it yourself.",
+    "mailSubject": "[Blugene sample inquiry] {topic}",
+    "mailIntro": "I would like to inquire about Blugene samples and technical documentation.",
+    "mailTopicLine": "Inquiry type: {topic}",
+    "mailShadeLine": "Shade swatch of interest: {shade}",
+    "mailFooter": "— This email was composed on the inquiry page at blugene.co.",
+    "emailLabel": "Email",
+    "telLabel": "Phone",
+    "addressLabel": "Address",
+    "companyRelationTitle": "Blugene and CutisBio",
+    "companyRelationBody": "Blugene is the brand name of the bio indigo developed by CutisBio Co., Ltd. In the catalogue and the certificates it is recorded under its original product name, “Bio Indigo Dye Powder (Microbial Fermentation)”.",
+    "sampleNote": "We will confirm sample availability when you get in touch. (Catalogue p.11: Samples are available upon request)"
+  },
+  "Common": {
+    "sourceLabel": "Source",
+    "cataloguePage": "Catalogue p.{page}",
+    "asOf": "Data as of {date}",
+    "viewOriginal": "View the original",
+    "viewSource": "View the source material",
+    "close": "Close",
+    "openImage": "Enlarge image",
+    "conceptImage": "Concept image",
+    "brandImage": "Brand image",
+    "testPhoto": "Test photograph",
+    "imageNoteConcept": "This image is used to illustrate a concept; it is not a photograph of an actual facility, customer or test result.",
+    "imageNotePhoto": "Photographs from the supplied catalogue, resized for the web without any color correction.",
+    "imageNoteSwatch": "The colour swatches printed in Figure 4-1 on catalogue p.7, copied from the original files without conversion. These are not photographs of physical fabric.",
+    "scrollableRegion": "Horizontally scrollable region",
+    "catalogueFigure": "Catalogue figure"
+  },
+  "Brand": {
+    "metaTitle": "Brand story",
+    "metaDescription": "Blugene is the CutisBio bio indigo brand, remaking indigo for denim that stays with you for a lifetime.",
+    "heroEyebrow": "THE STORY",
+    "heroTitle": "Clothes worn for a lifetime. So we start by questioning the color.",
+    "heroBody": "Through bioengineering we have rewritten the way indigo is made. Denim crosses ethnicities and borders and stays with us for a lifetime. That is why we do not compromise, even on the smallest impurity within it. We remake indigo with skin and the environment in mind. That is Blugene.",
+    "nameTitle": "The meaning in the name",
+    "nameBody": "The name combines Blue and Gene. It carries the idea of remaking a long-loved blue through the methods of bioengineering.",
+    "nameNote": "“Rewriting the DNA of indigo” is a metaphor. It does not mean that the indigo molecule contains genes.",
+    "promiseTitle": "What we promise",
+    "promiseBody": "What we can promise is material you can verify. We disclose what it is made from, what impurities remain and how the results can be checked.",
+    "promiseItems": [
+      {
+        "title": "We disclose the feedstock",
+        "text": "We start from renewable carbon. Biobased carbon content is published as a test result."
+      },
+      {
+        "title": "We check the impurities",
+        "text": "Aniline and N-methylaniline are analyzed by accredited test methods, and the results are published together with the detection limit."
+      },
+      {
+        "title": "We show the originals",
+        "text": "Test report numbers, certificate numbers and original certificate images can be checked directly on this site."
+      }
+    ],
+    "limitsTitle": "What we do not claim",
+    "limitsBody": "We are clear about the scope of what has been verified so far. The following is not substantiated by the supplied catalogue, so we make no such claims on this site.",
+    "limitsItems": [
+      "Lifetime skin-contact safety, or safety for infants and sensitive skin",
+      "Non-irritancy demonstrated by clinical or dermatological testing",
+      "Complete removal of all hazardous substances, or being “chemical-free”",
+      "Product-level figures for reduced carbon emissions or water use, carbon neutrality, or biodegradability"
+    ],
+    "relationTitle": "Our relationship with CutisBio",
+    "relationBody": "Blugene is the indigo business brand of CutisBio Co., Ltd. The corporate name and the wording used on certificates and test reports remain CutisBio.",
+    "cta": "Inquire about samples and technical documents"
+  },
+  "Technology": {
+    "metaTitle": "Technology",
+    "metaDescription": "An explanation of the four routes to indigo, production based on microbial fermentation, and the biobased carbon test results.",
+    "heroEyebrow": "TECHNOLOGY",
+    "heroTitle": "Four ways to make blue, and the one we chose.",
+    "heroBody": "There is more than one way to obtain indigo. The catalogue presents four routes, and the CutisBio bio indigo on which Blugene is built follows the microbial route.",
+    "routesTitle": "Four routes to indigo synthesis",
+    "routesCaption": "Catalogue p.2 Figure 1-1. Chemical routes are marked in red and biological routes in yellow.",
+    "routesAlt": "Diagram of four indigo synthesis routes starting from crude oil, biomass and indigo plants (catalogue p.2)",
+    "routes": [
+      {
+        "name": "Chemical indigo",
+        "feedstock": "Crude oil (non-renewable)",
+        "intermediate": "Aniline",
+        "text": "Indigo is synthesized via aniline obtained from crude oil. The catalogue marks this as a chemical route."
+      },
+      {
+        "name": "Hybrid indigo",
+        "feedstock": "Biomass",
+        "intermediate": "Anthranilic acid",
+        "text": "Indigo is made via anthranilic acid obtained from biomass. The feedstock is renewable, but the intermediate stage differs from the purely microbial route."
+      },
+      {
+        "name": "Bio indigo (microbial)",
+        "feedstock": "Biomass",
+        "intermediate": "Tryptophan",
+        "text": "Microorganisms convert tryptophan obtained from biomass into indigo. CutisBio bio indigo follows this route."
+      },
+      {
+        "name": "Natural indigo (plant-derived)",
+        "feedstock": "Indigo plants",
+        "intermediate": "Extraction",
+        "text": "The pigment is extracted from indigo plants. The catalogue notes cases among commercial plant-derived indigos that appear to contain chemical indigo."
+      }
+    ],
+    "routeFeedstockLabel": "Feedstock",
+    "routeIntermediateLabel": "Key intermediate stage",
+    "routesNote": "The anthranilic acid stage of the hybrid route differs from the tryptophan stage of the microbial route. We have not simplified the two routes into one.",
+    "carbonTitle": "Where the carbon comes from",
+    "carbonCaption": "Catalogue p.2 Figure 1-2. A comparison of the carbon cycle in the chemical route (top) and the bio route (bottom).",
+    "carbonAlt": "Conceptual diagram comparing the carbon cycle of the chemical route and the bio route (catalogue p.2)",
+    "carbonBody": "The chemical route takes its carbon from non-renewable crude oil, and the bio route from renewable biomass. This difference is confirmed by the biobased carbon content test.",
+    "processTitle": "From feedstock to fabric",
+    "safetyTitle": "The working environment",
+    "safetyBody": "The catalogue addresses the working environment associated with handling hazardous chemicals. This site makes no quantitative claims about worker safety and goes no further than describing the difference in the substances handled.",
+    "safetyAlt": "Illustration contrasting the handling of hazardous chemicals with the handling of non-hazardous materials (catalogue p.4)",
+    "impurityTitle": "Why we check for aniline",
+    "impurityBody": "Aniline and N-methylaniline are starting materials or intermediates in chemical synthesis routes, and they can remain as unreacted residues in the final indigo powder. Because of their toxicity and possible carcinogenicity, a number of certification standards limit the permitted concentration in textile dyes and in finished products.",
+    "cta": "See all the test data",
+    "conceptCaptionSafety": "Catalogue p.4 Figure 2-1. An illustration contrasting the handling of hazardous and non-hazardous substances; it is not a photograph of an actual workplace."
+  },
+  "DyeingPrinting": {
+    "metaTitle": "Dyeing & Printing",
+    "metaDescription": "A comparison of cotton, silk and cashmere dyeing, colorfastness test results, shade swatches by concentration, and the powder and digital printing ink.",
+    "heroEyebrow": "DYEING & PRINTING",
+    "heroTitle": "Color, confirmed on the fabric itself.",
+    "heroBody": "Dyeability and colorfastness, shade and product form. We show the data obtained on real fabric exactly as it stands.",
+    "cta": "Request a fabric sample"
+  },
+  "Tech": {
+    "title": "Blugene, an indigo made by microbial fermentation",
+    "description": "How the bio indigo of Blugene by CutisBio is made, and how it has been confirmed by testing.",
+    "intro": "Blue denim is the most loved of fabrics. There is more than one way to make its color. CutisBio produces indigo using the biosynthetic pathways of microorganisms together with fermentation.",
+    "section1Title": "1. Why we check for impurities",
+    "section1Text": "Aniline and N-methylaniline are starting materials or intermediates for chemically synthesized indigo, and they can remain as unreacted residues in the final powder. Because of their toxicity and possible carcinogenicity, certification standards including ZDHC, OEKO-TEX and GOTS limit the permitted concentration of these substances in textile dyes and in finished products. That is why we analyze both substances for each product and publish the results together with the detection limit.",
+    "comparisonCaption": "Catalogue p.4 describes these two substances as starting materials or intermediates in the chemical route to indigo, and notes that because they are toxic and potentially carcinogenic, several certification standards limit their permitted concentration in textile dyes and finished products.",
+    "section2Title": "2. Indigo made by microbial fermentation",
+    "section2Text": "CutisBio uses a fermentation process that draws on the biosynthetic pathways of microorganisms to convert tryptophan obtained from biomass into indigo. Of the four indigo synthesis routes presented in the catalogue, this is the microbial route.",
+    "section3Title": "3. What the tests confirmed",
+    "section3Text": "In KATRI's ASTM D6866-24a Method B test, biobased carbon content was measured at 98% (pMC 97.73), and in KOTERI's KS K 0734 2019 test aniline and N-methylaniline were not detected (method detection limit 5 mg/kg). According to the catalogue, colorfastness is at a level comparable to plant and chemical indigo, and the grade for each item can be seen exactly as recorded in the tables on the data page.",
+    "certSectionTitle": "Global certifications",
+    "certSectionText": "These are the certificates included in the supplied catalogue. Each original can be viewed together with its certification body, certificate number, covered product and the validity period stated in the document.",
+    "faqTitle": "Frequently asked questions",
+    "faqList": [
+      {
+        "question": "What is Blugene?",
+        "answer": "Blugene is the brand name of the bio indigo that CutisBio Co., Ltd. produces by microbial fermentation. In the catalogue and the certificates it is recorded under its original product name, “Bio Indigo Dye Powder (Microbial Fermentation)”."
+      },
+      {
+        "question": "What does “98% biobased carbon content” mean?",
+        "answer": "It means that 98% of the carbon in the product comes from renewable feedstock. It is the result of KATRI's ASTM D6866-24a Method B (AMS) test (pMC 97.73, report SBED25-00000153-1, 2025-05-22), and it is not indigo purity or a carbon emissions reduction rate."
+      },
+      {
+        "question": "Does “aniline not detected” mean the content is 0?",
+        "answer": "No. It means that in KOTERI's KS K 0734 2019 test the result was below the method detection limit of 5 mg/kg and so was not detected (report 2025-0604-1132-C03, 2025-06-10). It does not mean 0 ppm or the complete absence of the substance."
+      },
+      {
+        "question": "Can it be used on existing dyeing equipment as it is?",
+        "answer": "The catalogue records comparable performance to plant and chemical indigo in the dyeing of cotton, silk and cashmere. Results can vary with the mill, the fabric and the process conditions, so we recommend confirming actual application with a fabric sample."
+      },
+      {
+        "question": "Which products do the certifications apply to?",
+        "answer": "The product named on the certificates is “CB Bio Indigo Dye Powder”. The product list for OEKO-TEX ECO PASSPORT is in an enclosure to the certificate, so the scope cannot be determined from the catalogue alone. Digital printing ink and finished denim garments are not automatically certified."
+      }
+    ],
+    "structuresTitle": "Chemical structures of aniline and N-methylaniline",
+    "structuresNote": "Skeletal formulae drawn directly in code (SVG) from verified chemical structures. They were not produced with an image generation tool.",
+    "structureAnilineName": "Aniline",
+    "structureAnilineDesc": "A skeletal formula showing a benzene ring with a single amino group (NH2).",
+    "structureNMethylanilineName": "N-methylaniline",
+    "structureNMethylanilineDesc": "A skeletal formula showing a benzene ring bonded to a nitrogen that carries one hydrogen and a methyl group (CH3)."
   },
   "About": {
-    "title": "Designing a more beautiful everyday life with synthetic biology",
+    "title": "Designing everyday life to be more beautiful through synthetic biology",
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "Expanding the sustainability of everyday life by mass-producing high-performance biomaterials with synthetic biology technology.",
-    "aboutImageAlt": "In-depth bio research view by CutisBio researchers",
-    "coreBusinessTitle": "Developing Leading Bio-based Specialty Materials",
+    "visionText": "We design the biosynthetic capabilities of microorganisms to remake industrial materials. Blugene is one of the results: indigo for the fashion industry, produced by fermentation.",
+    "aboutImageAlt": "CutisBio researchers engaged in in-depth bio research",
+    "coreBusinessTitle": "Core business areas",
     "medicalTitle": "Medical",
-    "medicalText": "Development of pharmaceutical raw materials possible only through bioprocesses.",
+    "medicalText": "We research pharmaceutical materials based on synthetic biology.",
     "beautyTitle": "Beauty",
-    "beautyText": "Development of precision beauty solutions and high value-added materials/products converging skin microbiome big data and synthetic biology.",
-    "fashionTitle": "Fashion",
-    "fashionText": "Completion of human-safe and eco-friendly denim fashion through the commercialization of 100% non-toxic, aniline-free 'Bio-Indigo'.",
-    "historyTitle": "Key Milestones and Achievements",
+    "beautyText": "We develop cosmetic ingredients grounded in skin microbiome research.",
+    "fashionTitle": "Fashion (Blugene)",
+    "fashionText": "We supply bio indigo produced by microbial fermentation for denim dyeing and digital printing.",
+    "historyTitle": "History",
     "historyList": [
       {
         "year": "2024",
@@ -78,41 +541,18 @@
         "year": "2020",
         "event": "CutisBio Co., Ltd. established"
       }
-    ]
+    ],
+    "blugeneNoteTitle": "About this site",
+    "blugeneNoteText": "This site introduces the indigo business of CutisBio (Blugene). For the medical and cosmetics businesses and an overview of the company as a whole, please see the CutisBio corporate site.",
+    "metaDescription": "CutisBio engineers the biosynthetic capability of microorganisms to make industrial materials. An overview of our business areas, including the bio indigo brand Blugene, and our history."
   },
-  "Tech": {
-    "title": "Sustainable Denim Dyeing through Microbial Fermentation",
-    "description": "Introducing the background of CutisBio's Aniline-free indigo dye development and the future of eco-friendly denim fashion.",
-    "intro": "The most loved fashion item, 'Blue Denim'. However, behind its beautiful color lurked 'aniline', a petrochemical-derived substance that threatens health and the environment. CutisBio fundamentally solves this problem using microbes.",
-    "section1Title": "1. The Absolute Necessity of Being Aniline-Free",
-    "section1Text": "Aniline is a hazardous substance classified as a potential carcinogen by the International Agency for Research on Cancer (IARC) under the WHO. It is indiscriminately discharged into water resources during denim production, destroying ecosystems and adversely affecting end consumers who have long-term skin contact.",
-    "comparisonImageAlt": "Infographic showing Aniline and Methylaniline chemical structures and the risks of dermatitis and bladder cancer",
-    "comparisonCaption": "Chemical structures of Aniline and Methylaniline, and their critical human health threats including contact dermatitis and bladder cancer.",
-    "section2Title": "2. CutisBio's Innovation: Turning Microbes into Factories",
-    "section2Text": "Nature had the answer. Using advanced synthetic biology technology, we endowed special microbes with metabolic pathways similar to plants. These microbes produce indigo precursors on their own, fundamentally blocking the use of fatal chemicals like aniline.",
-    "section3Title": "3. A 'Drop-in' Solution Without Compromising Quality",
-    "section3Text": "Being eco-friendly doesn't mean compromising on quality. CutisBio's bio-indigo takes a 'Drop-in' form that can be immediately introduced without modifying the infrastructure of existing dyeing factories. It perfectly replicates the same color depth (Shade) and rubbing fastness as conventional chemical dyes.",
-    "certSectionTitle": "Global Sustainability Certifications",
-    "certSectionText": "We are proud to announce the completion of world-class certifications for various aspects of sustainability, environmental friendliness, and human safety.",
-    "certOkbiobased": "OK biobased Certification Mark",
-    "certBioPreferred": "USDA BioPreferred Certification Mark",
-    "certOekoTex": "OEKO-TEX Eco Passport Certification Mark",
-    "certZdhc": "ZDHC Certification Mark",
-    "faqTitle": "Frequently Asked Questions (FAQ)",
-    "faqList": [
-      {
-        "question": "What are the problems with traditional indigo dyeing?",
-        "answer": "Conventional synthetic indigo dyes are produced using petrochemicals such as aniline and hydrogen cyanide. This causes severe water pollution and poses health threats to workers and end consumers."
-      },
-      {
-        "question": "What is microbial fermentation-based indigo dye?",
-        "answer": "CutisBio's technology uses specially engineered microbes to produce indigo precursors through a natural fermentation process. By using biological mechanisms instead of chemical synthesis, we create 100% aniline-free dye."
-      },
-      {
-        "question": "Is there any difference in conventional garment quality?",
-        "answer": "No. It achieves equal or superior quality, color depth, and washing/rubbing fastness compared to traditional indigo denim dyeing. We have achieved perfect sustainability without compromising quality."
-      }
-    ]
+  "Blog": {
+    "eyebrow": "INSIGHTS & TECHNOLOGY",
+    "title": "Blog",
+    "description": "In-depth articles on the synthetic biology technology of CutisBio and on sustainable fashion.",
+    "categoryTech": "Technology",
+    "readMore": "Read more",
+    "readTime": "{minutes} min read"
   },
   "News": {
     "title": "CutisBio Newsroom",
@@ -433,8 +873,8 @@
       {
         "date": "2022-12-05",
         "category": "press release",
-        "title": "Cutis Bio - Joint research on immunobiome and microbiome immune anti-cancer treatment",
-        "summary": "Cutis Bio-Immunobiome, Microbiome Immunoanticancer Treatment Joint Research Pharm News",
+        "title": "CutisBio - Joint research on immunobiome and microbiome immune anti-cancer treatment",
+        "summary": "CutisBio-Immunobiome, Microbiome Immunoanticancer Treatment Joint Research Pharm News",
         "thumbnailAlt": "News thumbnail",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zbVMzQ0s3NVpxMG9HNUNiSFN2bG0yOTBRSk5ad01EUlNoSnNId1UxM1pYSkptbWNGcEJ4cHJRY3ZvR0tUTC01VmM5SVJVNlZqSVYxLTQ1YUNlWVFkT1UyVXMtTnBMenk4SHZvYg?oc=5"
       },
@@ -513,35 +953,14 @@
     ]
   },
   "Contact": {
-    "title": "Contact Us",
-    "description": "If you have any questions about CutisBio, please leave a message and we will get back to you quickly.",
-    "addressTitle": "Address",
-    "addressDetail": "8F, Apgujeong Bldg, 842 Nonhyeon-ro, Gangnam-gu, Seoul",
-    "emailTitle": "Email",
-    "emailAddress": "contact@cutisbio.com",
-    "mapTitle": "Location Map"
+    "title": "Contact",
+    "description": "Get in touch about Blugene samples and technical or certification documents. You can choose from fabric dyeing, digital printing, joint shade development and technical documentation.",
+    "addressDetail": "8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
+    "mapTitle": "How to find us"
   },
-  "ProblemSolution": {
-    "problemTitle": "The Hidden Cost of Our Denim",
-    "problemText": "Traditional dyeing processes rely on petrochemicals, leaving severe environmental pollution and health threats. 'Aniline', in particular, is one of the most critical issues.",
-    "solutionTitle": "CutisBio's Innovative Answer",
-    "solutionText": "100% aniline-free dye completely devoid of toxic substances through microbial fermentation. Providing perfect sustainability safe for both humans and nature."
-  },
-  "Process": {
-    "title": "Biomanufacturing Process",
-    "subtitle": "Advanced synthetic biology mechanism mimicking nature",
-    "step1Title": "1. DNA Design",
-    "step1Text": "Specially redesigning microbial DNA based on enzyme pathways existing in nature.",
-    "step2Title": "2. Precision Fermentation",
-    "step2Text": "In a precise fermentation environment, microbes naturally produce indigo precursors like plants.",
-    "step3Title": "3. Indigo Purification",
-    "step3Text": "Completing a 100% bio-based dye through an eco-friendly purification process.",
-    "step4Title": "4. Drop-in Dyeing",
-    "step4Text": "Immediately applicable to existing dyeing factory infrastructure without need for additional equipment replacement."
-  },
-  "Partners": {
-    "title": "Leading Brands Joining the Future of Global Fashion",
-    "testimonial": "\"CutisBio's synthetic biology-based indigo is a true game changer that protects the health of those who love denim while guaranteeing the differentiated competitiveness of denim brands.\"",
-    "testimonialAuthor": "CEO interview"
+  "NotFound": {
+    "title": "We couldn't find that page.",
+    "body": "The address may have changed or the page may have been removed. Try one of the sections below.",
+    "backHome": "Go to home"
   }
 }

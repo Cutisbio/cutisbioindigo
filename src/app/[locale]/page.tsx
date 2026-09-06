@@ -1,52 +1,125 @@
-import React from 'react';
-import SchemaOrg, { buildOrganizationSchema } from '@/components/seo/SchemaOrg';
-import { getTranslations } from 'next-intl/server';
+import type { Metadata } from 'next';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
+import SchemaOrg, { buildOrganizationSchema } from '@/components/seo/SchemaOrg';
 
-import HeroSection from '@/components/home/HeroSection';
-import ProblemSolution from '@/components/home/ProblemSolution';
-import TechnologyProcess from '@/components/home/TechnologyProcess';
-import PartnersPress from '@/components/home/PartnersPress';
-import CertificationsSection from '@/components/shared/CertificationsSection';
-import QualityTestSection from '@/components/home/QualityTestSection';
+import BlugeneHero from '@/components/blugene/BlugeneHero';
+import EvidenceStrip from '@/components/blugene/EvidenceStrip';
+import BrandManifesto from '@/components/blugene/BrandManifesto';
+import ImpurityEvidence from '@/components/blugene/ImpurityEvidence';
+import ScienceSection from '@/components/blugene/ScienceSection';
+import EnvironmentSection from '@/components/blugene/EnvironmentSection';
+import FabricComparison from '@/components/blugene/FabricComparison';
+import ShadeLibrary from '@/components/blugene/ShadeLibrary';
+import ProductFormats from '@/components/blugene/ProductFormats';
+import PrintingGallery from '@/components/blugene/PrintingGallery';
+import CertificationLibrary from '@/components/blugene/CertificationLibrary';
+import SectionHeading from '@/components/blugene/SectionHeading';
+import FinalCta from '@/components/blugene/FinalCta';
+
+import { BRAND, LOCALES, SITE_URL, canonicalUrl, localeAlternates } from '@/data/blugene/site';
+
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }));
+}
+
+/**
+ * 이 페이지는 인증서의 **문서상 유효기간**을 현재 날짜와 비교해 배지를 렌더링한다.
+ * 하루에 한 번 다시 생성해, 만료된 문서를 계속 '유효'로 보여 주지 않게 한다.
+ */
+export const revalidate = 86400;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Home' });
+  const url = canonicalUrl(locale, '/');
+  const title = `${BRAND.lockup} | ${t('metaTitle')}`;
+  return {
+    title: { absolute: title },
+    description: t('metaDescription'),
+    alternates: { canonical: url, languages: localeAlternates('/') },
+    openGraph: { title, description: t('metaDescription'), url, type: 'website' },
+  };
+}
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'Home' });
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cutisbioindigo.kr';
-  
-  const orgSchema = buildOrganizationSchema(
-    'CutisBio',
-    baseUrl,
-    `${baseUrl}/logo.png`
-  );
+  setRequestLocale(locale);
+
+  const t = await getTranslations({ locale, namespace: 'DataHub' });
+  const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/logo.png`);
 
   return (
     <>
       <SchemaOrg schema={orgSchema} />
-      
-      <div className="flex flex-col w-full">
-        <HeroSection />
-        <ProblemSolution />
-        <CertificationsSection />
-        <QualityTestSection />
-        <TechnologyProcess />
-        <PartnersPress />
-        
-        {/* Call to Action Section - Refactored to match premium layout */}
-        <section className="bg-slate-900 py-32 px-6 text-center shadow-inner relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/30 via-slate-900 to-slate-900" />
-          <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white leading-tight break-keep">{t('ctaTitle')}</h2>
-            <p className="text-lg sm:text-xl text-slate-300 mb-10 leading-relaxed break-keep">
-              {t('ctaText')}
-            </p>
-            <Link href="/blog/sustainable-indigo" className="inline-block bg-white text-blue-900 font-bold py-4 sm:py-5 px-8 sm:px-12 rounded-full hover:bg-blue-50 transition-colors shadow-lg hover:shadow-xl text-lg sm:text-xl w-full sm:w-auto tracking-wide">
-              {t('ctaButton')}
-            </Link>
+
+      {/* 01. 처음 만나는 Blugene */}
+      <BlugeneHero />
+      <EvidenceStrip />
+
+      {/* 02. 국경과 세대를 잇는 옷 */}
+      <BrandManifesto />
+
+      {/* 03. 보이지 않는 것까지 확인 */}
+      <ImpurityEvidence />
+
+      {/* 04. 파랑을 만드는 새로운 방식 */}
+      <ScienceSection />
+
+      {/* 04-b. 재생 가능한 탄소 */}
+      <EnvironmentSection />
+
+      {/* 05. 실제 원단으로 보여주는 성능 */}
+      <section className="w-full bg-white">
+        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
+          <FabricComparison variant="bare" />
+        </div>
+      </section>
+
+      {/* 06. 당신만의 파랑 */}
+      <section className="w-full bg-[var(--color-ivory)]">
+        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
+          <ShadeLibrary variant="bare" />
+        </div>
+      </section>
+
+      {/* 07. 분말과 프린팅 잉크 */}
+      <section className="w-full bg-white">
+        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
+          <ProductFormats variant="bare" />
+        </div>
+      </section>
+
+      {/* 08. 프린팅으로 확장되는 가능성 */}
+      <section className="w-full bg-[var(--color-ivory)]">
+        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
+          <PrintingGallery />
+        </div>
+      </section>
+
+      {/* 09. 원본으로 확인하는 신뢰 */}
+      <section className="w-full bg-white">
+        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
+          <SectionHeading eyebrow={t('eyebrow')} title={t('title')} body={t('body')} size="lg" />
+          <div className="mt-12">
+            <CertificationLibrary compact />
           </div>
-        </section>
-      </div>
+          <Link
+            href="/data-certifications"
+            className="mt-10 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
+          >
+            {t('catalogueTitle')}
+            <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+      </section>
+
+      {/* 10. 사업 문의로 연결 */}
+      <FinalCta />
     </>
   );
 }

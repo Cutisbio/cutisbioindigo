@@ -1,63 +1,89 @@
-import React from 'react';
-import { getTranslations } from 'next-intl/server';
+import type { Metadata } from 'next';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import SchemaOrg, { buildOrganizationSchema } from '@/components/seo/SchemaOrg';
+import SectionHeading from '@/components/blugene/SectionHeading';
+import { BRAND, LOCALES, SITE_URL, buildPageMetadata } from '@/data/blugene/site';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'News' });
-  return {
+  return buildPageMetadata({
+    locale,
+    path: '/news',
     title: t('title'),
     description: t('description'),
-  };
+  });
 }
+
+type Article = {
+  date: string;
+  category: string;
+  title: string;
+  summary: string;
+  thumbnailAlt: string;
+  link?: string;
+};
 
 export default async function NewsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'News' });
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cutisbioindigo.kr';
-  const orgSchema = buildOrganizationSchema('CutisBio', baseUrl, `${baseUrl}/logo.png`);
+  setRequestLocale(locale);
 
-  const articles = t.raw('articles') as { date: string; category: string; title: string; summary: string; thumbnailAlt: string; link?: string }[];
+  const t = await getTranslations({ locale, namespace: 'News' });
+  const tCommon = await getTranslations({ locale, namespace: 'Common' });
+  const articles = t.raw('articles') as Article[];
+  const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/logo.png`);
 
   return (
     <>
       <SchemaOrg schema={orgSchema} />
-      <div className="max-w-4xl mx-auto space-y-8 sm:space-y-12 py-8 sm:py-12 px-4 sm:px-6">
-        <section className="text-center mt-10 sm:mt-16">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-3 sm:mb-4">
-            {t('title')}
-          </h1>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 px-2 sm:px-0 leading-relaxed">{t('description')}</p>
-        </section>
 
-        <section className="space-y-6 sm:space-y-8">
-          {articles.map((article, index) => (
-            <article key={index} className="bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition p-5 sm:p-6 md:p-8 flex flex-col gap-2 sm:gap-3 mx-2 sm:mx-0">
-              <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm text-gray-500 mb-1 sm:mb-0">
-                <span className="bg-blue-100 text-blue-700 font-semibold px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full">{article.category}</span>
-                <time dateTime={article.date}>{article.date}</time>
-              </div>
-              <h2 className="text-lg sm:text-xl font-bold text-gray-900 leading-snug">{article.title}</h2>
-              <p className="text-sm sm:text-base text-gray-600 leading-relaxed mt-1 flex-1">{article.summary}</p>
-              {article.link && (
-                <div className="mt-4">
-                  <a 
-                    href={article.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors"
-                  >
-                    원문 기사 보기
-                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                  </a>
+      <section className="w-full border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
+        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+          <SectionHeading headingLevel="h1" title={t('title')} body={t('description')} size="lg" />
+        </div>
+      </section>
+
+      <section className="w-full bg-white">
+        <div className="mx-auto max-w-[900px] px-4 py-14 sm:px-6 sm:py-16">
+          <ul className="divide-y divide-[color:var(--color-washed)]">
+            {articles.map((article, index) => (
+              <li key={`${article.date}-${index}`} className="py-7 first:pt-0">
+                <div className="flex flex-wrap items-center gap-3 text-xs text-[var(--color-slate-muted)]">
+                  <span className="rounded-full bg-[var(--color-ivory)] px-3 py-1 font-semibold text-[var(--color-denim)]">
+                    {article.category}
+                  </span>
+                  <time dateTime={article.date}>{article.date}</time>
                 </div>
-              )}
-            </article>
-          ))}
-        </section>
-      </div>
+                <h2 className="mt-3 text-lg leading-snug font-semibold break-keep text-[var(--color-indigo-deep)] sm:text-xl">
+                  {article.title}
+                </h2>
+                <p className="mt-2 text-base leading-relaxed break-keep text-[var(--color-ink)]/80">
+                  {article.summary}
+                </p>
+                {article.link && (
+                  <a
+                    href={article.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
+                  >
+                    {tCommon('viewSource')}
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
     </>
   );
 }

@@ -1,66 +1,529 @@
 {
-  "Blog": {
-    "eyebrow": "洞察 & 技术",
-    "title": "博客",
-    "description": "深入介绍 CutisBio 合成生物学技术和可持续时尚的文章。",
-    "categoryTech": "技术",
-    "readMore": "阅读更多",
-    "readTime": "{minutes} 分钟阅读"
-  },
-  "Layout": {
-    "home": "首页",
-    "about": "关于我们",
-    "tech": "技术介绍",
-    "news": "最新消息",
+  "Nav": {
+    "brand": "品牌",
+    "technology": "技术",
+    "dyeingPrinting": "染色 · 印花",
+    "dataCertifications": "数据 · 认证",
+    "sampleInquiry": "样品咨询",
+    "about": "公司简介",
+    "news": "新闻",
+    "blog": "洞察",
     "contact": "联系我们",
-    "footerText": "Sustainable Denim Dye. Aniline free - Human safe. © 2026 CutisBio. All rights reserved."
+    "menu": "菜单",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "languageLabel": "选择语言",
+    "skipToContent": "跳至正文",
+    "homeAria": "返回 Blugene by CutisBio 首页"
+  },
+  "Footer": {
+    "tagline": "Denim for a lifetime. A safer blue.",
+    "sitemapTitle": "网站导航",
+    "contactTitle": "联系",
+    "legalTitle": "资料说明",
+    "sourceNote": "本网站的检测数值与认证信息，均取自 2026 年 7 月发行的 CutisBio 产品目录。资料基准日 {date}。",
+    "companyLine": "CutisBio Co., Ltd.",
+    "rights": "© 2026 CutisBio Co., Ltd. All rights reserved.",
+    "catalogueLink": "下载原版产品目录（PDF）"
   },
   "Home": {
-    "heroTitle": "新一代环保牛仔染料，CutisBio Indigo",
-    "heroSubtitle": "保护皮肤安全的靛蓝染料。凭借合成生物学技术，在不使用有毒物质（苯胺）的情况下，打造出最具可持续性的牛仔染色解决方案。",
-    "heroImageAlt": "直观的环保外观，蓝色牛仔面料与纯净水滴交织",
-    "impactMetricsTitle": "CutisBio带来的积极改变",
-    "metric1Value": "100%",
-    "metric1Text": "Aniline-Free（完全阻断毒性物质）",
-    "metric2Value": "Drop-in",
-    "metric2Text": "可立即应用于现有染色工厂设备",
-    "metric3Value": "Eco-friendly",
-    "metric3Text": "最大程度减少生产过程中的水污染和碳排放",
-    "coreValuesTitle": "CutisBio技术的核心价值",
-    "coreValuesDesc": "通过合成生物学（Synthetic Biology）革新传统的石化基染色产业。",
-    "feature1": "精准发酵 (Precision Fermentation)",
-    "benefit1": "以可持续生物合成过程模仿自然生态系统",
-    "feature2": "无苯胺 (Aniline-Free)",
-    "benefit2": "从根本上排除威胁工人和消费者的致癌物质",
-    "feature3": "环保靛蓝 (Sustainable Indigo)",
-    "benefit3": "最大程度减少水污染，实现时尚产业循环经济",
-    "ctaTitle": "您愿意加入可持续时尚的未来吗？",
-    "ctaText": "了解CutisBio的创新微生物靛蓝染料如何取代传统染色工艺。",
-    "ctaButton": "查看技术详情",
-    "qualityTitle": "卓越的染色性和色牢度验证",
-    "qualitySubtitle": "经日本高端牛仔布染色公司的彻底比较测试，证明CutisBio靛蓝与传统化学靛蓝相比，展现出更深邃、更出色的色泽和卓越的耐久性。",
-    "qualityImageAlt": "牛仔布染色及色牢度测试结果图片",
-    "qualityBadge": "Quality Proven"
+    "metaTitle": "由靛蓝DNA与发酵孕育的蓝。",
+    "metaDescription": "由靛蓝DNA与发酵孕育的蓝。以微生物发酵生产的生物靛蓝 Blugene — 生物基碳含量 98%，苯胺 · N-甲基苯胺未检出（检出限 5 mg/kg）。",
+    "ctaTitle": "下一条丹宁的蓝，与我们一同创造。",
+    "ctaText": "我们期待丹宁品牌、面料企业、染厂与印花企业的咨询。",
+    "ctaButton": "Blugene 样品咨询"
+  },
+  "Hero": {
+    "descriptor": "由靛蓝DNA与发酵孕育的蓝。",
+    "titleLine1": "相伴一生的丹宁，",
+    "titleLine2": "更安全的蓝。",
+    "body": "那抹终生贴合肌肤的蓝，以合成生物学重获新生。为了肌肤健康，连细微风险也不妥协的靛蓝 Blugene。",
+    "ctaPrimary": "Blugene 样品咨询",
+    "ctaSecondary": "查看数据与认证",
+    "tagline": "Denim for a lifetime. A safer blue.",
+    "imageAlt": "身穿丹宁夹克的家长抱着孩子，眺望玉米田、草地与水畔风景的画面。取自所提供产品目录封面的品牌形象图。",
+    "imageCredit": "产品目录 p.1 收录图片 · 品牌概念图"
+  },
+  "EvidenceStrip": {
+    "carbonValue": "98%",
+    "carbonLabel": "生物基碳含量",
+    "anilineValue": "未检出",
+    "anilineLabel": "苯胺",
+    "nMethylanilineValue": "未检出",
+    "nMethylanilineLabel": "N-甲基苯胺",
+    "note": "以上为所提供产品目录中的检测结果。未检出是指在所列检测方法下低于方法检出限 5 mg/kg，并不表示含量为 0。98% 为生物基碳含量，并非靛蓝纯度或排放削减率。",
+    "sourceCarbon": "出处：产品目录 p.3 Table 1-1（KATRI, ASTM D6866-24a Method B）",
+    "sourceAniline": "出处：产品目录 p.5 Table 2-3（KOTERI, KS K 0734 2019）",
+    "cta": "查看详细检测信息"
+  },
+  "Manifesto": {
+    "eyebrow": "ACROSS BORDERS. ACROSS GENERATIONS.",
+    "title": "因为这是伴随我们一生的衣服。",
+    "body": "无论生活在哪个国家，无论走过哪个年纪，丹宁都陪伴着我们的日常。正因为要长久穿着、贴身触肤，我们从造色的过程重新发问。用什么制成？残留哪些杂质？结果能否被验证？Blugene 正是始于这些提问。",
+    "questions": [
+      "用什么制成",
+      "残留哪些杂质",
+      "结果能否被验证"
+    ],
+    "cta": "阅读品牌故事"
+  },
+  "Impurity": {
+    "eyebrow": "WHAT REMAINS MATTERS",
+    "title": "连看不见的部分，也是我们的标准。",
+    "body": "我们不妥协的，是查验并管理杂质的标准。作为 Blugene 基础的 CutisBio 生物靛蓝，在产品目录所载的检测中未检出苯胺与 N-甲基苯胺。",
+    "context": "苯胺与 N-甲基苯胺在化学合成路线中用作起始物或中间体，可能作为未反应残留物留在最终的靛蓝粉末中。多项认证标准对纺织用染料及最终产品中该类物质的允许浓度作出限制。",
+    "cta": "查看完整对比数据",
+    "chartTitle": "市售靛蓝染料的苯胺 · N-甲基苯胺分析",
+    "chartCaption": "产品目录 p.5 Figure 2-2 · Table 2-3 中的 9 个市售样品。纵轴单位为 mg/kg，自 0 起始。"
+  },
+  "Science": {
+    "eyebrow": "BIOTECHNOLOGY",
+    "title": "重新书写靛蓝的 DNA。",
+    "body": "CutisBio 利用微生物的生物合成途径与发酵来生产靛蓝，为这份长久受人喜爱的蓝，在制法中融入了生物工程。",
+    "metaphorNote": "“重写靛蓝的 DNA” 是品牌的比喻说法。这并非指靛蓝分子本身含有基因，而是指借助微生物的生物合成途径与发酵来制造靛蓝。",
+    "cta": "了解技术详情",
+    "diagramTitle": "从原料到面料",
+    "diagramNote": "此为概念图。实际工艺需要能源与工艺投入物，本图仅将原料碳的流向作简化呈现。",
+    "steps": [
+      {
+        "title": "可再生原料",
+        "text": "来自玉米等生物质的可再生碳，是这一切的起点。"
+      },
+      {
+        "title": "微生物发酵",
+        "text": "利用微生物的生物合成途径，通过发酵制造靛蓝。"
+      },
+      {
+        "title": "靛蓝回收 · 产品化",
+        "text": "经回收与精制，制成粉末与数码印花墨水。"
+      },
+      {
+        "title": "面料染色 · 印花",
+        "text": "应用于棉 · 真丝 · 羊绒染色与数码印花。"
+      }
+    ]
+  },
+  "Environment": {
+    "eyebrow": "FROM RENEWABLE CARBON",
+    "title": "为穿着的人着想。也为制造的过程着想。",
+    "body": "从可再生碳出发的靛蓝。从原料来源到成分分析，我们以可供验证的资料说明自己的做法。",
+    "carbonCardTitle": "生物基碳含量 98%",
+    "carbonCardText": "指产品所含碳中来自可再生原料的比例。依据产品目录 p.3 Table 1-1 的测定值（pMC 97.73），并非靛蓝纯度或碳排放削减率。",
+    "scopeNote": "本产品目录未收录各产品的全生命周期评价（LCA）、用水量、能源与碳排放资料。超出已核实范围的环境绩效数值，本网站不予标示。",
+    "cta": "查看依据资料",
+    "imageAlt": "由原料作物、发酵设备、蓝色面料到身着丹宁的人所串联的价值链概念图。并非 CutisBio 实际工厂或员工照片。"
+  },
+  "Performance": {
+    "eyebrow": "PERFORMANCE",
+    "title": "在真实面料上验证的染色性。",
+    "body": "我们分别以植物 · 化学 · 生物靛蓝染制棉、真丝与羊绒进行比较。产品目录记载，在耐皂洗 · 耐光 · 耐摩擦 · 耐汗渍色牢度方面，其表现相当（comparable performance）。",
+    "fabricAlt": "9 块面料样品照片。自左起依次为以植物靛蓝染制的棉 · 真丝 · 羊绒（#1~#3）、化学靛蓝（#4~#6）、生物靛蓝（#7~#9）。",
+    "fabricCaption": "产品目录 p.6 Figure 3-1。样品 #1~#3 为植物靛蓝，#4~#6 为化学靛蓝，#7~#9 为生物靛蓝，各组均按棉 · 真丝 · 羊绒排列。",
+    "sampleLegendPlant": "植物靛蓝",
+    "sampleLegendChemical": "化学靛蓝",
+    "sampleLegendBio": "生物靛蓝",
+    "fiberCotton": "棉",
+    "fiberSilk": "真丝",
+    "fiberCashmere": "羊绒",
+    "cta": "查看色牢度完整表格",
+    "honestNote": "这并不表示在所有项目上均更优。部分耐摩擦色牢度项目也记录了较低等级，表中已如实呈现。",
+    "additionalCaseTitle": "追加面料评估案例",
+    "additionalCaseBody": "这是保存于资料库中的另一组染色评估照片。照片上以日文标注了 4 回 · 6 回 · 8 回染色，以及 バイオ②-1 / 合成 / バイオ②-2。",
+    "additionalCaseAlt": "对比在 4 回 · 6 回 · 8 回染色条件下，分别以 バイオ②-1、合成、バイオ②-2 染制的面料照片",
+    "additionalCaseProvenance": "因检测机构 · 检测方法 · 检测日期与委托方信息未能确认，故与产品目录 p.6 的检测分开呈现。这与上表的样品 #1~#9 并非同一组资料。",
+    "additionalCaseCyclesLabel": "染色次数",
+    "additionalCaseRowsLabel": "分类"
+  },
+  "Fastness": {
+    "title": "色牢度检测结果",
+    "intro": "本表原样转录自产品目录 p.6 Table 3-1 ~ 3-4。等级保留原文的分级写法（如 4-5），未换算为小数。",
+    "sampleHeader": "样品",
+    "itemHeader": "检测项目",
+    "methodLabel": "检测方法",
+    "tableLaundering": "耐皂洗色牢度",
+    "tableLight": "耐光色牢度",
+    "tableRubbing": "耐摩擦色牢度",
+    "tablePerspiration": "耐汗渍色牢度",
+    "captionLaundering": "表 3-1. 耐皂洗色牢度检测结果（样品 #1~#9）",
+    "captionLight": "表 3-2. 耐光色牢度检测结果（样品 #1~#9）",
+    "captionRubbing": "表 3-3. 耐摩擦色牢度检测结果（样品 #1~#9，分经纱 · 纬纱）",
+    "captionPerspiration": "表 3-4. 耐汗渍色牢度检测结果（样品 #1~#9，分酸性 · 碱性）",
+    "groupChange": "变色",
+    "groupStain": "沾色",
+    "rowColorChange": "变色",
+    "rowAcetate": "醋酯纤维",
+    "rowCotton": "棉",
+    "rowNylon": "锦纶",
+    "rowPolyester": "涤纶",
+    "rowAcrylic": "腈纶",
+    "rowWool": "羊毛",
+    "rowDry": "干摩",
+    "rowWet": "湿摩",
+    "subWarp": "经纱",
+    "subWeft": "纬纱",
+    "subAcid": "酸性",
+    "subAlkali": "碱性",
+    "sourceImageCta": "查看原始表格图片",
+    "sourceImageAlt": "产品目录 p.6 色牢度表 3-1 ~ 3-4 的原始图片",
+    "gradeNote": "等级为 1（低）至 5（高）之间的级别值，“4-5” 是原文中表示介于两个等级之间的写法。"
+  },
+  "ShadeLibrary": {
+    "eyebrow": "SHADE LIBRARY",
+    "title": "属于你品牌的，专属蓝。",
+    "body": "色彩的深浅随染料浓度与染色次数而变化。调整靛蓝与靛玉红的比例，即可打造品牌专属的色调。",
+    "gridTitle": "产品目录按浓度呈现的色样",
+    "gridHelp": "点选色样即可放大查看。产品目录未标示各色样的浓度数值，故以位置基准的标识（A1~B6）表示。",
+    "axisLow": "Low",
+    "axisHigh": "High",
+    "axisLabel": "Blugene 浓度",
+    "rowA": "第 1 行",
+    "rowB": "第 2 行",
+    "swatchLabel": "产品目录色样 {code}",
+    "swatchAlt": "产品目录 p.7 Figure 4-1 按浓度呈现的染色色样 {code}",
+    "duplicateNote": "原件中 A6 与 B1 位置使用了相同的色样图片。我们保留了其原有的呈现位置。",
+    "indirubinTitle": "靛玉红带来的色调变化",
+    "indirubinBody": "靛玉红是靛蓝的红色异构体。调节以微生物发酵所得靛蓝与靛玉红的组成比例，即可打造品牌专属的蓝。",
+    "indirubinAltA": "以靛蓝 100% 染制的丹宁面料照片（产品目录 p.7 Figure 4-2）",
+    "indirubinAltB": "以靛蓝 94% · 靛玉红 6% 染制的丹宁面料照片（产品目录 p.7 Figure 4-2）",
+    "indirubinLabelA": "靛蓝 100%",
+    "indirubinLabelB": "靛蓝 94%，靛玉红 6%",
+    "indirubinToggle": "对比两种组成",
+    "indirubinNote": "这是产品目录中给出的两种组成的照片。由于未提供两者之间的混合比例，我们不在屏幕上模拟生成中间色。",
+    "colorDisclaimer": "实际颜色会因屏幕 · 面料 · 染色条件而有所不同，请以面料样品确认。",
+    "inquiryCta": "以此色咨询样品",
+    "medicalNote": "本网站不涉及靛玉红的药理活性，仅从色调调节与产品开发的角度加以说明。",
+    "keyboardHint": "可使用方向键（← → ↑ ↓）以及 Home · End 键切换色样。"
+  },
+  "Products": {
+    "eyebrow": "PRODUCT FORMS",
+    "title": "粉末与印花墨水，两种形态。",
+    "body": "我们将微生物发酵制成的靛蓝，以面料染色用粉末与数码印花用墨水两种形式提供。",
+    "powderTitle": "Blugene Indigo Powder",
+    "powderText": "以微生物发酵生产的靛蓝粉末。产品目录收录了棉 · 真丝 · 羊绒的染色评估资料。",
+    "powderAlt": "盛于器皿中的深蓝色生物靛蓝粉末（产品目录 p.9）",
+    "inkTitle": "Blugene Digital Printing Ink",
+    "inkText": "用于数码印花的生物靛蓝墨水。我们可就适用性与样品提供咨询。",
+    "inkAlt": "装有深蓝色生物靛蓝数码印花墨水的玻璃瓶（产品目录 p.9）",
+    "nameNote": "上述产品名称为新品牌的网站标示方案。产品目录与证书上的原始产品名称为 “{catalogueName}”。",
+    "specNote": "粒径 · 黏度 · 保质期 · 最小起订量 · 产能与价格未见于所提供资料，故不予标示。如需相关规格，请向我们咨询，我们将确认后回复。",
+    "cyclesTitle": "染色次数与显色对比",
+    "cyclesCaption": "产品目录 p.8 Figure 5-1。对比化学靛蓝（粉末） · 生物靛蓝（粉末） · 生物靛蓝（数码印花墨水）染色 1~4 次的棉面料。",
+    "cyclesAlt": "3 行 4 列对比图。行依次为化学靛蓝粉末、生物靛蓝粉末、生物靛蓝数码印花墨水，列为染色 1~4 次。",
+    "cyclesNote": "产品目录在此示例中将色强度标示为 “数码印花墨水 > 化学靛蓝 ≈ 生物靛蓝粉末”。照片中的色彩深浅未换算为 K/S 值或色差 ΔE 测定值，也不表示在所有条件下均具性能优势。",
+    "cta": "产品资料咨询"
+  },
+  "Printing": {
+    "eyebrow": "PRINTED IN BLUE",
+    "title": "以印花拓展表现力。",
+    "body": "数码印花将颜色直接置于所需之处，实现精细的图案。我们将生物靛蓝墨水的印花成品与原作图像一并呈现。",
+    "pairOriginal": "原作图像",
+    "pairPrinted": "生物靛蓝墨水印花成品",
+    "pairAltOriginal": "用于数码印花的原作图像 {index}（产品目录 p.9 Figure 6-2）",
+    "pairAltPrinted": "以生物靛蓝墨水对同一图像进行数码印花的成品 {index}（产品目录 p.9 Figure 6-2）",
+    "pairNote": "左侧为印花所用的原作图像，右侧为以生物靛蓝墨水印制的成品。这并非表示使用产品前后性能改善的照片，且所提供资料中没有原作者 · 客户 · 供货方信息。",
+    "processTitle": "墨水制造流程",
+    "processCaption": "产品目录 p.9 Figure 6-1 中的各个阶段，并一并附上原文标示。",
+    "processAlt": "由原料准备、预混、研磨、过滤到制剂完成的墨水制造流程示意图（产品目录 p.9）",
+    "processNote": "产品目录原文的最后一个阶段为 “Formation”。我们未将其改写为某个确定的工艺术语，而是一并标注原文。本资料并非公开精确的生产配方。",
+    "steps": [
+      {
+        "title": "原料准备",
+        "text": "称量并备妥生物靛蓝粉末与辅料。"
+      },
+      {
+        "title": "预混",
+        "text": "与分散介质进行一次混合。"
+      },
+      {
+        "title": "研磨",
+        "text": "将颗粒均匀粉碎并分散。"
+      },
+      {
+        "title": "过滤",
+        "text": "滤除残余颗粒，使其达到适合印花的状态。"
+      },
+      {
+        "title": "制剂完成",
+        "text": "调整为最终的墨水形态。（原文标示：Formation）"
+      }
+    ],
+    "advantagesTitle": "数码印花的特点",
+    "advantages": [
+      "可实现传统染色难以呈现的高分辨率图案与配色。",
+      "将颜色直接置于所需之处，也适合小批量生产。",
+      "便于重复再现复杂的设计。"
+    ],
+    "advantagesNote": "产品目录 p.9 提及一般数码印花在节水与减废方面的幅度，但该数值并非以 Blugene 产品测得，故本网站不以数值形式标示。"
+  },
+  "DataHub": {
+    "eyebrow": "DATA & CERTIFICATIONS",
+    "title": "以原件验证的可信度。",
+    "body": "我们将检测结果与证书汇集于一处。每一项均可连同检测机构 · 检测方法 · 报告编号 · 资料基准日一并查看原件。",
+    "carbonSectionTitle": "生物基碳（C14）",
+    "carbonSectionBody": "这是对市售靛蓝染料中生物基（可再生）碳比例的测定结果。",
+    "anilineSectionTitle": "苯胺 · N-甲基苯胺分析",
+    "anilineSectionBody": "这是对市售靛蓝染料中残留的苯胺与 N-甲基苯胺所作的分析结果。",
+    "tableLab": "检测机构",
+    "tableMethod": "检测方法",
+    "tableReport": "检测报告编号",
+    "tableReportDate": "检测日期",
+    "tableDetectionLimit": "方法检出限",
+    "tableType": "靛蓝类型",
+    "tableSample": "样品",
+    "tablePmc": "pMC",
+    "tableBiobased": "生物基碳含量 (%)",
+    "tableAniline": "苯胺 (mg/kg)",
+    "tableNMethylaniline": "N-甲基苯胺 (mg/kg)",
+    "typeChemical": "化学",
+    "typePlant": "植物",
+    "typeBio": "生物",
+    "notDetected": "未检出",
+    "notDetectedShort": "N.D.",
+    "notDetectedExplain": "未检出（N.D.）是指在所列检测方法下低于方法检出限。这并非测定值为 0，因此图表中也不以 0 值柱形呈现。",
+    "sameLabelNote": "Company M 在化学靛蓝与植物靛蓝两种类型中各出现一次，故与类型一并标示以作区分。",
+    "anonymousNote": "公司名称沿用产品目录中的匿名标示，我们不对实际公司名称作任何推测。",
+    "sampleScopeNote": "这些数值是产品目录所载 9 个样品的对比结果，并非代表整个市场的统计数据。碳含量检测与苯胺检测的机构 · 方法 · 日期各不相同，因此未合并为单一指标。",
+    "chartCarbonTitle": "生物基碳含量对比 (%)",
+    "chartAnilineTitle": "苯胺 · N-甲基苯胺对比 (mg/kg)",
+    "chartAccessibleNote": "图表中的所有数值，均可在下方表格中查看。",
+    "regulatoryOmitted": "目录第 4 页的各国及各认证允许限值表，其适用范围因国家与产品类别而异，需核对最新原文，因此本网站正文不转载也不解读这些数值。您可在下方“原始目录”第 4 页查看原文。实际适用的标准请以各法规的最新原文为准。",
+    "catalogueTitle": "原版产品目录",
+    "catalogueBody": "可查看所提供产品目录的全部 12 页。",
+    "cataloguePage": "第 {page} 页",
+    "cataloguePageAlt": "CutisBio 生物靛蓝产品目录第 {page} 页",
+    "catalogueDownload": "下载 PDF（{size}）",
+    "catalogueAnchorNote": "若浏览器不支持 PDF 页面跳转，请参考上方标示的页码手动翻至该页。",
+    "carbonZeroNote": "Company Z 的生物基碳含量在目录 Table 1-1 中标为 0（pMC 0.30），在 Figure 1-3 中标为 N.D.。本表采用 Table 1-1 的数值。"
+  },
+  "Certifications": {
+    "title": "全球认证",
+    "body": "以下为所提供产品目录中收录的证书。我们一并标示认证机构 · 证书编号 · 适用产品 · 文件所载有效期，并可放大查看证书原件。",
+    "numberLabel": "证书编号",
+    "issuerLabel": "认证机构",
+    "productLabel": "适用产品",
+    "validityLabel": "文件所载有效期",
+    "issuedLabel": "文件签发日",
+    "pageLabel": "产品目录页码",
+    "certificateAlt": "{name} 证书原件图片",
+    "logoAlt": "{name} 认证标志",
+    "noExpiry": "文件中未标示到期日",
+    "statusDocumented": "2026 年 7 月产品目录收录的认证资料",
+    "statusWithinPeriod": "在文件所载有效期内",
+    "statusPastPeriod": "文件所载有效期已过，请咨询最新资料。",
+    "verificationNote": "此为对文件所载日期的确认，并非在认证机构数据库中查询当前认证状态的结果。",
+    "brandNameNote": "证书上的产品名称为 “CB Bio Indigo Dye Powder”。Blugene 是涵盖该产品在内的 CutisBio 生物靛蓝业务的新品牌名称，我们未改动证书图片上的产品名称。",
+    "scopeNote": "认证范围仅限于各证书所载明的产品，并不表示数码印花墨水或最终丹宁服装亦自动获得认证。",
+    "asOfLabel": "资料基准日",
+    "nextReviewLabel": "下次认证状态核查建议日",
+    "requestLatest": "咨询最新认证资料",
+    "zdhcScope": "适用范围为证书所载明的化学配制品（CB Bio Indigo Dye Powder）。使用分类为 Natural dyes (1.7.27)。",
+    "oekoScope": "产品清单载于证书的附件（enclosure），并未一并收录于产品目录中。产品分类为 2.9 Natural dyes。在查阅附件之前，我们不对适用产品范围作出界定。",
+    "usdaScope": "这是确认已取得 USDA Certified Biobased Product 标签的参与证书，标签标示比例为 98%。目录第 11 页注明该结果的精度为 ±3%（绝对值）。",
+    "okbiobasedScope": "Class 5 表示生物基碳含量在 97% 以上、100% 以下。证书上载明方法 EN 16640 与认证制度 OK 20 edition D。",
+    "zoomOpen": "放大查看证书",
+    "zoomClose": "关闭",
+    "zoomHint": "可按 Esc 键关闭。"
+  },
+  "Inquiry": {
+    "eyebrow": "SAMPLE INQUIRY",
+    "title": "下一条丹宁的蓝，与我们一同创造。",
+    "body": "请从面料染色、数码印花、色彩共同开发、技术 · 认证资料中，选择您需要的内容向我们咨询。",
+    "topicLabel": "咨询类型",
+    "topicFabricDyeing": "面料染色",
+    "topicDigitalPrinting": "数码印花",
+    "topicShadeDevelopment": "色彩共同开发",
+    "topicTechnicalData": "技术 · 认证资料",
+    "messageLabel": "建议一并告知的信息",
+    "messagePlaceholder": "请填写公司名称、联系人、面料种类、所需数量与时间安排等。",
+    "submit": "通过邮件咨询",
+    "submitHint": "点击按钮后将打开您的默认邮件程序，并自动填入收件人 · 主题 · 正文。本页面不会将信息发送至外部，实际发送需由您本人确认后进行。",
+    "mailSubject": "[Blugene 样品咨询] {topic}",
+    "mailIntro": "现就 Blugene 样品 · 技术资料向贵司咨询。",
+    "mailTopicLine": "咨询类型：{topic}",
+    "mailShadeLine": "关注的色样：{shade}",
+    "mailFooter": "— 本邮件在 blugene.co 咨询页面撰写。",
+    "emailLabel": "邮箱",
+    "telLabel": "电话",
+    "addressLabel": "地址",
+    "companyRelationTitle": "Blugene 与 CutisBio",
+    "companyRelationBody": "Blugene 是 CutisBio Co., Ltd. 开发的生物靛蓝品牌名称。产品目录与证书上记载的是原始产品名称 “Bio Indigo Dye Powder (Microbial Fermentation)”。",
+    "sampleNote": "样品可否提供，将在您咨询时确认后回复。（产品目录 p.11：Samples are available upon request）"
+  },
+  "Common": {
+    "sourceLabel": "出处",
+    "cataloguePage": "产品目录 p.{page}",
+    "asOf": "资料基准日 {date}",
+    "viewOriginal": "查看原件",
+    "viewSource": "查看原始资料",
+    "close": "关闭",
+    "openImage": "放大图片",
+    "conceptImage": "概念图",
+    "brandImage": "品牌图片",
+    "testPhoto": "检测照片",
+    "imageNoteConcept": "此为用于说明概念的图片，并非拍摄实际设施 · 客户 · 检测结果的照片。",
+    "imageNotePhoto": "采用所提供产品目录中收录的照片，未作色彩调整，仅为网页用途调整了尺寸。",
+    "imageNoteSwatch": "目录第 7 页 Figure 4-1 中印刷的色样，按原始文件原样呈现，未做任何转换。这不是实物面料的照片。",
+    "scrollableRegion": "可横向滚动的区域",
+    "catalogueFigure": "目录图版"
+  },
+  "Brand": {
+    "metaTitle": "品牌故事",
+    "metaDescription": "Blugene 是 CutisBio 为相伴一生的丹宁而重新打造靛蓝的生物靛蓝品牌。",
+    "heroEyebrow": "THE STORY",
+    "heroTitle": "因为要穿一辈子，我们从颜色开始重新发问。",
+    "heroBody": "我们借助生物工程，重新书写了制造靛蓝的方式。丹宁跨越种族与国界，是伴随我们日常与一生的衣服。因此，即便是其中细微的杂质，我们也不妥协。为肌肤与环境着想，重新打造靛蓝——这就是 Blugene。",
+    "nameTitle": "名字的含义",
+    "nameBody": "这是 Blue 与 Gene 结合而成的名字，寓意以生物工程的方式，重新打造这份长久受人喜爱的蓝。",
+    "nameNote": "“重写靛蓝的 DNA” 是一种比喻，并非指靛蓝分子中含有基因。",
+    "promiseTitle": "我们所承诺的",
+    "promiseBody": "我们能够承诺的，是可供验证的资料。我们公开产品用什么制成、残留哪些杂质，以及如何验证这些结果。",
+    "promiseItems": [
+      {
+        "title": "公开原料",
+        "text": "我们从可再生碳出发，并以检测结果公开生物基碳含量。"
+      },
+      {
+        "title": "查验杂质",
+        "text": "我们以公认检测方法分析苯胺与 N-甲基苯胺，并连同检出限一并公开结果。"
+      },
+      {
+        "title": "出示原件",
+        "text": "检测报告编号、证书编号与证书原件图片，均可在本网站直接查看。"
+      }
+    ],
+    "limitsTitle": "我们不宣称的内容",
+    "limitsBody": "我们明确当前已核实资料的范围。以下内容未获所提供产品目录佐证，因此本网站不作此类主张。",
+    "limitsItems": [
+      "终生皮肤接触安全性，以及对婴幼儿 · 敏感肌肤的安全性",
+      "经临床试验或皮肤科测试证实的无刺激性",
+      "完全去除所有有害物质，或 “不含化学物质”",
+      "各产品的碳排放量 · 用水量削减数值、碳中和、生物降解性"
+    ],
+    "relationTitle": "与 CutisBio 的关系",
+    "relationBody": "Blugene 是 CutisBio Co., Ltd. 靛蓝业务的品牌。法人名称以及证书 · 检测报告上的标示，一律沿用 CutisBio。",
+    "cta": "样品 · 技术资料咨询"
+  },
+  "Technology": {
+    "metaTitle": "技术",
+    "metaDescription": "介绍制造靛蓝的四条路径、基于微生物发酵的生产方式，以及生物基碳含量的检测结果。",
+    "heroEyebrow": "TECHNOLOGY",
+    "heroTitle": "造蓝的四条路，以及我们的选择。",
+    "heroBody": "获得靛蓝的方法不止一种。产品目录列出四条路径，作为 Blugene 基础的 CutisBio 生物靛蓝属于其中的微生物来源路径。",
+    "routesTitle": "靛蓝合成的四条路径",
+    "routesCaption": "产品目录 p.2 Figure 1-1。化学路径以红色、生物路径以黄色区分标示。",
+    "routesAlt": "分别以原油 · 生物质 · 靛蓝植物为起点的四条靛蓝合成路径示意图（产品目录 p.2）",
+    "routes": [
+      {
+        "name": "化学靛蓝",
+        "feedstock": "原油（不可再生）",
+        "intermediate": "苯胺",
+        "text": "经由自原油获得的苯胺合成靛蓝。产品目录将此路径标示为化学路径。"
+      },
+      {
+        "name": "混合型靛蓝",
+        "feedstock": "生物质",
+        "intermediate": "邻氨基苯甲酸",
+        "text": "经由自生物质获得的邻氨基苯甲酸制造靛蓝。原料虽可再生，但中间环节与纯微生物路径不同。"
+      },
+      {
+        "name": "生物靛蓝（微生物来源）",
+        "feedstock": "生物质",
+        "intermediate": "色氨酸",
+        "text": "微生物将自生物质获得的色氨酸转化为靛蓝。CutisBio 生物靛蓝即属于此路径。"
+      },
+      {
+        "name": "天然靛蓝（植物来源）",
+        "feedstock": "靛蓝植物",
+        "intermediate": "提取",
+        "text": "从靛蓝植物中提取色素。产品目录记载，市售植物来源靛蓝中存在疑似混有化学靛蓝的案例。"
+      }
+    ],
+    "routeFeedstockLabel": "原料",
+    "routeIntermediateLabel": "主要中间环节",
+    "routesNote": "混合型路径的邻氨基苯甲酸环节与微生物路径的色氨酸环节并不相同。我们未将两条路径简化为同一路径。",
+    "carbonTitle": "碳从何而来",
+    "carbonCaption": "产品目录 p.2 Figure 1-2。对比化学路径（上）与生物路径（下）的碳循环。",
+    "carbonAlt": "对比化学路径与生物路径碳循环的概念图（产品目录 p.2）",
+    "carbonBody": "化学路径的碳来自不可再生的原油，生物路径的碳来自可再生的生物质。这一差异可通过生物基碳含量检测得到确认。",
+    "processTitle": "从原料到面料",
+    "safetyTitle": "作业环境",
+    "safetyBody": "产品目录以有害化学品操作相关的作业环境为主题加以论述。本网站不对作业人员安全作定量主张，仅就所操作物质的差异加以说明。",
+    "safetyAlt": "对比呈现有害化学品操作与无害物质操作的插图（产品目录 p.4）",
+    "impurityTitle": "为何要查验苯胺",
+    "impurityBody": "苯胺与 N-甲基苯胺是化学合成路径的起始物或中间体，可能作为未反应残留物留在最终的靛蓝粉末中。由于其毒性与潜在致癌性，多项认证标准对纺织用染料及最终产品中的允许浓度作出限制。",
+    "cta": "查看全部检测数据",
+    "conceptCaptionSafety": "目录第 4 页 Figure 2-1。这是对比有害物质与无害物质操作方式的插图，并非实际车间的照片。"
+  },
+  "DyeingPrinting": {
+    "metaTitle": "染色 · 印花",
+    "metaDescription": "介绍棉 · 真丝 · 羊绒的染色对比、色牢度检测结果、按浓度呈现的色样，以及粉末与数码印花墨水。",
+    "heroEyebrow": "DYEING & PRINTING",
+    "heroTitle": "在面料上验证的颜色。",
+    "heroBody": "从染色性与色牢度，到色调与剂型。我们如实呈现在真实面料上验证的资料。",
+    "cta": "面料样品咨询"
+  },
+  "Tech": {
+    "title": "以微生物发酵制成的靛蓝，Blugene",
+    "description": "说明 Blugene by CutisBio 的生物靛蓝经由何种路径制成，又通过哪些检测加以确认。",
+    "intro": "蓝色丹宁是最受喜爱的布料，而造就那抹颜色的方法并非只有一种。CutisBio 利用微生物的生物合成途径与发酵来生产靛蓝。",
+    "section1Title": "1. 为何要查验杂质",
+    "section1Text": "苯胺与 N-甲基苯胺是化学合成靛蓝的起始物或中间体，可能作为未反应残留物留在最终粉末中。由于其毒性与潜在致癌性，ZDHC、OEKO-TEX、GOTS 等多项认证标准对纺织用染料及最终产品中该类物质的允许浓度作出限制。因此，我们对每一款产品都分析这两种物质，并连同检出限一并公开结果。",
+    "comparisonCaption": "目录第 4 页将这两种物质说明为化学合成靛蓝的起始原料或中间体，并记载由于其具有毒性和潜在致癌性，多项认证标准对纺织染料及最终产品中的允许浓度作出限制。",
+    "section2Title": "2. 以微生物发酵制成的靛蓝",
+    "section2Text": "CutisBio 采用发酵工艺，利用微生物的生物合成途径，将自生物质获得的色氨酸转化为靛蓝。在产品目录列出的四条靛蓝合成路径中，属于微生物来源路径。",
+    "section3Title": "3. 经检测确认的结果",
+    "section3Text": "在 KATRI 的 ASTM D6866-24a Method B 检测中，生物基碳含量测得 98%（pMC 97.73）；在 KOTERI 的 KS K 0734 2019 检测中未检出苯胺与 N-甲基苯胺（方法检出限 5 mg/kg）。按产品目录记载，色牢度与植物 · 化学靛蓝相当（comparable performance），各项目的等级可在数据页的表格中如实查看。",
+    "certSectionTitle": "全球认证",
+    "certSectionText": "以下为所提供产品目录中收录的证书。可连同认证机构 · 证书编号 · 适用产品 · 文件所载有效期一并查看原件。",
+    "faqTitle": "常见问题",
+    "faqList": [
+      {
+        "question": "Blugene 是什么？",
+        "answer": "Blugene 是 CutisBio Co., Ltd. 以微生物发酵生产的生物靛蓝的品牌名称。产品目录与证书上记载的是原始产品名称 “Bio Indigo Dye Powder (Microbial Fermentation)”。"
+      },
+      {
+        "question": "“生物基碳含量 98%” 是什么意思？",
+        "answer": "是指产品所含碳中，来自可再生原料的比例为 98%。此为 KATRI 的 ASTM D6866-24a Method B (AMS) 检测结果（pMC 97.73，报告 SBED25-00000153-1，2025-05-22），并非靛蓝纯度或碳排放削减率。"
+      },
+      {
+        "question": "“苯胺未检出” 是指含量为 0 吗？",
+        "answer": "不是。这是指在 KOTERI 的 KS K 0734 2019 检测中低于方法检出限 5 mg/kg，因而未被检出（报告 2025-0604-1132-C03，2025-06-10）。这并不表示 0 ppm 或完全不含。"
+      },
+      {
+        "question": "可以直接用于现有的染色设备吗？",
+        "answer": "产品目录记载，在棉 · 真丝 · 羊绒的染色中，其表现与植物 · 化学靛蓝相当（comparable performance）。不过结果会因工厂、面料与工艺条件而异，建议以面料样品确认实际应用效果。"
+      },
+      {
+        "question": "认证适用于哪些产品？",
+        "answer": "证书上载明的产品为 “CB Bio Indigo Dye Powder”。OEKO-TEX ECO PASSPORT 的产品清单载于证书附件，仅凭产品目录无法界定其范围。数码印花墨水或最终丹宁服装并不会自动获得认证。"
+      }
+    ],
+    "structuresTitle": "苯胺与 N-甲基苯胺的化学结构",
+    "structuresNote": "依据经核实的化学结构，直接用代码（SVG）绘制的骨架结构式。未使用图像生成工具制作。",
+    "structureAnilineName": "苯胺",
+    "structureAnilineDesc": "苯环上连接一个氨基（NH2）的骨架结构式。",
+    "structureNMethylanilineName": "N-甲基苯胺",
+    "structureNMethylanilineDesc": "苯环所连氮原子上带有一个氢和一个甲基（CH3）的骨架结构式。"
   },
   "About": {
-    "title": "用合成生物学重绘时尚的未来",
+    "title": "以合成生物学，将日常设计得更美好",
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "为了人类的可持续生活，利用微生物基因工程技术量产高性能生物材料，成为将更清洁的地球留给子孙后代的白色生物领先企业。",
-    "aboutImageAlt": "CutisBio研究员正在进行深入的生物研究",
-    "coreBusinessTitle": "开发领先的生物基特殊材料",
-    "medicalTitle": "医疗 (Medical)",
-    "medicalText": "开发兼顾环境与人体的定制型环保医药原料及生物医药材料",
-    "beautyTitle": "美容 (Beauty)",
-    "beautyText": "融合皮肤大数据与合成生物学的精准美容解决方案高附加值材料（与全球美容企业合作）",
-    "fashionTitle": "时尚 (Fashion)",
-    "fashionText": "通过100%无毒、无苯胺“A-Indigo”的商业化，在纺织行业内实现完美的环保循环流程",
-    "historyTitle": "主要发展历程与成就",
+    "visionText": "我们设计微生物的生物合成能力，重新打造工业材料。Blugene 正是其成果之一，以发酵方式生产时尚产业所用的靛蓝。",
+    "aboutImageAlt": "CutisBio 研究人员深入开展生物研究的场景",
+    "coreBusinessTitle": "核心业务领域",
+    "medicalTitle": "医疗",
+    "medicalText": "研究基于合成生物学的医药材料。",
+    "beautyTitle": "美妆",
+    "beautyText": "以皮肤微生物组研究为基础，开发化妆品原料。",
+    "fashionTitle": "时尚 (Blugene)",
+    "fashionText": "将以微生物发酵生产的生物靛蓝，供应于丹宁染色与数码印花。",
+    "historyTitle": "发展历程",
     "historyList": [
       {
         "year": "2024",
-        "event": "建立A-Indigo生物染料的大规模生产系统并展开全面商业化"
+        "event": "建立 Bio-Indigo 生物染料的大规模生产系统并展开全面商业化"
       },
       {
         "year": "2023",
@@ -78,41 +541,18 @@
         "year": "2020",
         "event": "CutisBio株式会社成立"
       }
-    ]
+    ],
+    "blugeneNoteTitle": "关于本网站",
+    "blugeneNoteText": "本网站介绍 CutisBio 的靛蓝业务（Blugene）。关于医疗 · 化妆品业务及公司整体介绍，请参阅 CutisBio 企业网站。",
+    "metaDescription": "CutisBio 通过设计微生物的生物合成能力来制造工业材料。本页介绍包括生物靛蓝品牌 Blugene 在内的业务领域与发展历程。"
   },
-  "Tech": {
-    "title": "通过微生物发酵实现可持续牛仔染色",
-    "description": "介绍CutisBio无苯胺靛蓝染料的开发背景及环保牛仔时尚的未来。",
-    "intro": "最受喜爱的时尚单品“蓝色牛仔（Blue Denim）”。然而，在其美丽颜色的背后，隐藏着威胁环境与健康的石化衍生化学物质“苯胺”。CutisBio利用微生物从根本上解决了这一问题。",
-    "section1Title": "1. 无苯胺（Aniline-Free）的绝对必要性",
-    "section1Text": "苯胺被WHO下属的国际癌症研究机构列为潜在致癌物。在牛仔生产过程中，苯胺被随意排入水资源，不仅破坏生态系统，还对需要长时间接触布料的最终消费者产生负面影响。",
-    "comparisonImageAlt": "显示苯胺和甲基苯胺的化学结构以及皮炎和膀胱癌风险的信息图",
-    "comparisonCaption": "苯胺和甲基苯胺的化学结构，以及它们造成的致命人类健康威胁，包括接触性皮炎和膀胱癌",
-    "section2Title": "2. CutisBio的创新：让微生物成为工厂",
-    "section2Text": "大自然给出了答案。我们利用尖端的合成生物学技术，赋予特殊微生物类似植物的代谢途径。这些微生物自发生成靛蓝前体，该过程从根本上杜绝了苯胺等致命化学物质的使用。",
-    "section3Title": "3. 不妥协质量的“Drop-in”解决方案",
-    "section3Text": "环保并不意味着必须放弃质量。CutisBio的生物靛蓝采用“Drop-in”模式，可直接投入现有工厂基础设施而无需更改设备。它能完美重现与现有化学染料相同的颜色深度（Shade）和耐摩擦色牢度。",
-    "certSectionTitle": "全球可持续发展认证",
-    "certSectionText": "我们自豪地宣布，我们在可持续性、环保以及人类安全等方面已完成多项世界级认证。",
-    "certOkbiobased": "OK biobased 认证标志",
-    "certBioPreferred": "USDA BioPreferred 认证标志",
-    "certOekoTex": "OEKO-TEX Eco Passport 认证标志",
-    "certZdhc": "ZDHC 认证标志",
-    "faqTitle": "常见问题解答 (FAQ)",
-    "faqList": [
-      {
-        "question": "传统靛蓝染色有什么问题？",
-        "answer": "传统合成靛蓝染料是使用苯胺和氰化氢等石油化工产品生产的。这引起了严重的水污染，并对工人和最终消费者的健康构成威胁。"
-      },
-      {
-        "question": "什么是基于微生物发酵的靛蓝染料？",
-        "answer": "CutisBio的技术利用经过特殊改造的微生物，通过自然发酵过程来生产靛蓝前体。利用生物机制代替化学合成，我们创造出100%无苯胺的染料。"
-      },
-      {
-        "question": "它和传统衣物的质量有区别吗？",
-        "answer": "没有。该染料可达到与传统牛仔染色相同或更高的品质、颜色深度以及耐洗/耐摩擦色牢度。我们在不破坏质量的前提下，实现了完美的循环可持续性。"
-      }
-    ]
+  "Blog": {
+    "eyebrow": "洞察与技术",
+    "title": "博客",
+    "description": "介绍关于 CutisBio 合成生物学技术与环保时尚的深度文章。",
+    "categoryTech": "技术介绍",
+    "readMore": "阅读全文",
+    "readTime": "阅读需 {minutes} 分钟"
   },
   "News": {
     "title": "CutisBio 新闻中心",
@@ -433,7 +873,7 @@
       {
         "date": "2022-12-05",
         "category": "新闻稿",
-        "title": "Cutis Bio——免疫组和微生物组免疫抗癌联合研究",
+        "title": "CutisBio——免疫组和微生物组免疫抗癌联合研究",
         "summary": "皮肤生物免疫组、微生物组免疫抗癌治疗联合研究医药新闻",
         "thumbnailAlt": "新闻缩略图",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zbVMzQ0s3NVpxMG9HNUNiSFN2bG0yOTBRSk5ad01EUlNoSnNId1UxM1pYSkptbWNGcEJ4cHJRY3ZvR0tUTC01VmM5SVJVNlZqSVYxLTQ1YUNlWVFkT1UyVXMtTnBMenk4SHZvYg?oc=5"
@@ -514,34 +954,13 @@
   },
   "Contact": {
     "title": "联系我们",
-    "description": "如果您对CutisBio有任何疑问，请留言，我们将尽快给您回复。",
-    "addressTitle": "地址",
-    "addressDetail": "首尔特别市江南区论岘路 842 狎鸥亭大厦 8楼",
-    "emailTitle": "电子邮件",
-    "emailAddress": "contact@cutisbio.com",
-    "mapTitle": "位置地图"
+    "description": "欢迎就 Blugene 样品与技术 · 认证资料向我们咨询。您可从面料染色、数码印花、色彩共同开发、技术资料中选择所需内容。",
+    "addressDetail": "韩国首尔特别市江南区论岘路 842 号 狎鸥亭大厦 8 层（邮编 06025）\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
+    "mapTitle": "交通指引"
   },
-  "ProblemSolution": {
-    "problemTitle": "我们所穿丹宁的隐藏代价",
-    "problemText": "传统的染色过程依赖于石化产品，留下了严重的环境污染和健康威胁。其中“苯胺”是最致命的问题之一。",
-    "solutionTitle": "CutisBio 的创新答案",
-    "solutionText": "通过微生物发酵完全排除有毒物质的 100% 无苯胺染料。为您提供对人类和自然都安全的完美可持续性。"
-  },
-  "Process": {
-    "title": "生物制造过程",
-    "subtitle": "模仿自然的尖端合成生物学机制",
-    "step1Title": "1. DNA 设计",
-    "step1Text": "根据自然界中存在的酶途径，对微生物的 DNA 进行特殊重设计。",
-    "step2Title": "2. 精准发酵",
-    "step2Text": "在精确的发酵环境中，微生物像植物一样自发合成靛蓝前体。",
-    "step3Title": "3. 靛蓝纯化",
-    "step3Text": "通过环保的提纯工艺，完成 100% 生物基染料。",
-    "step4Title": "4. Drop-in 染色",
-    "step4Text": "保持现有的染色工厂基础设施不变，无需增加设备即可立即应用。"
-  },
-  "Partners": {
-    "title": "共同参与全球时尚未来的领导品牌",
-    "testimonial": "“CutisBio 基于微生物的靛蓝染料是真正的游戏规则改变者，它同时满足了环境保护和商业竞争力的要求。”",
-    "testimonialAuthor": "CEO interview"
+  "NotFound": {
+    "title": "未找到您访问的页面。",
+    "body": "该地址可能已更改，或页面已被删除。请从以下栏目中查找所需内容。",
+    "backHome": "返回首页"
   }
 }

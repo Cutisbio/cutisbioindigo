@@ -1,14 +1,14 @@
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
+import { SITE_URL } from '@/data/blugene/site';
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cutisbioindigo.kr';
-
   return {
     rules: {
       userAgent: '*',
       allow: '/',
       disallow: ['/private/'],
     },
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: `${SITE_URL}/sitemap.xml`,
+    host: SITE_URL,
   };
 }

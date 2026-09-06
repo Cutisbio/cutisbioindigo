@@ -1,62 +1,525 @@
 {
-  "Blog": {
-    "eyebrow": "인사이트 & 기술",
-    "title": "블로그",
-    "description": "CutisBio의 합성생물학 기술과 친환경 패션에 관한 심층 아티클을 소개합니다.",
-    "categoryTech": "기술 소개",
-    "readMore": "자세히 읽기",
-    "readTime": "{minutes}분 읽기"
-  },
-  "Layout": {
-    "home": "홈",
+  "Nav": {
+    "brand": "브랜드",
+    "technology": "기술",
+    "dyeingPrinting": "염색 · 프린팅",
+    "dataCertifications": "데이터 · 인증",
+    "sampleInquiry": "샘플 문의",
     "about": "회사 소개",
-    "tech": "기술 소개",
-    "news": "최신 소식",
+    "news": "소식",
+    "blog": "인사이트",
     "contact": "문의하기",
-    "footerText": "Sustainable Denim Dye. Aniline free - Human safe. © 2026 CutisBio. All rights reserved."
+    "menu": "메뉴",
+    "openMenu": "메뉴 열기",
+    "closeMenu": "메뉴 닫기",
+    "languageLabel": "언어 선택",
+    "skipToContent": "본문으로 건너뛰기",
+    "homeAria": "Blugene by CutisBio 홈으로"
+  },
+  "Footer": {
+    "tagline": "Denim for a lifetime. A safer blue.",
+    "sitemapTitle": "사이트 안내",
+    "contactTitle": "문의",
+    "legalTitle": "자료 안내",
+    "sourceNote": "이 사이트의 시험 수치·인증 정보는 2026년 7월 발행 CutisBio 카탈로그에 수록된 자료입니다. 자료 기준일 {date}.",
+    "companyLine": "CutisBio Co., Ltd. (큐티스바이오)",
+    "rights": "© 2026 CutisBio Co., Ltd. All rights reserved.",
+    "catalogueLink": "원본 카탈로그(PDF) 내려받기"
   },
   "Home": {
-    "heroTitle": "차세대 친환경 데님 염료, CutisBio Indigo",
-    "heroSubtitle": "우리 피부에 안전한 인디고 염료. 합성생물학 기술로 유독성 물질(아닐린) 없이 탄생한 가장 지속 가능한 데님 염색 솔루션입니다.",
-    "heroImageAlt": "푸른색 데님 원단과 깨끗한 물방울이 교차하는 직관적인 친환경 이미지",
-    "impactMetricsTitle": "CutisBio가 만드는 긍정적 변화",
-    "metric1Value": "100%",
-    "metric1Text": "Aniline-Free (독성 물질 완벽 차단)",
-    "metric2Value": "Drop-in",
-    "metric2Text": "기존 염색 공장 설비에 즉시 적용 가능",
-    "metric3Value": "Eco-friendly",
-    "metric3Text": "생산 과정의 수질 오염 및 탄소 배출 극소화",
-    "coreValuesTitle": "CutisBio 기술의 핵심 가치",
-    "coreValuesDesc": "전통적인 석유화학 기반의 염색 산업을 합성생물학(Synthetic Biology)을 통해 혁신합니다.",
-    "feature1": "정밀 발효(Precision Fermentation)",
-    "benefit1": "지속 가능한 생합성 과정으로 자연 생태계 모방",
-    "feature2": "아닐린 프리(Aniline-Free)",
-    "benefit2": "작업자와 소비자를 위협하는 발암물질 원천 배제",
-    "feature3": "친환경 인디고(Sustainable Indigo)",
-    "benefit3": "수질 오염 최소화 및 패션 산업의 순환 경제 달성",
-    "ctaTitle": "지속가능한 패션의 미래, 함께하시겠습니까?",
-    "ctaText": "CutisBio의 혁신적인 미생물 기반 인디고 염료가 어떻게 전통 염색 공정을 대체하는지 확인해 보세요.",
-    "ctaButton": "기술 상세 보기",
-    "qualityTitle": "우수한 염색성 및 견뢰도 검증",
-    "qualitySubtitle": "일본 프리미엄 데님 염색 업체의 철저한 비교 테스트 결과, 큐티스바이오 인디고가 기존 화학 인디고 대비 더 뛰어나고 깊은 색감과 우수한 내구성을 보임이 입증되었습니다.",
-    "qualityImageAlt": "데님 염색 및 견뢰도 테스트 결과 이미지",
-    "qualityBadge": "Quality Proven"
+    "metaTitle": "인디고DNA와 발효로 빚어낸 푸른색.",
+    "metaDescription": "인디고DNA와 발효로 빚어낸 푸른색. 미생물 발효로 생산하는 바이오 인디고 Blugene — 바이오 기반 탄소 함량 98%, 아닐린 · N-메틸아닐린 불검출(검출한계 5 mg/kg).",
+    "ctaTitle": "다음 데님의 파랑을, 함께 만드세요.",
+    "ctaText": "데님 브랜드, 원단업체, 염색공장, 프린팅 업체의 문의를 기다립니다.",
+    "ctaButton": "Blugene 샘플 문의"
+  },
+  "Hero": {
+    "descriptor": "인디고DNA와 발효로 빚어낸 푸른색.",
+    "titleLine1": "평생 함께하는 데님,",
+    "titleLine2": "더 안전한 파랑.",
+    "body": "피부에 평생 접촉하는 그 푸른색이 합성생물학으로 재탄생했습니다. 피부건강을 위해 작은 위험까지 타협하지 않는 인디고 Blugene.",
+    "ctaPrimary": "Blugene 샘플 문의",
+    "ctaSecondary": "데이터와 인증 보기",
+    "tagline": "Denim for a lifetime. A safer blue.",
+    "imageAlt": "데님 재킷을 입은 보호자가 아이를 안고 옥수수밭과 초원, 물가가 보이는 풍경을 바라보는 장면. 제공 카탈로그 표지의 브랜드 이미지입니다.",
+    "imageCredit": "카탈로그 p.1 수록 이미지 · 브랜드 콘셉트 이미지"
+  },
+  "EvidenceStrip": {
+    "carbonValue": "98%",
+    "carbonLabel": "바이오 기반 탄소 함량",
+    "anilineValue": "불검출",
+    "anilineLabel": "아닐린",
+    "nMethylanilineValue": "불검출",
+    "nMethylanilineLabel": "N-메틸아닐린",
+    "note": "제공 카탈로그의 시험 결과입니다. 불검출은 제시된 시험법에서 방법 검출한계 5 mg/kg 미만이라는 뜻이며, 함유량 0을 의미하지 않습니다. 98%는 바이오 기반 탄소 함량이며 인디고 순도나 배출 감축률이 아닙니다.",
+    "sourceCarbon": "출처: 카탈로그 p.3 Table 1-1 (KATRI, ASTM D6866-24a Method B)",
+    "sourceAniline": "출처: 카탈로그 p.5 Table 2-3 (KOTERI, KS K 0734 2019)",
+    "cta": "상세 시험정보 보기"
+  },
+  "Manifesto": {
+    "eyebrow": "ACROSS BORDERS. ACROSS GENERATIONS.",
+    "title": "우리의 일생에 닿는 옷이기에.",
+    "body": "어느 나라에서 살아도, 어떤 나이를 지나도. 데님은 우리의 일상과 함께합니다. 오래 입고 피부에 닿는 옷이기에, 우리는 색을 만드는 과정부터 다시 묻습니다. 무엇으로 만들었는가. 어떤 불순물이 남는가. 그 결과를 확인할 수 있는가. Blugene은 이 질문에서 시작됐습니다.",
+    "questions": [
+      "무엇으로 만들었는가",
+      "어떤 불순물이 남는가",
+      "그 결과를 확인할 수 있는가"
+    ],
+    "cta": "브랜드 이야기 읽기"
+  },
+  "Impurity": {
+    "eyebrow": "WHAT REMAINS MATTERS",
+    "title": "보이지 않는 것까지, 우리의 기준입니다.",
+    "body": "우리가 타협하지 않는 것은 불순물을 확인하고 관리하는 기준입니다. Blugene의 기반이 된 큐티스바이오 바이오 인디고는 카탈로그에 제시된 시험에서 아닐린과 N-메틸아닐린이 검출되지 않았습니다.",
+    "context": "아닐린과 N-메틸아닐린은 화학 합성 경로에서 출발물질이나 중간체로 쓰이며, 최종 인디고 분말에 미반응 잔류물로 남을 수 있습니다. 여러 인증 기준이 섬유용 염료와 최종 제품에서 이 물질의 허용 농도를 제한합니다.",
+    "cta": "전체 비교 데이터 보기",
+    "chartTitle": "시판 인디고 염료의 아닐린 · N-메틸아닐린 분석",
+    "chartCaption": "카탈로그 p.5 Figure 2-2 · Table 2-3 의 9개 시판 샘플. 세로축은 mg/kg 이며 0에서 시작합니다."
+  },
+  "Science": {
+    "eyebrow": "BIOTECHNOLOGY",
+    "title": "인디고의 DNA를, 새롭게 쓰다.",
+    "body": "큐티스바이오는 미생물의 생합성 경로와 발효를 활용해 인디고를 생산합니다. 오래 사랑받아 온 파랑을 만드는 방식에 생물공학을 더했습니다.",
+    "metaphorNote": "‘인디고의 DNA를 다시 쓴다’는 브랜드의 비유입니다. 인디고 분자 자체에 유전자가 있다는 뜻이 아니라, 미생물의 생합성 경로와 발효로 인디고를 만든다는 의미입니다.",
+    "cta": "기술 자세히 보기",
+    "diagramTitle": "원료에서 원단까지",
+    "diagramNote": "개념도입니다. 실제 공정에는 에너지와 공정 투입물이 필요하며, 이 그림은 원료 탄소의 경로를 단순화해 보여 줍니다.",
+    "steps": [
+      {
+        "title": "재생 가능한 원료",
+        "text": "옥수수 등 바이오매스에서 나오는 재생 가능한 탄소가 출발점입니다."
+      },
+      {
+        "title": "미생물 발효",
+        "text": "미생물의 생합성 경로를 활용한 발효로 인디고를 만듭니다."
+      },
+      {
+        "title": "인디고 회수 · 제품화",
+        "text": "회수와 정제를 거쳐 분말과 디지털 프린팅 잉크로 제품화합니다."
+      },
+      {
+        "title": "원단 염색 · 프린팅",
+        "text": "면 · 실크 · 캐시미어 염색과 디지털 프린팅에 적용합니다."
+      }
+    ]
+  },
+  "Environment": {
+    "eyebrow": "FROM RENEWABLE CARBON",
+    "title": "입는 사람을 생각하며. 만드는 과정도 생각하며.",
+    "body": "재생 가능한 탄소에서 출발하는 인디고. 원료의 출처부터 성분 분석까지, 확인할 수 있는 자료로 우리의 접근을 설명합니다.",
+    "carbonCardTitle": "바이오 기반 탄소 함량 98%",
+    "carbonCardText": "제품에 들어 있는 탄소 가운데 재생 가능한 원료에서 온 비율입니다. 카탈로그 p.3 Table 1-1 의 측정값(pMC 97.73)에 근거하며, 인디고 순도나 탄소 배출 감축률이 아닙니다.",
+    "scopeNote": "제품별 전과정평가(LCA), 물 사용량, 에너지, 탄소 배출량 자료는 이 카탈로그에 포함되어 있지 않습니다. 확인된 범위 밖의 환경 성과 수치는 이 사이트에 표시하지 않습니다.",
+    "cta": "근거 자료 보기",
+    "imageAlt": "원료 작물, 발효 설비, 푸른 원단, 데님을 입은 사람으로 이어지는 가치사슬 개념 이미지. 실제 CutisBio 공장이나 직원 사진이 아닙니다."
+  },
+  "Performance": {
+    "eyebrow": "PERFORMANCE",
+    "title": "실제 원단으로 확인한 염색성.",
+    "body": "식물성 · 화학 · 바이오 인디고로 면, 실크, 캐시미어를 염색해 비교했습니다. 카탈로그는 세탁 · 일광 · 마찰 · 땀 견뢰도에서 서로 견줄 만한 성능(comparable performance)이라고 기록합니다.",
+    "fabricAlt": "9개 원단 견본 사진. 왼쪽부터 식물성 인디고로 염색한 면 · 실크 · 캐시미어(#1~#3), 화학 인디고(#4~#6), 바이오 인디고(#7~#9) 순입니다.",
+    "fabricCaption": "카탈로그 p.6 Figure 3-1. 샘플 #1~#3 식물성, #4~#6 화학, #7~#9 바이오 인디고이며 각 그룹은 면 · 실크 · 캐시미어 순입니다.",
+    "sampleLegendPlant": "식물성 인디고",
+    "sampleLegendChemical": "화학 인디고",
+    "sampleLegendBio": "바이오 인디고",
+    "fiberCotton": "면",
+    "fiberSilk": "실크",
+    "fiberCashmere": "캐시미어",
+    "cta": "견뢰도 전체 표 보기",
+    "honestNote": "모든 항목에서 우월하다는 뜻이 아닙니다. 일부 마찰 견뢰도 항목에서는 낮은 등급도 함께 기록되어 있으며, 표에 그대로 표시했습니다.",
+    "additionalCaseTitle": "추가 원단 평가 사례",
+    "additionalCaseBody": "저장소에 보관되어 있던 별도의 염색 평가 사진입니다. 일본어로 4회 · 6회 · 8회 염색과 바이오②-1 / 合成(합성) / 바이오②-2 가 표기되어 있습니다.",
+    "additionalCaseAlt": "4회 · 6회 · 8회 염색 조건에서 바이오②-1, 합성, 바이오②-2 로 염색한 원단을 비교한 사진",
+    "additionalCaseProvenance": "시험기관 · 시험법 · 시험일자 · 의뢰처 정보가 확인되지 않아 카탈로그 p.6 시험과 분리해 표시합니다. 위 표의 샘플 #1~#9 와는 다른 자료입니다.",
+    "additionalCaseCyclesLabel": "염색 횟수",
+    "additionalCaseRowsLabel": "구분"
+  },
+  "Fastness": {
+    "title": "견뢰도 시험 결과",
+    "intro": "카탈로그 p.6 Table 3-1 ~ 3-4 를 그대로 옮긴 표입니다. 등급은 원문의 순위 표기(예: 4-5)를 유지했으며 소수로 바꾸지 않았습니다.",
+    "sampleHeader": "샘플",
+    "itemHeader": "시험 항목",
+    "methodLabel": "시험법",
+    "tableLaundering": "세탁 견뢰도",
+    "tableLight": "일광 견뢰도",
+    "tableRubbing": "마찰 견뢰도",
+    "tablePerspiration": "땀 견뢰도",
+    "captionLaundering": "표 3-1. 세탁 견뢰도 시험 결과 (샘플 #1~#9)",
+    "captionLight": "표 3-2. 일광 견뢰도 시험 결과 (샘플 #1~#9)",
+    "captionRubbing": "표 3-3. 마찰 견뢰도 시험 결과 (샘플 #1~#9, 경사 · 위사 구분)",
+    "captionPerspiration": "표 3-4. 땀 견뢰도 시험 결과 (샘플 #1~#9, 산성 · 알칼리성 구분)",
+    "groupChange": "색 변화",
+    "groupStain": "오염",
+    "rowColorChange": "색 변화",
+    "rowAcetate": "아세테이트",
+    "rowCotton": "면",
+    "rowNylon": "나일론",
+    "rowPolyester": "폴리에스터",
+    "rowAcrylic": "아크릴",
+    "rowWool": "울",
+    "rowDry": "건조",
+    "rowWet": "습윤",
+    "subWarp": "경사",
+    "subWeft": "위사",
+    "subAcid": "산성",
+    "subAlkali": "알칼리성",
+    "sourceImageCta": "원본 표 이미지 보기",
+    "sourceImageAlt": "카탈로그 p.6 의 견뢰도 표 3-1 ~ 3-4 원본 이미지",
+    "gradeNote": "등급은 1(낮음)에서 5(높음) 사이의 순위 값이며, ‘4-5’는 두 등급 사이를 뜻하는 원문 표기입니다."
+  },
+  "ShadeLibrary": {
+    "eyebrow": "SHADE LIBRARY",
+    "title": "당신의 브랜드에는, 당신만의 파랑을.",
+    "body": "염료 농도와 염색 횟수에 따라 색의 깊이가 달라집니다. 인디고와 인디루빈의 비율을 조정하면 브랜드만의 색조를 만들 수 있습니다.",
+    "gridTitle": "카탈로그 농도별 견본",
+    "gridHelp": "견본을 선택하면 확대해 볼 수 있습니다. 카탈로그에는 각 견본의 농도 수치가 제시되어 있지 않아 위치 기준 구분자(A1~B6)로 표기합니다.",
+    "axisLow": "Low",
+    "axisHigh": "High",
+    "axisLabel": "Blugene 농도",
+    "rowA": "1열",
+    "rowB": "2열",
+    "swatchLabel": "카탈로그 견본 {code}",
+    "swatchAlt": "카탈로그 p.7 Figure 4-1 의 농도별 염색 견본 {code}",
+    "duplicateNote": "원본에서 A6 과 B1 위치에는 같은 견본 이미지가 사용되었습니다. 등장 위치를 그대로 보존했습니다.",
+    "indirubinTitle": "인디루빈이 만드는 색조 변화",
+    "indirubinBody": "인디루빈은 인디고의 붉은 이성질체입니다. 미생물 발효로 만들어지는 인디고와 인디루빈의 조성을 조절하면 브랜드 고유의 파랑을 만들 수 있습니다.",
+    "indirubinAltA": "인디고 100% 로 염색한 데님 원단 사진 (카탈로그 p.7 Figure 4-2)",
+    "indirubinAltB": "인디고 94% · 인디루빈 6% 로 염색한 데님 원단 사진 (카탈로그 p.7 Figure 4-2)",
+    "indirubinLabelA": "인디고 100%",
+    "indirubinLabelB": "인디고 94%, 인디루빈 6%",
+    "indirubinToggle": "두 조성 비교",
+    "indirubinNote": "카탈로그에 제시된 두 가지 조성의 사진입니다. 그 사이의 혼합비는 제공되지 않았으므로 화면에서 색을 만들어 보여 주지 않습니다.",
+    "colorDisclaimer": "화면·원단·염색 조건에 따라 실제 색상은 달라질 수 있습니다. 원단 샘플로 확인해 주세요.",
+    "inquiryCta": "이 색으로 샘플 문의하기",
+    "medicalNote": "인디루빈의 약리 활성은 이 사이트에서 다루지 않습니다. 색조 조절과 제품개발 관점만 설명합니다.",
+    "keyboardHint": "화살표 키(← → ↑ ↓)와 Home · End 키로 견본을 옮길 수 있습니다."
+  },
+  "Products": {
+    "eyebrow": "PRODUCT FORMS",
+    "title": "분말과 프린팅 잉크, 두 가지 형태로.",
+    "body": "미생물 발효로 만든 인디고를 원단 염색용 분말과 디지털 프린팅용 잉크로 제공합니다.",
+    "powderTitle": "Blugene Indigo Powder",
+    "powderText": "미생물 발효로 생산한 인디고 분말입니다. 면 · 실크 · 캐시미어 염색 평가 자료가 카탈로그에 수록되어 있습니다.",
+    "powderAlt": "접시에 담긴 짙은 청색 바이오 인디고 분말 (카탈로그 p.9)",
+    "inkTitle": "Blugene Digital Printing Ink",
+    "inkText": "디지털 프린팅용 바이오 인디고 잉크입니다. 적용성과 샘플에 대해 상담해 드립니다.",
+    "inkAlt": "짙은 청색 바이오 인디고 디지털 프린팅 잉크가 담긴 유리병 (카탈로그 p.9)",
+    "nameNote": "위 제품명은 신규 브랜드의 웹 표시안입니다. 카탈로그와 인증서의 원문 제품명은 “{catalogueName}” 입니다.",
+    "specNote": "입도 · 점도 · 보관기간 · 최소주문수량 · 생산능력 · 가격은 제공 자료에 없어 표시하지 않습니다. 필요하신 규격은 문의해 주시면 확인해 안내드립니다.",
+    "cyclesTitle": "염색 횟수에 따른 발색 비교",
+    "cyclesCaption": "카탈로그 p.8 Figure 5-1. 화학 인디고(분말) · 바이오 인디고(분말) · 바이오 인디고(디지털 프린팅 잉크)를 1~4회 염색한 면 원단 비교입니다.",
+    "cyclesAlt": "3행 4열 비교 도판. 행은 화학 인디고 분말, 바이오 인디고 분말, 바이오 인디고 디지털 프린팅 잉크이고 열은 1~4회 염색입니다.",
+    "cyclesNote": "카탈로그는 이 예시에서 색 강도를 “디지털 프린팅 잉크 > 화학 인디고 ≈ 바이오 인디고 분말”로 표기합니다. 사진의 색 농담을 K/S 값이나 색차 ΔE 측정값으로 환산하지 않았으며, 모든 조건에서의 성능 우위를 뜻하지 않습니다.",
+    "cta": "제품 자료 문의"
+  },
+  "Printing": {
+    "eyebrow": "PRINTED IN BLUE",
+    "title": "프린팅으로 넓어지는 표현.",
+    "body": "디지털 프린팅은 필요한 자리에 색을 직접 올려 정교한 패턴을 구현합니다. 바이오 인디고 잉크로 프린팅한 결과를 원작 이미지와 함께 보여 드립니다.",
+    "pairOriginal": "원작 이미지",
+    "pairPrinted": "바이오 인디고 잉크 프린팅 결과",
+    "pairAltOriginal": "디지털 프린팅에 사용한 원작 이미지 {index} (카탈로그 p.9 Figure 6-2)",
+    "pairAltPrinted": "같은 이미지를 바이오 인디고 잉크로 디지털 프린팅한 결과 {index} (카탈로그 p.9 Figure 6-2)",
+    "pairNote": "왼쪽은 프린팅에 사용한 원작 이미지, 오른쪽은 바이오 인디고 잉크로 프린팅한 결과입니다. 제품 사용 전후의 성능 개선을 나타내는 사진이 아니며, 원작자 · 고객 · 납품처 정보는 제공 자료에 없습니다.",
+    "processTitle": "잉크 제조 흐름",
+    "processCaption": "카탈로그 p.9 Figure 6-1 의 단계입니다. 원문 표기를 함께 적었습니다.",
+    "processAlt": "원료 준비, 프리믹싱, 밀링, 여과, 제형 완성으로 이어지는 잉크 제조 흐름 도식 (카탈로그 p.9)",
+    "processNote": "카탈로그 원문의 마지막 단계는 “Formation” 입니다. 확정된 공정 전문용어로 바꾸지 않고 원문을 함께 표기합니다. 정확한 생산 레시피를 공개하는 자료가 아닙니다.",
+    "steps": [
+      {
+        "title": "원료 준비",
+        "text": "바이오 인디고 분말과 부원료를 계량해 준비합니다."
+      },
+      {
+        "title": "프리믹싱",
+        "text": "분산 매질과 함께 1차로 섞습니다."
+      },
+      {
+        "title": "밀링",
+        "text": "입자를 균일하게 분쇄 · 분산합니다."
+      },
+      {
+        "title": "여과",
+        "text": "잔여 입자를 걸러 프린팅에 적합한 상태로 만듭니다."
+      },
+      {
+        "title": "제형 완성",
+        "text": "최종 잉크 형태로 조정합니다. (원문 표기: Formation)"
+      }
+    ],
+    "advantagesTitle": "디지털 프린팅의 특징",
+    "advantages": [
+      "전통 염색으로 구현하기 어려운 고해상도 패턴과 색 조합이 가능합니다.",
+      "필요한 자리에 색을 직접 올려 소량 생산에도 적합합니다.",
+      "복잡한 디자인을 반복 재현하기에 유리합니다."
+    ],
+    "advantagesNote": "카탈로그 p.9 에는 일반적인 디지털 프린팅의 물 · 폐기물 절감 범위가 언급되어 있으나, Blugene 제품으로 측정한 값이 아니므로 이 사이트에서는 수치로 표시하지 않습니다."
+  },
+  "DataHub": {
+    "eyebrow": "DATA & CERTIFICATIONS",
+    "title": "원본으로 확인하는 신뢰.",
+    "body": "시험 결과와 인증서를 한곳에 모았습니다. 각 항목은 시험기관 · 시험법 · 보고서 번호 · 자료 기준일과 함께 원본을 확인할 수 있습니다.",
+    "carbonSectionTitle": "바이오 기반 탄소 (C14)",
+    "carbonSectionBody": "시판 인디고 염료의 바이오 기반(재생 가능) 탄소 비율을 측정한 결과입니다.",
+    "anilineSectionTitle": "아닐린 · N-메틸아닐린 분석",
+    "anilineSectionBody": "시판 인디고 염료에 남아 있는 아닐린과 N-메틸아닐린을 분석한 결과입니다.",
+    "tableLab": "시험기관",
+    "tableMethod": "시험법",
+    "tableReport": "시험성적서 번호",
+    "tableReportDate": "시험일자",
+    "tableDetectionLimit": "방법 검출한계",
+    "tableType": "인디고 유형",
+    "tableSample": "샘플",
+    "tablePmc": "pMC",
+    "tableBiobased": "바이오 기반 탄소 함량 (%)",
+    "tableAniline": "아닐린 (mg/kg)",
+    "tableNMethylaniline": "N-메틸아닐린 (mg/kg)",
+    "typeChemical": "화학",
+    "typePlant": "식물",
+    "typeBio": "바이오",
+    "notDetected": "불검출",
+    "notDetectedShort": "N.D.",
+    "notDetectedExplain": "불검출(N.D.)은 제시된 시험법에서 방법 검출한계 미만이라는 뜻입니다. 측정값 0 이 아니며, 그래프에서도 0 인 막대로 표시하지 않습니다.",
+    "sameLabelNote": "Company M 은 화학 인디고와 식물 인디고 두 유형에 각각 등장합니다. 유형과 함께 표기해 구분합니다.",
+    "anonymousNote": "회사명은 카탈로그의 익명 표기를 그대로 사용했습니다. 실제 회사명을 추정하지 않습니다.",
+    "sampleScopeNote": "이 값들은 카탈로그에 수록된 9개 샘플의 비교 결과이며, 시장 전체를 대표하는 통계가 아닙니다. 탄소 시험과 아닐린 시험은 기관 · 시험법 · 일자가 서로 달라 하나의 지표로 합치지 않았습니다.",
+    "chartCarbonTitle": "바이오 기반 탄소 함량 비교 (%)",
+    "chartAnilineTitle": "아닐린 · N-메틸아닐린 비교 (mg/kg)",
+    "chartAccessibleNote": "그래프의 모든 값은 아래 표에서도 확인할 수 있습니다.",
+    "regulatoryOmitted": "카탈로그 p.4 의 국가별 · 인증별 허용한도 표는 국가와 제품군에 따라 적용 범위가 달라 최신 원문 확인이 필요하므로, 이 사이트 본문에서는 수치를 옮기거나 해석하지 않습니다. 아래 ‘원본 카탈로그’ 4쪽에서 원문 그대로 확인하실 수 있으며, 실제 적용 기준은 각 규정의 최신 원문을 확인해 주세요.",
+    "catalogueTitle": "원본 카탈로그",
+    "catalogueBody": "제공 카탈로그 12쪽 전체를 확인할 수 있습니다.",
+    "cataloguePage": "{page}쪽",
+    "cataloguePageAlt": "CutisBio 바이오 인디고 카탈로그 {page}쪽",
+    "catalogueDownload": "PDF 내려받기 ({size})",
+    "catalogueAnchorNote": "브라우저가 PDF 쪽 이동을 지원하지 않는 경우 위에 표시된 쪽 번호를 참고해 직접 이동해 주세요.",
+    "carbonZeroNote": "Company Z 의 바이오 기반 탄소 함량은 카탈로그 Table 1-1 에 0 (pMC 0.30)으로, Figure 1-3 에는 N.D. 로 표기되어 있습니다. 이 표는 Table 1-1 의 값을 옮긴 것입니다."
+  },
+  "Certifications": {
+    "title": "글로벌 인증",
+    "body": "제공 카탈로그에 수록된 인증서입니다. 인증기관 · 인증번호 · 적용 제품 · 문서상 유효기간을 함께 표시하고, 원본 인증서를 확대해 볼 수 있습니다.",
+    "numberLabel": "인증번호",
+    "issuerLabel": "인증기관",
+    "productLabel": "적용 제품",
+    "validityLabel": "문서상 유효기간",
+    "issuedLabel": "문서 발행일",
+    "pageLabel": "카탈로그 쪽",
+    "certificateAlt": "{name} 인증서 원본 이미지",
+    "logoAlt": "{name} 인증 마크",
+    "noExpiry": "문서에 만료일이 표시되어 있지 않습니다",
+    "statusDocumented": "2026년 7월 카탈로그 수록 인증자료",
+    "statusWithinPeriod": "문서 기재 유효기간 내",
+    "statusPastPeriod": "문서 기재 유효기간이 지났습니다. 최신 자료를 문의해 주세요.",
+    "verificationNote": "문서에 적힌 날짜를 확인한 것이며, 인증기관 데이터베이스에서 현재 인증 상태를 조회한 결과가 아닙니다.",
+    "brandNameNote": "인증서의 제품명은 “CB Bio Indigo Dye Powder” 입니다. Blugene은 이 제품을 포함한 큐티스바이오 바이오 인디고 사업의 신규 브랜드명이며, 인증서 이미지의 제품명을 바꾸지 않았습니다.",
+    "scopeNote": "인증 범위는 각 인증서에 적힌 제품에 한정됩니다. 디지털 프린팅 잉크나 최종 데님 의류까지 자동으로 인증된다는 뜻이 아닙니다.",
+    "asOfLabel": "자료 기준일",
+    "nextReviewLabel": "다음 인증 상태 점검 권장일",
+    "requestLatest": "최신 인증자료 문의",
+    "zdhcScope": "적용 범위는 인증서에 기재된 화학 조성물(CB Bio Indigo Dye Powder)입니다. 사용 분류는 Natural dyes (1.7.27) 입니다.",
+    "oekoScope": "제품 목록은 인증서의 별첨(enclosure)에 있으며 카탈로그에 함께 수록되어 있지 않습니다. 제품 분류는 2.9 Natural dyes 입니다. 별첨을 확인하기 전에는 적용 제품 범위를 특정하지 않습니다.",
+    "usdaScope": "USDA Certified Biobased Product 라벨 취득 사실을 확인하는 참가 증서이며, 라벨 표시 비율은 98% 입니다. 카탈로그 p.11 에는 이 결과의 정밀도가 ±3%(절대값)로 각주 표기되어 있습니다.",
+    "okbiobasedScope": "Class 5 는 바이오 기반 탄소 함량 97% 이상 100% 이하를 뜻합니다. 인증서에는 EN 16640 방법과 인증제도 OK 20 edition D 가 기재되어 있습니다.",
+    "zoomOpen": "인증서 확대해 보기",
+    "zoomClose": "닫기",
+    "zoomHint": "Esc 키로 닫을 수 있습니다."
+  },
+  "Inquiry": {
+    "eyebrow": "SAMPLE INQUIRY",
+    "title": "다음 데님의 파랑을, 함께 만드세요.",
+    "body": "원단 염색, 디지털 프린팅, 색상 공동개발, 기술 · 인증자료 가운데 필요한 내용을 선택해 문의해 주세요.",
+    "topicLabel": "문의 유형",
+    "topicFabricDyeing": "원단 염색",
+    "topicDigitalPrinting": "디지털 프린팅",
+    "topicShadeDevelopment": "색상 공동개발",
+    "topicTechnicalData": "기술 · 인증자료",
+    "messageLabel": "함께 알려주시면 좋은 내용",
+    "messagePlaceholder": "회사명, 담당자, 원단 종류, 필요한 수량과 일정 등을 적어 주세요.",
+    "submit": "이메일로 문의하기",
+    "submitHint": "버튼을 누르면 기본 이메일 프로그램이 열리고 수신자 · 제목 · 내용이 채워집니다. 이 화면에서 정보를 외부로 전송하지 않으며, 실제 발송은 직접 확인한 뒤에 이루어집니다.",
+    "mailSubject": "[Blugene 샘플 문의] {topic}",
+    "mailIntro": "Blugene 샘플 · 기술자료 문의드립니다.",
+    "mailTopicLine": "문의 유형: {topic}",
+    "mailShadeLine": "관심 색상 견본: {shade}",
+    "mailFooter": "— 이 메일은 blugene.co 문의 화면에서 작성되었습니다.",
+    "emailLabel": "이메일",
+    "telLabel": "전화",
+    "addressLabel": "주소",
+    "companyRelationTitle": "Blugene과 CutisBio",
+    "companyRelationBody": "Blugene은 큐티스바이오(CutisBio Co., Ltd.)가 개발한 바이오 인디고의 브랜드명입니다. 카탈로그와 인증서에는 원래 제품명인 “Bio Indigo Dye Powder (Microbial Fermentation)” 로 기재되어 있습니다.",
+    "sampleNote": "샘플은 문의 시 제공 가능 여부를 확인해 안내드립니다. (카탈로그 p.11: Samples are available upon request)"
+  },
+  "Common": {
+    "sourceLabel": "출처",
+    "cataloguePage": "카탈로그 p.{page}",
+    "asOf": "자료 기준일 {date}",
+    "viewOriginal": "원본 보기",
+    "viewSource": "원본 자료 보기",
+    "close": "닫기",
+    "openImage": "이미지 확대",
+    "conceptImage": "개념 이미지",
+    "brandImage": "브랜드 이미지",
+    "testPhoto": "시험 사진",
+    "imageNoteConcept": "개념을 설명하기 위한 이미지이며, 실제 시설 · 고객 · 시험 결과를 촬영한 사진이 아닙니다.",
+    "imageNotePhoto": "제공 카탈로그에 수록된 사진을 색보정 없이 웹용으로 크기만 조정해 사용했습니다.",
+    "imageNoteSwatch": "카탈로그 p.7 Figure 4-1 에 인쇄된 색상 견본을 원본 파일 그대로 옮겼습니다. 실물 원단을 촬영한 사진이 아닙니다.",
+    "scrollableRegion": "가로로 스크롤할 수 있는 영역",
+    "catalogueFigure": "카탈로그 도판"
+  },
+  "Brand": {
+    "metaTitle": "브랜드 이야기",
+    "metaDescription": "Blugene은 평생 함께하는 데님을 위해 인디고를 다시 만드는 큐티스바이오의 바이오 인디고 브랜드입니다.",
+    "heroEyebrow": "THE STORY",
+    "heroTitle": "평생 입는 옷이기에, 색부터 다시 묻습니다.",
+    "heroBody": "생물공학을 통해 인디고를 만드는 방식을 새로 썼습니다. 데님은 인종과 국가를 넘어 우리의 일상과 평생을 함께하는 옷입니다. 그래서 우리는 그 안의 작은 불순물에도 타협하지 않습니다. 피부와 환경을 생각하며 인디고를 다시 만듭니다. 그것이 Blugene 입니다.",
+    "nameTitle": "이름에 담은 뜻",
+    "nameBody": "Blue 와 Gene 을 합친 이름입니다. 오래 사랑받아 온 파랑을, 생물공학의 방식으로 다시 만든다는 뜻을 담았습니다.",
+    "nameNote": "‘인디고의 DNA를 다시 쓴다’는 비유입니다. 인디고 분자에 유전자가 들어 있다는 뜻이 아닙니다.",
+    "promiseTitle": "우리가 약속하는 것",
+    "promiseBody": "우리가 약속할 수 있는 것은 확인할 수 있는 자료입니다. 무엇으로 만들었는지, 어떤 불순물이 남는지, 그 결과를 어떻게 확인할 수 있는지를 공개합니다.",
+    "promiseItems": [
+      {
+        "title": "원료를 밝힙니다",
+        "text": "재생 가능한 탄소에서 출발합니다. 바이오 기반 탄소 함량은 시험 결과로 공개합니다."
+      },
+      {
+        "title": "불순물을 확인합니다",
+        "text": "아닐린과 N-메틸아닐린을 공인 시험법으로 분석하고 검출한계와 함께 결과를 공개합니다."
+      },
+      {
+        "title": "원본을 보여드립니다",
+        "text": "시험성적서 번호, 인증번호, 인증서 원본 이미지를 사이트에서 직접 확인할 수 있습니다."
+      }
+    ],
+    "limitsTitle": "우리가 말하지 않는 것",
+    "limitsBody": "지금 확인된 자료의 범위를 분명히 합니다. 아래 내용은 제공 카탈로그로 입증되지 않았으므로 이 사이트에서 주장하지 않습니다.",
+    "limitsItems": [
+      "평생 피부 접촉 안전성, 영유아 · 민감성 피부에 대한 안전성",
+      "임상시험이나 피부과 시험으로 입증된 무자극성",
+      "모든 유해물질의 완전한 제거 또는 ‘화학물질 없음’",
+      "제품별 탄소 배출량 · 물 사용량 절감 수치, 탄소중립, 생분해성"
+    ],
+    "relationTitle": "CutisBio 와의 관계",
+    "relationBody": "Blugene은 큐티스바이오(CutisBio Co., Ltd.)의 인디고 사업 브랜드입니다. 법인명과 인증서 · 시험성적서의 표기는 CutisBio 를 그대로 사용합니다.",
+    "cta": "샘플 · 기술자료 문의"
+  },
+  "Technology": {
+    "metaTitle": "기술",
+    "metaDescription": "인디고를 만드는 네 가지 경로, 미생물 발효 기반 생산, 바이오 기반 탄소 시험 결과를 설명합니다.",
+    "heroEyebrow": "TECHNOLOGY",
+    "heroTitle": "파랑을 만드는 네 가지 길, 그리고 우리의 선택.",
+    "heroBody": "인디고를 얻는 방법은 하나가 아닙니다. 카탈로그는 네 가지 경로를 제시하며, Blugene의 기반이 되는 큐티스바이오 바이오 인디고는 그중 미생물 유래 경로에 해당합니다.",
+    "routesTitle": "인디고 합성의 네 가지 경로",
+    "routesCaption": "카탈로그 p.2 Figure 1-1. 화학 경로는 붉은색, 생물학적 경로는 노란색으로 구분되어 있습니다.",
+    "routesAlt": "원유 · 바이오매스 · 인디고 식물에서 출발하는 네 가지 인디고 합성 경로 도식 (카탈로그 p.2)",
+    "routes": [
+      {
+        "name": "화학 인디고",
+        "feedstock": "원유 (재생 불가능)",
+        "intermediate": "아닐린",
+        "text": "원유에서 얻은 아닐린을 거쳐 인디고를 합성합니다. 카탈로그는 이 경로를 화학 경로로 표시합니다."
+      },
+      {
+        "name": "하이브리드 인디고",
+        "feedstock": "바이오매스",
+        "intermediate": "안트라닐산",
+        "text": "바이오매스에서 얻은 안트라닐산을 거쳐 인디고를 만듭니다. 원료는 재생 가능하지만 중간 단계가 순수 미생물 경로와 다릅니다."
+      },
+      {
+        "name": "바이오 인디고 (미생물 유래)",
+        "feedstock": "바이오매스",
+        "intermediate": "트립토판",
+        "text": "바이오매스에서 얻은 트립토판을 미생물이 인디고로 전환합니다. 큐티스바이오 바이오 인디고가 이 경로에 해당합니다."
+      },
+      {
+        "name": "천연 인디고 (식물 유래)",
+        "feedstock": "인디고 식물",
+        "intermediate": "추출",
+        "text": "인디고 식물에서 색소를 추출합니다. 카탈로그는 시판 식물 유래 인디고 가운데 화학 인디고가 섞인 것으로 보이는 사례가 있다고 기록합니다."
+      }
+    ],
+    "routeFeedstockLabel": "원료",
+    "routeIntermediateLabel": "주요 중간 단계",
+    "routesNote": "하이브리드 경로의 안트라닐산 단계는 미생물 경로의 트립토판 단계와 다릅니다. 두 경로를 같은 것으로 단순화하지 않았습니다.",
+    "carbonTitle": "탄소는 어디에서 오는가",
+    "carbonCaption": "카탈로그 p.2 Figure 1-2. 화학 경로(위)와 바이오 경로(아래)의 탄소 순환 비교입니다.",
+    "carbonAlt": "화학 경로와 바이오 경로의 탄소 순환을 비교한 개념도 (카탈로그 p.2)",
+    "carbonBody": "화학 경로는 재생 불가능한 원유에서, 바이오 경로는 재생 가능한 바이오매스에서 탄소를 얻습니다. 이 차이가 바이오 기반 탄소 함량 시험으로 확인됩니다.",
+    "processTitle": "원료에서 원단까지",
+    "safetyTitle": "작업 환경",
+    "safetyBody": "카탈로그는 유해 화학물질 취급과 관련한 작업 환경을 주제로 다룹니다. 이 사이트에서는 작업자 안전에 대한 정량적 주장을 하지 않고, 취급 물질의 차이를 설명하는 데 그칩니다.",
+    "safetyAlt": "유해 화학물질 취급과 비유해 물질 취급을 대비해 보여 주는 삽화 (카탈로그 p.4)",
+    "impurityTitle": "왜 아닐린을 확인하는가",
+    "impurityBody": "아닐린과 N-메틸아닐린은 화학 합성 경로의 출발물질 또는 중간체이며, 최종 인디고 분말에 미반응 잔류물로 남을 수 있습니다. 독성과 발암 가능성 때문에 여러 인증 기준이 섬유용 염료와 최종 제품에서 허용 농도를 제한합니다.",
+    "cta": "시험 데이터 전체 보기",
+    "conceptCaptionSafety": "카탈로그 p.4 Figure 2-1. 유해 물질과 비유해 물질의 취급을 대비해 보여 주는 삽화이며, 실제 작업장을 촬영한 사진이 아닙니다."
+  },
+  "DyeingPrinting": {
+    "metaTitle": "염색 · 프린팅",
+    "metaDescription": "면 · 실크 · 캐시미어 염색 비교, 견뢰도 시험 결과, 농도별 색상 견본, 분말과 디지털 프린팅 잉크를 소개합니다.",
+    "heroEyebrow": "DYEING & PRINTING",
+    "heroTitle": "원단 위에서 확인하는 색.",
+    "heroBody": "염색성과 견뢰도, 색조와 제형까지. 실제 원단에서 확인한 자료를 그대로 보여 드립니다.",
+    "cta": "원단 샘플 문의"
+  },
+  "Tech": {
+    "title": "미생물 발효로 만드는 인디고, Blugene",
+    "description": "Blugene by CutisBio 의 바이오 인디고가 어떤 경로로 만들어지는지, 어떤 시험으로 확인했는지 설명합니다.",
+    "intro": "가장 사랑받는 옷감인 블루 데님. 그 색을 만드는 방법은 하나가 아닙니다. 큐티스바이오는 미생물의 생합성 경로와 발효를 활용해 인디고를 생산합니다.",
+    "section1Title": "1. 왜 불순물을 확인하는가",
+    "section1Text": "아닐린과 N-메틸아닐린은 화학 합성 인디고의 출발물질이거나 중간체이며, 최종 분말에 미반응 잔류물로 남을 수 있습니다. 독성과 발암 가능성 때문에 ZDHC, OEKO-TEX, GOTS 등 여러 인증 기준이 섬유용 염료와 최종 제품에서 이 물질의 허용 농도를 제한합니다. 그래서 우리는 제품마다 이 두 물질을 분석하고, 검출한계와 함께 결과를 공개합니다.",
+    "comparisonCaption": "카탈로그 p.4 는 이 두 물질을 화학 합성 인디고의 출발물질 또는 중간체로 설명하며, 독성과 발암 가능성 때문에 여러 인증 기준이 섬유용 염료와 최종 제품에서 허용 농도를 제한한다고 기록합니다.",
+    "section2Title": "2. 미생물 발효로 만드는 인디고",
+    "section2Text": "큐티스바이오는 미생물의 생합성 경로를 활용해 바이오매스에서 얻은 트립토판을 인디고로 전환하는 발효 공정을 사용합니다. 카탈로그가 제시하는 네 가지 인디고 합성 경로 가운데 미생물 유래 경로에 해당합니다.",
+    "section3Title": "3. 시험으로 확인한 결과",
+    "section3Text": "KATRI 의 ASTM D6866-24a Method B 시험에서 바이오 기반 탄소 함량 98%(pMC 97.73)로 측정되었고, KOTERI 의 KS K 0734 2019 시험에서 아닐린과 N-메틸아닐린이 검출되지 않았습니다(방법 검출한계 5 mg/kg). 견뢰도는 카탈로그 기준으로 식물성 · 화학 인디고와 견줄 만한 수준(comparable performance)이며, 항목별 등급은 데이터 페이지의 표에서 그대로 확인할 수 있습니다.",
+    "certSectionTitle": "글로벌 인증",
+    "certSectionText": "제공 카탈로그에 수록된 인증서입니다. 인증기관 · 인증번호 · 적용 제품 · 문서상 유효기간과 함께 원본을 확인할 수 있습니다.",
+    "faqTitle": "자주 묻는 질문",
+    "faqList": [
+      {
+        "question": "Blugene은 무엇인가요?",
+        "answer": "Blugene은 큐티스바이오(CutisBio Co., Ltd.)가 미생물 발효로 생산하는 바이오 인디고의 브랜드명입니다. 카탈로그와 인증서에는 원래 제품명인 “Bio Indigo Dye Powder (Microbial Fermentation)” 로 기재되어 있습니다."
+      },
+      {
+        "question": "‘바이오 기반 탄소 함량 98%’ 는 무슨 뜻인가요?",
+        "answer": "제품에 들어 있는 탄소 가운데 재생 가능한 원료에서 온 비율이 98% 라는 뜻입니다. KATRI 의 ASTM D6866-24a Method B (AMS) 시험 결과이며(pMC 97.73, 보고서 SBED25-00000153-1, 2025-05-22), 인디고 순도나 탄소 배출 감축률이 아닙니다."
+      },
+      {
+        "question": "‘아닐린 불검출’ 은 함유량이 0 이라는 뜻인가요?",
+        "answer": "아닙니다. KOTERI 의 KS K 0734 2019 시험에서 방법 검출한계 5 mg/kg 미만이어서 검출되지 않았다는 뜻입니다(보고서 2025-0604-1132-C03, 2025-06-10). 0 ppm 이나 완전 무함유를 의미하지 않습니다."
+      },
+      {
+        "question": "기존 염색 설비에서 그대로 쓸 수 있나요?",
+        "answer": "카탈로그는 면 · 실크 · 캐시미어 염색에서 식물성 · 화학 인디고와 견줄 만한 성능(comparable performance)을 기록하고 있습니다. 다만 공장과 원단, 공정 조건에 따라 결과가 달라질 수 있으므로 실제 적용은 원단 샘플로 확인하시기를 권합니다."
+      },
+      {
+        "question": "인증은 어떤 제품에 적용되나요?",
+        "answer": "인증서에 기재된 제품은 “CB Bio Indigo Dye Powder” 입니다. OEKO-TEX ECO PASSPORT 의 제품 목록은 인증서 별첨에 있어 카탈로그만으로는 범위를 특정할 수 없습니다. 디지털 프린팅 잉크나 최종 데님 의류가 자동으로 인증되는 것은 아닙니다."
+      }
+    ],
+    "structuresTitle": "아닐린과 N-메틸아닐린의 화학 구조",
+    "structuresNote": "검증된 화학 구조를 코드(SVG)로 직접 그린 골격 구조식입니다. 이미지 생성 도구로 만들지 않았습니다.",
+    "structureAnilineName": "아닐린",
+    "structureAnilineDesc": "벤젠 고리에 아미노기(NH2)가 하나 결합한 골격 구조식입니다.",
+    "structureNMethylanilineName": "N-메틸아닐린",
+    "structureNMethylanilineDesc": "벤젠 고리에 결합한 질소에 수소 하나와 메틸기(CH3)가 붙은 골격 구조식입니다."
   },
   "About": {
     "title": "합성생물학으로 일상을 더 아름답게 디자인하다",
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "합성생물학 기술로 고성능 바이오 소재를 양산하여, 일상의 지속가능성을 확장한다.",
+    "visionText": "미생물의 생합성 능력을 설계해 산업 소재를 다시 만듭니다. Blugene은 그 결과 가운데 하나로, 패션 산업의 인디고를 발효로 생산합니다.",
     "aboutImageAlt": "큐티스바이오 연구원들의 심도 있는 바이오 연구 전경",
-    "coreBusinessTitle": "선도적인 바이오 기반 특수 소재 개발",
-    "medicalTitle": "의료 (Medical)",
-    "medicalText": "바이오공정으로만 가능한 의약품 원료소재 개발",
-    "beautyTitle": "미용 (Beauty)",
-    "beautyText": "피부 마이크로바이옴 빅데이터 및 합성생물학을 융합한 정밀 뷰티 솔루션 고부가가치 소재 및 제품개발",
-    "fashionTitle": "패션 (Fashion)",
-    "fashionText": "100% 무독성 아닐린 프리 'Bio-Indigo' 상용화를 통한 인체안전 및 친환경 데님 패션완성",
-    "historyTitle": "주요 연혁 및 성과",
+    "coreBusinessTitle": "핵심 사업 영역",
+    "medicalTitle": "메디컬",
+    "medicalText": "합성생물학 기반의 의약 소재를 연구합니다.",
+    "beautyTitle": "뷰티",
+    "beautyText": "피부 마이크로바이옴 연구를 바탕으로 화장품 소재를 개발합니다.",
+    "fashionTitle": "패션 (Blugene)",
+    "fashionText": "미생물 발효로 생산한 바이오 인디고를 데님 염색과 디지털 프린팅에 공급합니다.",
+    "historyTitle": "연혁",
     "historyList": [
       {
         "year": "2024",
@@ -78,41 +541,18 @@
         "year": "2020",
         "event": "큐티스바이오(CutisBio) 설립"
       }
-    ]
+    ],
+    "blugeneNoteTitle": "이 사이트에 대하여",
+    "blugeneNoteText": "이 사이트는 큐티스바이오의 인디고 사업(Blugene)을 소개합니다. 의료 · 화장품 사업과 회사 전체 소개는 CutisBio 기업 사이트를 참고해 주세요.",
+    "metaDescription": "큐티스바이오는 미생물의 생합성 능력을 설계해 산업 소재를 만듭니다. 바이오 인디고 브랜드 Blugene을 포함한 사업 영역과 연혁을 소개합니다."
   },
-  "Tech": {
-    "title": "미생물 발효를 통한 지속 가능한 데님 염색",
-    "description": "CutisBio의 아닐린 프리(Aniline-free) 인디고 염료 개발 배경과 친환경 데님 패션의 미래를 소개합니다.",
-    "intro": "모두가 가장 사랑하는 패션 아이템인 '블루 데님(Blue Denim)'. 하지만 그 아름다운 색 뒤에는 환경과 건강을 위협하는 석유화학 유래 물질, '아닐린(Aniline)'이 숨어 있었습니다. CutisBio는 미생물을 활용해 이 문제를 근본적으로 해결합니다.",
-    "section1Title": "1. 아닐린 프리(Aniline-Free)의 절대적 필요성",
-    "section1Text": "아닐린은 세계보건기구(WHO) 산하 국제암연구소에서 잠재적 발암물질로 분류한 유해 물질입니다. 데님 생산 과정에서 수자원으로 무분별하게 방류되어 생태계를 파괴할 뿐 아니라, 피부와 오랫동안 접촉하는 최종 소비자에게도 악영향을 미칠 수 있습니다.",
-    "comparisonImageAlt": "아닐린과 메칠아닐린 화학 구조식 및 피부염, 방광암 위험성을 나타내는 인포그래픽",
-    "comparisonCaption": "아닐린 및 메칠아닐린의 화학 구조와 이로 인한 접촉성 피부염, 방광암 등 치명적인 인체 건강 위협",
-    "section2Title": "2. CutisBio의 혁신: 미생물을 공장으로 만들다",
-    "section2Text": "자연이 정답을 가지고 있었습니다. 우리는 첨단 합성생물학 기술을 이용해 특수 미생물에게 식물과 유사한 대사 경로를 부여했습니다. 이 미생물들은 스스로 인디고 전구체를 만들어 내며, 이 과정을 통해 아닐린과 같은 치명적인 화학 물질의 사용을 원천적으로 차단합니다.",
-    "section3Title": "3. 품질의 타협 없는 'Drop-in' 솔루션",
-    "section3Text": "친환경적이라고 해서 품질을 포기할 필요는 없습니다. CutisBio의 바이오 인디고는 기존 염색 공장의 인프라 변경 없이 바로 투입 가능한 'Drop-in' 형태를 띱니다. 기존 화학 염료와 동일한 색상 깊이(Shade)와 마찰 견뢰도를 완벽하게 구현합니다.",
-    "certSectionTitle": "글로벌 지속가능성 인증",
-    "certSectionText": "다양한 지속가능성과 친환경, 그리고 인체 안전에 대한 세계적인 인증이 완료되었음을 알립니다.",
-    "certOkbiobased": "OK biobased 인증 마크",
-    "certBioPreferred": "USDA BioPreferred 인증 마크",
-    "certOekoTex": "OEKO-TEX Eco Passport 인증 마크",
-    "certZdhc": "ZDHC 인증 마크",
-    "faqTitle": "자주 묻는 질문 (FAQ)",
-    "faqList": [
-      {
-        "question": "전통적인 인디고 염색의 문제점은 무엇인가요?",
-        "answer": "기존 합성 인디고 염료는 석유 화학물질인 아닐린(Aniline)과 시안화수소 등을 사용하여 생산됩니다. 이는 심각한 수질 오염을 유발하며, 노동자와 최종 소비자의 건강에도 위협이 될 수 있습니다."
-      },
-      {
-        "question": "미생물 발효 기반 인디고 염료란 무엇인가요?",
-        "answer": "CutisBio의 기술은 특수하게 설계된 미생물을 사용하여 자연적인 발효 과정을 통해 인디고 전구체를 생산합니다. 화학적 합성 대신 생물학적 메커니즘을 이용하므로 100% 아닐린 프리 염료를 만들 수 있습니다."
-      },
-      {
-        "question": "기존 의류 품질에 차이가 있나요?",
-        "answer": "아닙니다. 기존의 전통적인 인디고 데님 염색의 품질, 색상 깊이, 세탁 및 마찰 견뢰도 등을 동일하게 또는 그 이상으로 구현합니다. 품질 타협 없이 완벽한 형태의 지속가능성을 달성했습니다."
-      }
-    ]
+  "Blog": {
+    "eyebrow": "인사이트 & 기술",
+    "title": "블로그",
+    "description": "CutisBio의 합성생물학 기술과 친환경 패션에 관한 심층 아티클을 소개합니다.",
+    "categoryTech": "기술 소개",
+    "readMore": "자세히 읽기",
+    "readTime": "{minutes}분 읽기"
   },
   "News": {
     "title": "CutisBio 뉴스룸",
@@ -514,34 +954,13 @@
   },
   "Contact": {
     "title": "문의하기",
-    "description": "큐티스바이오에 대한 문의사항을 남겨주시면 빠르게 답변해 드리겠습니다.",
-    "addressTitle": "오시는 길",
-    "addressDetail": "서울시 강남구 논현로 842 압구정빌딩 8층",
-    "emailTitle": "이메일",
-    "emailAddress": "contact@cutisbio.com",
-    "mapTitle": "구글 지도"
+    "description": "Blugene 샘플과 기술 · 인증자료에 대해 문의해 주세요. 원단 염색, 디지털 프린팅, 색상 공동개발, 기술자료 가운데 필요한 내용을 선택하실 수 있습니다.",
+    "addressDetail": "서울특별시 강남구 논현로 842 압구정빌딩 8층 (우 06025)\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
+    "mapTitle": "찾아오시는 길"
   },
-  "ProblemSolution": {
-    "problemTitle": "우리가 입는 데님의 숨겨진 대가",
-    "problemText": "전통적인 염색 공정은 석유 화학 물질에 의존하여 심각한 환경 오염과 건강 위협을 남깁니다. 특히 '아닐린'은 가장 치명적인 문제 중 하나입니다.",
-    "solutionTitle": "CutisBio의 혁신적인 해답",
-    "solutionText": "미생물 발효를 통해 유독성 물질을 완전히 배제한 100% 아닐린 프리 염료. 사람과 자연 모두에게 안전한 완전한 지속가능성을 제공합니다."
-  },
-  "Process": {
-    "title": "바이오제조 프로세스",
-    "subtitle": "자연을 모방한 첨단 합성생물학 메커니즘",
-    "step1Title": "1. DNA 설계",
-    "step1Text": "자연에 존재하는 효소 경로를 바탕으로 미생물의 DNA를 특수하게 재설계합니다.",
-    "step2Title": "2. 정밀 발효",
-    "step2Text": "정밀한 발효 환경에서 미생물들이 마치 식물처럼 인디고 전구체를 스스로 생산합니다.",
-    "step3Title": "3. 인디고 정제",
-    "step3Text": "친환경적 정제 공정을 통해 100% 바이오 기반 염료를 완성합니다.",
-    "step4Title": "4. Drop-in 염색",
-    "step4Text": "기존 염색 공장 인프라 그대로, 추가적인 설비 교체 없이 즉각 적용 가능합니다."
-  },
-  "Partners": {
-    "title": "글로벌 패션의 미래를 함께하는 선도 브랜드들",
-    "testimonial": "\"CutisBio의 합성생물학기반 인디고는 데님을 사랑하는 사람들의 건강을 지켜주면서 데님 브랜드의 차별화된 경쟁력을 보장하는 진정한 게임체인저다\"",
-    "testimonialAuthor": "CEO interview"
+  "NotFound": {
+    "title": "찾으시는 페이지가 없습니다.",
+    "body": "주소가 바뀌었거나 삭제된 페이지일 수 있습니다. 아래에서 필요한 내용을 찾아보세요.",
+    "backHome": "홈으로 가기"
   }
 }
