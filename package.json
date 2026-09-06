@@ -10,6 +10,8 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "check:blugene": "node scripts/check-blugene-data.mjs",
+    "translate": "node scripts/translate.mjs",
+    "translate:compare": "node scripts/translate-compare.mjs",
     "assets:blugene": "python scripts/build-blugene-assets.py",
     "prebuild": "node scripts/check-blugene-data.mjs",
     "screens": "node scripts/capture-screens.mjs",
@@ -24,6 +26,7 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^0.124.0",
     "@netlify/plugin-nextjs": "^5.15.9",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",

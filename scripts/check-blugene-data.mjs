@@ -17,6 +17,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -413,6 +414,40 @@ for (const post of newsPosts) {
     }
   } else {
     errors.push(`[소식] ${label}: type 은 youtube 또는 post 여야 합니다.`);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* 9. 번역이 낡았는지 (한국어만 고치고 다른 언어를 두고 온 경우)          */
+/* ------------------------------------------------------------------ */
+/* `scripts/translate.mjs` 가 항목마다 번역의 근거가 된 한국어 원문 지문을 남긴다.
+   지금 한국어와 지문이 다르면 그 언어 화면은 옛 문구를 보여 주고 있는 것이다.
+   키가 빠진 것은 위 4번이 잡지만, "키는 있는데 내용이 낡은" 것은 여기서만 잡힌다. */
+if (exists('content/translation-state.json')) {
+  const state = readJson('content/translation-state.json');
+  const koFlat = flattenLeaves(readJson('messages/ko.json'));
+  const shortHash = (text) =>
+    crypto.createHash('sha256').update(String(text), 'utf8').digest('hex').slice(0, 16);
+
+  const staleByLocale = new Map();
+  for (const [key, value] of koFlat) {
+    if (typeof value !== 'string' || !value.trim()) continue;
+    if (key.startsWith('News.')) continue; // 뉴스는 update-news.js 가 따로 관리한다
+    const recorded = state.entries?.[key];
+    if (!recorded) continue; // 아직 기준선에 없는 새 항목 — translate.mjs 가 처음 번역할 대상
+    for (const locale of LOCALES.filter((l) => l !== 'ko')) {
+      if (recorded[locale] && recorded[locale] !== shortHash(value)) {
+        if (!staleByLocale.has(locale)) staleByLocale.set(locale, []);
+        staleByLocale.get(locale).push(key);
+      }
+    }
+  }
+  for (const [locale, keys] of staleByLocale) {
+    warnings.push(
+      `[번역] ${locale}: 한국어가 바뀐 뒤 다시 번역하지 않은 문구 ${keys.length}개 → ` +
+        `${keys.slice(0, 4).join(', ')}${keys.length > 4 ? ' …' : ''} ` +
+        `(\`node scripts/translate.mjs\` 실행)`
+    );
   }
 }
 
