@@ -11,6 +11,7 @@
     "typecheck": "tsc --noEmit",
     "check:blugene": "node scripts/check-blugene-data.mjs",
     "translate": "node scripts/translate.mjs",
+    "translate:keys": "node scripts/translate-keys.mjs",
     "translate:compare": "node scripts/translate-compare.mjs",
     "glossary:export": "node scripts/glossary-export.mjs",
     "assets:blugene": "python scripts/build-blugene-assets.py",
