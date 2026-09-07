@@ -286,14 +286,15 @@
     "chartCarbonTitle": "生物基碳含量对比 (%)",
     "chartAnilineTitle": "苯胺 · N-甲基苯胺对比 (mg/kg)",
     "chartAccessibleNote": "图表中的所有数值，均可在下方表格中查看。",
-    "regulatoryOmitted": "目录第 4 页的各国及各认证允许限值表，其适用范围因国家与产品类别而异，需核对最新原文，因此本网站正文不转载也不解读这些数值。您可在下方“原始目录”第 4 页查看原文。实际适用的标准请以各法规的最新原文为准。",
+    "regulatoryOmitted": "目录 p.4 中的国家与认证的限量表因为根据国家和产品类别不同适用范围不同，需要确认最新原文，因此本页面不提供数据的翻译或解释。您可以在以下 <link>原始目录第4页</link> 中查看原文，实际适用标准请参考各规定的最新原文。",
     "catalogueTitle": "原版产品目录",
     "catalogueBody": "可查看所提供产品目录的全部 12 页。",
     "cataloguePage": "第 {page} 页",
     "cataloguePageAlt": "CutisBio 生物靛蓝产品目录第 {page} 页",
     "catalogueDownload": "下载 PDF（{size}）",
-    "catalogueAnchorNote": "若浏览器不支持 PDF 页面跳转，请参考上方标示的页码手动翻至该页。",
-    "carbonZeroNote": "Company Z 的生物基碳含量在目录 Table 1-1 中标为 0（pMC 0.30），在 Figure 1-3 中标为 N.D.。本表采用 Table 1-1 的数值。"
+    "catalogueAnchorNote": "下载的 PDF 为目录原始第12页的全部内容，顺序与上方缩略图的页码相同。",
+    "carbonZeroNote": "Company Z 的生物基碳含量在目录 Table 1-1 中标为 0（pMC 0.30），在 Figure 1-3 中标为 N.D.。本表采用 Table 1-1 的数值。",
+    "reportDateNote": "检测报告编号 SBED25-00000153-1 在目录 Table 1-1 中以不同的发布日期被标注了两次。已按照原本标注进行了翻译。"
   },
   "Certifications": {
     "title": "全球认证",
@@ -336,7 +337,7 @@
     "messageLabel": "建议一并告知的信息",
     "messagePlaceholder": "请填写公司名称、联系人、面料种类、所需数量与时间安排等。",
     "submit": "通过邮件咨询",
-    "submitHint": "点击按钮后将打开您的默认邮件程序，并自动填入收件人 · 主题 · 正文。本页面不会将信息发送至外部，实际发送需由您本人确认后进行。",
+    "submitHint": "点击按钮将打开默认电子邮件程序，并填写收件人、主题和内容。最后的“发送”需要您手动点击才能提交。如果电子邮件程序没有打开，请直接发送到 {email}。此界面不会向外部传输任何信息。",
     "mailSubject": "[Blugene 样品咨询] {topic}",
     "mailIntro": "现就 Blugene 样品 · 技术资料向贵司咨询。",
     "mailTopicLine": "咨询类型：{topic}",
@@ -452,7 +453,8 @@
     "impurityTitle": "为何要查验苯胺",
     "impurityBody": "苯胺与 N-甲基苯胺是化学合成路径的起始物或中间体，可能作为未反应残留物留在最终的靛蓝粉末中。由于其毒性与潜在致癌性，多项认证标准对纺织用染料及最终产品中的允许浓度作出限制。",
     "cta": "查看全部检测数据",
-    "conceptCaptionSafety": "目录第 4 页 Figure 2-1。这是对比有害物质与无害物质操作方式的插图，并非实际车间的照片。"
+    "conceptCaptionSafety": "目录第 4 页 Figure 2-1。这是对比有害物质与无害物质操作方式的插图，并非实际车间的照片。",
+    "routeOursLabel": "我们的路线"
   },
   "DyeingPrinting": {
     "metaTitle": "染色 · 印花",
@@ -460,7 +462,15 @@
     "heroEyebrow": "DYEING & PRINTING",
     "heroTitle": "在面料上验证的颜色。",
     "heroBody": "从染色性与色牢度，到色调与剂型。我们如实呈现在真实面料上验证的资料。",
-    "cta": "面料样品咨询"
+    "cta": "面料样品咨询",
+    "jumpNavLabel": "页面内导航",
+    "jumpNav": [
+      "染色性",
+      "色牢度",
+      "颜色库",
+      "产品系列",
+      "打印"
+    ]
   },
   "Tech": {
     "title": "以微生物发酵制成的靛蓝，Blugene",
@@ -566,10 +576,10 @@
     "backHome": "返回首页"
   },
   "News": {
-    "title": "CutisBio 新闻中心",
-    "description": "查看合成生物学推动环保时尚的最新消息。",
+    "title": "CutisBio 新闻室",
+    "description": "了解由合成生物学打造的环保时尚的最新消息。",
     "categoryVideo": "视频",
-    "categoryPost": "动态",
+    "categoryPost": "消息",
     "playVideo": "播放视频",
     "articles": [
       {
@@ -792,6 +802,7 @@
         "sourceTitle": "대웅제약-대웅바이오-큐티스바이오, 친환경 약물소재 개발 협약",
         "sourceSummary": ""
       }
-    ]
+    ],
+    "listNote": "此列表自动汇集了公开发布的媒体报道。文章内容和表述属于各媒体，测试数据和认证信息请查看数据和认证页面。"
   }
 }

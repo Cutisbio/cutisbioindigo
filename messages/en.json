@@ -286,14 +286,15 @@
     "chartCarbonTitle": "Biobased carbon content comparison (%)",
     "chartAnilineTitle": "Aniline and N-methylaniline comparison (mg/kg)",
     "chartAccessibleNote": "Every value in the charts can also be found in the tables below.",
-    "regulatoryOmitted": "The regulatory and certification limit tables on catalogue p.4 apply differently by country and product category and require checking against the current source, so this site does not reproduce or interpret those figures in its own text. You can read page 4 as printed under “Original catalogue” below; for the limits that actually apply, please consult the current text of each regulation.",
+    "regulatoryOmitted": "The limits table by country and certification on p.4 of the catalog may have varying scopes depending on the country and product group, and requires checking the latest original text, so figures are not transcribed or interpreted in this site text. You can check the original text on <link>page 4 of the original catalog</link> below, and please verify the actual application standards by checking the latest original text of each regulation.",
     "catalogueTitle": "The original catalogue",
     "catalogueBody": "All 12 pages of the supplied catalogue can be viewed.",
     "cataloguePage": "Page {page}",
     "cataloguePageAlt": "CutisBio bio indigo catalogue page {page}",
     "catalogueDownload": "Download PDF ({size})",
-    "catalogueAnchorNote": "If your browser does not support jumping to a PDF page, please use the page numbers shown above to navigate manually.",
-    "carbonZeroNote": "Company Z's biobased carbon content is printed as 0 (pMC 0.30) in catalogue Table 1-1 and as N.D. in Figure 1-3. This table reproduces the Table 1-1 value."
+    "catalogueAnchorNote": "The downloaded PDF contains the entirety of the original catalog page 12, and follows the same order as the page numbers in the above thumbnail.",
+    "carbonZeroNote": "Company Z's biobased carbon content is printed as 0 (pMC 0.30) in catalogue Table 1-1 and as N.D. in Figure 1-3. This table reproduces the Table 1-1 value.",
+    "reportDateNote": "The test report number SBED25-00000153-1 is listed twice in Catalog Table 1-1 with different issue dates. The original listing has been transcribed as is."
   },
   "Certifications": {
     "title": "Global certifications",
@@ -336,7 +337,7 @@
     "messageLabel": "Details that help us respond",
     "messagePlaceholder": "Company name, contact person, fabric type, the quantity and timeline you need, and so on.",
     "submit": "Send an email inquiry",
-    "submitHint": "Selecting the button opens your default email application with the recipient, subject and message already filled in. No information is sent from this screen; the message goes out only after you have checked it yourself.",
+    "submitHint": "Pressing the button opens the default email program with the recipient, subject, and content filled in. You must press 'Send' yourself to complete submission. If the email program does not open, please send directly to {email}. This screen does not transmit any information externally.",
     "mailSubject": "[Blugene sample inquiry] {topic}",
     "mailIntro": "I would like to inquire about Blugene samples and technical documentation.",
     "mailTopicLine": "Inquiry type: {topic}",
@@ -452,7 +453,8 @@
     "impurityTitle": "Why we check for aniline",
     "impurityBody": "Aniline and N-methylaniline are starting materials or intermediates in chemical synthesis routes, and they can remain as unreacted residues in the final indigo powder. Because of their toxicity and possible carcinogenicity, a number of certification standards limit the permitted concentration in textile dyes and in finished products.",
     "cta": "See all the test data",
-    "conceptCaptionSafety": "Catalogue p.4 Figure 2-1. An illustration contrasting the handling of hazardous and non-hazardous substances; it is not a photograph of an actual workplace."
+    "conceptCaptionSafety": "Catalogue p.4 Figure 2-1. An illustration contrasting the handling of hazardous and non-hazardous substances; it is not a photograph of an actual workplace.",
+    "routeOursLabel": "Our Path"
   },
   "DyeingPrinting": {
     "metaTitle": "Dyeing & Printing",
@@ -460,7 +462,15 @@
     "heroEyebrow": "DYEING & PRINTING",
     "heroTitle": "Color, confirmed on the fabric itself.",
     "heroBody": "Dyeability and colorfastness, shade and product form. We show the data obtained on real fabric exactly as it stands.",
-    "cta": "Request a fabric sample"
+    "cta": "Request a fabric sample",
+    "jumpNavLabel": "Move within this page",
+    "jumpNav": [
+      "Dyeing properties",
+      "Colorfastness",
+      "Color library",
+      "Product group",
+      "Printing"
+    ]
   },
   "Tech": {
     "title": "Blugene, an indigo made by microbial fermentation",
@@ -567,10 +577,10 @@
   },
   "News": {
     "title": "CutisBio Newsroom",
-    "description": "Check out the latest news on eco-friendly fashion driven by synthetic biology.",
+    "description": "Check out the latest in eco-friendly fashion created through synthetic biology.",
     "categoryVideo": "Video",
-    "categoryPost": "Update",
-    "playVideo": "Play video",
+    "categoryPost": "News",
+    "playVideo": "Play Video",
     "articles": [
       {
         "date": "2025-11-19",
@@ -792,6 +802,7 @@
         "sourceTitle": "대웅제약-대웅바이오-큐티스바이오, 친환경 약물소재 개발 협약",
         "sourceSummary": ""
       }
-    ]
+    ],
+    "listNote": "This list automatically compiles public news reports. The content and expressions of the articles belong to each media outlet; please check the data and certification side for test figures and certification information."
   }
 }

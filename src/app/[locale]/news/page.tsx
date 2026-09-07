@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import SchemaOrg, { buildOrganizationSchema } from '@/components/seo/SchemaOrg';
 import SectionHeading from '@/components/blugene/SectionHeading';
+import SourceNote from '@/components/blugene/SourceNote';
 import NewsPostCard from '@/components/blugene/NewsPostCard';
 import { BRAND, LOCALES, SITE_URL, buildPageMetadata } from '@/data/blugene/site';
 import { pick, type NewsPost } from '@/data/blugene/newsPosts';
@@ -74,6 +75,9 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
       <section className="w-full border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <SectionHeading headingLevel="h1" title={t('title')} body={t('description')} size="hero" />
+          {/* 이 사이트의 다른 근거에는 모두 출처 표기가 붙는데 이 목록만 없었다.
+              언론 보도와 회사가 제시하는 시험 근거를 가르는 경계 표시다. */}
+          <SourceNote className="mt-6 max-w-3xl">{t('listNote')}</SourceNote>
         </div>
       </section>
 

@@ -71,6 +71,13 @@ export default async function TechnologyPage({
                       : 'border-[color:var(--color-washed)] bg-white'
                   }`}
                 >
+                  {/* 어느 것이 우리 경로인지가 테두리 색으로만 표시돼, 색을 구분하지 못하면
+                      네 카드가 같아 보였다. 의미를 글자가 담게 한다. */}
+                  {isBio && (
+                    <p className="mb-2 text-[0.7rem] font-semibold tracking-[0.16em] text-[var(--color-denim)] uppercase">
+                      {t('routeOursLabel')}
+                    </p>
+                  )}
                   <h3 className="text-lg leading-snug font-semibold break-keep text-[var(--color-indigo-deep)]">
                     {route.name}
                   </h3>

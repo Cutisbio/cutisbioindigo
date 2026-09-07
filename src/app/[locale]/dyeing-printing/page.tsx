@@ -50,6 +50,22 @@ export default async function DyeingPrintingPage({
             body={t('heroBody')}
             size="hero"
           />
+          {/* 이 페이지는 11,000px 이 넘는데 앵커 다섯 개가 정의만 되어 있고 링크가 없었다.
+              장식이 아니라 이동 수단이라 히어로 바로 아래에 둔다. */}
+          <nav aria-label={t('jumpNavLabel')} className="mt-10">
+            <ul className="-mx-1 flex flex-wrap gap-2">
+              {(t.raw('jumpNav') as string[]).map((label, index) => (
+                <li key={label}>
+                  <a
+                    href={`#${['dyeability', 'colorfastness', 'shades', 'products', 'printing'][index]}`}
+                    className="inline-block rounded-full border border-[color:var(--color-washed)] bg-white px-4 py-1.5 text-sm font-semibold break-keep text-[var(--color-indigo-deep)] transition-colors hover:border-[var(--color-denim)] hover:text-[var(--color-denim)]"
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </section>
 

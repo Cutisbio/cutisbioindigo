@@ -1626,11 +1626,11 @@
       "tr": "9e7225a9da6f7ba8"
     },
     "DataHub.regulatoryOmitted": {
-      "en": "51f6b298c1afdbc3",
-      "ja": "51f6b298c1afdbc3",
-      "zh": "51f6b298c1afdbc3",
-      "bn": "51f6b298c1afdbc3",
-      "tr": "51f6b298c1afdbc3"
+      "en": "8d7a1eebc711c91b",
+      "ja": "8d7a1eebc711c91b",
+      "zh": "8d7a1eebc711c91b",
+      "tr": "8d7a1eebc711c91b",
+      "bn": "8d7a1eebc711c91b"
     },
     "DataHub.catalogueTitle": {
       "en": "c637ab63c97352e8",
@@ -1668,11 +1668,11 @@
       "tr": "fafdd7678132d956"
     },
     "DataHub.catalogueAnchorNote": {
-      "en": "cda58a8d086a87c3",
-      "ja": "cda58a8d086a87c3",
-      "zh": "cda58a8d086a87c3",
-      "bn": "cda58a8d086a87c3",
-      "tr": "cda58a8d086a87c3"
+      "en": "8d206078b6b1adf7",
+      "ja": "8d206078b6b1adf7",
+      "zh": "8d206078b6b1adf7",
+      "bn": "8d206078b6b1adf7",
+      "tr": "8d206078b6b1adf7"
     },
     "DataHub.carbonZeroNote": {
       "en": "12e3338e09cd07d2",
@@ -1948,11 +1948,11 @@
       "tr": "a671de3488a8b8f0"
     },
     "Inquiry.submitHint": {
-      "en": "c91e2154a243c2f9",
-      "ja": "c91e2154a243c2f9",
-      "zh": "c91e2154a243c2f9",
-      "bn": "c91e2154a243c2f9",
-      "tr": "c91e2154a243c2f9"
+      "en": "6e831db5aa7ffa46",
+      "ja": "6e831db5aa7ffa46",
+      "zh": "6e831db5aa7ffa46",
+      "bn": "6e831db5aa7ffa46",
+      "tr": "6e831db5aa7ffa46"
     },
     "Inquiry.mailSubject": {
       "en": "2e4497f73a83b0a0",
@@ -3101,6 +3101,104 @@
       "zh": "78e1bd9efa665b1b",
       "bn": "78e1bd9efa665b1b",
       "tr": "78e1bd9efa665b1b"
+    },
+    "DataHub.reportDateNote": {
+      "en": "9cb1697842ecb244",
+      "ja": "9cb1697842ecb244",
+      "zh": "9cb1697842ecb244",
+      "tr": "9cb1697842ecb244",
+      "bn": "9cb1697842ecb244"
+    },
+    "Technology.routeOursLabel": {
+      "en": "cd6c121949f9d08d",
+      "ja": "cd6c121949f9d08d",
+      "zh": "cd6c121949f9d08d",
+      "bn": "cd6c121949f9d08d",
+      "tr": "cd6c121949f9d08d"
+    },
+    "DyeingPrinting.jumpNavLabel": {
+      "en": "743cf1dfdbdc4b4e",
+      "ja": "743cf1dfdbdc4b4e",
+      "zh": "743cf1dfdbdc4b4e",
+      "bn": "743cf1dfdbdc4b4e",
+      "tr": "743cf1dfdbdc4b4e"
+    },
+    "DyeingPrinting.jumpNav[0]": {
+      "en": "8d5d3d70a4d25f6a",
+      "ja": "8d5d3d70a4d25f6a",
+      "zh": "8d5d3d70a4d25f6a",
+      "bn": "8d5d3d70a4d25f6a",
+      "tr": "8d5d3d70a4d25f6a"
+    },
+    "DyeingPrinting.jumpNav[1]": {
+      "en": "8912d756a62f2aef",
+      "ja": "8912d756a62f2aef",
+      "zh": "8912d756a62f2aef",
+      "bn": "8912d756a62f2aef",
+      "tr": "8912d756a62f2aef"
+    },
+    "DyeingPrinting.jumpNav[2]": {
+      "en": "835cf94a4396c127",
+      "ja": "835cf94a4396c127",
+      "zh": "835cf94a4396c127",
+      "bn": "835cf94a4396c127",
+      "tr": "835cf94a4396c127"
+    },
+    "DyeingPrinting.jumpNav[3]": {
+      "en": "b0ead2fb0154e925",
+      "ja": "b0ead2fb0154e925",
+      "zh": "b0ead2fb0154e925",
+      "bn": "b0ead2fb0154e925",
+      "tr": "b0ead2fb0154e925"
+    },
+    "DyeingPrinting.jumpNav[4]": {
+      "en": "cf8f3718f75def67",
+      "ja": "cf8f3718f75def67",
+      "zh": "cf8f3718f75def67",
+      "bn": "cf8f3718f75def67",
+      "tr": "cf8f3718f75def67"
+    },
+    "News.title": {
+      "en": "54c51f0ee2a4180a",
+      "ja": "54c51f0ee2a4180a",
+      "zh": "54c51f0ee2a4180a",
+      "bn": "54c51f0ee2a4180a",
+      "tr": "54c51f0ee2a4180a"
+    },
+    "News.description": {
+      "en": "7a94a291db4b4b7a",
+      "ja": "7a94a291db4b4b7a",
+      "zh": "7a94a291db4b4b7a",
+      "bn": "7a94a291db4b4b7a",
+      "tr": "7a94a291db4b4b7a"
+    },
+    "News.listNote": {
+      "en": "3e4bd53e9995149d",
+      "ja": "3e4bd53e9995149d",
+      "zh": "3e4bd53e9995149d",
+      "bn": "3e4bd53e9995149d",
+      "tr": "3e4bd53e9995149d"
+    },
+    "News.categoryVideo": {
+      "en": "be562142ef48d573",
+      "ja": "be562142ef48d573",
+      "zh": "be562142ef48d573",
+      "bn": "be562142ef48d573",
+      "tr": "be562142ef48d573"
+    },
+    "News.categoryPost": {
+      "en": "648fb8dfcf63ca8c",
+      "ja": "648fb8dfcf63ca8c",
+      "zh": "648fb8dfcf63ca8c",
+      "bn": "648fb8dfcf63ca8c",
+      "tr": "648fb8dfcf63ca8c"
+    },
+    "News.playVideo": {
+      "en": "d4f644528f0b9f9a",
+      "ja": "d4f644528f0b9f9a",
+      "zh": "d4f644528f0b9f9a",
+      "bn": "d4f644528f0b9f9a",
+      "tr": "d4f644528f0b9f9a"
     }
   }
 }

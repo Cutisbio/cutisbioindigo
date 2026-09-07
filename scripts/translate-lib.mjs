@@ -14,10 +14,12 @@ export const STATE_PATH = path.join(ROOT, 'content', 'translation-state.json');
 
 /**
  * 번역하지 않는 구역.
- * - `News` : 매달 `scripts/update-news.js` 가 따로 수집·번역한다. 여기서 건드리면 충돌한다.
+ * - `News.articles` : 매달 `scripts/update-news.js` 가 수집·번역해 통째로 다시 쓴다.
+ *   같은 네임스페이스라도 `News.title` 같은 화면 문구는 여기서 번역해야 한다
+ *   (예전에 `News.` 전체를 막아 두어 새 키가 5개 언어에 영원히 안 채워졌다).
  * - `About.missionText` : 회사가 정한 고정 영문 문구라 언어를 바꾸지 않는다.
  */
-export const SKIP_PREFIXES = ['News.'];
+export const SKIP_PREFIXES = ['News.articles'];
 export const SKIP_KEYS = new Set(['About.missionText']);
 
 export const readJson = (p) => JSON.parse(fs.readFileSync(p, 'utf8'));

@@ -124,6 +124,14 @@
       "zh": "检测报告",
       "bn": "পরীক্ষার প্রতিবেদন",
       "tr": "test raporu"
+    },
+    {
+      "ko": "그대로",
+      "en": "as printed / unchanged",
+      "ja": "そのまま",
+      "zh": "原样",
+      "bn": "অপরিবর্তিত",
+      "tr": "olduğu gibi"
     }
   ],
   "keepAsIs": [

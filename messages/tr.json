@@ -286,14 +286,15 @@
     "chartCarbonTitle": "Biyobazlı karbon içeriği karşılaştırması (%)",
     "chartAnilineTitle": "Anilin · N-metilanilin karşılaştırması (mg/kg)",
     "chartAccessibleNote": "Grafikteki tüm değerler aşağıdaki tablodan da görülebilir.",
-    "regulatoryOmitted": "Katalog s.4'teki ülke ve sertifika bazlı izin verilen limit tabloları, ülkeye ve ürün grubuna göre farklı uygulandığı ve güncel asıl metinle karşılaştırılması gerektiği için bu sitenin metninde bu değerler aktarılmamakta ve yorumlanmamaktadır. Aşağıdaki “Orijinal katalog” bölümünde 4. sayfayı olduğu gibi görebilirsiniz; fiilen geçerli sınırlar için ilgili mevzuatın güncel metnine bakınız.",
+    "regulatoryOmitted": "Katalog s.4'teki ülkelere ve sertifikalara göre izin verilen limitler tablosu, uygulama kapsamı ülke ve ürün grubuna göre değiştiği için güncel orijinal metnin incelenmesi gereklidir. Bu nedenle, bu sayfa metninde sayısal veriler aktarılmamış veya yorumlanmamıştır. Aşağıdaki <link>orijinal katalog 4. sayfa</link>dan orijinal metni olduğu gibi inceleyebilirsiniz ve gerçek uygulama kriterleri için her bir yönetmeliğin güncel orijinal metnini kontrol ediniz.",
     "catalogueTitle": "Orijinal katalog",
     "catalogueBody": "Sağlanan kataloğun 12 sayfasının tamamını inceleyebilirsiniz.",
     "cataloguePage": "Sayfa {page}",
     "cataloguePageAlt": "CutisBio biyo indigo kataloğu sayfa {page}",
     "catalogueDownload": "PDF indir ({size})",
-    "catalogueAnchorNote": "Tarayıcınız PDF içinde sayfaya gitmeyi desteklemiyorsa, yukarıda gösterilen sayfa numarasını kullanarak elle gidebilirsiniz.",
-    "carbonZeroNote": "Company Z'nin biyobazlı karbon içeriği katalogda Table 1-1'de 0 (pMC 0.30), Figure 1-3'te ise N.D. olarak yazılıdır. Bu tablo Table 1-1'deki değeri aktarmaktadır."
+    "catalogueAnchorNote": "İndirilen PDF, orijinal kataloğun 12. sayfasının tamamıdır ve üstteki küçük resmin sayfa numarasıyla aynı sıradadır.",
+    "carbonZeroNote": "Company Z'nin biyobazlı karbon içeriği katalogda Table 1-1'de 0 (pMC 0.30), Figure 1-3'te ise N.D. olarak yazılıdır. Bu tablo Table 1-1'deki değeri aktarmaktadır.",
+    "reportDateNote": "Test raporu numarası SBED25-00000153-1, katalog Tablo 1-1'de farklı yayımlanma tarihleriyle iki kez yer almaktadır. Orijinal yazımı aynen aktardık."
   },
   "Certifications": {
     "title": "Küresel sertifikalar",
@@ -336,7 +337,7 @@
     "messageLabel": "Bizimle paylaşmanız yararlı olacak bilgiler",
     "messagePlaceholder": "Şirket adı, ilgili kişi, kumaş türü, ihtiyaç duyulan miktar ve termin gibi bilgileri yazın.",
     "submit": "E-posta ile iletişime geçin",
-    "submitHint": "Butona tıkladığınızda varsayılan e-posta programınız açılır; alıcı · konu · içerik alanları doldurulur. Bu ekranda hiçbir bilgi dışarıya gönderilmez, gerçek gönderim siz kontrol ettikten sonra gerçekleşir.",
+    "submitHint": "Butona bastığınızda, varsayılan e-posta programı açılır ve alıcı, konu ve içerik doldurulur. Son olarak 'gönder' butonuna manuel olarak tıklamanız gereklidir ki gönderim yapılabilsin. E-posta programı açılmazsa, doğrudan {email} adresine gönderin. Bu ekrandan hiçbir bilgi dışa aktarılmaz.",
     "mailSubject": "[Blugene numune talebi] {topic}",
     "mailIntro": "Blugene numuneleri ve teknik belgeleri hakkında bilgi almak istiyorum.",
     "mailTopicLine": "Talep türü: {topic}",
@@ -452,7 +453,8 @@
     "impurityTitle": "Anilin neden kontrol edilir",
     "impurityBody": "Anilin ve N-metilanilin, kimyasal sentez yolunun başlangıç maddesi veya ara ürünüdür ve nihai indigo tozunda tepkimeye girmemiş kalıntı olarak kalabilir. Toksisitesi ve kanserojen olma ihtimali nedeniyle çeşitli sertifikasyon standartları, tekstil boyalarında ve nihai üründe izin verilen konsantrasyonu sınırlar.",
     "cta": "Test verilerinin tamamını görün",
-    "conceptCaptionSafety": "Katalog s.4 Figure 2-1. Tehlikeli ve tehlikesiz madde kullanımını karşılaştıran bir çizimdir; gerçek bir çalışma alanının fotoğrafı değildir."
+    "conceptCaptionSafety": "Katalog s.4 Figure 2-1. Tehlikeli ve tehlikesiz madde kullanımını karşılaştıran bir çizimdir; gerçek bir çalışma alanının fotoğrafı değildir.",
+    "routeOursLabel": "Yolumuz"
   },
   "DyeingPrinting": {
     "metaTitle": "Boyama · Baskı",
@@ -460,7 +462,15 @@
     "heroEyebrow": "DYEING & PRINTING",
     "heroTitle": "Kumaş üzerinde doğrulanan renk.",
     "heroBody": "Boyanabilirlikten haslığa, tondan ürün formuna kadar. Gerçek kumaş üzerinde doğrulanan verileri olduğu gibi sunuyoruz.",
-    "cta": "Kumaş numunesi talep edin"
+    "cta": "Kumaş numunesi talep edin",
+    "jumpNavLabel": "Bu sayfa içinde gezin",
+    "jumpNav": [
+      "Boyama yeteneği",
+      "Haslık",
+      "Renk kütüphanesi",
+      "Ürün grubu",
+      "Baskı"
+    ]
   },
   "Tech": {
     "title": "Mikrobiyal fermantasyonla üretilen indigo: Blugene",
@@ -566,11 +576,11 @@
     "backHome": "Ana sayfaya git"
   },
   "News": {
-    "title": "CutisBio Haber Odası",
-    "description": "Sentetik biyolojiyle şekillenen çevre dostu modanın en son haberlerine göz atın.",
+    "title": "CutisBio Basın Odası",
+    "description": "Sentetik biyoloji ile oluşturulan sürdürülebilir moda konusundaki en son gelişmeleri keşfedin.",
     "categoryVideo": "Video",
-    "categoryPost": "Güncelleme",
-    "playVideo": "Videoyu oynat",
+    "categoryPost": "Haberler",
+    "playVideo": "Videoyu Oynat",
     "articles": [
       {
         "date": "2025-11-19",
@@ -792,6 +802,7 @@
         "sourceTitle": "대웅제약-대웅바이오-큐티스바이오, 친환경 약물소재 개발 협약",
         "sourceSummary": ""
       }
-    ]
+    ],
+    "listNote": "Bu listeye otomatik olarak eklenen yayınlanan basın bültenleri bulunmaktadır. Makale içeriği ve ifadeleri her medya kuruluşuna aittir, test sonuçları ve sertifikasyon bilgilerini lütfen veri · sertifikasyon ekranından kontrol edin."
   }
 }

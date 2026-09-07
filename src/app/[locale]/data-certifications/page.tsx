@@ -56,7 +56,20 @@ export default async function DataCertificationsPage({
             body={t('body')}
             size="hero"
           />
-          <SourceNote className="mt-8 max-w-3xl">{t('regulatoryOmitted')}</SourceNote>
+          {/* '원본 카탈로그 4쪽' 이 글자로만 있고 링크가 아니어서, 원문을 대조하려는 독자가
+              11,000px 을 스크롤해 내려가야 했다. 앵커(#catalogue)는 이미 있었다. */}
+          <SourceNote className="mt-8 max-w-3xl">
+            {t.rich('regulatoryOmitted', {
+              link: (chunks) => (
+                <a
+                  href="#catalogue"
+                  className="font-semibold text-[var(--color-denim)] underline underline-offset-2 hover:text-[var(--color-indigo-deep)]"
+                >
+                  {chunks}
+                </a>
+              ),
+            })}
+          </SourceNote>
         </div>
       </section>
 

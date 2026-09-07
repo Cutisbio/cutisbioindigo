@@ -143,43 +143,11 @@ export default function SampleInquiry({ initialShade }: { initialShade?: string 
           id={hintId}
           className="mt-4 text-[0.8125rem] leading-relaxed break-keep text-[var(--color-slate-muted)]"
         >
-          {t('submitHint')}
+          {/* 메일 프로그램이 열리지 않는 방문자를 위해 주소를 함께 보여 준다.
+              6개 언어 문구에 주소를 박지 않고 evidence.ts 의 값을 넘겨, 주소가 바뀌면 한 곳만 고치면 된다. */}
+          {t('submitHint', { email: contact.email })}
         </p>
       </div>
-
-      {/* 연락처 — 카탈로그 p.11-12 */}
-      <dl className="mt-10 grid gap-x-8 gap-y-1 border-t border-[color:var(--color-washed)] pt-8 sm:grid-cols-[auto_1fr] sm:gap-y-3">
-        <dt className="text-sm font-semibold break-keep text-[var(--color-slate-muted)]">
-          {t('emailLabel')}
-        </dt>
-        <dd className="mb-3 text-base break-all text-[var(--color-ink)] sm:mb-0">
-          <a
-            href={`mailto:${contact.email}`}
-            className="font-medium text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
-          >
-            {contact.email}
-          </a>
-        </dd>
-
-        <dt className="text-sm font-semibold break-keep text-[var(--color-slate-muted)]">
-          {t('telLabel')}
-        </dt>
-        <dd className="mb-3 text-base text-[var(--color-ink)] sm:mb-0">
-          <a
-            href={`tel:${contact.telHref}`}
-            className="font-medium text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
-          >
-            {contact.tel}
-          </a>
-        </dd>
-
-        <dt className="text-sm font-semibold break-keep text-[var(--color-slate-muted)]">
-          {t('addressLabel')}
-        </dt>
-        <dd className="text-base leading-relaxed break-keep text-[var(--color-ink)]">
-          {contact.address}
-        </dd>
-      </dl>
 
       {/* Blugene 과 CutisBio 의 관계 · 샘플 안내 */}
       <div className="mt-10 rounded-md border border-[color:var(--color-washed)] bg-[var(--color-ivory)] p-5 sm:p-6">

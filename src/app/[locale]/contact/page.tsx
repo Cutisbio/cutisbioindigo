@@ -4,6 +4,7 @@ import SchemaOrg, { buildOrganizationSchema } from '@/components/seo/SchemaOrg';
 import SectionHeading from '@/components/blugene/SectionHeading';
 import SampleInquiryPanel from '@/components/blugene/SampleInquiryPanel';
 import MapEmbed from '@/components/blugene/MapEmbed';
+import ContactDetails from '@/components/blugene/ContactDetails';
 import { BRAND, LOCALES, SITE_URL, buildPageMetadata } from '@/data/blugene/site';
 
 export function generateStaticParams() {
@@ -69,6 +70,8 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                 title={t('mapTitle')}
                 openLabel={t('mapTitle')}
               />
+              {/* 연락처는 문의 폼이 아니라 지도 옆에 둔다 — 같은 '찾아오시는 길' 정보다 */}
+              <ContactDetails locale={locale} />
             </div>
           </div>
         </div>

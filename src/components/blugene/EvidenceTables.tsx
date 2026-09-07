@@ -212,6 +212,10 @@ export async function CarbonEvidenceTable({ className = '' }: { className?: stri
         {/* 공통 조건(익명 표기 · 같은 이름 · 샘플 범위)은 섹션 도입부의 EvidenceReadingNotes 에 한 번만 있다.
             여기는 이 표에만 걸리는 것만 남긴다 — 같은 샘플이 Table 1-1 과 Figure 1-3 에서 다르게 표기된 점. */}
         <SourceNote>{t('carbonZeroNote')}</SourceNote>
+        {/* 카탈로그 Table 1-1 원본을 다시 대조한 결과, 같은 성적서 번호 SBED25-00000153-1 이
+            May 22 · July 11, 2025 두 발행일로 인쇄되어 있다. 원본이 그러하므로 값을 고치지 않고,
+            독자가 오기로 오해하지 않도록 사실만 밝힌다. */}
+        <SourceNote>{t('reportDateNote')}</SourceNote>
       </div>
     </section>
   );
