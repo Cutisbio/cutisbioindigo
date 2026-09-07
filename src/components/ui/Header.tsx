@@ -8,7 +8,7 @@ import Wordmark from '@/components/blugene/Wordmark';
 import { PRIMARY_NAV } from '@/data/blugene/site';
 
 /**
- * BrandHeader — Blugene by CutisBio.
+ * BrandHeader — Blugene 워드마크 + 주 메뉴 + 언어 전환.
  *
  * 밝은 콘텐츠 위에서도 항상 읽히도록 **불투명 배경**을 유지한다(투명 헤더를 쓰지 않는다).
  * 언어 선택기는 데스크톱·모바일 모두 오른쪽 상단에 항상 보인다.

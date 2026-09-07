@@ -26,8 +26,10 @@ export default function RootNotFound() {
     <div className="flex min-h-screen items-center justify-center bg-[var(--color-ivory)] text-[var(--color-ink)]">
       <main className="max-w-[560px] px-8 py-12 text-center">
         <p className="text-xs font-semibold tracking-[0.2em] text-[var(--color-denim)]">404</p>
-        <h1 className="mt-3 text-2xl font-bold text-[var(--color-indigo-deep)] sm:text-[1.75rem]">
-          {BRAND.lockup}
+        {/* 헤더의 워드마크와 같은 표기 · 같은 서체를 쓴다 — 화면에 보이는 상표는 `Blugene` 하나다.
+            (`Wordmark` 컴포넌트는 next-intl 의 Link 를 쓰므로 이 위치에서는 부를 수 없다.) */}
+        <h1 className="blugene-wordmark mt-3 text-[2rem] leading-none font-bold text-[var(--color-indigo-deep)]">
+          {BRAND.name}
         </h1>
         <p className="mt-4 leading-[1.8] break-keep text-[var(--color-slate-muted)]">
           The page you requested was not found. / 요청하신 페이지를 찾을 수 없습니다.
