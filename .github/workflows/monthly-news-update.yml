@@ -25,8 +25,17 @@ jobs:
           node-version: '22'
           cache: 'npm'
 
+      # `npm ci` 를 먼저 쓰고, 락파일이 어긋나면 `npm install` 로 넘어간다.
+      #
+      # 왜 필요한가: next-intl 이 품은 @swc/core 가 `@swc/helpers >=0.5.17` 을 요구하는데
+      # next 는 0.5.15 를 고정한다. 그래서 Linux 에서는 중첩 설치가 필요하고 Windows 에서는
+      # 건너뛴다. 개발 PC(Windows)에서 패키지를 하나만 설치해도 락파일에서 그 항목이 빠지고,
+      # 그러면 `npm ci` 가 EUSAGE 로 멈춰 **매달 자동 수집이 통째로 실패한다.**
+      #
+      # 이 작업은 JSON 텍스트만 고쳐 커밋할 뿐 빌드나 배포를 하지 않는다(배포는 Netlify 가
+      # 따로 설치해서 수행한다). 재현성보다 매달 안 멈추는 쪽이 중요해서 물러설 길을 둔다.
       - name: Install dependencies
-        run: npm ci
+        run: npm ci || (echo "락파일이 어긋나 npm install 로 진행합니다" && npm install)
 
       # 번역 키는 저장소 시크릿에서 읽는다.
       # Settings → Secrets and variables → Actions → New repository secret
