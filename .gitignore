@@ -48,3 +48,7 @@ next-env.d.ts
 # GCP 업로드용 용어집 TSV — `npm run glossary:export` 로 언제든 다시 만듭니다.
 # 원본(content/glossary.json)만 관리하면 되고, 이 파일이 낡는 일을 막습니다.
 /content/glossary-gcp/
+
+# 번역 비교 보고서 — 키가 있는 엔진에 따라 내용이 달라지는 생성물입니다.
+# `npm run translate:compare` 로 언제든 다시 만듭니다.
+/docs/translation-comparison.md
