@@ -28,13 +28,28 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # 번역 키는 저장소 시크릿에서 읽는다.
+      # Settings → Secrets and variables → Actions → New repository secret
+      #   이름: OPENAI_API_KEY
+      # 키가 없으면 새 기사만 번역되지 않고 멈춘다. 이미 실린 기사는 그대로 남으므로
+      # 사이트가 깨지지는 않지만, 이 단계가 실패로 표시돼 알아챌 수 있다.
       - name: Run News Updater Script
         run: node scripts/update-news.js
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TRANSLATE_ENGINE: openai
+
+      # 언어별 기사 수가 어긋나거나 한국어가 다른 언어 파일에 남았으면 여기서 걸러낸다.
+      # 커밋 전에 확인해야 반쪽짜리가 배포되지 않는다.
+      - name: Verify translations
+        run: node scripts/check-blugene-data.mjs
 
       - name: Commit and Push Changes
         run: |
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "action@github.com"
-          git add messages/*.json
+          # 후보 목록도 스크립트가 갱신하므로 함께 커밋한다 — 빠뜨리면 다음 달에
+          # 승인 표시가 사라진 채로 돌아 실린 기사가 도로 내려간다.
+          git add messages/*.json content/news-candidates.json
           # Only commit if there are changes
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore(news): auto-update monthly news" && git push)

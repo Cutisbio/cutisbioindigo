@@ -110,9 +110,13 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
                   />
                 )}
 
-                <p className="mt-3 text-base leading-relaxed break-keep whitespace-pre-line text-[var(--color-ink)]/80">
-                  {article.summary}
-                </p>
+                {/* 자동 수집 기사는 요약이 없는 경우가 많다 — Google News 가 본문 대신
+                    제목을 되풀이해 주기 때문에 수집 단계에서 비운다. 빈 줄을 그리지 않는다. */}
+                {article.summary.trim() && (
+                  <p className="mt-3 text-base leading-relaxed break-keep whitespace-pre-line text-[var(--color-ink)]/80">
+                    {article.summary}
+                  </p>
+                )}
                 {article.link && (
                   <a
                     href={article.link}

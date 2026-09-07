@@ -33,7 +33,7 @@ const flag = (name, fallback = null) => {
 };
 const DRY_RUN = args.includes('--dry-run');
 const SEED = args.includes('--seed');
-const ENGINE = flag('engine', 'claude');
+const ENGINE = flag('engine', process.env.TRANSLATE_ENGINE || 'openai');
 const ONLY_LOCALE = flag('locale');
 const BATCH = Number(flag('batch', '25'));
 

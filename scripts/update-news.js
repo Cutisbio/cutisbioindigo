@@ -1,9 +1,18 @@
 const fs = require('fs');
 const path = require('path');
 const Parser = require('rss-parser');
-const translate = require('google-translate-api-x');
 
 const parser = new Parser();
+
+/**
+ * 번역은 사이트 문구와 **같은 엔진·같은 용어집**을 쓴다 (scripts/translate-engines/).
+ * 예전에는 비공식 패키지(google-translate-api-x)로 무료 구글 번역 웹 엔드포인트를
+ * 긁어 썼는데, 회사명을 "Qtis Bio" 로 쪼개거나 문장을 중간에서 자르는 일이 잦아
+ * 되돌리는 코드가 여럿 붙어 있었다. 용어집을 지시할 수 있는 엔진으로 옮기면서 걷어냈다.
+ *
+ * 로컬에서는 `.env.local`, GitHub Actions 에서는 저장소 시크릿에서 키를 읽는다.
+ */
+const TRANSLATE_ENGINE = process.env.TRANSLATE_ENGINE || 'openai';
 
 // Google News is searched once per topic, always paired with the company name, and the
 // results are merged. Searching the company name alone pulled in unrelated pharma and
@@ -33,13 +42,6 @@ const CANDIDATES_PATH = path.join(__dirname, '../content/news-candidates.json');
 const DRY_RUN = process.argv.includes('--dry-run');
 
 const locales = ['ko', 'en', 'ja', 'zh', 'tr', 'bn'];
-const targetLanguages = {
-  'en': 'en',
-  'ja': 'ja',
-  'zh': 'zh-CN',
-  'tr': 'tr',
-  'bn': 'bn'
-};
 
 const hardcodedNews = [
   {
@@ -76,50 +78,70 @@ const hardcodedNews = [
   }
 ];
 
-// Machine translation sometimes splits or transliterates the company and brand names
-// ("Cutis Bio", "Cutis Biyo", ...). Restore the canonical spellings after translating.
-function restoreProperNouns(text) {
-  if (typeof text !== 'string') return text;
-  return text
-    .replace(/Cutis\s*[- ]?\s*(Bio|Biyo)/gi, 'CutisBio')
-    .replace(/Blu\s*[- ]?\s*gene/gi, 'Blugene')
-    .replace(/BluGene/g, 'Blugene')
-    .replace(/Bluegene/g, 'Blugene');
-}
-
-// Set when any article fails to translate, so CI does not silently publish gaps.
+// 번역이 하나라도 실패하면 CI 가 조용히 반쪽짜리를 배포하지 않도록 표시해 둔다.
 let translationFailed = false;
 
-async function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+/**
+ * 분류 배지는 정해진 몇 개뿐이라 **번역시키지 않고 표로 고정한다.**
+ * 매번 번역에 맡겼더니 같은 `보도자료` 가 벵골어에서 세 가지로 갈렸다
+ * (`প্রেস বিজ্ঞপ্তি` 9건 · `প্রেস রিলিজ` 9건 · 절반만 번역된 것 1건).
+ * 같은 화면에서 배지 문구가 제각각이면 안 되고, 번역 토큰도 아낀다.
+ *
+ * 여기 없는 분류를 `hardcodedNews` 에 새로 쓰면 그때만 번역에 맡긴다.
+ */
+const CATEGORY_LABELS = {
+  보도자료: {
+    en: 'Press release', ja: 'プレスリリース', zh: '新闻稿',
+    bn: 'প্রেস বিজ্ঞপ্তি', tr: 'Basın bülteni',
+  },
+  제품출시: {
+    en: 'Product launch', ja: '製品発表', zh: '产品发布',
+    bn: 'পণ্য লঞ্চ', tr: 'Ürün lansmanı',
+  },
+  업무협약: {
+    // 이전 자동 번역이 業務条約(국가 간 조약)으로 잘못 나왔다 — 業務提携가 맞다.
+    en: 'Partnership agreement', ja: '業務提携', zh: '业务合作协议',
+    bn: 'ব্যবসায়িক চুক্তি', tr: 'İş birliği anlaşması',
+  },
+  공동연구: {
+    en: 'Joint research', ja: '共同研究', zh: '联合研究',
+    bn: 'যৌথ গবেষণা', tr: 'Ortak araştırma',
+  },
+};
+
+/**
+ * Google News RSS 는 요약을 주지 않는다. `contentSnippet` 이 본문이 아니라
+ * "제목 + 매체명" 이다 (22건 중 19건). 그대로 두면 화면에 제목이 두 번 나오고,
+ * 매체명이 한국어라 다른 언어 파일에 한글이 남아 검사에서 걸린다
+ * (예: 튀르키예어 요약 끝에 "한국섬유신문").
+ *
+ * 그래서 요약이 제목의 반복이면 **비운다.** 화면은 요약이 없으면 그 줄을 그리지 않는다.
+ * 제대로 된 요약이 필요한 기사는 `hardcodedNews` 에 직접 써 넣으면 된다.
+ */
+function normalizeSummary(article) {
+  const title = (article.title || '').trim();
+  const summary = (article.summary || '').trim();
+  if (!summary || !title) return article;
+
+  // "제목  매체명" 또는 "제목..." 형태면 알맹이가 없다
+  const tail = summary.startsWith(title) ? summary.slice(title.length).trim() : null;
+  const isEcho = tail !== null && tail.length <= 30; // 매체명 정도의 길이만 허용
+  return isEcho ? { ...article, summary: '' } : article;
 }
 
-// Google Translate drops everything after a "×" (multiplication sign) in
-// headlines such as "A×B, ...", returning only the first company name.
-// Normalise such symbols before translating.
-function prepareForTranslation(text) {
-  return (text || '').replace(/[×✕✖]/g, '-');
-}
-
-// Keep the company name consistent in English output
-// (Google renders 큐티스바이오 as "Qtis Bio", "Cutis Bio", etc.).
-function fixBrandName(text, targetLang) {
-  if (targetLang !== 'en') return text;
-  return text.replace(/\b(?:Qtis|Cutis|Cutis-|Kutis)\s?Bio\b/gi, 'CutisBio');
-}
-
-async function translateText(text, targetLang) {
-  const source = prepareForTranslation(text);
-  const res = await translate(source, { to: targetLang });
-  let out = res.text;
-  // Guard against silently truncated translations (result far shorter than source).
-  if (source.length > 20 && out.length < source.length * 0.4) {
-    console.warn(`Suspiciously short translation for ${targetLang}: "${source}" -> "${out}", retrying...`);
-    await delay(1500);
-    const retry = await translate(source.replace(/[,，]/g, ' -'), { to: targetLang });
-    if (retry.text.length > out.length) out = retry.text;
+/** 엔진 어댑터와 용어집을 불러온다 (ESM 이라 동적 import 를 쓴다) */
+async function loadTranslator() {
+  const lib = await import('./translate-lib.mjs');
+  lib.loadEnvLocal();
+  const engine = await lib.loadEngine(TRANSLATE_ENGINE);
+  if (!process.env[engine.envKey]) {
+    throw new Error(
+      `${engine.envKey} 가 없습니다. 로컬은 .env.local, GitHub Actions 는 저장소 시크릿에 넣어 주세요.`
+    );
   }
-  return fixBrandName(out, targetLang);
+  const glossary = lib.readJson(lib.GLOSSARY_PATH);
+  console.log(`Translating with ${engine.label} (${engine.model()})`);
+  return { engine, glossary };
 }
 
 async function updateNews() {
@@ -208,7 +230,9 @@ async function updateNews() {
 
   // Filter out any articles before June 2020 and sort by date
   mergedArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
-  const datedArticles = mergedArticles.filter(a => new Date(a.date) >= new Date('2020-06-01'));
+  const datedArticles = mergedArticles
+    .filter(a => new Date(a.date) >= new Date('2020-06-01'))
+    .map(normalizeSummary);
 
   // Previously reviewed candidates. `approved: true` publishes the article; the flag is the
   // only thing a person edits, so it must survive every run.
@@ -279,6 +303,11 @@ async function updateNews() {
   fs.mkdirSync(path.dirname(CANDIDATES_PATH), { recursive: true });
   fs.writeFileSync(CANDIDATES_PATH, JSON.stringify(candidates, null, 2) + '\n');
 
+  // 번역 엔진은 실제로 쓸 때만 준비한다. 키가 없으면 여기서 멈추고,
+  // 이미 실린 기사는 그대로 남는다 (한국어가 다른 언어 파일에 새지 않는다).
+  let engine;
+  let glossary;
+
   // Update logic for all locales
   for (const locale of locales) {
     console.log(`Processing locale: ${locale}`);
@@ -294,62 +323,98 @@ async function updateNews() {
     if (locale === 'ko') {
       fileJson.News.articles = finalArticles;
     } else {
-      const targetLang = targetLanguages[locale];
       // Reuse translations that already exist for this locale (keyed by link) so only
       // new or changed articles hit the translation API.
       const existingByLink = new Map();
       for (const a of ((fileJson.News && fileJson.News.articles) || [])) {
         if (a.link) existingByLink.set(a.link, a);
       }
-      const translatedArticles = [];
+
+      // 1단계: 이미 번역된 것과 새로 번역할 것을 가른다.
+      // 재사용 조건은 **한국어 원문이 그대로일 때**뿐이다. 원문을 sourceTitle/sourceSummary 에
+      // 함께 저장해 두어, 나중에 한국어를 고치면 그 기사만 다시 번역된다.
+      const slots = [];
+      const pending = [];
       for (const article of finalArticles) {
         const prev = existingByLink.get(article.link);
-
-        // Reuse only when the *Korean source* is unchanged. We store the source strings
-        // alongside the translation so a later edit to the Korean text is picked up.
-        // Entries written before this field existed have no sourceTitle, so they are
-        // re-translated once and then carry the marker.
         const sourceUnchanged =
           prev &&
           prev.sourceTitle === article.title &&
           prev.sourceSummary === article.summary;
         if (sourceUnchanged) {
-          translatedArticles.push({ ...prev, date: article.date });
-          continue;
+          slots.push({ ...prev, date: article.date });
+        } else {
+          slots.push(null);
+          pending.push({ slot: slots.length - 1, article, prev });
+        }
+      }
+
+      // 2단계: 남은 것을 묶어서 번역한다. 기사당 4개 필드를 한 번에 보내고,
+      // 기사 10건씩 나눠 호출한다 (한 번에 너무 많이 넣으면 응답이 잘린다).
+      const FIELDS = ['category', 'title', 'summary', 'thumbnailAlt'];
+      if (pending.length && !engine) {
+        ({ engine, glossary } = await loadTranslator());
+      }
+      for (let i = 0; i < pending.length; i += 10) {
+        const group = pending.slice(i, i + 10);
+        console.log(`Translating ${group.length} article(s) for ${locale}...`);
+        // 빈 값은 보내지 않는다 — 요약이 비어 있는 기사가 많고, 빈 문자열을 번역시키면
+        // 엔진이 엉뚱한 말을 채워 넣을 수 있다.
+        const refs = [];
+        const strings = [];
+        for (const { slot, article } of group) {
+          for (const field of FIELDS) {
+            const value = (article[field] || '').trim();
+            if (!value) continue;
+            // 표에 있는 분류는 번역시키지 않는다 (위 CATEGORY_LABELS 주석 참고)
+            if (field === 'category' && CATEGORY_LABELS[value]?.[locale]) continue;
+            refs.push({ slot, field });
+            strings.push(value);
+          }
         }
 
         try {
-          console.log(`Translating article for ${locale}...`);
-          const category = await translateText(article.category, targetLang);
-          const title = await translateText(article.title, targetLang);
-          const summary = await translateText(article.summary, targetLang);
-          const thumbnailAlt = await translateText(article.thumbnailAlt, targetLang);
+          const { translations } = strings.length
+            ? await engine.translate({ strings, locale, glossary })
+            : { translations: [] };
 
-          translatedArticles.push({
-            date: article.date,
-            category: restoreProperNouns(category),
-            title: restoreProperNouns(title),
-            summary: restoreProperNouns(summary),
-            thumbnailAlt: restoreProperNouns(thumbnailAlt),
-            link: article.link,
-            sourceTitle: article.title,
-            sourceSummary: article.summary
+          const bySlot = new Map();
+          refs.forEach((ref, index) => {
+            if (!bySlot.has(ref.slot)) bySlot.set(ref.slot, {});
+            bySlot.get(ref.slot)[ref.field] = translations[index];
           });
-          await delay(1500); // Prevent translation API block
-        } catch(e) {
+
+          for (const { slot, article } of group) {
+            const fields = bySlot.get(slot) || {};
+            slots[slot] = {
+              date: article.date,
+              category: CATEGORY_LABELS[article.category]?.[locale] || fields.category || '',
+              title: fields.title || '',
+              summary: fields.summary || '',
+              thumbnailAlt: fields.thumbnailAlt || '',
+              link: article.link,
+              sourceTitle: article.title,
+              sourceSummary: article.summary,
+            };
+          }
+        } catch (e) {
           console.error(`Translation error for ${locale}:`, e.message);
           translationFailed = true;
-          if (prev) {
-            // Keep the previous translation rather than regressing to Korean.
-            translatedArticles.push({ ...prev, date: article.date });
-          } else {
-            // Never write Korean text into a non-Korean locale file: drop the article
-            // from this locale for now. The next run will try again.
-            console.error(`  -> skipping "${article.title}" in ${locale}.json (no previous translation)`);
+          for (const { slot, article, prev } of group) {
+            if (prev) {
+              // 이전 번역을 유지한다 — 한국어로 되돌리지 않는다.
+              slots[slot] = { ...prev, date: article.date };
+            } else {
+              // 비한국어 파일에 한국어를 쓰지 않는다: 이번에는 그 기사를 빼고,
+              // 다음 실행에서 다시 시도한다. (언어별 기사 수가 어긋나면
+              // check:blugene 이 오류로 잡는다.)
+              console.error(`  -> skipping "${article.title}" in ${locale}.json (no previous translation)`);
+            }
           }
         }
       }
-      fileJson.News.articles = translatedArticles;
+
+      fileJson.News.articles = slots.filter(Boolean);
     }
 
     fs.writeFileSync(filePath, JSON.stringify(fileJson, null, 2) + "\n");

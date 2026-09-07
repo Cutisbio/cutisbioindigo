@@ -37,7 +37,6 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.2",
     "google-auth-library": "^11.0.2",
-    "google-translate-api-x": "^10.7.2",
     "rss-parser": "^3.13.0",
     "tailwindcss": "^4",
     "typescript": "^5"

@@ -1,3 +1,4 @@
+import path from 'node:path';
 import { NextResponse } from 'next/server';
 import { ADMIN_ENABLED } from '@/lib/admin';
 import { LOCALES, type Locale } from '@/data/blugene/site';
@@ -5,30 +6,15 @@ import { LOCALES, type Locale } from '@/data/blugene/site';
 export const dynamic = 'force-dynamic';
 
 /**
- * 한국어로 쓴 글을 나머지 5개 언어로 옮긴다. **관리자가 버튼을 누를 때만** 호출된다
- * (방문자가 언어를 바꿀 때는 절대 호출되지 않는다 — 화면 문구는 이미 번역돼 저장돼 있다).
+ * 관리자 화면에서 직접 쓴 글을 나머지 5개 언어로 옮긴다.
+ * **관리자가 버튼을 누를 때만** 호출된다 (방문자가 언어를 바꿀 때는 절대 부르지 않는다).
  *
- * 자동 뉴스 수집과 같은 라이브러리를 쓴다. API 키가 필요 없는 대신 실패할 수 있으므로,
+ * 사이트 문구·뉴스와 **같은 엔진, 같은 용어집**을 쓴다 (`scripts/translate-engines/`).
+ * 세 곳이 제각각이면 같은 용어가 화면마다 다르게 나온다.
+ *
  * 실패한 언어는 빈 값으로 돌려주고 관리자 화면이 직접 입력하도록 표시한다.
  * **실패를 한국어로 채우지 않는다** — 다른 언어 화면에 한국어가 새는 것을 막는다.
  */
-const TARGET: Record<Exclude<Locale, 'ko'>, string> = {
-  en: 'en',
-  ja: 'ja',
-  zh: 'zh-CN',
-  bn: 'bn',
-  tr: 'tr',
-};
-
-/** 기계 번역이 회사·브랜드 이름을 쪼개거나 음차하는 것을 되돌린다 (update-news.js 와 같은 규칙) */
-function restoreProperNouns(text: string): string {
-  return text
-    .replace(/Cutis\s*[- ]?\s*(Bio|Biyo)/gi, 'CutisBio')
-    .replace(/Blu\s*[- ]?\s*gene/gi, 'Blugene')
-    .replace(/BluGene/g, 'Blugene')
-    .replace(/Bluegene/g, 'Blugene');
-}
-
 export async function POST(request: Request) {
   if (!ADMIN_ENABLED) return NextResponse.json({ error: 'not found' }, { status: 404 });
 
@@ -41,18 +27,28 @@ export async function POST(request: Request) {
   const source = (body.text || '').trim();
   if (!source) return NextResponse.json({ error: '한국어 원문이 비어 있습니다.' }, { status: 400 });
 
-  const { default: translate } = await import('google-translate-api-x');
+  // 번역 파이프라인은 scripts/ 아래의 ESM 모듈이다. 서버에서만 도는 라우트라 안전하다.
+  const libPath = path.join(process.cwd(), 'scripts', 'translate-lib.mjs');
+  const lib = await import(/* webpackIgnore: true */ `file://${libPath.replace(/\\/g, '/')}`);
+  lib.loadEnvLocal();
+
+  const engineName = process.env.TRANSLATE_ENGINE || 'openai';
+  const engine = await lib.loadEngine(engineName);
+  if (!process.env[engine.envKey]) {
+    return NextResponse.json(
+      { error: `${engine.envKey} 가 없습니다. 프로젝트 루트의 .env.local 에 넣어 주세요.` },
+      { status: 400 }
+    );
+  }
+  const glossary = lib.readJson(lib.GLOSSARY_PATH);
 
   const result: Partial<Record<Locale, string>> = { ko: source };
   const failed: Locale[] = [];
 
-  for (const locale of LOCALES.filter((l): l is Exclude<Locale, 'ko'> => l !== 'ko')) {
+  for (const locale of LOCALES.filter((l) => l !== 'ko')) {
     try {
-      // "A×B" 형태에서 × 뒤가 잘리는 문제가 있어 미리 바꿔 둔다 (update-news.js 와 동일)
-      const prepared = source.replace(/[×✕✖]/g, '-');
-      const res = await translate(prepared, { to: TARGET[locale] });
-      result[locale] = restoreProperNouns(res.text);
-      await new Promise((resolve) => setTimeout(resolve, 800)); // 연속 호출 차단 방지
+      const out = await engine.translate({ strings: [source], locale, glossary });
+      result[locale] = out.translations[0];
     } catch (error) {
       console.error(`번역 실패 (${locale}):`, (error as Error).message);
       result[locale] = '';
@@ -60,5 +56,5 @@ export async function POST(request: Request) {
     }
   }
 
-  return NextResponse.json({ translations: result, failed });
+  return NextResponse.json({ translations: result, failed, engine: engine.label });
 }
