@@ -153,13 +153,11 @@ async function CertificationCard({
             </DetailRow>
             <DetailRow term={t('issuerLabel')}>{cert.issuer}</DetailRow>
             <DetailRow term={t('productLabel')}>{cert.productOnCertificate}</DetailRow>
-            <DetailRow term={t('validityLabel')}>
-              {period && <span className="tabular-nums">{period}</span>}
-              {!cert.validUntil && (
-                <span className={period ? 'block text-[var(--color-slate-muted)]' : undefined}>
-                  {t('noExpiry')}
-                </span>
-              )}
+            {/* 만료일이 없다는 사실은 바로 위 상태 배지가 이미 말한다.
+                여기서 t('noExpiry') 를 한 번 더 쓰면 같은 문장이 한 카드 안에 두 번 나온다.
+                (period 가 아예 없는 인증서를 대비해 대체 표기로만 남긴다.) */}
+            <DetailRow term={t('validityLabel')} valueClassName="tabular-nums">
+              {period ?? t('noExpiry')}
             </DetailRow>
             {/* compact 에서는 발행일 · 카탈로그 쪽을 줄이고, 쪽 번호는 썸네일 캡션으로 옮긴다 */}
             {!compact && cert.issuedOn && (
@@ -213,6 +211,10 @@ export default async function CertificationLibrary({
   compact?: boolean;
 }) {
   const t = await getTranslations('Certifications');
+  /* 남은 만료일이 없으면 null 이다. 그때는 '다음 점검 권장일' 자체를 그리지 않는다 —
+     지난 날짜를 '다음'이라고 부르는 것보다 항목이 없는 편이 정확하다.
+     페이지의 revalidate=86400 덕분에 하루 단위로 다시 계산된다. */
+  const reviewDate = nextReviewDate();
 
   return (
     <div>
@@ -249,14 +251,16 @@ export default async function CertificationLibrary({
                 {certificationsAsOf}
               </dd>
             </div>
-            <div>
-              <dt className="text-[0.7rem] font-semibold tracking-[0.08em] break-keep text-[var(--color-denim)]">
-                {t('nextReviewLabel')}
-              </dt>
-              <dd className="mt-1 text-[0.8125rem] leading-relaxed tabular-nums text-[var(--color-ink)]">
-                {nextReviewDate}
-              </dd>
-            </div>
+            {reviewDate && (
+              <div>
+                <dt className="text-[0.7rem] font-semibold tracking-[0.08em] break-keep text-[var(--color-denim)]">
+                  {t('nextReviewLabel')}
+                </dt>
+                <dd className="mt-1 text-[0.8125rem] leading-relaxed tabular-nums text-[var(--color-ink)]">
+                  {reviewDate}
+                </dd>
+              </div>
+            )}
           </dl>
         </div>
 

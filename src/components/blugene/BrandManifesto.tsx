@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import ThreadMotif from '@/components/blugene/ThreadMotif';
+import { HEADING_SIZE } from '@/components/blugene/SectionHeading';
 
 /**
  * 브랜드 선언 — 국경과 세대를 잇는 옷.
@@ -8,8 +9,16 @@ import ThreadMotif from '@/components/blugene/ThreadMotif';
  * 사람 사진 위에 문구를 올리지 않고, 깊은 인디고 면과 여백으로 문장을 세운다.
  * 장식은 데님 실 두 가닥을 연상시키는 추상 선(ThreadMotif)으로 제한한다.
  * 화학구조도나 인증마크처럼 보이는 요소를 쓰지 않는다.
+ *
+ * showCta 는 이 블록이 브랜드 페이지 안에서도 쓰이기 때문에 있다.
+ * /brand 에서 켜 두면 지금 보고 있는 페이지로 되돌아오는 링크가 화면 중앙에 남는다.
  */
-export default async function BrandManifesto() {
+export default async function BrandManifesto({
+  showCta = true,
+}: {
+  /** '브랜드 이야기 읽기' 링크(/brand)를 표시할지 여부. /brand 자신에서는 false 로 부른다. */
+  showCta?: boolean;
+}) {
   const t = await getTranslations('Manifesto');
   const questions = t.raw('questions') as string[];
 
@@ -23,7 +32,11 @@ export default async function BrandManifesto() {
             <p className="blugene-tagline text-[0.68rem] text-white/55 sm:text-[0.75rem]">
               {t('eyebrow')}
             </p>
-            <h2 className="mt-6 text-[2rem] leading-[1.22] font-bold tracking-[-0.025em] break-keep sm:text-[2.9rem] lg:text-[3.5rem]">
+            {/* 섹션 최상위 제목이므로 3.5rem 리터럴 대신 공용 hero 단을 쓴다. 따로 두면 FinalCta(3.25rem)와
+                다시 눈에 안 보이는 차이로 갈린다. */}
+            <h2
+              className={`mt-6 ${HEADING_SIZE.hero} leading-[1.22] font-bold tracking-[-0.025em] break-keep`}
+            >
               {t('title')}
             </h2>
 
@@ -42,13 +55,15 @@ export default async function BrandManifesto() {
               ))}
             </ul>
 
-            <Link
-              href="/brand"
-              className="mt-10 inline-flex items-center gap-2 border-b border-white/45 pb-1 text-sm font-semibold text-white hover:border-white"
-            >
-              {t('cta')}
-              <span aria-hidden="true">→</span>
-            </Link>
+            {showCta && (
+              <Link
+                href="/brand"
+                className="mt-10 inline-flex items-center gap-2 border-b border-white/45 pb-1 text-sm font-semibold text-white hover:border-white"
+              >
+                {t('cta')}
+                <span aria-hidden="true">→</span>
+              </Link>
+            )}
           </div>
 
           {/* 오른쪽 세로 캡션 — 데스크톱에서만 표시한다 */}

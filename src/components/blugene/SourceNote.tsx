@@ -15,7 +15,11 @@ export default function SourceNote({
   children: ReactNode;
   tone?: 'ink' | 'inverse';
   className?: string;
-  as?: 'p' | 'div';
+  /*
+    ul 과 figcaption 이 있는 이유: 출처 목록(EvidenceStrip)과 이미지 캡션(ZoomableImage)이
+    p 로 감쌀 수 없어서 클래스를 그대로 복사해 쓰고 있었고, 그러다 목록만 0.75rem 로 작아졌다.
+  */
+  as?: 'p' | 'div' | 'ul' | 'figcaption';
 }) {
   const color = tone === 'inverse' ? 'text-white/70' : 'text-[var(--color-slate-muted)]';
   return (

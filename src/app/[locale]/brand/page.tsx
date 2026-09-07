@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import SectionHeading from '@/components/blugene/SectionHeading';
-import SourceNote, { AssetKind } from '@/components/blugene/SourceNote';
+import SourceNote from '@/components/blugene/SourceNote';
 import BrandManifesto from '@/components/blugene/BrandManifesto';
 import Wordmark from '@/components/blugene/Wordmark';
 import { BRAND, LOCALES, buildPageMetadata } from '@/data/blugene/site';
@@ -33,40 +32,30 @@ export default async function BrandPage({ params }: { params: Promise<{ locale: 
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'Brand' });
-  const tHero = await getTranslations({ locale, namespace: 'Hero' });
-  const tCommon = await getTranslations({ locale, namespace: 'Common' });
+  const tNav = await getTranslations({ locale, namespace: 'Nav' });
   const promises = t.raw('promiseItems') as { title: string; text: string }[];
   const limits = t.raw('limitsItems') as string[];
 
+  // 900px 읽기 단 안의 소제목이라 페이지 섹션 제목(SectionHeading size="lg")보다 한 단계 작게 둔다.
+  // 같은 문자열이 두 번 나오던 것을 한곳으로 모아 두 제목이 어긋나지 않게 한다.
+  const subheading = 'text-2xl font-bold break-keep text-[var(--color-indigo-deep)] sm:text-3xl';
+
   return (
     <>
-      {/* 페이지 도입부 */}
+      {/*
+        페이지 도입부.
+        가족 · 데님 사진(카탈로그 p.1)은 홈 히어로가 전면으로 쓰고 있다. 헤더의 '브랜드'를
+        눌러 넘어온 독자가 방금 본 사진을 다시 만나지 않도록, 여기서는 카피만 세운다.
+      */}
       <section className="w-full border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
-        <div className="mx-auto grid max-w-[1280px] gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-24">
+        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <SectionHeading
             headingLevel="h1"
             eyebrow={t('heroEyebrow')}
             title={t('heroTitle')}
             body={t('heroBody')}
-            size="lg"
+            size="hero"
           />
-          <figure className="m-0">
-            <div className="relative aspect-[16/10] overflow-hidden rounded-md">
-              <Image
-                src="/blugene/brand/hero-family-denim-1200.webp"
-                alt={tHero('imageAlt')}
-                fill
-                preload
-                fetchPriority="high"
-                sizes="(max-width: 1024px) 92vw, 600px"
-                className="object-cover"
-              />
-            </div>
-            <figcaption className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-2">
-              <AssetKind>{tCommon('brandImage')}</AssetKind>
-              <SourceNote className="flex-1">{tHero('imageCredit')}</SourceNote>
-            </figcaption>
-          </figure>
         </div>
       </section>
 
@@ -78,17 +67,13 @@ export default async function BrandPage({ params }: { params: Promise<{ locale: 
               <Wordmark size="lg" href={null} />
             </div>
             <div className="max-w-2xl">
-              <h2 className="text-2xl font-bold break-keep text-[var(--color-indigo-deep)] sm:text-3xl">
-                {t('nameTitle')}
-              </h2>
+              <h2 className={subheading}>{t('nameTitle')}</h2>
               <p className="mt-5 text-base leading-[1.9] break-keep text-[var(--color-ink)]/85 sm:text-lg">
                 {t('nameBody')}
               </p>
               <SourceNote className="mt-6">{t('nameNote')}</SourceNote>
 
-              <h2 className="mt-12 text-2xl font-bold break-keep text-[var(--color-indigo-deep)] sm:text-3xl">
-                {t('relationTitle')}
-              </h2>
+              <h2 className={`mt-12 ${subheading}`}>{t('relationTitle')}</h2>
               <p className="mt-5 text-base leading-[1.9] break-keep text-[var(--color-ink)]/85">
                 {t('relationBody')}
               </p>
@@ -105,7 +90,7 @@ export default async function BrandPage({ params }: { params: Promise<{ locale: 
       {/* 우리가 약속하는 것 / 말하지 않는 것 */}
       <section className="w-full bg-white">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
-          <SectionHeading title={t('promiseTitle')} body={t('promiseBody')} size="lg" />
+          <SectionHeading title={t('promiseTitle')} body={t('promiseBody')} size="hero" />
 
           <ol className="mt-12 grid gap-8 md:grid-cols-3">
             {promises.map((item, i) => (
@@ -122,6 +107,18 @@ export default async function BrandPage({ params }: { params: Promise<{ locale: 
               </li>
             ))}
           </ol>
+
+          {/*
+            세 번째 약속이 "사이트에서 직접 확인할 수 있습니다" 라고 말하므로, 그 '어디서'를
+            바로 옆에서 답한다. 이 링크가 없으면 페이지에서 데이터 · 인증으로 가는 길이 아예 없다.
+          */}
+          <Link
+            href="/data-certifications"
+            className="mt-10 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
+          >
+            {tNav('dataCertifications')}
+            <span aria-hidden="true">→</span>
+          </Link>
 
           <div className="mt-16 rounded-md border border-[color:var(--color-washed)] bg-[var(--color-ivory)] p-7 sm:p-10">
             <h3 className="text-xl font-semibold break-keep text-[var(--color-indigo-deep)] sm:text-2xl">

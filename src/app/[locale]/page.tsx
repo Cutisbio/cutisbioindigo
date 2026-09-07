@@ -61,50 +61,54 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <BlugeneHero />
       <EvidenceStrip />
 
-      {/* 02. 국경과 세대를 잇는 옷 */}
+      {/*
+        02. 분말과 프린팅 잉크 — '무엇을 파는가'를 근거보다 먼저 밝힌다.
+        이 블록이 뒤로 가면 제품명 · CAS · 규격 안내가 스크롤 60% 지점에서야 처음 나온다.
+        바탕은 흰 EvidenceStrip 과 붙지 않도록, 또 카드(bg-white)가 섹션 바탕에 묻히지 않도록 ivory 로 둔다.
+      */}
+      <section className="w-full bg-[var(--color-ivory)]">
+        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
+          <ProductFormats variant="bare" />
+        </div>
+      </section>
+
+      {/* 03. 국경과 세대를 잇는 옷 */}
       <BrandManifesto />
 
-      {/* 03. 보이지 않는 것까지 확인 */}
+      {/* 04. 보이지 않는 것까지 확인 */}
       <ImpurityEvidence />
 
-      {/* 04. 파랑을 만드는 새로운 방식 */}
+      {/* 05. 파랑을 만드는 새로운 방식 */}
       <ScienceSection />
 
-      {/* 04-b. 재생 가능한 탄소 */}
+      {/* 05-b. 재생 가능한 탄소 */}
       <EnvironmentSection />
 
-      {/* 05. 실제 원단으로 보여주는 성능 */}
+      {/* 06. 실제 원단으로 보여주는 성능 */}
       <section className="w-full bg-white">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
           <FabricComparison variant="bare" />
         </div>
       </section>
 
-      {/* 06. 당신만의 파랑 */}
+      {/* 07. 당신만의 파랑 */}
       <section className="w-full bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
           <ShadeLibrary variant="bare" />
         </div>
       </section>
 
-      {/* 07. 분말과 프린팅 잉크 */}
+      {/* 08. 프린팅으로 확장되는 가능성 — 제품군이 위로 올라가 ivory 가 연달아 오지 않도록 흰 바탕으로 받는다 */}
       <section className="w-full bg-white">
-        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
-          <ProductFormats variant="bare" />
-        </div>
-      </section>
-
-      {/* 08. 프린팅으로 확장되는 가능성 */}
-      <section className="w-full bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
           <PrintingGallery />
         </div>
       </section>
 
       {/* 09. 원본으로 확인하는 신뢰 */}
-      <section className="w-full bg-white">
+      <section className="w-full bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
-          <SectionHeading eyebrow={t('eyebrow')} title={t('title')} body={t('body')} size="lg" />
+          <SectionHeading eyebrow={t('eyebrow')} title={t('title')} body={t('body')} size="hero" />
           <div className="mt-12">
             <CertificationLibrary compact />
           </div>

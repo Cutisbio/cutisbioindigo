@@ -20,7 +20,13 @@ export default async function BlugeneHero() {
     <section className="relative w-full border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
       <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-stretch lg:grid-cols-[minmax(0,46%)_1fr]">
         {/* 왼쪽: 카피 */}
-        <div className="flex flex-col justify-center px-5 py-12 sm:px-8 sm:py-16 lg:py-24 lg:pr-12 lg:pl-[max(2rem,calc((100vw-1280px)/2))]">
+        {/*
+          왼쪽 패딩은 다른 섹션의 `max-w-[1280px] + lg:px-8` 이 만드는 기준선을 그대로 재현한다.
+          중앙정렬 오프셋 `(뷰포트-1280px)/2` 에 컨테이너 좌우 여백 `2rem` 을 더하지 않으면
+          히어로 카피만 32px 왼쪽으로 밀린다. 이 그리드는 max-w-[1440px] 에서 멈추므로
+          뷰포트도 1440px 로 잘라야(min) 1440px 초과에서 카피가 계속 안쪽으로 밀려들지 않는다.
+        */}
+        <div className="flex flex-col justify-center px-5 py-12 sm:px-8 sm:py-16 lg:py-24 lg:pr-12 lg:pl-[max(2rem,calc((min(100vw,1440px)-1280px)/2+2rem))]">
           <div className="max-w-xl">
             <p className="text-base font-medium break-keep text-[var(--color-denim)] sm:text-lg">
               {t('descriptor')}

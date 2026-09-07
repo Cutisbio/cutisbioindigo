@@ -169,8 +169,11 @@ async function updateNews() {
   let newKoArticles = [];
 
   for (let item of rssItems) {
+    // Google News 붙이는 "제목 - 매체명" 꺼리에서 매체명은 버리지 않고 `source` 로 따로 보관한다.
+    // 요약이 비어 있는 기사가 대부분이라, 목록에서 "누가 쓴 기사인가"를 말해 주는 유일한 줄이다.
     const titleMatch = item.title.lastIndexOf(' - ');
     const cleanTitle = titleMatch > -1 ? item.title.substring(0, titleMatch) : item.title;
+    const source = titleMatch > -1 ? item.title.substring(titleMatch + 3).trim() : '';
     
     // Filter out articles about "아르큐티스" (Arcutis)
     if (cleanTitle.includes('아르큐티스') || (item.contentSnippet && item.contentSnippet.includes('아르큐티스'))) {
@@ -198,7 +201,8 @@ async function updateNews() {
       title: cleanTitle,
       summary: snippet,
       thumbnailAlt: "News thumbnail",
-      link: item.link
+      link: item.link,
+      source
     });
   }
 
@@ -218,11 +222,62 @@ async function updateNews() {
   // De-duplicate by link or title.
   const mergedArticles = [];
   const normTitle = (t) => (t || '').toLowerCase().replace(/[\s\p{P}\p{S}]/gu, '');
+
+  /*
+   * 같은 사건을 매체마다 다른 제목으로 쓴 기사를 하나로 묶는다.
+   *
+   * 링크·제목 완전 일치만 보던 때에는 하루에 같은 협약 기사가 네 줄까지 이어졌다
+   * (2023-07-03 로레알 MOU 4건, 2022-06-27 대웅제약 협약 3건 …). 요약을 비운 뒤로는
+   * 제목만 남아 그 되풀이가 더 도드라진다.
+   *
+   * 판별은 "같은 날(±1일) + 제목에서 뽑은 기관명 토큰 2개 이상 겹침"이다. 매체마다
+   * 주체를 늘어놓는 자리가 달라(쉼표 앞·뒤가 뒤바뀐다) 제목 전체에서 토큰을 뽑되,
+   * 어느 기사에나 나오는 일반 명사(협약 · 체결 · 개발 …)는 빼야 서로 다른 두 협약이
+   * 한 건으로 합쳐지지 않는다. 날짜 폭 ±1일은 매체별 송고 시각이 자정을 넘기는 경우 때문이다.
+   *
+   * 현재 실린 22건에 돌리면 8건이 접혀 14건이 된다(로레알 4→1 · 대웅 3→1 ·
+   * 에스스킨/코오롱FnC/르캐시미어 각 2→1). 잘못 묶이면 먼저 들어온 한 건만 남으므로,
+   * 접힌 기사는 아래에서 로그로 남긴다.
+   */
+  const ORG_STOPWORDS = new Set([
+    'mou', '업무협약', '협약', '체결', '개발', '공동연구', '연구', '협력', '협업', '사업화',
+    '상업화', '출시', '진출', '참가', '공개', '선정', '수상', '맺어', '그룹', '기반',
+    '손잡고', '가속', '행보', '눈길', '투자', '유치', '공급', '설립', '계약', '파트너십',
+    '맞손', '소재', '기술', '기업', '대표', '최초', '국내', '바이오', '올해',
+  ]);
+  const orgTokens = (title) =>
+    new Set(
+      String(title || '')
+        // ㈜ · (주) 는 같은 회사를 다르게 적은 것뿐이라 이름에서 떼어 낸다
+        .replace(/㈜|\(주\)|\(株\)/g, ' ')
+        // 제목에서 기관을 잇는 기호는 매체마다 제각각이다 (A×B · A-B · A‧‧‧B)
+        .split(/[\s,，.·ㆍ‧・×✕&\/\-–—…‥]+/)
+        .map((w) => w.replace(/[^\p{L}\p{N}]/gu, '').toLowerCase())
+        .filter((w) => w.length >= 2 && !ORG_STOPWORDS.has(w))
+    );
+  const ONE_DAY = 24 * 60 * 60 * 1000;
+  const sameEvent = (a, b) => {
+    const gap = Math.abs(new Date(a.date) - new Date(b.date));
+    if (!(gap <= ONE_DAY)) return false;
+    const tokens = orgTokens(a.title);
+    let shared = 0;
+    for (const token of orgTokens(b.title)) {
+      if (tokens.has(token)) shared++;
+    }
+    return shared >= 2;
+  };
+
   const pushUnique = (article) => {
     const key = normTitle(article.title);
-    if (!mergedArticles.find(a => a.link === article.link || normTitle(a.title) === key)) {
-      mergedArticles.push(article);
+    const dup = mergedArticles.find(
+      (a) => a.link === article.link || normTitle(a.title) === key || sameEvent(a, article)
+    );
+    if (dup) {
+      // 무엇이 접혔는지 사람이 확인할 수 있어야 한다 — 잘못 묶였으면 여기서 드러난다.
+      if (dup.link !== article.link) console.log(`  = merged duplicate: ${article.date} ${article.title}`);
+      return;
     }
+    mergedArticles.push(article);
   };
   newKoArticles.forEach(pushUnique);
   existingKoArticles.forEach(pushUnique);
@@ -330,6 +385,21 @@ async function updateNews() {
         if (a.link) existingByLink.set(a.link, a);
       }
 
+      /*
+       * 매체명은 고유명사라 **번역하지 않고** 한국어 원문을 그대로 복사한다.
+       * (아래 FIELDS 에 넣지 않는 이유이기도 하다.)
+       *
+       * ⚠ scripts/check-blugene-data.mjs 의 한국어 잔류 검사가 비-한국어 파일의 한글을
+       *   전부 오류로 잡으므로, 그쪽에서 뉴스 값에 한해 `isNewsValue && /\.source$/` 를
+       *   면제 조건에 더해야 한다. (전체 키로 넓히면 다른 '.source' 키까지 검사에서 빠진다.)
+       */
+      const withSource = (entry, article) => {
+        const next = { ...entry };
+        if (article.source) next.source = article.source;
+        else delete next.source;
+        return next;
+      };
+
       // 1단계: 이미 번역된 것과 새로 번역할 것을 가른다.
       // 재사용 조건은 **한국어 원문이 그대로일 때**뿐이다. 원문을 sourceTitle/sourceSummary 에
       // 함께 저장해 두어, 나중에 한국어를 고치면 그 기사만 다시 번역된다.
@@ -342,7 +412,7 @@ async function updateNews() {
           prev.sourceTitle === article.title &&
           prev.sourceSummary === article.summary;
         if (sourceUnchanged) {
-          slots.push({ ...prev, date: article.date });
+          slots.push(withSource({ ...prev, date: article.date }, article));
         } else {
           slots.push(null);
           pending.push({ slot: slots.length - 1, article, prev });
@@ -386,7 +456,7 @@ async function updateNews() {
 
           for (const { slot, article } of group) {
             const fields = bySlot.get(slot) || {};
-            slots[slot] = {
+            slots[slot] = withSource({
               date: article.date,
               category: CATEGORY_LABELS[article.category]?.[locale] || fields.category || '',
               title: fields.title || '',
@@ -395,7 +465,7 @@ async function updateNews() {
               link: article.link,
               sourceTitle: article.title,
               sourceSummary: article.summary,
-            };
+            }, article);
           }
         } catch (e) {
           console.error(`Translation error for ${locale}:`, e.message);
@@ -403,7 +473,7 @@ async function updateNews() {
           for (const { slot, article, prev } of group) {
             if (prev) {
               // 이전 번역을 유지한다 — 한국어로 되돌리지 않는다.
-              slots[slot] = { ...prev, date: article.date };
+              slots[slot] = withSource({ ...prev, date: article.date }, article);
             } else {
               // 비한국어 파일에 한국어를 쓰지 않는다: 이번에는 그 기사를 빼고,
               // 다음 실행에서 다시 시도한다. (언어별 기사 수가 어긋나면

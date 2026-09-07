@@ -14,7 +14,7 @@ export default async function ScienceSection() {
   return (
     <section className="w-full bg-white">
       <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
-        <SectionHeading eyebrow={t('eyebrow')} title={t('title')} body={t('body')} size="lg" />
+        <SectionHeading eyebrow={t('eyebrow')} title={t('title')} body={t('body')} size="hero" />
 
         <div className="mt-14">
           <ProductionPathway variant="bare" />

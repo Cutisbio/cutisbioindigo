@@ -48,7 +48,7 @@ export default async function DyeingPrintingPage({
             eyebrow={t('heroEyebrow')}
             title={t('heroTitle')}
             body={t('heroBody')}
-            size="lg"
+            size="hero"
           />
         </div>
       </section>

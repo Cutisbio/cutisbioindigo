@@ -254,11 +254,11 @@
       "tr": "dba6da5fd26d9cd2"
     },
     "Hero.imageCredit": {
-      "en": "e15da860c59ea6d8",
-      "ja": "e15da860c59ea6d8",
-      "zh": "e15da860c59ea6d8",
-      "bn": "e15da860c59ea6d8",
-      "tr": "e15da860c59ea6d8"
+      "en": "c20df93910d2082c",
+      "ja": "c20df93910d2082c",
+      "zh": "c20df93910d2082c",
+      "bn": "c20df93910d2082c",
+      "tr": "c20df93910d2082c"
     },
     "EvidenceStrip.carbonValue": {
       "en": "caea6c32d945d4fc",
@@ -345,11 +345,11 @@
       "tr": "42a5898f9831a544"
     },
     "Manifesto.body": {
-      "en": "ca677ce7c5e73908",
-      "ja": "ca677ce7c5e73908",
-      "zh": "ca677ce7c5e73908",
-      "bn": "ca677ce7c5e73908",
-      "tr": "ca677ce7c5e73908"
+      "en": "87ea63b3e370a54f",
+      "ja": "87ea63b3e370a54f",
+      "zh": "87ea63b3e370a54f",
+      "bn": "87ea63b3e370a54f",
+      "tr": "87ea63b3e370a54f"
     },
     "Manifesto.questions[0]": {
       "en": "8165b0e0686686d1",
@@ -394,11 +394,11 @@
       "tr": "7c7658f9c02f405b"
     },
     "Impurity.body": {
-      "en": "3c236f03e9f0187c",
-      "ja": "3c236f03e9f0187c",
-      "zh": "3c236f03e9f0187c",
-      "bn": "3c236f03e9f0187c",
-      "tr": "3c236f03e9f0187c"
+      "en": "1ae6eb68a10f7132",
+      "ja": "1ae6eb68a10f7132",
+      "zh": "1ae6eb68a10f7132",
+      "bn": "1ae6eb68a10f7132",
+      "tr": "1ae6eb68a10f7132"
     },
     "Impurity.context": {
       "en": "66534ac7c24b6c39",
@@ -443,11 +443,11 @@
       "tr": "db35e180d6921ea7"
     },
     "Science.body": {
-      "en": "720109e4cca89972",
-      "ja": "720109e4cca89972",
-      "zh": "720109e4cca89972",
-      "bn": "720109e4cca89972",
-      "tr": "720109e4cca89972"
+      "en": "f454251ae0bde408",
+      "ja": "f454251ae0bde408",
+      "zh": "f454251ae0bde408",
+      "bn": "f454251ae0bde408",
+      "tr": "f454251ae0bde408"
     },
     "Science.metaphorNote": {
       "en": "6929faed75af3a61",
@@ -555,11 +555,11 @@
       "tr": "9ac391195a668a58"
     },
     "Environment.carbonCardTitle": {
-      "en": "91ddcde338466382",
-      "ja": "91ddcde338466382",
-      "zh": "91ddcde338466382",
-      "bn": "91ddcde338466382",
-      "tr": "91ddcde338466382"
+      "en": "a49f2e894cd89821",
+      "ja": "a49f2e894cd89821",
+      "zh": "a49f2e894cd89821",
+      "bn": "a49f2e894cd89821",
+      "tr": "a49f2e894cd89821"
     },
     "Environment.carbonCardText": {
       "en": "0adb57367ee3af36",
@@ -618,11 +618,11 @@
       "tr": "047dde34d893eb6d"
     },
     "Performance.fabricCaption": {
-      "en": "c1b4f0f812155343",
-      "ja": "c1b4f0f812155343",
-      "zh": "c1b4f0f812155343",
-      "bn": "c1b4f0f812155343",
-      "tr": "c1b4f0f812155343"
+      "en": "3d7cab9623553c6c",
+      "ja": "3d7cab9623553c6c",
+      "zh": "3d7cab9623553c6c",
+      "bn": "3d7cab9623553c6c",
+      "tr": "3d7cab9623553c6c"
     },
     "Performance.sampleLegendPlant": {
       "en": "12d893e882e9ad46",
@@ -688,11 +688,11 @@
       "tr": "bbd3f2fcf96720bd"
     },
     "Performance.additionalCaseBody": {
-      "en": "f71a80cd1365aa3f",
-      "ja": "f71a80cd1365aa3f",
-      "zh": "f71a80cd1365aa3f",
-      "bn": "f71a80cd1365aa3f",
-      "tr": "f71a80cd1365aa3f"
+      "en": "2230f4c65c2feeaa",
+      "ja": "2230f4c65c2feeaa",
+      "zh": "2230f4c65c2feeaa",
+      "bn": "2230f4c65c2feeaa",
+      "tr": "2230f4c65c2feeaa"
     },
     "Performance.additionalCaseAlt": {
       "en": "a395f7a122a7ef63",
@@ -933,11 +933,11 @@
       "tr": "5d8602b82bb6269c"
     },
     "Fastness.gradeNote": {
-      "en": "4a6b8db9292407bd",
-      "ja": "4a6b8db9292407bd",
-      "zh": "4a6b8db9292407bd",
-      "bn": "4a6b8db9292407bd",
-      "tr": "4a6b8db9292407bd"
+      "en": "c47c83e02a115ff7",
+      "ja": "c47c83e02a115ff7",
+      "zh": "c47c83e02a115ff7",
+      "bn": "c47c83e02a115ff7",
+      "tr": "c47c83e02a115ff7"
     },
     "ShadeLibrary.eyebrow": {
       "en": "15b5e279970feeb4",
@@ -996,18 +996,18 @@
       "tr": "95557a1382df2000"
     },
     "ShadeLibrary.rowA": {
-      "en": "5d10cec58c46da6d",
-      "ja": "5d10cec58c46da6d",
-      "zh": "5d10cec58c46da6d",
-      "bn": "5d10cec58c46da6d",
-      "tr": "5d10cec58c46da6d"
+      "en": "2a771bce6929d119",
+      "ja": "2a771bce6929d119",
+      "zh": "2a771bce6929d119",
+      "bn": "2a771bce6929d119",
+      "tr": "2a771bce6929d119"
     },
     "ShadeLibrary.rowB": {
-      "en": "25dfe937fc67c88d",
-      "ja": "25dfe937fc67c88d",
-      "zh": "25dfe937fc67c88d",
-      "bn": "25dfe937fc67c88d",
-      "tr": "25dfe937fc67c88d"
+      "en": "92fb67a9ad91eae6",
+      "ja": "92fb67a9ad91eae6",
+      "zh": "92fb67a9ad91eae6",
+      "bn": "92fb67a9ad91eae6",
+      "tr": "92fb67a9ad91eae6"
     },
     "ShadeLibrary.swatchLabel": {
       "en": "58528645b64ffc2d",
@@ -1143,11 +1143,11 @@
       "tr": "23396b4ecc84fb49"
     },
     "Products.powderText": {
-      "en": "6a60577269e93764",
-      "ja": "6a60577269e93764",
-      "zh": "6a60577269e93764",
-      "bn": "6a60577269e93764",
-      "tr": "6a60577269e93764"
+      "en": "95dffdd476e13812",
+      "ja": "95dffdd476e13812",
+      "zh": "95dffdd476e13812",
+      "bn": "95dffdd476e13812",
+      "tr": "95dffdd476e13812"
     },
     "Products.powderAlt": {
       "en": "ca3d29c46220505f",
@@ -1276,11 +1276,11 @@
       "tr": "be0b11f9ea6eb2c5"
     },
     "Printing.pairNote": {
-      "en": "8c852439e72a20f5",
-      "ja": "8c852439e72a20f5",
-      "zh": "8c852439e72a20f5",
-      "bn": "8c852439e72a20f5",
-      "tr": "8c852439e72a20f5"
+      "en": "8a9201eb8a3234f7",
+      "ja": "8a9201eb8a3234f7",
+      "zh": "8a9201eb8a3234f7",
+      "bn": "8a9201eb8a3234f7",
+      "tr": "8a9201eb8a3234f7"
     },
     "Printing.processTitle": {
       "en": "534e4c544709fd9c",
@@ -1444,11 +1444,11 @@
       "tr": "0b31319f0314fcaf"
     },
     "DataHub.carbonSectionBody": {
-      "en": "fc02f09e2dbc8b3f",
-      "ja": "fc02f09e2dbc8b3f",
-      "zh": "fc02f09e2dbc8b3f",
-      "bn": "fc02f09e2dbc8b3f",
-      "tr": "fc02f09e2dbc8b3f"
+      "en": "e59c077a60923b66",
+      "ja": "e59c077a60923b66",
+      "zh": "e59c077a60923b66",
+      "bn": "e59c077a60923b66",
+      "tr": "e59c077a60923b66"
     },
     "DataHub.anilineSectionTitle": {
       "en": "c7f3f2245dd3590e",
@@ -1486,11 +1486,11 @@
       "tr": "edef468983006f71"
     },
     "DataHub.tableReportDate": {
-      "en": "836dc687d153260a",
-      "ja": "836dc687d153260a",
-      "zh": "836dc687d153260a",
-      "bn": "836dc687d153260a",
-      "tr": "836dc687d153260a"
+      "en": "4074810e4a8dc0ca",
+      "ja": "4074810e4a8dc0ca",
+      "zh": "4074810e4a8dc0ca",
+      "bn": "4074810e4a8dc0ca",
+      "tr": "4074810e4a8dc0ca"
     },
     "DataHub.tableDetectionLimit": {
       "en": "3a36e6c10f84f9a5",
@@ -1689,11 +1689,11 @@
       "tr": "2a149d0501a4a8f2"
     },
     "Certifications.body": {
-      "en": "56297268b8ead9cb",
-      "ja": "56297268b8ead9cb",
-      "zh": "56297268b8ead9cb",
-      "bn": "56297268b8ead9cb",
-      "tr": "56297268b8ead9cb"
+      "en": "163e2dd70243577f",
+      "ja": "163e2dd70243577f",
+      "zh": "163e2dd70243577f",
+      "bn": "163e2dd70243577f",
+      "tr": "163e2dd70243577f"
     },
     "Certifications.numberLabel": {
       "en": "6f5a70391e4a378c",
@@ -1885,11 +1885,11 @@
       "tr": "21d5fc7b9e504ba3"
     },
     "Inquiry.body": {
-      "en": "4b9a366f3eeeb7bb",
-      "ja": "4b9a366f3eeeb7bb",
-      "zh": "4b9a366f3eeeb7bb",
-      "bn": "4b9a366f3eeeb7bb",
-      "tr": "4b9a366f3eeeb7bb"
+      "en": "ca23c35f9f35b2ce",
+      "ja": "ca23c35f9f35b2ce",
+      "zh": "ca23c35f9f35b2ce",
+      "bn": "ca23c35f9f35b2ce",
+      "tr": "ca23c35f9f35b2ce"
     },
     "Inquiry.topicLabel": {
       "en": "74891a3addbadecb",
@@ -2200,11 +2200,11 @@
       "tr": "d95e2a67149d891f"
     },
     "Brand.promiseBody": {
-      "en": "fd45296922fe800e",
-      "ja": "fd45296922fe800e",
-      "zh": "fd45296922fe800e",
-      "bn": "fd45296922fe800e",
-      "tr": "fd45296922fe800e"
+      "en": "980aa46ef326c154",
+      "ja": "980aa46ef326c154",
+      "zh": "980aa46ef326c154",
+      "bn": "980aa46ef326c154",
+      "tr": "980aa46ef326c154"
     },
     "Brand.promiseItems[0].title": {
       "en": "4add036d7aefa486",
@@ -2340,11 +2340,11 @@
       "tr": "c4ea50f006cee438"
     },
     "Technology.heroBody": {
-      "en": "91247fc25900b219",
-      "ja": "91247fc25900b219",
-      "zh": "91247fc25900b219",
-      "bn": "91247fc25900b219",
-      "tr": "91247fc25900b219"
+      "en": "334f1a05e7c7b364",
+      "ja": "334f1a05e7c7b364",
+      "zh": "334f1a05e7c7b364",
+      "bn": "334f1a05e7c7b364",
+      "tr": "334f1a05e7c7b364"
     },
     "Technology.routesTitle": {
       "en": "04fb1646f7c93fca",
@@ -2662,11 +2662,11 @@
       "tr": "d339d67257007d54"
     },
     "Tech.comparisonCaption": {
-      "en": "9a2d6404c47c86e4",
-      "ja": "9a2d6404c47c86e4",
-      "zh": "9a2d6404c47c86e4",
-      "bn": "9a2d6404c47c86e4",
-      "tr": "9a2d6404c47c86e4"
+      "en": "4effb505dadc2373",
+      "ja": "4effb505dadc2373",
+      "zh": "4effb505dadc2373",
+      "bn": "4effb505dadc2373",
+      "tr": "4effb505dadc2373"
     },
     "Tech.section2Title": {
       "en": "2cc1e20b9f9d7203",
@@ -2704,11 +2704,11 @@
       "tr": "2a149d0501a4a8f2"
     },
     "Tech.certSectionText": {
-      "en": "0379709a66126cf0",
-      "ja": "0379709a66126cf0",
-      "zh": "0379709a66126cf0",
-      "bn": "0379709a66126cf0",
-      "tr": "0379709a66126cf0"
+      "en": "277e04c6f29461ae",
+      "ja": "277e04c6f29461ae",
+      "zh": "277e04c6f29461ae",
+      "bn": "277e04c6f29461ae",
+      "tr": "277e04c6f29461ae"
     },
     "Tech.faqTitle": {
       "en": "bbba9886c4201ac1",
@@ -3061,11 +3061,11 @@
       "tr": "64332b6a361f3b73"
     },
     "Contact.description": {
-      "en": "a6d5b47ef2a8dfa5",
-      "ja": "a6d5b47ef2a8dfa5",
-      "zh": "a6d5b47ef2a8dfa5",
-      "bn": "a6d5b47ef2a8dfa5",
-      "tr": "a6d5b47ef2a8dfa5"
+      "en": "bd5f80d821f77dc8",
+      "ja": "bd5f80d821f77dc8",
+      "zh": "bd5f80d821f77dc8",
+      "bn": "bd5f80d821f77dc8",
+      "tr": "bd5f80d821f77dc8"
     },
     "Contact.addressDetail": {
       "en": "35f3b3ca4c001312",

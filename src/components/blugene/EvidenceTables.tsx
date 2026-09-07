@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server';
+import { HEADING_SIZE } from '@/components/blugene/SectionHeading';
 import SourceNote from '@/components/blugene/SourceNote';
 import { SOURCE_AS_OF, anilineTest, carbonTest, marketSamples } from '@/data/blugene/evidence';
 import type { IndigoType, MarketSample, Measurement } from '@/data/blugene/evidence';
@@ -69,10 +70,14 @@ function TypeBadge({ label, emphasis }: { label: string; emphasis: boolean }) {
 }
 
 /**
- * 유형 셀 + 샘플 행 머리. 두 값을 같은 행에서 함께 읽히게 하고,
- * 스크린리더가 행 머리만 읽을 때에도 'Company M' 이 어느 유형인지 알 수 있게 유형을 함께 넣는다.
+ * 샘플 행 머리. 샘플명과 유형을 한 칸 안에 두 줄로 담는다.
+ *
+ * 유형을 별도의 첫 열로 두면 390px 화면에서 배지가 가시 폭의 약 1/4 을 먼저 차지해
+ * 이 페이지가 증명하려는 항목(시험성적서 번호 · 시험일자)이 화면 밖으로 밀려난다.
+ * 배지가 행 머리 안에 들어오므로 스크린리더가 행 머리만 읽을 때에도
+ * 'Company M' 이 어느 유형인지 그대로 전달된다(같은 이름이 두 유형에 등장한다).
  */
-function SampleIdentityCells({
+function SampleIdentityCell({
   sample,
   typeLabel,
   emphasis,
@@ -82,15 +87,12 @@ function SampleIdentityCells({
   emphasis: boolean;
 }) {
   return (
-    <>
-      <td className={TD_CELL}>
+    <th scope="row" className={`${TD_CELL} text-left font-medium break-keep`}>
+      <span className="block whitespace-nowrap">{sample.label}</span>
+      <span className="mt-1.5 block">
         <TypeBadge label={typeLabel} emphasis={emphasis} />
-      </td>
-      <th scope="row" className={`${TD_CELL} text-left font-medium break-keep whitespace-nowrap`}>
-        <span className="sr-only">{`${typeLabel} `}</span>
-        {sample.label}
-      </th>
-    </>
+      </span>
+    </th>
   );
 }
 
@@ -108,7 +110,8 @@ function measurementContent(measurement: Measurement, notDetectedLabel: string) 
 
 /** 자사 샘플 행 강조. 색만으로 구분하지 않도록 유형 배지도 함께 채워진다. */
 function rowClassName(emphasis: boolean) {
-  return `border-b border-[color:var(--color-washed)] last:border-b-0 ${
+  // 행 구분선은 rule 을 쓴다. washed(1.6:1)로 두면 9행짜리 표에서 지금 읽는 행을 놓친다.
+  return `border-b border-[color:var(--color-rule)] last:border-b-0 ${
     emphasis
       ? 'bg-[var(--color-washed)]/45 font-semibold text-[var(--color-indigo-deep)]'
       : 'text-[var(--color-ink)]'
@@ -136,9 +139,10 @@ export async function CarbonEvidenceTable({ className = '' }: { className?: stri
 
   return (
     <section aria-labelledby="evidence-carbon-heading" className={className}>
+      {/* 표 섹션 제목 단(md). 1.875rem 에서 멈추면 같은 화면의 '글로벌 인증'(hero)과 위계가 뒤집혀 보인다. */}
       <h2
         id="evidence-carbon-heading"
-        className="text-[1.5rem] leading-[1.25] font-bold tracking-[-0.02em] break-keep text-[var(--color-indigo-deep)] sm:text-[1.875rem]"
+        className={`${HEADING_SIZE.md} leading-[1.25] font-bold tracking-[-0.02em] break-keep text-[var(--color-indigo-deep)]`}
       >
         {t('carbonSectionTitle')}
       </h2>
@@ -155,13 +159,12 @@ export async function CarbonEvidenceTable({ className = '' }: { className?: stri
         role="region"
         aria-label={`${t('carbonSectionTitle')}: ${tCommon('scrollableRegion')}`}
       >
-        <table className="w-full min-w-[46rem] text-left text-sm">
+        {/* 열 순서는 카탈로그 원본과 대조하는 독자를 위해 그대로 둔다.
+            유형 열을 없앤 만큼만 최소 폭을 줄여 성적서 번호 · 시험일자가 더 일찍 보이게 한다. */}
+        <table className="w-full min-w-[39rem] text-left text-sm">
           <caption className="sr-only">{t('carbonSectionTitle')}</caption>
           <thead>
-            <tr className="border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
-              <th scope="col" className={TH_COL}>
-                {t('tableType')}
-              </th>
+            <tr className="border-b border-[color:var(--color-rule)] bg-[var(--color-ivory)]">
               <th scope="col" className={TH_COL}>
                 {t('tableSample')}
               </th>
@@ -184,7 +187,7 @@ export async function CarbonEvidenceTable({ className = '' }: { className?: stri
               const emphasis = sample.id === BRAND_SAMPLE_ID;
               return (
                 <tr key={sample.id} className={rowClassName(emphasis)}>
-                  <SampleIdentityCells
+                  <SampleIdentityCell
                     sample={sample}
                     typeLabel={typeLabels[sample.type]}
                     emphasis={emphasis}
@@ -206,10 +209,8 @@ export async function CarbonEvidenceTable({ className = '' }: { className?: stri
         <SourceNote>
           {`${tCommon('sourceLabel')}: ${tCommon('cataloguePage', { page: carbonTest.page })} Table ${carbonTest.table} · ${tCommon('asOf', { date: SOURCE_AS_OF })}`}
         </SourceNote>
-        <SourceNote>{t('anonymousNote')}</SourceNote>
-        <SourceNote>{t('sameLabelNote')}</SourceNote>
-        <SourceNote>{t('sampleScopeNote')}</SourceNote>
-        {/* 같은 샘플이 카탈로그 Table 1-1 과 Figure 1-3 에서 다르게 표기된 점을 밝힌다. */}
+        {/* 공통 조건(익명 표기 · 같은 이름 · 샘플 범위)은 섹션 도입부의 EvidenceReadingNotes 에 한 번만 있다.
+            여기는 이 표에만 걸리는 것만 남긴다 — 같은 샘플이 Table 1-1 과 Figure 1-3 에서 다르게 표기된 점. */}
         <SourceNote>{t('carbonZeroNote')}</SourceNote>
       </div>
     </section>
@@ -243,9 +244,10 @@ export async function AnilineEvidenceTable({ className = '' }: { className?: str
 
   return (
     <section aria-labelledby="evidence-aniline-heading" className={className}>
+      {/* 위 탄소 표와 같은 위계이므로 같은 md 단을 쓴다. */}
       <h2
         id="evidence-aniline-heading"
-        className="text-[1.5rem] leading-[1.25] font-bold tracking-[-0.02em] break-keep text-[var(--color-indigo-deep)] sm:text-[1.875rem]"
+        className={`${HEADING_SIZE.md} leading-[1.25] font-bold tracking-[-0.02em] break-keep text-[var(--color-indigo-deep)]`}
       >
         {t('anilineSectionTitle')}
       </h2>
@@ -262,13 +264,12 @@ export async function AnilineEvidenceTable({ className = '' }: { className?: str
         role="region"
         aria-label={`${t('anilineSectionTitle')}: ${tCommon('scrollableRegion')}`}
       >
-        <table className="w-full min-w-[46rem] text-left text-sm">
+        {/* 열 순서는 카탈로그 원본과 대조하는 독자를 위해 그대로 둔다.
+            유형 열을 없앤 만큼만 최소 폭을 줄여 성적서 번호 · 시험일자가 더 일찍 보이게 한다. */}
+        <table className="w-full min-w-[39rem] text-left text-sm">
           <caption className="sr-only">{t('anilineSectionTitle')}</caption>
           <thead>
-            <tr className="border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
-              <th scope="col" className={TH_COL}>
-                {t('tableType')}
-              </th>
+            <tr className="border-b border-[color:var(--color-rule)] bg-[var(--color-ivory)]">
               <th scope="col" className={TH_COL}>
                 {t('tableSample')}
               </th>
@@ -291,7 +292,7 @@ export async function AnilineEvidenceTable({ className = '' }: { className?: str
               const emphasis = sample.id === BRAND_SAMPLE_ID;
               return (
                 <tr key={sample.id} className={rowClassName(emphasis)}>
-                  <SampleIdentityCells
+                  <SampleIdentityCell
                     sample={sample}
                     typeLabel={typeLabels[sample.type]}
                     emphasis={emphasis}
@@ -315,12 +316,28 @@ export async function AnilineEvidenceTable({ className = '' }: { className?: str
         <SourceNote>
           {`${tCommon('sourceLabel')}: ${tCommon('cataloguePage', { page: anilineTest.page })} Table ${anilineTest.table} · ${tCommon('asOf', { date: SOURCE_AS_OF })}`}
         </SourceNote>
-        <SourceNote>{t('anonymousNote')}</SourceNote>
-        <SourceNote>{t('sameLabelNote')}</SourceNote>
-        <SourceNote>{t('sampleScopeNote')}</SourceNote>
+        {/* 공통 조건은 섹션 도입부에 한 번만 있다(EvidenceReadingNotes). 여기는 이 표 전용 설명만 둔다. */}
         <SourceNote>{t('notDetectedExplain')}</SourceNote>
       </div>
     </section>
+  );
+}
+
+/**
+ * 두 표에 똑같이 걸리는 읽기 조건. 표마다 되풀이하지 않고 섹션 도입부에 한 번만 둔다.
+ *
+ * 특히 sampleScopeNote 는 두 표의 **관계**를 설명하는 문장이라, 첫 표 아래에 두면
+ * 독자가 아직 보지도 않은 두 번째 표를 앞질러 언급하게 된다. 두 표보다 먼저 읽혀야 한다.
+ */
+async function EvidenceReadingNotes() {
+  const t = await getTranslations('DataHub');
+
+  return (
+    <div className="max-w-4xl space-y-2.5 border-b border-[color:var(--color-washed)] pb-8">
+      <SourceNote>{t('anonymousNote')}</SourceNote>
+      <SourceNote>{t('sameLabelNote')}</SourceNote>
+      <SourceNote>{t('sampleScopeNote')}</SourceNote>
+    </div>
   );
 }
 
@@ -328,7 +345,8 @@ export async function AnilineEvidenceTable({ className = '' }: { className?: str
 export default function EvidenceTables({ className = '' }: { className?: string }) {
   return (
     <div className={className}>
-      <CarbonEvidenceTable />
+      <EvidenceReadingNotes />
+      <CarbonEvidenceTable className="mt-12" />
       <AnilineEvidenceTable className="mt-14 border-t border-[color:var(--color-washed)] pt-14 sm:mt-16 sm:pt-16" />
     </div>
   );

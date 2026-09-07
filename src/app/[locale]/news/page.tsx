@@ -34,6 +34,8 @@ type Article = {
   summary: string;
   thumbnailAlt: string;
   link?: string;
+  /** 기사를 쓴 매체명. 고유명사라 번역하지 않고 모든 언어에서 원문 그대로 보여 준다 */
+  source?: string;
 };
 
 /** 목록에 함께 늘어놓기 위해, 직접 쓴 소식을 기사와 같은 모양으로 바꾼다 */
@@ -44,7 +46,6 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'News' });
-  const tCommon = await getTranslations({ locale, namespace: 'Common' });
   const articles = t.raw('articles') as Article[];
   const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/brand/cutisbio-logo.png`);
 
@@ -72,7 +73,7 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
 
       <section className="w-full border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-          <SectionHeading headingLevel="h1" title={t('title')} body={t('description')} size="lg" />
+          <SectionHeading headingLevel="h1" title={t('title')} body={t('description')} size="hero" />
         </div>
       </section>
 
@@ -85,10 +86,35 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
                   <span className="rounded-full bg-[var(--color-ivory)] px-3 py-1 font-semibold text-[var(--color-denim)]">
                     {article.category}
                   </span>
+                  {article.source && (
+                    <>
+                      <span className="break-keep">{article.source}</span>
+                      <span aria-hidden="true">·</span>
+                    </>
+                  )}
                   <time dateTime={article.date}>{article.date}</time>
                 </div>
+                {/*
+                  언론 목록에서 독자가 누르는 것은 제목이다. 제목 전체가 링크여야
+                  좁은 화면에서도 손가락이 닿는다. 같은 주소로 가는 링크를 한 행에
+                  두 개 두지 않으려고 아래의 '원본 자료 보기' 줄은 여기로 합쳤다.
+                */}
                 <h2 className="mt-3 text-lg leading-snug font-semibold break-keep text-[var(--color-indigo-deep)] sm:text-xl">
-                  {article.title}
+                  {article.link ? (
+                    <a
+                      href={article.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline-offset-4 hover:text-[var(--color-denim)] hover:underline"
+                    >
+                      {article.title}
+                      <span aria-hidden="true" className="ml-1.5 text-[var(--color-denim)]">
+                        ↗
+                      </span>
+                    </a>
+                  ) : (
+                    article.title
+                  )}
                 </h2>
 
                 {article.post?.type === 'youtube' && article.post.youtubeId && (
@@ -116,17 +142,6 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
                   <p className="mt-3 text-base leading-relaxed break-keep whitespace-pre-line text-[var(--color-ink)]/80">
                     {article.summary}
                   </p>
-                )}
-                {article.link && (
-                  <a
-                    href={article.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
-                  >
-                    {tCommon('viewSource')}
-                    <span aria-hidden="true">↗</span>
-                  </a>
                 )}
               </li>
             ))}

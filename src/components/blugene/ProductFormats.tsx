@@ -5,13 +5,7 @@ import SectionHeading from '@/components/blugene/SectionHeading';
 import SourceNote, { AssetKind } from '@/components/blugene/SourceNote';
 import ZoomableImage from '@/components/blugene/ZoomableImage';
 import { productSummary } from '@/data/blugene/evidence';
-import {
-  dyeingCycleImage,
-  dyeingCycleRows,
-  dyeingCycles,
-  productForms,
-  type ProductForm,
-} from '@/data/blugene/shades';
+import { dyeingCycleImage, productForms, type ProductForm } from '@/data/blugene/shades';
 
 /**
  * 제품군 섹션 — 분말과 디지털 프린팅 잉크.
@@ -59,8 +53,12 @@ export default async function ProductFormats({
     <>
       <SectionHeading eyebrow={t('eyebrow')} title={t('title')} body={t('body')} />
 
-      {/* 두 제형 — 좌우 2열, 모바일에서는 세로로 쌓는다 */}
-      <div className="mt-12 grid gap-6 sm:gap-8 lg:mt-16 lg:grid-cols-2">
+      {/*
+        두 제형 — 좌우 2열, 모바일에서는 세로로 쌓는다.
+        items-start 가 없으면 두 카드가 같은 높이로 늘어나고, CAS 행이 없는 잉크 카드는
+        본문과 출처 주석 사이에 약 100px 빈 면이 남는다.
+      */}
+      <div className="mt-12 grid items-start gap-6 sm:gap-8 lg:mt-16 lg:grid-cols-2">
         {productForms.map((form) => {
           const copy = FORM_COPY[form.id];
           return (
@@ -104,7 +102,8 @@ export default async function ProductFormats({
                   </dl>
                 )}
 
-                <SourceNote className="mt-auto pt-6">
+                {/* mt-auto 를 주면 카드 높이가 맞춰질 때 주석이 카드 바닥으로 밀려 본문과 벌어진다 */}
+                <SourceNote className="pt-6">
                   {t('nameNote', { catalogueName: form.catalogueName })}
                 </SourceNote>
               </div>
@@ -133,29 +132,11 @@ export default async function ProductFormats({
             {t('cyclesAlt')}
           </p>
 
-          {/* 위 문장이 설명하는 3행 × 4열 구조를 눈으로도 잡을 수 있게 한 보조 도식 (열 번호 = 염색 횟수) */}
-          <div
-            aria-hidden="true"
-            className="mt-6 inline-grid grid-cols-4 gap-x-2 gap-y-1.5 rounded-md border border-[color:var(--color-washed)] bg-white px-4 py-3"
-          >
-            {dyeingCycles.map((cycle) => (
-              <span
-                key={cycle}
-                className="text-center text-[0.7rem] font-semibold text-[var(--color-denim)] tabular-nums"
-              >
-                {cycle}
-              </span>
-            ))}
-            {dyeingCycleRows.flatMap((row) =>
-              dyeingCycles.map((cycle) => (
-                <span
-                  key={`${row}-${cycle}`}
-                  className="h-2.5 w-9 rounded-[2px] bg-[var(--color-washed)]"
-                />
-              )),
-            )}
-          </div>
-
+          {/*
+            3행 × 4열 구조를 값 없는 회색 막대로 다시 그리지 않는다.
+            같은 구조를 바로 위 cyclesAlt 가 글로, 오른쪽 Figure 5-1 이 실제 색과 라벨로 이미 전달한다.
+            빈 막대만 있는 상자는 정보를 더하지 않고 로딩 중인 이미지 자리처럼 읽힌다.
+          */}
           <SourceNote className="mt-6 max-w-xl">{t('cyclesNote')}</SourceNote>
 
           <Link

@@ -58,7 +58,17 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             preload
             className="mb-10 h-auto w-[200px] sm:w-[247px]"
           />
-          <SectionHeading headingLevel="h1" title={t('title')} body={t('missionText')} size="lg" />
+          {/*
+            아래 비전 문단에는 'OUR VISION' 라벨이 있다. 미션에도 같은 라벨을 붙여야
+            영문 문장이 한국어 제목의 부제가 아니라 회사의 고정 미션 문구로 읽힌다.
+          */}
+          <SectionHeading
+            headingLevel="h1"
+            eyebrow={t('missionTitle')}
+            title={t('title')}
+            body={t('missionText')}
+            size="hero"
+          />
         </div>
       </section>
 
@@ -75,9 +85,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 
       <section className="w-full bg-white">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-          <h2 className="text-2xl font-bold break-keep text-[var(--color-indigo-deep)] sm:text-3xl">
-            {t('coreBusinessTitle')}
-          </h2>
+          <SectionHeading title={t('coreBusinessTitle')} size="lg" />
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {areas.map((area) => (
               <article
@@ -116,9 +124,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 
       <section className="w-full bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-          <h2 className="text-2xl font-bold break-keep text-[var(--color-indigo-deep)] sm:text-3xl">
-            {t('historyTitle')}
-          </h2>
+          <SectionHeading title={t('historyTitle')} size="lg" />
           <ol className="mt-10 border-l-2 border-[color:var(--color-washed)] pl-6 sm:pl-8">
             {history.map((item) => (
               <li key={item.year} className="relative pb-8 last:pb-0">

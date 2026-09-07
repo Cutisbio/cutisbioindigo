@@ -20,7 +20,7 @@ export default async function EnvironmentSection() {
     <section className="w-full bg-[var(--color-ivory)]">
       <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
         <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-20">
-          <SectionHeading eyebrow={t('eyebrow')} title={t('title')} body={t('body')} size="lg" />
+          <SectionHeading eyebrow={t('eyebrow')} title={t('title')} body={t('body')} size="hero" />
 
           <div className="lg:pt-6">
             <div className="border-l-2 border-[var(--color-denim)] pl-6">

@@ -42,7 +42,7 @@
     "ctaSecondary": "Verileri ve sertifikaları görün",
     "tagline": "Denim for a lifetime. A safer blue.",
     "imageAlt": "Denim ceket giyen bir ebeveynin kucağındaki çocuğuyla birlikte mısır tarlalarının, çayırların ve su kıyısının göründüğü manzaraya baktığı sahne. Sağlanan kataloğun kapağında yer alan marka görselidir.",
-    "imageCredit": "Katalog s.1'de yer alan görsel · Marka konsept görseli"
+    "imageCredit": "Katalog p.1 yer alan görüntü"
   },
   "EvidenceStrip": {
     "carbonValue": "98%",
@@ -59,7 +59,7 @@
   "Manifesto": {
     "eyebrow": "ACROSS BORDERS. ACROSS GENERATIONS.",
     "title": "Ömrümüz boyunca tenimize değen bir giysi olduğu için.",
-    "body": "Hangi ülkede yaşarsak yaşayalım, hangi yaştan geçersek geçelim. Denim, günlük hayatımızın bir parçasıdır. Uzun süre giyilen ve cilde temas eden bir giysi olduğu için rengin üretildiği süreci en baştan sorguluyoruz. Neyden yapıldı? Geriye hangi safsızlıklar kalıyor? Bu sonuç doğrulanabiliyor mu? Blugene bu sorularla başladı.",
+    "body": "Hangi ülkede yaşarsak yaşayalım, hangi yaşta olursak olalım, denim günlük hayatımızda yer alır. Uzun süre giyildiği ve cilde temas ettiği için rengi üretme sürecimizi yeniden sorguladık. Blugene, aşağıdaki üç sorudan doğdu.",
     "questions": [
       "Neyden yapıldı",
       "Geriye hangi safsızlıklar kalıyor",
@@ -70,7 +70,7 @@
   "Impurity": {
     "eyebrow": "WHAT REMAINS MATTERS",
     "title": "Görünmeyen de bizim ölçütümüzdür.",
-    "body": "Ödün vermediğimiz şey, safsızlıkları doğrulama ve yönetme ölçütümüzdür. Blugene'in temelini oluşturan CutisBio biyo indigosunda, katalogda sunulan testlerde anilin ve N-metilanilin tespit edilmemiştir.",
+    "body": "Blugene'in temelini oluşturan CutisBio biyo indigo, katalogda sunulan testlerde anilin ve N-metilanilin tespit edilmedi.",
     "context": "Anilin ve N-metilanilin, kimyasal sentez yolunda başlangıç maddesi veya ara ürün olarak kullanılır ve nihai indigo tozunda tepkimeye girmemiş kalıntı olarak kalabilir. Çeşitli sertifikasyon standartları, bu maddelerin tekstil boyalarında ve nihai üründe izin verilen konsantrasyonunu sınırlar.",
     "cta": "Karşılaştırma verilerinin tamamını görün",
     "chartTitle": "Piyasadaki indigo boyalarının anilin · N-metilanilin analizi",
@@ -79,7 +79,7 @@
   "Science": {
     "eyebrow": "SYNTHETIC BIOLOGY",
     "title": "İndigonun DNA'sını yeniden yazmak.",
-    "body": "CutisBio, mikroorganizmaların biyosentez yolaklarını ve fermantasyonu kullanarak indigo üretir. Uzun zamandır sevilen bu mavinin üretim biçimine sentetik biyolojiyi ekledik.",
+    "body": "CutisBio, mikroorganizmaların biyosentetik yollarını ve fermentasyonu kullanarak indigo üretir.",
     "metaphorNote": "'İndigonun DNA'sını yeniden yazmak' markanın kullandığı bir benzetmedir. İndigo molekülünün kendisinde gen bulunduğu anlamına gelmez; indigonun mikroorganizmaların biyosentez yolakları ve fermantasyon yoluyla üretildiğini ifade eder.",
     "cta": "Teknolojiyi ayrıntılı inceleyin",
     "diagramTitle": "Hammaddeden kumaşa",
@@ -107,7 +107,7 @@
     "eyebrow": "FROM RENEWABLE CARBON",
     "title": "Giyeni düşünerek. Üretim sürecini de düşünerek.",
     "body": "Yenilenebilir karbondan yola çıkan bir indigo. Hammaddenin kaynağından bileşen analizine kadar, yaklaşımımızı doğrulanabilir belgelerle anlatıyoruz.",
-    "carbonCardTitle": "%98 biyobazlı karbon içeriği",
+    "carbonCardTitle": "Biyobazlı karbon içeriği",
     "carbonCardText": "Üründe bulunan karbonun yenilenebilir hammaddeden gelen oranıdır. Katalog s.3 Tablo 1-1'deki ölçüm değerine (pMC 97.73) dayanır; indigo saflığı ya da karbon emisyonu azaltım oranı değildir.",
     "scopeNote": "Ürün bazlı yaşam döngüsü değerlendirmesi (LCA), su kullanımı, enerji ve karbon emisyonu verileri bu katalogda yer almamaktadır. Doğrulanmış kapsamın dışında kalan çevresel performans değerleri bu sitede gösterilmez.",
     "cta": "Kanıt belgelerini görün",
@@ -118,7 +118,7 @@
     "title": "Gerçek kumaş üzerinde doğrulanan boyanabilirlik.",
     "body": "Bitkisel · kimyasal · biyo indigo ile pamuk, ipek ve kaşmir boyanarak karşılaştırıldı. Katalog; yıkama, ışık, sürtme ve ter haslığında birbiriyle kıyaslanabilir bir performans (comparable performance) kaydedildiğini belirtiyor.",
     "fabricAlt": "9 kumaş numunesinin fotoğrafı. Soldan itibaren bitkisel indigo ile boyanmış pamuk · ipek · kaşmir (#1~#3), kimyasal indigo (#4~#6) ve biyo indigo (#7~#9) sırasıyla yer alır.",
-    "fabricCaption": "Katalog s.6 Şekil 3-1. Numune #1~#3 bitkisel, #4~#6 kimyasal, #7~#9 biyo indigodur; her grup pamuk · ipek · kaşmir sırasındadır.",
+    "fabricCaption": "Katalog p.6 Şekil 3-1.",
     "sampleLegendPlant": "Bitkisel indigo",
     "sampleLegendChemical": "Kimyasal indigo",
     "sampleLegendBio": "Biyo indigo",
@@ -128,7 +128,7 @@
     "cta": "Haslık tablosunun tamamını görün",
     "honestNote": "Bu, tüm kalemlerde üstün olduğu anlamına gelmez. Bazı sürtme haslığı kalemlerinde düşük dereceler de kaydedilmiştir ve tabloda olduğu gibi gösterilmiştir.",
     "additionalCaseTitle": "Ek kumaş değerlendirme örneği",
-    "additionalCaseBody": "Arşivde saklanan, ayrı bir boyama değerlendirmesine ait fotoğraftır. Japonca olarak 4 · 6 · 8 kez boyama ile バイオ②-1 / 合成 / バイオ②-2 ifadeleri yazılıdır.",
+    "additionalCaseBody": "Depoda saklanan ayrı bir boyama değerlendirme fotoğrafıdır. Aşağıdaki değerler, orijinalde Japonca etiketle yazıldığı gibi aynen bırakılmıştır, '合成' birleşimi ifade eder.",
     "additionalCaseAlt": "4 · 6 · 8 kez boyama koşullarında バイオ②-1, 合成 ve バイオ②-2 ile boyanmış kumaşları karşılaştıran fotoğraf",
     "additionalCaseProvenance": "Test kuruluşu · test yöntemi · test tarihi · talep eden bilgileri doğrulanamadığı için katalog s.6'daki testten ayrı olarak gösterilmektedir. Yukarıdaki tabloda yer alan #1~#9 numunelerinden farklı bir kaynaktır.",
     "additionalCaseCyclesLabel": "Boyama sayısı",
@@ -165,7 +165,7 @@
     "subAlkali": "Alkali",
     "sourceImageCta": "Orijinal tablo görselini görün",
     "sourceImageAlt": "Katalog s.6'daki haslık tabloları 3-1 ~ 3-4'ün orijinal görseli",
-    "gradeNote": "Dereceler 1 (düşük) ile 5 (yüksek) arasında sıralama değerleridir; '4-5' iki derece arasını belirten orijinal gösterimdir."
+    "gradeNote": "Derece, 1 (düşük) ile 5 (yüksek) arasında bir sıradadır ve '4-5' iki derece arasını ifade eden orijinal bir ifadedir. 4'ün altında kaydedilen dereceler tabloda kalın olarak belirtilmiştir."
   },
   "ShadeLibrary": {
     "eyebrow": "SHADE LIBRARY",
@@ -176,8 +176,8 @@
     "axisLow": "Low",
     "axisHigh": "High",
     "axisLabel": "Blugene konsantrasyonu",
-    "rowA": "1. sıra",
-    "rowB": "2. sıra",
+    "rowA": "A satırı",
+    "rowB": "B satırı",
     "swatchLabel": "Katalog numunesi {code}",
     "swatchAlt": "Katalog s.7 Şekil 4-1'de yer alan, konsantrasyona göre boyama numunesi {code}",
     "duplicateNote": "Orijinalde A6 ve B1 konumlarında aynı numune görseli kullanılmıştır. Görsellerin bulunduğu konumlar olduğu gibi korunmuştur.",
@@ -199,7 +199,7 @@
     "title": "Toz ve baskı mürekkebi olmak üzere iki formda.",
     "body": "Mikrobiyal fermantasyonla üretilen indigoyu, kumaş boyama için toz ve dijital baskı için mürekkep formunda sunuyoruz.",
     "powderTitle": "Blugene Indigo Powder",
-    "powderText": "Mikrobiyal fermantasyonla üretilen indigo tozudur. Pamuk · ipek · kaşmir boyama değerlendirme verileri katalogda yer almaktadır.",
+    "powderText": "Katalogda pamuk, ipek ve kaşmir boyama değerlendirme materyalleri yer almaktadır.",
     "powderAlt": "Bir kapta duran koyu mavi biyo indigo tozu (Katalog s.9)",
     "inkTitle": "Blugene Digital Printing Ink",
     "inkText": "Dijital baskı için geliştirilen biyo indigo mürekkebidir. Uygulanabilirlik ve numuneler konusunda danışmanlık sağlıyoruz.",
@@ -220,7 +220,7 @@
     "pairPrinted": "Biyo indigo mürekkebiyle baskı sonucu",
     "pairAltOriginal": "Dijital baskıda kullanılan orijinal görsel {index} (Katalog s.9 Şekil 6-2)",
     "pairAltPrinted": "Aynı görselin biyo indigo mürekkebiyle dijital baskı sonucu {index} (Katalog s.9 Şekil 6-2)",
-    "pairNote": "Solda baskıda kullanılan orijinal görsel, sağda biyo indigo mürekkebiyle basılmış sonuç yer alır. Ürün kullanımı öncesi ve sonrasındaki bir performans iyileşmesini gösteren fotoğraflar değildir; eser sahibi · müşteri · teslim edilen firma bilgileri sağlanan kaynaklarda bulunmamaktadır.",
+    "pairNote": "Ürün kullanım öncesi ve sonrası performans artışını gösteren bir fotoğraf değildir, orijinal yaratıcı · müşteri · teslimatçı bilgisi sağlanan materyalde yoktur.",
     "processTitle": "Mürekkep üretim akışı",
     "processCaption": "Katalog s.9 Şekil 6-1'de yer alan adımlardır. Orijinal metindeki ifadeler de birlikte yazılmıştır.",
     "processAlt": "Hammadde hazırlama, ön karıştırma, öğütme, filtrasyon ve formülasyonun tamamlanması adımlarıyla ilerleyen mürekkep üretim akış şeması (Katalog s.9)",
@@ -260,13 +260,13 @@
     "title": "Orijinaliyle doğrulanan güven.",
     "body": "Test sonuçları ve sertifikalar tek bir yerde toplandı. Her kalemi; test kuruluşu · test yöntemi · rapor numarası · veri tarihiyle birlikte orijinalinden doğrulayabilirsiniz.",
     "carbonSectionTitle": "Biyobazlı karbon (C14)",
-    "carbonSectionBody": "Piyasadaki indigo boyalarının biyobazlı (yenilenebilir) karbon oranının ölçüm sonuçlarıdır.",
+    "carbonSectionBody": "Piyasada bulunan indigo boyasının biyobazlı (yenilenebilir) karbon oranını ölçen bir sonuçtur. Bu değer biyobazlı karbon içeriğidir ve indigo saflığı veya karbon emisyonu azaltma oranı değildir.",
     "anilineSectionTitle": "Anilin · N-metilanilin analizi",
     "anilineSectionBody": "Piyasadaki indigo boyalarında kalan anilin ve N-metilanilinin analiz sonuçlarıdır.",
     "tableLab": "Test kuruluşu",
     "tableMethod": "Test yöntemi",
     "tableReport": "Test raporu numarası",
-    "tableReportDate": "Test tarihi",
+    "tableReportDate": "Test raporu tarihi",
     "tableDetectionLimit": "Yöntem tespit limiti",
     "tableType": "İndigo türü",
     "tableSample": "Numune",
@@ -297,7 +297,7 @@
   },
   "Certifications": {
     "title": "Küresel sertifikalar",
-    "body": "Sağlanan katalogda yer alan sertifikalardır. Sertifika kuruluşu · sertifika numarası · kapsanan ürün · belgedeki geçerlilik süresi birlikte gösterilir ve orijinal sertifikayı büyüterek inceleyebilirsiniz.",
+    "body": "Sağlanan katalogda yer alan sertifikadır. Her bir madde için orijinal sertifikayı büyüterek görmek mümkündür.",
     "numberLabel": "Sertifika numarası",
     "issuerLabel": "Sertifika kuruluşu",
     "productLabel": "Kapsanan ürün",
@@ -327,7 +327,7 @@
   "Inquiry": {
     "eyebrow": "SAMPLE INQUIRY",
     "title": "Bir sonraki denimin mavisini birlikte yaratalım.",
-    "body": "Kumaş boyama, dijital baskı, ortak renk geliştirme, teknik · sertifika belgeleri arasından ihtiyacınız olan konuyu seçerek bize ulaşın.",
+    "body": "Soru türünü seçin ve içeriği bırakın.",
     "topicLabel": "Talep türü",
     "topicFabricDyeing": "Kumaş boyama",
     "topicDigitalPrinting": "Dijital baskı",
@@ -376,7 +376,7 @@
     "nameBody": "Blue ve Gene kelimelerinin birleşiminden oluşan bir isimdir. Uzun zamandır sevilen mavinin, sentetik biyolojinin yöntemleriyle yeniden üretilmesi anlamını taşır.",
     "nameNote": "'İndigonun DNA'sını yeniden yazmak' bir benzetmedir. İndigo molekülünün içinde gen bulunduğu anlamına gelmez.",
     "promiseTitle": "Söz verdiklerimiz",
-    "promiseBody": "Söz verebileceğimiz şey, doğrulanabilir verilerdir. Neyden üretildiğini, geriye hangi safsızlıkların kaldığını ve bu sonucun nasıl doğrulanabileceğini açıklıyoruz.",
+    "promiseBody": "Söz verebileceğimiz şey, doğrulanabilir materyallerdir.",
     "promiseItems": [
       {
         "title": "Hammaddeyi açıklıyoruz",
@@ -408,7 +408,7 @@
     "metaDescription": "İndigo üretiminin dört yolunu, mikrobiyal fermantasyona dayalı üretimi ve biyobazlı karbon test sonuçlarını açıklıyoruz.",
     "heroEyebrow": "TECHNOLOGY",
     "heroTitle": "Maviyi üretmenin dört yolu ve bizim tercihimiz.",
-    "heroBody": "İndigo elde etmenin tek bir yolu yoktur. Katalog dört yol sunar; Blugene'in temelini oluşturan CutisBio biyo indigosu bunlar arasında mikrobiyal kökenli yola karşılık gelir.",
+    "heroBody": "Katalog, Blugene'in temelini oluşturan CutisBio biyo indigo için dört yol önerir ve bunlardan biri mikroorganizma kaynaklı yoldur.",
     "routesTitle": "İndigo sentezinin dört yolu",
     "routesCaption": "Katalog s.2 Şekil 1-1. Kimyasal yollar kırmızı, biyolojik yollar sarı renkle ayrılmıştır.",
     "routesAlt": "Ham petrol · biyokütle · indigo bitkisinden başlayan dört indigo sentez yolunun şeması (Katalog s.2)",
@@ -468,13 +468,13 @@
     "intro": "En sevilen kumaş olan mavi denim. O rengi üretmenin tek bir yolu yoktur. CutisBio, mikroorganizmaların biyosentez yolaklarını ve fermantasyonu kullanarak indigo üretir.",
     "section1Title": "1. Safsızlıklar neden kontrol edilir",
     "section1Text": "Anilin ve N-metilanilin, kimyasal sentez indigosunun başlangıç maddesi veya ara ürünüdür ve nihai tozda tepkimeye girmemiş kalıntı olarak kalabilir. Toksisitesi ve kanserojen olma ihtimali nedeniyle ZDHC, OEKO-TEX, GOTS gibi çeşitli sertifikasyon standartları, bu maddelerin tekstil boyalarında ve nihai üründe izin verilen konsantrasyonunu sınırlar. Bu nedenle her üründe bu iki maddeyi analiz ediyor ve sonuçları tespit limitiyle birlikte paylaşıyoruz.",
-    "comparisonCaption": "Katalog s.4, bu iki maddeyi indigonun kimyasal üretim yolunda başlangıç maddesi veya ara ürün olarak tanımlar ve toksik ile potansiyel kanserojen nitelikleri nedeniyle çeşitli sertifikasyon standartlarının tekstil boyalarında ve nihai ürünlerde izin verilen derişimlerini sınırladığını belirtir.",
+    "comparisonCaption": "Katalog p.4'te belirtilen kapsamı (başlangıç maddesi · ara madde, toksisite · kanserojen olma olasılığı) aşmayan bir açıklamadır.",
     "section2Title": "2. Mikrobiyal fermantasyonla üretilen indigo",
     "section2Text": "CutisBio, mikroorganizmaların biyosentez yolaklarını kullanarak biyokütleden elde edilen triptofanı indigoya dönüştüren bir fermantasyon prosesi uygular. Kataloğun sunduğu dört indigo sentez yolu arasında mikrobiyal kökenli yola karşılık gelir.",
     "section3Title": "3. Testlerle doğrulanan sonuçlar",
     "section3Text": "KATRI tarafından yapılan ASTM D6866-24a Method B testinde biyobazlı karbon içeriği %98 (pMC 97.73) olarak ölçülmüş, KOTERI tarafından yapılan KS K 0734 2019 testinde ise anilin ve N-metilanilin tespit edilmemiştir (yöntem tespit limiti 5 mg/kg). Haslık, katalog verilerine göre bitkisel ve kimyasal indigoyla kıyaslanabilir düzeydedir (comparable performance); kalem bazındaki dereceleri veri sayfasındaki tablodan olduğu gibi görebilirsiniz.",
     "certSectionTitle": "Küresel sertifikalar",
-    "certSectionText": "Sağlanan katalogda yer alan sertifikalardır. Sertifika kuruluşu · sertifika numarası · kapsanan ürün · belgedeki geçerlilik süresiyle birlikte orijinalini inceleyebilirsiniz.",
+    "certSectionText": "Sağlanan katalogda yer alınan sertifikadır. Orijinali aynen kontrol edilebilir.",
     "faqTitle": "Sık sorulan sorular",
     "faqList": [
       {
@@ -556,7 +556,7 @@
   },
   "Contact": {
     "title": "İletişim",
-    "description": "Blugene numuneleri ile teknik ve sertifika belgeleri hakkında bize ulaşın. Kumaş boyama, dijital baskı, ortak renk geliştirme ve teknik belgeler arasından ihtiyacınız olanı seçebilirsiniz.",
+    "description": "Blugene biyo indigo örnekleri ve teknik · sertifikasyon materyalleri hakkında sorular kabul edilmektedir.",
     "addressDetail": "Apgujeong Binası 8. kat, Nonhyeon-ro 842, Gangnam-gu, Seul 06025, Kore\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
     "mapTitle": "Yol tarifi"
   },

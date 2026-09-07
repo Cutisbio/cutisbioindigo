@@ -50,7 +50,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
             eyebrow={t('eyebrow')}
             title={t('title')}
             body={t('description')}
-            size="lg"
+            size="hero"
           />
         </div>
       </section>

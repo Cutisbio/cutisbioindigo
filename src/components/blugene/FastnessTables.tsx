@@ -81,7 +81,17 @@ const GROUP_STYLE: Record<IndigoType, { head: string; cell: string }> = {
   },
 };
 
-const CELL_BORDER = 'border border-[color:var(--color-washed)]';
+// 셀 격자는 rule 을 쓴다. 이 표는 9행 6열을 눈으로 가로세로 따라가야 하는데, washed(1.6:1)는
+// 흰 배경에서 격자가 사라져 옆 열의 등급을 읽게 된다.
+const CELL_BORDER = 'border border-[color:var(--color-rule)]';
+
+/**
+ * 왼쪽에 고정되는 행 머리 열의 경계선.
+ * `border-collapse: collapse` 에서는 테두리를 표가 그리므로 sticky 셀이 옆으로 움직이면
+ * 테두리만 제자리에 남아 열 경계가 사라진다. inset 그림자로 오른쪽·아래 선을 직접 그린다.
+ */
+const STICKY_HEAD_EDGE =
+  'shadow-[inset_-1px_0_var(--color-washed),inset_0_-1px_var(--color-washed)]';
 
 /**
  * 샘플 그룹(식물성 · 화학 · 바이오)이 바뀌는 첫 열에만 굵은 세로선을 넣는다.
@@ -146,6 +156,7 @@ export default async function FastnessTables({
               table={table}
               caption={caption}
               scrollLabel={`${caption} — ${tc('scrollableRegion')}`}
+              scrollHint={tc('scrollableRegion')}
               heading={t(`table${pascal(table.key)}`)}
               itemHeader={t('itemHeader')}
               sampleHeader={t('sampleHeader')}
@@ -215,6 +226,7 @@ function FastnessTableBlock({
   table,
   caption,
   scrollLabel,
+  scrollHint,
   heading,
   itemHeader,
   sampleHeader,
@@ -228,6 +240,8 @@ function FastnessTableBlock({
   caption: string;
   /** 가로 스크롤 영역의 접근성 이름 (캡션 + 스크롤 안내) */
   scrollLabel: string;
+  /** 같은 안내를 화면에도 적는다 — aria-label 은 눈으로 볼 수 없다 */
+  scrollHint: string;
   heading: string;
   itemHeader: string;
   sampleHeader: string;
@@ -245,6 +259,13 @@ function FastnessTableBlock({
   const showGroupColumn = table.rows.length > 1;
   const leadColSpan = showGroupColumn ? 2 : 1;
   const minWidth = subCount > 1 ? 'min-w-[68rem]' : 'min-w-[44rem]';
+  /*
+   * 표가 컨테이너에 다 들어가는 폭부터는 스크롤 안내와 오른쪽 그림자를 감춘다.
+   * 컨테이너 폭 = max-w-[1280px] − 좌우 패딩(lg 에서 4rem)이므로
+   * 68rem(1088px) 표는 1152px, 44rem(704px) 표는 752px 부터 잘리지 않는다.
+   * 이 조건이 없으면 다 보이는 표에도 '오른쪽에 더 있다'는 거짓 신호를 준다.
+   */
+  const whileClipped = subCount > 1 ? 'min-[1152px]:hidden' : 'min-[752px]:hidden';
 
   return (
     <article>
@@ -262,118 +283,149 @@ function FastnessTableBlock({
         <span className="text-[var(--color-ink)]">{table.method}</span>
       </p>
 
-      {/* 좁은 화면에서 가로로 스크롤되는 영역 — 마우스가 없어도 초점을 받아 스크롤할 수 있게 한다 */}
-      <div
-        role="region"
-        aria-label={scrollLabel}
-        tabIndex={0}
-        className="table-scroll mt-4 border border-[color:var(--color-washed)]"
+      {/* 잘린 표라는 사실을 눈으로도 알린다 — 스크롤 영역의 aria-label 은 화면에 보이지 않는다 */}
+      <p
+        aria-hidden="true"
+        className={`mt-2 text-[0.75rem] font-medium tracking-wide break-keep text-[var(--color-denim)] ${whileClipped}`}
       >
-        <table className={`w-full ${minWidth} text-sm`}>
-          {/* 표 전체를 설명하는 캡션. 화면에는 위의 제목 · 시험법이 같은 내용을 보여준다. */}
-          <caption className="sr-only">
-            {caption} — {methodLabel} {table.method}
-          </caption>
+        ↔ {scrollHint}
+      </p>
 
-          <thead>
-            {/* 1단: 샘플 그룹 (식물성 / 화학 / 바이오) */}
-            <tr>
-              <th
-                scope="col"
-                rowSpan={headerRowCount}
-                colSpan={leadColSpan}
-                className={`${CELL_BORDER} bg-[var(--color-indigo-deep)] px-3 py-2 text-left align-bottom text-sm font-semibold break-keep text-white`}
-              >
-                {itemHeader}
-              </th>
-              {INDIGO_ORDER.map((type) => {
-                const count = fabricSamples.filter((sample) => sample.indigo === type).length;
-                return (
-                  <th
-                    key={type}
-                    scope="col"
-                    colSpan={count * subCount}
-                    className={`${CELL_BORDER} border-l-2 border-l-[color:var(--color-denim)] px-2 py-2 text-center text-[0.8125rem] font-semibold break-keep ${GROUP_STYLE[type].head}`}
-                  >
-                    {indigoLabels[type]}
-                  </th>
-                );
-              })}
-            </tr>
+      <div className="relative mt-3">
+        {/*
+          좁은 화면에서 가로로 스크롤되는 영역 — 마우스가 없어도 초점을 받아 스크롤할 수 있게 한다.
+          좌우 테두리는 두지 않는다: 잘린 오른쪽 끝에 세로 마감선이 생기면 '표가 여기서 끝났다'로 읽힌다.
+          bg-white 는 이 섹션이 ivory 배경 위에 놓일 때 화학 그룹 열(ivory/70)이 배경에 묻히는 것을 막는다.
+        */}
+        <div
+          role="region"
+          aria-label={scrollLabel}
+          tabIndex={0}
+          className="table-scroll border-y border-[color:var(--color-washed)] bg-white"
+        >
+          <table className={`w-full ${minWidth} text-sm`}>
+            {/* 표 전체를 설명하는 캡션. 화면에는 위의 제목 · 시험법이 같은 내용을 보여준다. */}
+            <caption className="sr-only">
+              {caption} — {methodLabel} {table.method}
+            </caption>
 
-            {/* 2단: 샘플 번호 */}
-            <tr>
-              {fabricSamples.map((sample, sampleIndex) => (
-                <th
-                  key={sample.id}
-                  scope="col"
-                  colSpan={subCount}
-                  className={`${CELL_BORDER} ${boundaryClass(sampleIndex, 0)} ${GROUP_STYLE[sample.indigo].head} px-2 py-1.5 text-center text-sm font-semibold`}
-                >
-                  <span className="sr-only">{sampleHeader} </span>#{sample.id}
-                </th>
-              ))}
-            </tr>
-
-            {/* 3단: 하위 구분 (경사/위사 · 산성/알칼리성) — 있는 표에만 나온다 */}
-            {subColumns && (
+            <thead>
+              {/* 1단: 샘플 그룹 (식물성 / 화학 / 바이오) */}
               <tr>
-                {fabricSamples.map((sample, sampleIndex) =>
-                  subColumns.map((sub, subIndex) => (
+                <th
+                  scope="col"
+                  rowSpan={headerRowCount}
+                  colSpan={leadColSpan}
+                  className={`${CELL_BORDER} bg-[var(--color-indigo-deep)] px-3 py-2 text-left align-bottom text-sm font-semibold break-keep text-white`}
+                >
+                  {itemHeader}
+                </th>
+                {INDIGO_ORDER.map((type) => {
+                  const count = fabricSamples.filter((sample) => sample.indigo === type).length;
+                  return (
                     <th
-                      key={`${sample.id}-${sub}`}
+                      key={type}
                       scope="col"
-                      className={`${CELL_BORDER} ${boundaryClass(sampleIndex, subIndex)} ${GROUP_STYLE[sample.indigo].head} px-1.5 py-1.5 text-center text-xs font-medium break-keep`}
+                      colSpan={count * subCount}
+                      className={`${CELL_BORDER} border-l-2 border-l-[color:var(--color-denim)] px-2 py-2 text-center text-[0.8125rem] font-semibold break-keep ${GROUP_STYLE[type].head}`}
                     >
-                      {subLabels[sub]}
+                      {indigoLabels[type]}
                     </th>
-                  )),
-                )}
+                  );
+                })}
               </tr>
-            )}
-          </thead>
 
-          <tbody>
-            {table.rows.map((row, rowIndex) => (
-              <tr key={row.key}>
-                {showGroupColumn && spans[rowIndex] > 0 && (
+              {/* 2단: 샘플 번호 */}
+              <tr>
+                {fabricSamples.map((sample, sampleIndex) => (
+                  <th
+                    key={sample.id}
+                    scope="col"
+                    colSpan={subCount}
+                    className={`${CELL_BORDER} ${boundaryClass(sampleIndex, 0)} ${GROUP_STYLE[sample.indigo].head} px-2 py-1.5 text-center text-sm font-semibold`}
+                  >
+                    <span className="sr-only">{sampleHeader} </span>#{sample.id}
+                  </th>
+                ))}
+              </tr>
+
+              {/* 3단: 하위 구분 (경사/위사 · 산성/알칼리성) — 있는 표에만 나온다 */}
+              {subColumns && (
+                <tr>
+                  {fabricSamples.map((sample, sampleIndex) =>
+                    subColumns.map((sub, subIndex) => (
+                      <th
+                        key={`${sample.id}-${sub}`}
+                        scope="col"
+                        className={`${CELL_BORDER} ${boundaryClass(sampleIndex, subIndex)} ${GROUP_STYLE[sample.indigo].head} px-1.5 py-1.5 text-center text-xs font-medium break-keep`}
+                      >
+                        {subLabels[sub]}
+                      </th>
+                    )),
+                  )}
+                </tr>
+              )}
+            </thead>
+
+            <tbody>
+              {table.rows.map((row, rowIndex) => (
+                <tr key={row.key}>
+                  {showGroupColumn && spans[rowIndex] > 0 && (
+                    <th
+                      scope="row"
+                      rowSpan={spans[rowIndex]}
+                      className={`${CELL_BORDER} bg-[var(--color-ivory)] px-2 py-1.5 text-center align-middle text-[0.8125rem] font-semibold break-keep text-[var(--color-denim)]`}
+                    >
+                      {groupLabels[row.group]}
+                    </th>
+                  )}
+                  {/*
+                    행 이름은 가로로 밀어도 왼쪽에 남는다.
+                    이 sticky 가 없으면 #7~#9 를 보려고 약 730px 를 민 순간 행 이름 열이 화면 밖으로 나가
+                    등급 숫자만 남아 무엇의 값인지 알 수 없다.
+                    그룹 열(색 변화 · 오염)은 고정하지 않는다 — 열 폭이 번역문마다 달라
+                    고정 오프셋을 주면 두 열 사이가 벌어지거나 겹친다. 대신 이 열 밑으로 지나가게 둔다.
+                  */}
                   <th
                     scope="row"
-                    rowSpan={spans[rowIndex]}
-                    className={`${CELL_BORDER} bg-[var(--color-ivory)] px-2 py-1.5 text-center align-middle text-[0.8125rem] font-semibold break-keep text-[var(--color-denim)]`}
+                    className={`${CELL_BORDER} ${STICKY_HEAD_EDGE} sticky left-0 z-10 bg-white px-3 py-1.5 text-left text-sm font-medium whitespace-nowrap text-[var(--color-ink)]`}
                   >
-                    {groupLabels[row.group]}
+                    {rowLabels[row.key]}
                   </th>
-                )}
-                <th
-                  scope="row"
-                  className={`${CELL_BORDER} bg-white px-3 py-1.5 text-left text-sm font-medium whitespace-nowrap text-[var(--color-ink)]`}
-                >
-                  {rowLabels[row.key]}
-                </th>
 
-                {fabricSamples.map((sample, sampleIndex) =>
-                  Array.from({ length: subCount }, (_, subIndex) => {
-                    // 등급 문자열은 데이터 그대로 출력한다. 숫자로 변환하지 않는다.
-                    const grade = row.values[sampleIndex * subCount + subIndex];
-                    return (
-                      <td
-                        key={`${sample.id}-${subIndex}`}
-                        className={`${CELL_BORDER} ${boundaryClass(sampleIndex, subIndex)} ${GROUP_STYLE[sample.indigo].cell} px-2 py-1.5 text-center text-sm ${
-                          isLowGrade(grade)
-                            ? 'font-bold text-[var(--color-indigo-deep)]'
-                            : 'text-[var(--color-ink)]'
-                        }`}
-                      >
-                        {grade}
-                      </td>
-                    );
-                  }),
-                )}
-              </tr>
-            ))}
-          </tbody>
-        </table>
+                  {fabricSamples.map((sample, sampleIndex) =>
+                    Array.from({ length: subCount }, (_, subIndex) => {
+                      // 등급 문자열은 데이터 그대로 출력한다. 숫자로 변환하지 않는다.
+                      const grade = row.values[sampleIndex * subCount + subIndex];
+                      return (
+                        <td
+                          key={`${sample.id}-${subIndex}`}
+                          className={`${CELL_BORDER} ${boundaryClass(sampleIndex, subIndex)} ${GROUP_STYLE[sample.indigo].cell} px-2 py-1.5 text-center text-sm ${
+                            isLowGrade(grade)
+                              ? 'font-bold text-[var(--color-indigo-deep)]'
+                              : 'text-[var(--color-ink)]'
+                          }`}
+                        >
+                          {grade}
+                        </td>
+                      );
+                    }),
+                  )}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/*
+          오른쪽 끝에 얹는 그림자 — 잘린 자리가 마감선이 아니라 '더 있다'로 읽히게 한다.
+          표 안의 셀은 모두 불투명 배경이라 스크롤 컨테이너의 배경으로는 이 신호를 만들 수 없어
+          컨테이너 밖에 겹쳐 둔다. 스크롤과 함께 움직이지 않아야 하므로 relative 부모의 자식이다.
+        */}
+        <span
+          aria-hidden="true"
+          className={`pointer-events-none absolute inset-y-0 right-0 w-8 bg-[linear-gradient(to_left,color-mix(in_srgb,var(--color-ink)_16%,transparent),transparent)] ${whileClipped}`}
+        />
       </div>
     </article>
   );

@@ -54,7 +54,7 @@ export default async function DataCertificationsPage({
             eyebrow={t('eyebrow')}
             title={t('title')}
             body={t('body')}
-            size="lg"
+            size="hero"
           />
           <SourceNote className="mt-8 max-w-3xl">{t('regulatoryOmitted')}</SourceNote>
         </div>

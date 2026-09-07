@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import SchemaOrg, { buildOrganizationSchema } from '@/components/seo/SchemaOrg';
 import SectionHeading from '@/components/blugene/SectionHeading';
 import SampleInquiryPanel from '@/components/blugene/SampleInquiryPanel';
+import MapEmbed from '@/components/blugene/MapEmbed';
 import { BRAND, LOCALES, SITE_URL, buildPageMetadata } from '@/data/blugene/site';
 
 export function generateStaticParams() {
@@ -43,7 +44,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
             eyebrow={tInq('eyebrow')}
             title={t('title')}
             body={t('description')}
-            size="lg"
+            size="hero"
           />
         </div>
       </section>
@@ -60,20 +61,14 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
               <p className="mt-4 text-base leading-relaxed break-keep whitespace-pre-line text-[var(--color-ink)]/85">
                 {t('addressDetail')}
               </p>
-              <div className="relative mt-6 h-[320px] w-full overflow-hidden rounded-md border border-[color:var(--color-washed)] bg-[var(--color-ivory)] sm:h-[380px]">
-                {/* 검색어는 로마자 주소를 써서 언어와 무관하게 같은 지점이 해석되게 한다 */}
-                <iframe
-                  src={`https://maps.google.com/maps?q=${encodeURIComponent(
-                    '842 Nonhyeon-ro, Gangnam-gu, Seoul, Korea'
-                  )}&hl=${locale}&z=16&ie=UTF8&iwloc=&output=embed`}
-                  width="100%"
-                  height="100%"
-                  className="absolute inset-0 border-0"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title={t('mapTitle')}
-                />
-              </div>
+              {/* 검색어는 로마자 주소를 써서 언어와 무관하게 같은 지점이 해석되게 한다 */}
+              <MapEmbed
+                src={`https://maps.google.com/maps?q=${encodeURIComponent(
+                  '842 Nonhyeon-ro, Gangnam-gu, Seoul, Korea'
+                )}&hl=${locale}&z=16&ie=UTF8&iwloc=&output=embed`}
+                title={t('mapTitle')}
+                openLabel={t('mapTitle')}
+              />
             </div>
           </div>
         </div>

@@ -10,7 +10,13 @@
   /* 주조색 */
   --color-indigo-deep: #101d46; /* Deep Indigo  — 흰 글자 대비 15.6:1 */
   --color-denim: #365a83; /* Denim Blue   — 흰 배경 위 7.3:1 */
-  --color-washed: #bdd0e3; /* Washed Blue  — 배경/경계용 */
+  --color-washed: #bdd0e3; /* Washed Blue  — 배경/장식용 경계 (흰 배경 위 1.6:1) */
+  /*
+    표 선 전용. washed 는 흰 배경 위 1.6:1 이라 9행 6열 시험표를 눈으로 따라갈 때 행이 사라진다.
+    비텍스트 대비 3:1 을 넘겨야 해서 상대휘도 0.258 로 잡았다 — 흰 배경 3.4:1, ivory 헤더 행 3.1:1.
+    카드 테두리·스와치 테두리까지 이 값으로 올리면 화면이 격자로 보이므로 표 선에만 쓴다.
+  */
+  --color-rule: #788da6;
 
   /* 바탕 */
   --color-ivory: #f6f3ec; /* Cotton Ivory */

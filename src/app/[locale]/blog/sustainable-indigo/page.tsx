@@ -62,7 +62,7 @@ export default async function SustainableIndigoPage({
 
       <section className="w-full border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[900px] px-4 py-16 sm:px-6 sm:py-20 lg:py-24">
-          <SectionHeading headingLevel="h1" title={t('title')} body={t('intro')} size="lg" />
+          <SectionHeading headingLevel="h1" title={t('title')} body={t('intro')} size="hero" />
           <p className="mt-8 text-sm text-[var(--color-slate-muted)]">{BRAND.company} R&amp;D Team</p>
         </div>
       </section>

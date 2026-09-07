@@ -11,6 +11,8 @@ import { inkProcessImage, inkProcessSteps, printingPairs } from '@/data/blugene/
  * 1) 원작 이미지 / 바이오 인디고 잉크 프린팅 결과 두 쌍 (Figure 6-2).
  *    - 원작은 PDF 내장 원본이 184~203px 로 작다. 컨테이너 폭을 제한하고 `object-contain` 으로 두어
  *      과도하게 확대된 저해상도 이미지를 보여주지 않는다.
+ *    - 두 칸은 **같은 폭 프레임**을 쓴다. 결과만 크게 그리면 pairNote 가 아니라고 적어 둔
+ *      '전 · 후 성능 개선' 사진으로 읽힌다. 네 장의 가로세로비가 비슷해 폭을 맞추면 그려지는 크기도 맞는다.
  *    - "전 · 후 성능 개선" 사진이 아니고 원작자 · 고객 정보도 제공 자료에 없다는 점을 pairNote 로 반드시 밝힌다.
  * 2) 잉크 제조 5단계 흐름 (Figure 6-1). 도판을 그대로 키우지 않고 SVG 레일 · 화살표로 직접 그린다.
  *    - 각 단계에는 카탈로그 원문 표기(sourceLabel)를 함께 적는다. 특히 마지막 단계의 원문은 'Formation' 이며
@@ -91,7 +93,7 @@ function PairSide({
   openLabel: string;
   closeLabel: string;
   hint: string;
-  /** 원본 픽셀보다 크게 늘어나지 않도록 폭을 제한한다 */
+  /** 원본 픽셀보다 크게 늘어나지 않도록 폭을 제한한다. 두 칸에 같은 값을 준다. */
   frameClassName: string;
   sizes: string;
 }) {
@@ -100,7 +102,8 @@ function PairSide({
       <figcaption className="text-[0.72rem] leading-snug font-semibold tracking-[0.08em] break-keep text-[var(--color-denim)]">
         {label}
       </figcaption>
-      <div className="mt-3 flex flex-1 items-end">
+      {/* 라벨이 자기 사진에 붙도록 위 맞춤 한다. items-end 로 두면 짧은 원작 쪽 라벨과 사진 사이가 벌어진다 */}
+      <div className="mt-3 flex items-start">
         <div className={`w-full ${frameClassName}`}>
           <ZoomableImage
             src={src}
@@ -132,7 +135,7 @@ export default async function PrintingGallery() {
 
   return (
     <>
-      <SectionHeading eyebrow={t('eyebrow')} title={t('title')} body={t('body')} size="lg" />
+      <SectionHeading eyebrow={t('eyebrow')} title={t('title')} body={t('body')} size="hero" />
 
       {/* 원작 이미지 / 프린팅 결과 두 쌍 — 카탈로그 p.9 Figure 6-2 */}
       <ul className="mt-12 grid gap-12 sm:mt-14 lg:grid-cols-2 lg:gap-14">
@@ -160,8 +163,8 @@ export default async function PrintingGallery() {
                 openLabel={openLabel}
                 closeLabel={closeLabel}
                 hint={photoHint}
-                frameClassName="max-w-[280px]"
-                sizes="(max-width: 640px) 46vw, 280px"
+                frameClassName="max-w-[190px]"
+                sizes="(max-width: 640px) 42vw, 190px"
               />
             </div>
           </li>

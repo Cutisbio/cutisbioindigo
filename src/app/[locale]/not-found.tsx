@@ -21,7 +21,7 @@ export default async function NotFound() {
     <section className="w-full bg-[var(--color-ivory)]">
       <div className="mx-auto max-w-[1280px] px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
         <p className="text-sm font-semibold tracking-[0.2em] text-[var(--color-denim)]">404</p>
-        <SectionHeading headingLevel="h1" title={t('title')} body={t('body')} size="lg" className="mt-4" />
+        <SectionHeading headingLevel="h1" title={t('title')} body={t('body')} size="hero" className="mt-4" />
 
         <nav aria-label={tNav('menu')} className="mt-10">
           <ul className="flex flex-wrap gap-3">

@@ -78,7 +78,7 @@ export default async function FabricComparison({
 
   const content = (
     <>
-      <SectionHeading eyebrow={t('eyebrow')} title={t('title')} body={t('body')} size="lg" />
+      <SectionHeading eyebrow={t('eyebrow')} title={t('title')} body={t('body')} size="hero" />
 
       {/* 라벨이 인쇄된 카탈로그 도판 — 이 섹션의 중심 */}
       <div className="mt-12 sm:mt-14">
@@ -110,11 +110,12 @@ export default async function FabricComparison({
               <h3 className="mt-4 text-base font-semibold break-keep text-[var(--color-indigo-deep)] sm:text-lg">
                 {group.label}
               </h3>
+              {/* justify-between 을 주면 칸 폭(약 370px)만큼 번호와 섬유명이 벌어져 둘을 눈으로 이어붙여야 한다 */}
               <ul className="mt-4 space-y-0">
                 {group.samples.map((sample) => (
                   <li
                     key={sample.id}
-                    className="flex items-baseline justify-between gap-4 border-b border-[color:var(--color-washed)] py-2.5 last:border-b-0"
+                    className="flex items-baseline gap-3 border-b border-[color:var(--color-washed)] py-2.5 last:border-b-0"
                   >
                     <span className="font-mono text-sm font-semibold tracking-tight tabular-nums text-[var(--color-denim)]">
                       #{sample.id}

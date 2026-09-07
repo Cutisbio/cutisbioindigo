@@ -115,10 +115,22 @@ export function documentStatus(cert: Certification, now: Date = new Date()): Doc
   return now.getTime() <= end.getTime() ? 'within-document-period' : 'past-document-period';
 }
 
-/** 다음 인증 상태 점검 권장일 = 가장 이른 문서 만료일 */
-export const nextReviewDate = certifications
-  .map((c) => c.validUntil)
-  .filter((d): d is string => Boolean(d))
-  .sort()[0];
+/**
+ * 다음 인증 상태 점검 권장일 = **아직 지나지 않은** 문서 만료일 중 가장 이른 것.
+ *
+ * 상수로 고정해 두면 그 날짜가 지난 뒤에도 이미 만료된 날짜를 계속 '다음' 점검일로 보여 준다
+ * (같은 화면의 인증 카드는 그때 '유효기간이 지났습니다'로 바뀌므로 서로 모순된다).
+ * 남은 만료일이 없으면 null 을 돌려주고, 화면은 그 항목 자체를 렌더링하지 않는다.
+ * 값은 documentStatus 와 같은 기준(종료일의 하루 끝)으로 판정한다.
+ */
+export function nextReviewDate(now: Date = new Date()): string | null {
+  return (
+    certifications
+      .map((c) => c.validUntil)
+      .filter((d): d is string => Boolean(d))
+      .sort()
+      .find((d) => new Date(`${d}T23:59:59Z`).getTime() >= now.getTime()) ?? null
+  );
+}
 
 export const certificationsAsOf = SOURCE_AS_OF;

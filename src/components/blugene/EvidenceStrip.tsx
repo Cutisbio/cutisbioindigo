@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
+import SourceNote from '@/components/blugene/SourceNote';
 import { anilineTest, carbonTest } from '@/data/blugene/evidence';
 
 /**
@@ -45,13 +46,15 @@ export default async function EvidenceStrip() {
         </dl>
 
         <div className="mt-7 border-t border-[color:var(--color-washed)] pt-5">
-          <p className="max-w-4xl text-[0.8125rem] leading-relaxed break-keep text-[var(--color-slate-muted)]">
-            {t('note')}
-          </p>
-          <ul className="mt-3 space-y-1 text-[0.75rem] text-[var(--color-slate-muted)]">
+          <SourceNote className="max-w-4xl">{t('note')}</SourceNote>
+          {/*
+            시험기관 · 시험법 · 성적서 번호는 이 사이트가 파는 것의 근거이므로 본문 주석보다 작아지면 안 된다.
+            예전에는 여기만 0.75rem 였다. SourceNote 로 묶어 같은 0.8125rem 단으로 맞춘다.
+          */}
+          <SourceNote as="ul" className="mt-3 space-y-1">
             <li>{t('sourceCarbon')}</li>
             <li>{t('sourceAniline')}</li>
-          </ul>
+          </SourceNote>
           <Link
             href="/data-certifications"
             className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"

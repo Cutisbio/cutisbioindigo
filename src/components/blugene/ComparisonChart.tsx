@@ -478,6 +478,11 @@ export default function ComparisonChart({
 
       {caption ? <SourceNote className="mt-4">{caption}</SourceNote> : null}
 
+      {/* accessibleNote 는 "값은 아래 표에서도 읽을 수 있다"고 안내하는 문장이므로
+          반드시 표보다 **위**에 있어야 한다. 표 아래로 내려가면 '아래 표'가 가리키는 것이
+          사라져 그래프에서 표를 찾는 독자를 반대 방향으로 보낸다. */}
+      <SourceNote className={caption ? 'mt-2' : 'mt-4'}>{accessibleNote}</SourceNote>
+
       {/* 그래프와 같은 값을 담은 실제 데이터 표 */}
       <div
         className="table-scroll mt-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--color-denim)]"
@@ -493,7 +498,8 @@ export default function ComparisonChart({
             {tableCaption}
           </caption>
           <thead>
-            <tr className="border-y border-[color:var(--color-washed)]">
+            {/* 표 머리·행 구분선은 rule. 차트 격자선(COLOR.grid)은 강조 밴드 채움과 값을 공유하므로 washed 로 둔다. */}
+            <tr className="border-y border-[color:var(--color-rule)]">
               <th
                 scope="col"
                 className="px-3 py-2.5 text-[0.8125rem] font-semibold break-keep text-[var(--color-indigo-deep)]"
@@ -528,7 +534,7 @@ export default function ComparisonChart({
             {rows.map((row) => (
               <tr
                 key={row.id}
-                className={`border-b border-[color:var(--color-washed)] ${
+                className={`border-b border-[color:var(--color-rule)] ${
                   row.highlight ? 'bg-[var(--color-ivory)]' : ''
                 }`}
               >
@@ -571,7 +577,6 @@ export default function ComparisonChart({
       </div>
 
       <SourceNote className="mt-4">{notDetectedExplain}</SourceNote>
-      <SourceNote className="mt-2">{accessibleNote}</SourceNote>
     </div>
   );
 }

@@ -4,7 +4,7 @@ import { Link } from '@/i18n/routing';
 import SectionHeading from '@/components/blugene/SectionHeading';
 import SourceNote, { AssetKind } from '@/components/blugene/SourceNote';
 import ZoomableImage from '@/components/blugene/ZoomableImage';
-import ProductionPathway from '@/components/blugene/ProductionPathway';
+import AnilineStructures from '@/components/blugene/AnilineStructures';
 import { LOCALES, buildPageMetadata } from '@/data/blugene/site';
 
 export function generateStaticParams() {
@@ -49,7 +49,7 @@ export default async function TechnologyPage({
             eyebrow={t('heroEyebrow')}
             title={t('heroTitle')}
             body={t('heroBody')}
-            size="lg"
+            size="hero"
           />
         </div>
       </section>
@@ -57,9 +57,7 @@ export default async function TechnologyPage({
       {/* 네 가지 경로 */}
       <section className="w-full bg-white">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-          <h2 className="text-2xl font-bold break-keep text-[var(--color-indigo-deep)] sm:text-3xl">
-            {t('routesTitle')}
-          </h2>
+          <SectionHeading title={t('routesTitle')} size="lg" />
 
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {routes.map((route, i) => {
@@ -120,9 +118,7 @@ export default async function TechnologyPage({
       <section className="w-full bg-[var(--color-ivory)]">
         <div className="mx-auto grid max-w-[1280px] gap-12 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-24">
           <div>
-            <h2 className="text-2xl font-bold break-keep text-[var(--color-indigo-deep)] sm:text-3xl">
-              {t('carbonTitle')}
-            </h2>
+            <SectionHeading title={t('carbonTitle')} size="lg" />
             <p className="mt-5 text-base leading-[1.9] break-keep text-[var(--color-ink)]/85 sm:text-lg">
               {t('carbonBody')}
             </p>
@@ -143,21 +139,17 @@ export default async function TechnologyPage({
         </div>
       </section>
 
-      {/* 원료에서 원단까지 */}
-      <section className="w-full bg-white">
-        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-          <h2 className="sr-only">{t('processTitle')}</h2>
-          <ProductionPathway variant="bare" />
-        </div>
-      </section>
+      {/*
+        4단계 생산 경로 개념도(ProductionPathway)는 홈의 ScienceSection 이 이미 보여 주고
+        "기술 자세히 보기 →" 로 이 페이지를 가리킨다. 같은 도표를 여기서 다시 그리면
+        더 자세한 내용을 기대하고 넘어온 독자가 방금 본 화면을 되풀이해 읽게 되므로 두지 않는다.
+      */}
 
-      {/* 불순물 · 작업 환경 */}
-      <section className="w-full bg-[var(--color-ivory)]">
+      {/* 불순물 · 작업 환경 — 앞 섹션이 아이보리이므로 여기는 흰 배경이어야 경계가 보인다 */}
+      <section className="w-full bg-white">
         <div className="mx-auto grid max-w-[1280px] gap-12 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-24">
           <div>
-            <h2 className="text-2xl font-bold break-keep text-[var(--color-indigo-deep)] sm:text-3xl">
-              {t('impurityTitle')}
-            </h2>
+            <SectionHeading title={t('impurityTitle')} size="lg" />
             <p className="mt-5 text-base leading-[1.9] break-keep text-[var(--color-ink)]/85">
               {t('impurityBody')}
             </p>
@@ -168,11 +160,15 @@ export default async function TechnologyPage({
               {t('cta')}
               <span aria-hidden="true">→</span>
             </Link>
+            {/*
+              아닐린을 왜 확인하는지 글로만 설명하고 물질은 한 번도 보여 주지 않으면
+              독자는 데이터 · 인증 화면으로 넘어가야 실체를 본다. 코드로 그린 골격 구조식이라
+              이미지 생성 없이 두 물질의 차이를 그대로 보여 줄 수 있다.
+            */}
+            <AnilineStructures />
           </div>
           <div>
-            <h2 className="text-2xl font-bold break-keep text-[var(--color-indigo-deep)] sm:text-3xl">
-              {t('safetyTitle')}
-            </h2>
+            <SectionHeading title={t('safetyTitle')} size="lg" />
             <p className="mt-5 text-base leading-[1.9] break-keep text-[var(--color-ink)]/85">
               {t('safetyBody')}
             </p>

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import SourceNote from '@/components/blugene/SourceNote';
 
 /**
  * 원본 확대 보기.
@@ -66,7 +67,13 @@ export default function ZoomableImage({
   }, []);
 
   return (
-    <>
+    /*
+     * 반드시 하나의 <figure> 로 묶는다.
+     * Fragment 로 두면 button 과 caption 이 각각 별개의 grid/flex 아이템이 되어,
+     * 여러 장을 늘어놓는 레이아웃(예: lg:grid-cols-3)에서 출처 캡션이 옆 칸으로 밀려
+     * 다른 도판에 붙는다 — 근거 자료의 오귀속이므로 레이아웃과 무관하게 막아야 한다.
+     */
+    <figure className="m-0">
       <button
         type="button"
         onClick={open}
@@ -87,12 +94,6 @@ export default function ZoomableImage({
           {openLabel}
         </span>
       </button>
-
-      {caption && (
-        <p className="mt-2 text-[0.8125rem] leading-relaxed break-keep text-[var(--color-slate-muted)]">
-          {caption}
-        </p>
-      )}
 
       <dialog
         ref={dialogRef}
@@ -132,6 +133,14 @@ export default function ZoomableImage({
           )}
         </div>
       </dialog>
-    </>
+
+      {/* figcaption 은 figure 의 첫째 또는 마지막 자식이어야 연결이 보장된다.
+          닫힌 <dialog> 는 display:none 이라 캡션은 여전히 썸네일 바로 아래에 보인다. */}
+      {caption && (
+        <SourceNote as="figcaption" className="mt-2">
+          {caption}
+        </SourceNote>
+      )}
+    </figure>
   );
 }
