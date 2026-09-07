@@ -97,7 +97,7 @@ OEKO-TEX ECO PASSPORT(E2AGHSST4) 문서에 적힌 유효기한이 2026-10-31 이
 
 ## 4. 화면 캡처
 
-경로: `docs/screenshots/` (검증용으로 JPEG 압축)
+경로: `docs/screenshots/` (캡처 시점에 JPEG 으로 바로 저장한다 — PNG 무손실 인코딩은 홈처럼 22,000px 이 넘는 화면에서 4분을 넘겨 실패했다)
 
 특정 화면만 다시 찍으려면 파일명 일부를 세 번째 인자로 넘긴다 —
 `node scripts/capture-screens.mjs http://localhost:3000 docs/screenshots about`

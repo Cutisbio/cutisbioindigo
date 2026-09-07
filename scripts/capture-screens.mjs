@@ -88,7 +88,12 @@ class Cdp {
       }
     });
   }
-  send(method, params = {}, sessionId) {
+  /**
+   * @param timeoutMs 응답 대기 시간. 기본 2분.
+   *   홈처럼 22,000px 이 넘는 화면은 `Page.captureScreenshot` 한 번에 그보다 오래 걸려
+   *   전부 실패했다. 부르는 쪽에서 화면 높이에 맞춰 늘려 준다.
+   */
+  send(method, params = {}, sessionId, timeoutMs = 120_000) {
     const id = ++this.id;
     return new Promise((resolve, reject) => {
       this.pending.set(id, { resolve, reject });
@@ -98,9 +103,9 @@ class Cdp {
       setTimeout(() => {
         if (this.pending.has(id)) {
           this.pending.delete(id);
-          reject(new Error(`CDP 응답 없음: ${method}`));
+          reject(new Error(`CDP 응답 없음: ${method} (${Math.round(timeoutMs / 1000)}초 대기)`));
         }
-      }, 120_000);
+      }, timeoutMs);
     });
   }
 }
@@ -154,7 +159,7 @@ async function main() {
   const { sessionId } = await browser.send('Target.attachToTarget', { targetId, flatten: true });
 
   // 페이지 명령은 세션 id 를 붙여 보낸다
-  const page = { send: (m, p) => browser.send(m, p, sessionId) };
+  const page = { send: (m, p, t) => browser.send(m, p, sessionId, t) };
 
   await page.send('Page.enable');
   await page.send('Runtime.enable');
@@ -193,8 +198,12 @@ async function main() {
 
     // 전체 페이지는 뷰포트 높이를 문서 높이로 늘려서 한 번에 담는다
     // (거대한 clip 을 주면 captureScreenshot 이 응답하지 않는 경우가 있다)
+    // 홈은 22,000px 이 넘는다. 예전 상한 12,000px 때문에 마지막 세 섹션이 캡처에서
+    // 통째로 빠져 있었고, 검토 자료에도 그 부분이 없었다. 상한은 인코딩이 감당하는
+    // 선까지만 두고, 대신 아래에서 높이에 맞춰 대기 시간을 늘린다.
+    let tall = height;
     if (fullPage) {
-      const tall = Math.min(metrics.sh, 12000);
+      tall = Math.min(metrics.sh, 32000);
       await page.send('Emulation.setDeviceMetricsOverride', {
         width,
         height: tall,
@@ -205,8 +214,13 @@ async function main() {
       });
       await sleep(700);
     }
-    const { data } = await page.send('Page.captureScreenshot', { format: 'png' });
-    const file = path.join(OUT, `${name}.png`);
+    // JPEG 으로 직접 받는다. 문서 파일이 어차피 JPEG 이기도 하지만, 무엇보다
+    // 홈처럼 22,000px 이 넘는 화면은 PNG 무손실 인코딩이 4분을 넘겨 끝내 실패했다.
+    const { data } = await page.send('Page.captureScreenshot', { format: 'jpeg', quality: 78 },
+      // 긴 화면일수록 인코딩이 오래 걸린다 — 10,000px 마다 2분씩 더 준다
+      Math.max(120_000, Math.ceil(tall / 10_000) * 120_000)
+    )
+    const file = path.join(OUT, `${name}.jpg`);
     fs.writeFileSync(file, Buffer.from(data, 'base64'));
 
     const overflow = metrics.sw > metrics.cw;
