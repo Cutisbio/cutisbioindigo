@@ -1,11 +1,11 @@
-import type { Metadata } from 'next';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { Link } from '@/i18n/routing';
-import SectionHeading from '@/components/blugene/SectionHeading';
-import SourceNote, { AssetKind } from '@/components/blugene/SourceNote';
-import ZoomableImage from '@/components/blugene/ZoomableImage';
-import AnilineStructures from '@/components/blugene/AnilineStructures';
-import { LOCALES, buildPageMetadata } from '@/data/blugene/site';
+import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/routing";
+import SectionHeading from "@/components/blugene/SectionHeading";
+import SourceNote, { AssetKind } from "@/components/blugene/SourceNote";
+import ZoomableImage from "@/components/blugene/ZoomableImage";
+import AnilineStructures from "@/components/blugene/AnilineStructures";
+import { LOCALES, buildPageMetadata } from "@/data/blugene/site";
 
 export function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -17,16 +17,21 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'Technology' });
+  const t = await getTranslations({ locale, namespace: "Technology" });
   return buildPageMetadata({
     locale,
-    path: '/technology',
-    title: t('metaTitle'),
-    description: t('metaDescription'),
+    path: "/technology",
+    title: t("metaTitle"),
+    description: t("metaDescription"),
   });
 }
 
-type Route = { name: string; feedstock: string; intermediate: string; text: string };
+type Route = {
+  name: string;
+  feedstock: string;
+  intermediate: string;
+  text: string;
+};
 
 export default async function TechnologyPage({
   params,
@@ -36,9 +41,9 @@ export default async function TechnologyPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = await getTranslations({ locale, namespace: 'Technology' });
-  const tCommon = await getTranslations({ locale, namespace: 'Common' });
-  const routes = t.raw('routes') as Route[];
+  const t = await getTranslations({ locale, namespace: "Technology" });
+  const tCommon = await getTranslations({ locale, namespace: "Common" });
+  const routes = t.raw("routes") as Route[];
 
   return (
     <>
@@ -46,78 +51,111 @@ export default async function TechnologyPage({
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <SectionHeading
             headingLevel="h1"
-            eyebrow={t('heroEyebrow')}
-            title={t('heroTitle')}
-            body={t('heroBody')}
+            eyebrow={t("heroEyebrow")}
+            title={t("heroTitle")}
+            body={t("heroBody")}
             size="hero"
           />
         </div>
       </section>
 
-      {/* 네 가지 경로 */}
+      {/* 네 가지 경로 — 글과 그림이 같은 내용을 두 방식으로 설명하므로 한 덩어리로 묶는다.
+          예전에는 네 카드(1216px)와 도식(895px)이 폭도 다르고 그 사이에 주석까지 끼어 있어
+          서로 다른 자료처럼 보였다. 도식을 카드와 같은 폭으로 바로 아래 붙이고, 주석은
+          그림 뒤로 뺐다. */}
       <section className="w-full bg-white">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-          <SectionHeading title={t('routesTitle')} size="lg" />
+          <SectionHeading title={t("routesTitle")} size="lg" />
 
-          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {routes.map((route, i) => {
-              const isBio = i === 2;
-              return (
-                <article
-                  key={route.name}
-                  className={`rounded-md border p-6 ${
-                    isBio
-                      ? 'border-[var(--color-indigo-deep)] bg-[var(--color-ivory)]'
-                      : 'border-[color:var(--color-washed)] bg-white'
-                  }`}
-                >
-                  {/* 어느 것이 우리 경로인지가 테두리 색으로만 표시돼, 색을 구분하지 못하면
-                      네 카드가 같아 보였다. 의미를 글자가 담게 한다. */}
-                  {isBio && (
-                    <p className="mb-2 text-[0.7rem] font-semibold tracking-[0.16em] text-[var(--color-denim)] uppercase">
-                      {t('routeOursLabel')}
+          <div className="mt-10 rounded-lg border border-[color:var(--color-washed)] bg-[var(--color-ivory)] p-4 sm:p-6 lg:p-8">
+            {/* 카드 순서는 도식의 왼쪽부터와 같다(화학 · 하이브리드 · 미생물 · 식물).
+                순서에 뜻이 있으므로 목록으로 둔다. */}
+            <ol className="grid list-none gap-5 p-0 md:grid-cols-2 xl:grid-cols-4">
+              {routes.map((route, i) => {
+                const isBio = i === 2;
+                return (
+                  <li
+                    key={route.name}
+                    className={`rounded-md border bg-white p-6 ${
+                      isBio
+                        ? "border-2 border-[var(--color-indigo-deep)]"
+                        : "border-[color:var(--color-washed)]"
+                    }`}
+                  >
+                    <div className="mb-3 flex items-center gap-2">
+                      {/* 도식의 몇 번째 줄기인지 눈으로 짚어 주는 번호다. 순서는 목록
+                          자체가 이미 알려 주므로 보조기기에는 읽히지 않게 한다. */}
+                      <span
+                        aria-hidden="true"
+                        className={`inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold ${
+                          isBio
+                            ? "bg-[var(--color-indigo-deep)] text-white"
+                            : "bg-[var(--color-washed)] text-[var(--color-indigo-deep)]"
+                        }`}
+                      >
+                        {i + 1}
+                      </span>
+                      {/* 어느 것이 우리 경로인지가 테두리 색으로만 표시되면 색을 구분하지
+                          못하는 사람에게는 네 카드가 같아 보인다. 의미를 글자가 담게 한다. */}
+                      {isBio && (
+                        <p className="text-[0.7rem] font-semibold tracking-[0.16em] text-[var(--color-denim)] uppercase">
+                          {t("routeOursLabel")}
+                        </p>
+                      )}
+                    </div>
+                    <h3 className="text-lg leading-snug font-semibold break-keep text-[var(--color-indigo-deep)]">
+                      {route.name}
+                    </h3>
+                    <dl className="mt-4 space-y-2 text-sm">
+                      <div>
+                        <dt className="text-[var(--color-slate-muted)]">
+                          {t("routeFeedstockLabel")}
+                        </dt>
+                        <dd className="font-medium break-keep text-[var(--color-ink)]">
+                          {route.feedstock}
+                        </dd>
+                      </div>
+                      <div>
+                        <dt className="text-[var(--color-slate-muted)]">
+                          {t("routeIntermediateLabel")}
+                        </dt>
+                        <dd className="font-medium break-keep text-[var(--color-ink)]">
+                          {route.intermediate}
+                        </dd>
+                      </div>
+                    </dl>
+                    <p className="mt-4 text-sm leading-relaxed break-keep text-[var(--color-ink)]/85">
+                      {route.text}
                     </p>
-                  )}
-                  <h3 className="text-lg leading-snug font-semibold break-keep text-[var(--color-indigo-deep)]">
-                    {route.name}
-                  </h3>
-                  <dl className="mt-4 space-y-2 text-sm">
-                    <div>
-                      <dt className="text-[var(--color-slate-muted)]">{t('routeFeedstockLabel')}</dt>
-                      <dd className="font-medium break-keep text-[var(--color-ink)]">{route.feedstock}</dd>
-                    </div>
-                    <div>
-                      <dt className="text-[var(--color-slate-muted)]">{t('routeIntermediateLabel')}</dt>
-                      <dd className="font-medium break-keep text-[var(--color-ink)]">
-                        {route.intermediate}
-                      </dd>
-                    </div>
-                  </dl>
-                  <p className="mt-4 text-sm leading-relaxed break-keep text-[var(--color-ink)]/85">
-                    {route.text}
-                  </p>
-                </article>
-              );
-            })}
-          </div>
+                  </li>
+                );
+              })}
+            </ol>
 
-          <SourceNote className="mt-6 max-w-3xl">{t('routesNote')}</SourceNote>
-
-          <div className="mt-10 max-w-4xl">
-            <div className="mb-3">
-              <AssetKind>{tCommon('conceptImage')}</AssetKind>
+            {/* 같은 상자 안에서 글 다음에 그림이 온다는 것을 선 하나로 알린다 */}
+            <div className="mt-8 border-t border-[color:var(--color-washed)] pt-8">
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+                <AssetKind>{tCommon("conceptImage")}</AssetKind>
+                <p className="text-sm break-keep text-[var(--color-slate-muted)]">
+                  {t("routesFigureBridge")}
+                </p>
+              </div>
+              <div className="mt-4">
+                <ZoomableImage
+                  src="/blugene/technology/four-production-routes.png"
+                  alt={t("routesAlt")}
+                  width={1191}
+                  height={771}
+                  sizes="(max-width: 1280px) 92vw, 1160px"
+                  openLabel={tCommon("openImage")}
+                  closeLabel={tCommon("close")}
+                  caption={t("routesCaption")}
+                />
+              </div>
             </div>
-            <ZoomableImage
-              src="/blugene/technology/four-production-routes.png"
-              alt={t('routesAlt')}
-              width={1191}
-              height={771}
-              sizes="(max-width: 1024px) 92vw, 900px"
-              openLabel={tCommon('openImage')}
-              closeLabel={tCommon('close')}
-              caption={t('routesCaption')}
-            />
           </div>
+
+          <SourceNote className="mt-6 max-w-3xl">{t("routesNote")}</SourceNote>
         </div>
       </section>
 
@@ -125,23 +163,23 @@ export default async function TechnologyPage({
       <section className="w-full bg-[var(--color-ivory)]">
         <div className="mx-auto grid max-w-[1280px] gap-12 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-24">
           <div>
-            <SectionHeading title={t('carbonTitle')} size="lg" />
+            <SectionHeading title={t("carbonTitle")} size="lg" />
             <p className="mt-5 text-base leading-[1.9] break-keep text-[var(--color-ink)]/85 sm:text-lg">
-              {t('carbonBody')}
+              {t("carbonBody")}
             </p>
             <div className="mt-6">
-              <AssetKind>{tCommon('conceptImage')}</AssetKind>
+              <AssetKind>{tCommon("conceptImage")}</AssetKind>
             </div>
           </div>
           <ZoomableImage
             src="/blugene/technology/carbon-pathways.png"
-            alt={t('carbonAlt')}
+            alt={t("carbonAlt")}
             width={1230}
             height={678}
             sizes="(max-width: 1024px) 92vw, 600px"
-            openLabel={tCommon('openImage')}
-            closeLabel={tCommon('close')}
-            caption={t('carbonCaption')}
+            openLabel={tCommon("openImage")}
+            closeLabel={tCommon("close")}
+            caption={t("carbonCaption")}
           />
         </div>
       </section>
@@ -156,15 +194,15 @@ export default async function TechnologyPage({
       <section className="w-full bg-white">
         <div className="mx-auto grid max-w-[1280px] gap-12 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-24">
           <div>
-            <SectionHeading title={t('impurityTitle')} size="lg" />
+            <SectionHeading title={t("impurityTitle")} size="lg" />
             <p className="mt-5 text-base leading-[1.9] break-keep text-[var(--color-ink)]/85">
-              {t('impurityBody')}
+              {t("impurityBody")}
             </p>
             <Link
               href="/data-certifications"
               className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
             >
-              {t('cta')}
+              {t("cta")}
               <span aria-hidden="true">→</span>
             </Link>
             {/*
@@ -175,23 +213,23 @@ export default async function TechnologyPage({
             <AnilineStructures />
           </div>
           <div>
-            <SectionHeading title={t('safetyTitle')} size="lg" />
+            <SectionHeading title={t("safetyTitle")} size="lg" />
             <p className="mt-5 text-base leading-[1.9] break-keep text-[var(--color-ink)]/85">
-              {t('safetyBody')}
+              {t("safetyBody")}
             </p>
             <div className="mt-6">
               <div className="mb-3">
-                <AssetKind>{tCommon('conceptImage')}</AssetKind>
+                <AssetKind>{tCommon("conceptImage")}</AssetKind>
               </div>
               <ZoomableImage
                 src="/blugene/technology/worker-safety.png"
-                alt={t('safetyAlt')}
+                alt={t("safetyAlt")}
                 width={988}
                 height={331}
                 sizes="(max-width: 1024px) 92vw, 560px"
-                openLabel={tCommon('openImage')}
-                closeLabel={tCommon('close')}
-                caption={t('conceptCaptionSafety')}
+                openLabel={tCommon("openImage")}
+                closeLabel={tCommon("close")}
+                caption={t("conceptCaptionSafety")}
               />
             </div>
           </div>

@@ -454,7 +454,8 @@
     "impurityBody": "Anilin ve N-metilanilin, kimyasal sentez yolunun başlangıç maddesi veya ara ürünüdür ve nihai indigo tozunda tepkimeye girmemiş kalıntı olarak kalabilir. Toksisitesi ve kanserojen olma ihtimali nedeniyle çeşitli sertifikasyon standartları, tekstil boyalarında ve nihai üründe izin verilen konsantrasyonu sınırlar.",
     "cta": "Test verilerinin tamamını görün",
     "conceptCaptionSafety": "Katalog s.4 Figure 2-1. Tehlikeli ve tehlikesiz madde kullanımını karşılaştıran bir çizimdir; gerçek bir çalışma alanının fotoğrafı değildir.",
-    "routeOursLabel": "Yolumuz"
+    "routeOursLabel": "Yolumuz",
+    "routesFigureBridge": "Yukarıdaki dört yolu tek sayfada toplayan katalog şemasıdır. Görseldeki sıra da kartlardakiyle aynıdır."
   },
   "DyeingPrinting": {
     "metaTitle": "Boyama · Baskı",

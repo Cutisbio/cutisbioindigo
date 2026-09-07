@@ -454,7 +454,8 @@
     "impurityBody": "苯胺与 N-甲基苯胺是化学合成路径的起始物或中间体，可能作为未反应残留物留在最终的靛蓝粉末中。由于其毒性与潜在致癌性，多项认证标准对纺织用染料及最终产品中的允许浓度作出限制。",
     "cta": "查看全部检测数据",
     "conceptCaptionSafety": "目录第 4 页 Figure 2-1。这是对比有害物质与无害物质操作方式的插图，并非实际车间的照片。",
-    "routeOursLabel": "我们的路线"
+    "routeOursLabel": "我们的路线",
+    "routesFigureBridge": "这是把上方四条路径汇总在一张图上的产品目录示意图。图中的顺序也与上方卡片相同。"
   },
   "DyeingPrinting": {
     "metaTitle": "染色 · 印花",

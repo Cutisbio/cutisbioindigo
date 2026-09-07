@@ -454,7 +454,8 @@
     "impurityBody": "Aniline and N-methylaniline are starting materials or intermediates in chemical synthesis routes, and they can remain as unreacted residues in the final indigo powder. Because of their toxicity and possible carcinogenicity, a number of certification standards limit the permitted concentration in textile dyes and in finished products.",
     "cta": "See all the test data",
     "conceptCaptionSafety": "Catalogue p.4 Figure 2-1. An illustration contrasting the handling of hazardous and non-hazardous substances; it is not a photograph of an actual workplace.",
-    "routeOursLabel": "Our Path"
+    "routeOursLabel": "Our Path",
+    "routesFigureBridge": "This catalogue diagram lays out the four routes above on a single sheet. The figure follows the same order as the cards."
   },
   "DyeingPrinting": {
     "metaTitle": "Dyeing & Printing",
