@@ -37,7 +37,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/brand/cutisbio-logo.png`);
 
   const areas = [
-    { title: t('medicalTitle'), text: t('medicalText'), highlight: false },
+    { title: t('healthTitle'), text: t('healthText'), highlight: false },
     { title: t('beautyTitle'), text: t('beautyText'), highlight: false },
     { title: t('fashionTitle'), text: t('fashionText'), highlight: true },
   ];

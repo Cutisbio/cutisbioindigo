@@ -2871,33 +2871,33 @@
       "bn": "e68a81e5d25372c1",
       "tr": "e68a81e5d25372c1"
     },
-    "About.medicalTitle": {
-      "en": "67d767c74488808e",
-      "ja": "67d767c74488808e",
-      "zh": "67d767c74488808e",
-      "bn": "67d767c74488808e",
-      "tr": "67d767c74488808e"
+    "About.healthTitle": {
+      "en": "b9e697a6a3627e47",
+      "ja": "b9e697a6a3627e47",
+      "zh": "b9e697a6a3627e47",
+      "bn": "b9e697a6a3627e47",
+      "tr": "b9e697a6a3627e47"
     },
-    "About.medicalText": {
-      "en": "39a92d00356614fd",
-      "ja": "39a92d00356614fd",
-      "zh": "39a92d00356614fd",
-      "bn": "39a92d00356614fd",
-      "tr": "39a92d00356614fd"
+    "About.healthText": {
+      "en": "e2cb2675f1375bcc",
+      "ja": "e2cb2675f1375bcc",
+      "zh": "e2cb2675f1375bcc",
+      "bn": "e2cb2675f1375bcc",
+      "tr": "e2cb2675f1375bcc"
     },
     "About.beautyTitle": {
-      "en": "29969b905dcdb7d0",
-      "ja": "29969b905dcdb7d0",
-      "zh": "29969b905dcdb7d0",
-      "bn": "29969b905dcdb7d0",
-      "tr": "29969b905dcdb7d0"
+      "en": "dd7d094046caa4b0",
+      "ja": "dd7d094046caa4b0",
+      "zh": "dd7d094046caa4b0",
+      "bn": "dd7d094046caa4b0",
+      "tr": "dd7d094046caa4b0"
     },
     "About.beautyText": {
-      "en": "aee61432383c56d2",
-      "ja": "aee61432383c56d2",
-      "zh": "aee61432383c56d2",
-      "bn": "aee61432383c56d2",
-      "tr": "aee61432383c56d2"
+      "en": "ce14abe6e33db4b1",
+      "ja": "ce14abe6e33db4b1",
+      "zh": "ce14abe6e33db4b1",
+      "bn": "ce14abe6e33db4b1",
+      "tr": "ce14abe6e33db4b1"
     },
     "About.fashionTitle": {
       "en": "408d243d4075d58d",
