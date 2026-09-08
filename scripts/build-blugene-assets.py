@@ -104,6 +104,20 @@ def convert(src: Path, dst: Path, max_w: int | None, opts: dict) -> tuple[int, i
     return im.width, im.height, dst.stat().st_size
 
 
+# 고객이 채팅에 첨부한 홈 섹션 시안(2026-09-09, 2000×1567 JPEG)에서 잘라낸 사진 4장.
+# 카탈로그 자료가 아니며 생성 이미지로 보인다. 홈 「원료에서 원단까지」 4단계에 개념 이미지로 쓴다.
+_PATHWAY_PROVENANCE = (
+    "고객 제공 — 2026-09-09 채팅에 첨부한 홈 섹션 시안(2000×1567 JPEG)에서 잘라냄. "
+    "카탈로그 자료가 아니며 생성 이미지로 보임"
+)
+CLIENT_IMAGES: list[tuple[str, str]] = [
+    ("technology/pathway/01-feedstock.jpg", _PATHWAY_PROVENANCE),
+    ("technology/pathway/02-fermentation.jpg", _PATHWAY_PROVENANCE),
+    ("technology/pathway/03-recovery.jpg", _PATHWAY_PROVENANCE),
+    ("technology/pathway/04-fabric.jpg", _PATHWAY_PROVENANCE),
+]
+
+
 def main() -> int:
     if not SRC.exists():
         print(f"[!] 원본 폴더가 없습니다: {SRC}", file=sys.stderr)
@@ -183,6 +197,22 @@ def main() -> int:
             "bytes": pdf_dst.stat().st_size,
         }
         print(f"  catalogue/*.pdf  {pdf_dst.stat().st_size//1024} KB")
+
+    # --- 고객이 따로 준 이미지 ---
+    # 카탈로그가 아니라 고객이 채팅 · 메일로 건넨 이미지는 SRC 에 원본이 없다. 이미 public/ 에
+    # 들어 있는 파일을 그대로 두고 출처만 매니페스트에 남긴다 — 그래야 이 스크립트를 다시 돌려도
+    # 출처 기록이 사라지지 않는다. 변환 · 색보정은 하지 않는다.
+    for rel_dst, provenance in CLIENT_IMAGES:
+        f = OUT / rel_dst
+        if not f.exists():
+            print(f"[!] 고객 제공 이미지 없음: {rel_dst}")
+            continue
+        im = Image.open(f)
+        manifest[f"/blugene/{rel_dst}"] = {
+            "source": provenance,
+            "width": im.width, "height": im.height, "bytes": f.stat().st_size,
+        }
+        print(f"  {rel_dst:52s} {im.width:5d}x{im.height:<5d} {f.stat().st_size//1024:5d} KB  (고객 제공)")
 
     (OUT / "asset-manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"

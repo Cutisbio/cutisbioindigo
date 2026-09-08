@@ -83,23 +83,27 @@
     "metaphorNote": "'İndigonun DNA'sını yeniden yazmak' markanın kullandığı bir benzetmedir. İndigo molekülünün kendisinde gen bulunduğu anlamına gelmez; indigonun mikroorganizmaların biyosentez yolakları ve fermantasyon yoluyla üretildiğini ifade eder.",
     "cta": "Teknolojiyi ayrıntılı inceleyin",
     "diagramTitle": "Hammaddeden kumaşa",
-    "diagramNote": "Bu bir kavram şemasıdır. Gerçek proses enerji ve proses girdileri gerektirir; bu görsel, hammadde karbonunun izlediği yolu basitleştirerek gösterir.",
+    "diagramNote": "Fotoğraflar, süreç adımlarını anlatmak için hazırlanmış kavramsal görsellerdir; gerçek CutisBio tesislerinin veya ürünlerinin fotoğrafı değildir. Gerçek süreç, enerji ve süreç girdileri gerektirir.",
     "steps": [
       {
         "title": "Yenilenebilir hammadde",
-        "text": "Başlangıç noktası, mısır gibi biyokütlelerden gelen yenilenebilir karbondur."
+        "text": "Başlangıç noktası, mısır gibi biyokütlelerden gelen yenilenebilir karbondur.",
+        "imageAlt": "Mısır tarlası fotoğrafı. Biyokütle hammaddesini temsil eden kavramsal bir görseldir; gerçek CutisBio çiftliğinin fotoğrafı değildir."
       },
       {
         "title": "Mikrobiyal fermantasyon",
-        "text": "İndigo, mikroorganizmaların biyosentez yolakları kullanılarak fermantasyonla üretilir."
+        "text": "İndigo, mikroorganizmaların biyosentez yolakları kullanılarak fermantasyonla üretilir.",
+        "imageAlt": "Paslanmaz çelik fermantasyon tankı fotoğrafı. Gözetleme camından mavi kültür sıvısı görülüyor. Fermantasyon sürecini temsil eden kavramsal bir görseldir; gerçek CutisBio tesisinin fotoğrafı değildir."
       },
       {
         "title": "İndigonun geri kazanımı · ürünleştirme",
-        "text": "Geri kazanım ve saflaştırmanın ardından toz ve dijital baskı mürekkebi olarak ürünleştirilir."
+        "text": "Geri kazanım ve saflaştırmanın ardından toz ve dijital baskı mürekkebi olarak ürünleştirilir.",
+        "imageAlt": "Mavi indigo tozu dolu cam kavanoz ile dijital baskı mürekkebi şişesinin fotoğrafı. İki ürün formunu temsil eden kavramsal bir görseldir; gerçek CutisBio ürünlerinin fotoğrafı değildir."
       },
       {
         "title": "Kumaş boyama · baskı",
-        "text": "Pamuk · ipek · kaşmir boyamada ve dijital baskıda uygulanır."
+        "text": "Pamuk · ipek · kaşmir boyamada ve dijital baskıda uygulanır.",
+        "imageAlt": "Beyaz kumaşa mavi desen basan dijital baskı makinesinin fotoğrafı. Kumaş baskısını temsil eden kavramsal bir görseldir; gerçek CutisBio tesisinin fotoğrafı değildir."
       }
     ]
   },

@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server';
-import SourceNote from '@/components/blugene/SourceNote';
-import PathwayArt, { PATHWAY_STEPS } from '@/components/blugene/PathwayArt';
+import SourceNote, { AssetKind } from '@/components/blugene/SourceNote';
+import Image from 'next/image';
 
 /**
  * 「원료에서 원단까지」 4단계 생산 경로 개념도.
@@ -8,15 +8,23 @@ import PathwayArt, { PATHWAY_STEPS } from '@/components/blugene/PathwayArt';
  * 카탈로그 p.2(생산 경로)와 p.12(가치사슬)의 흐름을 읽기 쉽게 4단계로 요약한 그림이며,
  * 수치를 담지 않는 개념도이므로 데이터 모듈에서 값을 가져오지 않는다. (새로운 수치를 만들지 않는다.)
  *
- * 단계 그림은 PathwayArt 의 인라인 SVG 삽화이고 순수 장식(aria-hidden)이다. 의미는 언제나 제목·본문 텍스트가 담는다.
- * 예전에는 32px 선 아이콘이었는데 너무 작고 단순해서 단계 내용(옥수수 · 미생물 · 분말과 잉크 · 염색과 프린팅)이
- * 보이지 않는다는 지적을 받았다. 지금은 열 너비를 다 쓰는 4:3 삽화다. 서체 · 색 · 금지 형태 규칙은 PathwayArt 에 있다.
+ * 단계 사진은 고객이 준 시안에서 잘라낸 개념 이미지다(public/blugene/technology/pathway, 출처는 asset-manifest).
+ * 32px 선 아이콘 → 인라인 SVG 삽화(커밋 60325d8)를 거쳐 사진으로 바뀌었다. CutisBio 의 설비 · 제품을 찍은
+ * 사진이 아니므로 제목 옆 '개념 이미지' 배지와 대체 텍스트, 아래 diagramNote 가 그 사실을 밝힌다.
  * 단계 사이 화살표는 장식이며, 순서는 <ol> 의 목록 구조가 보조기기에 전달한다.
  * 공정이 아무 투입물 없이 이루어진다는 인상을 주지 않도록 diagramNote 를 그림 바로 아래에 둔다.
  */
 
 /** messages/ko.json → Science.steps 의 각 항목 */
-type PathwayStep = { title: string; text: string };
+type PathwayStep = { title: string; text: string; imageAlt: string };
+
+/** Science.steps 순서와 같다. 사진은 1:1 로 잘라 두었다. */
+const STEP_IMAGES = [
+  '/blugene/technology/pathway/01-feedstock.jpg',
+  '/blugene/technology/pathway/02-fermentation.jpg',
+  '/blugene/technology/pathway/03-recovery.jpg',
+  '/blugene/technology/pathway/04-fabric.jpg',
+] as const;
 
 /** 가로 진행 화살표 (태블릿·PC) — 장식 */
 function ArrowRight() {
@@ -57,6 +65,7 @@ export default async function ProductionPathway({
   className?: string;
 }) {
   const t = await getTranslations('Science');
+  const tCommon = await getTranslations('Common');
   const steps = t.raw('steps') as PathwayStep[];
 
   // 'bare' 는 이미 h2 를 가진 섹션(ScienceSection) 안에 놓이므로 제목 단계를 한 칸 낮춘다.
@@ -65,9 +74,13 @@ export default async function ProductionPathway({
 
   const content = (
     <>
-      <DiagramTitleTag className="text-xl font-bold tracking-[-0.01em] break-keep text-[var(--color-indigo-deep)] sm:text-2xl">
-        {t('diagramTitle')}
-      </DiagramTitleTag>
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+        <DiagramTitleTag className="text-xl font-bold tracking-[-0.01em] break-keep text-[var(--color-indigo-deep)] sm:text-2xl">
+          {t('diagramTitle')}
+        </DiagramTitleTag>
+        {/* 사진이 실제 설비 · 제품으로 오해되지 않도록 기술 페이지와 같은 배지를 붙인다 */}
+        <AssetKind>{tCommon('conceptImage')}</AssetKind>
+      </div>
 
       <ol className="mt-10 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-4 lg:gap-x-6 lg:gap-y-0">
         {steps.map((step, index) => {
@@ -77,10 +90,16 @@ export default async function ProductionPathway({
 
           return (
             <li key={step.title} className="relative">
-              {/* 삽화는 열 너비를 다 쓴다(4:3). 모바일 한 열에서는 화면을 다 차지하지 않도록 폭을 묶는다. */}
+              {/* 사진은 열 너비를 다 쓴다(1:1). 모바일 한 열에서는 화면을 다 차지하지 않도록 폭을 묶는다. */}
               <div className="relative max-w-[300px] sm:max-w-none">
-                <div className="overflow-hidden rounded-md border border-[color:var(--color-washed)] bg-white">
-                  <PathwayArt step={PATHWAY_STEPS[index] ?? 'feedstock'} />
+                <div className="relative aspect-square overflow-hidden rounded-md bg-[var(--color-washed)]">
+                  <Image
+                    src={STEP_IMAGES[index] ?? STEP_IMAGES[0]}
+                    alt={step.imageAlt}
+                    fill
+                    sizes="(max-width: 640px) 300px, (max-width: 1024px) 45vw, 286px"
+                    className="object-cover"
+                  />
                 </div>
                 {/*
                   단계 번호는 <ol> 이 이미 순서를 전달하므로 보조기기에는 숨기지만, 화면에서는 읽히는 글자다.

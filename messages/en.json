@@ -83,23 +83,27 @@
     "metaphorNote": "“Rewriting the DNA of indigo” is a brand metaphor. It does not mean that the indigo molecule itself carries genes; it means that indigo is made through the biosynthetic pathways of microorganisms and fermentation.",
     "cta": "Explore the technology",
     "diagramTitle": "From feedstock to fabric",
-    "diagramNote": "This is a conceptual diagram. The actual process requires energy and process inputs, and the illustration is a simplified view of the path taken by the feedstock carbon.",
+    "diagramNote": "The photos are conceptual images that illustrate the process steps; they are not photographs of CutisBio's facilities or products. The actual process requires energy and process inputs.",
     "steps": [
       {
         "title": "Renewable feedstock",
-        "text": "Renewable carbon from biomass such as corn is the starting point."
+        "text": "Renewable carbon from biomass such as corn is the starting point.",
+        "imageAlt": "Photo of a cornfield. This is a conceptual image representing biomass raw materials and is not a photograph of CutisBio's farm."
       },
       {
         "title": "Microbial fermentation",
-        "text": "Indigo is made by fermentation that draws on the biosynthetic pathways of microorganisms."
+        "text": "Indigo is made by fermentation that draws on the biosynthetic pathways of microorganisms.",
+        "imageAlt": "Photo of a stainless steel fermentation tank. Blue culture solution is visible through the viewing port. This is a conceptual image representing the fermentation process and is not a photograph of CutisBio's facilities."
       },
       {
         "title": "Indigo recovery and product forms",
-        "text": "After recovery and purification, it is made into powder and digital printing ink."
+        "text": "After recovery and purification, it is made into powder and digital printing ink.",
+        "imageAlt": "Photo of a glass jar containing blue indigo powder and a bottle of digital printing ink. This is a conceptual image representing two product forms and is not a photograph of CutisBio's products."
       },
       {
         "title": "Fabric dyeing and printing",
-        "text": "It is applied to cotton, silk and cashmere dyeing and to digital printing."
+        "text": "It is applied to cotton, silk and cashmere dyeing and to digital printing.",
+        "imageAlt": "Photo of a digital printer printing blue patterns on white fabric. This is a conceptual image representing fabric printing and is not a photograph of CutisBio's facilities."
       }
     ]
   },

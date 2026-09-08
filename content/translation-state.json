@@ -471,11 +471,11 @@
       "tr": "b9753bb5a86b1132"
     },
     "Science.diagramNote": {
-      "en": "8c328d1784fd7b64",
-      "ja": "8c328d1784fd7b64",
-      "zh": "8c328d1784fd7b64",
-      "bn": "8c328d1784fd7b64",
-      "tr": "8c328d1784fd7b64"
+      "en": "d1b80bd8b8f59b01",
+      "ja": "d1b80bd8b8f59b01",
+      "zh": "d1b80bd8b8f59b01",
+      "bn": "d1b80bd8b8f59b01",
+      "tr": "d1b80bd8b8f59b01"
     },
     "Science.steps[0].title": {
       "en": "0502ddae4fbc0392",
@@ -3206,6 +3206,34 @@
       "zh": "81af3d134427015c",
       "bn": "81af3d134427015c",
       "tr": "81af3d134427015c"
+    },
+    "Science.steps[0].imageAlt": {
+      "en": "87cd4af989a813b1",
+      "ja": "87cd4af989a813b1",
+      "zh": "87cd4af989a813b1",
+      "bn": "87cd4af989a813b1",
+      "tr": "87cd4af989a813b1"
+    },
+    "Science.steps[1].imageAlt": {
+      "en": "94fc28234863ec4d",
+      "ja": "94fc28234863ec4d",
+      "zh": "94fc28234863ec4d",
+      "bn": "94fc28234863ec4d",
+      "tr": "94fc28234863ec4d"
+    },
+    "Science.steps[2].imageAlt": {
+      "en": "cfcf462ef578fc0f",
+      "ja": "cfcf462ef578fc0f",
+      "zh": "cfcf462ef578fc0f",
+      "bn": "cfcf462ef578fc0f",
+      "tr": "cfcf462ef578fc0f"
+    },
+    "Science.steps[3].imageAlt": {
+      "en": "2db6c5dfa693aba1",
+      "ja": "2db6c5dfa693aba1",
+      "zh": "2db6c5dfa693aba1",
+      "bn": "2db6c5dfa693aba1",
+      "tr": "2db6c5dfa693aba1"
     }
   }
 }
