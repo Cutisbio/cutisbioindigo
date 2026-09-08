@@ -286,8 +286,7 @@ const DISCLAIMER_KEYS = [
   /^DataHub\.(notDetectedExplain|sampleScopeNote|regulatoryOmitted|carbonZeroNote)$/,
   /^EvidenceStrip\.note$/,
   /^ShadeLibrary\.(indirubinNote|medicalNote|duplicateNote)$/,
-  // diagramNote 는 2026-09 부터 고지문이 아니라 브랜드 서사(원료 → 염료 → 데님)라 면제하지 않는다.
-  /^Science\.metaphorNote$/,
+  // Science.diagramNote 는 2026-09 부터 고지문이 아니라 브랜드 서사라 면제하지 않는다. metaphorNote 는 지웠다.
   /^Brand\.nameNote$/,
   /^Technology\.(routesNote|safetyBody|conceptCaptionSafety)$/,
   /^Tech\.(faqList|structuresNote|comparisonCaption)/,
