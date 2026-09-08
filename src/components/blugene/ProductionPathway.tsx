@@ -10,9 +10,11 @@ import Image from 'next/image';
  *
  * 단계 사진은 고객이 준 시안에서 잘라낸 개념 이미지다(public/blugene/technology/pathway, 출처는 asset-manifest).
  * 32px 선 아이콘 → 인라인 SVG 삽화(커밋 60325d8)를 거쳐 사진으로 바뀌었다. CutisBio 의 설비 · 제품을 찍은
- * 사진이 아니므로 제목 옆 '개념 이미지' 배지와 대체 텍스트, 아래 diagramNote 가 그 사실을 밝힌다.
+ * 사진이 아니므로 제목 옆 '개념 이미지' 배지와 대체 텍스트가 그 사실을 밝힌다.
  * 단계 사이 화살표는 장식이며, 순서는 <ol> 의 목록 구조가 보조기기에 전달한다.
- * 공정이 아무 투입물 없이 이루어진다는 인상을 주지 않도록 diagramNote 를 그림 바로 아래에 둔다.
+ * 그림 아래 diagramNote 는 고객이 준 브랜드 서사(원료 → 염료 · 잉크 → 데님)다. 인증은 공정이 아니라
+ * 염료 제품이 받은 것이므로(docs/blugene-claims.md) 인증명을 염료에 붙여 쓴다. 이 키는 금지어 검사를
+ * 면제받지 않는다(check-blugene-data.mjs DISCLAIMER_KEYS). metaphorNote 가 DNA 비유를 바로잡는다.
  */
 
 /** messages/ko.json → Science.steps 의 각 항목 */
