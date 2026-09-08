@@ -104,17 +104,17 @@ def convert(src: Path, dst: Path, max_w: int | None, opts: dict) -> tuple[int, i
     return im.width, im.height, dst.stat().st_size
 
 
-# 고객이 채팅에 첨부한 홈 섹션 시안(2026-09-09, 2000×1567 JPEG)에서 잘라낸 사진 4장.
-# 카탈로그 자료가 아니며 생성 이미지로 보인다. 홈 「원료에서 원단까지」 4단계에 개념 이미지로 쓴다.
-_PATHWAY_PROVENANCE = (
-    "고객 제공 — 2026-09-09 채팅에 첨부한 홈 섹션 시안(2000×1567 JPEG)에서 잘라냄. "
-    "카탈로그 자료가 아니며 생성 이미지로 보임"
-)
+# 고객이 채팅으로 준 홈 「원료에서 원단까지」 4단계 사진. 카탈로그 자료가 아니며 생성 이미지로 보인다.
+# 1 · 2 · 4 는 2026-09-09 고해상도 사진(2000px)에서, 3 은 같은 날 첨부한 섹션 시안(2000×1567)에서 잘라냈다.
 CLIENT_IMAGES: list[tuple[str, str]] = [
-    ("technology/pathway/01-feedstock.jpg", _PATHWAY_PROVENANCE),
-    ("technology/pathway/02-fermentation.jpg", _PATHWAY_PROVENANCE),
-    ("technology/pathway/03-recovery.jpg", _PATHWAY_PROVENANCE),
-    ("technology/pathway/04-fabric.jpg", _PATHWAY_PROVENANCE),
+    ("technology/pathway/01-feedstock.jpg",
+     "고객 제공 — 2026-09-09 채팅 첨부 고해상도 사진(2000×1996)에서 시안 테두리와 01 배지를 제외하고 정사각으로 잘라냄. 카탈로그 자료가 아니며 생성 이미지로 보임"),
+    ("technology/pathway/02-fermentation.jpg",
+     "고객 제공 — 2026-09-09 채팅 첨부 고해상도 사진(2000×1091)에서 발효조 중심으로 정사각 잘라냄. 카탈로그 자료가 아니며 생성 이미지로 보임"),
+    ("technology/pathway/03-recovery.jpg",
+     "고객 제공 — 2026-09-09 채팅에 첨부한 홈 섹션 시안(2000×1567 JPEG)에서 잘라냄. 카탈로그 자료가 아니며 생성 이미지로 보임"),
+    ("technology/pathway/04-fabric.jpg",
+     "고객 제공 — 2026-09-09 채팅 첨부 고해상도 사진(2000×1091)에서 실 염색 라인 중심으로 정사각 잘라냄. 카탈로그 자료가 아니며 생성 이미지로 보임"),
 ]
 
 
