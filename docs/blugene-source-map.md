@@ -30,8 +30,8 @@
 | 8 | 분말 제품 | `/`, `/dyeing-printing#products` | `ProductFormats` | `products/powder.png` |
 | 8 | 염색 횟수 3×4 비교 (Figure 5-1) | `/`, `/dyeing-printing#products` | `ProductFormats` | `products/powder-ink-cycles.png` |
 | 9 | 디지털 프린팅 잉크 | `/`, `/dyeing-printing#products` | `ProductFormats` | `products/ink-jar.png` |
-| 9 | 잉크 제조 흐름 (Figure 6-1) | `/`, `/dyeing-printing#printing` | `PrintingGallery` (HTML 플로우 + 원본 이미지) | `printing/ink-process.png` |
-| 9 | 프린팅 결과 두 쌍 (Figure 6-2) | `/`, `/dyeing-printing#printing` | `PrintingGallery` | `printing/pair-a-original.webp`, `pair-a-printed.webp`, `pair-b-original.webp`, `pair-b-printed.webp` |
+| 9 | 잉크 제조 흐름 (Figure 6-1) | `/dyeing-printing#printing` | `PrintingGallery` (HTML 플로우 + 원본 이미지) | `printing/ink-process.png` |
+| 9 | 프린팅 결과 두 쌍 (Figure 6-2) | `/dyeing-printing#printing` | `PrintingGallery` | `printing/pair-a-original.webp`, `pair-a-printed.webp`, `pair-b-original.webp`, `pair-b-printed.webp` |
 | 10 | ZDHC 인증서 | `/data-certifications#certifications`, `/blog/sustainable-indigo` | `CertificationLibrary` | `certifications/zdhc-certificate.png` |
 | 10 | OEKO-TEX ECO PASSPORT 인증서 | 같음 | `CertificationLibrary` | `certifications/oeko-certificate.png` |
 | 11 | USDA BioPreferred 인증서 | 같음 | `CertificationLibrary` | `certifications/usda-certificate.png` |

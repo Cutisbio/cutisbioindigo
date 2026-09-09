@@ -12,7 +12,6 @@ import EnvironmentSection from '@/components/blugene/EnvironmentSection';
 import FabricComparison from '@/components/blugene/FabricComparison';
 import ShadeLibrary from '@/components/blugene/ShadeLibrary';
 import ProductFormats from '@/components/blugene/ProductFormats';
-import PrintingGallery from '@/components/blugene/PrintingGallery';
 import CertificationLibrary from '@/components/blugene/CertificationLibrary';
 import SectionHeading from '@/components/blugene/SectionHeading';
 import FinalCta from '@/components/blugene/FinalCta';
@@ -51,7 +50,11 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'DataHub' });
-  const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/brand/cutisbio-logo.png`);
+  const orgSchema = buildOrganizationSchema(
+    BRAND.company,
+    SITE_URL,
+    `${SITE_URL}/brand/cutisbio-logo.png`,
+  );
 
   return (
     <>
@@ -98,15 +101,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </section>
 
-      {/* 08. 프린팅으로 확장되는 가능성 — 제품군이 위로 올라가 ivory 가 연달아 오지 않도록 흰 바탕으로 받는다 */}
+      {/* 08. 원본으로 확인하는 신뢰 — 앞의 07 이 아이보리라 흰 바탕으로 받는다
+          (2026-09-09 홈의 프린팅 섹션을 뺐다. 같은 내용이 /dyeing-printing 에 있다) */}
       <section className="w-full bg-white">
-        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
-          <PrintingGallery />
-        </div>
-      </section>
-
-      {/* 09. 원본으로 확인하는 신뢰 */}
-      <section className="w-full bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
           <SectionHeading eyebrow={t('eyebrow')} title={t('title')} body={t('body')} size="hero" />
           <div className="mt-12">
@@ -122,7 +119,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </section>
 
-      {/* 10. 사업 문의로 연결 */}
+      {/* 09. 사업 문의로 연결 */}
       <FinalCta />
     </>
   );
