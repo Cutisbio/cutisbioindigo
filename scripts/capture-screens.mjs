@@ -57,7 +57,8 @@ const SHOTS = [
   ['/en', 'desktop-en-home', 1440, 900, false],
   ['/ja', 'desktop-ja-home', 1440, 900, false],
   ['/zh', 'desktop-zh-home', 1440, 900, false],
-  ['/bn', 'desktop-bn-home', 1440, 900, false],
+  ['/fr', 'desktop-fr-home', 1440, 900, false],
+  ['/it', 'desktop-it-home', 1440, 900, false],
   ['/tr', 'desktop-tr-home', 1440, 900, false],
 ];
 

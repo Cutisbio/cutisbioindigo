@@ -41,7 +41,7 @@ const CANDIDATES_PATH = path.join(__dirname, '../content/news-candidates.json');
 /** `--dry-run` 이면 수집 결과만 출력하고 messages/*.json 을 건드리지 않는다 */
 const DRY_RUN = process.argv.includes('--dry-run');
 
-const locales = ['ko', 'en', 'ja', 'zh', 'tr', 'bn'];
+const locales = ['ko', 'ja', 'en', 'fr', 'it', 'zh', 'tr'];
 
 const hardcodedNews = [
   {
@@ -92,20 +92,20 @@ let translationFailed = false;
 const CATEGORY_LABELS = {
   보도자료: {
     en: 'Press release', ja: 'プレスリリース', zh: '新闻稿',
-    bn: 'প্রেস বিজ্ঞপ্তি', tr: 'Basın bülteni',
+    fr: 'Communiqué de presse', it: 'Comunicato stampa', tr: 'Basın bülteni',
   },
   제품출시: {
     en: 'Product launch', ja: '製品発表', zh: '产品发布',
-    bn: 'পণ্য লঞ্চ', tr: 'Ürün lansmanı',
+    fr: 'Lancement de produit', it: 'Lancio di prodotto', tr: 'Ürün lansmanı',
   },
   업무협약: {
     // 이전 자동 번역이 業務条約(국가 간 조약)으로 잘못 나왔다 — 業務提携가 맞다.
     en: 'Partnership agreement', ja: '業務提携', zh: '业务合作协议',
-    bn: 'ব্যবসায়িক চুক্তি', tr: 'İş birliği anlaşması',
+    fr: 'Accord de partenariat', it: 'Accordo di partnership', tr: 'İş birliği anlaşması',
   },
   공동연구: {
     en: 'Joint research', ja: '共同研究', zh: '联合研究',
-    bn: 'যৌথ গবেষণা', tr: 'Ortak araştırma',
+    fr: 'Recherche conjointe', it: 'Ricerca congiunta', tr: 'Ortak araştırma',
   },
 };
 

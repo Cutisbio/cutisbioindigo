@@ -2,3251 +2,3557 @@
   "version": 1,
   "entries": {
     "Nav.brand": {
-      "en": "559380a1cea8a17c",
       "ja": "559380a1cea8a17c",
+      "en": "559380a1cea8a17c",
+      "fr": "559380a1cea8a17c",
+      "it": "559380a1cea8a17c",
       "zh": "559380a1cea8a17c",
-      "bn": "559380a1cea8a17c",
       "tr": "559380a1cea8a17c"
     },
     "Nav.technology": {
-      "en": "a78cee47656be418",
       "ja": "a78cee47656be418",
+      "en": "a78cee47656be418",
+      "fr": "a78cee47656be418",
+      "it": "a78cee47656be418",
       "zh": "a78cee47656be418",
-      "bn": "a78cee47656be418",
       "tr": "a78cee47656be418"
     },
     "Nav.dyeingPrinting": {
-      "en": "dc5ae7088a4ec648",
       "ja": "dc5ae7088a4ec648",
+      "en": "dc5ae7088a4ec648",
+      "fr": "dc5ae7088a4ec648",
+      "it": "dc5ae7088a4ec648",
       "zh": "dc5ae7088a4ec648",
-      "bn": "dc5ae7088a4ec648",
       "tr": "dc5ae7088a4ec648"
     },
     "Nav.dataCertifications": {
-      "en": "171ea9862c636491",
       "ja": "171ea9862c636491",
+      "en": "171ea9862c636491",
+      "fr": "171ea9862c636491",
+      "it": "171ea9862c636491",
       "zh": "171ea9862c636491",
-      "bn": "171ea9862c636491",
       "tr": "171ea9862c636491"
     },
     "Nav.sampleInquiry": {
-      "en": "429dfb2d5cfa19d2",
       "ja": "429dfb2d5cfa19d2",
+      "en": "429dfb2d5cfa19d2",
+      "fr": "429dfb2d5cfa19d2",
+      "it": "429dfb2d5cfa19d2",
       "zh": "429dfb2d5cfa19d2",
-      "bn": "429dfb2d5cfa19d2",
       "tr": "429dfb2d5cfa19d2"
     },
     "Nav.about": {
-      "en": "60b8167038c9fdce",
       "ja": "60b8167038c9fdce",
+      "en": "60b8167038c9fdce",
+      "fr": "60b8167038c9fdce",
+      "it": "60b8167038c9fdce",
       "zh": "60b8167038c9fdce",
-      "bn": "60b8167038c9fdce",
       "tr": "60b8167038c9fdce"
     },
     "Nav.news": {
-      "en": "648fb8dfcf63ca8c",
       "ja": "648fb8dfcf63ca8c",
+      "en": "648fb8dfcf63ca8c",
+      "fr": "648fb8dfcf63ca8c",
+      "it": "648fb8dfcf63ca8c",
       "zh": "648fb8dfcf63ca8c",
-      "bn": "648fb8dfcf63ca8c",
       "tr": "648fb8dfcf63ca8c"
     },
     "Nav.blog": {
-      "en": "a69fa3bb46f621d2",
       "ja": "a69fa3bb46f621d2",
+      "en": "a69fa3bb46f621d2",
+      "fr": "a69fa3bb46f621d2",
+      "it": "a69fa3bb46f621d2",
       "zh": "a69fa3bb46f621d2",
-      "bn": "a69fa3bb46f621d2",
       "tr": "a69fa3bb46f621d2"
     },
     "Nav.contact": {
-      "en": "64332b6a361f3b73",
       "ja": "64332b6a361f3b73",
+      "en": "64332b6a361f3b73",
+      "fr": "64332b6a361f3b73",
+      "it": "64332b6a361f3b73",
       "zh": "64332b6a361f3b73",
-      "bn": "64332b6a361f3b73",
       "tr": "64332b6a361f3b73"
     },
     "Nav.menu": {
-      "en": "13b36d6d0ccc7f49",
       "ja": "13b36d6d0ccc7f49",
+      "en": "13b36d6d0ccc7f49",
+      "fr": "13b36d6d0ccc7f49",
+      "it": "13b36d6d0ccc7f49",
       "zh": "13b36d6d0ccc7f49",
-      "bn": "13b36d6d0ccc7f49",
       "tr": "13b36d6d0ccc7f49"
     },
     "Nav.openMenu": {
-      "en": "ff7070c7c006e190",
       "ja": "ff7070c7c006e190",
+      "en": "ff7070c7c006e190",
+      "fr": "ff7070c7c006e190",
+      "it": "ff7070c7c006e190",
       "zh": "ff7070c7c006e190",
-      "bn": "ff7070c7c006e190",
       "tr": "ff7070c7c006e190"
     },
     "Nav.closeMenu": {
-      "en": "3ffb0ab067f3c805",
       "ja": "3ffb0ab067f3c805",
+      "en": "3ffb0ab067f3c805",
+      "fr": "3ffb0ab067f3c805",
+      "it": "3ffb0ab067f3c805",
       "zh": "3ffb0ab067f3c805",
-      "bn": "3ffb0ab067f3c805",
       "tr": "3ffb0ab067f3c805"
     },
     "Nav.languageLabel": {
-      "en": "19f9d4a5680e7600",
       "ja": "19f9d4a5680e7600",
+      "en": "19f9d4a5680e7600",
+      "fr": "19f9d4a5680e7600",
+      "it": "19f9d4a5680e7600",
       "zh": "19f9d4a5680e7600",
-      "bn": "19f9d4a5680e7600",
       "tr": "19f9d4a5680e7600"
     },
     "Nav.skipToContent": {
-      "en": "6f9405fb08e4c8f2",
       "ja": "6f9405fb08e4c8f2",
+      "en": "6f9405fb08e4c8f2",
+      "fr": "6f9405fb08e4c8f2",
+      "it": "6f9405fb08e4c8f2",
       "zh": "6f9405fb08e4c8f2",
-      "bn": "6f9405fb08e4c8f2",
       "tr": "6f9405fb08e4c8f2"
     },
     "Nav.homeAria": {
-      "en": "7edd9d9b39330ef3",
       "ja": "7edd9d9b39330ef3",
+      "en": "7edd9d9b39330ef3",
+      "fr": "7edd9d9b39330ef3",
+      "it": "7edd9d9b39330ef3",
       "zh": "7edd9d9b39330ef3",
-      "bn": "7edd9d9b39330ef3",
       "tr": "7edd9d9b39330ef3"
     },
     "Footer.tagline": {
-      "en": "a36ed5b907aa2e38",
       "ja": "a36ed5b907aa2e38",
+      "en": "a36ed5b907aa2e38",
+      "fr": "a36ed5b907aa2e38",
+      "it": "a36ed5b907aa2e38",
       "zh": "a36ed5b907aa2e38",
-      "bn": "a36ed5b907aa2e38",
       "tr": "a36ed5b907aa2e38"
     },
     "Footer.sitemapTitle": {
-      "en": "ad7b0869f5111a8b",
       "ja": "ad7b0869f5111a8b",
+      "en": "ad7b0869f5111a8b",
+      "fr": "ad7b0869f5111a8b",
+      "it": "ad7b0869f5111a8b",
       "zh": "ad7b0869f5111a8b",
-      "bn": "ad7b0869f5111a8b",
       "tr": "ad7b0869f5111a8b"
     },
     "Footer.contactTitle": {
-      "en": "fc56ab57b7859670",
       "ja": "fc56ab57b7859670",
+      "en": "fc56ab57b7859670",
+      "fr": "fc56ab57b7859670",
+      "it": "fc56ab57b7859670",
       "zh": "fc56ab57b7859670",
-      "bn": "fc56ab57b7859670",
       "tr": "fc56ab57b7859670"
     },
     "Footer.legalTitle": {
-      "en": "0076ca051fb4b4a1",
       "ja": "0076ca051fb4b4a1",
+      "en": "0076ca051fb4b4a1",
+      "fr": "0076ca051fb4b4a1",
+      "it": "0076ca051fb4b4a1",
       "zh": "0076ca051fb4b4a1",
-      "bn": "0076ca051fb4b4a1",
       "tr": "0076ca051fb4b4a1"
     },
     "Footer.sourceNote": {
-      "en": "5f08fae358dbc6f9",
       "ja": "5f08fae358dbc6f9",
+      "en": "5f08fae358dbc6f9",
+      "fr": "5f08fae358dbc6f9",
+      "it": "5f08fae358dbc6f9",
       "zh": "5f08fae358dbc6f9",
-      "bn": "5f08fae358dbc6f9",
       "tr": "5f08fae358dbc6f9"
     },
     "Footer.companyLine": {
-      "en": "c3395509b10289a5",
       "ja": "c3395509b10289a5",
+      "en": "c3395509b10289a5",
+      "fr": "c3395509b10289a5",
+      "it": "c3395509b10289a5",
       "zh": "c3395509b10289a5",
-      "bn": "c3395509b10289a5",
       "tr": "c3395509b10289a5"
     },
     "Footer.rights": {
-      "en": "0df10a96747d4ce3",
       "ja": "0df10a96747d4ce3",
+      "en": "0df10a96747d4ce3",
+      "fr": "0df10a96747d4ce3",
+      "it": "0df10a96747d4ce3",
       "zh": "0df10a96747d4ce3",
-      "bn": "0df10a96747d4ce3",
       "tr": "0df10a96747d4ce3"
     },
     "Footer.catalogueLink": {
-      "en": "79ae68a1e425e289",
       "ja": "79ae68a1e425e289",
+      "en": "79ae68a1e425e289",
+      "fr": "79ae68a1e425e289",
+      "it": "79ae68a1e425e289",
       "zh": "79ae68a1e425e289",
-      "bn": "79ae68a1e425e289",
       "tr": "79ae68a1e425e289"
     },
     "Home.metaTitle": {
-      "en": "77819498554c7e05",
       "ja": "77819498554c7e05",
+      "en": "77819498554c7e05",
+      "fr": "77819498554c7e05",
+      "it": "77819498554c7e05",
       "zh": "77819498554c7e05",
-      "bn": "77819498554c7e05",
       "tr": "77819498554c7e05"
     },
     "Home.metaDescription": {
-      "en": "163fd12ee73c870a",
       "ja": "163fd12ee73c870a",
+      "en": "163fd12ee73c870a",
+      "fr": "163fd12ee73c870a",
+      "it": "163fd12ee73c870a",
       "zh": "163fd12ee73c870a",
-      "bn": "163fd12ee73c870a",
       "tr": "163fd12ee73c870a"
     },
     "Home.ctaTitle": {
-      "en": "21d5fc7b9e504ba3",
       "ja": "21d5fc7b9e504ba3",
+      "en": "21d5fc7b9e504ba3",
+      "fr": "21d5fc7b9e504ba3",
+      "it": "21d5fc7b9e504ba3",
       "zh": "21d5fc7b9e504ba3",
-      "bn": "21d5fc7b9e504ba3",
       "tr": "21d5fc7b9e504ba3"
     },
     "Home.ctaText": {
-      "en": "5137289a1cf06333",
       "ja": "5137289a1cf06333",
+      "en": "5137289a1cf06333",
+      "fr": "5137289a1cf06333",
+      "it": "5137289a1cf06333",
       "zh": "5137289a1cf06333",
-      "bn": "5137289a1cf06333",
       "tr": "5137289a1cf06333"
     },
     "Home.ctaButton": {
-      "en": "0ceef3adc043b421",
       "ja": "0ceef3adc043b421",
+      "en": "0ceef3adc043b421",
+      "fr": "0ceef3adc043b421",
+      "it": "0ceef3adc043b421",
       "zh": "0ceef3adc043b421",
-      "bn": "0ceef3adc043b421",
       "tr": "0ceef3adc043b421"
     },
     "Hero.descriptor": {
-      "en": "77819498554c7e05",
       "ja": "77819498554c7e05",
+      "en": "77819498554c7e05",
+      "fr": "77819498554c7e05",
+      "it": "77819498554c7e05",
       "zh": "77819498554c7e05",
-      "bn": "77819498554c7e05",
       "tr": "77819498554c7e05"
     },
     "Hero.titleLine1": {
-      "en": "3573b61281b1c163",
       "ja": "3573b61281b1c163",
+      "en": "3573b61281b1c163",
+      "fr": "3573b61281b1c163",
+      "it": "3573b61281b1c163",
       "zh": "3573b61281b1c163",
-      "bn": "3573b61281b1c163",
       "tr": "3573b61281b1c163"
     },
     "Hero.titleLine2": {
-      "en": "ec03736c75cbe650",
       "ja": "ec03736c75cbe650",
+      "en": "ec03736c75cbe650",
+      "fr": "ec03736c75cbe650",
+      "it": "ec03736c75cbe650",
       "zh": "ec03736c75cbe650",
-      "bn": "ec03736c75cbe650",
       "tr": "ec03736c75cbe650"
     },
     "Hero.body": {
-      "en": "ed985e859117e53f",
       "ja": "ed985e859117e53f",
+      "en": "ed985e859117e53f",
+      "fr": "ed985e859117e53f",
+      "it": "ed985e859117e53f",
       "zh": "ed985e859117e53f",
-      "bn": "ed985e859117e53f",
       "tr": "ed985e859117e53f"
     },
     "Hero.ctaPrimary": {
-      "en": "0ceef3adc043b421",
       "ja": "0ceef3adc043b421",
+      "en": "0ceef3adc043b421",
+      "fr": "0ceef3adc043b421",
+      "it": "0ceef3adc043b421",
       "zh": "0ceef3adc043b421",
-      "bn": "0ceef3adc043b421",
       "tr": "0ceef3adc043b421"
     },
     "Hero.ctaSecondary": {
-      "en": "8936213a59720081",
       "ja": "8936213a59720081",
+      "en": "8936213a59720081",
+      "fr": "8936213a59720081",
+      "it": "8936213a59720081",
       "zh": "8936213a59720081",
-      "bn": "8936213a59720081",
       "tr": "8936213a59720081"
     },
     "Hero.tagline": {
-      "en": "a36ed5b907aa2e38",
       "ja": "a36ed5b907aa2e38",
+      "en": "a36ed5b907aa2e38",
+      "fr": "a36ed5b907aa2e38",
+      "it": "a36ed5b907aa2e38",
       "zh": "a36ed5b907aa2e38",
-      "bn": "a36ed5b907aa2e38",
       "tr": "a36ed5b907aa2e38"
     },
     "Hero.imageAlt": {
-      "en": "dba6da5fd26d9cd2",
       "ja": "dba6da5fd26d9cd2",
+      "en": "dba6da5fd26d9cd2",
+      "fr": "dba6da5fd26d9cd2",
+      "it": "dba6da5fd26d9cd2",
       "zh": "dba6da5fd26d9cd2",
-      "bn": "dba6da5fd26d9cd2",
       "tr": "dba6da5fd26d9cd2"
     },
     "Hero.imageCredit": {
-      "en": "c20df93910d2082c",
       "ja": "c20df93910d2082c",
+      "en": "c20df93910d2082c",
+      "fr": "c20df93910d2082c",
+      "it": "c20df93910d2082c",
       "zh": "c20df93910d2082c",
-      "bn": "c20df93910d2082c",
       "tr": "c20df93910d2082c"
     },
     "EvidenceStrip.carbonValue": {
-      "en": "caea6c32d945d4fc",
       "ja": "caea6c32d945d4fc",
+      "en": "caea6c32d945d4fc",
+      "fr": "caea6c32d945d4fc",
+      "it": "caea6c32d945d4fc",
       "zh": "caea6c32d945d4fc",
-      "bn": "caea6c32d945d4fc",
       "tr": "caea6c32d945d4fc"
     },
     "EvidenceStrip.carbonLabel": {
-      "en": "a49f2e894cd89821",
       "ja": "a49f2e894cd89821",
+      "en": "a49f2e894cd89821",
+      "fr": "a49f2e894cd89821",
+      "it": "a49f2e894cd89821",
       "zh": "a49f2e894cd89821",
-      "bn": "a49f2e894cd89821",
       "tr": "a49f2e894cd89821"
     },
     "EvidenceStrip.anilineValue": {
-      "en": "edccb1c4bea17d84",
       "ja": "edccb1c4bea17d84",
+      "en": "edccb1c4bea17d84",
+      "fr": "edccb1c4bea17d84",
+      "it": "edccb1c4bea17d84",
       "zh": "edccb1c4bea17d84",
-      "bn": "edccb1c4bea17d84",
       "tr": "edccb1c4bea17d84"
     },
     "EvidenceStrip.anilineLabel": {
-      "en": "ab34be9cbe2ef277",
       "ja": "ab34be9cbe2ef277",
+      "en": "ab34be9cbe2ef277",
+      "fr": "ab34be9cbe2ef277",
+      "it": "ab34be9cbe2ef277",
       "zh": "ab34be9cbe2ef277",
-      "bn": "ab34be9cbe2ef277",
       "tr": "ab34be9cbe2ef277"
     },
     "EvidenceStrip.nMethylanilineValue": {
-      "en": "edccb1c4bea17d84",
       "ja": "edccb1c4bea17d84",
+      "en": "edccb1c4bea17d84",
+      "fr": "edccb1c4bea17d84",
+      "it": "edccb1c4bea17d84",
       "zh": "edccb1c4bea17d84",
-      "bn": "edccb1c4bea17d84",
       "tr": "edccb1c4bea17d84"
     },
     "EvidenceStrip.nMethylanilineLabel": {
-      "en": "ae3a7caed84f7cc7",
       "ja": "ae3a7caed84f7cc7",
+      "en": "ae3a7caed84f7cc7",
+      "fr": "ae3a7caed84f7cc7",
+      "it": "ae3a7caed84f7cc7",
       "zh": "ae3a7caed84f7cc7",
-      "bn": "ae3a7caed84f7cc7",
       "tr": "ae3a7caed84f7cc7"
     },
     "EvidenceStrip.note": {
-      "en": "1aff81ec169a899a",
       "ja": "1aff81ec169a899a",
+      "en": "1aff81ec169a899a",
+      "fr": "1aff81ec169a899a",
+      "it": "1aff81ec169a899a",
       "zh": "1aff81ec169a899a",
-      "bn": "1aff81ec169a899a",
       "tr": "1aff81ec169a899a"
     },
     "EvidenceStrip.sourceCarbon": {
-      "en": "28adf14e3fde4d74",
       "ja": "28adf14e3fde4d74",
+      "en": "28adf14e3fde4d74",
+      "fr": "28adf14e3fde4d74",
+      "it": "28adf14e3fde4d74",
       "zh": "28adf14e3fde4d74",
-      "bn": "28adf14e3fde4d74",
       "tr": "28adf14e3fde4d74"
     },
     "EvidenceStrip.sourceAniline": {
-      "en": "1cb98b485f5aad3b",
       "ja": "1cb98b485f5aad3b",
+      "en": "1cb98b485f5aad3b",
+      "fr": "1cb98b485f5aad3b",
+      "it": "1cb98b485f5aad3b",
       "zh": "1cb98b485f5aad3b",
-      "bn": "1cb98b485f5aad3b",
       "tr": "1cb98b485f5aad3b"
     },
     "EvidenceStrip.cta": {
-      "en": "4daee921c87d31ae",
       "ja": "4daee921c87d31ae",
+      "en": "4daee921c87d31ae",
+      "fr": "4daee921c87d31ae",
+      "it": "4daee921c87d31ae",
       "zh": "4daee921c87d31ae",
-      "bn": "4daee921c87d31ae",
       "tr": "4daee921c87d31ae"
     },
     "Manifesto.eyebrow": {
-      "en": "eb9bff8e1aed1a43",
       "ja": "eb9bff8e1aed1a43",
+      "en": "eb9bff8e1aed1a43",
+      "fr": "eb9bff8e1aed1a43",
+      "it": "eb9bff8e1aed1a43",
       "zh": "eb9bff8e1aed1a43",
-      "bn": "eb9bff8e1aed1a43",
       "tr": "eb9bff8e1aed1a43"
     },
     "Manifesto.title": {
-      "en": "e884a15481eb4eb9",
       "ja": "e884a15481eb4eb9",
+      "en": "e884a15481eb4eb9",
+      "fr": "e884a15481eb4eb9",
+      "it": "e884a15481eb4eb9",
       "zh": "e884a15481eb4eb9",
-      "bn": "e884a15481eb4eb9",
       "tr": "e884a15481eb4eb9"
     },
     "Manifesto.body": {
-      "en": "37d4b63fcb2f1bdd",
       "ja": "37d4b63fcb2f1bdd",
+      "en": "37d4b63fcb2f1bdd",
+      "fr": "37d4b63fcb2f1bdd",
+      "it": "37d4b63fcb2f1bdd",
       "zh": "37d4b63fcb2f1bdd",
-      "bn": "37d4b63fcb2f1bdd",
       "tr": "37d4b63fcb2f1bdd"
     },
     "Manifesto.questions[0]": {
-      "en": "8165b0e0686686d1",
       "ja": "8165b0e0686686d1",
+      "en": "8165b0e0686686d1",
       "zh": "8165b0e0686686d1",
-      "bn": "8165b0e0686686d1",
       "tr": "8165b0e0686686d1"
     },
     "Manifesto.questions[1]": {
-      "en": "33c47795a53c4a76",
       "ja": "33c47795a53c4a76",
+      "en": "33c47795a53c4a76",
       "zh": "33c47795a53c4a76",
-      "bn": "33c47795a53c4a76",
       "tr": "33c47795a53c4a76"
     },
     "Manifesto.questions[2]": {
-      "en": "cabdea058f4fa074",
       "ja": "cabdea058f4fa074",
+      "en": "cabdea058f4fa074",
       "zh": "cabdea058f4fa074",
-      "bn": "cabdea058f4fa074",
       "tr": "cabdea058f4fa074"
     },
     "Manifesto.cta": {
-      "en": "c103683033dbfe17",
       "ja": "c103683033dbfe17",
+      "en": "c103683033dbfe17",
+      "fr": "c103683033dbfe17",
+      "it": "c103683033dbfe17",
       "zh": "c103683033dbfe17",
-      "bn": "c103683033dbfe17",
       "tr": "c103683033dbfe17"
     },
     "Manifesto.portraitAlt": {
-      "en": "c882ac907443a4fe",
       "ja": "c882ac907443a4fe",
+      "en": "c882ac907443a4fe",
+      "fr": "c882ac907443a4fe",
+      "it": "c882ac907443a4fe",
       "zh": "c882ac907443a4fe",
-      "bn": "c882ac907443a4fe",
       "tr": "c882ac907443a4fe"
     },
     "Manifesto.portraitName": {
-      "en": "f4e15a5234a5725b",
       "ja": "f4e15a5234a5725b",
+      "en": "f4e15a5234a5725b",
+      "fr": "f4e15a5234a5725b",
+      "it": "f4e15a5234a5725b",
       "zh": "f4e15a5234a5725b",
-      "bn": "f4e15a5234a5725b",
       "tr": "f4e15a5234a5725b"
     },
     "Manifesto.portraitCredential": {
-      "en": "949ab7e7871aa671",
       "ja": "949ab7e7871aa671",
+      "en": "949ab7e7871aa671",
+      "fr": "949ab7e7871aa671",
+      "it": "949ab7e7871aa671",
       "zh": "949ab7e7871aa671",
-      "bn": "949ab7e7871aa671",
       "tr": "949ab7e7871aa671"
     },
     "Impurity.eyebrow": {
-      "en": "edd2cc9171935add",
       "ja": "edd2cc9171935add",
+      "en": "edd2cc9171935add",
+      "fr": "edd2cc9171935add",
+      "it": "edd2cc9171935add",
       "zh": "edd2cc9171935add",
-      "bn": "edd2cc9171935add",
       "tr": "edd2cc9171935add"
     },
     "Impurity.title": {
-      "en": "7c7658f9c02f405b",
       "ja": "7c7658f9c02f405b",
+      "en": "7c7658f9c02f405b",
+      "fr": "7c7658f9c02f405b",
+      "it": "7c7658f9c02f405b",
       "zh": "7c7658f9c02f405b",
-      "bn": "7c7658f9c02f405b",
       "tr": "7c7658f9c02f405b"
     },
     "Impurity.body": {
-      "en": "1ae6eb68a10f7132",
       "ja": "1ae6eb68a10f7132",
+      "en": "1ae6eb68a10f7132",
+      "fr": "1ae6eb68a10f7132",
+      "it": "1ae6eb68a10f7132",
       "zh": "1ae6eb68a10f7132",
-      "bn": "1ae6eb68a10f7132",
       "tr": "1ae6eb68a10f7132"
     },
     "Impurity.context": {
-      "en": "66534ac7c24b6c39",
       "ja": "66534ac7c24b6c39",
+      "en": "66534ac7c24b6c39",
+      "fr": "66534ac7c24b6c39",
+      "it": "66534ac7c24b6c39",
       "zh": "66534ac7c24b6c39",
-      "bn": "66534ac7c24b6c39",
       "tr": "66534ac7c24b6c39"
     },
     "Impurity.cta": {
-      "en": "5e7de3474567cb16",
       "ja": "5e7de3474567cb16",
+      "en": "5e7de3474567cb16",
+      "fr": "5e7de3474567cb16",
+      "it": "5e7de3474567cb16",
       "zh": "5e7de3474567cb16",
-      "bn": "5e7de3474567cb16",
       "tr": "5e7de3474567cb16"
     },
     "Impurity.chartTitle": {
-      "en": "9efea9b6350a4970",
       "ja": "9efea9b6350a4970",
+      "en": "9efea9b6350a4970",
+      "fr": "9efea9b6350a4970",
+      "it": "9efea9b6350a4970",
       "zh": "9efea9b6350a4970",
-      "bn": "9efea9b6350a4970",
       "tr": "9efea9b6350a4970"
     },
     "Impurity.chartCaption": {
-      "en": "971c89d13d90a04e",
       "ja": "971c89d13d90a04e",
+      "en": "971c89d13d90a04e",
+      "fr": "971c89d13d90a04e",
+      "it": "971c89d13d90a04e",
       "zh": "971c89d13d90a04e",
-      "bn": "971c89d13d90a04e",
       "tr": "971c89d13d90a04e"
     },
     "Science.eyebrow": {
-      "en": "b8228c71cd534af3",
       "ja": "b8228c71cd534af3",
+      "en": "b8228c71cd534af3",
+      "fr": "b8228c71cd534af3",
+      "it": "b8228c71cd534af3",
       "zh": "b8228c71cd534af3",
-      "bn": "b8228c71cd534af3",
       "tr": "b8228c71cd534af3"
     },
     "Science.title": {
-      "en": "db35e180d6921ea7",
       "ja": "db35e180d6921ea7",
+      "en": "db35e180d6921ea7",
+      "fr": "db35e180d6921ea7",
+      "it": "db35e180d6921ea7",
       "zh": "db35e180d6921ea7",
-      "bn": "db35e180d6921ea7",
       "tr": "db35e180d6921ea7"
     },
     "Science.body": {
-      "en": "f454251ae0bde408",
       "ja": "f454251ae0bde408",
+      "en": "f454251ae0bde408",
+      "fr": "f454251ae0bde408",
+      "it": "f454251ae0bde408",
       "zh": "f454251ae0bde408",
-      "bn": "f454251ae0bde408",
       "tr": "f454251ae0bde408"
     },
     "Science.cta": {
-      "en": "6e292928153d0f64",
       "ja": "6e292928153d0f64",
+      "en": "6e292928153d0f64",
+      "fr": "6e292928153d0f64",
+      "it": "6e292928153d0f64",
       "zh": "6e292928153d0f64",
-      "bn": "6e292928153d0f64",
       "tr": "6e292928153d0f64"
     },
     "Science.diagramTitle": {
-      "en": "b9753bb5a86b1132",
       "ja": "b9753bb5a86b1132",
+      "en": "b9753bb5a86b1132",
+      "fr": "b9753bb5a86b1132",
+      "it": "b9753bb5a86b1132",
       "zh": "b9753bb5a86b1132",
-      "bn": "b9753bb5a86b1132",
       "tr": "b9753bb5a86b1132"
     },
     "Science.diagramNote": {
-      "en": "0b1d1c5a0c8de287",
       "ja": "0b1d1c5a0c8de287",
+      "en": "0b1d1c5a0c8de287",
+      "fr": "0b1d1c5a0c8de287",
+      "it": "0b1d1c5a0c8de287",
       "zh": "0b1d1c5a0c8de287",
-      "bn": "0b1d1c5a0c8de287",
       "tr": "0b1d1c5a0c8de287"
     },
     "Science.steps[0].title": {
-      "en": "0502ddae4fbc0392",
       "ja": "0502ddae4fbc0392",
+      "en": "0502ddae4fbc0392",
       "zh": "0502ddae4fbc0392",
-      "bn": "0502ddae4fbc0392",
       "tr": "0502ddae4fbc0392"
     },
     "Science.steps[0].text": {
-      "en": "7068ef0c410e8905",
       "ja": "7068ef0c410e8905",
+      "en": "7068ef0c410e8905",
       "zh": "7068ef0c410e8905",
-      "bn": "7068ef0c410e8905",
       "tr": "7068ef0c410e8905"
     },
     "Science.steps[1].title": {
-      "en": "68478e35387cb9a5",
       "ja": "68478e35387cb9a5",
+      "en": "68478e35387cb9a5",
       "zh": "68478e35387cb9a5",
-      "bn": "68478e35387cb9a5",
       "tr": "68478e35387cb9a5"
     },
     "Science.steps[1].text": {
-      "en": "b8e887f7edbd8699",
       "ja": "b8e887f7edbd8699",
+      "en": "b8e887f7edbd8699",
       "zh": "b8e887f7edbd8699",
-      "bn": "b8e887f7edbd8699",
       "tr": "b8e887f7edbd8699"
     },
     "Science.steps[2].title": {
-      "en": "81e3c3d39adc28c6",
       "ja": "81e3c3d39adc28c6",
+      "en": "81e3c3d39adc28c6",
       "zh": "81e3c3d39adc28c6",
-      "bn": "81e3c3d39adc28c6",
       "tr": "81e3c3d39adc28c6"
     },
     "Science.steps[2].text": {
-      "en": "e71317b877415929",
       "ja": "e71317b877415929",
+      "en": "e71317b877415929",
       "zh": "e71317b877415929",
-      "bn": "e71317b877415929",
       "tr": "e71317b877415929"
     },
     "Science.steps[3].title": {
-      "en": "7bc471f15760d714",
       "ja": "7bc471f15760d714",
+      "en": "7bc471f15760d714",
       "zh": "7bc471f15760d714",
-      "bn": "7bc471f15760d714",
       "tr": "7bc471f15760d714"
     },
     "Science.steps[3].text": {
-      "en": "5c7f8135c9463590",
       "ja": "5c7f8135c9463590",
+      "en": "5c7f8135c9463590",
       "zh": "5c7f8135c9463590",
-      "bn": "5c7f8135c9463590",
       "tr": "5c7f8135c9463590"
     },
     "Environment.eyebrow": {
-      "en": "145d69f357713eeb",
       "ja": "145d69f357713eeb",
+      "en": "145d69f357713eeb",
+      "fr": "145d69f357713eeb",
+      "it": "145d69f357713eeb",
       "zh": "145d69f357713eeb",
-      "bn": "145d69f357713eeb",
       "tr": "145d69f357713eeb"
     },
     "Environment.title": {
-      "en": "60075f0b5592a22a",
       "ja": "60075f0b5592a22a",
+      "en": "60075f0b5592a22a",
+      "fr": "60075f0b5592a22a",
+      "it": "60075f0b5592a22a",
       "zh": "60075f0b5592a22a",
-      "bn": "60075f0b5592a22a",
       "tr": "60075f0b5592a22a"
     },
     "Environment.body": {
-      "en": "9ac391195a668a58",
       "ja": "9ac391195a668a58",
+      "en": "9ac391195a668a58",
+      "fr": "9ac391195a668a58",
+      "it": "9ac391195a668a58",
       "zh": "9ac391195a668a58",
-      "bn": "9ac391195a668a58",
       "tr": "9ac391195a668a58"
     },
     "Environment.carbonCardTitle": {
-      "en": "a49f2e894cd89821",
       "ja": "a49f2e894cd89821",
+      "en": "a49f2e894cd89821",
+      "fr": "a49f2e894cd89821",
+      "it": "a49f2e894cd89821",
       "zh": "a49f2e894cd89821",
-      "bn": "a49f2e894cd89821",
       "tr": "a49f2e894cd89821"
     },
     "Environment.carbonCardText": {
-      "en": "0adb57367ee3af36",
       "ja": "0adb57367ee3af36",
+      "en": "0adb57367ee3af36",
+      "fr": "0adb57367ee3af36",
+      "it": "0adb57367ee3af36",
       "zh": "0adb57367ee3af36",
-      "bn": "0adb57367ee3af36",
       "tr": "0adb57367ee3af36"
     },
     "Environment.scopeNote": {
-      "en": "148783245a1c7c7c",
       "ja": "148783245a1c7c7c",
+      "en": "148783245a1c7c7c",
+      "fr": "148783245a1c7c7c",
+      "it": "148783245a1c7c7c",
       "zh": "148783245a1c7c7c",
-      "bn": "148783245a1c7c7c",
       "tr": "148783245a1c7c7c"
     },
     "Environment.cta": {
-      "en": "086b2e6388b92434",
       "ja": "086b2e6388b92434",
+      "en": "086b2e6388b92434",
+      "fr": "086b2e6388b92434",
+      "it": "086b2e6388b92434",
       "zh": "086b2e6388b92434",
-      "bn": "086b2e6388b92434",
       "tr": "086b2e6388b92434"
     },
     "Environment.imageAlt": {
-      "en": "93a4ec0a5046ee4c",
       "ja": "93a4ec0a5046ee4c",
+      "en": "93a4ec0a5046ee4c",
+      "fr": "93a4ec0a5046ee4c",
+      "it": "93a4ec0a5046ee4c",
       "zh": "93a4ec0a5046ee4c",
-      "bn": "93a4ec0a5046ee4c",
       "tr": "93a4ec0a5046ee4c"
     },
     "Performance.eyebrow": {
-      "en": "d5e2b3962e0b2fa5",
       "ja": "d5e2b3962e0b2fa5",
+      "en": "d5e2b3962e0b2fa5",
+      "fr": "d5e2b3962e0b2fa5",
+      "it": "d5e2b3962e0b2fa5",
       "zh": "d5e2b3962e0b2fa5",
-      "bn": "d5e2b3962e0b2fa5",
       "tr": "d5e2b3962e0b2fa5"
     },
     "Performance.title": {
-      "en": "ac3dc5428581ca59",
       "ja": "ac3dc5428581ca59",
+      "en": "ac3dc5428581ca59",
+      "fr": "ac3dc5428581ca59",
+      "it": "ac3dc5428581ca59",
       "zh": "ac3dc5428581ca59",
-      "bn": "ac3dc5428581ca59",
       "tr": "ac3dc5428581ca59"
     },
     "Performance.body": {
-      "en": "cfb000c4c283f36b",
       "ja": "cfb000c4c283f36b",
+      "en": "cfb000c4c283f36b",
+      "fr": "cfb000c4c283f36b",
+      "it": "cfb000c4c283f36b",
       "zh": "cfb000c4c283f36b",
-      "bn": "cfb000c4c283f36b",
       "tr": "cfb000c4c283f36b"
     },
     "Performance.fabricAlt": {
-      "en": "047dde34d893eb6d",
       "ja": "047dde34d893eb6d",
+      "en": "047dde34d893eb6d",
+      "fr": "047dde34d893eb6d",
+      "it": "047dde34d893eb6d",
       "zh": "047dde34d893eb6d",
-      "bn": "047dde34d893eb6d",
       "tr": "047dde34d893eb6d"
     },
     "Performance.fabricCaption": {
-      "en": "3d7cab9623553c6c",
       "ja": "3d7cab9623553c6c",
+      "en": "3d7cab9623553c6c",
+      "fr": "3d7cab9623553c6c",
+      "it": "3d7cab9623553c6c",
       "zh": "3d7cab9623553c6c",
-      "bn": "3d7cab9623553c6c",
       "tr": "3d7cab9623553c6c"
     },
     "Performance.sampleLegendPlant": {
-      "en": "12d893e882e9ad46",
       "ja": "12d893e882e9ad46",
+      "en": "12d893e882e9ad46",
+      "fr": "12d893e882e9ad46",
+      "it": "12d893e882e9ad46",
       "zh": "12d893e882e9ad46",
-      "bn": "12d893e882e9ad46",
       "tr": "12d893e882e9ad46"
     },
     "Performance.sampleLegendChemical": {
-      "en": "3f8f7314e40b43d7",
       "ja": "3f8f7314e40b43d7",
+      "en": "3f8f7314e40b43d7",
+      "fr": "3f8f7314e40b43d7",
+      "it": "3f8f7314e40b43d7",
       "zh": "3f8f7314e40b43d7",
-      "bn": "3f8f7314e40b43d7",
       "tr": "3f8f7314e40b43d7"
     },
     "Performance.sampleLegendBio": {
-      "en": "292545e131e2b7ea",
       "ja": "292545e131e2b7ea",
+      "en": "292545e131e2b7ea",
+      "fr": "292545e131e2b7ea",
+      "it": "292545e131e2b7ea",
       "zh": "292545e131e2b7ea",
-      "bn": "292545e131e2b7ea",
       "tr": "292545e131e2b7ea"
     },
     "Performance.fiberCotton": {
-      "en": "cd4530df02c851d2",
       "ja": "cd4530df02c851d2",
+      "en": "cd4530df02c851d2",
+      "fr": "cd4530df02c851d2",
+      "it": "cd4530df02c851d2",
       "zh": "cd4530df02c851d2",
-      "bn": "cd4530df02c851d2",
       "tr": "cd4530df02c851d2"
     },
     "Performance.fiberSilk": {
-      "en": "48e272a5efe4414e",
       "ja": "48e272a5efe4414e",
+      "en": "48e272a5efe4414e",
+      "fr": "48e272a5efe4414e",
+      "it": "48e272a5efe4414e",
       "zh": "48e272a5efe4414e",
-      "bn": "48e272a5efe4414e",
       "tr": "48e272a5efe4414e"
     },
     "Performance.fiberCashmere": {
-      "en": "3c58dadccd94d714",
       "ja": "3c58dadccd94d714",
+      "en": "3c58dadccd94d714",
+      "fr": "3c58dadccd94d714",
+      "it": "3c58dadccd94d714",
       "zh": "3c58dadccd94d714",
-      "bn": "3c58dadccd94d714",
       "tr": "3c58dadccd94d714"
     },
     "Performance.cta": {
-      "en": "a18fad560eb2d400",
       "ja": "a18fad560eb2d400",
+      "en": "a18fad560eb2d400",
+      "fr": "a18fad560eb2d400",
+      "it": "a18fad560eb2d400",
       "zh": "a18fad560eb2d400",
-      "bn": "a18fad560eb2d400",
       "tr": "a18fad560eb2d400"
     },
     "Performance.honestNote": {
-      "en": "8477dab18b5ac59c",
       "ja": "8477dab18b5ac59c",
+      "en": "8477dab18b5ac59c",
+      "fr": "8477dab18b5ac59c",
+      "it": "8477dab18b5ac59c",
       "zh": "8477dab18b5ac59c",
-      "bn": "8477dab18b5ac59c",
       "tr": "8477dab18b5ac59c"
     },
     "Performance.additionalCaseTitle": {
-      "en": "bbd3f2fcf96720bd",
       "ja": "bbd3f2fcf96720bd",
+      "en": "bbd3f2fcf96720bd",
+      "fr": "bbd3f2fcf96720bd",
+      "it": "bbd3f2fcf96720bd",
       "zh": "bbd3f2fcf96720bd",
-      "bn": "bbd3f2fcf96720bd",
       "tr": "bbd3f2fcf96720bd"
     },
     "Performance.additionalCaseBody": {
-      "en": "2230f4c65c2feeaa",
       "ja": "2230f4c65c2feeaa",
+      "en": "2230f4c65c2feeaa",
+      "fr": "2230f4c65c2feeaa",
+      "it": "2230f4c65c2feeaa",
       "zh": "2230f4c65c2feeaa",
-      "bn": "2230f4c65c2feeaa",
       "tr": "2230f4c65c2feeaa"
     },
     "Performance.additionalCaseAlt": {
-      "en": "a395f7a122a7ef63",
       "ja": "a395f7a122a7ef63",
+      "en": "a395f7a122a7ef63",
+      "fr": "a395f7a122a7ef63",
+      "it": "a395f7a122a7ef63",
       "zh": "a395f7a122a7ef63",
-      "bn": "a395f7a122a7ef63",
       "tr": "a395f7a122a7ef63"
     },
     "Performance.additionalCaseProvenance": {
-      "en": "b22164c98cb6471f",
       "ja": "b22164c98cb6471f",
+      "en": "b22164c98cb6471f",
+      "fr": "b22164c98cb6471f",
+      "it": "b22164c98cb6471f",
       "zh": "b22164c98cb6471f",
-      "bn": "b22164c98cb6471f",
       "tr": "b22164c98cb6471f"
     },
     "Performance.additionalCaseCyclesLabel": {
-      "en": "32fe57519a432b28",
       "ja": "32fe57519a432b28",
+      "en": "32fe57519a432b28",
+      "fr": "32fe57519a432b28",
+      "it": "32fe57519a432b28",
       "zh": "32fe57519a432b28",
-      "bn": "32fe57519a432b28",
       "tr": "32fe57519a432b28"
     },
     "Performance.additionalCaseRowsLabel": {
-      "en": "d8ba487317ac4e37",
       "ja": "d8ba487317ac4e37",
+      "en": "d8ba487317ac4e37",
+      "fr": "d8ba487317ac4e37",
+      "it": "d8ba487317ac4e37",
       "zh": "d8ba487317ac4e37",
-      "bn": "d8ba487317ac4e37",
       "tr": "d8ba487317ac4e37"
     },
     "Fastness.title": {
-      "en": "90d1fb99214dce0f",
       "ja": "90d1fb99214dce0f",
+      "en": "90d1fb99214dce0f",
+      "fr": "90d1fb99214dce0f",
+      "it": "90d1fb99214dce0f",
       "zh": "90d1fb99214dce0f",
-      "bn": "90d1fb99214dce0f",
       "tr": "90d1fb99214dce0f"
     },
     "Fastness.intro": {
-      "en": "40177ca5a6595e00",
       "ja": "40177ca5a6595e00",
+      "en": "40177ca5a6595e00",
+      "fr": "40177ca5a6595e00",
+      "it": "40177ca5a6595e00",
       "zh": "40177ca5a6595e00",
-      "bn": "40177ca5a6595e00",
       "tr": "40177ca5a6595e00"
     },
     "Fastness.sampleHeader": {
-      "en": "bccba97727f96c00",
       "ja": "bccba97727f96c00",
+      "en": "bccba97727f96c00",
+      "fr": "bccba97727f96c00",
+      "it": "bccba97727f96c00",
       "zh": "bccba97727f96c00",
-      "bn": "bccba97727f96c00",
       "tr": "bccba97727f96c00"
     },
     "Fastness.itemHeader": {
-      "en": "b3f77de6e5395e01",
       "ja": "b3f77de6e5395e01",
+      "en": "b3f77de6e5395e01",
+      "fr": "b3f77de6e5395e01",
+      "it": "b3f77de6e5395e01",
       "zh": "b3f77de6e5395e01",
-      "bn": "b3f77de6e5395e01",
       "tr": "b3f77de6e5395e01"
     },
     "Fastness.methodLabel": {
-      "en": "2bb7df88077ea697",
       "ja": "2bb7df88077ea697",
+      "en": "2bb7df88077ea697",
+      "fr": "2bb7df88077ea697",
+      "it": "2bb7df88077ea697",
       "zh": "2bb7df88077ea697",
-      "bn": "2bb7df88077ea697",
       "tr": "2bb7df88077ea697"
     },
     "Fastness.tableLaundering": {
-      "en": "89050c259560a3ec",
       "ja": "89050c259560a3ec",
+      "en": "89050c259560a3ec",
+      "fr": "89050c259560a3ec",
+      "it": "89050c259560a3ec",
       "zh": "89050c259560a3ec",
-      "bn": "89050c259560a3ec",
       "tr": "89050c259560a3ec"
     },
     "Fastness.tableLight": {
-      "en": "f40b23cb149b5d4a",
       "ja": "f40b23cb149b5d4a",
+      "en": "f40b23cb149b5d4a",
+      "fr": "f40b23cb149b5d4a",
+      "it": "f40b23cb149b5d4a",
       "zh": "f40b23cb149b5d4a",
-      "bn": "f40b23cb149b5d4a",
       "tr": "f40b23cb149b5d4a"
     },
     "Fastness.tableRubbing": {
-      "en": "05efe3a50bc30d80",
       "ja": "05efe3a50bc30d80",
+      "en": "05efe3a50bc30d80",
+      "fr": "05efe3a50bc30d80",
+      "it": "05efe3a50bc30d80",
       "zh": "05efe3a50bc30d80",
-      "bn": "05efe3a50bc30d80",
       "tr": "05efe3a50bc30d80"
     },
     "Fastness.tablePerspiration": {
-      "en": "beb4f32c43942a92",
       "ja": "beb4f32c43942a92",
+      "en": "beb4f32c43942a92",
+      "fr": "beb4f32c43942a92",
+      "it": "beb4f32c43942a92",
       "zh": "beb4f32c43942a92",
-      "bn": "beb4f32c43942a92",
       "tr": "beb4f32c43942a92"
     },
     "Fastness.captionLaundering": {
-      "en": "83280e87c4b9a9c5",
       "ja": "83280e87c4b9a9c5",
+      "en": "83280e87c4b9a9c5",
+      "fr": "83280e87c4b9a9c5",
+      "it": "83280e87c4b9a9c5",
       "zh": "83280e87c4b9a9c5",
-      "bn": "83280e87c4b9a9c5",
       "tr": "83280e87c4b9a9c5"
     },
     "Fastness.captionLight": {
-      "en": "6621e57dc01b50ed",
       "ja": "6621e57dc01b50ed",
+      "en": "6621e57dc01b50ed",
+      "fr": "6621e57dc01b50ed",
+      "it": "6621e57dc01b50ed",
       "zh": "6621e57dc01b50ed",
-      "bn": "6621e57dc01b50ed",
       "tr": "6621e57dc01b50ed"
     },
     "Fastness.captionRubbing": {
-      "en": "91e51e2f4a0b3ca9",
       "ja": "91e51e2f4a0b3ca9",
+      "en": "91e51e2f4a0b3ca9",
+      "fr": "91e51e2f4a0b3ca9",
+      "it": "91e51e2f4a0b3ca9",
       "zh": "91e51e2f4a0b3ca9",
-      "bn": "91e51e2f4a0b3ca9",
       "tr": "91e51e2f4a0b3ca9"
     },
     "Fastness.captionPerspiration": {
-      "en": "5e7c0528b876ccfc",
       "ja": "5e7c0528b876ccfc",
+      "en": "5e7c0528b876ccfc",
+      "fr": "5e7c0528b876ccfc",
+      "it": "5e7c0528b876ccfc",
       "zh": "5e7c0528b876ccfc",
-      "bn": "5e7c0528b876ccfc",
       "tr": "5e7c0528b876ccfc"
     },
     "Fastness.groupChange": {
-      "en": "9f80fe036a335301",
       "ja": "9f80fe036a335301",
+      "en": "9f80fe036a335301",
+      "fr": "9f80fe036a335301",
+      "it": "9f80fe036a335301",
       "zh": "9f80fe036a335301",
-      "bn": "9f80fe036a335301",
       "tr": "9f80fe036a335301"
     },
     "Fastness.groupStain": {
-      "en": "d12991a2ead44d71",
       "ja": "d12991a2ead44d71",
+      "en": "d12991a2ead44d71",
+      "fr": "d12991a2ead44d71",
+      "it": "d12991a2ead44d71",
       "zh": "d12991a2ead44d71",
-      "bn": "d12991a2ead44d71",
       "tr": "d12991a2ead44d71"
     },
     "Fastness.rowColorChange": {
-      "en": "9f80fe036a335301",
       "ja": "9f80fe036a335301",
+      "en": "9f80fe036a335301",
+      "fr": "9f80fe036a335301",
+      "it": "9f80fe036a335301",
       "zh": "9f80fe036a335301",
-      "bn": "9f80fe036a335301",
       "tr": "9f80fe036a335301"
     },
     "Fastness.rowAcetate": {
-      "en": "8a4f3989552dba8a",
       "ja": "8a4f3989552dba8a",
+      "en": "8a4f3989552dba8a",
+      "fr": "8a4f3989552dba8a",
+      "it": "8a4f3989552dba8a",
       "zh": "8a4f3989552dba8a",
-      "bn": "8a4f3989552dba8a",
       "tr": "8a4f3989552dba8a"
     },
     "Fastness.rowCotton": {
-      "en": "cd4530df02c851d2",
       "ja": "cd4530df02c851d2",
+      "en": "cd4530df02c851d2",
+      "fr": "cd4530df02c851d2",
+      "it": "cd4530df02c851d2",
       "zh": "cd4530df02c851d2",
-      "bn": "cd4530df02c851d2",
       "tr": "cd4530df02c851d2"
     },
     "Fastness.rowNylon": {
-      "en": "f0b7c94432e47ae7",
       "ja": "f0b7c94432e47ae7",
+      "en": "f0b7c94432e47ae7",
+      "fr": "f0b7c94432e47ae7",
+      "it": "f0b7c94432e47ae7",
       "zh": "f0b7c94432e47ae7",
-      "bn": "f0b7c94432e47ae7",
       "tr": "f0b7c94432e47ae7"
     },
     "Fastness.rowPolyester": {
-      "en": "0c4efcdfa7767abf",
       "ja": "0c4efcdfa7767abf",
+      "en": "0c4efcdfa7767abf",
+      "fr": "0c4efcdfa7767abf",
+      "it": "0c4efcdfa7767abf",
       "zh": "0c4efcdfa7767abf",
-      "bn": "0c4efcdfa7767abf",
       "tr": "0c4efcdfa7767abf"
     },
     "Fastness.rowAcrylic": {
-      "en": "68205167372623d1",
       "ja": "68205167372623d1",
+      "en": "68205167372623d1",
+      "fr": "68205167372623d1",
+      "it": "68205167372623d1",
       "zh": "68205167372623d1",
-      "bn": "68205167372623d1",
       "tr": "68205167372623d1"
     },
     "Fastness.rowWool": {
-      "en": "6d63e6bd450f4a11",
       "ja": "6d63e6bd450f4a11",
+      "en": "6d63e6bd450f4a11",
+      "fr": "6d63e6bd450f4a11",
+      "it": "6d63e6bd450f4a11",
       "zh": "6d63e6bd450f4a11",
-      "bn": "6d63e6bd450f4a11",
       "tr": "6d63e6bd450f4a11"
     },
     "Fastness.rowDry": {
-      "en": "2a0d9757ce8c1508",
       "ja": "2a0d9757ce8c1508",
+      "en": "2a0d9757ce8c1508",
+      "fr": "2a0d9757ce8c1508",
+      "it": "2a0d9757ce8c1508",
       "zh": "2a0d9757ce8c1508",
-      "bn": "2a0d9757ce8c1508",
       "tr": "2a0d9757ce8c1508"
     },
     "Fastness.rowWet": {
-      "en": "c3eca6d4e3677f8b",
       "ja": "c3eca6d4e3677f8b",
+      "en": "c3eca6d4e3677f8b",
+      "fr": "c3eca6d4e3677f8b",
+      "it": "c3eca6d4e3677f8b",
       "zh": "c3eca6d4e3677f8b",
-      "bn": "c3eca6d4e3677f8b",
       "tr": "c3eca6d4e3677f8b"
     },
     "Fastness.subWarp": {
-      "en": "120b18d092a29750",
       "ja": "120b18d092a29750",
+      "en": "120b18d092a29750",
+      "fr": "120b18d092a29750",
+      "it": "120b18d092a29750",
       "zh": "120b18d092a29750",
-      "bn": "120b18d092a29750",
       "tr": "120b18d092a29750"
     },
     "Fastness.subWeft": {
-      "en": "79cd258b11661014",
       "ja": "79cd258b11661014",
+      "en": "79cd258b11661014",
+      "fr": "79cd258b11661014",
+      "it": "79cd258b11661014",
       "zh": "79cd258b11661014",
-      "bn": "79cd258b11661014",
       "tr": "79cd258b11661014"
     },
     "Fastness.subAcid": {
-      "en": "fcf5d7f7a8a48690",
       "ja": "fcf5d7f7a8a48690",
+      "en": "fcf5d7f7a8a48690",
+      "fr": "fcf5d7f7a8a48690",
+      "it": "fcf5d7f7a8a48690",
       "zh": "fcf5d7f7a8a48690",
-      "bn": "fcf5d7f7a8a48690",
       "tr": "fcf5d7f7a8a48690"
     },
     "Fastness.subAlkali": {
-      "en": "fb9fca370583aa66",
       "ja": "fb9fca370583aa66",
+      "en": "fb9fca370583aa66",
+      "fr": "fb9fca370583aa66",
+      "it": "fb9fca370583aa66",
       "zh": "fb9fca370583aa66",
-      "bn": "fb9fca370583aa66",
       "tr": "fb9fca370583aa66"
     },
     "Fastness.sourceImageCta": {
-      "en": "c8acf8d1b62d5556",
       "ja": "c8acf8d1b62d5556",
+      "en": "c8acf8d1b62d5556",
+      "fr": "c8acf8d1b62d5556",
+      "it": "c8acf8d1b62d5556",
       "zh": "c8acf8d1b62d5556",
-      "bn": "c8acf8d1b62d5556",
       "tr": "c8acf8d1b62d5556"
     },
     "Fastness.sourceImageAlt": {
-      "en": "5d8602b82bb6269c",
       "ja": "5d8602b82bb6269c",
+      "en": "5d8602b82bb6269c",
+      "fr": "5d8602b82bb6269c",
+      "it": "5d8602b82bb6269c",
       "zh": "5d8602b82bb6269c",
-      "bn": "5d8602b82bb6269c",
       "tr": "5d8602b82bb6269c"
     },
     "Fastness.gradeNote": {
-      "en": "c47c83e02a115ff7",
       "ja": "c47c83e02a115ff7",
+      "en": "c47c83e02a115ff7",
+      "fr": "c47c83e02a115ff7",
+      "it": "c47c83e02a115ff7",
       "zh": "c47c83e02a115ff7",
-      "bn": "c47c83e02a115ff7",
       "tr": "c47c83e02a115ff7"
     },
     "ShadeLibrary.eyebrow": {
-      "en": "15b5e279970feeb4",
       "ja": "15b5e279970feeb4",
+      "en": "15b5e279970feeb4",
+      "fr": "15b5e279970feeb4",
+      "it": "15b5e279970feeb4",
       "zh": "15b5e279970feeb4",
-      "bn": "15b5e279970feeb4",
       "tr": "15b5e279970feeb4"
     },
     "ShadeLibrary.title": {
-      "en": "29afa199f3b92a6d",
       "ja": "29afa199f3b92a6d",
+      "en": "29afa199f3b92a6d",
+      "fr": "29afa199f3b92a6d",
+      "it": "29afa199f3b92a6d",
       "zh": "29afa199f3b92a6d",
-      "bn": "29afa199f3b92a6d",
       "tr": "29afa199f3b92a6d"
     },
     "ShadeLibrary.body": {
-      "en": "d9c6251af412bb4e",
       "ja": "d9c6251af412bb4e",
+      "en": "d9c6251af412bb4e",
+      "fr": "d9c6251af412bb4e",
+      "it": "d9c6251af412bb4e",
       "zh": "d9c6251af412bb4e",
-      "bn": "d9c6251af412bb4e",
       "tr": "d9c6251af412bb4e"
     },
     "ShadeLibrary.gridTitle": {
-      "en": "35e4fbd1a775ce35",
       "ja": "35e4fbd1a775ce35",
+      "en": "35e4fbd1a775ce35",
+      "fr": "35e4fbd1a775ce35",
+      "it": "35e4fbd1a775ce35",
       "zh": "35e4fbd1a775ce35",
-      "bn": "35e4fbd1a775ce35",
       "tr": "35e4fbd1a775ce35"
     },
     "ShadeLibrary.gridHelp": {
-      "en": "2359febb95076ea5",
       "ja": "2359febb95076ea5",
+      "en": "2359febb95076ea5",
+      "fr": "2359febb95076ea5",
+      "it": "2359febb95076ea5",
       "zh": "2359febb95076ea5",
-      "bn": "2359febb95076ea5",
       "tr": "2359febb95076ea5"
     },
     "ShadeLibrary.axisLow": {
-      "en": "f793de205ead5ac3",
       "ja": "f793de205ead5ac3",
+      "en": "f793de205ead5ac3",
+      "fr": "f793de205ead5ac3",
+      "it": "f793de205ead5ac3",
       "zh": "f793de205ead5ac3",
-      "bn": "f793de205ead5ac3",
       "tr": "f793de205ead5ac3"
     },
     "ShadeLibrary.axisHigh": {
-      "en": "c4ebc6d4a5832cd9",
       "ja": "c4ebc6d4a5832cd9",
+      "en": "c4ebc6d4a5832cd9",
+      "fr": "c4ebc6d4a5832cd9",
+      "it": "c4ebc6d4a5832cd9",
       "zh": "c4ebc6d4a5832cd9",
-      "bn": "c4ebc6d4a5832cd9",
       "tr": "c4ebc6d4a5832cd9"
     },
     "ShadeLibrary.axisLabel": {
-      "en": "95557a1382df2000",
       "ja": "95557a1382df2000",
+      "en": "95557a1382df2000",
+      "fr": "95557a1382df2000",
+      "it": "95557a1382df2000",
       "zh": "95557a1382df2000",
-      "bn": "95557a1382df2000",
       "tr": "95557a1382df2000"
     },
     "ShadeLibrary.rowA": {
-      "en": "2a771bce6929d119",
       "ja": "2a771bce6929d119",
+      "en": "2a771bce6929d119",
+      "fr": "2a771bce6929d119",
+      "it": "2a771bce6929d119",
       "zh": "2a771bce6929d119",
-      "bn": "2a771bce6929d119",
       "tr": "2a771bce6929d119"
     },
     "ShadeLibrary.rowB": {
-      "en": "92fb67a9ad91eae6",
       "ja": "92fb67a9ad91eae6",
+      "en": "92fb67a9ad91eae6",
+      "fr": "92fb67a9ad91eae6",
+      "it": "92fb67a9ad91eae6",
       "zh": "92fb67a9ad91eae6",
-      "bn": "92fb67a9ad91eae6",
       "tr": "92fb67a9ad91eae6"
     },
     "ShadeLibrary.swatchLabel": {
-      "en": "58528645b64ffc2d",
       "ja": "58528645b64ffc2d",
+      "en": "58528645b64ffc2d",
+      "fr": "58528645b64ffc2d",
+      "it": "58528645b64ffc2d",
       "zh": "58528645b64ffc2d",
-      "bn": "58528645b64ffc2d",
       "tr": "58528645b64ffc2d"
     },
     "ShadeLibrary.swatchAlt": {
-      "en": "c744de2b4efbfeba",
       "ja": "c744de2b4efbfeba",
+      "en": "c744de2b4efbfeba",
+      "fr": "c744de2b4efbfeba",
+      "it": "c744de2b4efbfeba",
       "zh": "c744de2b4efbfeba",
-      "bn": "c744de2b4efbfeba",
       "tr": "c744de2b4efbfeba"
     },
     "ShadeLibrary.duplicateNote": {
-      "en": "ef424eae384e9ae2",
       "ja": "ef424eae384e9ae2",
+      "en": "ef424eae384e9ae2",
+      "fr": "ef424eae384e9ae2",
+      "it": "ef424eae384e9ae2",
       "zh": "ef424eae384e9ae2",
-      "bn": "ef424eae384e9ae2",
       "tr": "ef424eae384e9ae2"
     },
     "ShadeLibrary.indirubinTitle": {
-      "en": "02d37e1124937873",
       "ja": "02d37e1124937873",
+      "en": "02d37e1124937873",
+      "fr": "02d37e1124937873",
+      "it": "02d37e1124937873",
       "zh": "02d37e1124937873",
-      "bn": "02d37e1124937873",
       "tr": "02d37e1124937873"
     },
     "ShadeLibrary.indirubinBody": {
-      "en": "3dce12b196c0d27f",
       "ja": "3dce12b196c0d27f",
+      "en": "3dce12b196c0d27f",
+      "fr": "3dce12b196c0d27f",
+      "it": "3dce12b196c0d27f",
       "zh": "3dce12b196c0d27f",
-      "bn": "3dce12b196c0d27f",
       "tr": "3dce12b196c0d27f"
     },
     "ShadeLibrary.indirubinAltA": {
-      "en": "4581e7fcfa6b36b6",
       "ja": "4581e7fcfa6b36b6",
+      "en": "4581e7fcfa6b36b6",
+      "fr": "4581e7fcfa6b36b6",
+      "it": "4581e7fcfa6b36b6",
       "zh": "4581e7fcfa6b36b6",
-      "bn": "4581e7fcfa6b36b6",
       "tr": "4581e7fcfa6b36b6"
     },
     "ShadeLibrary.indirubinAltB": {
-      "en": "36b5ec12d29386db",
       "ja": "36b5ec12d29386db",
+      "en": "36b5ec12d29386db",
+      "fr": "36b5ec12d29386db",
+      "it": "36b5ec12d29386db",
       "zh": "36b5ec12d29386db",
-      "bn": "36b5ec12d29386db",
       "tr": "36b5ec12d29386db"
     },
     "ShadeLibrary.indirubinLabelA": {
-      "en": "0a0d0c7473d48e10",
       "ja": "0a0d0c7473d48e10",
+      "en": "0a0d0c7473d48e10",
+      "fr": "0a0d0c7473d48e10",
+      "it": "0a0d0c7473d48e10",
       "zh": "0a0d0c7473d48e10",
-      "bn": "0a0d0c7473d48e10",
       "tr": "0a0d0c7473d48e10"
     },
     "ShadeLibrary.indirubinLabelB": {
-      "en": "6ee389c85fc309c3",
       "ja": "6ee389c85fc309c3",
+      "en": "6ee389c85fc309c3",
+      "fr": "6ee389c85fc309c3",
+      "it": "6ee389c85fc309c3",
       "zh": "6ee389c85fc309c3",
-      "bn": "6ee389c85fc309c3",
       "tr": "6ee389c85fc309c3"
     },
     "ShadeLibrary.indirubinToggle": {
-      "en": "6e14a3bf7cde36bb",
       "ja": "6e14a3bf7cde36bb",
+      "en": "6e14a3bf7cde36bb",
+      "fr": "6e14a3bf7cde36bb",
+      "it": "6e14a3bf7cde36bb",
       "zh": "6e14a3bf7cde36bb",
-      "bn": "6e14a3bf7cde36bb",
       "tr": "6e14a3bf7cde36bb"
     },
     "ShadeLibrary.indirubinNote": {
-      "en": "e540be12e1cd35b2",
       "ja": "e540be12e1cd35b2",
+      "en": "e540be12e1cd35b2",
+      "fr": "e540be12e1cd35b2",
+      "it": "e540be12e1cd35b2",
       "zh": "e540be12e1cd35b2",
-      "bn": "e540be12e1cd35b2",
       "tr": "e540be12e1cd35b2"
     },
     "ShadeLibrary.colorDisclaimer": {
-      "en": "d0acfe3611c7eaf2",
       "ja": "d0acfe3611c7eaf2",
+      "en": "d0acfe3611c7eaf2",
+      "fr": "d0acfe3611c7eaf2",
+      "it": "d0acfe3611c7eaf2",
       "zh": "d0acfe3611c7eaf2",
-      "bn": "d0acfe3611c7eaf2",
       "tr": "d0acfe3611c7eaf2"
     },
     "ShadeLibrary.inquiryCta": {
-      "en": "8edd1b1e724d3b40",
       "ja": "8edd1b1e724d3b40",
+      "en": "8edd1b1e724d3b40",
+      "fr": "8edd1b1e724d3b40",
+      "it": "8edd1b1e724d3b40",
       "zh": "8edd1b1e724d3b40",
-      "bn": "8edd1b1e724d3b40",
       "tr": "8edd1b1e724d3b40"
     },
     "ShadeLibrary.medicalNote": {
-      "en": "6c38615c5f15e358",
       "ja": "6c38615c5f15e358",
+      "en": "6c38615c5f15e358",
+      "fr": "6c38615c5f15e358",
+      "it": "6c38615c5f15e358",
       "zh": "6c38615c5f15e358",
-      "bn": "6c38615c5f15e358",
       "tr": "6c38615c5f15e358"
     },
     "ShadeLibrary.keyboardHint": {
-      "en": "246812ff6c922fa7",
       "ja": "246812ff6c922fa7",
+      "en": "246812ff6c922fa7",
+      "fr": "246812ff6c922fa7",
+      "it": "246812ff6c922fa7",
       "zh": "246812ff6c922fa7",
-      "bn": "246812ff6c922fa7",
       "tr": "246812ff6c922fa7"
     },
     "Products.eyebrow": {
-      "en": "ec27149f21b7c6fa",
       "ja": "ec27149f21b7c6fa",
+      "en": "ec27149f21b7c6fa",
+      "fr": "ec27149f21b7c6fa",
+      "it": "ec27149f21b7c6fa",
       "zh": "ec27149f21b7c6fa",
-      "bn": "ec27149f21b7c6fa",
       "tr": "ec27149f21b7c6fa"
     },
     "Products.title": {
-      "en": "51d565c51abbae82",
       "ja": "51d565c51abbae82",
+      "en": "51d565c51abbae82",
+      "fr": "51d565c51abbae82",
+      "it": "51d565c51abbae82",
       "zh": "51d565c51abbae82",
-      "bn": "51d565c51abbae82",
       "tr": "51d565c51abbae82"
     },
     "Products.body": {
-      "en": "5970ced5caa068cc",
       "ja": "5970ced5caa068cc",
+      "en": "5970ced5caa068cc",
+      "fr": "5970ced5caa068cc",
+      "it": "5970ced5caa068cc",
       "zh": "5970ced5caa068cc",
-      "bn": "5970ced5caa068cc",
       "tr": "5970ced5caa068cc"
     },
     "Products.powderTitle": {
-      "en": "23396b4ecc84fb49",
       "ja": "23396b4ecc84fb49",
+      "en": "23396b4ecc84fb49",
+      "fr": "23396b4ecc84fb49",
+      "it": "23396b4ecc84fb49",
       "zh": "23396b4ecc84fb49",
-      "bn": "23396b4ecc84fb49",
       "tr": "23396b4ecc84fb49"
     },
     "Products.powderText": {
-      "en": "95dffdd476e13812",
       "ja": "95dffdd476e13812",
+      "en": "95dffdd476e13812",
+      "fr": "95dffdd476e13812",
+      "it": "95dffdd476e13812",
       "zh": "95dffdd476e13812",
-      "bn": "95dffdd476e13812",
       "tr": "95dffdd476e13812"
     },
     "Products.powderAlt": {
-      "en": "ca3d29c46220505f",
       "ja": "ca3d29c46220505f",
+      "en": "ca3d29c46220505f",
+      "fr": "ca3d29c46220505f",
+      "it": "ca3d29c46220505f",
       "zh": "ca3d29c46220505f",
-      "bn": "ca3d29c46220505f",
       "tr": "ca3d29c46220505f"
     },
     "Products.inkTitle": {
-      "en": "a49b1d9c46d5108d",
       "ja": "a49b1d9c46d5108d",
+      "en": "a49b1d9c46d5108d",
+      "fr": "a49b1d9c46d5108d",
+      "it": "a49b1d9c46d5108d",
       "zh": "a49b1d9c46d5108d",
-      "bn": "a49b1d9c46d5108d",
       "tr": "a49b1d9c46d5108d"
     },
     "Products.inkText": {
-      "en": "b4eb12ff95b7db6c",
       "ja": "b4eb12ff95b7db6c",
+      "en": "b4eb12ff95b7db6c",
+      "fr": "b4eb12ff95b7db6c",
+      "it": "b4eb12ff95b7db6c",
       "zh": "b4eb12ff95b7db6c",
-      "bn": "b4eb12ff95b7db6c",
       "tr": "b4eb12ff95b7db6c"
     },
     "Products.inkAlt": {
-      "en": "dd15c16de7543f89",
       "ja": "dd15c16de7543f89",
+      "en": "dd15c16de7543f89",
+      "fr": "dd15c16de7543f89",
+      "it": "dd15c16de7543f89",
       "zh": "dd15c16de7543f89",
-      "bn": "dd15c16de7543f89",
       "tr": "dd15c16de7543f89"
     },
     "Products.nameNote": {
-      "en": "279115c9a8300377",
       "ja": "279115c9a8300377",
+      "en": "279115c9a8300377",
+      "fr": "279115c9a8300377",
+      "it": "279115c9a8300377",
       "zh": "279115c9a8300377",
-      "bn": "279115c9a8300377",
       "tr": "279115c9a8300377"
     },
     "Products.specNote": {
-      "en": "a50af0e897057252",
       "ja": "a50af0e897057252",
+      "en": "a50af0e897057252",
+      "fr": "a50af0e897057252",
+      "it": "a50af0e897057252",
       "zh": "a50af0e897057252",
-      "bn": "a50af0e897057252",
       "tr": "a50af0e897057252"
     },
     "Products.cyclesTitle": {
-      "en": "9b1151e318091d14",
       "ja": "9b1151e318091d14",
+      "en": "9b1151e318091d14",
+      "fr": "9b1151e318091d14",
+      "it": "9b1151e318091d14",
       "zh": "9b1151e318091d14",
-      "bn": "9b1151e318091d14",
       "tr": "9b1151e318091d14"
     },
     "Products.cyclesCaption": {
-      "en": "180e9e72a46e2a18",
       "ja": "180e9e72a46e2a18",
+      "en": "180e9e72a46e2a18",
+      "fr": "180e9e72a46e2a18",
+      "it": "180e9e72a46e2a18",
       "zh": "180e9e72a46e2a18",
-      "bn": "180e9e72a46e2a18",
       "tr": "180e9e72a46e2a18"
     },
     "Products.cyclesAlt": {
-      "en": "b82a502f54acd131",
       "ja": "b82a502f54acd131",
+      "en": "b82a502f54acd131",
+      "fr": "b82a502f54acd131",
+      "it": "b82a502f54acd131",
       "zh": "b82a502f54acd131",
-      "bn": "b82a502f54acd131",
       "tr": "b82a502f54acd131"
     },
     "Products.cyclesNote": {
-      "en": "da86227d695d6634",
       "ja": "da86227d695d6634",
+      "en": "da86227d695d6634",
+      "fr": "da86227d695d6634",
+      "it": "da86227d695d6634",
       "zh": "da86227d695d6634",
-      "bn": "da86227d695d6634",
       "tr": "da86227d695d6634"
     },
     "Products.cta": {
-      "en": "cd755ed6ae6bfb2c",
       "ja": "cd755ed6ae6bfb2c",
+      "en": "cd755ed6ae6bfb2c",
+      "fr": "cd755ed6ae6bfb2c",
+      "it": "cd755ed6ae6bfb2c",
       "zh": "cd755ed6ae6bfb2c",
-      "bn": "cd755ed6ae6bfb2c",
       "tr": "cd755ed6ae6bfb2c"
     },
     "Printing.eyebrow": {
-      "en": "7b3fdd16504ce7ed",
       "ja": "7b3fdd16504ce7ed",
+      "en": "7b3fdd16504ce7ed",
+      "fr": "7b3fdd16504ce7ed",
+      "it": "7b3fdd16504ce7ed",
       "zh": "7b3fdd16504ce7ed",
-      "bn": "7b3fdd16504ce7ed",
       "tr": "7b3fdd16504ce7ed"
     },
     "Printing.title": {
-      "en": "05eb3bb552c37a68",
       "ja": "05eb3bb552c37a68",
+      "en": "05eb3bb552c37a68",
+      "fr": "05eb3bb552c37a68",
+      "it": "05eb3bb552c37a68",
       "zh": "05eb3bb552c37a68",
-      "bn": "05eb3bb552c37a68",
       "tr": "05eb3bb552c37a68"
     },
     "Printing.body": {
-      "en": "19fd45600f4bfdf7",
       "ja": "19fd45600f4bfdf7",
+      "en": "19fd45600f4bfdf7",
+      "fr": "19fd45600f4bfdf7",
+      "it": "19fd45600f4bfdf7",
       "zh": "19fd45600f4bfdf7",
-      "bn": "19fd45600f4bfdf7",
       "tr": "19fd45600f4bfdf7"
     },
     "Printing.pairOriginal": {
-      "en": "64394f5d66f39f30",
       "ja": "64394f5d66f39f30",
+      "en": "64394f5d66f39f30",
+      "fr": "64394f5d66f39f30",
+      "it": "64394f5d66f39f30",
       "zh": "64394f5d66f39f30",
-      "bn": "64394f5d66f39f30",
       "tr": "64394f5d66f39f30"
     },
     "Printing.pairPrinted": {
-      "en": "cdb5c7de280a613f",
       "ja": "cdb5c7de280a613f",
+      "en": "cdb5c7de280a613f",
+      "fr": "cdb5c7de280a613f",
+      "it": "cdb5c7de280a613f",
       "zh": "cdb5c7de280a613f",
-      "bn": "cdb5c7de280a613f",
       "tr": "cdb5c7de280a613f"
     },
     "Printing.pairAltOriginal": {
-      "en": "313538b90e0e4e1d",
       "ja": "313538b90e0e4e1d",
+      "en": "313538b90e0e4e1d",
+      "fr": "313538b90e0e4e1d",
+      "it": "313538b90e0e4e1d",
       "zh": "313538b90e0e4e1d",
-      "bn": "313538b90e0e4e1d",
       "tr": "313538b90e0e4e1d"
     },
     "Printing.pairAltPrinted": {
-      "en": "be0b11f9ea6eb2c5",
       "ja": "be0b11f9ea6eb2c5",
+      "en": "be0b11f9ea6eb2c5",
+      "fr": "be0b11f9ea6eb2c5",
+      "it": "be0b11f9ea6eb2c5",
       "zh": "be0b11f9ea6eb2c5",
-      "bn": "be0b11f9ea6eb2c5",
       "tr": "be0b11f9ea6eb2c5"
     },
     "Printing.pairNote": {
-      "en": "8a9201eb8a3234f7",
       "ja": "8a9201eb8a3234f7",
+      "en": "8a9201eb8a3234f7",
+      "fr": "8a9201eb8a3234f7",
+      "it": "8a9201eb8a3234f7",
       "zh": "8a9201eb8a3234f7",
-      "bn": "8a9201eb8a3234f7",
       "tr": "8a9201eb8a3234f7"
     },
     "Printing.processTitle": {
-      "en": "534e4c544709fd9c",
       "ja": "534e4c544709fd9c",
+      "en": "534e4c544709fd9c",
+      "fr": "534e4c544709fd9c",
+      "it": "534e4c544709fd9c",
       "zh": "534e4c544709fd9c",
-      "bn": "534e4c544709fd9c",
       "tr": "534e4c544709fd9c"
     },
     "Printing.processCaption": {
-      "en": "cd749599f1c3e897",
       "ja": "cd749599f1c3e897",
+      "en": "cd749599f1c3e897",
+      "fr": "cd749599f1c3e897",
+      "it": "cd749599f1c3e897",
       "zh": "cd749599f1c3e897",
-      "bn": "cd749599f1c3e897",
       "tr": "cd749599f1c3e897"
     },
     "Printing.processAlt": {
-      "en": "8dd3788c2e3fdbd4",
       "ja": "8dd3788c2e3fdbd4",
+      "en": "8dd3788c2e3fdbd4",
+      "fr": "8dd3788c2e3fdbd4",
+      "it": "8dd3788c2e3fdbd4",
       "zh": "8dd3788c2e3fdbd4",
-      "bn": "8dd3788c2e3fdbd4",
       "tr": "8dd3788c2e3fdbd4"
     },
     "Printing.processNote": {
-      "en": "79333f35c6426ed9",
       "ja": "79333f35c6426ed9",
+      "en": "79333f35c6426ed9",
+      "fr": "79333f35c6426ed9",
+      "it": "79333f35c6426ed9",
       "zh": "79333f35c6426ed9",
-      "bn": "79333f35c6426ed9",
       "tr": "79333f35c6426ed9"
     },
     "Printing.steps[0].title": {
-      "en": "66c6664202f700b0",
       "ja": "66c6664202f700b0",
+      "en": "66c6664202f700b0",
       "zh": "66c6664202f700b0",
-      "bn": "66c6664202f700b0",
       "tr": "66c6664202f700b0"
     },
     "Printing.steps[0].text": {
-      "en": "91244230a8d0b93e",
       "ja": "91244230a8d0b93e",
+      "en": "91244230a8d0b93e",
       "zh": "91244230a8d0b93e",
-      "bn": "91244230a8d0b93e",
       "tr": "91244230a8d0b93e"
     },
     "Printing.steps[1].title": {
-      "en": "49b7d6f6e16d5694",
       "ja": "49b7d6f6e16d5694",
+      "en": "49b7d6f6e16d5694",
       "zh": "49b7d6f6e16d5694",
-      "bn": "49b7d6f6e16d5694",
       "tr": "49b7d6f6e16d5694"
     },
     "Printing.steps[1].text": {
-      "en": "53403d134c003985",
       "ja": "53403d134c003985",
+      "en": "53403d134c003985",
       "zh": "53403d134c003985",
-      "bn": "53403d134c003985",
       "tr": "53403d134c003985"
     },
     "Printing.steps[2].title": {
-      "en": "87a11468616019fc",
       "ja": "87a11468616019fc",
+      "en": "87a11468616019fc",
       "zh": "87a11468616019fc",
-      "bn": "87a11468616019fc",
       "tr": "87a11468616019fc"
     },
     "Printing.steps[2].text": {
-      "en": "d8554806521a0e93",
       "ja": "d8554806521a0e93",
+      "en": "d8554806521a0e93",
       "zh": "d8554806521a0e93",
-      "bn": "d8554806521a0e93",
       "tr": "d8554806521a0e93"
     },
     "Printing.steps[3].title": {
-      "en": "d12fa15a4aad0a8b",
       "ja": "d12fa15a4aad0a8b",
+      "en": "d12fa15a4aad0a8b",
       "zh": "d12fa15a4aad0a8b",
-      "bn": "d12fa15a4aad0a8b",
       "tr": "d12fa15a4aad0a8b"
     },
     "Printing.steps[3].text": {
-      "en": "7c3af2cc8c162b48",
       "ja": "7c3af2cc8c162b48",
+      "en": "7c3af2cc8c162b48",
       "zh": "7c3af2cc8c162b48",
-      "bn": "7c3af2cc8c162b48",
       "tr": "7c3af2cc8c162b48"
     },
     "Printing.steps[4].title": {
-      "en": "0611fa04823d7b42",
       "ja": "0611fa04823d7b42",
+      "en": "0611fa04823d7b42",
       "zh": "0611fa04823d7b42",
-      "bn": "0611fa04823d7b42",
       "tr": "0611fa04823d7b42"
     },
     "Printing.steps[4].text": {
-      "en": "fee6346441383a9c",
       "ja": "fee6346441383a9c",
+      "en": "fee6346441383a9c",
       "zh": "fee6346441383a9c",
-      "bn": "fee6346441383a9c",
       "tr": "fee6346441383a9c"
     },
     "Printing.advantagesTitle": {
-      "en": "3a0dd88708b6a071",
       "ja": "3a0dd88708b6a071",
+      "en": "3a0dd88708b6a071",
+      "fr": "3a0dd88708b6a071",
+      "it": "3a0dd88708b6a071",
       "zh": "3a0dd88708b6a071",
-      "bn": "3a0dd88708b6a071",
       "tr": "3a0dd88708b6a071"
     },
     "Printing.advantages[0]": {
-      "en": "5eea1c48c6599b7f",
       "ja": "5eea1c48c6599b7f",
+      "en": "5eea1c48c6599b7f",
       "zh": "5eea1c48c6599b7f",
-      "bn": "5eea1c48c6599b7f",
       "tr": "5eea1c48c6599b7f"
     },
     "Printing.advantages[1]": {
-      "en": "e8da530ef494b5ba",
       "ja": "e8da530ef494b5ba",
+      "en": "e8da530ef494b5ba",
       "zh": "e8da530ef494b5ba",
-      "bn": "e8da530ef494b5ba",
       "tr": "e8da530ef494b5ba"
     },
     "Printing.advantages[2]": {
-      "en": "332ea83a8992ef16",
       "ja": "332ea83a8992ef16",
+      "en": "332ea83a8992ef16",
       "zh": "332ea83a8992ef16",
-      "bn": "332ea83a8992ef16",
       "tr": "332ea83a8992ef16"
     },
     "Printing.advantagesNote": {
-      "en": "c21ab81e1e34f30b",
       "ja": "c21ab81e1e34f30b",
+      "en": "c21ab81e1e34f30b",
+      "fr": "c21ab81e1e34f30b",
+      "it": "c21ab81e1e34f30b",
       "zh": "c21ab81e1e34f30b",
-      "bn": "c21ab81e1e34f30b",
       "tr": "c21ab81e1e34f30b"
     },
     "DataHub.eyebrow": {
-      "en": "054d2fee8175295b",
       "ja": "054d2fee8175295b",
+      "en": "054d2fee8175295b",
+      "fr": "054d2fee8175295b",
+      "it": "054d2fee8175295b",
       "zh": "054d2fee8175295b",
-      "bn": "054d2fee8175295b",
       "tr": "054d2fee8175295b"
     },
     "DataHub.title": {
-      "en": "dbd5ea87c753b144",
       "ja": "dbd5ea87c753b144",
+      "en": "dbd5ea87c753b144",
+      "fr": "dbd5ea87c753b144",
+      "it": "dbd5ea87c753b144",
       "zh": "dbd5ea87c753b144",
-      "bn": "dbd5ea87c753b144",
       "tr": "dbd5ea87c753b144"
     },
     "DataHub.body": {
-      "en": "b11f7add18209525",
       "ja": "b11f7add18209525",
+      "en": "b11f7add18209525",
+      "fr": "b11f7add18209525",
+      "it": "b11f7add18209525",
       "zh": "b11f7add18209525",
-      "bn": "b11f7add18209525",
       "tr": "b11f7add18209525"
     },
     "DataHub.carbonSectionTitle": {
-      "en": "0b31319f0314fcaf",
       "ja": "0b31319f0314fcaf",
+      "en": "0b31319f0314fcaf",
+      "fr": "0b31319f0314fcaf",
+      "it": "0b31319f0314fcaf",
       "zh": "0b31319f0314fcaf",
-      "bn": "0b31319f0314fcaf",
       "tr": "0b31319f0314fcaf"
     },
     "DataHub.carbonSectionBody": {
-      "en": "e59c077a60923b66",
       "ja": "e59c077a60923b66",
+      "en": "e59c077a60923b66",
+      "fr": "e59c077a60923b66",
+      "it": "e59c077a60923b66",
       "zh": "e59c077a60923b66",
-      "bn": "e59c077a60923b66",
       "tr": "e59c077a60923b66"
     },
     "DataHub.anilineSectionTitle": {
-      "en": "c7f3f2245dd3590e",
       "ja": "c7f3f2245dd3590e",
+      "en": "c7f3f2245dd3590e",
+      "fr": "c7f3f2245dd3590e",
+      "it": "c7f3f2245dd3590e",
       "zh": "c7f3f2245dd3590e",
-      "bn": "c7f3f2245dd3590e",
       "tr": "c7f3f2245dd3590e"
     },
     "DataHub.anilineSectionBody": {
-      "en": "bad64b3f2635fa8b",
       "ja": "bad64b3f2635fa8b",
+      "en": "bad64b3f2635fa8b",
+      "fr": "bad64b3f2635fa8b",
+      "it": "bad64b3f2635fa8b",
       "zh": "bad64b3f2635fa8b",
-      "bn": "bad64b3f2635fa8b",
       "tr": "bad64b3f2635fa8b"
     },
     "DataHub.tableLab": {
-      "en": "5091fb21a50630fd",
       "ja": "5091fb21a50630fd",
+      "en": "5091fb21a50630fd",
+      "fr": "5091fb21a50630fd",
+      "it": "5091fb21a50630fd",
       "zh": "5091fb21a50630fd",
-      "bn": "5091fb21a50630fd",
       "tr": "5091fb21a50630fd"
     },
     "DataHub.tableMethod": {
-      "en": "2bb7df88077ea697",
       "ja": "2bb7df88077ea697",
+      "en": "2bb7df88077ea697",
+      "fr": "2bb7df88077ea697",
+      "it": "2bb7df88077ea697",
       "zh": "2bb7df88077ea697",
-      "bn": "2bb7df88077ea697",
       "tr": "2bb7df88077ea697"
     },
     "DataHub.tableReport": {
-      "en": "edef468983006f71",
       "ja": "edef468983006f71",
+      "en": "edef468983006f71",
+      "fr": "edef468983006f71",
+      "it": "edef468983006f71",
       "zh": "edef468983006f71",
-      "bn": "edef468983006f71",
       "tr": "edef468983006f71"
     },
     "DataHub.tableReportDate": {
-      "en": "4074810e4a8dc0ca",
       "ja": "4074810e4a8dc0ca",
+      "en": "4074810e4a8dc0ca",
+      "fr": "4074810e4a8dc0ca",
+      "it": "4074810e4a8dc0ca",
       "zh": "4074810e4a8dc0ca",
-      "bn": "4074810e4a8dc0ca",
       "tr": "4074810e4a8dc0ca"
     },
     "DataHub.tableDetectionLimit": {
-      "en": "3a36e6c10f84f9a5",
       "ja": "3a36e6c10f84f9a5",
+      "en": "3a36e6c10f84f9a5",
+      "fr": "3a36e6c10f84f9a5",
+      "it": "3a36e6c10f84f9a5",
       "zh": "3a36e6c10f84f9a5",
-      "bn": "3a36e6c10f84f9a5",
       "tr": "3a36e6c10f84f9a5"
     },
     "DataHub.tableType": {
-      "en": "27323d8490b2d1a9",
       "ja": "27323d8490b2d1a9",
+      "en": "27323d8490b2d1a9",
+      "fr": "27323d8490b2d1a9",
+      "it": "27323d8490b2d1a9",
       "zh": "27323d8490b2d1a9",
-      "bn": "27323d8490b2d1a9",
       "tr": "27323d8490b2d1a9"
     },
     "DataHub.tableSample": {
-      "en": "bccba97727f96c00",
       "ja": "bccba97727f96c00",
+      "en": "bccba97727f96c00",
+      "fr": "bccba97727f96c00",
+      "it": "bccba97727f96c00",
       "zh": "bccba97727f96c00",
-      "bn": "bccba97727f96c00",
       "tr": "bccba97727f96c00"
     },
     "DataHub.tablePmc": {
-      "en": "06f7441bc6a9cabe",
       "ja": "06f7441bc6a9cabe",
+      "en": "06f7441bc6a9cabe",
+      "fr": "06f7441bc6a9cabe",
+      "it": "06f7441bc6a9cabe",
       "zh": "06f7441bc6a9cabe",
-      "bn": "06f7441bc6a9cabe",
       "tr": "06f7441bc6a9cabe"
     },
     "DataHub.tableBiobased": {
-      "en": "d76fb950911653bb",
       "ja": "d76fb950911653bb",
+      "en": "d76fb950911653bb",
+      "fr": "d76fb950911653bb",
+      "it": "d76fb950911653bb",
       "zh": "d76fb950911653bb",
-      "bn": "d76fb950911653bb",
       "tr": "d76fb950911653bb"
     },
     "DataHub.tableAniline": {
-      "en": "2a9b8a6f3e8c3fd1",
       "ja": "2a9b8a6f3e8c3fd1",
+      "en": "2a9b8a6f3e8c3fd1",
+      "fr": "2a9b8a6f3e8c3fd1",
+      "it": "2a9b8a6f3e8c3fd1",
       "zh": "2a9b8a6f3e8c3fd1",
-      "bn": "2a9b8a6f3e8c3fd1",
       "tr": "2a9b8a6f3e8c3fd1"
     },
     "DataHub.tableNMethylaniline": {
-      "en": "d10370650c503a0a",
       "ja": "d10370650c503a0a",
+      "en": "d10370650c503a0a",
+      "fr": "d10370650c503a0a",
+      "it": "d10370650c503a0a",
       "zh": "d10370650c503a0a",
-      "bn": "d10370650c503a0a",
       "tr": "d10370650c503a0a"
     },
     "DataHub.typeChemical": {
-      "en": "0be70243c62afc55",
       "ja": "0be70243c62afc55",
+      "en": "0be70243c62afc55",
+      "fr": "0be70243c62afc55",
+      "it": "0be70243c62afc55",
       "zh": "0be70243c62afc55",
-      "bn": "0be70243c62afc55",
       "tr": "0be70243c62afc55"
     },
     "DataHub.typePlant": {
-      "en": "94f070de286f6467",
       "ja": "94f070de286f6467",
+      "en": "94f070de286f6467",
+      "fr": "94f070de286f6467",
+      "it": "94f070de286f6467",
       "zh": "94f070de286f6467",
-      "bn": "94f070de286f6467",
       "tr": "94f070de286f6467"
     },
     "DataHub.typeBio": {
-      "en": "34b7c038626c4677",
       "ja": "34b7c038626c4677",
+      "en": "34b7c038626c4677",
+      "fr": "34b7c038626c4677",
+      "it": "34b7c038626c4677",
       "zh": "34b7c038626c4677",
-      "bn": "34b7c038626c4677",
       "tr": "34b7c038626c4677"
     },
     "DataHub.notDetected": {
-      "en": "edccb1c4bea17d84",
       "ja": "edccb1c4bea17d84",
+      "en": "edccb1c4bea17d84",
+      "fr": "edccb1c4bea17d84",
+      "it": "edccb1c4bea17d84",
       "zh": "edccb1c4bea17d84",
-      "bn": "edccb1c4bea17d84",
       "tr": "edccb1c4bea17d84"
     },
     "DataHub.notDetectedShort": {
-      "en": "890c6bf506fafd8e",
       "ja": "890c6bf506fafd8e",
+      "en": "890c6bf506fafd8e",
+      "fr": "890c6bf506fafd8e",
+      "it": "890c6bf506fafd8e",
       "zh": "890c6bf506fafd8e",
-      "bn": "890c6bf506fafd8e",
       "tr": "890c6bf506fafd8e"
     },
     "DataHub.notDetectedExplain": {
-      "en": "f713ab169a7ad610",
       "ja": "f713ab169a7ad610",
+      "en": "f713ab169a7ad610",
+      "fr": "f713ab169a7ad610",
+      "it": "f713ab169a7ad610",
       "zh": "f713ab169a7ad610",
-      "bn": "f713ab169a7ad610",
       "tr": "f713ab169a7ad610"
     },
     "DataHub.sameLabelNote": {
-      "en": "87dfb4799188a2a0",
       "ja": "87dfb4799188a2a0",
+      "en": "87dfb4799188a2a0",
+      "fr": "87dfb4799188a2a0",
+      "it": "87dfb4799188a2a0",
       "zh": "87dfb4799188a2a0",
-      "bn": "87dfb4799188a2a0",
       "tr": "87dfb4799188a2a0"
     },
     "DataHub.anonymousNote": {
-      "en": "9ec51496a185a8f3",
       "ja": "9ec51496a185a8f3",
+      "en": "9ec51496a185a8f3",
+      "fr": "9ec51496a185a8f3",
+      "it": "9ec51496a185a8f3",
       "zh": "9ec51496a185a8f3",
-      "bn": "9ec51496a185a8f3",
       "tr": "9ec51496a185a8f3"
     },
     "DataHub.sampleScopeNote": {
-      "en": "a0d4473ff7211114",
       "ja": "a0d4473ff7211114",
+      "en": "a0d4473ff7211114",
+      "fr": "a0d4473ff7211114",
+      "it": "a0d4473ff7211114",
       "zh": "a0d4473ff7211114",
-      "bn": "a0d4473ff7211114",
       "tr": "a0d4473ff7211114"
     },
     "DataHub.chartCarbonTitle": {
-      "en": "a9ddd1d574497150",
       "ja": "a9ddd1d574497150",
+      "en": "a9ddd1d574497150",
+      "fr": "a9ddd1d574497150",
+      "it": "a9ddd1d574497150",
       "zh": "a9ddd1d574497150",
-      "bn": "a9ddd1d574497150",
       "tr": "a9ddd1d574497150"
     },
     "DataHub.chartAnilineTitle": {
-      "en": "05400bcd9116c873",
       "ja": "05400bcd9116c873",
+      "en": "05400bcd9116c873",
+      "fr": "05400bcd9116c873",
+      "it": "05400bcd9116c873",
       "zh": "05400bcd9116c873",
-      "bn": "05400bcd9116c873",
       "tr": "05400bcd9116c873"
     },
     "DataHub.chartAccessibleNote": {
-      "en": "9e7225a9da6f7ba8",
       "ja": "9e7225a9da6f7ba8",
+      "en": "9e7225a9da6f7ba8",
+      "fr": "9e7225a9da6f7ba8",
+      "it": "9e7225a9da6f7ba8",
       "zh": "9e7225a9da6f7ba8",
-      "bn": "9e7225a9da6f7ba8",
       "tr": "9e7225a9da6f7ba8"
     },
     "DataHub.regulatoryOmitted": {
-      "en": "8d7a1eebc711c91b",
       "ja": "8d7a1eebc711c91b",
+      "en": "8d7a1eebc711c91b",
+      "fr": "8d7a1eebc711c91b",
+      "it": "8d7a1eebc711c91b",
       "zh": "8d7a1eebc711c91b",
-      "tr": "8d7a1eebc711c91b",
-      "bn": "8d7a1eebc711c91b"
+      "tr": "8d7a1eebc711c91b"
     },
     "DataHub.catalogueTitle": {
-      "en": "c637ab63c97352e8",
       "ja": "c637ab63c97352e8",
+      "en": "c637ab63c97352e8",
+      "fr": "c637ab63c97352e8",
+      "it": "c637ab63c97352e8",
       "zh": "c637ab63c97352e8",
-      "bn": "c637ab63c97352e8",
       "tr": "c637ab63c97352e8"
     },
     "DataHub.catalogueBody": {
-      "en": "b43203ccfca356ec",
       "ja": "b43203ccfca356ec",
+      "en": "b43203ccfca356ec",
+      "fr": "b43203ccfca356ec",
+      "it": "b43203ccfca356ec",
       "zh": "b43203ccfca356ec",
-      "bn": "b43203ccfca356ec",
       "tr": "b43203ccfca356ec"
     },
     "DataHub.cataloguePage": {
-      "en": "f1448aaa464b237a",
       "ja": "f1448aaa464b237a",
+      "en": "f1448aaa464b237a",
+      "fr": "f1448aaa464b237a",
+      "it": "f1448aaa464b237a",
       "zh": "f1448aaa464b237a",
-      "bn": "f1448aaa464b237a",
       "tr": "f1448aaa464b237a"
     },
     "DataHub.cataloguePageAlt": {
-      "en": "2f732c7210dfb063",
       "ja": "2f732c7210dfb063",
+      "en": "2f732c7210dfb063",
+      "fr": "2f732c7210dfb063",
+      "it": "2f732c7210dfb063",
       "zh": "2f732c7210dfb063",
-      "bn": "2f732c7210dfb063",
       "tr": "2f732c7210dfb063"
     },
     "DataHub.catalogueDownload": {
-      "en": "fafdd7678132d956",
       "ja": "fafdd7678132d956",
+      "en": "fafdd7678132d956",
+      "fr": "fafdd7678132d956",
+      "it": "fafdd7678132d956",
       "zh": "fafdd7678132d956",
-      "bn": "fafdd7678132d956",
       "tr": "fafdd7678132d956"
     },
     "DataHub.catalogueAnchorNote": {
-      "en": "8d206078b6b1adf7",
       "ja": "8d206078b6b1adf7",
+      "en": "8d206078b6b1adf7",
+      "fr": "8d206078b6b1adf7",
+      "it": "8d206078b6b1adf7",
       "zh": "8d206078b6b1adf7",
-      "bn": "8d206078b6b1adf7",
       "tr": "8d206078b6b1adf7"
     },
     "DataHub.carbonZeroNote": {
-      "en": "12e3338e09cd07d2",
       "ja": "12e3338e09cd07d2",
+      "en": "12e3338e09cd07d2",
+      "fr": "12e3338e09cd07d2",
+      "it": "12e3338e09cd07d2",
       "zh": "12e3338e09cd07d2",
-      "bn": "12e3338e09cd07d2",
       "tr": "12e3338e09cd07d2"
     },
     "Certifications.title": {
-      "en": "2a149d0501a4a8f2",
       "ja": "2a149d0501a4a8f2",
+      "en": "2a149d0501a4a8f2",
+      "fr": "2a149d0501a4a8f2",
+      "it": "2a149d0501a4a8f2",
       "zh": "2a149d0501a4a8f2",
-      "bn": "2a149d0501a4a8f2",
       "tr": "2a149d0501a4a8f2"
     },
     "Certifications.body": {
-      "en": "163e2dd70243577f",
       "ja": "163e2dd70243577f",
+      "en": "163e2dd70243577f",
+      "fr": "163e2dd70243577f",
+      "it": "163e2dd70243577f",
       "zh": "163e2dd70243577f",
-      "bn": "163e2dd70243577f",
       "tr": "163e2dd70243577f"
     },
     "Certifications.numberLabel": {
-      "en": "6f5a70391e4a378c",
       "ja": "6f5a70391e4a378c",
+      "en": "6f5a70391e4a378c",
+      "fr": "6f5a70391e4a378c",
+      "it": "6f5a70391e4a378c",
       "zh": "6f5a70391e4a378c",
-      "bn": "6f5a70391e4a378c",
       "tr": "6f5a70391e4a378c"
     },
     "Certifications.issuerLabel": {
-      "en": "781b863ccdd5f5b9",
       "ja": "781b863ccdd5f5b9",
+      "en": "781b863ccdd5f5b9",
+      "fr": "781b863ccdd5f5b9",
+      "it": "781b863ccdd5f5b9",
       "zh": "781b863ccdd5f5b9",
-      "bn": "781b863ccdd5f5b9",
       "tr": "781b863ccdd5f5b9"
     },
     "Certifications.productLabel": {
-      "en": "c0280ad2794f2591",
       "ja": "c0280ad2794f2591",
+      "en": "c0280ad2794f2591",
+      "fr": "c0280ad2794f2591",
+      "it": "c0280ad2794f2591",
       "zh": "c0280ad2794f2591",
-      "bn": "c0280ad2794f2591",
       "tr": "c0280ad2794f2591"
     },
     "Certifications.validityLabel": {
-      "en": "ad51eb794749ba32",
       "ja": "ad51eb794749ba32",
+      "en": "ad51eb794749ba32",
+      "fr": "ad51eb794749ba32",
+      "it": "ad51eb794749ba32",
       "zh": "ad51eb794749ba32",
-      "bn": "ad51eb794749ba32",
       "tr": "ad51eb794749ba32"
     },
     "Certifications.issuedLabel": {
-      "en": "e525d320a5220613",
       "ja": "e525d320a5220613",
+      "en": "e525d320a5220613",
+      "fr": "e525d320a5220613",
+      "it": "e525d320a5220613",
       "zh": "e525d320a5220613",
-      "bn": "e525d320a5220613",
       "tr": "e525d320a5220613"
     },
     "Certifications.pageLabel": {
-      "en": "e57f48a4337a4326",
       "ja": "e57f48a4337a4326",
+      "en": "e57f48a4337a4326",
+      "fr": "e57f48a4337a4326",
+      "it": "e57f48a4337a4326",
       "zh": "e57f48a4337a4326",
-      "bn": "e57f48a4337a4326",
       "tr": "e57f48a4337a4326"
     },
     "Certifications.certificateAlt": {
-      "en": "28fc738d7a183a2f",
       "ja": "28fc738d7a183a2f",
+      "en": "28fc738d7a183a2f",
+      "fr": "28fc738d7a183a2f",
+      "it": "28fc738d7a183a2f",
       "zh": "28fc738d7a183a2f",
-      "bn": "28fc738d7a183a2f",
       "tr": "28fc738d7a183a2f"
     },
     "Certifications.logoAlt": {
-      "en": "99b94e316dbdc921",
       "ja": "99b94e316dbdc921",
+      "en": "99b94e316dbdc921",
+      "fr": "99b94e316dbdc921",
+      "it": "99b94e316dbdc921",
       "zh": "99b94e316dbdc921",
-      "bn": "99b94e316dbdc921",
       "tr": "99b94e316dbdc921"
     },
     "Certifications.noExpiry": {
-      "en": "bb1920a684b208ee",
       "ja": "bb1920a684b208ee",
+      "en": "bb1920a684b208ee",
+      "fr": "bb1920a684b208ee",
+      "it": "bb1920a684b208ee",
       "zh": "bb1920a684b208ee",
-      "bn": "bb1920a684b208ee",
       "tr": "bb1920a684b208ee"
     },
     "Certifications.statusDocumented": {
-      "en": "bfafc9085b613022",
       "ja": "bfafc9085b613022",
+      "en": "bfafc9085b613022",
+      "fr": "bfafc9085b613022",
+      "it": "bfafc9085b613022",
       "zh": "bfafc9085b613022",
-      "bn": "bfafc9085b613022",
       "tr": "bfafc9085b613022"
     },
     "Certifications.statusWithinPeriod": {
-      "en": "a7a7323cf2859cbf",
       "ja": "a7a7323cf2859cbf",
+      "en": "a7a7323cf2859cbf",
+      "fr": "a7a7323cf2859cbf",
+      "it": "a7a7323cf2859cbf",
       "zh": "a7a7323cf2859cbf",
-      "bn": "a7a7323cf2859cbf",
       "tr": "a7a7323cf2859cbf"
     },
     "Certifications.statusPastPeriod": {
-      "en": "171baa9d8faaa1e4",
       "ja": "171baa9d8faaa1e4",
+      "en": "171baa9d8faaa1e4",
+      "fr": "171baa9d8faaa1e4",
+      "it": "171baa9d8faaa1e4",
       "zh": "171baa9d8faaa1e4",
-      "bn": "171baa9d8faaa1e4",
       "tr": "171baa9d8faaa1e4"
     },
     "Certifications.verificationNote": {
-      "en": "0ca556cf032c4661",
       "ja": "0ca556cf032c4661",
+      "en": "0ca556cf032c4661",
+      "fr": "0ca556cf032c4661",
+      "it": "0ca556cf032c4661",
       "zh": "0ca556cf032c4661",
-      "bn": "0ca556cf032c4661",
       "tr": "0ca556cf032c4661"
     },
     "Certifications.brandNameNote": {
-      "en": "478132e13d585301",
       "ja": "478132e13d585301",
+      "en": "478132e13d585301",
+      "fr": "478132e13d585301",
+      "it": "478132e13d585301",
       "zh": "478132e13d585301",
-      "bn": "478132e13d585301",
       "tr": "478132e13d585301"
     },
     "Certifications.scopeNote": {
-      "en": "e2ed49db68f01b35",
       "ja": "e2ed49db68f01b35",
+      "en": "e2ed49db68f01b35",
+      "fr": "e2ed49db68f01b35",
+      "it": "e2ed49db68f01b35",
       "zh": "e2ed49db68f01b35",
-      "bn": "e2ed49db68f01b35",
       "tr": "e2ed49db68f01b35"
     },
     "Certifications.asOfLabel": {
-      "en": "6fb7c1e9a574a052",
       "ja": "6fb7c1e9a574a052",
+      "en": "6fb7c1e9a574a052",
+      "fr": "6fb7c1e9a574a052",
+      "it": "6fb7c1e9a574a052",
       "zh": "6fb7c1e9a574a052",
-      "bn": "6fb7c1e9a574a052",
       "tr": "6fb7c1e9a574a052"
     },
     "Certifications.nextReviewLabel": {
-      "en": "a56ef19370ac7a0a",
       "ja": "a56ef19370ac7a0a",
+      "en": "a56ef19370ac7a0a",
+      "fr": "a56ef19370ac7a0a",
+      "it": "a56ef19370ac7a0a",
       "zh": "a56ef19370ac7a0a",
-      "bn": "a56ef19370ac7a0a",
       "tr": "a56ef19370ac7a0a"
     },
     "Certifications.requestLatest": {
-      "en": "d0e804c2ec13ccd2",
       "ja": "d0e804c2ec13ccd2",
+      "en": "d0e804c2ec13ccd2",
+      "fr": "d0e804c2ec13ccd2",
+      "it": "d0e804c2ec13ccd2",
       "zh": "d0e804c2ec13ccd2",
-      "bn": "d0e804c2ec13ccd2",
       "tr": "d0e804c2ec13ccd2"
     },
     "Certifications.zdhcScope": {
-      "en": "3fa6352ab2f007a7",
       "ja": "3fa6352ab2f007a7",
+      "en": "3fa6352ab2f007a7",
+      "fr": "3fa6352ab2f007a7",
+      "it": "3fa6352ab2f007a7",
       "zh": "3fa6352ab2f007a7",
-      "bn": "3fa6352ab2f007a7",
       "tr": "3fa6352ab2f007a7"
     },
     "Certifications.oekoScope": {
-      "en": "8d7a581dace29347",
       "ja": "8d7a581dace29347",
+      "en": "8d7a581dace29347",
+      "fr": "8d7a581dace29347",
+      "it": "8d7a581dace29347",
       "zh": "8d7a581dace29347",
-      "bn": "8d7a581dace29347",
       "tr": "8d7a581dace29347"
     },
     "Certifications.usdaScope": {
-      "en": "3d85136742907382",
       "ja": "3d85136742907382",
+      "en": "3d85136742907382",
+      "fr": "3d85136742907382",
+      "it": "3d85136742907382",
       "zh": "3d85136742907382",
-      "bn": "3d85136742907382",
       "tr": "3d85136742907382"
     },
     "Certifications.okbiobasedScope": {
-      "en": "f79eaf985d1b72b2",
       "ja": "f79eaf985d1b72b2",
+      "en": "f79eaf985d1b72b2",
+      "fr": "f79eaf985d1b72b2",
+      "it": "f79eaf985d1b72b2",
       "zh": "f79eaf985d1b72b2",
-      "bn": "f79eaf985d1b72b2",
       "tr": "f79eaf985d1b72b2"
     },
     "Certifications.zoomOpen": {
-      "en": "b00b785b9ef9610b",
       "ja": "b00b785b9ef9610b",
+      "en": "b00b785b9ef9610b",
+      "fr": "b00b785b9ef9610b",
+      "it": "b00b785b9ef9610b",
       "zh": "b00b785b9ef9610b",
-      "bn": "b00b785b9ef9610b",
       "tr": "b00b785b9ef9610b"
     },
     "Certifications.zoomClose": {
-      "en": "1e8c10206f5b35bd",
       "ja": "1e8c10206f5b35bd",
+      "en": "1e8c10206f5b35bd",
+      "fr": "1e8c10206f5b35bd",
+      "it": "1e8c10206f5b35bd",
       "zh": "1e8c10206f5b35bd",
-      "bn": "1e8c10206f5b35bd",
       "tr": "1e8c10206f5b35bd"
     },
     "Certifications.zoomHint": {
-      "en": "c725f6756862d19c",
       "ja": "c725f6756862d19c",
+      "en": "c725f6756862d19c",
+      "fr": "c725f6756862d19c",
+      "it": "c725f6756862d19c",
       "zh": "c725f6756862d19c",
-      "bn": "c725f6756862d19c",
       "tr": "c725f6756862d19c"
     },
     "Inquiry.eyebrow": {
-      "en": "520049acb0adb966",
       "ja": "520049acb0adb966",
+      "en": "520049acb0adb966",
+      "fr": "520049acb0adb966",
+      "it": "520049acb0adb966",
       "zh": "520049acb0adb966",
-      "bn": "520049acb0adb966",
       "tr": "520049acb0adb966"
     },
     "Inquiry.title": {
-      "en": "21d5fc7b9e504ba3",
       "ja": "21d5fc7b9e504ba3",
+      "en": "21d5fc7b9e504ba3",
+      "fr": "21d5fc7b9e504ba3",
+      "it": "21d5fc7b9e504ba3",
       "zh": "21d5fc7b9e504ba3",
-      "bn": "21d5fc7b9e504ba3",
       "tr": "21d5fc7b9e504ba3"
     },
     "Inquiry.body": {
-      "en": "ca23c35f9f35b2ce",
       "ja": "ca23c35f9f35b2ce",
+      "en": "ca23c35f9f35b2ce",
+      "fr": "ca23c35f9f35b2ce",
+      "it": "ca23c35f9f35b2ce",
       "zh": "ca23c35f9f35b2ce",
-      "bn": "ca23c35f9f35b2ce",
       "tr": "ca23c35f9f35b2ce"
     },
     "Inquiry.topicLabel": {
-      "en": "74891a3addbadecb",
       "ja": "74891a3addbadecb",
+      "en": "74891a3addbadecb",
+      "fr": "74891a3addbadecb",
+      "it": "74891a3addbadecb",
       "zh": "74891a3addbadecb",
-      "bn": "74891a3addbadecb",
       "tr": "74891a3addbadecb"
     },
     "Inquiry.topicFabricDyeing": {
-      "en": "43e95f66b8c52fd7",
       "ja": "43e95f66b8c52fd7",
+      "en": "43e95f66b8c52fd7",
+      "fr": "43e95f66b8c52fd7",
+      "it": "43e95f66b8c52fd7",
       "zh": "43e95f66b8c52fd7",
-      "bn": "43e95f66b8c52fd7",
       "tr": "43e95f66b8c52fd7"
     },
     "Inquiry.topicDigitalPrinting": {
-      "en": "d8759e17100ac91f",
       "ja": "d8759e17100ac91f",
+      "en": "d8759e17100ac91f",
+      "fr": "d8759e17100ac91f",
+      "it": "d8759e17100ac91f",
       "zh": "d8759e17100ac91f",
-      "bn": "d8759e17100ac91f",
       "tr": "d8759e17100ac91f"
     },
     "Inquiry.topicShadeDevelopment": {
-      "en": "cfb04656d7b1dc42",
       "ja": "cfb04656d7b1dc42",
+      "en": "cfb04656d7b1dc42",
+      "fr": "cfb04656d7b1dc42",
+      "it": "cfb04656d7b1dc42",
       "zh": "cfb04656d7b1dc42",
-      "bn": "cfb04656d7b1dc42",
       "tr": "cfb04656d7b1dc42"
     },
     "Inquiry.topicTechnicalData": {
-      "en": "443e8f1a861c7a79",
       "ja": "443e8f1a861c7a79",
+      "en": "443e8f1a861c7a79",
+      "fr": "443e8f1a861c7a79",
+      "it": "443e8f1a861c7a79",
       "zh": "443e8f1a861c7a79",
-      "bn": "443e8f1a861c7a79",
       "tr": "443e8f1a861c7a79"
     },
     "Inquiry.messageLabel": {
-      "en": "65e8208980d61213",
       "ja": "65e8208980d61213",
+      "en": "65e8208980d61213",
+      "fr": "65e8208980d61213",
+      "it": "65e8208980d61213",
       "zh": "65e8208980d61213",
-      "bn": "65e8208980d61213",
       "tr": "65e8208980d61213"
     },
     "Inquiry.messagePlaceholder": {
-      "en": "a7dd505471b1fff0",
       "ja": "a7dd505471b1fff0",
+      "en": "a7dd505471b1fff0",
+      "fr": "a7dd505471b1fff0",
+      "it": "a7dd505471b1fff0",
       "zh": "a7dd505471b1fff0",
-      "bn": "a7dd505471b1fff0",
       "tr": "a7dd505471b1fff0"
     },
     "Inquiry.submit": {
-      "en": "a671de3488a8b8f0",
       "ja": "a671de3488a8b8f0",
+      "en": "a671de3488a8b8f0",
+      "fr": "a671de3488a8b8f0",
+      "it": "a671de3488a8b8f0",
       "zh": "a671de3488a8b8f0",
-      "bn": "a671de3488a8b8f0",
       "tr": "a671de3488a8b8f0"
     },
     "Inquiry.submitHint": {
-      "en": "6e831db5aa7ffa46",
       "ja": "6e831db5aa7ffa46",
+      "en": "6e831db5aa7ffa46",
+      "fr": "6e831db5aa7ffa46",
+      "it": "6e831db5aa7ffa46",
       "zh": "6e831db5aa7ffa46",
-      "bn": "6e831db5aa7ffa46",
       "tr": "6e831db5aa7ffa46"
     },
     "Inquiry.mailSubject": {
-      "en": "2e4497f73a83b0a0",
       "ja": "2e4497f73a83b0a0",
+      "en": "2e4497f73a83b0a0",
+      "fr": "2e4497f73a83b0a0",
+      "it": "2e4497f73a83b0a0",
       "zh": "2e4497f73a83b0a0",
-      "bn": "2e4497f73a83b0a0",
       "tr": "2e4497f73a83b0a0"
     },
     "Inquiry.mailIntro": {
-      "en": "8b9c3db60d543aa5",
       "ja": "8b9c3db60d543aa5",
+      "en": "8b9c3db60d543aa5",
+      "fr": "8b9c3db60d543aa5",
+      "it": "8b9c3db60d543aa5",
       "zh": "8b9c3db60d543aa5",
-      "bn": "8b9c3db60d543aa5",
       "tr": "8b9c3db60d543aa5"
     },
     "Inquiry.mailTopicLine": {
-      "en": "a06f89aa29c98f66",
       "ja": "a06f89aa29c98f66",
+      "en": "a06f89aa29c98f66",
+      "fr": "a06f89aa29c98f66",
+      "it": "a06f89aa29c98f66",
       "zh": "a06f89aa29c98f66",
-      "bn": "a06f89aa29c98f66",
       "tr": "a06f89aa29c98f66"
     },
     "Inquiry.mailShadeLine": {
-      "en": "531d6e9b72658013",
       "ja": "531d6e9b72658013",
+      "en": "531d6e9b72658013",
+      "fr": "531d6e9b72658013",
+      "it": "531d6e9b72658013",
       "zh": "531d6e9b72658013",
-      "bn": "531d6e9b72658013",
       "tr": "531d6e9b72658013"
     },
     "Inquiry.mailFooter": {
-      "en": "ae3ee801e802b309",
       "ja": "ae3ee801e802b309",
+      "en": "ae3ee801e802b309",
+      "fr": "ae3ee801e802b309",
+      "it": "ae3ee801e802b309",
       "zh": "ae3ee801e802b309",
-      "bn": "ae3ee801e802b309",
       "tr": "ae3ee801e802b309"
     },
     "Inquiry.emailLabel": {
-      "en": "3b7dbc4c0c4cebca",
       "ja": "3b7dbc4c0c4cebca",
+      "en": "3b7dbc4c0c4cebca",
+      "fr": "3b7dbc4c0c4cebca",
+      "it": "3b7dbc4c0c4cebca",
       "zh": "3b7dbc4c0c4cebca",
-      "bn": "3b7dbc4c0c4cebca",
       "tr": "3b7dbc4c0c4cebca"
     },
     "Inquiry.telLabel": {
-      "en": "6db518d738ede991",
       "ja": "6db518d738ede991",
+      "en": "6db518d738ede991",
+      "fr": "6db518d738ede991",
+      "it": "6db518d738ede991",
       "zh": "6db518d738ede991",
-      "bn": "6db518d738ede991",
       "tr": "6db518d738ede991"
     },
     "Inquiry.addressLabel": {
-      "en": "28e058c7cec8846e",
       "ja": "28e058c7cec8846e",
+      "en": "28e058c7cec8846e",
+      "fr": "28e058c7cec8846e",
+      "it": "28e058c7cec8846e",
       "zh": "28e058c7cec8846e",
-      "bn": "28e058c7cec8846e",
       "tr": "28e058c7cec8846e"
     },
     "Inquiry.companyRelationTitle": {
-      "en": "10c83c4adf983db9",
       "ja": "10c83c4adf983db9",
+      "en": "10c83c4adf983db9",
+      "fr": "10c83c4adf983db9",
+      "it": "10c83c4adf983db9",
       "zh": "10c83c4adf983db9",
-      "bn": "10c83c4adf983db9",
       "tr": "10c83c4adf983db9"
     },
     "Inquiry.companyRelationBody": {
-      "en": "4f04c6f5e2dead77",
       "ja": "4f04c6f5e2dead77",
+      "en": "4f04c6f5e2dead77",
+      "fr": "4f04c6f5e2dead77",
+      "it": "4f04c6f5e2dead77",
       "zh": "4f04c6f5e2dead77",
-      "bn": "4f04c6f5e2dead77",
       "tr": "4f04c6f5e2dead77"
     },
     "Inquiry.sampleNote": {
-      "en": "4e43b3131dc69438",
       "ja": "4e43b3131dc69438",
+      "en": "4e43b3131dc69438",
+      "fr": "4e43b3131dc69438",
+      "it": "4e43b3131dc69438",
       "zh": "4e43b3131dc69438",
-      "bn": "4e43b3131dc69438",
       "tr": "4e43b3131dc69438"
     },
     "Common.sourceLabel": {
-      "en": "fa543a9d6cf32498",
       "ja": "fa543a9d6cf32498",
+      "en": "fa543a9d6cf32498",
+      "fr": "fa543a9d6cf32498",
+      "it": "fa543a9d6cf32498",
       "zh": "fa543a9d6cf32498",
-      "bn": "fa543a9d6cf32498",
       "tr": "fa543a9d6cf32498"
     },
     "Common.cataloguePage": {
-      "en": "13def47dda5e1d25",
       "ja": "13def47dda5e1d25",
+      "en": "13def47dda5e1d25",
+      "fr": "13def47dda5e1d25",
+      "it": "13def47dda5e1d25",
       "zh": "13def47dda5e1d25",
-      "bn": "13def47dda5e1d25",
       "tr": "13def47dda5e1d25"
     },
     "Common.asOf": {
-      "en": "3145976d70cc5612",
       "ja": "3145976d70cc5612",
+      "en": "3145976d70cc5612",
+      "fr": "3145976d70cc5612",
+      "it": "3145976d70cc5612",
       "zh": "3145976d70cc5612",
-      "bn": "3145976d70cc5612",
       "tr": "3145976d70cc5612"
     },
     "Common.viewOriginal": {
-      "en": "10bea998f1ba291a",
       "ja": "10bea998f1ba291a",
+      "en": "10bea998f1ba291a",
+      "fr": "10bea998f1ba291a",
+      "it": "10bea998f1ba291a",
       "zh": "10bea998f1ba291a",
-      "bn": "10bea998f1ba291a",
       "tr": "10bea998f1ba291a"
     },
     "Common.viewSource": {
-      "en": "b292f0f3984a8f42",
       "ja": "b292f0f3984a8f42",
+      "en": "b292f0f3984a8f42",
+      "fr": "b292f0f3984a8f42",
+      "it": "b292f0f3984a8f42",
       "zh": "b292f0f3984a8f42",
-      "bn": "b292f0f3984a8f42",
       "tr": "b292f0f3984a8f42"
     },
     "Common.close": {
-      "en": "1e8c10206f5b35bd",
       "ja": "1e8c10206f5b35bd",
+      "en": "1e8c10206f5b35bd",
+      "fr": "1e8c10206f5b35bd",
+      "it": "1e8c10206f5b35bd",
       "zh": "1e8c10206f5b35bd",
-      "bn": "1e8c10206f5b35bd",
       "tr": "1e8c10206f5b35bd"
     },
     "Common.openImage": {
-      "en": "f31bd06b30d13f69",
       "ja": "f31bd06b30d13f69",
+      "en": "f31bd06b30d13f69",
+      "fr": "f31bd06b30d13f69",
+      "it": "f31bd06b30d13f69",
       "zh": "f31bd06b30d13f69",
-      "bn": "f31bd06b30d13f69",
       "tr": "f31bd06b30d13f69"
     },
     "Common.conceptImage": {
-      "en": "54ba0f85b9458330",
       "ja": "54ba0f85b9458330",
+      "en": "54ba0f85b9458330",
+      "fr": "54ba0f85b9458330",
+      "it": "54ba0f85b9458330",
       "zh": "54ba0f85b9458330",
-      "bn": "54ba0f85b9458330",
       "tr": "54ba0f85b9458330"
     },
     "Common.brandImage": {
-      "en": "b391a7155edbf822",
       "ja": "b391a7155edbf822",
+      "en": "b391a7155edbf822",
+      "fr": "b391a7155edbf822",
+      "it": "b391a7155edbf822",
       "zh": "b391a7155edbf822",
-      "bn": "b391a7155edbf822",
       "tr": "b391a7155edbf822"
     },
     "Common.testPhoto": {
-      "en": "4fb0858839e18d89",
       "ja": "4fb0858839e18d89",
+      "en": "4fb0858839e18d89",
+      "fr": "4fb0858839e18d89",
+      "it": "4fb0858839e18d89",
       "zh": "4fb0858839e18d89",
-      "bn": "4fb0858839e18d89",
       "tr": "4fb0858839e18d89"
     },
     "Common.imageNoteConcept": {
-      "en": "e6c68950f5bcb28d",
       "ja": "e6c68950f5bcb28d",
+      "en": "e6c68950f5bcb28d",
+      "fr": "e6c68950f5bcb28d",
+      "it": "e6c68950f5bcb28d",
       "zh": "e6c68950f5bcb28d",
-      "bn": "e6c68950f5bcb28d",
       "tr": "e6c68950f5bcb28d"
     },
     "Common.imageNotePhoto": {
-      "en": "13a3cd9506db49e6",
       "ja": "13a3cd9506db49e6",
+      "en": "13a3cd9506db49e6",
+      "fr": "13a3cd9506db49e6",
+      "it": "13a3cd9506db49e6",
       "zh": "13a3cd9506db49e6",
-      "bn": "13a3cd9506db49e6",
       "tr": "13a3cd9506db49e6"
     },
     "Common.imageNoteSwatch": {
-      "en": "bda32b20809cb419",
       "ja": "bda32b20809cb419",
+      "en": "bda32b20809cb419",
+      "fr": "bda32b20809cb419",
+      "it": "bda32b20809cb419",
       "zh": "bda32b20809cb419",
-      "bn": "bda32b20809cb419",
       "tr": "bda32b20809cb419"
     },
     "Common.scrollableRegion": {
-      "en": "2a4c32b5d0bafa6d",
       "ja": "2a4c32b5d0bafa6d",
+      "en": "2a4c32b5d0bafa6d",
+      "fr": "2a4c32b5d0bafa6d",
+      "it": "2a4c32b5d0bafa6d",
       "zh": "2a4c32b5d0bafa6d",
-      "bn": "2a4c32b5d0bafa6d",
       "tr": "2a4c32b5d0bafa6d"
     },
     "Common.catalogueFigure": {
-      "en": "4c48c3477442e7a0",
       "ja": "4c48c3477442e7a0",
+      "en": "4c48c3477442e7a0",
+      "fr": "4c48c3477442e7a0",
+      "it": "4c48c3477442e7a0",
       "zh": "4c48c3477442e7a0",
-      "bn": "4c48c3477442e7a0",
       "tr": "4c48c3477442e7a0"
     },
     "Brand.metaTitle": {
-      "en": "9d259e27970bbab2",
       "ja": "9d259e27970bbab2",
+      "en": "9d259e27970bbab2",
+      "fr": "9d259e27970bbab2",
+      "it": "9d259e27970bbab2",
       "zh": "9d259e27970bbab2",
-      "bn": "9d259e27970bbab2",
       "tr": "9d259e27970bbab2"
     },
     "Brand.metaDescription": {
-      "en": "18124fee30652283",
       "ja": "18124fee30652283",
+      "en": "18124fee30652283",
+      "fr": "18124fee30652283",
+      "it": "18124fee30652283",
       "zh": "18124fee30652283",
-      "bn": "18124fee30652283",
       "tr": "18124fee30652283"
     },
     "Brand.heroEyebrow": {
-      "en": "e831490ea129a288",
       "ja": "e831490ea129a288",
+      "en": "e831490ea129a288",
+      "fr": "e831490ea129a288",
+      "it": "e831490ea129a288",
       "zh": "e831490ea129a288",
-      "bn": "e831490ea129a288",
       "tr": "e831490ea129a288"
     },
     "Brand.heroTitle": {
-      "en": "22350775ba833dfb",
       "ja": "22350775ba833dfb",
+      "en": "22350775ba833dfb",
+      "fr": "22350775ba833dfb",
+      "it": "22350775ba833dfb",
       "zh": "22350775ba833dfb",
-      "bn": "22350775ba833dfb",
       "tr": "22350775ba833dfb"
     },
     "Brand.heroBody": {
-      "en": "3e5a50cb6db588b2",
       "ja": "3e5a50cb6db588b2",
+      "en": "3e5a50cb6db588b2",
+      "fr": "3e5a50cb6db588b2",
+      "it": "3e5a50cb6db588b2",
       "zh": "3e5a50cb6db588b2",
-      "bn": "3e5a50cb6db588b2",
       "tr": "3e5a50cb6db588b2"
     },
     "Brand.nameTitle": {
-      "en": "584befd27e1631a9",
       "ja": "584befd27e1631a9",
+      "en": "584befd27e1631a9",
+      "fr": "584befd27e1631a9",
+      "it": "584befd27e1631a9",
       "zh": "584befd27e1631a9",
-      "bn": "584befd27e1631a9",
       "tr": "584befd27e1631a9"
     },
     "Brand.nameBody": {
-      "en": "6b70cda99de045af",
       "ja": "6b70cda99de045af",
+      "en": "6b70cda99de045af",
+      "fr": "6b70cda99de045af",
+      "it": "6b70cda99de045af",
       "zh": "6b70cda99de045af",
-      "bn": "6b70cda99de045af",
       "tr": "6b70cda99de045af"
     },
     "Brand.nameNote": {
-      "en": "d4389bb8e86ec00c",
       "ja": "d4389bb8e86ec00c",
+      "en": "d4389bb8e86ec00c",
+      "fr": "d4389bb8e86ec00c",
+      "it": "d4389bb8e86ec00c",
       "zh": "d4389bb8e86ec00c",
-      "bn": "d4389bb8e86ec00c",
       "tr": "d4389bb8e86ec00c"
     },
     "Brand.promiseTitle": {
-      "en": "d95e2a67149d891f",
       "ja": "d95e2a67149d891f",
+      "en": "d95e2a67149d891f",
+      "fr": "d95e2a67149d891f",
+      "it": "d95e2a67149d891f",
       "zh": "d95e2a67149d891f",
-      "bn": "d95e2a67149d891f",
       "tr": "d95e2a67149d891f"
     },
     "Brand.promiseBody": {
-      "en": "980aa46ef326c154",
       "ja": "980aa46ef326c154",
+      "en": "980aa46ef326c154",
+      "fr": "980aa46ef326c154",
+      "it": "980aa46ef326c154",
       "zh": "980aa46ef326c154",
-      "bn": "980aa46ef326c154",
       "tr": "980aa46ef326c154"
     },
     "Brand.promiseItems[0].title": {
-      "en": "4add036d7aefa486",
       "ja": "4add036d7aefa486",
+      "en": "4add036d7aefa486",
       "zh": "4add036d7aefa486",
-      "bn": "4add036d7aefa486",
       "tr": "4add036d7aefa486"
     },
     "Brand.promiseItems[0].text": {
-      "en": "ca86339d3df0f510",
       "ja": "ca86339d3df0f510",
+      "en": "ca86339d3df0f510",
       "zh": "ca86339d3df0f510",
-      "bn": "ca86339d3df0f510",
       "tr": "ca86339d3df0f510"
     },
     "Brand.promiseItems[1].title": {
-      "en": "eba2c66f84d1153f",
       "ja": "eba2c66f84d1153f",
+      "en": "eba2c66f84d1153f",
       "zh": "eba2c66f84d1153f",
-      "bn": "eba2c66f84d1153f",
       "tr": "eba2c66f84d1153f"
     },
     "Brand.promiseItems[1].text": {
-      "en": "a5ff001407bd30c8",
       "ja": "a5ff001407bd30c8",
+      "en": "a5ff001407bd30c8",
       "zh": "a5ff001407bd30c8",
-      "bn": "a5ff001407bd30c8",
       "tr": "a5ff001407bd30c8"
     },
     "Brand.promiseItems[2].title": {
-      "en": "55c65b2b1977d1cf",
       "ja": "55c65b2b1977d1cf",
+      "en": "55c65b2b1977d1cf",
       "zh": "55c65b2b1977d1cf",
-      "bn": "55c65b2b1977d1cf",
       "tr": "55c65b2b1977d1cf"
     },
     "Brand.promiseItems[2].text": {
-      "en": "8a01eb8cb5e2a186",
       "ja": "8a01eb8cb5e2a186",
+      "en": "8a01eb8cb5e2a186",
       "zh": "8a01eb8cb5e2a186",
-      "bn": "8a01eb8cb5e2a186",
       "tr": "8a01eb8cb5e2a186"
     },
     "Brand.limitsTitle": {
-      "en": "0b2097d6679fc1d9",
       "ja": "0b2097d6679fc1d9",
+      "en": "0b2097d6679fc1d9",
+      "fr": "0b2097d6679fc1d9",
+      "it": "0b2097d6679fc1d9",
       "zh": "0b2097d6679fc1d9",
-      "bn": "0b2097d6679fc1d9",
       "tr": "0b2097d6679fc1d9"
     },
     "Brand.limitsBody": {
-      "en": "25fb059d123ce5a6",
       "ja": "25fb059d123ce5a6",
+      "en": "25fb059d123ce5a6",
+      "fr": "25fb059d123ce5a6",
+      "it": "25fb059d123ce5a6",
       "zh": "25fb059d123ce5a6",
-      "bn": "25fb059d123ce5a6",
       "tr": "25fb059d123ce5a6"
     },
     "Brand.limitsItems[0]": {
-      "en": "394fe59335d63689",
       "ja": "394fe59335d63689",
+      "en": "394fe59335d63689",
       "zh": "394fe59335d63689",
-      "bn": "394fe59335d63689",
       "tr": "394fe59335d63689"
     },
     "Brand.limitsItems[1]": {
-      "en": "807a8d489baf879f",
       "ja": "807a8d489baf879f",
+      "en": "807a8d489baf879f",
       "zh": "807a8d489baf879f",
-      "bn": "807a8d489baf879f",
       "tr": "807a8d489baf879f"
     },
     "Brand.limitsItems[2]": {
-      "en": "5023bcf4f72f30e4",
       "ja": "5023bcf4f72f30e4",
+      "en": "5023bcf4f72f30e4",
       "zh": "5023bcf4f72f30e4",
-      "bn": "5023bcf4f72f30e4",
       "tr": "5023bcf4f72f30e4"
     },
     "Brand.limitsItems[3]": {
-      "en": "ec9b7adff7441ac4",
       "ja": "ec9b7adff7441ac4",
+      "en": "ec9b7adff7441ac4",
       "zh": "ec9b7adff7441ac4",
-      "bn": "ec9b7adff7441ac4",
       "tr": "ec9b7adff7441ac4"
     },
     "Brand.relationTitle": {
-      "en": "238f9e5f5ffe9bd0",
       "ja": "238f9e5f5ffe9bd0",
+      "en": "238f9e5f5ffe9bd0",
+      "fr": "238f9e5f5ffe9bd0",
+      "it": "238f9e5f5ffe9bd0",
       "zh": "238f9e5f5ffe9bd0",
-      "bn": "238f9e5f5ffe9bd0",
       "tr": "238f9e5f5ffe9bd0"
     },
     "Brand.relationBody": {
-      "en": "dee42ff80d26469f",
       "ja": "dee42ff80d26469f",
+      "en": "dee42ff80d26469f",
+      "fr": "dee42ff80d26469f",
+      "it": "dee42ff80d26469f",
       "zh": "dee42ff80d26469f",
-      "bn": "dee42ff80d26469f",
       "tr": "dee42ff80d26469f"
     },
     "Brand.cta": {
-      "en": "393ff15c3ff584a0",
       "ja": "393ff15c3ff584a0",
+      "en": "393ff15c3ff584a0",
+      "fr": "393ff15c3ff584a0",
+      "it": "393ff15c3ff584a0",
       "zh": "393ff15c3ff584a0",
-      "bn": "393ff15c3ff584a0",
       "tr": "393ff15c3ff584a0"
     },
     "Technology.metaTitle": {
-      "en": "a78cee47656be418",
       "ja": "a78cee47656be418",
+      "en": "a78cee47656be418",
+      "fr": "a78cee47656be418",
+      "it": "a78cee47656be418",
       "zh": "a78cee47656be418",
-      "bn": "a78cee47656be418",
       "tr": "a78cee47656be418"
     },
     "Technology.metaDescription": {
-      "en": "fedc69e5cbc9b57d",
       "ja": "fedc69e5cbc9b57d",
+      "en": "fedc69e5cbc9b57d",
+      "fr": "fedc69e5cbc9b57d",
+      "it": "fedc69e5cbc9b57d",
       "zh": "fedc69e5cbc9b57d",
-      "bn": "fedc69e5cbc9b57d",
       "tr": "fedc69e5cbc9b57d"
     },
     "Technology.heroEyebrow": {
-      "en": "28bffb15285d97f7",
       "ja": "28bffb15285d97f7",
+      "en": "28bffb15285d97f7",
+      "fr": "28bffb15285d97f7",
+      "it": "28bffb15285d97f7",
       "zh": "28bffb15285d97f7",
-      "bn": "28bffb15285d97f7",
       "tr": "28bffb15285d97f7"
     },
     "Technology.heroTitle": {
-      "en": "c4ea50f006cee438",
       "ja": "c4ea50f006cee438",
+      "en": "c4ea50f006cee438",
+      "fr": "c4ea50f006cee438",
+      "it": "c4ea50f006cee438",
       "zh": "c4ea50f006cee438",
-      "bn": "c4ea50f006cee438",
       "tr": "c4ea50f006cee438"
     },
     "Technology.heroBody": {
-      "en": "334f1a05e7c7b364",
       "ja": "334f1a05e7c7b364",
+      "en": "334f1a05e7c7b364",
+      "fr": "334f1a05e7c7b364",
+      "it": "334f1a05e7c7b364",
       "zh": "334f1a05e7c7b364",
-      "bn": "334f1a05e7c7b364",
       "tr": "334f1a05e7c7b364"
     },
     "Technology.routesTitle": {
-      "en": "04fb1646f7c93fca",
       "ja": "04fb1646f7c93fca",
+      "en": "04fb1646f7c93fca",
+      "fr": "04fb1646f7c93fca",
+      "it": "04fb1646f7c93fca",
       "zh": "04fb1646f7c93fca",
-      "bn": "04fb1646f7c93fca",
       "tr": "04fb1646f7c93fca"
     },
     "Technology.routesCaption": {
-      "en": "6f78373c5ab608fa",
       "ja": "6f78373c5ab608fa",
+      "en": "6f78373c5ab608fa",
+      "fr": "6f78373c5ab608fa",
+      "it": "6f78373c5ab608fa",
       "zh": "6f78373c5ab608fa",
-      "bn": "6f78373c5ab608fa",
       "tr": "6f78373c5ab608fa"
     },
     "Technology.routesAlt": {
-      "en": "fe5c1142c4c1dd95",
       "ja": "fe5c1142c4c1dd95",
+      "en": "fe5c1142c4c1dd95",
+      "fr": "fe5c1142c4c1dd95",
+      "it": "fe5c1142c4c1dd95",
       "zh": "fe5c1142c4c1dd95",
-      "bn": "fe5c1142c4c1dd95",
       "tr": "fe5c1142c4c1dd95"
     },
     "Technology.routes[0].name": {
-      "en": "3f8f7314e40b43d7",
       "ja": "3f8f7314e40b43d7",
+      "en": "3f8f7314e40b43d7",
       "zh": "3f8f7314e40b43d7",
-      "bn": "3f8f7314e40b43d7",
       "tr": "3f8f7314e40b43d7"
     },
     "Technology.routes[0].feedstock": {
-      "en": "ee960ee7dfce9dee",
       "ja": "ee960ee7dfce9dee",
+      "en": "ee960ee7dfce9dee",
       "zh": "ee960ee7dfce9dee",
-      "bn": "ee960ee7dfce9dee",
       "tr": "ee960ee7dfce9dee"
     },
     "Technology.routes[0].intermediate": {
-      "en": "ab34be9cbe2ef277",
       "ja": "ab34be9cbe2ef277",
+      "en": "ab34be9cbe2ef277",
       "zh": "ab34be9cbe2ef277",
-      "bn": "ab34be9cbe2ef277",
       "tr": "ab34be9cbe2ef277"
     },
     "Technology.routes[0].text": {
-      "en": "c5ae9feec442c684",
       "ja": "c5ae9feec442c684",
+      "en": "c5ae9feec442c684",
       "zh": "c5ae9feec442c684",
-      "bn": "c5ae9feec442c684",
       "tr": "c5ae9feec442c684"
     },
     "Technology.routes[1].name": {
-      "en": "fad61151c9460932",
       "ja": "fad61151c9460932",
+      "en": "fad61151c9460932",
       "zh": "fad61151c9460932",
-      "bn": "fad61151c9460932",
       "tr": "fad61151c9460932"
     },
     "Technology.routes[1].feedstock": {
-      "en": "47894f27028812d5",
       "ja": "47894f27028812d5",
+      "en": "47894f27028812d5",
       "zh": "47894f27028812d5",
-      "bn": "47894f27028812d5",
       "tr": "47894f27028812d5"
     },
     "Technology.routes[1].intermediate": {
-      "en": "721cc733bd625361",
       "ja": "721cc733bd625361",
+      "en": "721cc733bd625361",
       "zh": "721cc733bd625361",
-      "bn": "721cc733bd625361",
       "tr": "721cc733bd625361"
     },
     "Technology.routes[1].text": {
-      "en": "c9495d3ae91cbb89",
       "ja": "c9495d3ae91cbb89",
+      "en": "c9495d3ae91cbb89",
       "zh": "c9495d3ae91cbb89",
-      "bn": "c9495d3ae91cbb89",
       "tr": "c9495d3ae91cbb89"
     },
     "Technology.routes[2].name": {
-      "en": "424b042d59ce6790",
       "ja": "424b042d59ce6790",
+      "en": "424b042d59ce6790",
       "zh": "424b042d59ce6790",
-      "bn": "424b042d59ce6790",
       "tr": "424b042d59ce6790"
     },
     "Technology.routes[2].feedstock": {
-      "en": "47894f27028812d5",
       "ja": "47894f27028812d5",
+      "en": "47894f27028812d5",
       "zh": "47894f27028812d5",
-      "bn": "47894f27028812d5",
       "tr": "47894f27028812d5"
     },
     "Technology.routes[2].intermediate": {
-      "en": "2b32c4a81fc8c2e6",
       "ja": "2b32c4a81fc8c2e6",
+      "en": "2b32c4a81fc8c2e6",
       "zh": "2b32c4a81fc8c2e6",
-      "bn": "2b32c4a81fc8c2e6",
       "tr": "2b32c4a81fc8c2e6"
     },
     "Technology.routes[2].text": {
-      "en": "1e751ead00a4259c",
       "ja": "1e751ead00a4259c",
+      "en": "1e751ead00a4259c",
       "zh": "1e751ead00a4259c",
-      "bn": "1e751ead00a4259c",
       "tr": "1e751ead00a4259c"
     },
     "Technology.routes[3].name": {
-      "en": "7844dbe0703daec4",
       "ja": "7844dbe0703daec4",
+      "en": "7844dbe0703daec4",
       "zh": "7844dbe0703daec4",
-      "bn": "7844dbe0703daec4",
       "tr": "7844dbe0703daec4"
     },
     "Technology.routes[3].feedstock": {
-      "en": "7e00ea984db39bcd",
       "ja": "7e00ea984db39bcd",
+      "en": "7e00ea984db39bcd",
       "zh": "7e00ea984db39bcd",
-      "bn": "7e00ea984db39bcd",
       "tr": "7e00ea984db39bcd"
     },
     "Technology.routes[3].intermediate": {
-      "en": "ebcb59b40ec02dc1",
       "ja": "ebcb59b40ec02dc1",
+      "en": "ebcb59b40ec02dc1",
       "zh": "ebcb59b40ec02dc1",
-      "bn": "ebcb59b40ec02dc1",
       "tr": "ebcb59b40ec02dc1"
     },
     "Technology.routes[3].text": {
-      "en": "f2c74af06006d2bd",
       "ja": "f2c74af06006d2bd",
+      "en": "f2c74af06006d2bd",
       "zh": "f2c74af06006d2bd",
-      "bn": "f2c74af06006d2bd",
       "tr": "f2c74af06006d2bd"
     },
     "Technology.routeFeedstockLabel": {
-      "en": "767d1d8e31b2fce9",
       "ja": "767d1d8e31b2fce9",
+      "en": "767d1d8e31b2fce9",
+      "fr": "767d1d8e31b2fce9",
+      "it": "767d1d8e31b2fce9",
       "zh": "767d1d8e31b2fce9",
-      "bn": "767d1d8e31b2fce9",
       "tr": "767d1d8e31b2fce9"
     },
     "Technology.routeIntermediateLabel": {
-      "en": "b67902cbf211f95d",
       "ja": "b67902cbf211f95d",
+      "en": "b67902cbf211f95d",
+      "fr": "b67902cbf211f95d",
+      "it": "b67902cbf211f95d",
       "zh": "b67902cbf211f95d",
-      "bn": "b67902cbf211f95d",
       "tr": "b67902cbf211f95d"
     },
     "Technology.routesNote": {
-      "en": "5e7bea8eb03b9e03",
       "ja": "5e7bea8eb03b9e03",
+      "en": "5e7bea8eb03b9e03",
+      "fr": "5e7bea8eb03b9e03",
+      "it": "5e7bea8eb03b9e03",
       "zh": "5e7bea8eb03b9e03",
-      "bn": "5e7bea8eb03b9e03",
       "tr": "5e7bea8eb03b9e03"
     },
     "Technology.carbonTitle": {
-      "en": "bf3cbaa487ed4ef6",
       "ja": "bf3cbaa487ed4ef6",
+      "en": "bf3cbaa487ed4ef6",
+      "fr": "bf3cbaa487ed4ef6",
+      "it": "bf3cbaa487ed4ef6",
       "zh": "bf3cbaa487ed4ef6",
-      "bn": "bf3cbaa487ed4ef6",
       "tr": "bf3cbaa487ed4ef6"
     },
     "Technology.carbonCaption": {
-      "en": "578bf246b259afa3",
       "ja": "578bf246b259afa3",
+      "en": "578bf246b259afa3",
+      "fr": "578bf246b259afa3",
+      "it": "578bf246b259afa3",
       "zh": "578bf246b259afa3",
-      "bn": "578bf246b259afa3",
       "tr": "578bf246b259afa3"
     },
     "Technology.carbonAlt": {
-      "en": "8d570e919ed51c50",
       "ja": "8d570e919ed51c50",
+      "en": "8d570e919ed51c50",
+      "fr": "8d570e919ed51c50",
+      "it": "8d570e919ed51c50",
       "zh": "8d570e919ed51c50",
-      "bn": "8d570e919ed51c50",
       "tr": "8d570e919ed51c50"
     },
     "Technology.carbonBody": {
-      "en": "e6dd464e602013be",
       "ja": "e6dd464e602013be",
+      "en": "e6dd464e602013be",
+      "fr": "e6dd464e602013be",
+      "it": "e6dd464e602013be",
       "zh": "e6dd464e602013be",
-      "bn": "e6dd464e602013be",
       "tr": "e6dd464e602013be"
     },
     "Technology.processTitle": {
-      "en": "b9753bb5a86b1132",
       "ja": "b9753bb5a86b1132",
+      "en": "b9753bb5a86b1132",
+      "fr": "b9753bb5a86b1132",
+      "it": "b9753bb5a86b1132",
       "zh": "b9753bb5a86b1132",
-      "bn": "b9753bb5a86b1132",
       "tr": "b9753bb5a86b1132"
     },
     "Technology.safetyTitle": {
-      "en": "a2093247354af381",
       "ja": "a2093247354af381",
+      "en": "a2093247354af381",
+      "fr": "a2093247354af381",
+      "it": "a2093247354af381",
       "zh": "a2093247354af381",
-      "bn": "a2093247354af381",
       "tr": "a2093247354af381"
     },
     "Technology.safetyBody": {
-      "en": "d5d66ad61136d44b",
       "ja": "d5d66ad61136d44b",
+      "en": "d5d66ad61136d44b",
+      "fr": "d5d66ad61136d44b",
+      "it": "d5d66ad61136d44b",
       "zh": "d5d66ad61136d44b",
-      "bn": "d5d66ad61136d44b",
       "tr": "d5d66ad61136d44b"
     },
     "Technology.safetyAlt": {
-      "en": "147e54dd6d16c5b9",
       "ja": "147e54dd6d16c5b9",
+      "en": "147e54dd6d16c5b9",
+      "fr": "147e54dd6d16c5b9",
+      "it": "147e54dd6d16c5b9",
       "zh": "147e54dd6d16c5b9",
-      "bn": "147e54dd6d16c5b9",
       "tr": "147e54dd6d16c5b9"
     },
     "Technology.impurityTitle": {
-      "en": "df55abe433df2167",
       "ja": "df55abe433df2167",
+      "en": "df55abe433df2167",
+      "fr": "df55abe433df2167",
+      "it": "df55abe433df2167",
       "zh": "df55abe433df2167",
-      "bn": "df55abe433df2167",
       "tr": "df55abe433df2167"
     },
     "Technology.impurityBody": {
-      "en": "efb92db0ae927eaf",
       "ja": "efb92db0ae927eaf",
+      "en": "efb92db0ae927eaf",
+      "fr": "efb92db0ae927eaf",
+      "it": "efb92db0ae927eaf",
       "zh": "efb92db0ae927eaf",
-      "bn": "efb92db0ae927eaf",
       "tr": "efb92db0ae927eaf"
     },
     "Technology.cta": {
-      "en": "c2b30b96a1903b68",
       "ja": "c2b30b96a1903b68",
+      "en": "c2b30b96a1903b68",
+      "fr": "c2b30b96a1903b68",
+      "it": "c2b30b96a1903b68",
       "zh": "c2b30b96a1903b68",
-      "bn": "c2b30b96a1903b68",
       "tr": "c2b30b96a1903b68"
     },
     "Technology.conceptCaptionSafety": {
-      "en": "33fc93ea4e18c517",
       "ja": "33fc93ea4e18c517",
+      "en": "33fc93ea4e18c517",
+      "fr": "33fc93ea4e18c517",
+      "it": "33fc93ea4e18c517",
       "zh": "33fc93ea4e18c517",
-      "bn": "33fc93ea4e18c517",
       "tr": "33fc93ea4e18c517"
     },
     "DyeingPrinting.metaTitle": {
-      "en": "dc5ae7088a4ec648",
       "ja": "dc5ae7088a4ec648",
+      "en": "dc5ae7088a4ec648",
+      "fr": "dc5ae7088a4ec648",
+      "it": "dc5ae7088a4ec648",
       "zh": "dc5ae7088a4ec648",
-      "bn": "dc5ae7088a4ec648",
       "tr": "dc5ae7088a4ec648"
     },
     "DyeingPrinting.metaDescription": {
-      "en": "ddb19b60e6bf087b",
       "ja": "ddb19b60e6bf087b",
+      "en": "ddb19b60e6bf087b",
+      "fr": "ddb19b60e6bf087b",
+      "it": "ddb19b60e6bf087b",
       "zh": "ddb19b60e6bf087b",
-      "bn": "ddb19b60e6bf087b",
       "tr": "ddb19b60e6bf087b"
     },
     "DyeingPrinting.heroEyebrow": {
-      "en": "073101dd950bbe51",
       "ja": "073101dd950bbe51",
+      "en": "073101dd950bbe51",
+      "fr": "073101dd950bbe51",
+      "it": "073101dd950bbe51",
       "zh": "073101dd950bbe51",
-      "bn": "073101dd950bbe51",
       "tr": "073101dd950bbe51"
     },
     "DyeingPrinting.heroTitle": {
-      "en": "d4efe5df6e5f5ac6",
       "ja": "d4efe5df6e5f5ac6",
+      "en": "d4efe5df6e5f5ac6",
+      "fr": "d4efe5df6e5f5ac6",
+      "it": "d4efe5df6e5f5ac6",
       "zh": "d4efe5df6e5f5ac6",
-      "bn": "d4efe5df6e5f5ac6",
       "tr": "d4efe5df6e5f5ac6"
     },
     "DyeingPrinting.heroBody": {
-      "en": "7d8849cacb58063e",
       "ja": "7d8849cacb58063e",
+      "en": "7d8849cacb58063e",
+      "fr": "7d8849cacb58063e",
+      "it": "7d8849cacb58063e",
       "zh": "7d8849cacb58063e",
-      "bn": "7d8849cacb58063e",
       "tr": "7d8849cacb58063e"
     },
     "DyeingPrinting.cta": {
-      "en": "a5307f003a12cf70",
       "ja": "a5307f003a12cf70",
+      "en": "a5307f003a12cf70",
+      "fr": "a5307f003a12cf70",
+      "it": "a5307f003a12cf70",
       "zh": "a5307f003a12cf70",
-      "bn": "a5307f003a12cf70",
       "tr": "a5307f003a12cf70"
     },
     "Tech.title": {
-      "en": "bd9454c614fbcf94",
       "ja": "bd9454c614fbcf94",
+      "en": "bd9454c614fbcf94",
+      "fr": "bd9454c614fbcf94",
+      "it": "bd9454c614fbcf94",
       "zh": "bd9454c614fbcf94",
-      "bn": "bd9454c614fbcf94",
       "tr": "bd9454c614fbcf94"
     },
     "Tech.description": {
-      "en": "d28231884fad9d22",
       "ja": "d28231884fad9d22",
+      "en": "d28231884fad9d22",
+      "fr": "d28231884fad9d22",
+      "it": "d28231884fad9d22",
       "zh": "d28231884fad9d22",
-      "bn": "d28231884fad9d22",
       "tr": "d28231884fad9d22"
     },
     "Tech.intro": {
-      "en": "f97b3eca33fc9fa6",
       "ja": "f97b3eca33fc9fa6",
+      "en": "f97b3eca33fc9fa6",
+      "fr": "f97b3eca33fc9fa6",
+      "it": "f97b3eca33fc9fa6",
       "zh": "f97b3eca33fc9fa6",
-      "bn": "f97b3eca33fc9fa6",
       "tr": "f97b3eca33fc9fa6"
     },
     "Tech.section1Title": {
-      "en": "71ed71c38be09b5c",
       "ja": "71ed71c38be09b5c",
+      "en": "71ed71c38be09b5c",
+      "fr": "71ed71c38be09b5c",
+      "it": "71ed71c38be09b5c",
       "zh": "71ed71c38be09b5c",
-      "bn": "71ed71c38be09b5c",
       "tr": "71ed71c38be09b5c"
     },
     "Tech.section1Text": {
-      "en": "d339d67257007d54",
       "ja": "d339d67257007d54",
+      "en": "d339d67257007d54",
+      "fr": "d339d67257007d54",
+      "it": "d339d67257007d54",
       "zh": "d339d67257007d54",
-      "bn": "d339d67257007d54",
       "tr": "d339d67257007d54"
     },
     "Tech.comparisonCaption": {
-      "en": "4effb505dadc2373",
       "ja": "4effb505dadc2373",
+      "en": "4effb505dadc2373",
+      "fr": "4effb505dadc2373",
+      "it": "4effb505dadc2373",
       "zh": "4effb505dadc2373",
-      "bn": "4effb505dadc2373",
       "tr": "4effb505dadc2373"
     },
     "Tech.section2Title": {
-      "en": "2cc1e20b9f9d7203",
       "ja": "2cc1e20b9f9d7203",
+      "en": "2cc1e20b9f9d7203",
+      "fr": "2cc1e20b9f9d7203",
+      "it": "2cc1e20b9f9d7203",
       "zh": "2cc1e20b9f9d7203",
-      "bn": "2cc1e20b9f9d7203",
       "tr": "2cc1e20b9f9d7203"
     },
     "Tech.section2Text": {
-      "en": "59e19fd0fb353b8b",
       "ja": "59e19fd0fb353b8b",
+      "en": "59e19fd0fb353b8b",
+      "fr": "59e19fd0fb353b8b",
+      "it": "59e19fd0fb353b8b",
       "zh": "59e19fd0fb353b8b",
-      "bn": "59e19fd0fb353b8b",
       "tr": "59e19fd0fb353b8b"
     },
     "Tech.section3Title": {
-      "en": "c4726bc52fa106e3",
       "ja": "c4726bc52fa106e3",
+      "en": "c4726bc52fa106e3",
+      "fr": "c4726bc52fa106e3",
+      "it": "c4726bc52fa106e3",
       "zh": "c4726bc52fa106e3",
-      "bn": "c4726bc52fa106e3",
       "tr": "c4726bc52fa106e3"
     },
     "Tech.section3Text": {
-      "en": "34db3fd4814aaa3d",
       "ja": "34db3fd4814aaa3d",
+      "en": "34db3fd4814aaa3d",
+      "fr": "34db3fd4814aaa3d",
+      "it": "34db3fd4814aaa3d",
       "zh": "34db3fd4814aaa3d",
-      "bn": "34db3fd4814aaa3d",
       "tr": "34db3fd4814aaa3d"
     },
     "Tech.certSectionTitle": {
-      "en": "2a149d0501a4a8f2",
       "ja": "2a149d0501a4a8f2",
+      "en": "2a149d0501a4a8f2",
+      "fr": "2a149d0501a4a8f2",
+      "it": "2a149d0501a4a8f2",
       "zh": "2a149d0501a4a8f2",
-      "bn": "2a149d0501a4a8f2",
       "tr": "2a149d0501a4a8f2"
     },
     "Tech.certSectionText": {
-      "en": "277e04c6f29461ae",
       "ja": "277e04c6f29461ae",
+      "en": "277e04c6f29461ae",
+      "fr": "277e04c6f29461ae",
+      "it": "277e04c6f29461ae",
       "zh": "277e04c6f29461ae",
-      "bn": "277e04c6f29461ae",
       "tr": "277e04c6f29461ae"
     },
     "Tech.faqTitle": {
-      "en": "bbba9886c4201ac1",
       "ja": "bbba9886c4201ac1",
+      "en": "bbba9886c4201ac1",
+      "fr": "bbba9886c4201ac1",
+      "it": "bbba9886c4201ac1",
       "zh": "bbba9886c4201ac1",
-      "bn": "bbba9886c4201ac1",
       "tr": "bbba9886c4201ac1"
     },
     "Tech.faqList[0].question": {
-      "en": "e7195d7a97ee9b58",
       "ja": "e7195d7a97ee9b58",
+      "en": "e7195d7a97ee9b58",
       "zh": "e7195d7a97ee9b58",
-      "bn": "e7195d7a97ee9b58",
       "tr": "e7195d7a97ee9b58"
     },
     "Tech.faqList[0].answer": {
-      "en": "8f1ecbf1b50462fd",
       "ja": "8f1ecbf1b50462fd",
+      "en": "8f1ecbf1b50462fd",
       "zh": "8f1ecbf1b50462fd",
-      "bn": "8f1ecbf1b50462fd",
       "tr": "8f1ecbf1b50462fd"
     },
     "Tech.faqList[1].question": {
-      "en": "837db5f6e817abd1",
       "ja": "837db5f6e817abd1",
+      "en": "837db5f6e817abd1",
       "zh": "837db5f6e817abd1",
-      "bn": "837db5f6e817abd1",
       "tr": "837db5f6e817abd1"
     },
     "Tech.faqList[1].answer": {
-      "en": "d7e51eafe7c12e72",
       "ja": "d7e51eafe7c12e72",
+      "en": "d7e51eafe7c12e72",
       "zh": "d7e51eafe7c12e72",
-      "bn": "d7e51eafe7c12e72",
       "tr": "d7e51eafe7c12e72"
     },
     "Tech.faqList[2].question": {
-      "en": "6fdcbf8c2e5732e1",
       "ja": "6fdcbf8c2e5732e1",
+      "en": "6fdcbf8c2e5732e1",
       "zh": "6fdcbf8c2e5732e1",
-      "bn": "6fdcbf8c2e5732e1",
       "tr": "6fdcbf8c2e5732e1"
     },
     "Tech.faqList[2].answer": {
-      "en": "cecd2ffee2981236",
       "ja": "cecd2ffee2981236",
+      "en": "cecd2ffee2981236",
       "zh": "cecd2ffee2981236",
-      "bn": "cecd2ffee2981236",
       "tr": "cecd2ffee2981236"
     },
     "Tech.faqList[3].question": {
-      "en": "93cfd775e071e131",
       "ja": "93cfd775e071e131",
+      "en": "93cfd775e071e131",
       "zh": "93cfd775e071e131",
-      "bn": "93cfd775e071e131",
       "tr": "93cfd775e071e131"
     },
     "Tech.faqList[3].answer": {
-      "en": "d0e5418a1271f001",
       "ja": "d0e5418a1271f001",
+      "en": "d0e5418a1271f001",
       "zh": "d0e5418a1271f001",
-      "bn": "d0e5418a1271f001",
       "tr": "d0e5418a1271f001"
     },
     "Tech.faqList[4].question": {
-      "en": "7bb2feaacb2de04c",
       "ja": "7bb2feaacb2de04c",
+      "en": "7bb2feaacb2de04c",
       "zh": "7bb2feaacb2de04c",
-      "bn": "7bb2feaacb2de04c",
       "tr": "7bb2feaacb2de04c"
     },
     "Tech.faqList[4].answer": {
-      "en": "adaacf9ac7319eb1",
       "ja": "adaacf9ac7319eb1",
+      "en": "adaacf9ac7319eb1",
       "zh": "adaacf9ac7319eb1",
-      "bn": "adaacf9ac7319eb1",
       "tr": "adaacf9ac7319eb1"
     },
     "Tech.structuresTitle": {
-      "en": "4da7b645c14f1df1",
       "ja": "4da7b645c14f1df1",
+      "en": "4da7b645c14f1df1",
+      "fr": "4da7b645c14f1df1",
+      "it": "4da7b645c14f1df1",
       "zh": "4da7b645c14f1df1",
-      "bn": "4da7b645c14f1df1",
       "tr": "4da7b645c14f1df1"
     },
     "Tech.structuresNote": {
-      "en": "90fab6896c4d77df",
       "ja": "90fab6896c4d77df",
+      "en": "90fab6896c4d77df",
+      "fr": "90fab6896c4d77df",
+      "it": "90fab6896c4d77df",
       "zh": "90fab6896c4d77df",
-      "bn": "90fab6896c4d77df",
       "tr": "90fab6896c4d77df"
     },
     "Tech.structureAnilineName": {
-      "en": "ab34be9cbe2ef277",
       "ja": "ab34be9cbe2ef277",
+      "en": "ab34be9cbe2ef277",
+      "fr": "ab34be9cbe2ef277",
+      "it": "ab34be9cbe2ef277",
       "zh": "ab34be9cbe2ef277",
-      "bn": "ab34be9cbe2ef277",
       "tr": "ab34be9cbe2ef277"
     },
     "Tech.structureAnilineDesc": {
-      "en": "6e96eeba5571805d",
       "ja": "6e96eeba5571805d",
+      "en": "6e96eeba5571805d",
+      "fr": "6e96eeba5571805d",
+      "it": "6e96eeba5571805d",
       "zh": "6e96eeba5571805d",
-      "bn": "6e96eeba5571805d",
       "tr": "6e96eeba5571805d"
     },
     "Tech.structureNMethylanilineName": {
-      "en": "ae3a7caed84f7cc7",
       "ja": "ae3a7caed84f7cc7",
+      "en": "ae3a7caed84f7cc7",
+      "fr": "ae3a7caed84f7cc7",
+      "it": "ae3a7caed84f7cc7",
       "zh": "ae3a7caed84f7cc7",
-      "bn": "ae3a7caed84f7cc7",
       "tr": "ae3a7caed84f7cc7"
     },
     "Tech.structureNMethylanilineDesc": {
-      "en": "3c4ef564a16073f1",
       "ja": "3c4ef564a16073f1",
+      "en": "3c4ef564a16073f1",
+      "fr": "3c4ef564a16073f1",
+      "it": "3c4ef564a16073f1",
       "zh": "3c4ef564a16073f1",
-      "bn": "3c4ef564a16073f1",
       "tr": "3c4ef564a16073f1"
     },
     "About.title": {
-      "en": "8838931168ae9576",
       "ja": "8838931168ae9576",
+      "en": "8838931168ae9576",
+      "fr": "8838931168ae9576",
+      "it": "8838931168ae9576",
       "zh": "8838931168ae9576",
-      "bn": "8838931168ae9576",
       "tr": "8838931168ae9576"
     },
     "About.missionTitle": {
-      "en": "15071e06f8176c5b",
       "ja": "15071e06f8176c5b",
+      "en": "15071e06f8176c5b",
+      "fr": "15071e06f8176c5b",
+      "it": "15071e06f8176c5b",
       "zh": "15071e06f8176c5b",
-      "bn": "15071e06f8176c5b",
       "tr": "15071e06f8176c5b"
     },
     "About.visionTitle": {
-      "en": "cd4903482cc7b4d1",
       "ja": "cd4903482cc7b4d1",
+      "en": "cd4903482cc7b4d1",
+      "fr": "cd4903482cc7b4d1",
+      "it": "cd4903482cc7b4d1",
       "zh": "cd4903482cc7b4d1",
-      "bn": "cd4903482cc7b4d1",
       "tr": "cd4903482cc7b4d1"
     },
     "About.visionText": {
-      "en": "ee177a6c454a4b8a",
       "ja": "ee177a6c454a4b8a",
+      "en": "ee177a6c454a4b8a",
+      "fr": "ee177a6c454a4b8a",
+      "it": "ee177a6c454a4b8a",
       "zh": "ee177a6c454a4b8a",
-      "bn": "ee177a6c454a4b8a",
       "tr": "ee177a6c454a4b8a"
     },
     "About.aboutImageAlt": {
-      "en": "6c4251a4e7fdebbf",
       "ja": "6c4251a4e7fdebbf",
+      "en": "6c4251a4e7fdebbf",
+      "fr": "6c4251a4e7fdebbf",
+      "it": "6c4251a4e7fdebbf",
       "zh": "6c4251a4e7fdebbf",
-      "bn": "6c4251a4e7fdebbf",
       "tr": "6c4251a4e7fdebbf"
     },
     "About.coreBusinessTitle": {
-      "en": "e68a81e5d25372c1",
       "ja": "e68a81e5d25372c1",
+      "en": "e68a81e5d25372c1",
+      "fr": "e68a81e5d25372c1",
+      "it": "e68a81e5d25372c1",
       "zh": "e68a81e5d25372c1",
-      "bn": "e68a81e5d25372c1",
       "tr": "e68a81e5d25372c1"
     },
     "About.healthTitle": {
-      "en": "b9e697a6a3627e47",
       "ja": "b9e697a6a3627e47",
+      "en": "b9e697a6a3627e47",
+      "fr": "b9e697a6a3627e47",
+      "it": "b9e697a6a3627e47",
       "zh": "b9e697a6a3627e47",
-      "bn": "b9e697a6a3627e47",
       "tr": "b9e697a6a3627e47"
     },
     "About.healthText": {
-      "en": "e2cb2675f1375bcc",
       "ja": "e2cb2675f1375bcc",
+      "en": "e2cb2675f1375bcc",
+      "fr": "e2cb2675f1375bcc",
+      "it": "e2cb2675f1375bcc",
       "zh": "e2cb2675f1375bcc",
-      "bn": "e2cb2675f1375bcc",
       "tr": "e2cb2675f1375bcc"
     },
     "About.beautyTitle": {
-      "en": "dd7d094046caa4b0",
       "ja": "dd7d094046caa4b0",
+      "en": "dd7d094046caa4b0",
+      "fr": "dd7d094046caa4b0",
+      "it": "dd7d094046caa4b0",
       "zh": "dd7d094046caa4b0",
-      "bn": "dd7d094046caa4b0",
       "tr": "dd7d094046caa4b0"
     },
     "About.beautyText": {
-      "en": "ce14abe6e33db4b1",
       "ja": "ce14abe6e33db4b1",
+      "en": "ce14abe6e33db4b1",
+      "fr": "ce14abe6e33db4b1",
+      "it": "ce14abe6e33db4b1",
       "zh": "ce14abe6e33db4b1",
-      "bn": "ce14abe6e33db4b1",
       "tr": "ce14abe6e33db4b1"
     },
     "About.fashionTitle": {
-      "en": "408d243d4075d58d",
       "ja": "408d243d4075d58d",
+      "en": "408d243d4075d58d",
+      "fr": "408d243d4075d58d",
+      "it": "408d243d4075d58d",
       "zh": "408d243d4075d58d",
-      "bn": "408d243d4075d58d",
       "tr": "408d243d4075d58d"
     },
     "About.fashionText": {
-      "en": "aae76b1089975040",
       "ja": "aae76b1089975040",
+      "en": "aae76b1089975040",
+      "fr": "aae76b1089975040",
+      "it": "aae76b1089975040",
       "zh": "aae76b1089975040",
-      "bn": "aae76b1089975040",
       "tr": "aae76b1089975040"
     },
     "About.historyTitle": {
-      "en": "61d3572bdf9a41ef",
       "ja": "61d3572bdf9a41ef",
+      "en": "61d3572bdf9a41ef",
+      "fr": "61d3572bdf9a41ef",
+      "it": "61d3572bdf9a41ef",
       "zh": "61d3572bdf9a41ef",
-      "bn": "61d3572bdf9a41ef",
       "tr": "61d3572bdf9a41ef"
     },
     "About.historyList[0].year": {
-      "en": "6557739a67283a8d",
       "ja": "6557739a67283a8d",
+      "en": "6557739a67283a8d",
       "zh": "6557739a67283a8d",
-      "bn": "6557739a67283a8d",
       "tr": "6557739a67283a8d"
     },
     "About.historyList[0].event": {
-      "en": "32749d10eaeac5c4",
       "ja": "32749d10eaeac5c4",
+      "en": "32749d10eaeac5c4",
       "zh": "32749d10eaeac5c4",
-      "bn": "32749d10eaeac5c4",
       "tr": "32749d10eaeac5c4"
     },
     "About.historyList[1].year": {
-      "en": "d398b29d3dbbb9bf",
       "ja": "d398b29d3dbbb9bf",
+      "en": "d398b29d3dbbb9bf",
       "zh": "d398b29d3dbbb9bf",
-      "bn": "d398b29d3dbbb9bf",
       "tr": "d398b29d3dbbb9bf"
     },
     "About.historyList[1].event": {
-      "en": "3a5c9be47174974a",
       "ja": "3a5c9be47174974a",
+      "en": "3a5c9be47174974a",
       "zh": "3a5c9be47174974a",
-      "bn": "3a5c9be47174974a",
       "tr": "3a5c9be47174974a"
     },
     "About.historyList[2].year": {
-      "en": "b1ab1e892617f210",
       "ja": "b1ab1e892617f210",
+      "en": "b1ab1e892617f210",
       "zh": "b1ab1e892617f210",
-      "bn": "b1ab1e892617f210",
       "tr": "b1ab1e892617f210"
     },
     "About.historyList[2].event": {
-      "en": "7bfc52828bb3d999",
       "ja": "7bfc52828bb3d999",
+      "en": "7bfc52828bb3d999",
       "zh": "7bfc52828bb3d999",
-      "bn": "7bfc52828bb3d999",
       "tr": "7bfc52828bb3d999"
     },
     "About.historyList[3].year": {
-      "en": "1bea20e1df19b120",
       "ja": "1bea20e1df19b120",
+      "en": "1bea20e1df19b120",
       "zh": "1bea20e1df19b120",
-      "bn": "1bea20e1df19b120",
       "tr": "1bea20e1df19b120"
     },
     "About.historyList[3].event": {
-      "en": "3c41cd06a91380a2",
       "ja": "3c41cd06a91380a2",
+      "en": "3c41cd06a91380a2",
       "zh": "3c41cd06a91380a2",
-      "bn": "3c41cd06a91380a2",
       "tr": "3c41cd06a91380a2"
     },
     "About.historyList[4].year": {
-      "en": "73a2af8864fc500f",
       "ja": "73a2af8864fc500f",
+      "en": "73a2af8864fc500f",
       "zh": "73a2af8864fc500f",
-      "bn": "73a2af8864fc500f",
       "tr": "73a2af8864fc500f"
     },
     "About.historyList[4].event": {
-      "en": "4d230fb051b4fcb9",
       "ja": "4d230fb051b4fcb9",
+      "en": "4d230fb051b4fcb9",
       "zh": "4d230fb051b4fcb9",
-      "bn": "4d230fb051b4fcb9",
       "tr": "4d230fb051b4fcb9"
     },
     "About.blugeneNoteTitle": {
-      "en": "18f50699e25bfcf6",
       "ja": "18f50699e25bfcf6",
+      "en": "18f50699e25bfcf6",
+      "fr": "18f50699e25bfcf6",
+      "it": "18f50699e25bfcf6",
       "zh": "18f50699e25bfcf6",
-      "bn": "18f50699e25bfcf6",
       "tr": "18f50699e25bfcf6"
     },
     "About.blugeneNoteText": {
-      "en": "f589791cf6866a09",
       "ja": "f589791cf6866a09",
+      "en": "f589791cf6866a09",
+      "fr": "f589791cf6866a09",
+      "it": "f589791cf6866a09",
       "zh": "f589791cf6866a09",
-      "bn": "f589791cf6866a09",
       "tr": "f589791cf6866a09"
     },
     "About.metaDescription": {
-      "en": "9d3c4f066f97db97",
       "ja": "9d3c4f066f97db97",
+      "en": "9d3c4f066f97db97",
+      "fr": "9d3c4f066f97db97",
+      "it": "9d3c4f066f97db97",
       "zh": "9d3c4f066f97db97",
-      "bn": "9d3c4f066f97db97",
       "tr": "9d3c4f066f97db97"
     },
     "Blog.eyebrow": {
-      "en": "f96908c6ff496a3b",
       "ja": "f96908c6ff496a3b",
+      "en": "f96908c6ff496a3b",
+      "fr": "f96908c6ff496a3b",
+      "it": "f96908c6ff496a3b",
       "zh": "f96908c6ff496a3b",
-      "bn": "f96908c6ff496a3b",
       "tr": "f96908c6ff496a3b"
     },
     "Blog.title": {
-      "en": "202cc44b7a897f31",
       "ja": "202cc44b7a897f31",
+      "en": "202cc44b7a897f31",
+      "fr": "202cc44b7a897f31",
+      "it": "202cc44b7a897f31",
       "zh": "202cc44b7a897f31",
-      "bn": "202cc44b7a897f31",
       "tr": "202cc44b7a897f31"
     },
     "Blog.description": {
-      "en": "9becbc834cc27559",
       "ja": "9becbc834cc27559",
+      "en": "9becbc834cc27559",
+      "fr": "9becbc834cc27559",
+      "it": "9becbc834cc27559",
       "zh": "9becbc834cc27559",
-      "bn": "9becbc834cc27559",
       "tr": "9becbc834cc27559"
     },
     "Blog.categoryTech": {
-      "en": "a0df27699e3bbb67",
       "ja": "a0df27699e3bbb67",
+      "en": "a0df27699e3bbb67",
+      "fr": "a0df27699e3bbb67",
+      "it": "a0df27699e3bbb67",
       "zh": "a0df27699e3bbb67",
-      "bn": "a0df27699e3bbb67",
       "tr": "a0df27699e3bbb67"
     },
     "Blog.readMore": {
-      "en": "8be9ec4469776de5",
       "ja": "8be9ec4469776de5",
+      "en": "8be9ec4469776de5",
+      "fr": "8be9ec4469776de5",
+      "it": "8be9ec4469776de5",
       "zh": "8be9ec4469776de5",
-      "bn": "8be9ec4469776de5",
       "tr": "8be9ec4469776de5"
     },
     "Blog.readTime": {
-      "en": "2c75e597b5dd965f",
       "ja": "2c75e597b5dd965f",
+      "en": "2c75e597b5dd965f",
+      "fr": "2c75e597b5dd965f",
+      "it": "2c75e597b5dd965f",
       "zh": "2c75e597b5dd965f",
-      "bn": "2c75e597b5dd965f",
       "tr": "2c75e597b5dd965f"
     },
     "Contact.title": {
-      "en": "64332b6a361f3b73",
       "ja": "64332b6a361f3b73",
+      "en": "64332b6a361f3b73",
+      "fr": "64332b6a361f3b73",
+      "it": "64332b6a361f3b73",
       "zh": "64332b6a361f3b73",
-      "bn": "64332b6a361f3b73",
       "tr": "64332b6a361f3b73"
     },
     "Contact.description": {
-      "en": "bd5f80d821f77dc8",
       "ja": "bd5f80d821f77dc8",
+      "en": "bd5f80d821f77dc8",
+      "fr": "bd5f80d821f77dc8",
+      "it": "bd5f80d821f77dc8",
       "zh": "bd5f80d821f77dc8",
-      "bn": "bd5f80d821f77dc8",
       "tr": "bd5f80d821f77dc8"
     },
     "Contact.addressDetail": {
-      "en": "35f3b3ca4c001312",
       "ja": "35f3b3ca4c001312",
+      "en": "35f3b3ca4c001312",
+      "fr": "35f3b3ca4c001312",
+      "it": "35f3b3ca4c001312",
       "zh": "35f3b3ca4c001312",
-      "bn": "35f3b3ca4c001312",
       "tr": "35f3b3ca4c001312"
     },
     "Contact.mapTitle": {
-      "en": "9ba9d19221106998",
       "ja": "9ba9d19221106998",
+      "en": "9ba9d19221106998",
+      "fr": "9ba9d19221106998",
+      "it": "9ba9d19221106998",
       "zh": "9ba9d19221106998",
-      "bn": "9ba9d19221106998",
       "tr": "9ba9d19221106998"
     },
     "NotFound.title": {
-      "en": "73a6278d2061e806",
       "ja": "73a6278d2061e806",
+      "en": "73a6278d2061e806",
+      "fr": "73a6278d2061e806",
+      "it": "73a6278d2061e806",
       "zh": "73a6278d2061e806",
-      "bn": "73a6278d2061e806",
       "tr": "73a6278d2061e806"
     },
     "NotFound.body": {
-      "en": "0cd08a77790fb136",
       "ja": "0cd08a77790fb136",
+      "en": "0cd08a77790fb136",
+      "fr": "0cd08a77790fb136",
+      "it": "0cd08a77790fb136",
       "zh": "0cd08a77790fb136",
-      "bn": "0cd08a77790fb136",
       "tr": "0cd08a77790fb136"
     },
     "NotFound.backHome": {
-      "en": "78e1bd9efa665b1b",
       "ja": "78e1bd9efa665b1b",
+      "en": "78e1bd9efa665b1b",
+      "fr": "78e1bd9efa665b1b",
+      "it": "78e1bd9efa665b1b",
       "zh": "78e1bd9efa665b1b",
-      "bn": "78e1bd9efa665b1b",
       "tr": "78e1bd9efa665b1b"
     },
     "DataHub.reportDateNote": {
-      "en": "9cb1697842ecb244",
       "ja": "9cb1697842ecb244",
+      "en": "9cb1697842ecb244",
+      "fr": "9cb1697842ecb244",
+      "it": "9cb1697842ecb244",
       "zh": "9cb1697842ecb244",
-      "tr": "9cb1697842ecb244",
-      "bn": "9cb1697842ecb244"
+      "tr": "9cb1697842ecb244"
     },
     "Technology.routeOursLabel": {
-      "en": "cd6c121949f9d08d",
       "ja": "cd6c121949f9d08d",
+      "en": "cd6c121949f9d08d",
+      "fr": "cd6c121949f9d08d",
+      "it": "cd6c121949f9d08d",
       "zh": "cd6c121949f9d08d",
-      "bn": "cd6c121949f9d08d",
       "tr": "cd6c121949f9d08d"
     },
     "DyeingPrinting.jumpNavLabel": {
-      "en": "743cf1dfdbdc4b4e",
       "ja": "743cf1dfdbdc4b4e",
+      "en": "743cf1dfdbdc4b4e",
+      "fr": "743cf1dfdbdc4b4e",
+      "it": "743cf1dfdbdc4b4e",
       "zh": "743cf1dfdbdc4b4e",
-      "bn": "743cf1dfdbdc4b4e",
       "tr": "743cf1dfdbdc4b4e"
     },
     "DyeingPrinting.jumpNav[0]": {
-      "en": "8d5d3d70a4d25f6a",
       "ja": "8d5d3d70a4d25f6a",
+      "en": "8d5d3d70a4d25f6a",
       "zh": "8d5d3d70a4d25f6a",
-      "bn": "8d5d3d70a4d25f6a",
       "tr": "8d5d3d70a4d25f6a"
     },
     "DyeingPrinting.jumpNav[1]": {
-      "en": "8912d756a62f2aef",
       "ja": "8912d756a62f2aef",
+      "en": "8912d756a62f2aef",
       "zh": "8912d756a62f2aef",
-      "bn": "8912d756a62f2aef",
       "tr": "8912d756a62f2aef"
     },
     "DyeingPrinting.jumpNav[2]": {
-      "en": "835cf94a4396c127",
       "ja": "835cf94a4396c127",
+      "en": "835cf94a4396c127",
       "zh": "835cf94a4396c127",
-      "bn": "835cf94a4396c127",
       "tr": "835cf94a4396c127"
     },
     "DyeingPrinting.jumpNav[3]": {
-      "en": "b0ead2fb0154e925",
       "ja": "b0ead2fb0154e925",
+      "en": "b0ead2fb0154e925",
       "zh": "b0ead2fb0154e925",
-      "bn": "b0ead2fb0154e925",
       "tr": "b0ead2fb0154e925"
     },
     "DyeingPrinting.jumpNav[4]": {
-      "en": "cf8f3718f75def67",
       "ja": "cf8f3718f75def67",
+      "en": "cf8f3718f75def67",
       "zh": "cf8f3718f75def67",
-      "bn": "cf8f3718f75def67",
       "tr": "cf8f3718f75def67"
     },
     "News.title": {
-      "en": "54c51f0ee2a4180a",
       "ja": "54c51f0ee2a4180a",
+      "en": "54c51f0ee2a4180a",
+      "fr": "54c51f0ee2a4180a",
+      "it": "54c51f0ee2a4180a",
       "zh": "54c51f0ee2a4180a",
-      "bn": "54c51f0ee2a4180a",
       "tr": "54c51f0ee2a4180a"
     },
     "News.description": {
-      "en": "7a94a291db4b4b7a",
       "ja": "7a94a291db4b4b7a",
+      "en": "7a94a291db4b4b7a",
+      "fr": "7a94a291db4b4b7a",
+      "it": "7a94a291db4b4b7a",
       "zh": "7a94a291db4b4b7a",
-      "bn": "7a94a291db4b4b7a",
       "tr": "7a94a291db4b4b7a"
     },
     "News.listNote": {
-      "en": "3e4bd53e9995149d",
       "ja": "3e4bd53e9995149d",
+      "en": "3e4bd53e9995149d",
+      "fr": "3e4bd53e9995149d",
+      "it": "3e4bd53e9995149d",
       "zh": "3e4bd53e9995149d",
-      "bn": "3e4bd53e9995149d",
       "tr": "3e4bd53e9995149d"
     },
     "News.categoryVideo": {
-      "en": "be562142ef48d573",
       "ja": "be562142ef48d573",
+      "en": "be562142ef48d573",
+      "fr": "be562142ef48d573",
+      "it": "be562142ef48d573",
       "zh": "be562142ef48d573",
-      "bn": "be562142ef48d573",
       "tr": "be562142ef48d573"
     },
     "News.categoryPost": {
-      "en": "648fb8dfcf63ca8c",
       "ja": "648fb8dfcf63ca8c",
+      "en": "648fb8dfcf63ca8c",
+      "fr": "648fb8dfcf63ca8c",
+      "it": "648fb8dfcf63ca8c",
       "zh": "648fb8dfcf63ca8c",
-      "bn": "648fb8dfcf63ca8c",
       "tr": "648fb8dfcf63ca8c"
     },
     "News.playVideo": {
-      "en": "d4f644528f0b9f9a",
       "ja": "d4f644528f0b9f9a",
+      "en": "d4f644528f0b9f9a",
+      "fr": "d4f644528f0b9f9a",
+      "it": "d4f644528f0b9f9a",
       "zh": "d4f644528f0b9f9a",
-      "bn": "d4f644528f0b9f9a",
       "tr": "d4f644528f0b9f9a"
     },
     "Technology.routesFigureBridge": {
-      "en": "81af3d134427015c",
       "ja": "81af3d134427015c",
+      "en": "81af3d134427015c",
+      "fr": "81af3d134427015c",
+      "it": "81af3d134427015c",
       "zh": "81af3d134427015c",
-      "bn": "81af3d134427015c",
       "tr": "81af3d134427015c"
     },
     "Science.steps[0].imageAlt": {
-      "en": "87cd4af989a813b1",
       "ja": "87cd4af989a813b1",
+      "en": "87cd4af989a813b1",
       "zh": "87cd4af989a813b1",
-      "bn": "87cd4af989a813b1",
       "tr": "87cd4af989a813b1"
     },
     "Science.steps[1].imageAlt": {
-      "en": "a29e3db5ac59e09a",
       "ja": "a29e3db5ac59e09a",
+      "en": "a29e3db5ac59e09a",
       "zh": "a29e3db5ac59e09a",
-      "bn": "a29e3db5ac59e09a",
       "tr": "a29e3db5ac59e09a"
     },
     "Science.steps[2].imageAlt": {
-      "en": "cfcf462ef578fc0f",
       "ja": "cfcf462ef578fc0f",
+      "en": "cfcf462ef578fc0f",
       "zh": "cfcf462ef578fc0f",
-      "bn": "cfcf462ef578fc0f",
       "tr": "cfcf462ef578fc0f"
     },
     "Science.steps[3].imageAlt": {
-      "en": "ec10fe925447f200",
       "ja": "ec10fe925447f200",
+      "en": "ec10fe925447f200",
       "zh": "ec10fe925447f200",
-      "bn": "ec10fe925447f200",
       "tr": "ec10fe925447f200"
     }
   }

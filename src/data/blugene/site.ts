@@ -22,27 +22,30 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://blugene.co
 /** 이전 도메인. 기존 URL 은 그대로 살아 있어야 하며 canonical 만 새 도메인을 가리킨다. */
 export const LEGACY_DOMAINS = ['https://cutisbioindigo.kr'] as const;
 
-export const LOCALES = ['ko', 'en', 'ja', 'zh', 'bn', 'tr'] as const;
+/** 순서가 곧 언어 선택기의 순서다 (2026-09-11 고객 지정: 한국어 · 일본어 · 영어 · 프랑스어 · 이탈리아어 · 중국어 · 터키어). 벵골어는 같은 날 뺐다. */
+export const LOCALES = ['ko', 'ja', 'en', 'fr', 'it', 'zh', 'tr'] as const;
 export type Locale = (typeof LOCALES)[number];
 export const DEFAULT_LOCALE: Locale = 'ko';
 
 /** 언어 선택기 표기 — 자체 표기를 우선한다. 국기만으로 언어를 표시하지 않는다. */
 export const LOCALE_LABELS: Record<Locale, { native: string; code: string }> = {
   ko: { native: '한국어', code: 'KO' },
-  en: { native: 'English', code: 'EN' },
   ja: { native: '日本語', code: 'JA' },
+  en: { native: 'English', code: 'EN' },
+  fr: { native: 'Français', code: 'FR' },
+  it: { native: 'Italiano', code: 'IT' },
   zh: { native: '中文', code: 'ZH' },
-  bn: { native: 'বাংলা', code: 'BN' },
   tr: { native: 'Türkçe', code: 'TR' },
 };
 
 /** OpenGraph locale 매핑 */
 export const OG_LOCALES: Record<Locale, string> = {
   ko: 'ko_KR',
-  en: 'en_US',
   ja: 'ja_JP',
+  en: 'en_US',
+  fr: 'fr_FR',
+  it: 'it_IT',
   zh: 'zh_CN',
-  bn: 'bn_BD',
   tr: 'tr_TR',
 };
 

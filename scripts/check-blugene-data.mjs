@@ -29,7 +29,7 @@ const read = (p) => fs.readFileSync(path.join(ROOT, p), 'utf8');
 const readJson = (p) => JSON.parse(read(p));
 const exists = (p) => fs.existsSync(path.join(ROOT, p));
 
-const LOCALES = ['ko', 'en', 'ja', 'zh', 'bn', 'tr'];
+const LOCALES = ['ko', 'ja', 'en', 'fr', 'it', 'zh', 'tr'];
 
 /* ------------------------------------------------------------------ */
 /* 1. 인증서 문서 유효기간                                              */
@@ -230,7 +230,7 @@ for (const locale of LOCALES.filter((l) => l !== 'ko')) {
 }
 
 /* ------------------------------------------------------------------ */
-/* 5. 공개 카피의 금지 표현 (6개 언어)                                   */
+/* 5. 공개 카피의 금지 표현 (7개 언어)                                   */
 /* ------------------------------------------------------------------ */
 /*
  * 검사 대상은 messages/*.json 의 "값"뿐이다. 이 목록 자체는 개발 검토용이며 화면에 나오지 않는다.
@@ -238,26 +238,26 @@ for (const locale of LOCALES.filter((l) => l !== 'ko')) {
  */
 const FORBIDDEN = [
   { re: /(^|[^\d.])0\s*ppm/i, why: "'0 ppm' — 불검출을 측정값 0 으로 바꾼 표현" },
-  { re: /100\s*%\s*(안전|safe|güvenli|安全|নিরাপদ)|%\s*100\s*güvenli/i, why: "'100% 안전'" },
-  { re: /chemical[-\s]?free|化学物質フリー|无化学|রাসায়নিকমুক্ত|kimyasal\s+içermez/i, why: "'chemical-free'" },
+  { re: /100\s*%\s*(안전|safe|güvenli|安全|sûr|sicuro)|%\s*100\s*güvenli|sûr\s*à\s*100\s*%|sicuro\s*al\s*100\s*%/i, why: "'100% 안전'" },
+  { re: /chemical[-\s]?free|化学物質フリー|无化学|kimyasal\s+içermez|sans\s+produits?\s+chimiques?|senza\s+sostanze\s+chimiche/i, why: "'chemical-free'" },
   {
-    re: /(완전\s*무함유|전혀\s*없|완벽\s*차단|원천\s*배제|完全に含ま|完全不含|tamamen içermez|সম্পূর্ণ মুক্ত)/,
+    re: /(완전\s*무함유|전혀\s*없|완벽\s*차단|원천\s*배제|完全に含ま|完全不含|tamamen içermez|totalement\s+exempt|complètement\s+exempt|totalmente\s+privo|completamente\s+privo)/i,
     why: '유해물질 완전 제거 표현',
   },
   {
-    re: /(평생\s*안전|임상\s*(적으로\s*)?입증|피부과.{0,6}입증|clinically proven|臨床(的)?に(実)?証明|临床证明|klinik olarak kanıtlan)/i,
+    re: /(평생\s*안전|임상\s*(적으로\s*)?입증|피부과.{0,6}입증|clinically proven|臨床(的)?に(実)?証明|临床证明|klinik olarak kanıtlan|cliniquement\s+(prouv|démontr)|dermatologiquement\s+(prouv|test)|clinicamente\s+(provat|dimostrat|testat)|dermatologicamente\s+testat)/i,
     why: '입증되지 않은 안전성 주장',
   },
   {
-    re: /(탄소\s*중립|carbon\s*neutral|배출\s*제로|net[-\s]?zero|カーボンニュートラル|碳中和|karbon nötr|কার্বন নিরপেক্ষ)/i,
+    re: /(탄소\s*중립|carbon\s*neutral|배출\s*제로|net[-\s]?zero|カーボンニュートラル|碳中和|karbon nötr|neutre\s+en\s+carbone|neutralité\s+carbone|zéro\s+émission|carbon\s+neutr|neutralità\s+carbonica|emissioni\s+zero)/i,
     why: '탄소중립·배출 제로 주장',
   },
   {
-    re: /(80\s*[~-]\s*90\s*%|생분해|biodegradable|生分解|可生物降解|biyobozunur|জৈব-অবচনযোগ্য)/i,
+    re: /(80\s*[~-]\s*90\s*%|생분해|biodegradable|生分解|可生物降解|biyobozunur|biodégradab|biodegradab)/i,
     why: '근거 없는 절감 수치 · 생분해 주장',
   },
   {
-    re: /(모든\s*항목에서\s*(우월|우수)|superior\s+in\s+all|すべての項目で(優|上回)|在所有(项目|方面)(都)?(优|更好)|tüm kalemlerde üstün)/i,
+    re: /(모든\s*항목에서\s*(우월|우수)|superior\s+in\s+all|すべての項目で(優|上回)|在所有(项目|方面)(都)?(优|更好)|tüm kalemlerde üstün|supérieur\s+(sur|dans)\s+tous|superiore\s+in\s+tutt)/i,
     why: "'모든 항목에서 우월' 표현",
   },
   // 브랜드·법인 표기는 **대소문자를 구분해서** 찾는다 (i 플래그를 쓰면 정상 표기까지 걸린다)
@@ -273,7 +273,7 @@ const FORBIDDEN = [
  * 그런 문장에서 금지어가 나오는 것은 정상이므로 오류로 보지 않는다.
  */
 const NEGATION =
-  /(아닙니다|아니라|아니며|아닌|않습니다|않으며|않는다|않았|없습니다|뜻이\s*아니|표시하지|주장하지|쓰지\s*않|사용하지\s*않|is not|are not|does not|do not|never|not\s+reproduce|without claiming|değildir|değil|yer verilmemekte|ではありません|ではない|していません|しません|不是|并非|不会|未|নয়|করা হয়নি)/;
+  /(아닙니다|아니라|아니며|아닌|않습니다|않으며|않는다|않았|없습니다|뜻이\s*아니|표시하지|주장하지|쓰지\s*않|사용하지\s*않|is not|are not|does not|do not|never|not\s+reproduce|without claiming|değildir|değil|yer verilmemekte|ではありません|ではない|していません|しません|不是|并非|不会|未|n'est\s+pas|ne\s+sont\s+pas|ne\s+signifie|ne\s+\S+\s+(pas|ni|aucun)|n'affirmons|n'en\s+reprend|non\s+è|non\s+sono|non\s+significa|non\s+affermiamo|non\s+(viene|vengono|sono\s+stat|ne\s+riporta))/;
 
 /** 금지어 검사에서 제외하는 키 (근거 범위를 스스로 밝히는 문단) */
 const DISCLAIMER_KEYS = [

@@ -1,0 +1,815 @@
+{
+  "Nav": {
+    "brand": "Brand",
+    "technology": "Tecnologia",
+    "dyeingPrinting": "Tintura · Stampa",
+    "dataCertifications": "Dati · Certificazioni",
+    "sampleInquiry": "Richiedi un campione",
+    "about": "Chi siamo",
+    "news": "Notizie",
+    "blog": "Insight",
+    "contact": "Contatti",
+    "menu": "Menu",
+    "openMenu": "Apri il menu",
+    "closeMenu": "Chiudi il menu",
+    "languageLabel": "Seleziona la lingua",
+    "skipToContent": "Vai al contenuto",
+    "homeAria": "Home Blugene"
+  },
+  "Footer": {
+    "tagline": "Denim for a lifetime. A safer blue.",
+    "sitemapTitle": "Mappa del sito",
+    "contactTitle": "Contatti",
+    "legalTitle": "Informazioni sui dati",
+    "sourceNote": "I valori di prova e le informazioni sulle certificazioni di questo sito provengono dal catalogo CutisBio pubblicato a luglio 2026. Dati aggiornati al {date}.",
+    "companyLine": "CutisBio Co., Ltd.",
+    "rights": "© 2026 CutisBio Co., Ltd. All rights reserved.",
+    "catalogueLink": "Scarica il catalogo originale (PDF)"
+  },
+  "Home": {
+    "metaTitle": "Un blu nato dal DNA dell'indaco e dalla fermentazione.",
+    "metaDescription": "Blugene, bio-indaco prodotto per fermentazione microbica: carbonio biobased 98%, anilina e N-metilanilina non rilevate (limite di rilevabilità 5 mg/kg).",
+    "ctaTitle": "Creiamo insieme il blu del prossimo denim.",
+    "ctaText": "Aspettiamo le richieste di brand di denim, produttori di tessuti, tintorie e aziende di stampa.",
+    "ctaButton": "Richiedi un campione Blugene"
+  },
+  "Hero": {
+    "descriptor": "Un blu nato dal DNA dell'indaco e dalla fermentazione.",
+    "titleLine1": "Un denim per tutta la vita,",
+    "titleLine2": "un blu più sicuro.",
+    "body": "Quel blu che tocca la pelle per tutta la vita rinasce grazie alla biologia sintetica. Blugene, un indaco che non scende a compromessi su nessun rischio, nemmeno il più piccolo, per la salute della pelle.",
+    "ctaPrimary": "Richiedi un campione Blugene",
+    "ctaSecondary": "Vedi dati e certificazioni",
+    "tagline": "Denim for a lifetime. A safer blue.",
+    "imageAlt": "Un genitore in giacca di denim tiene in braccio un bambino e guarda un paesaggio con un campo di mais, un prato e un corso d'acqua. Immagine del brand dalla copertina del catalogo fornito.",
+    "imageCredit": "Immagine a p.1 del catalogo"
+  },
+  "EvidenceStrip": {
+    "carbonValue": "98%",
+    "carbonLabel": "Contenuto di carbonio biobased",
+    "anilineValue": "Non rilevata",
+    "anilineLabel": "Anilina",
+    "nMethylanilineValue": "Non rilevata",
+    "nMethylanilineLabel": "N-metilanilina",
+    "note": "Risultati di prova del catalogo fornito. «Non rilevato» significa inferiore al limite di rilevabilità del metodo (5 mg/kg) secondo il metodo di prova indicato, e non un contenuto pari a zero. Il 98% è il contenuto di carbonio biobased, non la purezza dell'indaco né una riduzione delle emissioni.",
+    "sourceCarbon": "Fonte: catalogo p.3, Table 1-1 (KATRI, ASTM D6866-24a Method B)",
+    "sourceAniline": "Fonte: catalogo p.5, Table 2-3 (KOTERI, KS K 0734 2019)",
+    "cta": "Vedi i dati di prova dettagliati"
+  },
+  "Manifesto": {
+    "eyebrow": "ACROSS BORDERS. ACROSS GENERATIONS.",
+    "title": "Perché è un capo che tocca la nostra pelle per tutta la vita.",
+    "body": "In qualunque paese si viva, a qualunque età, il denim accompagna la nostra quotidianità. Perché si indossa a lungo e tocca la pelle ogni giorno, abbiamo riesaminato ogni fase, dalla creazione del colore alla tintura fino al momento in cui si indossa il denim, insieme a dermatologi, gli specialisti della salute della pelle. Blugene è nato dalle tre domande qui sotto.",
+    "questions": [
+      "Con che cosa è fatto?",
+      "Quali impurità restano?",
+      "Si possono verificare i risultati?"
+    ],
+    "cta": "Leggi la storia del brand",
+    "portraitAlt": "Choi Wonwoo, dermatologo e dottore di ricerca in medicina, sorridente in camice bianco",
+    "portraitName": "Ideatore di Blugene: Choi Wonwoo, dermatologo, dottore di ricerca in medicina",
+    "portraitCredential": "Blugene director: CHOI WONWOO M.D., Ph.D., Board Certified Dermatologist"
+  },
+  "Impurity": {
+    "eyebrow": "WHAT REMAINS MATTERS",
+    "title": "Anche l'invisibile fa parte dei nostri standard.",
+    "body": "Nel bio-indaco CutisBio alla base di Blugene, anilina e N-metilanilina non sono state rilevate nelle prove presentate nel catalogo.",
+    "context": "Anilina e N-metilanilina sono materie prime o intermedi della via di sintesi chimica e possono rimanere, non reagite, nella polvere di indaco finale. Diversi standard di certificazione ne limitano la concentrazione ammessa nei coloranti tessili e nei prodotti finiti.",
+    "cta": "Vedi tutti i dati di confronto",
+    "chartTitle": "Analisi di anilina e N-metilanilina in coloranti indaco in commercio",
+    "chartCaption": "9 campioni in commercio, catalogo p.5, Figure 2-2 · Table 2-3. L'asse verticale è in mg/kg e parte da 0."
+  },
+  "Science": {
+    "eyebrow": "SYNTHETIC BIOLOGY",
+    "title": "Riscrivere il DNA dell'indaco.",
+    "body": "CutisBio produce l'indaco sfruttando le vie di biosintesi dei microrganismi e la fermentazione.",
+    "cta": "Scopri la tecnologia",
+    "diagramTitle": "Dalla materia prima al tessuto",
+    "diagramNote": "Il punto di partenza del denim Blugene è una materia prima vegetale rinnovabile; il DNA blu dell'indaco rinasce come colorante e inchiostro grazie alla biologia sintetica e a un processo di fermentazione di precisione. Il colorante indaco Blugene così ottenuto, certificato tra l'altro ZDHC MRSL, OEKO-TEX ECO PASSPORT e USDA BioPreferred, tinge il denim che indossiamo.",
+    "steps": [
+      {
+        "title": "Materia prima rinnovabile",
+        "text": "Il punto di partenza è il carbonio rinnovabile ricavato da biomassa, come il mais.",
+        "imageAlt": "Foto di un campo di mais. Immagine concettuale che rappresenta la materia prima da biomassa; non è un'azienda agricola di CutisBio."
+      },
+      {
+        "title": "Fermentazione microbica",
+        "text": "L'indaco si produce per fermentazione, sfruttando la via di biosintesi dei microrganismi.",
+        "imageAlt": "Foto di un impianto di fermentazione: fermentatori con oblò attraverso cui si vede un brodo di coltura blu e due operatori davanti a un quadro di comando. Immagine concettuale del processo di fermentazione; non sono gli impianti né il personale di CutisBio."
+      },
+      {
+        "title": "Recupero e trasformazione in prodotto",
+        "text": "Dopo recupero e purificazione, l'indaco diventa polvere e inchiostro per stampa digitale.",
+        "imageAlt": "Foto di un barattolo di vetro con polvere di indaco blu e di un flacone di inchiostro per stampa digitale. Immagine concettuale delle due forme di prodotto; non sono i prodotti di CutisBio."
+      },
+      {
+        "title": "Tintura e stampa dei tessuti",
+        "text": "Applicazione alla tintura di cotone, seta e cashmere e alla stampa digitale.",
+        "imageAlt": "Foto di una tintoria in cui matasse di filo blu passano su rulli sopra vasche di bagno di indaco. Immagine concettuale della tintura dei tessuti; non sono gli impianti di CutisBio."
+      }
+    ]
+  },
+  "Environment": {
+    "eyebrow": "FROM RENEWABLE CARBON",
+    "title": "Pensando a chi indossa. Pensando anche a come si produce.",
+    "body": "Un indaco che parte dal carbonio rinnovabile. Dall'origine delle materie prime all'analisi della composizione, spieghiamo il nostro approccio con dati verificabili.",
+    "carbonCardTitle": "Contenuto di carbonio biobased",
+    "carbonCardText": "Quota del carbonio contenuto nel prodotto che proviene da materie prime rinnovabili. Si basa sulla misura della Table 1-1, p.3 del catalogo (pMC 97.73); non è la purezza dell'indaco né una riduzione delle emissioni di carbonio.",
+    "scopeNote": "Le analisi del ciclo di vita (LCA) per prodotto, il consumo di acqua, l'energia e le emissioni di carbonio non sono incluse in questo catalogo. Nessun valore di prestazione ambientale al di fuori dell'ambito verificato è mostrato su questo sito.",
+    "cta": "Vedi la documentazione",
+    "imageAlt": "Immagine concettuale di una catena del valore che collega le colture di materia prima, l'impianto di fermentazione, il tessuto blu e una persona in denim. Non è una foto reale di uno stabilimento o del personale di CutisBio."
+  },
+  "Performance": {
+    "eyebrow": "PERFORMANCE",
+    "title": "Tingibilità verificata su tessuto reale.",
+    "body": "Cotone, seta e cashmere sono stati tinti con indaco vegetale, chimico e bio e messi a confronto. Il catalogo riporta prestazioni comparabili (comparable performance) nella solidità al lavaggio, alla luce, allo sfregamento e al sudore.",
+    "fabricAlt": "Foto di 9 campioni di tessuto. Da sinistra: cotone, seta e cashmere tinti con indaco vegetale (#1-#3), indaco chimico (#4-#6) e bio-indaco (#7-#9).",
+    "fabricCaption": "Catalogo p.6, Figure 3-1.",
+    "sampleLegendPlant": "Indaco vegetale",
+    "sampleLegendChemical": "Indaco chimico",
+    "sampleLegendBio": "Bio-indaco",
+    "fiberCotton": "Cotone",
+    "fiberSilk": "Seta",
+    "fiberCashmere": "Cashmere",
+    "cta": "Vedi tutte le tabelle di solidità",
+    "honestNote": "Non significa superiorità in tutte le voci. In alcune voci di solidità allo sfregamento sono registrati anche gradi più bassi, riportati così come sono nelle tabelle.",
+    "additionalCaseTitle": "Ulteriore caso di valutazione su tessuto",
+    "additionalCaseBody": "Foto di una valutazione di tintura distinta, conservata nel repository. I valori qui sotto riportano così come sono le etichette giapponesi stampate sull'originale; «合成» significa «sintetico».",
+    "additionalCaseAlt": "Foto che confronta tessuti tinti con Bio ②-1, sintetico e Bio ②-2 dopo 4, 6 e 8 cicli di tintura",
+    "additionalCaseProvenance": "Poiché laboratorio, metodo, data e committente della prova non sono confermati, questo caso è presentato separatamente dalle prove di p.6 del catalogo. Sono dati diversi dai campioni #1-#9 della tabella qui sopra.",
+    "additionalCaseCyclesLabel": "Numero di tinture",
+    "additionalCaseRowsLabel": "Categoria"
+  },
+  "Fastness": {
+    "title": "Risultati delle prove di solidità del colore",
+    "intro": "Tabelle riprodotte così come sono dalle Table 3-1 - 3-4, p.6 del catalogo. I gradi mantengono la notazione di rango dell'originale (es. 4-5) e non sono stati convertiti in decimali.",
+    "sampleHeader": "Campione",
+    "itemHeader": "Voce di prova",
+    "methodLabel": "Metodo di prova",
+    "tableLaundering": "Solidità al lavaggio",
+    "tableLight": "Solidità alla luce",
+    "tableRubbing": "Solidità allo sfregamento",
+    "tablePerspiration": "Solidità al sudore",
+    "captionLaundering": "Table 3-1. Risultati di solidità al lavaggio (campioni #1-#9)",
+    "captionLight": "Table 3-2. Risultati di solidità alla luce (campioni #1-#9)",
+    "captionRubbing": "Table 3-3. Risultati di solidità allo sfregamento (campioni #1-#9, ordito · trama)",
+    "captionPerspiration": "Table 3-4. Risultati di solidità al sudore (campioni #1-#9, acido · alcalino)",
+    "groupChange": "Variazione di colore",
+    "groupStain": "Scarico",
+    "rowColorChange": "Variazione di colore",
+    "rowAcetate": "Acetato",
+    "rowCotton": "Cotone",
+    "rowNylon": "Nylon",
+    "rowPolyester": "Poliestere",
+    "rowAcrylic": "Acrilico",
+    "rowWool": "Lana",
+    "rowDry": "A secco",
+    "rowWet": "A umido",
+    "subWarp": "Ordito",
+    "subWeft": "Trama",
+    "subAcid": "Acido",
+    "subAlkali": "Alcalino",
+    "sourceImageCta": "Vedi l'immagine della tabella originale",
+    "sourceImageAlt": "Immagine originale delle tabelle di solidità 3-1 - 3-4, p.6 del catalogo",
+    "gradeNote": "I gradi sono valori di rango da 1 (basso) a 5 (alto); «4-5» è la notazione originale che indica un livello intermedio tra due gradi. I gradi inferiori a 4 sono in grassetto nelle tabelle."
+  },
+  "ShadeLibrary": {
+    "eyebrow": "SHADE LIBRARY",
+    "title": "Al tuo brand, il suo blu.",
+    "body": "La profondità del colore varia con la concentrazione del colorante e il numero di tinture. Regolando il rapporto tra indaco e indirubina, ogni brand può creare la propria tonalità.",
+    "gridTitle": "Campioni del catalogo per concentrazione",
+    "gridHelp": "Seleziona un campione per ingrandirlo. Poiché il catalogo non indica la concentrazione di ciascun campione, usiamo identificatori di posizione (A1-B6).",
+    "axisLow": "Low",
+    "axisHigh": "High",
+    "axisLabel": "Concentrazione Blugene",
+    "rowA": "Riga A",
+    "rowB": "Riga B",
+    "swatchLabel": "Campione del catalogo {code}",
+    "swatchAlt": "Campione tinto {code} per concentrazione, catalogo p.7, Figure 4-1",
+    "duplicateNote": "Nell'originale, nelle posizioni A6 e B1 è usata la stessa immagine di campione. Le posizioni sono state conservate così come sono.",
+    "indirubinTitle": "Le variazioni di tonalità create dall'indirubina",
+    "indirubinBody": "L'indirubina è l'isomero rosso dell'indaco. Regolando la composizione di indaco e indirubina prodotti per fermentazione microbica, si può creare un blu esclusivo del brand.",
+    "indirubinAltA": "Foto di un tessuto denim tinto con indaco al 100% (catalogo p.7, Figure 4-2)",
+    "indirubinAltB": "Foto di un tessuto denim tinto con indaco al 94% e indirubina al 6% (catalogo p.7, Figure 4-2)",
+    "indirubinLabelA": "Indaco 100%",
+    "indirubinLabelB": "Indaco 94%, indirubina 6%",
+    "indirubinToggle": "Confronta le due composizioni",
+    "indirubinNote": "Foto delle due composizioni presentate nel catalogo. Poiché i rapporti intermedi non sono forniti, nessun colore viene simulato sullo schermo.",
+    "colorDisclaimer": "Il colore reale può variare in base allo schermo, al tessuto e alle condizioni di tintura. Verifica su un campione di tessuto.",
+    "inquiryCta": "Richiedi un campione in questo colore",
+    "medicalNote": "L'attività farmacologica dell'indirubina non è trattata su questo sito. Si parla solo di regolazione della tonalità e di sviluppo del prodotto.",
+    "keyboardHint": "Usa le frecce (← → ↑ ↓) e i tasti Home · Fine per spostarti tra i campioni."
+  },
+  "Products": {
+    "eyebrow": "PRODUCT FORMS",
+    "title": "Due forme: polvere e inchiostro per stampa.",
+    "body": "L'indaco prodotto per fermentazione microbica è disponibile in polvere per la tintura dei tessuti e come inchiostro per la stampa digitale.",
+    "powderTitle": "Blugene Indigo Powder",
+    "powderText": "Il catalogo contiene i dati di valutazione della tintura su cotone, seta e cashmere.",
+    "powderAlt": "Polvere di bio-indaco blu profondo in una ciotola (catalogo p.9)",
+    "inkTitle": "Blugene Digital Printing Ink",
+    "inkText": "Inchiostro di bio-indaco per stampa digitale. Ti consigliamo su applicabilità e campioni.",
+    "inkAlt": "Flacone di vetro con inchiostro per stampa digitale al bio-indaco blu profondo (catalogo p.9)",
+    "nameNote": "I nomi dei prodotti qui sopra sono la presentazione web del nuovo brand. Il nome originale che compare nel catalogo e nei certificati è «{catalogueName}».",
+    "specNote": "Granulometria, viscosità, durata di conservazione, quantità minima d'ordine, capacità produttiva e prezzo non compaiono nei documenti forniti e quindi non sono indicati. Contattaci per le specifiche di cui hai bisogno.",
+    "cyclesTitle": "Confronto della resa cromatica in base al numero di tinture",
+    "cyclesCaption": "Catalogo p.8, Figure 5-1. Confronto di tessuti di cotone tinti da 1 a 4 volte con indaco chimico (polvere), bio-indaco (polvere) e bio-indaco (inchiostro per stampa digitale).",
+    "cyclesAlt": "Tavola di confronto a 3 righe e 4 colonne. Le righe sono polvere di indaco chimico, polvere di bio-indaco e inchiostro per stampa digitale al bio-indaco; le colonne, da 1 a 4 tinture.",
+    "cyclesNote": "In questo esempio il catalogo indica l'intensità del colore come «inchiostro per stampa digitale > indaco chimico ≈ polvere di bio-indaco». Le tonalità delle foto non sono state convertite in valori K/S né in differenza di colore ΔE, e ciò non significa una superiorità di prestazioni in tutte le condizioni.",
+    "cta": "Richiedi la documentazione di prodotto"
+  },
+  "Printing": {
+    "eyebrow": "PRINTED IN BLUE",
+    "title": "La stampa amplia l'espressione.",
+    "body": "La stampa digitale deposita il colore esattamente dove serve per realizzare motivi precisi. Presentiamo i risultati stampati con inchiostro di bio-indaco insieme alle immagini originali.",
+    "pairOriginal": "Immagine originale",
+    "pairPrinted": "Risultato stampato con inchiostro di bio-indaco",
+    "pairAltOriginal": "Immagine originale {index} usata per la stampa digitale (catalogo p.9, Figure 6-2)",
+    "pairAltPrinted": "Risultato {index} della stessa immagine stampata in digitale con inchiostro di bio-indaco (catalogo p.9, Figure 6-2)",
+    "pairNote": "Queste foto non mostrano un miglioramento delle prestazioni prima e dopo l'uso del prodotto, e le informazioni su autore, cliente o destinatario non compaiono nei documenti forniti.",
+    "processTitle": "Produzione dell'inchiostro",
+    "processCaption": "Fasi della Figure 6-1, p.9 del catalogo. Sono indicati i termini originali.",
+    "processAlt": "Schema del flusso di produzione dell'inchiostro: preparazione delle materie prime, premiscelazione, macinazione, filtrazione, formulazione finale (catalogo p.9)",
+    "processNote": "L'ultima fase del catalogo originale si chiama «Formation». Il termine originale è conservato invece di essere sostituito con una terminologia di processo consolidata. Questo documento non rivela una ricetta di produzione precisa.",
+    "steps": [
+      {
+        "title": "Preparazione delle materie prime",
+        "text": "Pesatura e preparazione della polvere di bio-indaco e dei materiali ausiliari."
+      },
+      {
+        "title": "Premiscelazione",
+        "text": "Prima miscelazione con il mezzo disperdente."
+      },
+      {
+        "title": "Macinazione",
+        "text": "Macinazione e dispersione uniformi delle particelle."
+      },
+      {
+        "title": "Filtrazione",
+        "text": "Filtrazione delle particelle residue per ottenere uno stato adatto alla stampa."
+      },
+      {
+        "title": "Formulazione finale",
+        "text": "Regolazione alla forma finale dell'inchiostro. (Termine originale: Formation)"
+      }
+    ],
+    "advantagesTitle": "Caratteristiche della stampa digitale",
+    "advantages": [
+      "Consente motivi ad alta risoluzione e combinazioni di colori difficili da ottenere con la tintura tradizionale.",
+      "Poiché il colore è depositato esattamente dove serve, è adatta anche a piccole produzioni.",
+      "Facilita la riproduzione ripetuta di disegni complessi."
+    ],
+    "advantagesNote": "A p.9 il catalogo cita ordini di grandezza di risparmio di acqua e rifiuti propri della stampa digitale in generale, ma poiché non sono stati misurati con i prodotti Blugene, questo sito non li mostra come cifre."
+  },
+  "DataHub": {
+    "eyebrow": "DATA & CERTIFICATIONS",
+    "title": "Fiducia verificata sugli originali.",
+    "body": "Risultati di prova e certificati riuniti in un unico luogo. Per ogni voce l'originale è consultabile insieme a laboratorio, metodo di prova, numero di rapporto e data di riferimento dei dati.",
+    "carbonSectionTitle": "Carbonio biobased (C14)",
+    "carbonSectionBody": "Risultati della misura della quota di carbonio biobased (rinnovabile) di coloranti indaco in commercio. Questo valore è il contenuto di carbonio biobased, non la purezza dell'indaco né una riduzione delle emissioni di carbonio.",
+    "anilineSectionTitle": "Analisi di anilina e N-metilanilina",
+    "anilineSectionBody": "Risultati dell'analisi di anilina e N-metilanilina residue in coloranti indaco in commercio.",
+    "tableLab": "Laboratorio",
+    "tableMethod": "Metodo di prova",
+    "tableReport": "N. rapporto di prova",
+    "tableReportDate": "Data del rapporto",
+    "reportDateNote": "Il rapporto n. SBED25-00000153-1 compare due volte nella Table 1-1 del catalogo con date di emissione diverse. La notazione originale è stata riportata così com'è.",
+    "tableDetectionLimit": "Limite di rilevabilità del metodo",
+    "tableType": "Tipo di indaco",
+    "tableSample": "Campione",
+    "tablePmc": "pMC",
+    "tableBiobased": "Contenuto di carbonio biobased (%)",
+    "tableAniline": "Anilina (mg/kg)",
+    "tableNMethylaniline": "N-metilanilina (mg/kg)",
+    "typeChemical": "Chimico",
+    "typePlant": "Vegetale",
+    "typeBio": "Bio",
+    "notDetected": "Non rilevato",
+    "notDetectedShort": "N.D.",
+    "notDetectedExplain": "«Non rilevato» (N.D.) significa inferiore al limite di rilevabilità del metodo di prova indicato. Non è un valore misurato pari a 0, e nel grafico non è mostrato come una barra a 0.",
+    "sameLabelNote": "Company M compare sia nel tipo indaco chimico sia nel tipo indaco vegetale. Il tipo è indicato per distinguerli.",
+    "anonymousNote": "I nomi delle aziende riprendono l'anonimizzazione del catalogo. Non si ipotizza alcun nome reale.",
+    "sampleScopeNote": "Questi valori confrontano i 9 campioni del catalogo e non sono una statistica rappresentativa dell'intero mercato. Le prove sul carbonio e sull'anilina non sono state unite in un unico indicatore, perché laboratori, metodi e date differiscono.",
+    "chartCarbonTitle": "Confronto del contenuto di carbonio biobased (%)",
+    "chartAnilineTitle": "Confronto anilina · N-metilanilina (mg/kg)",
+    "chartAccessibleNote": "Tutti i valori del grafico compaiono anche nella tabella qui sotto.",
+    "regulatoryOmitted": "La tabella dei limiti ammessi per paese e per certificazione a p.4 del catalogo dipende dal paese e dalla famiglia di prodotti e richiede la consultazione dei testi più recenti; questo sito non ne riporta né ne interpreta le cifre. Puoi consultare l'originale a <link>pagina 4 del catalogo originale</link> qui sotto; per i criteri applicabili fai riferimento all'ultima versione di ciascuna normativa.",
+    "catalogueTitle": "Catalogo originale",
+    "catalogueBody": "Sono consultabili tutte le 12 pagine del catalogo fornito.",
+    "cataloguePage": "p.{page}",
+    "cataloguePageAlt": "Catalogo bio-indaco CutisBio, pagina {page}",
+    "catalogueDownload": "Scarica il PDF ({size})",
+    "catalogueAnchorNote": "Il PDF scaricato contiene tutte le 12 pagine originali del catalogo, nello stesso ordine delle miniature qui sopra.",
+    "carbonZeroNote": "Il contenuto di carbonio biobased di Company Z è indicato come 0 (pMC 0.30) nella Table 1-1 del catalogo e come N.D. nella Figure 1-3. Questa tabella riporta il valore della Table 1-1."
+  },
+  "Certifications": {
+    "title": "Certificazioni internazionali",
+    "body": "Certificati contenuti nel catalogo fornito. Ogni originale può essere ingrandito.",
+    "numberLabel": "N. certificato",
+    "issuerLabel": "Ente certificatore",
+    "productLabel": "Prodotto interessato",
+    "validityLabel": "Validità indicata sul documento",
+    "issuedLabel": "Data di emissione del documento",
+    "pageLabel": "Pagina del catalogo",
+    "certificateAlt": "Immagine originale del certificato {name}",
+    "logoAlt": "Marchio di certificazione {name}",
+    "noExpiry": "Sul documento non è indicata alcuna data di scadenza",
+    "statusDocumented": "Documento di certificazione del catalogo di luglio 2026",
+    "statusWithinPeriod": "Entro il periodo di validità indicato",
+    "statusPastPeriod": "Il periodo di validità indicato è scaduto. Chiedici la versione più recente.",
+    "verificationNote": "Si tratta delle date riportate sul documento, non di una consultazione dello stato attuale nel database dell'ente certificatore.",
+    "brandNameNote": "Il nome del prodotto sui certificati è «CB Bio Indigo Dye Powder». Blugene è il nuovo nome del brand dell'attività bio-indaco di CutisBio, che include questo prodotto; il nome che compare nelle immagini dei certificati non è stato modificato.",
+    "scopeNote": "L'ambito della certificazione è limitato al prodotto indicato su ciascun certificato. Non significa che l'inchiostro per stampa digitale o i capi in denim finiti siano automaticamente certificati.",
+    "asOfLabel": "Dati aggiornati al",
+    "nextReviewLabel": "Prossima verifica consigliata dello stato",
+    "requestLatest": "Richiedi le certificazioni più recenti",
+    "zdhcScope": "L'ambito copre la formulazione chimica indicata sul certificato (CB Bio Indigo Dye Powder). La categoria d'uso è Natural dyes (1.7.27).",
+    "oekoScope": "L'elenco dei prodotti è nell'allegato (enclosure) del certificato e non è riprodotto nel catalogo. La categoria di prodotto è 2.9 Natural dyes. Finché l'allegato non è stato verificato, l'ambito dei prodotti interessati non viene precisato.",
+    "usdaScope": "Certificato di partecipazione che attesta l'ottenimento del marchio USDA Certified Biobased Product; il contenuto riportato sul marchio è del 98%. A p.11 il catalogo indica in nota una precisione di ±3% (valore assoluto).",
+    "okbiobasedScope": "La classe 5 corrisponde a un contenuto di carbonio biobased dal 97% al 100%. Il certificato riporta il metodo EN 16640 e lo schema di certificazione OK 20 edition D.",
+    "zoomOpen": "Ingrandisci il certificato",
+    "zoomClose": "Chiudi",
+    "zoomHint": "Premi Esc per chiudere."
+  },
+  "Inquiry": {
+    "eyebrow": "SAMPLE INQUIRY",
+    "title": "Creiamo insieme il blu del prossimo denim.",
+    "body": "Scegli il tipo di richiesta e lasciaci il tuo messaggio.",
+    "topicLabel": "Tipo di richiesta",
+    "topicFabricDyeing": "Tintura di tessuti",
+    "topicDigitalPrinting": "Stampa digitale",
+    "topicShadeDevelopment": "Co-sviluppo di tonalità",
+    "topicTechnicalData": "Documentazione tecnica · certificazioni",
+    "messageLabel": "Informazioni utili da comunicarci",
+    "messagePlaceholder": "Indica la tua azienda, il tuo nome, il tipo di tessuto, le quantità e i tempi desiderati.",
+    "submit": "Invia la richiesta via e-mail",
+    "submitHint": "Facendo clic sul pulsante si apre il tuo programma di posta con destinatario, oggetto e contenuto precompilati. La richiesta viene trasmessa solo quando premi tu «Invia». Se il programma di posta non si apre, scrivi direttamente a {email}. Questa schermata non trasmette alcuna informazione all'esterno.",
+    "mailSubject": "[Richiesta campione Blugene] {topic}",
+    "mailIntro": "Desidero informazioni sui campioni e sulla documentazione tecnica Blugene.",
+    "mailTopicLine": "Tipo di richiesta: {topic}",
+    "mailShadeLine": "Tonalità di interesse: {shade}",
+    "mailFooter": "— Questo messaggio è stato scritto dalla pagina contatti di blugene.co.",
+    "emailLabel": "E-mail",
+    "telLabel": "Telefono",
+    "addressLabel": "Indirizzo",
+    "companyRelationTitle": "Blugene e CutisBio",
+    "companyRelationBody": "Blugene è il nome del brand del bio-indaco sviluppato da CutisBio Co., Ltd. Il catalogo e i certificati riportano il nome originale del prodotto, «Bio Indigo Dye Powder (Microbial Fermentation)».",
+    "sampleNote": "La disponibilità dei campioni viene confermata su richiesta. (Catalogo p.11: Samples are available upon request)"
+  },
+  "Common": {
+    "sourceLabel": "Fonte",
+    "cataloguePage": "Catalogo p.{page}",
+    "asOf": "Dati aggiornati al {date}",
+    "viewOriginal": "Vedi l'originale",
+    "viewSource": "Vedi il documento di origine",
+    "close": "Chiudi",
+    "openImage": "Ingrandisci l'immagine",
+    "conceptImage": "Immagine concettuale",
+    "brandImage": "Immagine del brand",
+    "testPhoto": "Foto di prova",
+    "imageNoteConcept": "Immagine destinata a illustrare un concetto; non è una foto reale di impianti, clienti o risultati di prova.",
+    "imageNotePhoto": "Foto del catalogo fornito, solo ridimensionata per il web, senza correzione del colore.",
+    "imageNoteSwatch": "Campioni di colore stampati nella Figure 4-1, p.7 del catalogo, riprodotti così come sono dal file originale. Non sono foto di tessuto reale.",
+    "scrollableRegion": "Area scorrevole in orizzontale",
+    "catalogueFigure": "Figura del catalogo"
+  },
+  "Brand": {
+    "metaTitle": "Storia del brand",
+    "metaDescription": "Blugene è il brand di bio-indaco di CutisBio, che reinventa l'indaco per un denim che accompagna tutta la vita.",
+    "heroEyebrow": "THE STORY",
+    "heroTitle": "Il denim si indossa ogni giorno. Bisogna quindi esaminare con cura il colorante.",
+    "heroBody": "Abbiamo riscritto il modo di produrre il colorante indaco grazie a un processo di fermentazione vivo. Il denim attraversa origini e confini e ci accompagna nella quotidianità, per tutta la vita. Per questo non scendiamo a compromessi, nemmeno sulla più piccola impurità. Rifacciamo l'indaco pensando alla pelle e all'ambiente. Questo è Blugene.",
+    "nameTitle": "Il significato del nome",
+    "nameBody": "Un nome che unisce Blue e Gene. Esprime l'idea di ricreare, con il metodo della biologia sintetica, un blu amato da tempo.",
+    "nameNote": "«Riscrivere il DNA dell'indaco» è una metafora. Non significa che la molecola di indaco contenga geni.",
+    "promiseTitle": "Ciò che promettiamo",
+    "promiseBody": "Ciò che possiamo promettere sono dati verificabili.",
+    "promiseItems": [
+      {
+        "title": "Dichiariamo la materia prima",
+        "text": "Partiamo dal carbonio rinnovabile. Il contenuto di carbonio biobased è pubblicato come risultato di prova."
+      },
+      {
+        "title": "Verifichiamo le impurità",
+        "text": "Analizziamo anilina e N-metilanilina con metodi di prova riconosciuti e pubblichiamo i risultati insieme al limite di rilevabilità."
+      },
+      {
+        "title": "Mostriamo gli originali",
+        "text": "Numeri dei rapporti di prova, numeri dei certificati e immagini originali dei certificati sono consultabili direttamente sul sito."
+      }
+    ],
+    "limitsTitle": "Ciò che non affermiamo",
+    "limitsBody": "Delimitiamo con chiarezza l'ambito dei dati confermati finora. I punti qui sotto non sono dimostrati dal catalogo fornito e quindi non vengono rivendicati su questo sito.",
+    "limitsItems": [
+      "La sicurezza del contatto con la pelle per tutta la vita, o la sicurezza per neonati e pelli sensibili",
+      "L'assenza di irritazione dimostrata da prove cliniche o dermatologiche",
+      "L'eliminazione completa di tutte le sostanze nocive o l'assenza di sostanze chimiche",
+      "Cifre di riduzione delle emissioni di carbonio o del consumo di acqua per prodotto, neutralità carbonica, biodegradabilità"
+    ],
+    "relationTitle": "Rapporto con CutisBio",
+    "relationBody": "Blugene è il brand dell'attività indaco di CutisBio Co., Ltd. La ragione sociale e le diciture di certificati e rapporti di prova mantengono il nome CutisBio.",
+    "cta": "Richiedi campioni e documentazione tecnica"
+  },
+  "Technology": {
+    "metaTitle": "Tecnologia",
+    "metaDescription": "Le quattro vie per produrre l'indaco, la produzione per fermentazione microbica e i risultati delle prove sul carbonio biobased.",
+    "heroEyebrow": "TECHNOLOGY",
+    "heroTitle": "Quattro vie verso il blu, e la nostra scelta.",
+    "heroBody": "Il catalogo presenta quattro vie; il bio-indaco CutisBio alla base di Blugene rientra nella via di origine microbica.",
+    "routesTitle": "Le quattro vie di sintesi dell'indaco",
+    "routeOursLabel": "La nostra via",
+    "routesCaption": "Catalogo p.2, Figure 1-1. Le vie chimiche sono in rosso, le vie biologiche in giallo.",
+    "routesAlt": "Schema delle quattro vie di sintesi dell'indaco a partire da petrolio greggio, biomassa e pianta dell'indaco (catalogo p.2)",
+    "routes": [
+      {
+        "name": "Indaco chimico",
+        "feedstock": "Petrolio greggio (non rinnovabile)",
+        "intermediate": "Anilina",
+        "text": "L'indaco viene sintetizzato passando dall'anilina ricavata dal petrolio greggio. Il catalogo classifica questa via tra le vie chimiche."
+      },
+      {
+        "name": "Indaco ibrido",
+        "feedstock": "Biomassa",
+        "intermediate": "Acido antranilico",
+        "text": "L'indaco si ottiene passando dall'acido antranilico ricavato da biomassa. La materia prima è rinnovabile, ma lo stadio intermedio differisce dalla via puramente microbica."
+      },
+      {
+        "name": "Bio-indaco (origine microbica)",
+        "feedstock": "Biomassa",
+        "intermediate": "Triptofano",
+        "text": "I microrganismi convertono in indaco il triptofano ricavato da biomassa. Il bio-indaco CutisBio rientra in questa via."
+      },
+      {
+        "name": "Indaco naturale (origine vegetale)",
+        "feedstock": "Pianta dell'indaco",
+        "intermediate": "Estrazione",
+        "text": "Il pigmento viene estratto dalla pianta dell'indaco. Il catalogo segnala casi di indaco vegetale in commercio che sembrano miscelati con indaco chimico."
+      }
+    ],
+    "routeFeedstockLabel": "Materia prima",
+    "routeIntermediateLabel": "Stadio intermedio principale",
+    "routesNote": "Lo stadio dell'acido antranilico della via ibrida differisce dallo stadio del triptofano della via microbica. Le due vie non sono state assimilate l'una all'altra.",
+    "routesFigureBridge": "Schema del catalogo che riunisce le quattro vie in un'unica tavola. L'ordine della figura è lo stesso delle schede.",
+    "carbonTitle": "Da dove viene il carbonio",
+    "carbonCaption": "Catalogo p.2, Figure 1-2. Confronto del ciclo del carbonio della via chimica (in alto) e della via bio (in basso).",
+    "carbonAlt": "Schema concettuale che confronta il ciclo del carbonio delle vie chimica e bio (catalogo p.2)",
+    "carbonBody": "La via chimica ricava il carbonio dal petrolio greggio, non rinnovabile; la via bio, dalla biomassa rinnovabile. Questa differenza si verifica con la prova del contenuto di carbonio biobased.",
+    "processTitle": "Dalla materia prima al tessuto",
+    "safetyTitle": "Ambiente di lavoro",
+    "safetyBody": "Il catalogo tratta l'ambiente di lavoro legato alla manipolazione di sostanze chimiche pericolose. Questo sito non formula alcuna affermazione quantitativa sulla sicurezza degli operatori e si limita a descrivere la differenza tra le sostanze manipolate.",
+    "safetyAlt": "Illustrazione che contrappone la manipolazione di sostanze chimiche pericolose a quella di sostanze non pericolose (catalogo p.4)",
+    "impurityTitle": "Perché verifichiamo l'anilina",
+    "impurityBody": "Anilina e N-metilanilina sono materie prime o intermedi della via di sintesi chimica e possono rimanere, non reagite, nella polvere di indaco finale. Per la loro tossicità e potenziale cancerogenicità, diversi standard di certificazione ne limitano la concentrazione ammessa nei coloranti tessili e nei prodotti finiti.",
+    "cta": "Vedi tutti i dati di prova",
+    "conceptCaptionSafety": "Catalogo p.4, Figure 2-1. Illustrazione che contrappone la manipolazione di sostanze pericolose e non pericolose; non è una foto di un reparto reale."
+  },
+  "DyeingPrinting": {
+    "metaTitle": "Tintura · Stampa",
+    "metaDescription": "Confronto di tintura su cotone, seta e cashmere, risultati di solidità del colore, campioni per concentrazione, polvere e inchiostro per stampa digitale.",
+    "heroEyebrow": "DYEING & PRINTING",
+    "heroTitle": "Il colore, verificato sul tessuto.",
+    "heroBody": "Tingibilità, solidità, tonalità e formulazione: mostriamo così come sono i dati verificati su tessuto reale.",
+    "jumpNavLabel": "Naviga in questa pagina",
+    "jumpNav": [
+      "Tingibilità",
+      "Solidità del colore",
+      "Libreria delle tonalità",
+      "Gamma di prodotti",
+      "Stampa"
+    ],
+    "cta": "Richiedi un campione di tessuto"
+  },
+  "Tech": {
+    "title": "Blugene, un indaco prodotto per fermentazione microbica",
+    "description": "Come viene prodotto il bio-indaco di Blugene by CutisBio e con quali prove è stato verificato.",
+    "intro": "Il denim blu, il tessuto più amato. Non esiste un solo modo per crearne il colore. CutisBio produce l'indaco sfruttando le vie di biosintesi dei microrganismi e la fermentazione.",
+    "section1Title": "1. Perché verifichiamo le impurità",
+    "section1Text": "Anilina e N-metilanilina sono materie prime o intermedi dell'indaco di sintesi chimica e possono rimanere, non reagite, nella polvere finale. Per la loro tossicità e potenziale cancerogenicità, diversi standard di certificazione come ZDHC, OEKO-TEX e GOTS ne limitano la concentrazione ammessa nei coloranti tessili e nei prodotti finiti. Per questo analizziamo queste due sostanze per ogni prodotto e pubblichiamo i risultati insieme al limite di rilevabilità.",
+    "comparisonCaption": "Descrizione che non supera l'ambito indicato a p.4 del catalogo (materie prime · intermedi, tossicità · potenziale cancerogenicità).",
+    "section2Title": "2. Un indaco prodotto per fermentazione microbica",
+    "section2Text": "CutisBio usa un processo di fermentazione che, sfruttando la via di biosintesi dei microrganismi, converte in indaco il triptofano ricavato da biomassa. Tra le quattro vie di sintesi presentate nel catalogo, è la via di origine microbica.",
+    "section3Title": "3. Risultati verificati con le prove",
+    "section3Text": "La prova KATRI secondo ASTM D6866-24a Method B ha misurato un contenuto di carbonio biobased del 98% (pMC 97.73), e la prova KOTERI secondo KS K 0734 2019 non ha rilevato anilina né N-metilanilina (limite di rilevabilità del metodo 5 mg/kg). Secondo il catalogo la solidità del colore è comparabile a quella dell'indaco vegetale e chimico (comparable performance); i gradi per ciascuna voce sono consultabili così come sono nelle tabelle della pagina Dati.",
+    "certSectionTitle": "Certificazioni internazionali",
+    "certSectionText": "Certificati contenuti nel catalogo fornito. Gli originali sono consultabili così come sono.",
+    "faqTitle": "Domande frequenti",
+    "faqList": [
+      {
+        "question": "Che cos'è Blugene?",
+        "answer": "Blugene è il nome del brand del bio-indaco prodotto per fermentazione microbica da CutisBio Co., Ltd. Il catalogo e i certificati riportano il nome originale del prodotto, «Bio Indigo Dye Powder (Microbial Fermentation)»."
+      },
+      {
+        "question": "Che cosa significa «contenuto di carbonio biobased del 98%»?",
+        "answer": "Significa che il 98% del carbonio contenuto nel prodotto proviene da materie prime rinnovabili. È il risultato della prova KATRI secondo ASTM D6866-24a Method B (AMS) (pMC 97.73, rapporto SBED25-00000153-1, 2025-05-22), non la purezza dell'indaco né una riduzione delle emissioni di carbonio."
+      },
+      {
+        "question": "«Anilina non rilevata» significa che il contenuto è zero?",
+        "answer": "No. Significa che nella prova KOTERI secondo KS K 0734 2019 non è stata rilevata perché inferiore al limite di rilevabilità del metodo di 5 mg/kg (rapporto 2025-0604-1132-C03, 2025-06-10). Non significa 0 ppm né assenza totale."
+      },
+      {
+        "question": "Si può usare così com'è negli impianti di tintura esistenti?",
+        "answer": "Il catalogo riporta prestazioni comparabili (comparable performance) a quelle dell'indaco vegetale e chimico nella tintura di cotone, seta e cashmere. Poiché però i risultati possono variare in base allo stabilimento, al tessuto e alle condizioni di processo, consigliamo di verificare l'applicazione reale su un campione di tessuto."
+      },
+      {
+        "question": "A quali prodotti si applicano le certificazioni?",
+        "answer": "Il prodotto indicato sui certificati è «CB Bio Indigo Dye Powder». Poiché l'elenco dei prodotti dell'OEKO-TEX ECO PASSPORT è nell'allegato del certificato, il solo catalogo non permette di precisarne l'ambito. L'inchiostro per stampa digitale e i capi in denim finiti non sono automaticamente certificati."
+      }
+    ],
+    "structuresTitle": "Strutture chimiche di anilina e N-metilanilina",
+    "structuresNote": "Formule di struttura scheletriche di strutture chimiche verificate, disegnate direttamente in codice (SVG). Non sono state create con uno strumento di generazione di immagini.",
+    "structureAnilineName": "Anilina",
+    "structureAnilineDesc": "Formula scheletrica di un anello benzenico con un gruppo amminico (NH2).",
+    "structureNMethylanilineName": "N-metilanilina",
+    "structureNMethylanilineDesc": "Formula scheletrica in cui l'azoto legato all'anello benzenico porta un idrogeno e un gruppo metilico (CH3)."
+  },
+  "About": {
+    "title": "Progettare una quotidianità più bella con la biologia sintetica",
+    "missionTitle": "Our Mission",
+    "missionText": "Design living cells to make everyday life more beautiful and better.",
+    "visionTitle": "Our Vision",
+    "visionText": "Progettiamo la capacità di biosintesi dei microrganismi per reinventare i materiali industriali. Blugene è uno dei risultati: un indaco per l'industria della moda, prodotto per fermentazione.",
+    "aboutImageAlt": "Veduta di ricercatori di CutisBio impegnati in approfondite ricerche biologiche",
+    "coreBusinessTitle": "Aree di business principali",
+    "healthTitle": "Salute",
+    "healthText": "Produciamo con la biologia sintetica sostanze essenziali per una quotidianità sana e per la longevità.",
+    "beautyTitle": "Bellezza",
+    "beautyText": "Sviluppiamo sostanze e prodotti che controllano l'invecchiamento di pelle e capelli.",
+    "fashionTitle": "Moda (Blugene)",
+    "fashionText": "Forniamo bio-indaco prodotto per fermentazione microbica per la tintura del denim e la stampa digitale.",
+    "historyTitle": "Storia",
+    "historyList": [
+      {
+        "year": "2024",
+        "event": "Realizzazione di un sistema di produzione su larga scala del colorante bio Bio-Indigo e avvio della commercializzazione"
+      },
+      {
+        "year": "2023",
+        "event": "Firma di protocolli d'intesa (MOU) con aziende di moda coreane, tra cui Kolon FnC, sull'applicazione del bio-indaco"
+      },
+      {
+        "year": "2022",
+        "event": "Successo della produzione autonoma di bio-indaco su scala pilota"
+      },
+      {
+        "year": "2021",
+        "event": "Acquisizione della tecnologia di base di un colorante indaco ecologico di origine microbica"
+      },
+      {
+        "year": "2020",
+        "event": "Fondazione di CutisBio"
+      }
+    ],
+    "blugeneNoteTitle": "Informazioni su questo sito",
+    "blugeneNoteText": "Questo sito presenta l'attività indaco di CutisBio (Blugene). Per le attività medicali e cosmetiche e la presentazione generale dell'azienda, consulta il sito istituzionale di CutisBio.",
+    "metaDescription": "CutisBio progetta la capacità di biosintesi dei microrganismi per creare materiali industriali. Presentazione delle aree di business, tra cui il brand di bio-indaco Blugene, e della storia dell'azienda."
+  },
+  "Blog": {
+    "eyebrow": "Insight & tecnologia",
+    "title": "Blog",
+    "description": "Articoli di approfondimento sulla tecnologia di biologia sintetica di CutisBio e sulla moda ecosostenibile.",
+    "categoryTech": "Tecnologia",
+    "readMore": "Leggi tutto",
+    "readTime": "{minutes} min di lettura"
+  },
+  "Contact": {
+    "title": "Contatti",
+    "description": "Richieste di campioni e di documentazione tecnica e di certificazione per il bio-indaco Blugene.",
+    "addressDetail": "8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Corea del Sud",
+    "mapTitle": "Come raggiungerci"
+  },
+  "NotFound": {
+    "title": "Pagina non trovata.",
+    "body": "L'indirizzo potrebbe essere cambiato o la pagina potrebbe essere stata rimossa. Trova ciò che cerchi qui sotto.",
+    "backHome": "Torna alla home"
+  },
+  "News": {
+    "title": "Sala stampa CutisBio",
+    "description": "Scopri le ultime notizie sulla moda ecosostenibile creata con la biologia sintetica.",
+    "listNote": "Questo elenco raccoglie automaticamente gli articoli di stampa pubblicati. Contenuti ed espressioni sono di ciascuna testata; per i valori di prova e le certificazioni, consulta la pagina Dati · Certificazioni.",
+    "categoryVideo": "Video",
+    "categoryPost": "Notizie",
+    "playVideo": "Riproduci il video",
+    "articles": [
+      {
+        "date": "2025-11-19",
+        "category": "Comunicato stampa",
+        "title": "S-Skin Co., Ltd. × CutisBio: protocollo d'intesa per la commercializzazione di un materiale polipeptidico di fusione per skin booster",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBBb2F5Sjh2MlYtZVBQaThpM3N1dEYtLUhNaGFhTlVVWTJMcHc1RnN6SU9aVUhmNjVBbWtDemtGVEg5M0dLTm1lUncyRWV0WXhuRFdub1FndHlGSE1FNUNBZXR0NDg?oc=5",
+        "sourceTitle": "㈜에스스킨×큐티스바이오, 스킨부스터용 융합폴리펩타이드 소재 사업화 MOU 체결",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2025-11-19",
+        "category": "Comunicato stampa",
+        "title": "S-Skin × CutisBio: MOU di collaborazione per commercializzare un materiale polipeptidico di fusione per skin booster",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UZFRlVjlLNjVfbkxkNFYyOTJlTThaRDdUQmVQdWxPeVFDVnJoZGFSWE80OWdiSG9yZzJJMzhpLVBVUmtHQmtIVTBRazE2WVRGSHBXN1cteU41eVFrQVg0WjQydw?oc=5",
+        "sourceTitle": "(주)에스스킨 × 큐티스바이오 MOU... 스킨부스터용 융합폴리펩타이드 소재 사업화 협업",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2024-08-27",
+        "category": "Comunicato stampa",
+        "title": "«Standardizzazione e commercializzazione» della tintura all'indaco",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8yZTRHUWFXU2dMdHp0WS1PMTVNcmQxX2ZmMDR5M2MwQzlQMTc3YkFOMEpZNkdvX3JmaFhBb1FsSnVSZ21Vemc?oc=5",
+        "sourceTitle": "인디고 염색의 ‘표준화 및 상용화’",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2024-08-21",
+        "category": "Comunicato stampa",
+        "title": "Dallo sviluppo di filati riciclati alla tintura ecologica: l'industria della moda punta sulla «gestione ecosostenibile»",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9WU1FJWW92UEpSX09GTkpMZTRVNjlKblpXVGRiRXV5Ull2WUdoVFNIOEx1cTBGeV9RNlRWTHJIb0NlbHNTems0c3psczU3QXV5MXg1R3k2cDJGYTVnZHNaNTRucmpVaGJBemktV0g2bTbSAXRBVV95cUxOZmhEdFFGaUxvemlfMkR5LTNZOUVad0hOZlM1Q3JCeWRlWW9ZT3k0V3NaTi1fbEVXUlF2MXlMLUVXMkhMeGhNOUFzN09qa1BKdDB6TXpzN25nLUdRdUthQ2k1WlNuZ0VsckFwSGRNLUpSSWNtcg?oc=5",
+        "sourceTitle": "리사이클 원사 개발부터 친환경 염색까지...패션업계 '친환경 경영' 승부",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2024-08-20",
+        "category": "Comunicato stampa",
+        "title": "Le Cashmere (Kolon FnC) presenta un processo di tintura ecologico a Preview in Seoul",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9WUFAwR09kREVwYWJ5WEZwSjdmVDhYd216OU1tc09rNldONW81b0pQeUZYNWYzeDBXQWItRjRWUWotdDdfWDVtQS1ZM0hwX1pYNWNmeFpBakE3Z3PSAWBBVV95cUxNMnI2QVhYNGtnbUN6WmZZaWRkWGMyd2JGUGs3TTVKYkVQdlM3VFdiWm5UOUNDc2dxOE1DU28tdW5Ud0RWLTBxN1BfZ3hEX0NRQ3hlWTg1NHoyUVZ6cmVRWmQ?oc=5",
+        "sourceTitle": "코오롱FnC 르캐시미어, 프리뷰 인 서울서 친환경 염색공법 공개",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2024-08-20",
+        "category": "Comunicato stampa",
+        "title": "Le Cashmere attira l'attenzione a Preview in Seoul 2024 con la tintura ecologica «AquaIndigo»",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9rOUdjSzJRUmFOR2tJMjJvampzU3Y4Y2lfbUdCa1hxM2Y5QlhfelREbXNMbGhncDFfc0U3T21LZDZyOFJSU3hIV2dOX2NZclk5OFlLZE9FdzBhdFo0TnBDajU0TS1ENDViQlBUUm5hTkZzTGJMeS1F?oc=5",
+        "sourceTitle": "르캐시미어, 친환경 염색 '아쿠아인디고'로 프리뷰인서울 2024 참가 눈길",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2024-08-14",
+        "category": "Comunicato stampa",
+        "title": "La tintura naturale all'indaco accelera un'industria della moda sostenibile ed ecologica",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4ZDFhTmVpd1pZWUxWanFfY0g1c3B6QXRIQ29zRDgzOW4tX2xlVGlnYW1xM2xOdnh6S3VPd1hIa2VoRzgtaGFuWnE0NkRHRmxuSThEOHk3TXNNNG5zN2I0VFhNWE4zX21y?oc=5",
+        "sourceTitle": "쪽빛 천연염색, 지속가능 친환경 패션산업 앞당긴다",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2024-08-12",
+        "category": "Lancio di prodotto",
+        "title": "CutisBio sviluppa «AquaIndigo», un processo di tintura ecologico al bio-indaco",
+        "summary": "Grazie alla biologia sintetica, CutisBio ha messo a punto «AquaIndigo», un processo di tintura all'indaco per fermentazione microbica, ed entra nel mercato dei materiali di moda ecosostenibili.",
+        "thumbnailAlt": "Miniatura AquaIndigo",
+        "link": "https://www.tinnews.co.kr/26601",
+        "sourceTitle": "큐티스바이오, 친환경 바이오 인디고 염색법 '아쿠아인디고' 개발",
+        "sourceSummary": "합성생물학 기술을 활용해 미생물 발효로 인디고 염색법을 구현한 '아쿠아인디고(AquaIndigo)'를 개발하여 친환경 패션 소재 시장에 진출했습니다."
+      },
+      {
+        "date": "2023-12-18",
+        "category": "Comunicato stampa",
+        "title": "«Circular Library», uno spazio per far conoscere la moda sostenibile",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE5lcjJ4SDZFaVJuS1RSSkoteFNSQ3kySm44NkdEckpUY2xuMHJ3dEtfVkxtQ0xBZUZkbjhMSHVSZw?oc=5",
+        "sourceTitle": "지속가능패션을 알리는 공간 ‘서큘러 라이브러리’",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2023-10-11",
+        "category": "Comunicato stampa",
+        "title": "DYETEC Institute: l'incontro tra scienza e industria culturale tradizionale, un progetto selezionato dalla Fondazione nazionale per la ricerca per rafforzare la ricerca di base",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiTWVSY2xJTFp3S0FSem9fWmREdnd3SXk0ZXJFMy1idmJpNnVBUjV5RzlOODZZb2hsMDFZQ2Z4S19JZ29iVDlnVGNabU5lQUJDSUZkSlNMOVJqSE4wYWFSMl9B?oc=5",
+        "sourceTitle": "다이텍연구원, 과학기술과 전통문화산업의 만남, 연구재단 사업 선정으로 기초연구 집중",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2023-09-08",
+        "category": "Comunicato stampa",
+        "title": "Kolon FnC collabora con CutisBio per accelerare il suo percorso ecologico",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5nSjFFYU1iRXFCbEJDZ1FtSEQ4bTdSZWhOOS1oU3Jsd19nSjB6LThCeVZfUTJhd3J2eGJvWjgtbUlsaDJ6Y0MyMDZiN2d5VlFFRnhQS3VVYWFyd1pmTDEyRTYzcnpDQ00?oc=5",
+        "sourceTitle": "코오롱FnC, 큐티스바이오와 손잡고 친환경 행보 가속",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2023-09-08",
+        "category": "Comunicato stampa",
+        "title": "Kolon FnC firma un MOU con CutisBio: un passo in più verso la moda circolare",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vX056X0VxZjR5SjdOMi1TLW5RdHlBRENrOU5yZWFUNDF6R2pYVTY3aWU3LTlyckYwckdOT2JBSlVfZkNyajY4M2ROYzVFbW5pSEdBcENfbklRQ1pfRGZkbDhjWHFoY1Q0eUdzS1hn?oc=5",
+        "sourceTitle": "코오롱FnC, 큐티스바이오와 MOU‧‧‧순환 패션 한 발짝 더",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2023-07-25",
+        "category": "Accordo di partnership",
+        "title": "CutisBio, Kakao Healthcare e L'Oréal firmano un MOU per sviluppare soluzioni di bellezza di precisione",
+        "summary": "Accordo di partnership per sviluppare soluzioni di bellezza di precisione basate sulla bioinformatica, unendo le competenze sul microbioma cutaneo.",
+        "thumbnailAlt": "Miniatura MOU",
+        "link": "https://www.medigatenews.com/news/3760434771",
+        "sourceTitle": "큐티스바이오-카카오헬스케어-로레알, 정밀 뷰티 솔루션 개발 MOU 체결",
+        "sourceSummary": "바이오인포매틱스 기술을 활용한 정밀 뷰티 솔루션 개발 업무협약을 맺고 피부 마이크로바이옴 전문성을 결합합니다."
+      },
+      {
+        "date": "2023-07-03",
+        "category": "Comunicato stampa",
+        "title": "Kakao Healthcare collabora con L'Oréal e CutisBio per sviluppare soluzioni di bellezza di precisione",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE03SDQxRU5tTUwxTlFCS1czNm1LbkRUamt4OGtPdUVHYUlCbThMOTFlYW94ekx0U21LWXgxQXFya01WemEwejVGckpvaDB2VW14Y3FQTFpMODVpLTNQbTBYcWlOLTYyV1BWb3FocHpKbEhET0xUeHFWTlE2UzQ?oc=5",
+        "sourceTitle": "카카오헬스케어, 로레알·큐티스바이오와 정밀 뷰티 솔루션 개발 협력",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2023-07-03",
+        "category": "Comunicato stampa",
+        "title": "Il gruppo L'Oréal, Kakao Healthcare e CutisBio firmano un accordo per sviluppare soluzioni di bellezza di precisione basate sulla bioinformatica",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcktqZHZOdEVrMWV4SGwwXzhpY1RfUTRTSjgtUWxhcFd5NDRiTk0zTGU0OHlHVnFWNWJaMFByV2VLOUxMcTljQ2lPWVE0OG5WQnU2YlQwT3dJWERyc3ZneFptbVFaMGFWS25lbDJReWNESEZyZE5NSXJydFg5bTY5cWE5ZlVvOVAzYUVzeGo3T2E4Zw?oc=5",
+        "sourceTitle": "로레알 그룹, 카카오헬스케어, 큐티스바이오와 바이오인포매틱스 기반 정밀 뷰티 솔루션 개발 업무협약 체결",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2023-07-03",
+        "category": "Comunicato stampa",
+        "title": "Kakao Healthcare, L'Oréal e CutisBio firmano un accordo di partnership per soluzioni di bellezza di precisione",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ZaWJBZDlTckJiWHZ4RzhmMUszN0xRRkdMMHFWd2wwZy1pZGQycjlPdHFKMXZ0ZjJSNjF5ckMwMjROSlJTYjlBcDBHa2FtYU83ckdueWFnR29qM29J?oc=5",
+        "sourceTitle": "카카오헬스케어·로레알·큐티스바이오, 정밀 뷰티 솔루션 개발 업무협약 체결",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2023-07-03",
+        "category": "Comunicato stampa",
+        "title": "Kakao Healthcare firma un accordo di partnership con il gruppo L'Oréal e CutisBio",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBicXh0NDJUTU1jTGFiSW1XOHctYTZIYjFHa2hmcUVjOTMtUzdXbGg1eDN0TVBXN0k5QUZqcWxaMWR1SWFPSDlGajZLOUxoTXRGS0JfQnhsbFRlRXRoVjdEVk1xWDRwaDl5OVE?oc=5",
+        "sourceTitle": "카카오헬스케어, 로레알 그룹 큐티스바이오와 업무협약 체결",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2022-12-19",
+        "category": "Ricerca congiunta",
+        "title": "CutisBio e ImmunoBiome sviluppano un'immunoterapia antitumorale di nuova generazione basata sul microbioma",
+        "summary": "In collaborazione con ImmunoBiome, CutisBio conduce ricerche su un'immunoterapia antitumorale di nuova generazione basata sul microbioma, a partire da ceppi ricombinanti ottenuti con la biologia sintetica.",
+        "thumbnailAlt": "Miniatura ricerca",
+        "link": "https://www.pharmnews.com/news/articleView.html?idxno=216348",
+        "sourceTitle": "큐티스바이오-이뮤노바이옴, 차세대 마이크로바이옴 면역항암제 개발",
+        "sourceSummary": "이뮤노바이옴과 협력하여 합성생물학 기반의 재조합 균주를 활용한 차세대 마이크로바이옴 면역항암제 개발 연구를 진행합니다."
+      },
+      {
+        "date": "2022-12-05",
+        "category": "Comunicato stampa",
+        "title": "CutisBio e ImmunoBiome: ricerca congiunta su un'immunoterapia antitumorale basata sul microbioma",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zbVMzQ0s3NVpxMG9HNUNiSFN2bG0yOTBRSk5ad01EUlNoSnNId1UxM1pYSkptbWNGcEJ4cHJRY3ZvR0tUTC01VmM5SVJVNlZqSVYxLTQ1YUNlWVFkT1UyVXMtTnBMenk4SHZvYg?oc=5",
+        "sourceTitle": "큐티스바이오-이뮤노바이옴,마이크로바이옴 면역항암 치료제 공동연구",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2022-06-27",
+        "category": "Comunicato stampa",
+        "title": "Daewoong Pharmaceutical, Daewoong Bio e CutisBio: accordo per lo sviluppo e la commercializzazione di materiali farmaceutici ecologici",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5RNGRiRURDNjd4c0ZFSDg3bVY5ZXNBUFRMbjIwRFZDazZkWGpXdmhaUFMxa1lfS2pubzRFa3J5X1lMUDNxRm9WanZ3bDNobGpJamRidHFSSkJUOXlhazNDWFpQRElnYjVhYTlNcQ?oc=5",
+        "sourceTitle": "대웅제약-대웅바이오-큐티스바이오,친환경 약물소재 개발∙상업화 협약",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2022-06-27",
+        "category": "Comunicato stampa",
+        "title": "Daewoong Pharmaceutical, Daewoong Bio e CutisBio siglano un accordo per sviluppare materiali farmaceutici ecologici",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NdmpROGR2NTd2Z0cxMnI3bHRrZlE0LWhmcE1nMHdrQW9EMzRJeG5lWm4zSld1eG84OThaU0dhU1MyWFVnX0FiaHhrZXYyNnZpY2J0a2g4Q0lDamVqMXFFcFhnbDdYVUJDdk1qelc1LVREcWM?oc=5",
+        "sourceTitle": "대웅제약 대웅바이오 큐티스바이오, 친환경 약물소재 개발 협약 맺어",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2022-06-27",
+        "category": "Comunicato stampa",
+        "title": "Daewoong Pharmaceutical, Daewoong Bio e CutisBio: accordo per lo sviluppo di materiali farmaceutici ecologici",
+        "summary": "",
+        "thumbnailAlt": "Miniatura della notizia",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1qaFJ6ZnlzNUhEbWQ3TXJWNHdSWWhYVFF4cUpabWVBdVFZTXRqaXMySnJ6QXJPUlA0RGx3UkhmRUgwTVZEa3BpanhIVDJ5cFllZFdsYVJfOGtteFVVUGdvU0JZR3BGOHlCejlv?oc=5",
+        "sourceTitle": "대웅제약-대웅바이오-큐티스바이오, 친환경 약물소재 개발 협약",
+        "sourceSummary": ""
+      }
+    ]
+  }
+}

@@ -2,7 +2,8 @@
   "_comment": [
     "번역할 때 반드시 지켜야 할 용어와 규칙입니다. scripts/translate.mjs 가 이 파일을",
     "그대로 번역 엔진에 넘깁니다. 여기 없는 용어는 엔진이 알아서 옮깁니다.",
-    "용어 대응은 사람이 번역해 넣은 기존 6개 언어 문구에서 뽑았습니다 — 새로 지어낸 것이 아닙니다."
+    "용어 대응은 사람이 번역해 넣은 기존 문구에서 뽑았습니다 — 새로 지어낸 것이 아닙니다.",
+    "2026-09-11 벵골어를 빼고 프랑스어 · 이탈리아어를 넣었다. 두 언어의 용어는 같은 날 손으로 옮긴 messages/fr.json · it.json 과 맞춘 것이다."
   ],
   "terms": [
     {
@@ -10,7 +11,8 @@
       "en": "indigo",
       "ja": "インディゴ",
       "zh": "靛蓝",
-      "bn": "ইন্ডিগো",
+      "fr": "indigo",
+      "it": "indaco",
       "tr": "indigo"
     },
     {
@@ -18,7 +20,8 @@
       "en": "bio indigo",
       "ja": "バイオインディゴ",
       "zh": "生物靛蓝",
-      "bn": "বায়ো ইন্ডিগো",
+      "fr": "bio-indigo",
+      "it": "bio-indaco",
       "tr": "biyo indigo"
     },
     {
@@ -26,7 +29,8 @@
       "en": "aniline",
       "ja": "アニリン",
       "zh": "苯胺",
-      "bn": "অ্যানিলিন",
+      "fr": "aniline",
+      "it": "anilina",
       "tr": "anilin"
     },
     {
@@ -34,7 +38,8 @@
       "en": "N-methylaniline",
       "ja": "N-メチルアニリン",
       "zh": "N-甲基苯胺",
-      "bn": "N-মিথাইলঅ্যানিলিন",
+      "fr": "N-méthylaniline",
+      "it": "N-metilanilina",
       "tr": "N-metilanilin"
     },
     {
@@ -42,7 +47,8 @@
       "en": "colorfastness",
       "ja": "堅牢度",
       "zh": "色牢度",
-      "bn": "রঙের স্থায়িত্ব",
+      "fr": "solidité des couleurs",
+      "it": "solidità del colore",
       "tr": "haslık"
     },
     {
@@ -50,7 +56,8 @@
       "en": "not detected (N.D.)",
       "ja": "不検出",
       "zh": "未检出",
-      "bn": "শনাক্ত হয়নি",
+      "fr": "non détecté (N.D.)",
+      "it": "non rilevato (N.D.)",
       "tr": "tespit edilmedi"
     },
     {
@@ -58,7 +65,8 @@
       "en": "detection limit",
       "ja": "検出限界",
       "zh": "检出限",
-      "bn": "শনাক্তকরণ সীমা",
+      "fr": "limite de détection",
+      "it": "limite di rilevabilità",
       "tr": "tespit sınırı"
     },
     {
@@ -66,7 +74,8 @@
       "en": "biobased carbon content",
       "ja": "バイオベース炭素含有率",
       "zh": "生物基碳含量",
-      "bn": "বায়োবেসড কার্বন কনটেন্ট",
+      "fr": "teneur en carbone biosourcé",
+      "it": "contenuto di carbonio biobased",
       "tr": "biyobazlı karbon içeriği"
     },
     {
@@ -74,7 +83,8 @@
       "en": "denim",
       "ja": "デニム",
       "zh": "牛仔布",
-      "bn": "ডেনিম",
+      "fr": "denim",
+      "it": "denim",
       "tr": "denim"
     },
     {
@@ -82,7 +92,8 @@
       "en": "dyeing",
       "ja": "染色",
       "zh": "染色",
-      "bn": "রঞ্জন",
+      "fr": "teinture",
+      "it": "tintura",
       "tr": "boyama"
     },
     {
@@ -90,7 +101,8 @@
       "en": "dye",
       "ja": "染料",
       "zh": "染料",
-      "bn": "রঞ্জক",
+      "fr": "colorant",
+      "it": "colorante",
       "tr": "boya"
     },
     {
@@ -98,7 +110,8 @@
       "en": "synthetic biology",
       "ja": "合成生物学",
       "zh": "合成生物学",
-      "bn": "সিন্থেটিক বায়োলজি",
+      "fr": "biologie de synthèse",
+      "it": "biologia sintetica",
       "tr": "sentetik biyoloji"
     },
     {
@@ -106,7 +119,8 @@
       "en": "fermentation",
       "ja": "発酵",
       "zh": "发酵",
-      "bn": "গাঁজন",
+      "fr": "fermentation",
+      "it": "fermentazione",
       "tr": "fermantasyon"
     },
     {
@@ -114,7 +128,8 @@
       "en": "indirubin",
       "ja": "インジルビン",
       "zh": "靛玉红",
-      "bn": "ইন্ডিরুবিন",
+      "fr": "indirubine",
+      "it": "indirubina",
       "tr": "indirubin"
     },
     {
@@ -122,7 +137,8 @@
       "en": "test report",
       "ja": "試験成績書",
       "zh": "检测报告",
-      "bn": "পরীক্ষার প্রতিবেদন",
+      "fr": "rapport d'essai",
+      "it": "rapporto di prova",
       "tr": "test raporu"
     },
     {
@@ -130,7 +146,8 @@
       "en": "as printed / unchanged",
       "ja": "そのまま",
       "zh": "原样",
-      "bn": "অপরিবর্তিত",
+      "fr": "tel quel / inchangé",
+      "it": "così com'è / invariato",
       "tr": "olduğu gibi"
     },
     {
@@ -138,7 +155,8 @@
       "en": "longevity",
       "ja": "長寿",
       "zh": "长寿",
-      "bn": "দীর্ঘায়ু",
+      "fr": "longévité",
+      "it": "longevità",
       "tr": "uzun yaşam"
     },
     {
@@ -146,7 +164,8 @@
       "en": "aging",
       "ja": "老化",
       "zh": "衰老",
-      "bn": "বার্ধক্য",
+      "fr": "vieillissement",
+      "it": "invecchiamento",
       "tr": "yaşlanma"
     },
     {
@@ -154,7 +173,8 @@
       "en": "hair",
       "ja": "毛髪",
       "zh": "毛发",
-      "bn": "চুল",
+      "fr": "cheveux",
+      "it": "capelli",
       "tr": "saç"
     }
   ],

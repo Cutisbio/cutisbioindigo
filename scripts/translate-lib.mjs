@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 /** 여러 스크립트가 함께 쓰는 부분 — 경로, 변경 감지, 엔진 선택. */
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-export const LOCALES = ['ko', 'en', 'ja', 'zh', 'bn', 'tr'];
+export const LOCALES = ['ko', 'ja', 'en', 'fr', 'it', 'zh', 'tr'];
 export const TARGETS = LOCALES.filter((l) => l !== 'ko');
 
 export const GLOSSARY_PATH = path.join(ROOT, 'content', 'glossary.json');

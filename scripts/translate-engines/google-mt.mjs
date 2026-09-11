@@ -38,7 +38,7 @@ export const capabilities = {
 };
 
 /** next-intl 로케일 → Cloud Translation 언어 코드 */
-const TARGET_CODE = { en: 'en', ja: 'ja', zh: 'zh-CN', bn: 'bn', tr: 'tr' };
+const TARGET_CODE = { en: 'en', ja: 'ja', zh: 'zh-CN', fr: 'fr', it: 'it', tr: 'tr' };
 
 let cachedToken = null;
 

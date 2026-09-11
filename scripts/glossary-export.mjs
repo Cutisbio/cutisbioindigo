@@ -29,7 +29,7 @@ const glossary = readJson(GLOSSARY_PATH);
 const outDir = path.join(ROOT, 'content', 'glossary-gcp');
 fs.mkdirSync(outDir, { recursive: true });
 
-const CODE = { en: 'en', ja: 'ja', zh: 'zh-CN', bn: 'bn', tr: 'tr' };
+const CODE = { en: 'en', ja: 'ja', zh: 'zh-CN', fr: 'fr', it: 'it', tr: 'tr' };
 
 let written = 0;
 for (const locale of TARGETS) {
