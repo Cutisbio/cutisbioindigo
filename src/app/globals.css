@@ -126,7 +126,7 @@ body {
   }
 }
 
-/* 영문 태그라인용 세리프 (예: Denim for a lifetime. A safer blue.) */
+/* 영문 태그라인용 세리프 (예: Better Blue for Everyday Denim) */
 .blugene-tagline {
   font-family: var(--font-serif);
   letter-spacing: 0.14em;
