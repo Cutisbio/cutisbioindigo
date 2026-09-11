@@ -119,7 +119,9 @@ npm run translate
 | 첫 화면 큰 사진을 바꾸고 싶다 | `public/blugene/brand/hero-family-denim.webp` 를 교체 (가로 1732px 권장, 200~350KB) |
 | 사진 설명(alt)을 고치고 싶다 | `messages/*.json` 의 `...Alt` 로 끝나는 항목 |
 | **CutisBio 로고를 바꾸고 싶다** | `public/brand/cutisbio-logo.svg`(밝은 배경용)와 `cutisbio-logo-white.svg`(어두운 배경용) **두 파일을 함께** 교체. 가로세로비가 달라지면 `src/components/blugene/Wordmark.tsx` 의 `SCALE` 숫자도 조정 |
-| 로고 크기를 키우거나 줄이고 싶다 | `src/components/blugene/Wordmark.tsx` 의 `SCALE` (sm/md/lg 의 `logoW`·`logoH`) |
+| 로고 크기를 키우거나 줄이고 싶다 | `src/components/blugene/Wordmark.tsx` 의 `SCALE` (sm/md/lg 글자 크기 — 앞의 마크는 글자 크기를 따라 같이 커진다) |
+| 로고 마크의 색 순환을 바꾸고 싶다 | `src/app/globals.css` 의 `.blugene-mark` — 색값은 `--mark-*` 변수, 순서 · 간격은 `@keyframes blugene-mark-cycle` |
+| 로고 마크 모양을 바꾸고 싶다 | `Blugene_Website_Brief/assets/brand/blugene-symbol-color-variations.jpg` 를 새 시트로 바꾸고 `node scripts/extract-blugene-mark.mjs` 실행 → `public/brand/blugene-mark.png` 가 다시 만들어진다. 시트 배치가 다르면 스크립트의 `REGION` 을 맞춘다 |
 
 **주의**: 원단·색상 견본·인증서 사진에는 색보정을 하지 마세요. 색 자체가 근거 자료입니다.
 그리고 **글자를 이미지에 넣지 마세요** — 번역도 안 되고 검사도 통과하지 못합니다.

@@ -113,7 +113,7 @@
 | `PrintingGallery.tsx` 의 공정 플로우 | 잉크 제조 5단계. 한국어 설명과 원문 표기(`Raw Material Preparation` … `Formation`)를 나란히 표시 | p.9 Figure 6-1 |
 | `AnilineStructures.tsx` | 아닐린(C₆H₅NH₂) · N-메틸아닐린(C₆H₅NHCH₃) 골격 구조식. 검증된 구조를 좌표로 계산해 SVG 로 그렸다 | p.4 서술 |
 | `ThreadMotif.tsx` | 데님 실 두 가닥을 연상시키는 추상 선. **순수 장식**(aria-hidden)이며 DNA 이중나선·화학구조도·인증마크로 읽히지 않게 그렸다 | 브랜드 표현 |
-| `Wordmark.tsx` | Blugene 워드마크(텍스트) + `by` + **CutisBio 로고 SVG** 락업. 서체는 `.blugene-wordmark`(globals.css), 크기는 `SCALE` 한 곳에서 관리한다 | 브랜드 표현 + 제공 로고 |
+| `Wordmark.tsx` + `BlugeneMark.tsx` | Blugene 워드마크(텍스트)의 B 앞에 열두 갈래 마크를 붙인 락업. 마크는 고객의 로고 심벌 시트(`Blugene_Website_Brief/assets/brand/blugene-symbol-color-variations.jpg`) 「후보 01」에서 `scripts/extract-blugene-mark.mjs` 로 잘라낸 알파 마스크 PNG(`/brand/blugene-mark.png`)를 CSS mask 로 씌운 것이라 모양이 시트와 같다. 마크 색은 밝은 바탕에서 1초마다 파랑 일곱 가지를 순환(`.blugene-mark`, globals.css)하고 어두운 바탕(푸터)에서는 흰색 고정. 서체는 `.blugene-wordmark`(globals.css), 크기는 `SCALE` 한 곳에서 관리한다 | 브랜드 표현 + 고객 시트 |
 
 ## 5. 생성형 도구로 만든 이미지
 
