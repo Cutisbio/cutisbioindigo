@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { HEADING_SIZE } from '@/components/blugene/SectionHeading';
+import { HEADING_SIZE, keepLastWords } from '@/components/blugene/SectionHeading';
 import SourceNote from '@/components/blugene/SourceNote';
 import { SOURCE_AS_OF, anilineTest, carbonTest, marketSamples } from '@/data/blugene/evidence';
 import type { IndigoType, MarketSample, Measurement } from '@/data/blugene/evidence';
@@ -142,9 +142,9 @@ export async function CarbonEvidenceTable({ className = '' }: { className?: stri
       {/* 표 섹션 제목 단(md). 1.875rem 에서 멈추면 같은 화면의 '글로벌 인증'(hero)과 위계가 뒤집혀 보인다. */}
       <h2
         id="evidence-carbon-heading"
-        className={`${HEADING_SIZE.md} leading-[1.25] font-bold tracking-[-0.02em] break-keep text-[var(--color-indigo-deep)]`}
+        className={`${HEADING_SIZE.md} leading-[1.25] font-bold tracking-[-0.02em] text-pretty break-keep text-[var(--color-indigo-deep)]`}
       >
-        {t('carbonSectionTitle')}
+        {keepLastWords(t('carbonSectionTitle'))}
       </h2>
       <p className="mt-4 max-w-3xl text-base leading-[1.85] break-keep text-[var(--color-ink)]/85">
         {t('carbonSectionBody')}
@@ -251,9 +251,9 @@ export async function AnilineEvidenceTable({ className = '' }: { className?: str
       {/* 위 탄소 표와 같은 위계이므로 같은 md 단을 쓴다. */}
       <h2
         id="evidence-aniline-heading"
-        className={`${HEADING_SIZE.md} leading-[1.25] font-bold tracking-[-0.02em] break-keep text-[var(--color-indigo-deep)]`}
+        className={`${HEADING_SIZE.md} leading-[1.25] font-bold tracking-[-0.02em] text-pretty break-keep text-[var(--color-indigo-deep)]`}
       >
-        {t('anilineSectionTitle')}
+        {keepLastWords(t('anilineSectionTitle'))}
       </h2>
       <p className="mt-4 max-w-3xl text-base leading-[1.85] break-keep text-[var(--color-ink)]/85">
         {t('anilineSectionBody')}

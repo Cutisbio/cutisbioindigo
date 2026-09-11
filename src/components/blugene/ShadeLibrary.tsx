@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { indirubinPair, shadeSwatches } from '@/data/blugene/shades';
-import SectionHeading, { HEADING_SIZE } from '@/components/blugene/SectionHeading';
+import SectionHeading, { HEADING_SIZE, keepLastWords } from '@/components/blugene/SectionHeading';
 import SourceNote, { AssetKind } from '@/components/blugene/SourceNote';
 import ZoomableImage from '@/components/blugene/ZoomableImage';
 
@@ -296,9 +296,9 @@ export default function ShadeLibrary({
       <div className="mt-16 border-t border-[color:var(--color-washed)] pt-12 sm:mt-20 sm:pt-14">
         {/* 표·비교 블록의 제목 단(md). 1.875rem 에서 멈추면 바로 아래 카드 제목(1.125rem)과 붙어 보인다. */}
         <h3
-          className={`${HEADING_SIZE.md} leading-snug font-bold tracking-[-0.02em] break-keep text-[var(--color-indigo-deep)]`}
+          className={`${HEADING_SIZE.md} leading-snug font-bold tracking-[-0.02em] text-pretty break-keep text-[var(--color-indigo-deep)]`}
         >
-          {t('indirubinTitle')}
+          {keepLastWords(t('indirubinTitle'))}
         </h3>
         <p className="mt-4 max-w-2xl text-base leading-[1.85] break-keep text-[var(--color-ink)]/85">
           {t('indirubinBody')}

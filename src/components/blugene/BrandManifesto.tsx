@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import ThreadMotif from '@/components/blugene/ThreadMotif';
-import { HEADING_SIZE } from '@/components/blugene/SectionHeading';
+import { HEADING_SIZE, keepLastWords } from '@/components/blugene/SectionHeading';
 
 /**
  * 브랜드 선언 — 국경과 세대를 잇는 옷.
@@ -35,9 +35,9 @@ export default async function BrandManifesto({
             {/* 섹션 최상위 제목이므로 3.5rem 리터럴 대신 공용 hero 단을 쓴다. 따로 두면 FinalCta(3.25rem)와
                 다시 눈에 안 보이는 차이로 갈린다. */}
             <h2
-              className={`mt-6 ${HEADING_SIZE.hero} leading-[1.22] font-bold tracking-[-0.025em] break-keep`}
+              className={`mt-6 ${HEADING_SIZE.hero} leading-[1.22] font-bold tracking-[-0.025em] text-pretty break-keep`}
             >
-              {t('title')}
+              {keepLastWords(t('title'))}
             </h2>
 
             <p className="mt-8 max-w-2xl text-base leading-[1.95] break-keep text-white/85 sm:text-lg">

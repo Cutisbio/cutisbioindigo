@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import SchemaOrg, { buildOrganizationSchema } from '@/components/seo/SchemaOrg';
-import SectionHeading from '@/components/blugene/SectionHeading';
+import SectionHeading, { keepLastWords } from '@/components/blugene/SectionHeading';
 import SourceNote from '@/components/blugene/SourceNote';
 import NewsPostCard from '@/components/blugene/NewsPostCard';
 import { BRAND, LOCALES, SITE_URL, buildPageMetadata } from '@/data/blugene/site';
@@ -111,13 +111,14 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
                       rel="noopener noreferrer"
                       className="underline-offset-4 hover:text-[var(--color-denim)] hover:underline"
                     >
-                      {article.title}
-                      <span aria-hidden="true" className="ml-1.5 text-[var(--color-denim)]">
-                        ↗
+                      {keepLastWords(article.title)}
+                      {/* 화살표는 줄바꿈 없는 공백으로 마지막 단어에 붙인다 — 혼자 다음 줄로 떨어지지 않게 */}
+                      <span aria-hidden="true" className="text-[var(--color-denim)]">
+                        {'\u00A0'}↗
                       </span>
                     </a>
                   ) : (
-                    article.title
+                    keepLastWords(article.title)
                   )}
                 </h2>
 

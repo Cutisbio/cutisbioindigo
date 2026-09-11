@@ -52,9 +52,15 @@ export default async function BrandPage({ params }: { params: Promise<{ locale: 
           <SectionHeading
             headingLevel="h1"
             eyebrow={t('heroEyebrow')}
-            title={t('heroTitle')}
+            // 한국어 제목의 뒷구절 '염료부터 꼼꼼히 확인해야 합니다.' 를 태블릿 이상에서 한 줄로 묶는다
+            // (messages/ko.json 의 <keep>…</keep>). 다른 언어는 태그가 없어 그대로 그려진다.
+            // 모바일에서는 폭이 모자라 묶지 않는다 — nowrap 이면 화면 밖으로 넘친다.
+            title={t.rich('heroTitle', {
+              keep: (chunks) => <span className="md:whitespace-nowrap">{chunks}</span>,
+            })}
             body={t('heroBody')}
             size="hero"
+            titleWidth="wide"
           />
         </div>
       </section>

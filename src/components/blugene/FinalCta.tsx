@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import ThreadMotif from '@/components/blugene/ThreadMotif';
-import { HEADING_SIZE } from '@/components/blugene/SectionHeading';
+import { HEADING_SIZE, keepLastWords } from '@/components/blugene/SectionHeading';
 import { contact } from '@/data/blugene/evidence';
 
 /**
@@ -18,8 +18,8 @@ export default async function FinalCta() {
       <div className="relative mx-auto max-w-[1280px] px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
         <div className="max-w-2xl">
           {/* BrandManifesto 와 같은 위계의 섹션 최상위 제목이라 같은 hero 단을 쓴다. */}
-          <h2 className={`${HEADING_SIZE.hero} leading-[1.2] font-bold tracking-[-0.025em] break-keep`}>
-            {t('ctaTitle')}
+          <h2 className={`${HEADING_SIZE.hero} leading-[1.2] font-bold tracking-[-0.025em] text-pretty break-keep`}>
+            {keepLastWords(t('ctaTitle'))}
           </h2>
           <p className="mt-6 text-base leading-relaxed break-keep text-white/80 sm:text-lg">
             {t('ctaText')}

@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
-import SectionHeading from '@/components/blugene/SectionHeading';
+import SectionHeading, { keepLastWords } from '@/components/blugene/SectionHeading';
 import SourceNote, { AssetKind } from '@/components/blugene/SourceNote';
 import ZoomableImage from '@/components/blugene/ZoomableImage';
 import ComparisonChart, {
@@ -78,7 +78,7 @@ export default async function ImpurityEvidence() {
           <div>
             <SectionHeading
               eyebrow={t('eyebrow')}
-              title={<span id="impurity-heading">{t('title')}</span>}
+              title={<span id="impurity-heading">{keepLastWords(t('title'))}</span>}
               body={t('body')}
               size="hero"
             />
