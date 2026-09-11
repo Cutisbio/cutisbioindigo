@@ -281,7 +281,6 @@ const DISCLAIMER_KEYS = [
   // '탄소중립 · 생분해 · 배출 0' 같은 말을 "그렇지 않다"고 밝히는 문장이라 7개 언어 모두 면제한다.
   // 경로 카드와 제목(journey · routes · origin)은 면제하지 않는다.
   /^Technology\.carbon\.(footnote|evidence\.callout|faq\.items|sources)/,
-  /^Brand\.limits/,
   /^Environment\.scopeNote$/,
   /^Products\.(specNote|cyclesNote)$/,
   /^Printing\.(pairNote|advantagesNote|processNote)$/,
@@ -291,7 +290,6 @@ const DISCLAIMER_KEYS = [
   /^EvidenceStrip\.note$/,
   /^ShadeLibrary\.(indirubinNote|medicalNote|duplicateNote)$/,
   // Science.diagramNote 는 2026-09 부터 고지문이 아니라 브랜드 서사라 면제하지 않는다. metaphorNote 는 지웠다.
-  /^Brand\.nameNote$/,
   /^Technology\.routesNote$/,
   /^Tech\.(faqList|structuresNote|comparisonCaption)/,
   /^Common\.imageNote/,

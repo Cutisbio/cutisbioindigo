@@ -34,7 +34,6 @@ export default async function BrandPage({ params }: { params: Promise<{ locale: 
   const t = await getTranslations({ locale, namespace: 'Brand' });
   const tNav = await getTranslations({ locale, namespace: 'Nav' });
   const promises = t.raw('promiseItems') as { title: string; text: string }[];
-  const limits = t.raw('limitsItems') as string[];
 
   // 900px 읽기 단 안의 소제목이라 페이지 섹션 제목(SectionHeading size="lg")보다 한 단계 작게 둔다.
   // 같은 문자열이 두 번 나오던 것을 한곳으로 모아 두 제목이 어긋나지 않게 한다.
@@ -77,7 +76,7 @@ export default async function BrandPage({ params }: { params: Promise<{ locale: 
               <p className="mt-5 text-base leading-[1.9] break-keep text-[var(--color-ink)]/85 sm:text-lg">
                 {t('nameBody')}
               </p>
-              <SourceNote className="mt-6">{t('nameNote')}</SourceNote>
+              {/* '인디고의 DNA를 다시 쓴다'는 비유의 해명문(Brand.nameNote)은 2026-09-12 고객 요청으로 뺐다. */}
 
               <h2 className={`mt-12 ${subheading}`}>{t('relationTitle')}</h2>
               <p className="mt-5 text-base leading-[1.9] break-keep text-[var(--color-ink)]/85">
@@ -126,32 +125,17 @@ export default async function BrandPage({ params }: { params: Promise<{ locale: 
             <span aria-hidden="true">→</span>
           </Link>
 
-          <div className="mt-16 rounded-md border border-[color:var(--color-washed)] bg-[var(--color-ivory)] p-7 sm:p-10">
-            <h3 className="text-xl font-semibold break-keep text-[var(--color-indigo-deep)] sm:text-2xl">
-              {t('limitsTitle')}
-            </h3>
-            <p className="mt-4 max-w-3xl text-base leading-relaxed break-keep text-[var(--color-ink)]/85">
-              {t('limitsBody')}
-            </p>
-            <ul className="mt-6 max-w-3xl space-y-2.5">
-              {limits.map((item) => (
-                <li
-                  key={item}
-                  className="flex gap-3 text-base leading-relaxed break-keep text-[var(--color-ink)]/85"
-                >
-                  <span aria-hidden="true" className="mt-2.5 h-px w-4 shrink-0 bg-[var(--color-slate-muted)]" />
-                  {item}
-                </li>
-              ))}
-            </ul>
+          {/* 2026-09-12 고객 요청으로 여기 있던 「우리가 말하지 않는 것」 상자(Brand.limits*)를 뺐다.
+              주장하지 않는 범위 자체는 docs/blugene-claims.md 와 check-blugene-data 의 금지어 검사가 계속 지킨다. */}
+          {/* 바로 위 데이터 · 인증 링크가 inline-flex 라, 블록으로 감싸지 않으면 문의 버튼이 같은 줄에 붙는다 */}
+          <div className="mt-12">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-md bg-[var(--color-indigo-deep)] px-7 py-4 text-base font-semibold break-keep text-white transition-colors hover:bg-[var(--color-denim)]"
+            >
+              {t('cta')}
+            </Link>
           </div>
-
-          <Link
-            href="/contact"
-            className="mt-12 inline-flex items-center justify-center rounded-md bg-[var(--color-indigo-deep)] px-7 py-4 text-base font-semibold break-keep text-white transition-colors hover:bg-[var(--color-denim)]"
-          >
-            {t('cta')}
-          </Link>
         </div>
       </section>
     </>

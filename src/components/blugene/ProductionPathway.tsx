@@ -14,7 +14,7 @@ import Image from 'next/image';
  * 단계 사이 화살표는 장식이며, 순서는 <ol> 의 목록 구조가 보조기기에 전달한다.
  * 그림 아래 diagramNote 는 고객이 준 브랜드 서사(원료 → 염료 · 잉크 → 데님)다. 인증은 공정이 아니라
  * 염료 제품이 받은 것이므로(docs/blugene-claims.md) 인증명을 염료에 붙여 쓴다. 이 키는 금지어 검사를
- * 면제받지 않는다(check-blugene-data.mjs DISCLAIMER_KEYS). DNA 비유의 해명은 /brand 의 Brand.nameNote 에 있다.
+ * 면제받지 않는다(check-blugene-data.mjs DISCLAIMER_KEYS). DNA 비유의 해명문(Brand.nameNote)은 2026-09-12 고객 요청으로 지웠다.
  */
 
 /** messages/ko.json → Science.steps 의 각 항목 */

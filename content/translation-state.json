@@ -2458,20 +2458,12 @@
       "tr": "584befd27e1631a9"
     },
     "Brand.nameBody": {
-      "ja": "6b70cda99de045af",
-      "en": "6b70cda99de045af",
-      "fr": "6b70cda99de045af",
-      "it": "6b70cda99de045af",
-      "zh": "6b70cda99de045af",
-      "tr": "6b70cda99de045af"
-    },
-    "Brand.nameNote": {
-      "ja": "d4389bb8e86ec00c",
-      "en": "d4389bb8e86ec00c",
-      "fr": "d4389bb8e86ec00c",
-      "it": "d4389bb8e86ec00c",
-      "zh": "d4389bb8e86ec00c",
-      "tr": "d4389bb8e86ec00c"
+      "ja": "027f93e99c8ccf1f",
+      "en": "027f93e99c8ccf1f",
+      "fr": "027f93e99c8ccf1f",
+      "it": "027f93e99c8ccf1f",
+      "zh": "027f93e99c8ccf1f",
+      "tr": "027f93e99c8ccf1f"
     },
     "Brand.promiseTitle": {
       "ja": "d95e2a67149d891f",
@@ -2524,46 +2516,6 @@
       "en": "8a01eb8cb5e2a186",
       "zh": "8a01eb8cb5e2a186",
       "tr": "8a01eb8cb5e2a186"
-    },
-    "Brand.limitsTitle": {
-      "ja": "0b2097d6679fc1d9",
-      "en": "0b2097d6679fc1d9",
-      "fr": "0b2097d6679fc1d9",
-      "it": "0b2097d6679fc1d9",
-      "zh": "0b2097d6679fc1d9",
-      "tr": "0b2097d6679fc1d9"
-    },
-    "Brand.limitsBody": {
-      "ja": "25fb059d123ce5a6",
-      "en": "25fb059d123ce5a6",
-      "fr": "25fb059d123ce5a6",
-      "it": "25fb059d123ce5a6",
-      "zh": "25fb059d123ce5a6",
-      "tr": "25fb059d123ce5a6"
-    },
-    "Brand.limitsItems[0]": {
-      "ja": "394fe59335d63689",
-      "en": "394fe59335d63689",
-      "zh": "394fe59335d63689",
-      "tr": "394fe59335d63689"
-    },
-    "Brand.limitsItems[1]": {
-      "ja": "807a8d489baf879f",
-      "en": "807a8d489baf879f",
-      "zh": "807a8d489baf879f",
-      "tr": "807a8d489baf879f"
-    },
-    "Brand.limitsItems[2]": {
-      "ja": "5023bcf4f72f30e4",
-      "en": "5023bcf4f72f30e4",
-      "zh": "5023bcf4f72f30e4",
-      "tr": "5023bcf4f72f30e4"
-    },
-    "Brand.limitsItems[3]": {
-      "ja": "ec9b7adff7441ac4",
-      "en": "ec9b7adff7441ac4",
-      "zh": "ec9b7adff7441ac4",
-      "tr": "ec9b7adff7441ac4"
     },
     "Brand.relationTitle": {
       "ja": "238f9e5f5ffe9bd0",
