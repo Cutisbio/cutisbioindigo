@@ -118,7 +118,7 @@ export default async function SustainableIndigoPage({
             {t('certSectionText')}
           </p>
           <div className="mt-10">
-            <CertificationLibrary compact />
+            <CertificationLibrary variant="compact" />
           </div>
         </div>
       </section>

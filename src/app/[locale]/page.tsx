@@ -102,12 +102,13 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       </section>
 
       {/* 08. 원본으로 확인하는 신뢰 — 앞의 07 이 아이보리라 흰 바탕으로 받는다
-          (2026-09-09 홈의 프린팅 섹션을 뺐다. 같은 내용이 /dyeing-printing 에 있다) */}
+          (2026-09-09 홈의 프린팅 섹션을 뺐다. 같은 내용이 /dyeing-printing 에 있다)
+          (2026-09-11 인증 카드는 인증 마크 · 인증명 · 원본 이미지만 남긴다. 상세와 읽는 조건은 /data-certifications 에 있다) */}
       <section className="w-full bg-white">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
           <SectionHeading eyebrow={t('eyebrow')} title={t('title')} body={t('body')} size="hero" />
           <div className="mt-12">
-            <CertificationLibrary compact />
+            <CertificationLibrary variant="gallery" />
           </div>
           <Link
             href="/data-certifications"

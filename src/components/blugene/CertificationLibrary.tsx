@@ -21,6 +21,13 @@ import type { Certification, DocumentStatus } from '@/data/blugene/certification
  * 인증기관 · 인증번호 · 인증서에 적힌 제품명 · 문서상 유효기간 · 문서 발행일 · 카탈로그 쪽 ·
  * 그 인증의 적용 범위를 함께 적고, 원본 인증서를 확대해 확인할 수 있게 한다.
  *
+ * variant
+ * - full    (/data-certifications) 제목 · 상세 카드 · 읽는 조건(각주 · 자료 기준일 · 점검 권장일).
+ * - compact (블로그) 상세 카드를 4열로 줄인다. 발행일 · 카탈로그 쪽은 썸네일 캡션으로 옮긴다.
+ * - gallery (홈) 인증 마크 · 인증명 · 원본 인증서 이미지만 그린다 (2026-09-11 고객 요청).
+ *   로고 배너가 아니라 원본 문서 자체를 보여 주고 확대할 수 있게 하며, 상세와 읽는 조건은
+ *   같은 섹션의 링크가 가리키는 /data-certifications 에서 그대로 확인할 수 있다.
+ *
  * 근거와 한계
  * - 표시하는 값은 모두 `src/data/blugene/certifications.ts` 의 인증서 원본 판독값이다.
  *   인증기관 데이터베이스를 실시간 조회한 결과가 아니므로, 상태 배지에는 언제나
@@ -205,12 +212,58 @@ async function CertificationCard({
   );
 }
 
+/**
+ * 홈용 카드 — 인증 마크 · 인증명 · 원본 인증서 이미지만 그린다.
+ * 상태 배지 · 인증번호 · 기관 · 유효기간 · 적용 범위 · 출처 캡션은 full · compact 카드에만 있다.
+ * 인증서는 세로 3장 · 가로 1장(USDA)이라 높이가 다르다. 자르지 않고 2:3 틀 안에서 세로 가운데 맞춤 해
+ * 네 카드의 이미지 영역을 같은 크기로 맞춘다.
+ */
+async function CertificationGalleryCard({ cert }: { cert: Certification }) {
+  const t = await getTranslations('Certifications');
+
+  return (
+    <li className="flex h-full flex-col gap-4 rounded-lg border border-[color:var(--color-washed)] bg-white p-4 sm:p-5">
+      {/* 인증 마크 + 인증명 — compact 카드의 머리와 같은 구성. 2열 모바일에서는 폭이 좁아 마크를 제목 위에 놓는다 */}
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-start">
+        <span className="relative h-9 w-[5.25rem] shrink-0">
+          <Image
+            src={cert.logoImage}
+            alt={t('logoAlt', { name: cert.displayName })}
+            fill
+            sizes="84px"
+            className="object-contain object-left"
+          />
+        </span>
+        <h3 className="text-[0.9375rem] leading-snug font-bold tracking-[-0.01em] break-keep text-[var(--color-indigo-deep)]">
+          {cert.displayName}
+        </h3>
+      </div>
+      {/* 제목 줄 수가 달라도 이미지 틀이 나란히 놓이도록 틀을 카드 아래쪽에 붙인다 */}
+      <div className="mt-auto flex aspect-[2/3] flex-col justify-center">
+        <ZoomableImage
+          src={cert.certificateImage}
+          alt={t('certificateAlt', { name: cert.displayName })}
+          width={cert.certificateSize.width}
+          height={cert.certificateSize.height}
+          sizes="(max-width: 1023px) 44vw, 272px"
+          openLabel={t('zoomOpen')}
+          closeLabel={t('zoomClose')}
+          hint={t('zoomHint')}
+        />
+      </div>
+    </li>
+  );
+}
+
+export type CertificationLibraryVariant = 'full' | 'compact' | 'gallery';
+
 export default async function CertificationLibrary({
-  compact = false,
+  variant = 'full',
 }: {
-  compact?: boolean;
+  variant?: CertificationLibraryVariant;
 }) {
   const t = await getTranslations('Certifications');
+  const compact = variant === 'compact';
   /* 남은 만료일이 없으면 null 이다. 그때는 '다음 점검 권장일' 자체를 그리지 않는다 —
      지난 날짜를 '다음'이라고 부르는 것보다 항목이 없는 편이 정확하다.
      페이지의 revalidate=86400 덕분에 하루 단위로 다시 계산된다. */
@@ -218,60 +271,69 @@ export default async function CertificationLibrary({
 
   return (
     <div>
-      {/* compact 로 쓰는 쪽(홈 · 블로그)은 이미 자기 제목을 갖고 있으므로 제목을 겹쳐 쓰지 않는다 */}
-      {!compact && <SectionHeading title={t('title')} body={t('body')} />}
+      {/* compact · gallery 로 쓰는 쪽(블로그 · 홈)은 이미 자기 제목을 갖고 있으므로 제목을 겹쳐 쓰지 않는다 */}
+      {variant === 'full' && <SectionHeading title={t('title')} body={t('body')} />}
 
       <ul
-        className={`grid grid-cols-1 ${
-          compact
-            ? 'mt-0 gap-5 sm:grid-cols-2 lg:grid-cols-4'
-            : 'mt-12 gap-6 lg:grid-cols-2'
+        className={`grid ${
+          variant === 'gallery'
+            ? 'mt-0 grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-4'
+            : compact
+              ? 'mt-0 grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4'
+              : 'mt-12 grid-cols-1 gap-6 lg:grid-cols-2'
         }`}
       >
-        {certifications.map((cert) => (
-          <CertificationCard key={cert.id} cert={cert} compact={compact} />
-        ))}
+        {certifications.map((cert) =>
+          variant === 'gallery' ? (
+            <CertificationGalleryCard key={cert.id} cert={cert} />
+          ) : (
+            <CertificationCard key={cert.id} cert={cert} compact={compact} />
+          ),
+        )}
       </ul>
 
-      {/* 인증을 읽는 조건 — 각주로 숨기지 않고 목록 바로 아래 본문에서 밝힌다 */}
-      <div className="mt-10 border-t border-[color:var(--color-washed)] pt-8">
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-start lg:gap-12">
-          <div className="max-w-3xl space-y-2.5">
-            <SourceNote>{t('verificationNote')}</SourceNote>
-            <SourceNote>{t('brandNameNote')}</SourceNote>
-            <SourceNote>{t('scopeNote')}</SourceNote>
-          </div>
-
-          <dl className="grid gap-4 sm:grid-cols-2 lg:w-[19rem]">
-            <div>
-              <dt className="text-[0.7rem] font-semibold tracking-[0.08em] break-keep text-[var(--color-denim)]">
-                {t('asOfLabel')}
-              </dt>
-              <dd className="mt-1 text-[0.8125rem] leading-relaxed tabular-nums text-[var(--color-ink)]">
-                {certificationsAsOf}
-              </dd>
+      {/* 인증을 읽는 조건 — 각주로 숨기지 않고 목록 바로 아래 본문에서 밝힌다.
+          gallery(홈)는 상세를 그리지 않으므로 이 조건도 상세와 함께 /data-certifications 에서 읽게 한다. */}
+      {variant !== 'gallery' && (
+        <div className="mt-10 border-t border-[color:var(--color-washed)] pt-8">
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-start lg:gap-12">
+            <div className="max-w-3xl space-y-2.5">
+              <SourceNote>{t('verificationNote')}</SourceNote>
+              <SourceNote>{t('brandNameNote')}</SourceNote>
+              <SourceNote>{t('scopeNote')}</SourceNote>
             </div>
-            {reviewDate && (
+
+            <dl className="grid gap-4 sm:grid-cols-2 lg:w-[19rem]">
               <div>
                 <dt className="text-[0.7rem] font-semibold tracking-[0.08em] break-keep text-[var(--color-denim)]">
-                  {t('nextReviewLabel')}
+                  {t('asOfLabel')}
                 </dt>
                 <dd className="mt-1 text-[0.8125rem] leading-relaxed tabular-nums text-[var(--color-ink)]">
-                  {reviewDate}
+                  {certificationsAsOf}
                 </dd>
               </div>
-            )}
-          </dl>
-        </div>
+              {reviewDate && (
+                <div>
+                  <dt className="text-[0.7rem] font-semibold tracking-[0.08em] break-keep text-[var(--color-denim)]">
+                    {t('nextReviewLabel')}
+                  </dt>
+                  <dd className="mt-1 text-[0.8125rem] leading-relaxed tabular-nums text-[var(--color-ink)]">
+                    {reviewDate}
+                  </dd>
+                </div>
+              )}
+            </dl>
+          </div>
 
-        <Link
-          href="/contact"
-          className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
-        >
-          {t('requestLatest')}
-          <span aria-hidden="true">→</span>
-        </Link>
-      </div>
+          <Link
+            href="/contact"
+            className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
+          >
+            {t('requestLatest')}
+            <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+      )}
     </div>
   );
 }
