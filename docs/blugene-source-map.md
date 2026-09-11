@@ -17,10 +17,10 @@
 | 1 | CutisBio 로고 | 데이터로 보관 (화면에는 기존 `/logo.png` 사용) | — | `brand/cutisbio-wordmark.png` |
 | 1 | OEKO-TEX / OK biobased 로고 | 화면에는 쓰지 않음 (아래 '인증 마크' 참조) | — | — |
 | 2 | 네 가지 인디고 합성 경로 (Figure 1-1) | `/technology` | `technology/page.tsx` | `technology/four-production-routes.png` |
-| 2 | 탄소 순환 비교 (Figure 1-2) | `/technology` | `technology/page.tsx` | `technology/carbon-pathways.png` |
+| 2 | 탄소 순환 비교 (Figure 1-2) | 화면에서 사용 중지 — 2026-09-12 고객 요청으로 `/technology` 의 「카탈로그의 개념도」 블록을 뺐다 (파일은 남김) | — | `technology/carbon-pathways.png` |
 | 3 | C14 바이오 기반 탄소 그래프 (Figure 1-3) | `/data-certifications#test-results` | `EvidenceTables`, 원본 확대 | `evidence/biobased-carbon-chart.png` |
 | 3 | C14 표 (Table 1-1) | `/data-certifications#test-results`, 홈 증거 스트립 | `EvidenceStrip`, `EvidenceTables` | `evidence/biobased-carbon-table.png` |
-| 4 | 작업 환경 삽화 (Figure 2-1) | `/technology` | `technology/page.tsx` | `technology/worker-safety.png` |
+| 4 | 작업 환경 삽화 (Figure 2-1) | 화면에서 사용 중지 — 2026-09-12 고객 요청으로 `/technology` 의 「작업 환경」 단락을 뺐다 (파일은 남김) | — | `technology/worker-safety.png` |
 | 4 | 규제·인증 허용한도 표 (Table 2-1, 2-2) | **미게재** — 아래 "공개하지 않은 항목" 참조 | — | — |
 | 5 | 아닐린·N-메틸아닐린 그래프·표 (Figure 2-2, Table 2-3) | `/` (요약 차트), `/data-certifications#test-results` (전체 표) | `ImpurityEvidence`, `ComparisonChart`, `EvidenceTables` | `evidence/aniline-results.png` |
 | 6 | 원단 9개 염색 사진 (Figure 3-1) | `/`, `/dyeing-printing#dyeability` | `FabricComparison` | `performance/fabric-comparison.webp`, `performance/fabric-strip.webp` |
@@ -52,7 +52,7 @@
 | 디지털 프린팅의 물·폐기물 절감 범위 (80~90%) | p.9 | 일반적인 디지털 프린팅 기술에 대한 서술이며 Blugene 제품으로 측정한 값이 아니다. 수치 없이 특징만 서술하고, 그 사실을 화면에 명시했다 (`Printing.advantagesNote`). |
 | `100% Bio-based` (p.8 문구) | p.8 | p.3 의 실측값 98% 를 정량 표시의 기준으로 삼았다. 두 값을 같이 쓰면 상충한다. |
 | 인디루빈의 약리 활성 서술 | p.7 | 염료의 피부 효능으로 오인될 수 있다. 색조 조절·제품개발 관점만 다루고 그 사실을 명시했다 (`ShadeLibrary.medicalNote`). |
-| `BioIndigo ensures a hazardous chemical-free workspace` (p.4) | p.4 | 작업자 안전에 대한 정량 근거가 없다. "취급 물질의 차이"라는 서술로 완화했다 (`Technology.safetyBody`). |
+| `BioIndigo ensures a hazardous chemical-free workspace` (p.4) | p.4 | 작업자 안전에 대한 정량 근거가 없다. "취급 물질의 차이"라는 서술로 완화했다가, 2026-09-12 고객 요청으로 「작업 환경」 단락 자체를 뺐다(`Technology.safety*` 키 삭제). |
 | 마케팅 배너 이미지 (`Liquid Blue, Instant Impact`, `Equal Results, Better Naturally`) | p.8 | 글자가 구워진 이미지다. 텍스트를 이미지로 굽지 않는 원칙에 따라 사용하지 않았다. |
 | p.7 xref109 (인디루빈 조절 노브 아이콘) | p.7 | 장식 아이콘이며 `p07-indigo-indirubin-comparison.png` 도판 안에 이미 포함되어 있다. |
 

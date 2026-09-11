@@ -415,7 +415,7 @@
     "metaDescription": "İndigo üretiminin dört yolunu, mikrobiyal fermantasyona dayalı üretimi ve biyobazlı karbon test sonuçlarını açıklıyoruz.",
     "heroEyebrow": "TECHNOLOGY",
     "heroTitle": "Maviyi üretmenin dört yolu ve bizim tercihimiz.",
-    "heroBody": "Katalog, Blugene'in temelini oluşturan CutisBio biyo indigo için dört yol önerir ve bunlardan biri mikroorganizma kaynaklı yoldur.",
+    "heroBody": "İndigo boyası üretmenin dört yolu vardır. Blugene, karbon döngüsüne uyumlu bir hassas fermantasyon sürecini seçti. Bu seçimimiz çevre ve yaşamımız için sürdürülebilirliği artırır.",
     "routesTitle": "İndigo sentezinin dört yolu",
     "routesCaption": "Katalog s.2 Şekil 1-1. Kimyasal yollar kırmızı, biyolojik yollar sarı renkle ayrılmıştır.",
     "routesAlt": "Ham petrol · biyokütle · indigo bitkisinden başlayan dört indigo sentez yolunun şeması (Katalog s.2)",
@@ -433,8 +433,8 @@
         "text": "Biyokütleden elde edilen antranilik asit üzerinden indigo üretilir. Hammadde yenilenebilirdir; ancak ara basamak saf mikrobiyal yoldan farklıdır."
       },
       {
-        "name": "Biyo indigo (mikrobiyal kökenli)",
-        "feedstock": "Biyokütle",
+        "name": "Biyo indigo (hassas fermantasyon kaynaklı)",
+        "feedstock": "Biyokütle (bitkisel ham madde)",
         "intermediate": "Triptofan",
         "text": "Biyokütleden elde edilen triptofan, mikroorganizmalar tarafından indigoya dönüştürülür. CutisBio biyo indigosu bu yola karşılık gelir."
       },
@@ -449,18 +449,219 @@
     "routeIntermediateLabel": "Başlıca ara basamak",
     "routesNote": "Hibrit yolun antranilik asit basamağı, mikrobiyal yolun triptofan basamağından farklıdır. İki yol aynıymış gibi basitleştirilmemiştir.",
     "carbonTitle": "Karbon nereden geliyor",
-    "carbonCaption": "Katalog s.2 Şekil 1-2. Kimyasal yolun (üstte) ve biyo yolun (altta) karbon döngüsü karşılaştırmasıdır.",
-    "carbonAlt": "Kimyasal yol ile biyo yolun karbon döngüsünü karşılaştıran kavram şeması (Katalog s.2)",
-    "carbonBody": "Kimyasal yol karbonu yenilenemez ham petrolden, biyo yol ise yenilenebilir biyokütleden alır. Bu fark, biyobazlı karbon içeriği testiyle doğrulanır.",
+    "carbon": {
+      "lead": "Yer altındaki petrolden, yeniden büyüyen biyokütleye. Blugene indigoyu biyokütleyi fermente ederek üretir ve rengi oluşturan karbonun çıkış noktasından düşünür. Peki o mavi nereden geliyor?",
+      "journey": {
+        "eyebrow": "01 / FOLLOW THE CARBON",
+        "title": "Aynı mavi. Farklı bir karbon yolculuğu.",
+        "body": "İndigonun mavisini oluşturan molekülde de karbon vardır. O karbonun nereden geldiğini görmek için yolu izleyin.",
+        "guide": "Karbonun çıkış noktasından başlayın ve iki yolu aynı sırayla izleyin.",
+        "order": "Ham madde → Üretim → İndigo · Denim → Kullanım sonrası",
+        "legendSolid": "Ham maddeden ürüne geçiş",
+        "legendDashed": "İşleme ve büyüme koşullarına bağlı salım ve yeniden soğurulma",
+        "legendNote": "Ağaç ve tesisler anlamayı kolaylaştıran örnek çizimlerdir.",
+        "evidenceLink": "Kaynaklar"
+      },
+      "routes": [
+        {
+          "eyebrow": "BIO-BASED INDIGO",
+          "title": "Biyobazlı indigo",
+          "lede": "Bitkilerin soğurduğu karbonla yeni bir mavi.",
+          "chip": "Havadan soğurulan CO₂",
+          "steps": [
+            {
+              "label": "01 / Ham madde",
+              "title": "Yeniden büyüyen biyokütle",
+              "text": "Bitkilerin fotosentezle soğurduğu karbon ham maddede yer alır.",
+              "imageAlt": "Yeşil yapraklı ve çimenli bir ağaç çizimi: bitkisel biyokütle örneği"
+            },
+            {
+              "label": "02 / Üretim",
+              "title": "Mikrobiyal fermantasyon",
+              "text": "Mikroorganizmalar biyokütle kaynaklı ham maddeyi indigoya dönüştürür.",
+              "imageAlt": "Kültür sıvısı ve mikroorganizmalarla indigo üreten fermentör çizimi",
+              "note": "Fermantasyon sırasında da bir miktar CO₂ salınır"
+            },
+            {
+              "label": "03 / Ürün",
+              "title": "İndigo, ardından denim",
+              "text": "Biyokütleden gelen karbon denimin mavisinde yer alır.",
+              "imageAlt": "Mavi indigo tozu ve katlanmış kot pantolon çizimi"
+            },
+            {
+              "label": "04 / Kullanım sonrası",
+              "title": "Bir kısmı yeniden havaya",
+              "text": "Yakma veya ayrışma ile CO₂ hâline gelince atmosfere geri dönebilir.",
+              "imageAlt": "Kullanım sonrası işlemde CO₂ salındığında karbonun geri döndüğü atmosferi temsil eden bulut çizimi",
+              "note": "Yol ve zaman, işleme yöntemine göre değişir"
+            }
+          ],
+          "loop": "Yeni bitkiler büyürken CO₂ yeniden soğurulabilir.",
+          "loopSub": "Yakın dönem biyolojik karbon döngüsüne bağlı ham madde",
+          "coreLabel": "Bu yolun özü",
+          "core": "Havadan bitkiye, bitkiden maviye.",
+          "coreSub": "Yenilenebilir ham maddenin karbonunu kullanır."
+        },
+        {
+          "eyebrow": "FOSSIL-BASED INDIGO",
+          "title": "Petrokimyasal sentetik indigo",
+          "lede": "Yer altında uzun süre depolanmış karbon çıkarılıp mavinin ham maddesi olarak kullanılır.",
+          "steps": [
+            {
+              "label": "01 / Ham madde",
+              "title": "Yer altında depolanmış petrol",
+              "text": "Uzun jeolojik zaman boyunca depolanmış fosil karbon çıkarılır.",
+              "imageAlt": "Yer altı katmanlarından petrol çeken pompa ve petrol varili çizimi"
+            },
+            {
+              "label": "02 / Üretim",
+              "title": "Petrol kaynaklı ham maddeden kimyasal sentez",
+              "text": "Petrol kaynaklı ham madde kimyasal süreçlerle indigoya dönüştürülür.",
+              "imageAlt": "Petrol kaynaklı ham maddeyi indigoya dönüştüren kimya tesisi çizimi"
+            },
+            {
+              "label": "03 / Ürün",
+              "title": "İndigo, ardından denim",
+              "text": "Petrolden gelen karbon denimin mavisinde yer alır.",
+              "imageAlt": "Mavi indigo tozu ve katlanmış kot pantolon çizimi"
+            },
+            {
+              "label": "04 / Kullanım sonrası",
+              "title": "Salındığında atmosfere karışır",
+              "text": "CO₂ olarak salındığında yer altındaki karbon atmosfere ve biyosfere geçer.",
+              "imageAlt": "CO₂ olarak salınan yer altı karbonunun geçtiği atmosferi temsil eden bulut çizimi",
+              "note": "Üründeki karbonun tamamı hemen salınmaz"
+            }
+          ],
+          "loop": "Petrol, bizim kullandığımız hızda yeniden oluşmaz.",
+          "loopSub": "Salınan karbon bitkilerce soğurulsa bile yer altındaki petrol rezervi hemen yeniden dolmaz.",
+          "coreLabel": "Bu yolun özü",
+          "core": "Yer altında depolanmış karbondan maviye.",
+          "coreSub": "Salındığında, çok uzun süre depolanmış karbon atmosfere girer."
+        }
+      ],
+      "footnote": "Ham madde karbon akışlarının basitleştirilmiş kavramsal şemasıdır. Ağaç, bitkisel biyokütleyi simgeler; Blugene’in gerçek ham maddesini veya tesisini göstermez. Her iki yolda da üretim enerjisi, rafinasyon ve taşıma gibi aşamalarda emisyon oluşabilir. Kesikli çizgiler olası yolları gösterir; tam geri kazanım, tamamen biyobozunurluk, anında yeniden soğurulma ya da karbon nötrlük demek değildir.",
+      "origin": {
+        "eyebrow": "02 / WHY THE ORIGIN MATTERS",
+        "title": "Karbon aynı olsa da zaman farklı.",
+        "body": "Fark CO₂’nin doğasında değil; karbonun alındığı rezervde ve onun yeniden dolma süresindedir.",
+        "items": [
+          {
+            "label": "Petrol kaynaklı karbon",
+            "title": "Uzun süre depolanmış karbon",
+            "text": "Çağlar boyu yer altında depolanmış karbon çıkarılıp kullanılır. Petrol, bizim kullandığımız hızda yeniden oluşmaz.",
+            "tags": [
+              "Jeolojik ölçekte depolama",
+              "Çıkarma · kullanım"
+            ]
+          },
+          {
+            "label": "Biyobazlı karbon",
+            "title": "Yeniden büyüyen bir kaynağın karbonu",
+            "text": "Bitkilerin yakın zamanda havadan soğurduğu karbon kullanılır. Biyokütle yenilendiğinde karbon soğurulması yeni bitkilerin büyümesiyle sürebilir.",
+            "tags": [
+              "Büyüme · soğurma",
+              "Kullanım · yenilenme"
+            ]
+          }
+        ],
+        "closing": "Blugene’in değiştirmek istediği şey, maviyi oluşturan karbonun çıkış noktasıdır."
+      },
+      "evidence": {
+        "eyebrow": "03 / A CLEARER BLUE",
+        "title": "İyi bir açıklama, açık bir dayanak ister.",
+        "body": "Ham maddenin nereden geldiği ile çevreye ne kadar etki ettiği, birbirinden farklı iki sorudur.",
+        "items": [
+          {
+            "label": "Karbonun kaynağı",
+            "title": "“Biyobazlı mı?”",
+            "text": "ASTM D6866 gibi bir radyokarbon analiziyle, numunenin organik karbonu içindeki biyobazlı karbon oranı belirlenebilir.",
+            "tag": "Biyobazlı karbon içeriği testi"
+          },
+          {
+            "label": "Yaşam döngüsü etkisi",
+            "title": "“Karbon emisyonu ne kadar azaldı?”",
+            "text": "Ham madde yetiştirme, üretim, taşıma ve bertaraf gibi karşılaştırma kapsamına giren tüm süreçler ve enerji birlikte hesaplanmalıdır. Bu soruyu yaşam döngüsü değerlendirmesi (LCA) yanıtlar.",
+            "tag": "Aynı işlev · aynı kapsamda LCA karşılaştırması"
+          }
+        ],
+        "calloutTitle": "Biyobazlı olmak, kendiliğinden karbon nötr olmak demek değildir.",
+        "calloutBody": "Karbon döngüsüne bağlı bir ham madde kullanmak ile bir ürünün net emisyonunun sıfır olması aynı şey değildir. Bu bölüm ham madde yolunu açıklar; ürün başına emisyon azaltım rakamı sunmaz. Blugene’in biyobazlı karbon içeriği test sonuçları, laboratuvar, yöntem ve rapor numarasıyla birlikte <link>Veri · Sertifikalar sayfasında</link> yer alır."
+      },
+      "faq": {
+        "eyebrow": "A FEW GOOD QUESTIONS",
+        "title": "Denimi sevenlerin soruları.",
+        "items": [
+          {
+            "question": "Fermantasyon neden karbon döngüsüyle bağlantılı?",
+            "answers": [
+              "Fermantasyonun kendisinden çok ham maddenin kaynağı önemlidir. Biyokütledeki karbon, bitkilerin atmosferdeki CO₂’yi soğurmasıyla oluşmuştur. Mikroorganizmalar bu karbonu indigoya dönüştürdüğü için, yakın dönem biyolojik karbon döngüsüne bağlı bir ham madde kullanılmış olur.",
+              "Fermantasyon enerji gerektirir ve CO₂ de açığa çıkabilir. Dolayısıyla yalnızca “fermantasyonla üretildi” diye toplam emisyon sıfır olmaz; bu tek başına yeterli bir gerekçe değildir."
+            ]
+          },
+          {
+            "question": "Kot giymek karbonu azaltır mı?",
+            "answers": [
+              "Kot giymek, kendi başına havadaki karbonu ortadan kaldırmaz. Burada anlatılan değişiklik, indigo boyasının ham madde karbonunun petrol kaynaklıdan biyokütle kaynaklıya geçirilmesidir. Bitmiş bir kotun toplam çevresel etkisi için pamuk yetiştirme, dokuma, boyama ve yıkama gibi aşamalara da bakılmalıdır."
+            ]
+          },
+          {
+            "question": "Giysideki karbon sonunda tamamen doğaya geri döner mi?",
+            "answers": [
+              "Yol ve hız; yeniden kullanım, geri dönüşüm, yakma veya depolama gibi gerçek işleme yöntemine göre değişir. Döngü oku, karbonun CO₂ olarak salınıp bitkilerce yeniden soğurulabileceği kavramını gösterir. Giysinin ya da boyanın tamamen biyobozunur, kompostlanabilir veya tümüyle geri kazanılabilir olduğu anlamına gelmez; böyle bir iddia değildir."
+            ]
+          },
+          {
+            "question": "“Biyobazlı karbon içeriği” değeri ne anlama gelir?",
+            "answers": [
+              "ASTM D6866 yöntemine göre biyobazlı karbon içeriği, test edilen numunenin organik karbonu içindeki biyobazlı karbon oranıdır. Boya saflığı, ürünün toplam kütlesinde bitkisel ham madde oranı ya da karbon emisyonunda azalma anlamına gelmez; bunlar farklı ölçütlerdir ve bu değer onlar değildir.",
+              "Gerçek bir ürünün içeriğini doğrularken test konusu ve yöntemi, numune ve parti, laboratuvar ve sonucu birlikte inceleyin. Blugene’in ölçüm değeri (%98, pMC 97.73) Veri · Sertifikalar sayfasında laboratuvar, yöntem ve rapor numarasıyla birlikte yer alır."
+            ]
+          },
+          {
+            "question": "Biyo indigo, bitkilerden renk çıkarılan doğal bir boya mı?",
+            "answers": [
+              "Blugene’in yöntemi, biyokütleyi mikrobiyal fermantasyonla indigoya dönüştürmektir. Çivit otu yapraklarından pigment çıkaran geleneksel doğal indigo üretiminden farklıdır. “Biyobazlı”, pigmenti oluşturan karbonun kaynağını anlatır."
+            ]
+          }
+        ]
+      },
+      "closing": {
+        "eyebrow": "FOR THE DENIM WE LOVE.",
+        "text": "Uzun süre sevilecek bir mavi. En başından yenilenmiş."
+      },
+      "sources": {
+        "summary": "Bu anlatının dayandığı kaynaklar",
+        "introStrong": "Literatüre ve standartlara dayalı açıklama",
+        "introText": "Biyolojik karbon döngüsü ile fosil karbon arasındaki ve biyobazlı karbon içeriği testi ile yaşam döngüsü değerlendirmesi arasındaki ayrım.",
+        "items": [
+          {
+            "title": "NASA Earth Observatory — The Carbon Cycle",
+            "note": "Fotosentez, hızlı ve yavaş karbon döngüleri, fosil karbonun atmosfere girişi."
+          },
+          {
+            "title": "ASTM D6866 — Radyokarbon analiziyle biyobazlı içeriğin belirlenmesi",
+            "note": "Test karbonun biyolojik kökenini değerlendirir; sera gazı azaltımını doğrudan ölçmez, bunun ölçüsü değildir."
+          },
+          {
+            "title": "GHG Protocol — Product Life Cycle Standard",
+            "note": "Bir ürünün sera gazı etkisini yaşam döngüsü bakışıyla ölçmenin ilkeleri."
+          },
+          {
+            "title": "USDA BioPreferred — Sık sorulan sorular",
+            "note": "Organik karbon esaslı içeriğin anlamı ve çevresel etki ile performans değerlendirmesinden farkı."
+          }
+        ],
+        "processStrong": "Blugene süreci hakkında",
+        "processText": "İndigonun biyokütle fermantasyonuyla üretildiğine ilişkin marka bilgisine dayanarak hazırlandı. Şemalar anlamayı kolaylaştırmak için düzenlenmiştir; gerçek madde dengesini veya emisyonları göstermez, bunların ölçümü değildir.",
+        "externalLinkHint": "Yeni pencerede açılır"
+      }
+    },
     "processTitle": "Hammaddeden kumaşa",
-    "safetyTitle": "Çalışma ortamı",
-    "safetyBody": "Katalog, zararlı kimyasalların kullanımıyla ilgili çalışma ortamını konu edinir. Bu sitede çalışan güvenliğine dair sayısal bir iddiada bulunulmaz; yalnızca kullanılan maddeler arasındaki fark açıklanır.",
-    "safetyAlt": "Zararlı kimyasal kullanımı ile zararsız madde kullanımını karşılaştıran illüstrasyon (Katalog s.4)",
     "impurityTitle": "Anilin neden kontrol edilir",
     "impurityBody": "Anilin ve N-metilanilin, kimyasal sentez yolunun başlangıç maddesi veya ara ürünüdür ve nihai indigo tozunda tepkimeye girmemiş kalıntı olarak kalabilir. Toksisitesi ve kanserojen olma ihtimali nedeniyle çeşitli sertifikasyon standartları, tekstil boyalarında ve nihai üründe izin verilen konsantrasyonu sınırlar.",
     "cta": "Test verilerinin tamamını görün",
-    "conceptCaptionSafety": "Katalog s.4 Figure 2-1. Tehlikeli ve tehlikesiz madde kullanımını karşılaştıran bir çizimdir; gerçek bir çalışma alanının fotoğrafı değildir.",
-    "routeOursLabel": "Yolumuz",
+    "routeOursLabel": "Yolumuz · Blugene",
     "routesFigureBridge": "Yukarıdaki dört yolu tek sayfada toplayan katalog şemasıdır. Görseldeki sıra da kartlardakiyle aynıdır."
   },
   "DyeingPrinting": {

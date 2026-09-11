@@ -415,7 +415,7 @@
     "metaDescription": "An explanation of the four routes to indigo, production based on microbial fermentation, and the biobased carbon test results.",
     "heroEyebrow": "TECHNOLOGY",
     "heroTitle": "Four ways to make blue, and the one we chose.",
-    "heroBody": "The catalog presents four pathways, and the CutisBio bio indigo, which is the basis for Blugene, corresponds to the microorganism-based pathway.",
+    "heroBody": "There are four ways to produce indigo dye. Blugene chose a precision fermentation process that follows the carbon cycle. Our choice raises sustainability for the environment and for our lives.",
     "routesTitle": "Four routes to indigo synthesis",
     "routesCaption": "Catalogue p.2 Figure 1-1. Chemical routes are marked in red and biological routes in yellow.",
     "routesAlt": "Diagram of four indigo synthesis routes starting from crude oil, biomass and indigo plants (catalogue p.2)",
@@ -433,8 +433,8 @@
         "text": "Indigo is made via anthranilic acid obtained from biomass. The feedstock is renewable, but the intermediate stage differs from the purely microbial route."
       },
       {
-        "name": "Bio indigo (microbial)",
-        "feedstock": "Biomass",
+        "name": "Bio indigo (from precision fermentation)",
+        "feedstock": "Biomass (plant feedstock)",
         "intermediate": "Tryptophan",
         "text": "Microorganisms convert tryptophan obtained from biomass into indigo. CutisBio bio indigo follows this route."
       },
@@ -449,18 +449,219 @@
     "routeIntermediateLabel": "Key intermediate stage",
     "routesNote": "The anthranilic acid stage of the hybrid route differs from the tryptophan stage of the microbial route. We have not simplified the two routes into one.",
     "carbonTitle": "Where the carbon comes from",
-    "carbonCaption": "Catalogue p.2 Figure 1-2. A comparison of the carbon cycle in the chemical route (top) and the bio route (bottom).",
-    "carbonAlt": "Conceptual diagram comparing the carbon cycle of the chemical route and the bio route (catalogue p.2)",
-    "carbonBody": "The chemical route takes its carbon from non-renewable crude oil, and the bio route from renewable biomass. This difference is confirmed by the biobased carbon content test.",
+    "carbon": {
+      "lead": "From oil underground to biomass that grows again. Blugene makes indigo by fermenting biomass, thinking from the very origin of the carbon that makes the color. So where does that blue come from?",
+      "journey": {
+        "eyebrow": "01 / FOLLOW THE CARBON",
+        "title": "The same blue. A different carbon journey.",
+        "body": "The molecule that gives indigo its blue contains carbon, too. Follow the route to see where that carbon came from.",
+        "guide": "Start from the origin of the carbon and follow both routes in the same order.",
+        "order": "Feedstock → Production → Indigo · Denim → After use",
+        "legendSolid": "Moves from feedstock to product",
+        "legendDashed": "Emission and re-absorption depending on treatment and growth conditions",
+        "legendNote": "The tree and the facilities are illustrative examples.",
+        "evidenceLink": "Sources"
+      },
+      "routes": [
+        {
+          "eyebrow": "BIO-BASED INDIGO",
+          "title": "Bio-based indigo",
+          "lede": "A new blue made from carbon that plants absorbed.",
+          "chip": "CO₂ absorbed from the air",
+          "steps": [
+            {
+              "label": "01 / Feedstock",
+              "title": "Biomass that grows again",
+              "text": "Carbon that plants absorbed through photosynthesis is held in the feedstock.",
+              "imageAlt": "Illustration of a tree with green leaves and grass: an example of plant biomass"
+            },
+            {
+              "label": "02 / Production",
+              "title": "Microbial fermentation",
+              "text": "Microorganisms convert biomass-derived feedstock into indigo.",
+              "imageAlt": "Illustration of a fermenter producing indigo with culture broth and microorganisms",
+              "note": "Some CO₂ is also released during fermentation"
+            },
+            {
+              "label": "03 / Product",
+              "title": "Indigo, and denim",
+              "text": "Carbon from biomass ends up in the blue of the denim.",
+              "imageAlt": "Illustration of blue indigo powder and folded jeans"
+            },
+            {
+              "label": "04 / After use",
+              "title": "Some returns to the air",
+              "text": "When it becomes CO₂ through incineration or decomposition, it can return to the atmosphere.",
+              "imageAlt": "Illustration of a cloud representing the atmosphere that carbon returns to when CO₂ is released after use",
+              "note": "Route and timing depend on how it is treated"
+            }
+          ],
+          "loop": "As new plants grow, they can absorb CO₂ again.",
+          "loopSub": "Feedstock linked to the recent biological carbon cycle",
+          "coreLabel": "The heart of this route",
+          "core": "From air to plant, from plant to blue.",
+          "coreSub": "It uses carbon from renewable feedstock."
+        },
+        {
+          "eyebrow": "FOSSIL-BASED INDIGO",
+          "title": "Petrochemical synthetic indigo",
+          "lede": "Carbon stored underground for ages is extracted and used as the raw material for blue.",
+          "steps": [
+            {
+              "label": "01 / Feedstock",
+              "title": "Oil stored underground",
+              "text": "Fossil carbon stored over long geological time is extracted.",
+              "imageAlt": "Illustration of a pumpjack lifting oil from underground strata, with an oil drum"
+            },
+            {
+              "label": "02 / Production",
+              "title": "Chemical synthesis from petroleum feedstock",
+              "text": "Petroleum-derived feedstock is converted into indigo by chemical processes.",
+              "imageAlt": "Illustration of a chemical plant converting petroleum feedstock into indigo"
+            },
+            {
+              "label": "03 / Product",
+              "title": "Indigo, and denim",
+              "text": "Carbon from oil ends up in the blue of the denim.",
+              "imageAlt": "Illustration of blue indigo powder and folded jeans"
+            },
+            {
+              "label": "04 / After use",
+              "title": "Emitted into the atmosphere",
+              "text": "When released as CO₂, underground carbon moves into the atmosphere and biosphere.",
+              "imageAlt": "Illustration of a cloud representing the atmosphere that underground carbon moves into when released as CO₂",
+              "note": "Not all product carbon is released immediately"
+            }
+          ],
+          "loop": "Oil is not replenished at the pace we use it.",
+          "loopSub": "Even if emitted carbon is absorbed by plants, the underground oil reservoir is not refilled right away.",
+          "coreLabel": "The heart of this route",
+          "core": "From carbon stored underground to blue.",
+          "coreSub": "When emitted, long-stored carbon enters the atmosphere."
+        }
+      ],
+      "footnote": "A simplified concept diagram of feedstock carbon flows. The tree symbolizes plant biomass and does not identify actual Blugene feedstock or facilities. Both routes can produce emissions from production energy, refining and transport. Dashed lines show possible routes; they do not mean full recovery, complete biodegradability, immediate re-absorption or carbon neutrality.",
+      "origin": {
+        "eyebrow": "02 / WHY THE ORIGIN MATTERS",
+        "title": "The carbon is the same. The timescale is not.",
+        "body": "The difference lies not in the nature of CO₂ but in the reservoir the carbon is taken from, and how long it takes to refill.",
+        "items": [
+          {
+            "label": "Oil-based carbon",
+            "title": "Carbon stored for ages",
+            "text": "Carbon stored underground over long ages is extracted and used. Oil is not replenished at the pace we use it.",
+            "tags": [
+              "Stored over geological time",
+              "Extraction · use"
+            ]
+          },
+          {
+            "label": "Bio-based carbon",
+            "title": "Carbon from a resource that grows again",
+            "text": "It uses carbon that plants recently absorbed from the air. When biomass is regenerated, carbon uptake can continue as new plants grow.",
+            "tags": [
+              "Growth · uptake",
+              "Use · regeneration"
+            ]
+          }
+        ],
+        "closing": "What Blugene sets out to change is the origin of the carbon that makes the blue."
+      },
+      "evidence": {
+        "eyebrow": "03 / A CLEARER BLUE",
+        "title": "A good explanation needs clear evidence.",
+        "body": "Where the feedstock came from and how much it affects the environment are two different questions.",
+        "items": [
+          {
+            "label": "Origin of the carbon",
+            "title": "“Is it bio-based?”",
+            "text": "Radiocarbon analysis such as ASTM D6866 can determine the share of bio-based carbon in the organic carbon of a sample.",
+            "tag": "Biobased carbon content test"
+          },
+          {
+            "label": "Life-cycle impact",
+            "title": "“How much were carbon emissions reduced?”",
+            "text": "Every process and energy input within the comparison boundary, from feedstock cultivation to production, transport and disposal, must be counted together. A life cycle assessment (LCA) answers this question.",
+            "tag": "LCA comparison of the same function and scope"
+          }
+        ],
+        "calloutTitle": "Being bio-based does not automatically mean carbon neutral.",
+        "calloutBody": "Using feedstock from the carbon cycle is not the same as a product having zero net emissions. This section explains the feedstock route and does not present emission reduction figures for products. Blugene’s biobased carbon content test results are on the <link>Data · Certifications page</link>, together with the laboratory, method and report number."
+      },
+      "faq": {
+        "eyebrow": "A FEW GOOD QUESTIONS",
+        "title": "Questions from people who love denim.",
+        "items": [
+          {
+            "question": "Why is fermentation linked to the carbon cycle?",
+            "answers": [
+              "The origin of the feedstock matters more than the fermentation itself. The carbon in biomass was made by plants absorbing CO₂ from the atmosphere. Because microorganisms convert this carbon into indigo, the feedstock is linked to the recent biological carbon cycle.",
+              "Fermentation needs energy and can also release CO₂. So the fact that something was made by fermentation does not by itself bring total emissions to zero."
+            ]
+          },
+          {
+            "question": "Does wearing jeans reduce carbon?",
+            "answers": [
+              "Wearing jeans does not itself remove carbon from the air. The change described here is switching the feedstock carbon of the indigo dye from oil-based to biomass-based. The environmental impact of a finished pair of jeans also depends on cotton cultivation, weaving, dyeing, laundering and more."
+            ]
+          },
+          {
+            "question": "Does the carbon in clothing all return to nature in the end?",
+            "answers": [
+              "The route and the pace depend on how it is actually treated: reuse, recycling, incineration or landfill. The cycle arrow shows the concept that carbon can be released as CO₂ and re-absorbed by plants. It does not mean that clothing or dye is fully biodegradable, compostable or entirely recoverable."
+            ]
+          },
+          {
+            "question": "What does a “biobased carbon content” figure mean?",
+            "answers": [
+              "Biobased carbon content by the ASTM D6866 method is the share of bio-based carbon in the organic carbon of the tested sample. It does not mean dye purity, the share of plant feedstock in the total mass of the product, or a reduction in carbon emissions.",
+              "When checking a real product, look at the test subject and method, the sample and batch, the laboratory and the result together. Blugene’s measured value (98%, pMC 97.73) is on the Data · Certifications page with the laboratory, method and report number."
+            ]
+          },
+          {
+            "question": "Is bio indigo a natural dye extracted from plants?",
+            "answers": [
+              "Blugene’s approach converts biomass into indigo through microbial fermentation. It differs from traditional natural indigo production, which extracts pigment from leaves such as Persicaria tinctoria. “Bio-based” describes the origin of the carbon that makes the pigment."
+            ]
+          }
+        ]
+      },
+      "closing": {
+        "eyebrow": "FOR THE DENIM WE LOVE.",
+        "text": "A blue to love for a long time. Renewed from the very beginning."
+      },
+      "sources": {
+        "summary": "Sources behind this story",
+        "introStrong": "Explanations grounded in literature and standards",
+        "introText": "The distinction between the biological carbon cycle and fossil carbon, and between biobased carbon content testing and life cycle assessment.",
+        "items": [
+          {
+            "title": "NASA Earth Observatory — The Carbon Cycle",
+            "note": "Photosynthesis, the fast and slow carbon cycles, and fossil carbon entering the atmosphere."
+          },
+          {
+            "title": "ASTM D6866 — Determining biobased content by radiocarbon analysis",
+            "note": "The test assesses the biological origin of carbon; it does not directly measure greenhouse gas reductions."
+          },
+          {
+            "title": "GHG Protocol — Product Life Cycle Standard",
+            "note": "Principles for quantifying the greenhouse gas impact of a product from a life-cycle perspective."
+          },
+          {
+            "title": "USDA BioPreferred — Frequently asked questions",
+            "note": "What content based on organic carbon means, as distinct from environmental impact or performance evaluation."
+          }
+        ],
+        "processStrong": "About the Blugene process",
+        "processText": "Compiled from brand-provided information that indigo is produced by fermenting biomass. The diagrams are edited to aid understanding and do not represent actual mass balances or emissions.",
+        "externalLinkHint": "Opens in a new window"
+      }
+    },
     "processTitle": "From feedstock to fabric",
-    "safetyTitle": "The working environment",
-    "safetyBody": "The catalogue addresses the working environment associated with handling hazardous chemicals. This site makes no quantitative claims about worker safety and goes no further than describing the difference in the substances handled.",
-    "safetyAlt": "Illustration contrasting the handling of hazardous chemicals with the handling of non-hazardous materials (catalogue p.4)",
     "impurityTitle": "Why we check for aniline",
     "impurityBody": "Aniline and N-methylaniline are starting materials or intermediates in chemical synthesis routes, and they can remain as unreacted residues in the final indigo powder. Because of their toxicity and possible carcinogenicity, a number of certification standards limit the permitted concentration in textile dyes and in finished products.",
     "cta": "See all the test data",
-    "conceptCaptionSafety": "Catalogue p.4 Figure 2-1. An illustration contrasting the handling of hazardous and non-hazardous substances; it is not a photograph of an actual workplace.",
-    "routeOursLabel": "Our Path",
+    "routeOursLabel": "Our route · Blugene",
     "routesFigureBridge": "This catalogue diagram lays out the four routes above on a single sheet. The figure follows the same order as the cards."
   },
   "DyeingPrinting": {

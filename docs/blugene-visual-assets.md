@@ -29,8 +29,8 @@
 | `/blugene/brand/value-chain.webp` | 개념 이미지 | 784×258 · 59KB | p.12 `embedded/p12-xref184.png` | 원료 작물, 발효 설비, 푸른 원단, 데님을 입은 사람으로 이어지는 가치사슬 개념 이미지 (`Environment.imageAlt`) |
 | `/blugene/brand/cutisbio-wordmark.png` | 브랜드 이미지 | 456×103 · 20KB | p.1 `embedded/p01-xref6.png` | 데이터로만 보관 (현재 화면에서는 기존 `/logo.png` 사용) |
 | `/blugene/technology/four-production-routes.png` | 개념 이미지 | 1191×771 · 160KB | p.2 Figure 1-1 | 원유 · 바이오매스 · 인디고 식물에서 출발하는 네 가지 인디고 합성 경로 도식 (`Technology.routesAlt`) |
-| `/blugene/technology/carbon-pathways.png` | 개념 이미지 | 1230×678 · 277KB | p.2 Figure 1-2 | 화학 경로와 바이오 경로의 탄소 순환을 비교한 개념도 (`Technology.carbonAlt`) |
-| `/blugene/technology/worker-safety.png` | 개념 이미지 | 988×331 · 188KB | p.4 Figure 2-1 | 유해 화학물질 취급과 비유해 물질 취급을 대비해 보여 주는 삽화 (`Technology.safetyAlt`) |
+| `/blugene/technology/carbon-pathways.png` | 개념 이미지 | 1230×678 · 277KB | p.2 Figure 1-2 | 화면에서 사용 중지 — 2026-09-12 고객 요청으로 기술 페이지의 「카탈로그의 개념도」 블록을 뺐다 (파일과 자산 생성 목록은 남김, alt 키 삭제) |
+| `/blugene/technology/worker-safety.png` | 개념 이미지 | 988×331 · 188KB | p.4 Figure 2-1 | 화면에서 사용 중지 — 2026-09-12 고객 요청으로 기술 페이지의 「작업 환경」 단락을 뺐다 (파일과 자산 생성 목록은 남김, alt 키 삭제) |
 | `/blugene/evidence/biobased-carbon-chart.png` | 시험 사진 | 1116×681 · 41KB | p.3 Figure 1-3 | 바이오 기반 탄소 함량 비교 그래프 원본 |
 | `/blugene/evidence/biobased-carbon-table.png` | 시험 사진 | 1151×756 · 154KB | p.3 Table 1-1 | C14 시험 결과 표 원본 |
 | `/blugene/evidence/aniline-results.png` | 시험 사진 | 1163×1545 · 133KB | p.5 Figure 2-2 · Table 2-3 | 아닐린 · N-메틸아닐린 분석 그래프·표 원본 |

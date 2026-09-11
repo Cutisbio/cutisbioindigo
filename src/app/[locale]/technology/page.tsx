@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import SectionHeading from '@/components/blugene/SectionHeading';
+import CarbonJourney from '@/components/blugene/CarbonJourney';
 import SourceNote, { AssetKind } from '@/components/blugene/SourceNote';
 import ZoomableImage from '@/components/blugene/ZoomableImage';
 import AnilineStructures from '@/components/blugene/AnilineStructures';
@@ -92,9 +93,11 @@ export default async function TechnologyPage({ params }: { params: Promise<{ loc
                         {i + 1}
                       </span>
                       {/* 어느 것이 우리 경로인지가 테두리 색으로만 표시되면 색을 구분하지
-                          못하는 사람에게는 네 카드가 같아 보인다. 의미를 글자가 담게 한다. */}
+                          못하는 사람에게는 네 카드가 같아 보인다. 의미를 글자가 담게 한다.
+                          2026-09-12 고객 요청으로 작은 청색 글씨 대신 번호 배지와 같은 남색 알약(굵은 흰 글씨)으로 키웠다.
+                          라벨에 브랜드명이 들어가므로 uppercase 를 쓰지 않는다(Blugene 표기 규칙). */}
                       {isBio && (
-                        <p className="text-[0.7rem] font-semibold tracking-[0.16em] text-[var(--color-denim)] uppercase">
+                        <p className="inline-flex items-center rounded-full bg-[var(--color-indigo-deep)] px-3 py-1 text-[0.8rem] leading-none font-bold tracking-[0.04em] break-keep text-white">
                           {t('routeOursLabel')}
                         </p>
                       )}
@@ -155,30 +158,9 @@ export default async function TechnologyPage({ params }: { params: Promise<{ loc
         </div>
       </section>
 
-      {/* 탄소 경로 */}
-      <section className="w-full bg-[var(--color-ivory)]">
-        <div className="mx-auto grid max-w-[1280px] gap-12 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-24">
-          <div>
-            <SectionHeading title={t('carbonTitle')} size="lg" />
-            <p className="mt-5 text-base leading-[1.9] break-keep text-[var(--color-ink)]/85 sm:text-lg">
-              {t('carbonBody')}
-            </p>
-            <div className="mt-6">
-              <AssetKind>{tCommon('conceptImage')}</AssetKind>
-            </div>
-          </div>
-          <ZoomableImage
-            src="/blugene/technology/carbon-pathways.png"
-            alt={t('carbonAlt')}
-            width={1230}
-            height={678}
-            sizes="(max-width: 1024px) 92vw, 600px"
-            openLabel={tCommon('openImage')}
-            closeLabel={tCommon('close')}
-            caption={t('carbonCaption')}
-          />
-        </div>
-      </section>
+      {/* 탄소 경로 — 2026-09-11 고객 제공 HTML(탄소의 여정 · 출처가 중요한 이유 · 근거 · FAQ)을
+          이 사이트의 디자인으로 옮긴 단락. 카탈로그 p.2 Figure 1-2 개념도(「카탈로그의 개념도」)는 2026-09-12 고객 요청으로 뺐다. */}
+      <CarbonJourney />
 
       {/*
         4단계 생산 경로 개념도(ProductionPathway)는 홈의 ScienceSection 이 이미 보여 주고
@@ -186,10 +168,12 @@ export default async function TechnologyPage({ params }: { params: Promise<{ loc
         더 자세한 내용을 기대하고 넘어온 독자가 방금 본 화면을 되풀이해 읽게 되므로 두지 않는다.
       */}
 
-      {/* 불순물 · 작업 환경 — 앞 섹션이 아이보리이므로 여기는 흰 배경이어야 경계가 보인다 */}
+      {/* 불순물 — 앞 섹션이 아이보리이므로 여기는 흰 배경이어야 경계가 보인다.
+          오른쪽 열에 있던 「작업 환경」 단락(카탈로그 p.4 Figure 2-1 삽화)은 2026-09-12 고객 요청으로 뺐고,
+          남은 불순물 단락은 한 열로 읽히도록 폭을 max-w-3xl 로 잡는다. */}
       <section className="w-full bg-white">
-        <div className="mx-auto grid max-w-[1280px] gap-12 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-24">
-          <div>
+        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+          <div className="max-w-3xl">
             <SectionHeading title={t('impurityTitle')} size="lg" />
             <p className="mt-5 text-base leading-[1.9] break-keep text-[var(--color-ink)]/85">
               {t('impurityBody')}
@@ -207,27 +191,6 @@ export default async function TechnologyPage({ params }: { params: Promise<{ loc
               이미지 생성 없이 두 물질의 차이를 그대로 보여 줄 수 있다.
             */}
             <AnilineStructures />
-          </div>
-          <div>
-            <SectionHeading title={t('safetyTitle')} size="lg" />
-            <p className="mt-5 text-base leading-[1.9] break-keep text-[var(--color-ink)]/85">
-              {t('safetyBody')}
-            </p>
-            <div className="mt-6">
-              <div className="mb-3">
-                <AssetKind>{tCommon('conceptImage')}</AssetKind>
-              </div>
-              <ZoomableImage
-                src="/blugene/technology/worker-safety.png"
-                alt={t('safetyAlt')}
-                width={988}
-                height={331}
-                sizes="(max-width: 1024px) 92vw, 560px"
-                openLabel={tCommon('openImage')}
-                closeLabel={tCommon('close')}
-                caption={t('conceptCaptionSafety')}
-              />
-            </div>
           </div>
         </div>
       </section>

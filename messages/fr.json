@@ -415,9 +415,9 @@
     "metaDescription": "Les quatre voies de fabrication de l'indigo, la production par fermentation microbienne et les résultats d'essai de carbone biosourcé.",
     "heroEyebrow": "TECHNOLOGY",
     "heroTitle": "Quatre voies vers le bleu, et notre choix.",
-    "heroBody": "Le catalogue présente quatre voies ; le bio-indigo CutisBio, qui fonde Blugene, relève de la voie d'origine microbienne.",
+    "heroBody": "Il existe quatre voies pour produire le colorant indigo. Blugene a choisi un procédé de fermentation de précision inscrit dans le cycle du carbone. Notre choix renforce la durabilité, pour l’environnement comme pour nos vies.",
     "routesTitle": "Les quatre voies de synthèse de l'indigo",
-    "routeOursLabel": "Notre voie",
+    "routeOursLabel": "Notre voie · Blugene",
     "routesCaption": "Catalogue p.2, Figure 1-1. Les voies chimiques sont en rouge, les voies biologiques en jaune.",
     "routesAlt": "Schéma des quatre voies de synthèse de l'indigo à partir du pétrole brut, de la biomasse et de la plante à indigo (catalogue p.2)",
     "routes": [
@@ -434,8 +434,8 @@
         "text": "L'indigo est obtenu via l'acide anthranilique issu de la biomasse. La matière première est renouvelable, mais l'étape intermédiaire diffère de la voie purement microbienne."
       },
       {
-        "name": "Bio-indigo (origine microbienne)",
-        "feedstock": "Biomasse",
+        "name": "Bio-indigo (issu de la fermentation de précision)",
+        "feedstock": "Biomasse (matière première végétale)",
         "intermediate": "Tryptophane",
         "text": "Des micro-organismes convertissent en indigo le tryptophane issu de la biomasse. Le bio-indigo CutisBio relève de cette voie."
       },
@@ -451,17 +451,218 @@
     "routesNote": "L'étape de l'acide anthranilique de la voie hybride diffère de l'étape du tryptophane de la voie microbienne. Les deux voies n'ont pas été assimilées l'une à l'autre.",
     "routesFigureBridge": "Schéma du catalogue réunissant les quatre voies sur une seule planche. L'ordre de la figure est le même que celui des cartes.",
     "carbonTitle": "D'où vient le carbone",
-    "carbonCaption": "Catalogue p.2, Figure 1-2. Comparaison du cycle du carbone de la voie chimique (en haut) et de la voie bio (en bas).",
-    "carbonAlt": "Schéma conceptuel comparant le cycle du carbone des voies chimique et bio (catalogue p.2)",
-    "carbonBody": "La voie chimique tire son carbone du pétrole brut, non renouvelable ; la voie bio, de la biomasse renouvelable. Cette différence se vérifie par l'essai de teneur en carbone biosourcé.",
+    "carbon": {
+      "lead": "Du pétrole sous nos pieds à une biomasse qui repousse. Blugene fabrique l’indigo en fermentant de la biomasse, en pensant dès l’origine du carbone qui fait la couleur. Alors, d’où vient ce bleu ?",
+      "journey": {
+        "eyebrow": "01 / FOLLOW THE CARBON",
+        "title": "Le même bleu. Un autre voyage du carbone.",
+        "body": "La molécule qui donne à l’indigo son bleu contient aussi du carbone. Suivez le parcours pour voir d’où vient ce carbone.",
+        "guide": "Partez de l’origine du carbone et suivez les deux voies dans le même ordre.",
+        "order": "Matière première → Production → Indigo · Denim → Après usage",
+        "legendSolid": "Passage de la matière première au produit",
+        "legendDashed": "Émission et réabsorption selon les conditions de traitement et de croissance",
+        "legendNote": "L’arbre et les installations sont des illustrations données à titre d’exemple.",
+        "evidenceLink": "Sources"
+      },
+      "routes": [
+        {
+          "eyebrow": "BIO-BASED INDIGO",
+          "title": "Indigo biosourcé",
+          "lede": "Un nouveau bleu fait du carbone que les plantes ont absorbé.",
+          "chip": "CO₂ absorbé dans l’air",
+          "steps": [
+            {
+              "label": "01 / Matière première",
+              "title": "Une biomasse qui repousse",
+              "text": "Le carbone absorbé par les plantes lors de la photosynthèse est contenu dans la matière première.",
+              "imageAlt": "Illustration d’un arbre aux feuilles vertes sur l’herbe : un exemple de biomasse végétale"
+            },
+            {
+              "label": "02 / Production",
+              "title": "Fermentation microbienne",
+              "text": "Des micro-organismes convertissent la matière première issue de la biomasse en indigo.",
+              "imageAlt": "Illustration d’un fermenteur produisant de l’indigo avec un milieu de culture et des micro-organismes",
+              "note": "Une partie du CO₂ est aussi émise pendant la fermentation"
+            },
+            {
+              "label": "03 / Produit",
+              "title": "L’indigo, puis le denim",
+              "text": "Le carbone venu de la biomasse se retrouve dans le bleu du denim.",
+              "imageAlt": "Illustration de poudre d’indigo bleue et d’un jean plié"
+            },
+            {
+              "label": "04 / Après usage",
+              "title": "Une partie retourne dans l’air",
+              "text": "Devenu CO₂ par incinération ou décomposition, il peut retourner dans l’atmosphère.",
+              "imageAlt": "Illustration d’un nuage représentant l’atmosphère où retourne le carbone lorsque du CO₂ est émis après usage",
+              "note": "Le parcours et le moment dépendent du mode de traitement"
+            }
+          ],
+          "loop": "En poussant, de nouvelles plantes peuvent absorber à nouveau le CO₂.",
+          "loopSub": "Une matière première liée au cycle biologique récent du carbone",
+          "coreLabel": "L’essentiel de cette voie",
+          "core": "De l’air à la plante, de la plante au bleu.",
+          "coreSub": "Elle utilise le carbone d’une matière première renouvelable."
+        },
+        {
+          "eyebrow": "FOSSIL-BASED INDIGO",
+          "title": "Indigo de synthèse pétrochimique",
+          "lede": "Du carbone stocké depuis très longtemps sous terre est extrait pour servir de matière première au bleu.",
+          "steps": [
+            {
+              "label": "01 / Matière première",
+              "title": "Du pétrole stocké sous terre",
+              "text": "Du carbone fossile stocké au fil des temps géologiques est extrait.",
+              "imageAlt": "Illustration d’une pompe à balancier extrayant du pétrole des couches souterraines, avec un baril"
+            },
+            {
+              "label": "02 / Production",
+              "title": "Synthèse chimique à partir de matières pétrolières",
+              "text": "Des matières premières pétrolières sont converties en indigo par des procédés chimiques.",
+              "imageAlt": "Illustration d’une usine chimique convertissant des matières pétrolières en indigo"
+            },
+            {
+              "label": "03 / Produit",
+              "title": "L’indigo, puis le denim",
+              "text": "Le carbone venu du pétrole se retrouve dans le bleu du denim.",
+              "imageAlt": "Illustration de poudre d’indigo bleue et d’un jean plié"
+            },
+            {
+              "label": "04 / Après usage",
+              "title": "Émis, il rejoint l’atmosphère",
+              "text": "Rejeté sous forme de CO₂, le carbone souterrain passe dans l’atmosphère et la biosphère.",
+              "imageAlt": "Illustration d’un nuage représentant l’atmosphère où passe le carbone souterrain émis sous forme de CO₂",
+              "note": "Tout le carbone du produit n’est pas rejeté immédiatement"
+            }
+          ],
+          "loop": "Le pétrole ne se reforme pas au rythme où nous l’utilisons.",
+          "loopSub": "Même si le carbone émis est absorbé par des plantes, le réservoir de pétrole souterrain ne se remplit pas aussitôt.",
+          "coreLabel": "L’essentiel de cette voie",
+          "core": "Du carbone stocké sous terre jusqu’au bleu.",
+          "coreSub": "Lorsqu’il est émis, un carbone stocké depuis très longtemps entre dans l’atmosphère."
+        }
+      ],
+      "footnote": "Schéma conceptuel simplifié des flux de carbone des matières premières. L’arbre symbolise la biomasse végétale et ne désigne pas les matières premières ou installations réelles de Blugene. Les deux voies peuvent générer des émissions liées à l’énergie de production, au raffinage et au transport. Les pointillés indiquent des parcours possibles ; ils ne signifient ni récupération totale, ni biodégradabilité complète, ni réabsorption immédiate, ni neutralité carbone.",
+      "origin": {
+        "eyebrow": "02 / WHY THE ORIGIN MATTERS",
+        "title": "Le carbone est le même. Pas l’échelle de temps.",
+        "body": "La différence ne tient pas à la nature du CO₂, mais au réservoir d’où l’on tire le carbone et au temps qu’il met à se reconstituer.",
+        "items": [
+          {
+            "label": "Carbone d’origine pétrolière",
+            "title": "Un carbone stocké depuis très longtemps",
+            "text": "On extrait et utilise un carbone stocké sous terre pendant des âges. Le pétrole ne se reforme pas au rythme où nous l’utilisons.",
+            "tags": [
+              "Stockage à l’échelle géologique",
+              "Extraction · usage"
+            ]
+          },
+          {
+            "label": "Carbone biosourcé",
+            "title": "Le carbone d’une ressource qui repousse",
+            "text": "On utilise le carbone que les plantes ont récemment absorbé dans l’air. Si la biomasse est régénérée, l’absorption de carbone peut se poursuivre avec la croissance de nouvelles plantes.",
+            "tags": [
+              "Croissance · absorption",
+              "Usage · régénération"
+            ]
+          }
+        ],
+        "closing": "Ce que Blugene veut changer, c’est l’origine du carbone qui fait le bleu."
+      },
+      "evidence": {
+        "eyebrow": "03 / A CLEARER BLUE",
+        "title": "Une bonne explication a besoin de preuves claires.",
+        "body": "D’où vient la matière première et quel est son impact sur l’environnement sont deux questions différentes.",
+        "items": [
+          {
+            "label": "Origine du carbone",
+            "title": "« Est-ce biosourcé ? »",
+            "text": "Une analyse au radiocarbone telle que l’ASTM D6866 permet de déterminer la part de carbone biosourcé dans le carbone organique d’un échantillon.",
+            "tag": "Essai de teneur en carbone biosourcé"
+          },
+          {
+            "label": "Impact sur le cycle de vie",
+            "title": "« De combien les émissions de carbone ont-elles baissé ? »",
+            "text": "Il faut compter ensemble tous les procédés et énergies compris dans le périmètre de comparaison : culture de la matière première, production, transport, fin de vie. C’est l’analyse de cycle de vie (ACV) qui répond à cette question.",
+            "tag": "Comparaison ACV à fonction et périmètre identiques"
+          }
+        ],
+        "calloutTitle": "Être biosourcé ne signifie pas automatiquement être neutre en carbone.",
+        "calloutBody": "Utiliser une matière première issue du cycle du carbone n’est pas la même chose qu’un produit aux émissions nettes nulles. Cette partie explique la voie des matières premières et ne présente pas de chiffres de réduction des émissions par produit. Les résultats d’essai de teneur en carbone biosourcé de Blugene sont sur la <link>page Données · Certifications</link>, avec le laboratoire, la méthode et le numéro de rapport."
+      },
+      "faq": {
+        "eyebrow": "A FEW GOOD QUESTIONS",
+        "title": "Les questions de ceux qui aiment le denim.",
+        "items": [
+          {
+            "question": "Pourquoi la fermentation est-elle liée au cycle du carbone ?",
+            "answers": [
+              "L’origine de la matière première compte plus que la fermentation elle-même. Le carbone de la biomasse a été formé par des plantes absorbant le CO₂ de l’atmosphère. Comme des micro-organismes convertissent ce carbone en indigo, la matière première est liée au cycle biologique récent du carbone.",
+              "La fermentation demande de l’énergie et peut aussi émettre du CO₂. Le seul fait d’être « fabriqué par fermentation » ne ramène donc pas les émissions totales à zéro."
+            ]
+          },
+          {
+            "question": "Porter un jean réduit-il le carbone ?",
+            "answers": [
+              "Porter un jean ne retire pas, en soi, du carbone de l’air. Le changement décrit ici consiste à faire passer le carbone de la matière première du colorant indigo d’une origine pétrolière à une origine biomasse. L’impact environnemental d’un jean fini dépend aussi de la culture du coton, du tissage, de la teinture, du lavage, etc."
+            ]
+          },
+          {
+            "question": "Le carbone des vêtements retourne-t-il finalement tout entier à la nature ?",
+            "answers": [
+              "Le parcours et la vitesse dépendent du traitement réel : réemploi, recyclage, incinération ou enfouissement. La flèche de cycle illustre l’idée que le carbone peut être libéré sous forme de CO₂ puis réabsorbé par des plantes. Elle ne signifie pas que les vêtements ou le colorant soient entièrement biodégradables, compostables ou récupérables en totalité."
+            ]
+          },
+          {
+            "question": "Que signifie un chiffre de « teneur en carbone biosourcé » ?",
+            "answers": [
+              "La teneur en carbone biosourcé selon la méthode ASTM D6866 est la part de carbone biosourcé dans le carbone organique de l’échantillon testé. Elle ne signifie ni la pureté du colorant, ni la part de matière végétale dans la masse totale du produit, ni une réduction des émissions de carbone.",
+              "Pour vérifier la teneur d’un produit réel, regardez ensemble l’objet et la méthode d’essai, l’échantillon et le lot, le laboratoire et le résultat. La valeur mesurée de Blugene (98 %, pMC 97.73) figure sur la page Données · Certifications, avec le laboratoire, la méthode et le numéro de rapport."
+            ]
+          },
+          {
+            "question": "Le bio-indigo est-il un colorant naturel extrait de plantes ?",
+            "answers": [
+              "La méthode de Blugene convertit la biomasse en indigo par fermentation microbienne. Elle diffère de la production traditionnelle d’indigo naturel, qui extrait le pigment de feuilles comme celles de la persicaire à indigo. « Biosourcé » décrit l’origine du carbone qui fait le pigment."
+            ]
+          }
+        ]
+      },
+      "closing": {
+        "eyebrow": "FOR THE DENIM WE LOVE.",
+        "text": "Un bleu à aimer longtemps. Renouvelé dès son origine."
+      },
+      "sources": {
+        "summary": "Les sources qui appuient ce récit",
+        "introStrong": "Des explications fondées sur la littérature et les normes",
+        "introText": "La distinction entre cycle biologique du carbone et carbone fossile, et entre essai de teneur en carbone biosourcé et analyse de cycle de vie.",
+        "items": [
+          {
+            "title": "NASA Earth Observatory — The Carbon Cycle",
+            "note": "Photosynthèse, cycles rapide et lent du carbone, entrée du carbone fossile dans l’atmosphère."
+          },
+          {
+            "title": "ASTM D6866 — Détermination de la teneur biosourcée par analyse au radiocarbone",
+            "note": "L’essai évalue l’origine biologique du carbone ; il ne mesure pas directement les réductions de gaz à effet de serre."
+          },
+          {
+            "title": "GHG Protocol — Product Life Cycle Standard",
+            "note": "Principes de quantification de l’impact d’un produit sur les gaz à effet de serre dans une perspective de cycle de vie."
+          },
+          {
+            "title": "USDA BioPreferred — Questions fréquentes",
+            "note": "Le sens d’une teneur exprimée en carbone organique, distincte de l’évaluation de l’impact environnemental ou des performances."
+          }
+        ],
+        "processStrong": "À propos du procédé Blugene",
+        "processText": "Rédigé à partir de l’information fournie par la marque, selon laquelle l’indigo est produit par fermentation de biomasse. Les schémas sont des mises en forme destinées à faciliter la compréhension et ne représentent pas de bilans de matière ni d’émissions réels.",
+        "externalLinkHint": "S’ouvre dans une nouvelle fenêtre"
+      }
+    },
     "processTitle": "De la matière première au tissu",
-    "safetyTitle": "Environnement de travail",
-    "safetyBody": "Le catalogue aborde l'environnement de travail lié à la manipulation de produits chimiques dangereux. Ce site ne formule aucune affirmation quantitative sur la sécurité des opérateurs et se limite à décrire la différence entre les substances manipulées.",
-    "safetyAlt": "Illustration opposant la manipulation de produits chimiques dangereux et celle de substances non dangereuses (catalogue p.4)",
     "impurityTitle": "Pourquoi vérifier l'aniline",
     "impurityBody": "L'aniline et la N-méthylaniline sont des matières premières ou des intermédiaires de la voie de synthèse chimique et peuvent subsister, non réagies, dans la poudre d'indigo finale. En raison de leur toxicité et de leur cancérogénicité potentielle, plusieurs référentiels de certification limitent leur concentration admissible dans les colorants textiles et les produits finis.",
-    "cta": "Voir toutes les données d'essai",
-    "conceptCaptionSafety": "Catalogue p.4, Figure 2-1. Illustration opposant la manipulation de substances dangereuses et non dangereuses ; il ne s'agit pas d'une photo d'un atelier réel."
+    "cta": "Voir toutes les données d'essai"
   },
   "DyeingPrinting": {
     "metaTitle": "Teinture · Impression",

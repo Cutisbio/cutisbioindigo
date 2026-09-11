@@ -350,5 +350,41 @@
     "width": 960,
     "height": 1440,
     "bytes": 36236
+  },
+  "/blugene/technology/carbon/bio-biomass-tree.webp": {
+    "source": "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: 초록 잎 나무(식물성 바이오매스). 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임",
+    "width": 512,
+    "height": 512,
+    "bytes": 71790
+  },
+  "/blugene/technology/carbon/fermenter.webp": {
+    "source": "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: 발효조. 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임",
+    "width": 512,
+    "height": 512,
+    "bytes": 31732
+  },
+  "/blugene/technology/carbon/indigo-denim.webp": {
+    "source": "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: 인디고 분말과 청바지. 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임",
+    "width": 512,
+    "height": 512,
+    "bytes": 48060
+  },
+  "/blugene/technology/carbon/co2-cloud.webp": {
+    "source": "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: CO₂ 구름(대기). 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임",
+    "width": 512,
+    "height": 512,
+    "bytes": 17974
+  },
+  "/blugene/technology/carbon/fossil-oil-pump.webp": {
+    "source": "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: 원유 채굴 펌프와 석유통. 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임",
+    "width": 512,
+    "height": 512,
+    "bytes": 56660
+  },
+  "/blugene/technology/carbon/refinery.webp": {
+    "source": "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: 화학 공장. 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임",
+    "width": 512,
+    "height": 512,
+    "bytes": 46540
   }
 }

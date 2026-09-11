@@ -415,9 +415,9 @@
     "metaDescription": "Le quattro vie per produrre l'indaco, la produzione per fermentazione microbica e i risultati delle prove sul carbonio biobased.",
     "heroEyebrow": "TECHNOLOGY",
     "heroTitle": "Quattro vie verso il blu, e la nostra scelta.",
-    "heroBody": "Il catalogo presenta quattro vie; il bio-indaco CutisBio alla base di Blugene rientra nella via di origine microbica.",
+    "heroBody": "Esistono quattro vie per produrre il colorante indaco. Blugene ha scelto un processo di fermentazione di precisione inserito nel ciclo del carbonio. La nostra scelta rafforza la sostenibilità, per l’ambiente e per la nostra vita.",
     "routesTitle": "Le quattro vie di sintesi dell'indaco",
-    "routeOursLabel": "La nostra via",
+    "routeOursLabel": "La nostra via · Blugene",
     "routesCaption": "Catalogo p.2, Figure 1-1. Le vie chimiche sono in rosso, le vie biologiche in giallo.",
     "routesAlt": "Schema delle quattro vie di sintesi dell'indaco a partire da petrolio greggio, biomassa e pianta dell'indaco (catalogo p.2)",
     "routes": [
@@ -434,8 +434,8 @@
         "text": "L'indaco si ottiene passando dall'acido antranilico ricavato da biomassa. La materia prima è rinnovabile, ma lo stadio intermedio differisce dalla via puramente microbica."
       },
       {
-        "name": "Bio-indaco (origine microbica)",
-        "feedstock": "Biomassa",
+        "name": "Bio-indaco (da fermentazione di precisione)",
+        "feedstock": "Biomassa (materia prima vegetale)",
         "intermediate": "Triptofano",
         "text": "I microrganismi convertono in indaco il triptofano ricavato da biomassa. Il bio-indaco CutisBio rientra in questa via."
       },
@@ -451,17 +451,218 @@
     "routesNote": "Lo stadio dell'acido antranilico della via ibrida differisce dallo stadio del triptofano della via microbica. Le due vie non sono state assimilate l'una all'altra.",
     "routesFigureBridge": "Schema del catalogo che riunisce le quattro vie in un'unica tavola. L'ordine della figura è lo stesso delle schede.",
     "carbonTitle": "Da dove viene il carbonio",
-    "carbonCaption": "Catalogo p.2, Figure 1-2. Confronto del ciclo del carbonio della via chimica (in alto) e della via bio (in basso).",
-    "carbonAlt": "Schema concettuale che confronta il ciclo del carbonio delle vie chimica e bio (catalogo p.2)",
-    "carbonBody": "La via chimica ricava il carbonio dal petrolio greggio, non rinnovabile; la via bio, dalla biomassa rinnovabile. Questa differenza si verifica con la prova del contenuto di carbonio biobased.",
+    "carbon": {
+      "lead": "Dal petrolio sotto terra alla biomassa che ricresce. Blugene produce l’indaco fermentando biomassa e parte dall’origine stessa del carbonio che fa il colore. Da dove viene, allora, quel blu?",
+      "journey": {
+        "eyebrow": "01 / FOLLOW THE CARBON",
+        "title": "Lo stesso blu. Un altro viaggio del carbonio.",
+        "body": "Anche la molecola che dà all’indaco il suo blu contiene carbonio. Segui il percorso per vedere da dove viene quel carbonio.",
+        "guide": "Parti dall’origine del carbonio e segui le due vie nello stesso ordine.",
+        "order": "Materia prima → Produzione → Indaco · Denim → Dopo l’uso",
+        "legendSolid": "Passaggio dalla materia prima al prodotto",
+        "legendDashed": "Emissione e riassorbimento a seconda delle condizioni di trattamento e crescita",
+        "legendNote": "L’albero e gli impianti sono illustrazioni a titolo di esempio.",
+        "evidenceLink": "Fonti"
+      },
+      "routes": [
+        {
+          "eyebrow": "BIO-BASED INDIGO",
+          "title": "Indaco biobased",
+          "lede": "Un nuovo blu fatto con il carbonio assorbito dalle piante.",
+          "chip": "CO₂ assorbita dall’aria",
+          "steps": [
+            {
+              "label": "01 / Materia prima",
+              "title": "Biomassa che ricresce",
+              "text": "Il carbonio assorbito dalle piante con la fotosintesi è contenuto nella materia prima.",
+              "imageAlt": "Illustrazione di un albero con foglie verdi sull’erba: un esempio di biomassa vegetale"
+            },
+            {
+              "label": "02 / Produzione",
+              "title": "Fermentazione microbica",
+              "text": "I microrganismi convertono in indaco la materia prima derivata da biomassa.",
+              "imageAlt": "Illustrazione di un fermentatore che produce indaco con brodo di coltura e microrganismi",
+              "note": "Anche durante la fermentazione si emette una parte di CO₂"
+            },
+            {
+              "label": "03 / Prodotto",
+              "title": "L’indaco, e poi il denim",
+              "text": "Il carbonio venuto dalla biomassa finisce nel blu del denim.",
+              "imageAlt": "Illustrazione di polvere di indaco blu e di jeans piegati"
+            },
+            {
+              "label": "04 / Dopo l’uso",
+              "title": "Una parte torna nell’aria",
+              "text": "Diventato CO₂ per incenerimento o decomposizione, può tornare nell’atmosfera.",
+              "imageAlt": "Illustrazione di una nuvola che rappresenta l’atmosfera in cui torna il carbonio quando la CO₂ viene emessa dopo l’uso",
+              "note": "Percorso e tempi dipendono dal modo di trattamento"
+            }
+          ],
+          "loop": "Crescendo, nuove piante possono assorbire di nuovo la CO₂.",
+          "loopSub": "Una materia prima legata al recente ciclo biologico del carbonio",
+          "coreLabel": "Il cuore di questa via",
+          "core": "Dall’aria alla pianta, dalla pianta al blu.",
+          "coreSub": "Utilizza il carbonio di una materia prima rinnovabile."
+        },
+        {
+          "eyebrow": "FOSSIL-BASED INDIGO",
+          "title": "Indaco di sintesi petrolchimica",
+          "lede": "Carbonio immagazzinato a lungo sotto terra viene estratto e usato come materia prima per il blu.",
+          "steps": [
+            {
+              "label": "01 / Materia prima",
+              "title": "Petrolio immagazzinato sotto terra",
+              "text": "Si estrae carbonio fossile immagazzinato nel corso di lunghi tempi geologici.",
+              "imageAlt": "Illustrazione di una pompa petrolifera che estrae petrolio dagli strati sotterranei, con un barile"
+            },
+            {
+              "label": "02 / Produzione",
+              "title": "Sintesi chimica da materie prime petrolifere",
+              "text": "Materie prime di origine petrolifera vengono convertite in indaco con processi chimici.",
+              "imageAlt": "Illustrazione di un impianto chimico che converte materie prime petrolifere in indaco"
+            },
+            {
+              "label": "03 / Prodotto",
+              "title": "L’indaco, e poi il denim",
+              "text": "Il carbonio venuto dal petrolio finisce nel blu del denim.",
+              "imageAlt": "Illustrazione di polvere di indaco blu e di jeans piegati"
+            },
+            {
+              "label": "04 / Dopo l’uso",
+              "title": "Emesso, entra nell’atmosfera",
+              "text": "Rilasciato come CO₂, il carbonio sotterraneo passa nell’atmosfera e nella biosfera.",
+              "imageAlt": "Illustrazione di una nuvola che rappresenta l’atmosfera in cui passa il carbonio sotterraneo emesso come CO₂",
+              "note": "Non tutto il carbonio del prodotto viene rilasciato subito"
+            }
+          ],
+          "loop": "Il petrolio non si riforma al ritmo con cui lo usiamo.",
+          "loopSub": "Anche se il carbonio emesso viene assorbito dalle piante, il giacimento di petrolio sotterraneo non si riempie subito.",
+          "coreLabel": "Il cuore di questa via",
+          "core": "Dal carbonio immagazzinato sotto terra al blu.",
+          "coreSub": "Quando viene emesso, un carbonio immagazzinato da lunghissimo tempo entra nell’atmosfera."
+        }
+      ],
+      "footnote": "Schema concettuale semplificato dei flussi di carbonio delle materie prime. L’albero simboleggia la biomassa vegetale e non identifica materie prime o impianti reali di Blugene. Entrambe le vie possono generare emissioni legate all’energia di produzione, alla raffinazione e al trasporto. Le linee tratteggiate indicano percorsi possibili; non significano recupero totale, biodegradabilità completa, riassorbimento immediato o neutralità carbonica.",
+      "origin": {
+        "eyebrow": "02 / WHY THE ORIGIN MATTERS",
+        "title": "Il carbonio è lo stesso. Il tempo no.",
+        "body": "La differenza non sta nella natura della CO₂, ma nel serbatoio da cui si prende il carbonio e nel tempo che serve a ricostituirlo.",
+        "items": [
+          {
+            "label": "Carbonio di origine petrolifera",
+            "title": "Carbonio immagazzinato a lungo",
+            "text": "Si estrae e si usa carbonio immagazzinato sotto terra per ere intere. Il petrolio non si riforma al ritmo con cui lo usiamo.",
+            "tags": [
+              "Stoccaggio su scala geologica",
+              "Estrazione · uso"
+            ]
+          },
+          {
+            "label": "Carbonio biobased",
+            "title": "Il carbonio di una risorsa che ricresce",
+            "text": "Si usa il carbonio che le piante hanno assorbito di recente dall’aria. Se la biomassa viene rigenerata, l’assorbimento di carbonio può continuare con la crescita di nuove piante.",
+            "tags": [
+              "Crescita · assorbimento",
+              "Uso · rigenerazione"
+            ]
+          }
+        ],
+        "closing": "Ciò che Blugene vuole cambiare è l’origine del carbonio che fa il blu."
+      },
+      "evidence": {
+        "eyebrow": "03 / A CLEARER BLUE",
+        "title": "Una buona spiegazione ha bisogno di prove chiare.",
+        "body": "Da dove viene la materia prima e quanto incide sull’ambiente sono due domande diverse.",
+        "items": [
+          {
+            "label": "Origine del carbonio",
+            "title": "«È biobased?»",
+            "text": "Un’analisi al radiocarbonio come la ASTM D6866 permette di determinare la quota di carbonio biobased nel carbonio organico di un campione.",
+            "tag": "Prova del contenuto di carbonio biobased"
+          },
+          {
+            "label": "Impatto sul ciclo di vita",
+            "title": "«Di quanto sono diminuite le emissioni di carbonio?»",
+            "text": "Bisogna contare insieme tutti i processi e i consumi energetici compresi nell’ambito del confronto: coltivazione della materia prima, produzione, trasporto, fine vita. A questa domanda risponde la valutazione del ciclo di vita (LCA).",
+            "tag": "Confronto LCA a pari funzione e pari ambito"
+          }
+        ],
+        "calloutTitle": "Essere biobased non significa automaticamente essere a impatto climatico zero.",
+        "calloutBody": "Usare una materia prima che partecipa al ciclo del carbonio non è la stessa cosa di un prodotto con emissioni nette pari a zero. Questa parte spiega la via delle materie prime e non presenta cifre di riduzione delle emissioni per prodotto. I risultati della prova del contenuto di carbonio biobased di Blugene sono nella <link>pagina Dati · Certificazioni</link>, insieme a laboratorio, metodo e numero di rapporto."
+      },
+      "faq": {
+        "eyebrow": "A FEW GOOD QUESTIONS",
+        "title": "Le domande di chi ama il denim.",
+        "items": [
+          {
+            "question": "Perché la fermentazione è legata al ciclo del carbonio?",
+            "answers": [
+              "Conta più l’origine della materia prima che la fermentazione in sé. Il carbonio della biomassa è stato formato dalle piante assorbendo CO₂ dall’atmosfera. Poiché i microrganismi convertono questo carbonio in indaco, la materia prima è legata al recente ciclo biologico del carbonio.",
+              "La fermentazione richiede energia e può anche emettere CO₂. Il solo fatto di essere «prodotto per fermentazione» non porta quindi a zero le emissioni totali."
+            ]
+          },
+          {
+            "question": "Indossare i jeans riduce il carbonio?",
+            "answers": [
+              "Indossare i jeans non rimuove, di per sé, carbonio dall’aria. Il cambiamento descritto qui consiste nel passare il carbonio della materia prima del colorante indaco da un’origine petrolifera a un’origine da biomassa. L’impatto ambientale di un paio di jeans finito dipende anche dalla coltivazione del cotone, dalla tessitura, dalla tintura, dal lavaggio e altro."
+            ]
+          },
+          {
+            "question": "Il carbonio dei vestiti torna alla fine tutto alla natura?",
+            "answers": [
+              "Percorso e velocità dipendono dal trattamento reale: riuso, riciclo, incenerimento o discarica. La freccia di ciclo illustra l’idea che il carbonio possa essere rilasciato come CO₂ e riassorbito dalle piante. Non significa che vestiti o colorante siano completamente biodegradabili, compostabili o interamente recuperabili."
+            ]
+          },
+          {
+            "question": "Che cosa indica un valore di «contenuto di carbonio biobased»?",
+            "answers": [
+              "Il contenuto di carbonio biobased secondo il metodo ASTM D6866 è la quota di carbonio biobased nel carbonio organico del campione testato. Non indica la purezza del colorante, né la quota di materia vegetale nella massa totale del prodotto, né una riduzione delle emissioni di carbonio.",
+              "Per verificare il contenuto di un prodotto reale, guarda insieme l’oggetto e il metodo di prova, il campione e il lotto, il laboratorio e il risultato. Il valore misurato di Blugene (98%, pMC 97.73) è nella pagina Dati · Certificazioni, con laboratorio, metodo e numero di rapporto."
+            ]
+          },
+          {
+            "question": "Il bio-indaco è un colorante naturale estratto dalle piante?",
+            "answers": [
+              "Il metodo di Blugene converte la biomassa in indaco per fermentazione microbica. È diverso dalla produzione tradizionale di indaco naturale, che estrae il pigmento da foglie come quelle del persicaria tinctoria. «Biobased» descrive l’origine del carbonio che fa il pigmento."
+            ]
+          }
+        ]
+      },
+      "closing": {
+        "eyebrow": "FOR THE DENIM WE LOVE.",
+        "text": "Un blu da amare a lungo. Rinnovato fin dall’origine."
+      },
+      "sources": {
+        "summary": "Le fonti dietro questa storia",
+        "introStrong": "Spiegazioni fondate su letteratura e norme",
+        "introText": "La distinzione tra ciclo biologico del carbonio e carbonio fossile, e tra prova del contenuto di carbonio biobased e valutazione del ciclo di vita.",
+        "items": [
+          {
+            "title": "NASA Earth Observatory — The Carbon Cycle",
+            "note": "Fotosintesi, ciclo del carbonio veloce e lento, ingresso del carbonio fossile nell’atmosfera."
+          },
+          {
+            "title": "ASTM D6866 — Determinazione del contenuto biobased mediante analisi al radiocarbonio",
+            "note": "La prova valuta l’origine biologica del carbonio; non misura direttamente le riduzioni di gas serra."
+          },
+          {
+            "title": "GHG Protocol — Product Life Cycle Standard",
+            "note": "Principi per quantificare l’impatto di un prodotto sui gas serra in una prospettiva di ciclo di vita."
+          },
+          {
+            "title": "USDA BioPreferred — Domande frequenti",
+            "note": "Il significato di un contenuto espresso in carbonio organico, distinto dalla valutazione dell’impatto ambientale o delle prestazioni."
+          }
+        ],
+        "processStrong": "Il processo Blugene",
+        "processText": "Redatto a partire dall’informazione fornita dal brand secondo cui l’indaco è prodotto per fermentazione di biomassa. Gli schemi sono elaborazioni per facilitare la comprensione e non rappresentano bilanci di materia o emissioni reali.",
+        "externalLinkHint": "Si apre in una nuova finestra"
+      }
+    },
     "processTitle": "Dalla materia prima al tessuto",
-    "safetyTitle": "Ambiente di lavoro",
-    "safetyBody": "Il catalogo tratta l'ambiente di lavoro legato alla manipolazione di sostanze chimiche pericolose. Questo sito non formula alcuna affermazione quantitativa sulla sicurezza degli operatori e si limita a descrivere la differenza tra le sostanze manipolate.",
-    "safetyAlt": "Illustrazione che contrappone la manipolazione di sostanze chimiche pericolose a quella di sostanze non pericolose (catalogo p.4)",
     "impurityTitle": "Perché verifichiamo l'anilina",
     "impurityBody": "Anilina e N-metilanilina sono materie prime o intermedi della via di sintesi chimica e possono rimanere, non reagite, nella polvere di indaco finale. Per la loro tossicità e potenziale cancerogenicità, diversi standard di certificazione ne limitano la concentrazione ammessa nei coloranti tessili e nei prodotti finiti.",
-    "cta": "Vedi tutti i dati di prova",
-    "conceptCaptionSafety": "Catalogo p.4, Figure 2-1. Illustrazione che contrappone la manipolazione di sostanze pericolose e non pericolose; non è una foto di un reparto reale."
+    "cta": "Vedi tutti i dati di prova"
   },
   "DyeingPrinting": {
     "metaTitle": "Tintura · Stampa",

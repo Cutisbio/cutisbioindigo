@@ -117,6 +117,18 @@ CLIENT_IMAGES: list[tuple[str, str]] = [
      "고객 제공 — 2026-09-09 채팅 첨부 고해상도 사진(2000×1091)에서 실 염색 라인 중심으로 정사각 잘라냄. 카탈로그 자료가 아니며 생성 이미지로 보임"),
     ("brand/dermatologist-choi-wonwoo.webp",
      "고객 제공 — 2026-09-11 채팅 첨부 인물 사진 원본(3744×5616 JPEG)을 자르지 않고 960px 폭으로 축소(WebP q86, 메타데이터 제거). 브랜드 페이지 선언 구역의 Blugene 기획자(피부과전문의 최원우) 소개"),
+    ("technology/carbon/bio-biomass-tree.webp",
+     "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: 초록 잎 나무(식물성 바이오매스). 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임"),
+    ("technology/carbon/fermenter.webp",
+     "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: 발효조. 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임"),
+    ("technology/carbon/indigo-denim.webp",
+     "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: 인디고 분말과 청바지. 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임"),
+    ("technology/carbon/co2-cloud.webp",
+     "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: CO₂ 구름(대기). 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임"),
+    ("technology/carbon/fossil-oil-pump.webp",
+     "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: 원유 채굴 펌프와 석유통. 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임"),
+    ("technology/carbon/refinery.webp",
+     "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: 화학 공장. 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임"),
 ]
 
 
