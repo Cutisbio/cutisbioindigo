@@ -91,7 +91,7 @@ export default async function BrandPage({ params }: { params: Promise<{ locale: 
         </div>
       </section>
 
-      <BrandManifesto />
+      <BrandManifesto portrait />
 
       {/* 우리가 약속하는 것 / 말하지 않는 것 */}
       <section className="w-full bg-white">
