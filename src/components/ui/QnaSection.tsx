@@ -7,7 +7,7 @@ type QnaItem = {
 
 interface QnaSectionProps {
   items: QnaItem[];
-  // AI가 h2 혹은 h3를 통해 계층 구조를 이해하도록 Heading 레벨을 받습니다.
+  /** 문서 계층이 유지되도록 Heading 레벨을 상위에서 지정한다. */
   headingLevel?: 'h2' | 'h3';
 }
 
@@ -15,14 +15,19 @@ export default function QnaSection({ items, headingLevel = 'h3' }: QnaSectionPro
   const HeadingTag = headingLevel;
 
   return (
-    <div className="space-y-6">
+    <dl className="divide-y divide-[color:var(--color-washed)] border-y border-[color:var(--color-washed)]">
       {items.map((item, index) => (
-        <div key={index} className="bg-white p-6 rounded-lg shadow-sm border">
-          {/* Heading 태그를 질문으로 렌더링하고, 바로 다음에 답변 p 태그가 오도록 강제합니다. */}
-          <HeadingTag className="text-xl font-bold mb-3">{item.question}</HeadingTag>
-          <p className="text-gray-700 leading-relaxed">{item.answer}</p>
+        <div key={index} className="py-6">
+          <dt>
+            <HeadingTag className="text-lg font-semibold break-keep text-[var(--color-indigo-deep)]">
+              {item.question}
+            </HeadingTag>
+          </dt>
+          <dd className="mt-3 text-base leading-[1.85] break-keep text-[var(--color-ink)]/85">
+            {item.answer}
+          </dd>
         </div>
       ))}
-    </div>
+    </dl>
   );
 }

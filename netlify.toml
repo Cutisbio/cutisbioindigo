@@ -2,5 +2,35 @@
   command = "npm run build"
   publish = ".next"
 
+[build.environment]
+  # 운영 도메인. canonical / hreflang / sitemap 이 이 값을 사용한다.
+  # 다른 도메인(스테이징 등)에 배포할 때는 Netlify 환경변수로 덮어쓴다.
+  NEXT_PUBLIC_BASE_URL = "https://blugene.co"
+
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# www.blugene.co → blugene.co (apex) 로 영구 이동.
+# canonical 을 apex 로 통일하기 위한 설정이다.
+[[redirects]]
+  from = "https://www.blugene.co/*"
+  to = "https://blugene.co/:splat"
+  status = 301
+  force = true
+
+# ---------------------------------------------------------------------------
+# 이전 도메인(cutisbioindigo.kr)을 새 도메인으로 넘길 준비가 되면 아래 주석을 해제한다.
+# 지금은 두 도메인이 같은 내용을 제공하고 canonical 태그가 blugene.co 를 가리킨다.
+# 실제 전환은 DNS·검색엔진 등록 상태를 확인한 뒤에 진행할 것.
+#
+# [[redirects]]
+#   from = "https://cutisbioindigo.kr/*"
+#   to = "https://blugene.co/:splat"
+#   status = 301
+#   force = true
+#
+# [[redirects]]
+#   from = "https://www.cutisbioindigo.kr/*"
+#   to = "https://blugene.co/:splat"
+#   status = 301
+#   force = true

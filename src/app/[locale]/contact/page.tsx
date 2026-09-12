@@ -1,84 +1,81 @@
-import React from 'react';
-import { getTranslations } from 'next-intl/server';
+import type { Metadata } from 'next';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import SchemaOrg, { buildOrganizationSchema } from '@/components/seo/SchemaOrg';
+import SectionHeading from '@/components/blugene/SectionHeading';
+import SampleInquiryPanel from '@/components/blugene/SampleInquiryPanel';
+import MapEmbed from '@/components/blugene/MapEmbed';
+import ContactDetails from '@/components/blugene/ContactDetails';
+import { BRAND, LOCALES, SITE_URL, buildPageMetadata } from '@/data/blugene/site';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Contact' });
-
-  return {
+  return buildPageMetadata({
+    locale,
+    path: '/contact',
     title: t('title'),
     description: t('description'),
-  };
+  });
 }
 
 export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  setRequestLocale(locale);
+
   const t = await getTranslations({ locale, namespace: 'Contact' });
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cutisbioindigo.kr';
-  
-  const orgSchema = buildOrganizationSchema(
-    'CutisBio',
-    baseUrl,
-    `${baseUrl}/logo.png`
-  );
+  const tInq = await getTranslations({ locale, namespace: 'Inquiry' });
+  const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/brand/cutisbio-logo.png`);
 
   return (
     <>
       <SchemaOrg schema={orgSchema} />
-      <div className="max-w-4xl mx-auto space-y-10 sm:space-y-12 py-8 sm:py-12 px-4 sm:px-6">
-        <section className="text-center mt-10 sm:mt-16">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-4 sm:mb-6 border-b pb-3 sm:pb-4 inline-block">
-            {t('title')}
-          </h1>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 px-2 sm:px-0 leading-relaxed">
-            {t('description')}
-          </p>
-        </section>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 mt-8 sm:mt-12 bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-gray-100 mx-2 sm:mx-0">
-          <div className="space-y-6 sm:space-y-8 flex flex-col justify-center">
+      <section className="w-full border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
+        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+          <SectionHeading
+            headingLevel="h1"
+            eyebrow={tInq('eyebrow')}
+            title={t('title')}
+            body={t('description')}
+            size="hero"
+          />
+        </div>
+      </section>
+
+      <section className="w-full bg-white">
+        <div className="mx-auto max-w-[1280px] px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+          <div className="grid gap-12 lg:grid-cols-[1.15fr_1fr] lg:gap-16">
+            <SampleInquiryPanel />
+
             <div>
-              <h2 className="text-lg sm:text-xl font-bold text-gray-800 flex items-center mb-2 sm:mb-3">
-                <svg className="w-5 sm:w-6 h-5 sm:h-6 mr-2 sm:mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
-                {t('addressTitle')}
+              <h2 className="text-xl font-semibold break-keep text-[var(--color-indigo-deep)]">
+                {t('mapTitle')}
               </h2>
-              <p className="text-base sm:text-lg text-gray-600 leading-relaxed font-medium pl-7 sm:pl-9">
+              <p className="mt-4 text-base leading-relaxed break-keep whitespace-pre-line text-[var(--color-ink)]/85">
                 {t('addressDetail')}
               </p>
+              {/* 검색어는 로마자 주소를 써서 언어와 무관하게 같은 지점이 해석되게 한다 */}
+              <MapEmbed
+                src={`https://maps.google.com/maps?q=${encodeURIComponent(
+                  '842 Nonhyeon-ro, Gangnam-gu, Seoul, Korea'
+                )}&hl=${locale}&z=16&ie=UTF8&iwloc=&output=embed`}
+                title={t('mapTitle')}
+                openLabel={t('mapTitle')}
+              />
+              {/* 연락처는 문의 폼이 아니라 지도 옆에 둔다 — 같은 '찾아오시는 길' 정보다 */}
+              <ContactDetails locale={locale} />
             </div>
-
-            <div>
-              <h2 className="text-lg sm:text-xl font-bold text-gray-800 flex items-center mb-2 sm:mb-3">
-                <svg className="w-5 sm:w-6 h-5 sm:h-6 mr-2 sm:mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
-                {t('emailTitle')}
-              </h2>
-              <a href={`mailto:contact@cutisbio.com`} className="text-base sm:text-lg text-blue-600 hover:text-blue-800 transition font-medium pl-7 sm:pl-9 inline-block break-all">
-                {t('emailAddress')}
-              </a>
-            </div>
-          </div>
-
-          <div className="h-full min-h-[350px] w-full bg-gray-100 rounded-lg overflow-hidden shadow-inner border border-gray-200 relative">
-            <h2 className="sr-only">{t('mapTitle')}</h2>
-            <iframe 
-              src="https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%EC%8B%9C%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%85%BC%ED%98%84%EB%A1%9C%20842&t=&z=16&ie=UTF8&iwloc=&output=embed"
-              width="100%" 
-              height="100%" 
-              className="absolute top-0 left-0 border-0"
-              allowFullScreen={false} 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Google Map Location"
-            ></iframe>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

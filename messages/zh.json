@@ -1,66 +1,734 @@
 {
-  "Blog": {
-    "eyebrow": "洞察 & 技术",
-    "title": "博客",
-    "description": "深入介绍 CutisBio 合成生物学技术和可持续时尚的文章。",
-    "categoryTech": "技术",
-    "readMore": "阅读更多",
-    "readTime": "{minutes} 分钟阅读"
-  },
-  "Layout": {
-    "home": "首页",
+  "Nav": {
+    "brand": "品牌",
+    "technology": "技术",
+    "dyeingPrinting": "染色 · 印花",
+    "dataCertifications": "数据 · 认证",
+    "sampleInquiry": "样品咨询",
     "about": "关于我们",
-    "tech": "技术介绍",
-    "news": "最新消息",
+    "news": "新闻",
     "contact": "联系我们",
-    "footerText": "Sustainable Denim Dye. Aniline free - Human safe. © 2026 CutisBio. All rights reserved."
+    "menu": "菜单",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "languageLabel": "选择语言",
+    "skipToContent": "跳至正文",
+    "homeAria": "返回 Blugene 首页"
+  },
+  "Footer": {
+    "tagline": "Better Blue for Everyday Denim",
+    "sitemapTitle": "网站导航",
+    "contactTitle": "联系",
+    "legalTitle": "资料说明",
+    "sourceNote": "本网站的检测数值与认证信息，均取自 2026 年 7 月发行的 CutisBio 产品目录。资料基准日 {date}。",
+    "companyLine": "CutisBio Co., Ltd.",
+    "rights": "© 2026 CutisBio Co., Ltd. All rights reserved.",
+    "catalogueLink": "下载原版产品目录（PDF）"
   },
   "Home": {
-    "heroTitle": "新一代环保牛仔染料，CutisBio Indigo",
-    "heroSubtitle": "保护皮肤安全的靛蓝染料。凭借合成生物学技术，在不使用有毒物质（苯胺）的情况下，打造出最具可持续性的牛仔染色解决方案。",
-    "heroImageAlt": "直观的环保外观，蓝色牛仔面料与纯净水滴交织",
-    "impactMetricsTitle": "CutisBio带来的积极改变",
-    "metric1Value": "100%",
-    "metric1Text": "Aniline-Free（完全阻断毒性物质）",
-    "metric2Value": "Drop-in",
-    "metric2Text": "可立即应用于现有染色工厂设备",
-    "metric3Value": "Eco-friendly",
-    "metric3Text": "最大程度减少生产过程中的水污染和碳排放",
-    "coreValuesTitle": "CutisBio技术的核心价值",
-    "coreValuesDesc": "通过合成生物学（Synthetic Biology）革新传统的石化基染色产业。",
-    "feature1": "精准发酵 (Precision Fermentation)",
-    "benefit1": "以可持续生物合成过程模仿自然生态系统",
-    "feature2": "无苯胺 (Aniline-Free)",
-    "benefit2": "从根本上排除威胁工人和消费者的致癌物质",
-    "feature3": "环保靛蓝 (Sustainable Indigo)",
-    "benefit3": "最大程度减少水污染，实现时尚产业循环经济",
-    "ctaTitle": "您愿意加入可持续时尚的未来吗？",
-    "ctaText": "了解CutisBio的创新微生物靛蓝染料如何取代传统染色工艺。",
-    "ctaButton": "查看技术详情",
-    "qualityTitle": "卓越的染色性和色牢度验证",
-    "qualitySubtitle": "经日本高端牛仔布染色公司的彻底比较测试，证明CutisBio靛蓝与传统化学靛蓝相比，展现出更深邃、更出色的色泽和卓越的耐久性。",
-    "qualityImageAlt": "牛仔布染色及色牢度测试结果图片",
-    "qualityBadge": "Quality Proven"
+    "metaTitle": "由靛蓝DNA与发酵孕育的蓝。",
+    "metaDescription": "由靛蓝DNA与发酵孕育的蓝。以微生物发酵生产的生物靛蓝 Blugene — 生物基碳含量 98%，苯胺 · N-甲基苯胺未检出（检出限 5 mg/kg）。",
+    "ctaTitle": "下一条丹宁的蓝，与我们一同创造。",
+    "ctaText": "我们期待丹宁品牌、面料企业、染厂与印花企业的咨询。",
+    "ctaButton": "Blugene 样品咨询"
+  },
+  "Hero": {
+    "descriptor": "由靛蓝DNA与发酵孕育的蓝。",
+    "titleLine1": "相伴一生的丹宁，",
+    "titleLine2": "更安全的蓝。",
+    "body": "那抹终生贴合肌肤的蓝，以合成生物学重获新生。为了肌肤健康，连细微风险也不妥协的靛蓝 Blugene。",
+    "ctaPrimary": "Blugene 样品咨询",
+    "ctaSecondary": "查看数据与认证",
+    "tagline": "Better Blue for Everyday Denim",
+    "imageAlt": "身穿丹宁夹克的家长抱着孩子，眺望玉米田、草地与水畔风景的画面。取自所提供产品目录封面的品牌形象图。",
+    "imageCredit": "目录 p.1 收录图片"
+  },
+  "EvidenceStrip": {
+    "carbonValue": "98%",
+    "carbonLabel": "生物基碳含量",
+    "anilineValue": "未检出",
+    "anilineLabel": "苯胺",
+    "nMethylanilineValue": "未检出",
+    "nMethylanilineLabel": "N-甲基苯胺",
+    "note": "以上为所提供产品目录中的检测结果。未检出是指在所列检测方法下低于方法检出限 5 mg/kg，并不表示含量为 0。98% 为生物基碳含量，并非靛蓝纯度或排放削减率。",
+    "sourceCarbon": "出处：产品目录 p.3 Table 1-1（KATRI, ASTM D6866-24a Method B）",
+    "sourceAniline": "出处：产品目录 p.5 Table 2-3（KOTERI, KS K 0734 2019）",
+    "cta": "查看详细检测信息"
+  },
+  "Manifesto": {
+    "eyebrow": "ACROSS BORDERS. ACROSS GENERATIONS.",
+    "title": "因为这是与我们的肌肤终生接触的衣服。",
+    "body": "无论身处哪个国家，无论多大年龄，牛仔布始终伴随我们的生活。因为牛仔布是长久穿着、每天贴着肌肤的衣物，我们与肌肤健康的专家——皮肤科专科医生一起，重新审视了从制造颜色、染色到穿上牛仔布那一刻的每一个环节。Blugene从以下三个问题开始。",
+    "questions": [
+      "用什么制成",
+      "残留哪些杂质",
+      "结果能否被验证"
+    ],
+    "cta": "听听问题的答案",
+    "portraitAlt": "身穿白大褂微笑的皮肤科专科医生 Choi Wonwoo（医学博士）",
+    "portraitName": "Blugene 策划人：皮肤科专科医生、医学博士 Choi Wonwoo",
+    "portraitCredential": "Blugene director: CHOI WONWOO M.D., Ph.D., Board Certified Dermatologist"
+  },
+  "Impurity": {
+    "eyebrow": "WHAT REMAINS MATTERS",
+    "title": "连看不见的部分，也是我们的标准。",
+    "body": "Blugene的基础CutisBio生物靛蓝在目录中列出的测试中未检出苯胺和N-甲基苯胺。",
+    "context": "苯胺与 N-甲基苯胺在化学合成路线中用作起始物或中间体，可能作为未反应残留物留在最终的靛蓝粉末中。多项认证标准对纺织用染料及最终产品中该类物质的允许浓度作出限制。",
+    "cta": "查看完整对比数据",
+    "chartTitle": "市售靛蓝染料的苯胺 · N-甲基苯胺分析",
+    "chartCaption": "产品目录 p.5 Figure 2-2 · Table 2-3 中的 9 个市售样品。纵轴单位为 mg/kg，自 0 起始。"
+  },
+  "Science": {
+    "eyebrow": "SYNTHETIC BIOLOGY",
+    "title": "重新书写靛蓝的 DNA。",
+    "body": "CutisBio利用微生物的生物合成途径和发酵来生产靛蓝。",
+    "cta": "了解技术详情",
+    "diagramTitle": "从原料到面料",
+    "diagramNote": "Blugene 走向牛仔布的起点是可再生植物原料：靛蓝的蓝色 DNA 通过合成生物学与精密发酵工艺，重生为染料和墨水。由此制成的 Blugene 靛蓝染料已获得 ZDHC MRSL、OEKO-TEX ECO PASSPORT、USDA BioPreferred 等认证，为我们穿着的牛仔布面料上色。",
+    "steps": [
+      {
+        "title": "可再生原料",
+        "text": "来自玉米等生物质的可再生碳，是这一切的起点。",
+        "imageAlt": "玉米地照片。作为生物质原料的概念图像，并非 CutisBio 实际农场的照片。"
+      },
+      {
+        "title": "微生物发酵",
+        "text": "利用微生物的生物合成途径，通过发酵制造靛蓝。",
+        "imageAlt": "发酵设备照片。透视窗内可见蓝色培养液的发酵罐，以及控制台前的两名工作人员。此为表示发酵工艺的概念图像，并非 CutisBio 实际设备或员工的照片。"
+      },
+      {
+        "title": "靛蓝回收 · 产品化",
+        "text": "经回收与精制，制成粉末与数码印花墨水。",
+        "imageAlt": "装有蓝色靛蓝粉末的玻璃瓶和数码印刷墨水瓶的照片。这是为了表示两种产品形式的概念图像，并非 CutisBio 实际产品的照片。"
+      },
+      {
+        "title": "面料染色 · 印花",
+        "text": "应用于棉 · 真丝 · 羊绒染色与数码印花。",
+        "imageAlt": "染色厂照片：靛蓝染液槽上方，蓝色纱束正绕过滚筒。此为表示织物染色的概念图像，并非 CutisBio 实际设备的照片。"
+      }
+    ]
+  },
+  "Environment": {
+    "eyebrow": "FROM RENEWABLE CARBON",
+    "title": "为穿着的人着想。也为制造的过程着想。",
+    "body": "从可再生碳出发的靛蓝。从原料来源到成分分析，我们以可供验证的资料说明自己的做法。",
+    "carbonCardTitle": "生物基碳含量",
+    "carbonCardText": "指产品所含碳中来自可再生原料的比例。依据产品目录 p.3 Table 1-1 的测定值（pMC 97.73），并非靛蓝纯度或碳排放削减率。",
+    "scopeNote": "本产品目录未收录各产品的全生命周期评价（LCA）、用水量、能源与碳排放资料。超出已核实范围的环境绩效数值，本网站不予标示。",
+    "cta": "查看依据资料",
+    "imageAlt": "由原料作物、发酵设备、蓝色面料到身着丹宁的人所串联的价值链概念图。并非 CutisBio 实际工厂或员工照片。"
+  },
+  "Performance": {
+    "eyebrow": "PERFORMANCE",
+    "title": "在真实面料上验证的染色性。",
+    "body": "我们分别以植物 · 化学 · 生物靛蓝染制棉、真丝与羊绒进行比较。产品目录记载，在耐皂洗 · 耐光 · 耐摩擦 · 耐汗渍色牢度方面，其表现相当（comparable performance）。",
+    "fabricAlt": "9 块面料样品照片。自左起依次为以植物靛蓝染制的棉 · 真丝 · 羊绒（#1~#3）、化学靛蓝（#4~#6）、生物靛蓝（#7~#9）。",
+    "fabricCaption": "目录 p.6 图3-1。",
+    "sampleLegendPlant": "植物靛蓝",
+    "sampleLegendChemical": "化学靛蓝",
+    "sampleLegendBio": "生物靛蓝",
+    "fiberCotton": "棉",
+    "fiberSilk": "真丝",
+    "fiberCashmere": "羊绒",
+    "cta": "查看色牢度完整表格",
+    "honestNote": "这并不表示在所有项目上均更优。部分耐摩擦色牢度项目也记录了较低等级，表中已如实呈现。",
+    "additionalCaseTitle": "追加面料评估案例",
+    "additionalCaseBody": "存储库中存放的独立染色评估照片。以下值是原件上介绍的日文标签，‘合成’意味着合成。",
+    "additionalCaseAlt": "对比在 4 回 · 6 回 · 8 回染色条件下，分别以 バイオ②-1、合成、バイオ②-2 染制的面料照片",
+    "additionalCaseProvenance": "因检测机构 · 检测方法 · 检测日期与委托方信息未能确认，故与产品目录 p.6 的检测分开呈现。这与上表的样品 #1~#9 并非同一组资料。",
+    "additionalCaseCyclesLabel": "染色次数",
+    "additionalCaseRowsLabel": "分类"
+  },
+  "Fastness": {
+    "title": "色牢度检测结果",
+    "intro": "本表原样转录自产品目录 p.6 Table 3-1 ~ 3-4。等级保留原文的分级写法（如 4-5），未换算为小数。",
+    "sampleHeader": "样品",
+    "itemHeader": "检测项目",
+    "methodLabel": "检测方法",
+    "tableLaundering": "耐皂洗色牢度",
+    "tableLight": "耐光色牢度",
+    "tableRubbing": "耐摩擦色牢度",
+    "tablePerspiration": "耐汗渍色牢度",
+    "captionLaundering": "表 3-1. 耐皂洗色牢度检测结果（样品 #1~#9）",
+    "captionLight": "表 3-2. 耐光色牢度检测结果（样品 #1~#9）",
+    "captionRubbing": "表 3-3. 耐摩擦色牢度检测结果（样品 #1~#9，分经纱 · 纬纱）",
+    "captionPerspiration": "表 3-4. 耐汗渍色牢度检测结果（样品 #1~#9，分酸性 · 碱性）",
+    "groupChange": "变色",
+    "groupStain": "沾色",
+    "rowColorChange": "变色",
+    "rowAcetate": "醋酯纤维",
+    "rowCotton": "棉",
+    "rowNylon": "锦纶",
+    "rowPolyester": "涤纶",
+    "rowAcrylic": "腈纶",
+    "rowWool": "羊毛",
+    "rowDry": "干摩",
+    "rowWet": "湿摩",
+    "subWarp": "经纱",
+    "subWeft": "纬纱",
+    "subAcid": "酸性",
+    "subAlkali": "碱性",
+    "sourceImageCta": "查看原始表格图片",
+    "sourceImageAlt": "产品目录 p.6 色牢度表 3-1 ~ 3-4 的原始图片",
+    "gradeNote": "等级是1（低）到5（高）之间的排名值，‘4-5’是介于这两个等级之间的原文表述。标为4以下的等级在表中以粗体显示。"
+  },
+  "ShadeLibrary": {
+    "eyebrow": "SHADE LIBRARY",
+    "title": "属于你品牌的，专属蓝。",
+    "body": "色彩的深浅随染料浓度与染色次数而变化。调整靛蓝与靛玉红的比例，即可打造品牌专属的色调。",
+    "gridTitle": "产品目录按浓度呈现的色样",
+    "gridHelp": "产品目录未标示各色样的浓度数值，故以位置基准的标识（A1~B6）表示。",
+    "axisLow": "Low",
+    "axisHigh": "High",
+    "axisLabel": "Blugene 浓度",
+    "rowA": "A行",
+    "rowB": "B行",
+    "swatchAlt": "产品目录 p.7 Figure 4-1 按浓度呈现的染色色样 {code}",
+    "indirubinTitle": "靛玉红带来的色调变化",
+    "indirubinBody": "靛玉红是靛蓝的红色异构体。调节以微生物发酵所得靛蓝与靛玉红的组成比例，即可打造品牌专属的蓝。",
+    "indirubinAltA": "以靛蓝 100% 染制的丹宁面料照片（产品目录 p.7 Figure 4-2）",
+    "indirubinAltB": "以靛蓝 94% · 靛玉红 6% 染制的丹宁面料照片（产品目录 p.7 Figure 4-2）",
+    "indirubinLabelA": "靛蓝 100%",
+    "indirubinLabelB": "靛蓝 94%，靛玉红 6%",
+    "indirubinToggle": "对比两种组成",
+    "indirubinNote": "这是产品目录中给出的两种组成的照片。由于未提供两者之间的混合比例，我们不在屏幕上模拟生成中间色。",
+    "colorDisclaimer": "实际颜色会因屏幕 · 面料 · 染色条件而有所不同，请以面料样品确认。",
+    "medicalNote": "本网站不涉及靛玉红的药理活性，仅从色调调节与产品开发的角度加以说明。"
+  },
+  "Products": {
+    "eyebrow": "PRODUCT FORMS",
+    "title": "粉末与印花墨水，两种形态。",
+    "body": "我们将微生物发酵制成的靛蓝，以面料染色用粉末与数码印花用墨水两种形式提供。",
+    "powderTitle": "Blugene Indigo Powder",
+    "powderText": "目录中收录了棉、丝绸、羊绒染色评估资料。",
+    "powderAlt": "盛于器皿中的深蓝色生物靛蓝粉末（产品目录 p.9）",
+    "inkTitle": "Blugene Digital Printing Ink",
+    "inkText": "用于数码印花的生物靛蓝墨水。我们可就适用性与样品提供咨询。",
+    "inkAlt": "装有深蓝色生物靛蓝数码印花墨水的玻璃瓶（产品目录 p.9）",
+    "nameNote": "上述产品名称为新品牌的网站标示方案。产品目录与证书上的原始产品名称为 “{catalogueName}”。",
+    "specNote": "粒径 · 黏度 · 保质期 · 最小起订量 · 产能与价格未见于所提供资料，故不予标示。如需相关规格，请向我们咨询，我们将确认后回复。",
+    "cyclesTitle": "染色次数与显色对比",
+    "cyclesCaption": "产品目录 p.8 Figure 5-1。对比化学靛蓝（粉末） · 生物靛蓝（粉末） · 生物靛蓝（数码印花墨水）染色 1~4 次的棉面料。",
+    "cyclesAlt": "3 行 4 列对比图。行依次为化学靛蓝粉末、生物靛蓝粉末、生物靛蓝数码印花墨水，列为染色 1~4 次。",
+    "cyclesNote": "产品目录在此示例中将色强度标示为 “数码印花墨水 > 化学靛蓝 ≈ 生物靛蓝粉末”。照片中的色彩深浅未换算为 K/S 值或色差 ΔE 测定值，也不表示在所有条件下均具性能优势。",
+    "cta": "产品资料咨询"
+  },
+  "Printing": {
+    "eyebrow": "PRINTED IN BLUE",
+    "title": "以印花拓展表现力。",
+    "body": "数码印花将颜色直接置于所需之处，实现精细的图案。我们将生物靛蓝墨水的印花成品与原作图像一并呈现。",
+    "pairOriginal": "原作图像",
+    "pairPrinted": "生物靛蓝墨水印花成品",
+    "pairAltOriginal": "用于数码印花的原作图像 {index}（产品目录 p.9 Figure 6-2）",
+    "pairAltPrinted": "以生物靛蓝墨水对同一图像进行数码印花的成品 {index}（产品目录 p.9 Figure 6-2）",
+    "pairNote": "不是产品使用前后的性能改善照片，提供的资料中没有原作者、客户、供应商的信息。",
+    "processTitle": "墨水制造流程",
+    "processCaption": "产品目录 p.9 Figure 6-1 中的各个阶段，并一并附上原文标示。",
+    "processAlt": "由原料准备、预混、研磨、过滤到制剂完成的墨水制造流程示意图（产品目录 p.9）",
+    "processNote": "产品目录原文的最后一个阶段为 “Formation”。我们未将其改写为某个确定的工艺术语，而是一并标注原文。本资料并非公开精确的生产配方。",
+    "steps": [
+      {
+        "title": "原料准备",
+        "text": "称量并备妥生物靛蓝粉末与辅料。"
+      },
+      {
+        "title": "预混",
+        "text": "与分散介质进行一次混合。"
+      },
+      {
+        "title": "研磨",
+        "text": "将颗粒均匀粉碎并分散。"
+      },
+      {
+        "title": "过滤",
+        "text": "滤除残余颗粒，使其达到适合印花的状态。"
+      },
+      {
+        "title": "制剂完成",
+        "text": "调整为最终的墨水形态。（原文标示：Formation）"
+      }
+    ],
+    "advantagesTitle": "数码印花的特点",
+    "advantages": [
+      "可实现传统染色难以呈现的高分辨率图案与配色。",
+      "将颜色直接置于所需之处，也适合小批量生产。",
+      "便于重复再现复杂的设计。"
+    ],
+    "advantagesNote": "产品目录 p.9 提及一般数码印花在节水与减废方面的幅度，但该数值并非以 Blugene 产品测得，故本网站不以数值形式标示。"
+  },
+  "DataHub": {
+    "eyebrow": "DATA & CERTIFICATIONS",
+    "title": "以原件验证的可信度。",
+    "body": "我们将检测结果与证书汇集于一处。每一项均可连同检测机构 · 检测方法 · 报告编号 · 资料基准日一并查看原件。",
+    "carbonSectionTitle": "生物基碳（C14）",
+    "carbonSectionBody": "这是测量市售靛蓝染料的生物基（可再生）碳比例的结果。此值是生物基碳含量，而不是靛蓝纯度或碳排放减少率。",
+    "anilineSectionTitle": "苯胺 · N-甲基苯胺分析",
+    "anilineSectionBody": "这是对市售靛蓝染料中残留的苯胺与 N-甲基苯胺所作的分析结果。",
+    "tableLab": "检测机构",
+    "tableMethod": "检测方法",
+    "tableReport": "检测报告编号",
+    "tableReportDate": "检测报告日期",
+    "tableDetectionLimit": "方法检出限",
+    "tableType": "靛蓝类型",
+    "tableSample": "样品",
+    "tablePmc": "pMC",
+    "tableBiobased": "生物基碳含量 (%)",
+    "tableAniline": "苯胺 (mg/kg)",
+    "tableNMethylaniline": "N-甲基苯胺 (mg/kg)",
+    "typeChemical": "化学",
+    "typePlant": "植物",
+    "typeBio": "生物",
+    "notDetected": "未检出",
+    "notDetectedShort": "N.D.",
+    "notDetectedExplain": "未检出（N.D.）是指在所列检测方法下低于方法检出限。这并非测定值为 0，因此图表中也不以 0 值柱形呈现。",
+    "sameLabelNote": "Company M 在化学靛蓝与植物靛蓝两种类型中各出现一次，故与类型一并标示以作区分。",
+    "anonymousNote": "公司名称沿用产品目录中的匿名标示，我们不对实际公司名称作任何推测。",
+    "sampleScopeNote": "这些数值是产品目录所载 9 个样品的对比结果，并非代表整个市场的统计数据。碳含量检测与苯胺检测的机构 · 方法 · 日期各不相同，因此未合并为单一指标。",
+    "chartCarbonTitle": "生物基碳含量对比 (%)",
+    "chartAnilineTitle": "苯胺 · N-甲基苯胺对比 (mg/kg)",
+    "chartAccessibleNote": "图表中的所有数值，均可在下方表格中查看。",
+    "regulatoryOmitted": "目录 p.4 中的国家与认证的限量表因为根据国家和产品类别不同适用范围不同，需要确认最新原文，因此本页面不提供数据的翻译或解释。您可以在以下 <link>原始目录第4页</link> 中查看原文，实际适用标准请参考各规定的最新原文。",
+    "catalogueTitle": "原版产品目录",
+    "catalogueBody": "可查看所提供产品目录的全部 12 页。",
+    "cataloguePage": "第 {page} 页",
+    "cataloguePageAlt": "CutisBio 生物靛蓝产品目录第 {page} 页",
+    "catalogueDownload": "下载 PDF（{size}）",
+    "catalogueAnchorNote": "下载的 PDF 为目录原始第12页的全部内容，顺序与上方缩略图的页码相同。",
+    "carbonZeroNote": "Company Z 的生物基碳含量在目录 Table 1-1 中标为 0（pMC 0.30），在 Figure 1-3 中标为 N.D.。本表采用 Table 1-1 的数值。",
+    "reportDateNote": "检测报告编号 SBED25-00000153-1 在目录 Table 1-1 中以不同的发布日期被标注了两次。已按照原本标注进行了翻译。"
+  },
+  "Certifications": {
+    "title": "全球认证",
+    "body": "提供的目录中收录的证书。在每一项中可放大查看原始证书。",
+    "numberLabel": "证书编号",
+    "issuerLabel": "认证机构",
+    "productLabel": "适用产品",
+    "pageLabel": "产品目录页码",
+    "certificateAlt": "{name} 证书原件图片",
+    "logoAlt": "{name} 认证标志",
+    "noExpiry": "文件中未标示到期日",
+    "statusDocumented": "2026 年 7 月产品目录收录的认证资料",
+    "statusWithinPeriod": "在文件所载有效期内",
+    "statusPastPeriod": "文件所载有效期已过，请咨询最新资料。",
+    "verificationNote": "此为对文件所载日期的确认，并非在认证机构数据库中查询当前认证状态的结果。",
+    "brandNameNote": "证书上的产品名称为 “CB Bio Indigo Dye Powder”。Blugene 是涵盖该产品在内的 CutisBio 生物靛蓝业务的新品牌名称，我们未改动证书图片上的产品名称。",
+    "scopeNote": "认证范围仅限于各证书所载明的产品，并不表示数码印花墨水或最终丹宁服装亦自动获得认证。",
+    "asOfLabel": "资料基准日",
+    "nextReviewLabel": "下次认证状态核查建议日",
+    "requestLatest": "咨询最新认证资料",
+    "zdhcScope": "适用范围为证书所载明的化学配制品（CB Bio Indigo Dye Powder）。使用分类为 Natural dyes (1.7.27)。",
+    "oekoScope": "产品清单载于证书的附件（enclosure），并未一并收录于产品目录中。产品分类为 2.9 Natural dyes。在查阅附件之前，我们不对适用产品范围作出界定。",
+    "usdaScope": "这是确认已取得 USDA Certified Biobased Product 标签的参与证书，标签标示比例为 98%。目录第 11 页注明该结果的精度为 ±3%（绝对值）。",
+    "okbiobasedScope": "Class 5 表示生物基碳含量在 97% 以上、100% 以下。证书上载明方法 EN 16640 与认证制度 OK 20 edition D。",
+    "zoomOpen": "放大查看证书",
+    "zoomClose": "关闭",
+    "zoomHint": "可按 Esc 键关闭。"
+  },
+  "Inquiry": {
+    "eyebrow": "SAMPLE INQUIRY",
+    "title": "下一条丹宁的蓝，与我们一同创造。",
+    "body": "请选择咨询类型并留下内容。",
+    "topicLabel": "咨询类型",
+    "topicFabricDyeing": "面料染色",
+    "topicDigitalPrinting": "数码印花",
+    "topicShadeDevelopment": "色彩共同开发",
+    "topicTechnicalData": "技术 · 认证资料",
+    "messageLabel": "建议一并告知的信息",
+    "messagePlaceholder": "请填写公司名称、联系人、面料种类、所需数量与时间安排等。",
+    "submit": "通过邮件咨询",
+    "submitHint": "点击按钮将打开默认电子邮件程序，并填写收件人、主题和内容。最后的“发送”需要您手动点击才能提交。如果电子邮件程序没有打开，请直接发送到 {email}。此界面不会向外部传输任何信息。",
+    "mailSubject": "[Blugene 样品咨询] {topic}",
+    "mailIntro": "现就 Blugene 样品 · 技术资料向贵司咨询。",
+    "mailTopicLine": "咨询类型：{topic}",
+    "mailShadeLine": "关注的色样：{shade}",
+    "mailFooter": "— 本邮件在 blugene.co 咨询页面撰写。",
+    "emailLabel": "邮箱",
+    "telLabel": "电话",
+    "addressLabel": "地址",
+    "companyRelationTitle": "Blugene 与 CutisBio",
+    "companyRelationBody": "Blugene 是 CutisBio Co., Ltd. 开发的生物靛蓝品牌名称。产品目录与证书上记载的是原始产品名称 “Bio Indigo Dye Powder (Microbial Fermentation)”。",
+    "sampleNote": "样品可否提供，将在您咨询时确认后回复。（产品目录 p.11：Samples are available upon request）"
+  },
+  "Common": {
+    "sourceLabel": "出处",
+    "cataloguePage": "产品目录 p.{page}",
+    "asOf": "资料基准日 {date}",
+    "viewOriginal": "查看原件",
+    "viewSource": "查看原始资料",
+    "close": "关闭",
+    "openImage": "放大图片",
+    "conceptImage": "概念图",
+    "brandImage": "品牌图片",
+    "testPhoto": "检测照片",
+    "imageNoteConcept": "此为用于说明概念的图片，并非拍摄实际设施 · 客户 · 检测结果的照片。",
+    "imageNotePhoto": "采用所提供产品目录中收录的照片，未作色彩调整，仅为网页用途调整了尺寸。",
+    "scrollableRegion": "可横向滚动的区域",
+    "catalogueFigure": "目录图版"
+  },
+  "Brand": {
+    "metaTitle": "品牌故事",
+    "metaDescription": "Blugene 是 CutisBio 为相伴一生的丹宁而重新打造靛蓝的生物靛蓝品牌。",
+    "heroEyebrow": "THE STORY",
+    "heroTitle": "丹宁是每天都穿的衣服，所以必须从染料开始仔细确认。",
+    "heroBody": "我们借助鲜活的发酵工艺，重新书写了制造靛蓝染料的方式。丹宁跨越种族与国界，是伴随我们日常与一生的衣服。因此，即便是其中细微的杂质，我们也不妥协。为肌肤与环境着想，重新打造靛蓝——这就是 Blugene。",
+    "nameTitle": "名字的含义",
+    "nameBody": "这是由象征靛蓝之蓝的 Blue 与生命之本的 gene 合成的名字，寓意以合成生物学与精密发酵这一尖端技术，重新打造长久受人喜爱的靛蓝之蓝。",
+    "promiseTitle": "我们所承诺的",
+    "promiseBody": "我们能承诺的是可验证的资料。",
+    "promiseItems": [
+      {
+        "title": "公开原料",
+        "text": "我们从可再生碳出发，并以检测结果公开生物基碳含量。"
+      },
+      {
+        "title": "查验杂质",
+        "text": "我们以公认检测方法分析苯胺与 N-甲基苯胺，并连同检出限一并公开结果。"
+      },
+      {
+        "title": "出示原件",
+        "text": "检测报告编号、证书编号与证书原件图片，均可在本网站直接查看。"
+      }
+    ],
+    "relationTitle": "与 CutisBio 的关系",
+    "relationBody": "Blugene 是 CutisBio Co., Ltd. 靛蓝业务的品牌。法人名称以及证书 · 检测报告上的标示，一律沿用 CutisBio。",
+    "cta": "样品 · 技术资料咨询"
+  },
+  "Technology": {
+    "metaTitle": "技术",
+    "metaDescription": "介绍制造靛蓝的四条路径、基于微生物发酵的生产方式，以及生物基碳含量的检测结果。",
+    "heroEyebrow": "TECHNOLOGY",
+    "heroTitle": "造蓝的四条路，以及我们的选择。",
+    "heroBody": "生产靛蓝染料的方法有四条路。Blugene 选择了顺应碳循环的精密发酵工艺。我们的选择提升了环境与我们生活的可持续性。",
+    "routesTitle": "靛蓝合成的四条路径",
+    "routesCaption": "产品目录 p.2 Figure 1-1。化学路径以红色、生物路径以黄色区分标示。",
+    "routesAlt": "分别以原油 · 生物质 · 靛蓝植物为起点的四条靛蓝合成路径示意图（产品目录 p.2）",
+    "routes": [
+      {
+        "name": "化学靛蓝",
+        "feedstock": "原油（不可再生）",
+        "intermediate": "苯胺",
+        "text": "经由自原油获得的苯胺合成靛蓝。产品目录将此路径标示为化学路径。"
+      },
+      {
+        "name": "混合型靛蓝",
+        "feedstock": "生物质",
+        "intermediate": "邻氨基苯甲酸",
+        "text": "经由自生物质获得的邻氨基苯甲酸制造靛蓝。原料虽可再生，但中间环节与纯微生物路径不同。"
+      },
+      {
+        "name": "生物靛蓝（精密发酵来源）",
+        "feedstock": "生物质（植物原料）",
+        "intermediate": "色氨酸",
+        "text": "微生物将自生物质获得的色氨酸转化为靛蓝。CutisBio 生物靛蓝即属于此路径。"
+      },
+      {
+        "name": "天然靛蓝（植物来源）",
+        "feedstock": "靛蓝植物",
+        "intermediate": "提取",
+        "text": "从靛蓝植物中提取色素。产品目录记载，市售植物来源靛蓝中存在疑似混有化学靛蓝的案例。"
+      }
+    ],
+    "routeFeedstockLabel": "原料",
+    "routeIntermediateLabel": "主要中间环节",
+    "routesNote": "混合型路径的邻氨基苯甲酸环节与微生物路径的色氨酸环节并不相同。我们未将两条路径简化为同一路径。",
+    "carbonTitle": "碳从何而来",
+    "carbon": {
+      "lead": "从地下的石油，到重新生长的生物质。Blugene 通过发酵生物质来制造靛蓝，从制造颜色的碳的起点开始思考。那份蓝，究竟从哪里来？",
+      "journey": {
+        "eyebrow": "01 / FOLLOW THE CARBON",
+        "title": "同样的蓝。不同的碳之旅。",
+        "body": "构成靛蓝蓝色的分子中也含有碳。请沿着路径，看看这些碳来自哪里。",
+        "guide": "请从碳的起点出发，按同样的顺序追踪两条路径。",
+        "order": "原料 → 生产 → 靛蓝 · 牛仔布 → 使用之后",
+        "legendSolid": "从原料到产品的移动",
+        "legendDashed": "取决于处理与生长条件的排放与再吸收",
+        "legendNote": "树木与设施是帮助理解的示意图。",
+        "evidenceLink": "依据"
+      },
+      "routes": [
+        {
+          "eyebrow": "BIO-BASED INDIGO",
+          "title": "生物基靛蓝",
+          "lede": "用植物吸收的碳，创造新的蓝。",
+          "chip": "吸收空气中的 CO₂",
+          "steps": [
+            {
+              "label": "01 / 原料",
+              "title": "重新生长的生物质",
+              "text": "植物通过光合作用吸收的碳被储存在原料中。",
+              "imageAlt": "带有绿叶和草地的树木插图：植物生物质的示例"
+            },
+            {
+              "label": "02 / 生产",
+              "title": "微生物发酵",
+              "text": "微生物将来自生物质的原料转化为靛蓝。",
+              "imageAlt": "用培养液和微生物生产靛蓝的发酵罐插图",
+              "note": "发酵过程中也会排放部分 CO₂"
+            },
+            {
+              "label": "03 / 产品",
+              "title": "靛蓝，以及牛仔布",
+              "text": "来自生物质的碳留存在牛仔布的蓝色之中。",
+              "imageAlt": "蓝色靛蓝粉末和折叠牛仔裤的插图"
+            },
+            {
+              "label": "04 / 使用之后",
+              "title": "一部分重回大气",
+              "text": "经焚烧、分解等变为 CO₂ 后，可能回到大气之中。",
+              "imageAlt": "表示使用后处理中排放 CO₂ 时碳回归的大气的云朵插图",
+              "note": "路径与时间取决于处理方式"
+            }
+          ],
+          "loop": "新的植物生长时，可以再次吸收 CO₂。",
+          "loopSub": "与近期生物碳循环相连的原料",
+          "coreLabel": "这条路径的核心",
+          "core": "从空气到植物，从植物到蓝。",
+          "coreSub": "利用可再生原料中的碳。"
+        },
+        {
+          "eyebrow": "FOSSIL-BASED INDIGO",
+          "title": "石化合成靛蓝",
+          "lede": "取出长期储存在地下的碳，作为蓝色的原料。",
+          "steps": [
+            {
+              "label": "01 / 原料",
+              "title": "储存在地下的石油",
+              "text": "取出经漫长地质时间储存下来的化石碳。",
+              "imageAlt": "从地层下抽取石油的抽油机和油桶插图"
+            },
+            {
+              "label": "02 / 生产",
+              "title": "石油系原料的化学合成",
+              "text": "通过化学工艺将石油系原料转化为靛蓝。",
+              "imageAlt": "将石油系原料转化为靛蓝的化工厂插图"
+            },
+            {
+              "label": "03 / 产品",
+              "title": "靛蓝，以及牛仔布",
+              "text": "来自石油的碳留存在牛仔布的蓝色之中。",
+              "imageAlt": "蓝色靛蓝粉末和折叠牛仔裤的插图"
+            },
+            {
+              "label": "04 / 使用之后",
+              "title": "排放后进入大气",
+              "text": "以 CO₂ 形式排放后，地下的碳进入大气与生物圈。",
+              "imageAlt": "表示以 CO₂ 形式排放的地下碳进入的大气的云朵插图",
+              "note": "产品中的碳并非全部立即排放"
+            }
+          ],
+          "loop": "石油并非按照我们使用的速度重新生成。",
+          "loopSub": "即使排放的碳被植物吸收，地下的石油储层也不是立刻就能重新填满的。",
+          "coreLabel": "这条路径的核心",
+          "core": "取出地下储存的碳，制成蓝。",
+          "coreSub": "排放时，长期储存的碳进入大气。"
+        }
+      ],
+      "footnote": "这是对原料碳流动的简化概念图。树的图案象征植物生物质，并非指 Blugene 的实际原料或设施。两条路径都可能在生产能源、精制、运输等环节产生排放。虚线表示可能的路径，并非表示全部回收、完全生物降解、即时再吸收或碳中和。",
+      "origin": {
+        "eyebrow": "02 / WHY THE ORIGIN MATTERS",
+        "title": "碳虽相同，时间却不同。",
+        "body": "差别不在于 CO₂ 的性质，而在于取碳的储库，以及它重新填满所需的时间。",
+        "items": [
+          {
+            "label": "石油基碳",
+            "title": "长期储存的碳",
+            "text": "取用长年储存在地下的碳。石油并非按照我们使用的速度重新生成。",
+            "tags": [
+              "地质时间尺度的储存",
+              "开采 · 使用"
+            ]
+          },
+          {
+            "label": "生物基碳",
+            "title": "来自可再生资源的碳",
+            "text": "使用植物近期从空气中吸收的碳。若生物质得以再生，碳的吸收可随新植物的生长而持续。",
+            "tags": [
+              "生长 · 吸收",
+              "使用 · 再生"
+            ]
+          }
+        ],
+        "closing": "Blugene 想要改变的，是制造蓝色的碳的起点。"
+      },
+      "evidence": {
+        "eyebrow": "03 / A CLEARER BLUE",
+        "title": "好的说明，需要明确的依据。",
+        "body": "原料来自哪里，与它对环境的影响有多大，是两个不同的问题。",
+        "items": [
+          {
+            "label": "碳的来源",
+            "title": "“是生物基的吗？”",
+            "text": "通过 ASTM D6866 这类放射性碳分析试验，可以确认样品有机碳中生物基碳的比例。",
+            "tag": "生物基碳含量试验"
+          },
+          {
+            "label": "全生命周期的影响",
+            "title": "“碳排放减少了多少？”",
+            "text": "需要把原料种植、生产、运输、废弃等纳入比较范围的过程与能耗一并计算。生命周期评价（LCA）回答的正是这个问题。",
+            "tag": "同等功能 · 同等范围的 LCA 比较"
+          }
+        ],
+        "calloutTitle": "生物基并非自动等于碳中和。",
+        "calloutBody": "使用参与碳循环的原料，与产品净排放为零，并不是一回事。本段落说明的是原料路径，并非提供各产品的减排数值。Blugene 的生物基碳含量试验结果，可在<link>数据 · 认证页面</link>连同检测机构、试验方法和报告编号一起查看。"
+      },
+      "faq": {
+        "eyebrow": "A FEW GOOD QUESTIONS",
+        "title": "热爱牛仔布的你，会问的问题。",
+        "items": [
+          {
+            "question": "为什么发酵会与“碳循环”联系起来？",
+            "answers": [
+              "关键并非发酵本身，而是原料的来源。生物质中的碳，是植物吸收大气中的 CO₂ 形成的。微生物把这些碳转化为靛蓝，因此使用的是与近期生物碳循环相连的原料。",
+              "发酵需要能源，也可能产生 CO₂。因此，并非仅凭“由发酵制成”就能让总排放量为零。"
+            ]
+          },
+          {
+            "question": "穿牛仔裤能减少碳吗？",
+            "answers": [
+              "穿牛仔裤这一行为本身并不能清除空气中的碳。这里说明的变化，是把靛蓝染料的原料碳从石油基换成生物质基。一条成品牛仔裤的整体环境影响，还需要一并考察棉花种植、织造、染色、洗涤等环节。"
+            ]
+          },
+          {
+            "question": "衣物中的碳最终都会回归自然吗？",
+            "answers": [
+              "路径与速度取决于再利用、回收、焚烧、填埋等实际处理方式。循环箭头表示的是碳可以以 CO₂ 形式释放并被植物再吸收这一概念。这并非指衣物或染料可以完全生物降解、可堆肥或可全部回收。"
+            ]
+          },
+          {
+            "question": "“生物基碳含量”的数值是什么意思？",
+            "answers": [
+              "ASTM D6866 方法的生物基碳含量，是所测样品有机碳中生物基碳所占的比例。它不是染料纯度，不是植物原料占产品总质量的比例，也不是碳排放的减少率。",
+              "确认实际产品的含量时，请同时查看试验对象与方法、样品与批次、检测机构与结果。Blugene 的测定值（98%，pMC 97.73）已连同检测机构、试验方法和报告编号列在数据 · 认证页面。"
+            ]
+          },
+          {
+            "question": "生物靛蓝是从植物中提取颜色的天然染料吗？",
+            "answers": [
+              "Blugene 的方式是通过微生物发酵把生物质转化为靛蓝。这与从蓝草叶片等提取色素的传统天然靛蓝生产方式不同。“生物基”说明的是制造色素的碳的来源。"
+            ]
+          }
+        ]
+      },
+      "closing": {
+        "eyebrow": "FOR THE DENIM WE LOVE.",
+        "text": "值得长久热爱的蓝。从起点开始，焕然一新。"
+      },
+      "sources": {
+        "summary": "支撑这一叙述的资料",
+        "introStrong": "基于文献与标准的说明",
+        "introText": "关于生物碳循环与化石碳、生物基碳含量试验与生命周期评价之间的区别。",
+        "items": [
+          {
+            "title": "NASA Earth Observatory — The Carbon Cycle",
+            "note": "光合作用、快碳循环与慢碳循环、化石碳进入大气。"
+          },
+          {
+            "title": "ASTM D6866 — 通过放射性碳分析测定生物基含量",
+            "note": "该试验评估碳的生物来源，并非直接测量温室气体的减排率。"
+          },
+          {
+            "title": "GHG Protocol — Product Life Cycle Standard",
+            "note": "从生命周期视角量化产品温室气体影响的原则。"
+          },
+          {
+            "title": "USDA BioPreferred — 常见问题",
+            "note": "基于有机碳的含量的含义，以及它与环境影响、性能评价的区别。"
+          }
+        ],
+        "processStrong": "Blugene 工艺说明",
+        "processText": "依据品牌提供的“通过生物质发酵生产靛蓝”这一信息编写。示意图为帮助理解而编辑，并非表示实际的物料平衡或排放量。",
+        "externalLinkHint": "在新窗口中打开"
+      }
+    },
+    "processTitle": "从原料到面料",
+    "impurityTitle": "为何要查验苯胺",
+    "impurityBody": "苯胺与 N-甲基苯胺是化学合成路径的起始物或中间体，可能作为未反应残留物留在最终的靛蓝粉末中。由于其毒性与潜在致癌性，多项认证标准对纺织用染料及最终产品中的允许浓度作出限制。",
+    "cta": "查看全部检测数据",
+    "routeOursLabel": "我们的路线 · Blugene",
+    "routesFigureBridge": "这是把上方四条路径汇总在一张图上的产品目录示意图。图中的顺序也与上方卡片相同。"
+  },
+  "DyeingPrinting": {
+    "metaTitle": "染色 · 印花",
+    "metaDescription": "介绍棉 · 真丝 · 羊绒的染色对比、色牢度检测结果、按浓度呈现的色样，以及粉末与数码印花墨水。",
+    "heroEyebrow": "DYEING & PRINTING",
+    "heroTitle": "在面料上验证的颜色。",
+    "heroBody": "从染色性与色牢度，到色调与剂型。我们如实呈现在真实面料上验证的资料。",
+    "cta": "面料样品咨询",
+    "jumpNavLabel": "页面内导航",
+    "jumpNav": [
+      "染色性",
+      "色牢度",
+      "颜色库",
+      "产品系列",
+      "打印"
+    ]
+  },
+  "Tech": {
+    "title": "以微生物发酵制成的靛蓝，Blugene",
+    "description": "说明 Blugene by CutisBio 的生物靛蓝经由何种路径制成，又通过哪些检测加以确认。",
+    "intro": "蓝色丹宁是最受喜爱的布料，而造就那抹颜色的方法并非只有一种。CutisBio 利用微生物的生物合成途径与发酵来生产靛蓝。",
+    "section1Title": "1. 为何要查验杂质",
+    "section1Text": "苯胺与 N-甲基苯胺是化学合成靛蓝的起始物或中间体，可能作为未反应残留物留在最终粉末中。由于其毒性与潜在致癌性，ZDHC、OEKO-TEX、GOTS 等多项认证标准对纺织用染料及最终产品中该类物质的允许浓度作出限制。因此，我们对每一款产品都分析这两种物质，并连同检出限一并公开结果。",
+    "comparisonCaption": "目录 p.4 的记载范围（起始物质·中间体，毒性·致癌可能性）未超出的叙述。",
+    "section2Title": "2. 以微生物发酵制成的靛蓝",
+    "section2Text": "CutisBio 采用发酵工艺，利用微生物的生物合成途径，将自生物质获得的色氨酸转化为靛蓝。在产品目录列出的四条靛蓝合成路径中，属于微生物来源路径。",
+    "section3Title": "3. 经检测确认的结果",
+    "section3Text": "在 KATRI 的 ASTM D6866-24a Method B 检测中，生物基碳含量测得 98%（pMC 97.73）；在 KOTERI 的 KS K 0734 2019 检测中未检出苯胺与 N-甲基苯胺（方法检出限 5 mg/kg）。按产品目录记载，色牢度与植物 · 化学靛蓝相当（comparable performance），各项目的等级可在数据页的表格中如实查看。",
+    "certSectionTitle": "全球认证",
+    "certSectionText": "提供的目录中收录的证书。可以查看原件。",
+    "faqTitle": "常见问题",
+    "faqList": [
+      {
+        "question": "Blugene 是什么？",
+        "answer": "Blugene 是 CutisBio Co., Ltd. 以微生物发酵生产的生物靛蓝的品牌名称。产品目录与证书上记载的是原始产品名称 “Bio Indigo Dye Powder (Microbial Fermentation)”。"
+      },
+      {
+        "question": "“生物基碳含量 98%” 是什么意思？",
+        "answer": "是指产品所含碳中，来自可再生原料的比例为 98%。此为 KATRI 的 ASTM D6866-24a Method B (AMS) 检测结果（pMC 97.73，报告 SBED25-00000153-1，2025-05-22），并非靛蓝纯度或碳排放削减率。"
+      },
+      {
+        "question": "“苯胺未检出” 是指含量为 0 吗？",
+        "answer": "不是。这是指在 KOTERI 的 KS K 0734 2019 检测中低于方法检出限 5 mg/kg，因而未被检出（报告 2025-0604-1132-C03，2025-06-10）。这并不表示 0 ppm 或完全不含。"
+      },
+      {
+        "question": "可以直接用于现有的染色设备吗？",
+        "answer": "产品目录记载，在棉 · 真丝 · 羊绒的染色中，其表现与植物 · 化学靛蓝相当（comparable performance）。不过结果会因工厂、面料与工艺条件而异，建议以面料样品确认实际应用效果。"
+      },
+      {
+        "question": "认证适用于哪些产品？",
+        "answer": "证书上载明的产品为 “CB Bio Indigo Dye Powder”。OEKO-TEX ECO PASSPORT 的产品清单载于证书附件，仅凭产品目录无法界定其范围。数码印花墨水或最终丹宁服装并不会自动获得认证。"
+      }
+    ],
+    "structuresTitle": "苯胺与 N-甲基苯胺的化学结构",
+    "structuresNote": "依据经核实的化学结构，直接用代码（SVG）绘制的骨架结构式。未使用图像生成工具制作。",
+    "structureAnilineName": "苯胺",
+    "structureAnilineDesc": "苯环上连接一个氨基（NH2）的骨架结构式。",
+    "structureNMethylanilineName": "N-甲基苯胺",
+    "structureNMethylanilineDesc": "苯环所连氮原子上带有一个氢和一个甲基（CH3）的骨架结构式。"
   },
   "About": {
-    "title": "用合成生物学重绘时尚的未来",
+    "title": "以合成生物学，将日常设计得更健康、更美好",
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "为了人类的可持续生活，利用微生物基因工程技术量产高性能生物材料，成为将更清洁的地球留给子孙后代的白色生物领先企业。",
-    "aboutImageAlt": "CutisBio研究员正在进行深入的生物研究",
-    "coreBusinessTitle": "开发领先的生物基特殊材料",
-    "medicalTitle": "医疗 (Medical)",
-    "medicalText": "开发兼顾环境与人体的定制型环保医药原料及生物医药材料",
-    "beautyTitle": "美容 (Beauty)",
-    "beautyText": "融合皮肤大数据与合成生物学的精准美容解决方案高附加值材料（与全球美容企业合作）",
-    "fashionTitle": "时尚 (Fashion)",
-    "fashionText": "通过100%无毒、无苯胺“A-Indigo”的商业化，在纺织行业内实现完美的环保循环流程",
-    "historyTitle": "主要发展历程与成就",
+    "visionText": "成为以创新生物材料让人类生活更美好、更健康的全球开拓者，是我们的愿景。Blugene 生物靛蓝染料是一种生物材料，旨在革新长期以来为全人类共同喜爱的丹宁与牛仔裤，提升人类健康与地球环境的可持续性。",
+    "aboutImageAlt": "CutisBio 研究人员深入开展生物研究的场景",
+    "coreBusinessTitle": "核心业务领域",
+    "healthTitle": "健康",
+    "healthText": "通过合成生物学制造健康生活与长寿所需的重要物质。",
+    "beautyTitle": "美容",
+    "beautyText": "开发用于调控皮肤与毛发衰老的物质和产品。",
+    "fashionTitle": "时尚 (Blugene)",
+    "fashionText": "将以微生物发酵生产的生物靛蓝，供应于丹宁染色与数码印花。",
+    "historyTitle": "发展历程",
     "historyList": [
       {
+        "year": "2025",
+        "event": "与多家全球高端丹宁企业完成生物基靛蓝染料的染色实证"
+      },
+      {
         "year": "2024",
-        "event": "建立A-Indigo生物染料的大规模生产系统并展开全面商业化"
+        "event": "建立 Bio-Indigo 生物染料的大规模生产系统并展开全面商业化"
       },
       {
         "year": "2023",
@@ -78,125 +746,107 @@
         "year": "2020",
         "event": "CutisBio株式会社成立"
       }
-    ]
+    ],
+    "blugeneNoteTitle": "关于本网站",
+    "corporateSiteCta": "前往 CutisBio 公司官方网站",
+    "corporateSiteNewTab": "在新窗口中打开",
+    "metaDescription": "CutisBio 通过设计微生物的生物合成能力来制造工业材料。本页介绍包括生物靛蓝品牌 Blugene 在内的业务领域与发展历程。"
   },
-  "Tech": {
-    "title": "通过微生物发酵实现可持续牛仔染色",
-    "description": "介绍CutisBio无苯胺靛蓝染料的开发背景及环保牛仔时尚的未来。",
-    "intro": "最受喜爱的时尚单品“蓝色牛仔（Blue Denim）”。然而，在其美丽颜色的背后，隐藏着威胁环境与健康的石化衍生化学物质“苯胺”。CutisBio利用微生物从根本上解决了这一问题。",
-    "section1Title": "1. 无苯胺（Aniline-Free）的绝对必要性",
-    "section1Text": "苯胺被WHO下属的国际癌症研究机构列为潜在致癌物。在牛仔生产过程中，苯胺被随意排入水资源，不仅破坏生态系统，还对需要长时间接触布料的最终消费者产生负面影响。",
-    "comparisonImageAlt": "显示苯胺和甲基苯胺的化学结构以及皮炎和膀胱癌风险的信息图",
-    "comparisonCaption": "苯胺和甲基苯胺的化学结构，以及它们造成的致命人类健康威胁，包括接触性皮炎和膀胱癌",
-    "section2Title": "2. CutisBio的创新：让微生物成为工厂",
-    "section2Text": "大自然给出了答案。我们利用尖端的合成生物学技术，赋予特殊微生物类似植物的代谢途径。这些微生物自发生成靛蓝前体，该过程从根本上杜绝了苯胺等致命化学物质的使用。",
-    "section3Title": "3. 不妥协质量的“Drop-in”解决方案",
-    "section3Text": "环保并不意味着必须放弃质量。CutisBio的生物靛蓝采用“Drop-in”模式，可直接投入现有工厂基础设施而无需更改设备。它能完美重现与现有化学染料相同的颜色深度（Shade）和耐摩擦色牢度。",
-    "certSectionTitle": "全球可持续发展认证",
-    "certSectionText": "我们自豪地宣布，我们在可持续性、环保以及人类安全等方面已完成多项世界级认证。",
-    "certOkbiobased": "OK biobased 认证标志",
-    "certBioPreferred": "USDA BioPreferred 认证标志",
-    "certOekoTex": "OEKO-TEX Eco Passport 认证标志",
-    "certZdhc": "ZDHC 认证标志",
-    "faqTitle": "常见问题解答 (FAQ)",
-    "faqList": [
-      {
-        "question": "传统靛蓝染色有什么问题？",
-        "answer": "传统合成靛蓝染料是使用苯胺和氰化氢等石油化工产品生产的。这引起了严重的水污染，并对工人和最终消费者的健康构成威胁。"
-      },
-      {
-        "question": "什么是基于微生物发酵的靛蓝染料？",
-        "answer": "CutisBio的技术利用经过特殊改造的微生物，通过自然发酵过程来生产靛蓝前体。利用生物机制代替化学合成，我们创造出100%无苯胺的染料。"
-      },
-      {
-        "question": "它和传统衣物的质量有区别吗？",
-        "answer": "没有。该染料可达到与传统牛仔染色相同或更高的品质、颜色深度以及耐洗/耐摩擦色牢度。我们在不破坏质量的前提下，实现了完美的循环可持续性。"
-      }
-    ]
+  "Blog": {
+    "eyebrow": "洞察与技术",
+    "title": "博客",
+    "description": "介绍关于 CutisBio 合成生物学技术与环保时尚的深度文章。",
+    "categoryTech": "技术介绍",
+    "readMore": "阅读全文",
+    "readTime": "阅读需 {minutes} 分钟"
+  },
+  "Contact": {
+    "title": "联系我们",
+    "description": "接受关于Blugene生物靛蓝的样品和技术·认证资料的咨询。",
+    "addressDetail": "韩国首尔特别市江南区论岘路 842 号 狎鸥亭大厦 8 层（邮编 06025）\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
+    "mapTitle": "交通指引"
+  },
+  "NotFound": {
+    "title": "未找到您访问的页面。",
+    "body": "该地址可能已更改，或页面已被删除。请从以下栏目中查找所需内容。",
+    "backHome": "返回首页"
   },
   "News": {
-    "title": "CutisBio 新闻中心",
-    "description": "查看合成生物学推动环保时尚的最新消息。",
+    "title": "CutisBio 新闻室",
+    "description": "了解由合成生物学打造的环保时尚的最新消息。",
+    "categoryVideo": "视频",
+    "categoryPost": "消息",
+    "playVideo": "播放视频",
     "articles": [
       {
         "date": "2025-11-19",
         "category": "新闻稿",
-        "title": "S Skin Co., Ltd.与Cutis Bio签署谅解备忘录，将用于皮肤促进剂的融合多肽材料商业化",
-        "summary": "S-Skin Co., Ltd. 与 CutisBio 签署谅解备忘录，将用于皮肤增强剂的融合多肽材料商业化。韩国新闻网",
+        "title": "艾丝肌肤公司与CutisBio，签署用于皮肤增强剂的融合多肽材料商业化合作备忘录",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBBb2F5Sjh2MlYtZVBQaThpM3N1dEYtLUhNaGFhTlVVWTJMcHc1RnN6SU9aVUhmNjVBbWtDemtGVEg5M0dLTm1lUncyRWV0WXhuRFdub1FndHlGSE1FNUNBZXR0NDg?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBBb2F5Sjh2MlYtZVBQaThpM3N1dEYtLUhNaGFhTlVVWTJMcHc1RnN6SU9aVUhmNjVBbWtDemtGVEg5M0dLTm1lUncyRWV0WXhuRFdub1FndHlGSE1FNUNBZXR0NDg?oc=5",
+        "sourceTitle": "㈜에스스킨×큐티스바이오, 스킨부스터용 융합폴리펩타이드 소재 사업화 MOU 체결",
+        "sourceSummary": ""
       },
       {
         "date": "2025-11-19",
         "category": "新闻稿",
-        "title": "S-Skin Co., Ltd. × CutisBio MOU...关于皮肤促进剂融合多肽材料商业化的合作",
-        "summary": "S-Skin有限公司",
+        "title": "艾丝肌肤公司 × CutisBio MOU... 合作推进用于皮肤增强剂的融合多肽材料商业化",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UZFRlVjlLNjVfbkxkNFYyOTJlTThaRDdUQmVQdWxPeVFDVnJoZGFSWE80OWdiSG9yZzJJMzhpLVBVUmtHQmtIVTBRazE2WVRGSHBXN1cteU41eVFrQVg0WjQydw?oc=5"
-      },
-      {
-        "date": "2025-05-06",
-        "category": "新闻稿",
-        "title": "【投稿】“首先要建立合成生物学和先进生物制造示范中心”。",
-        "summary": "[投稿]“必须首先建立合成生物学和先进生物制造示范中心”​ zdnet.co.kr",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5xeC1RWVJiSmJtZjh4NExKR2xzN29hQUdNXzZNYmNWRGI5MG1JWHFORDFPcGY1dlBvNU84TmI0T254cUh4QkhmbWs5cEwxRUdydnJ4XzlR?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UZFRlVjlLNjVfbkxkNFYyOTJlTThaRDdUQmVQdWxPeVFDVnJoZGFSWE80OWdiSG9yZzJJMzhpLVBVUmtHQmtIVTBRazE2WVRGSHBXN1cteU41eVFrQVg0WjQydw?oc=5",
+        "sourceTitle": "(주)에스스킨 × 큐티스바이오 MOU... 스킨부스터용 융합폴리펩타이드 소재 사업화 협업",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-27",
         "category": "新闻稿",
-        "title": "靛蓝染色的“标准化和商业化”",
-        "summary": "靛蓝染色的“标准化和商业化” TIN News",
+        "title": "靛蓝染色的‘标准化和商业化’",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8yZTRHUWFXU2dMdHp0WS1PMTVNcmQxX2ZmMDR5M2MwQzlQMTc3YkFOMEpZNkdvX3JmaFhBb1FsSnVSZ21Vemc?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8yZTRHUWFXU2dMdHp0WS1PMTVNcmQxX2ZmMDR5M2MwQzlQMTc3YkFOMEpZNkdvX3JmaFhBb1FsSnVSZ21Vemc?oc=5",
+        "sourceTitle": "인디고 염색의 ‘표준화 및 상용화’",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2024-08-21",
+        "category": "新闻稿",
+        "title": "从开发再生纱线到环保染色...时尚行业的'环保经营'之战",
+        "summary": "",
+        "thumbnailAlt": "新闻缩略图",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9WU1FJWW92UEpSX09GTkpMZTRVNjlKblpXVGRiRXV5Ull2WUdoVFNIOEx1cTBGeV9RNlRWTHJIb0NlbHNTems0c3psczU3QXV5MXg1R3k2cDJGYTVnZHNaNTRucmpVaGJBemktV0g2bTbSAXRBVV95cUxOZmhEdFFGaUxvemlfMkR5LTNZOUVad0hOZlM1Q3JCeWRlWW9ZT3k0V3NaTi1fbEVXUlF2MXlMLUVXMkhMeGhNOUFzN09qa1BKdDB6TXpzN25nLUdRdUthQ2k1WlNuZ0VsckFwSGRNLUpSSWNtcg?oc=5",
+        "sourceTitle": "리사이클 원사 개발부터 친환경 염색까지...패션업계 '친환경 경영' 승부",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-20",
         "category": "新闻稿",
-        "title": "Kolon FnC Le Cashmere 在首尔预览会上推出环保染色方法",
-        "summary": "Kolon FnC Le Cashmere 在首尔预览会上推出环保染色方法 韩联社",
+        "title": "科隆FnC LeCashmere，在首尔预览中公开环保染色工艺",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9WUFAwR09kREVwYWJ5WEZwSjdmVDhYd216OU1tc09rNldONW81b0pQeUZYNWYzeDBXQWItRjRWUWotdDdfWDVtQS1ZM0hwX1pYNWNmeFpBakE3Z3PSAWBBVV95cUxNMnI2QVhYNGtnbUN6WmZZaWRkWGMyd2JGUGs3TTVKYkVQdlM3VFdiWm5UOUNDc2dxOE1DU28tdW5Ud0RWLTBxN1BfZ3hEX0NRQ3hlWTg1NHoyUVZ6cmVRWmQ?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9WUFAwR09kREVwYWJ5WEZwSjdmVDhYd216OU1tc09rNldONW81b0pQeUZYNWYzeDBXQWItRjRWUWotdDdfWDVtQS1ZM0hwX1pYNWNmeFpBakE3Z3PSAWBBVV95cUxNMnI2QVhYNGtnbUN6WmZZaWRkWGMyd2JGUGs3TTVKYkVQdlM3VFdiWm5UOUNDc2dxOE1DU28tdW5Ud0RWLTBxN1BfZ3hEX0NRQ3hlWTg1NHoyUVZ6cmVRWmQ?oc=5",
+        "sourceTitle": "코오롱FnC 르캐시미어, 프리뷰 인 서울서 친환경 염색공법 공개",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-20",
         "category": "新闻稿",
-        "title": "Kolon FnC Le Cashmere 在首尔预览会上展示环保染色产品",
-        "summary": "Kolon FnC Le Cashmere 在首尔预览会上展示环保染色产品 Smart Today",
+        "title": "LeCashmere，以环保染色'Aqua Indigo'亮相首尔预览2024吸引眼球",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5fZ1h1N0xZTjJIOWJQQWZJQVFHenRaU2JGOTdwWVc5Y2k3eGNEcEF6bjJ6ajRQTkVpS3BldHVXR21qaVh2ZWQxci1kSW9GMno0WEpxc2ZoaXVSd0VnVXc?oc=5"
-      },
-      {
-        "date": "2024-08-20",
-        "category": "新闻稿",
-        "title": "可隆FnC的“Le Cashmere”在“首尔预览”中公开了多种环保染色方法产品",
-        "summary": "Kolon FnC 的“Le Cashmere”在“首尔预览”中推出大量环保染色产品​ newsquest.co.kr",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5PSnJGX2pPbTlRM2JMVEZMcmdvY0lXTUFNUmpDSDQ2UkxZQ29fSU96ZWRqZGJWY0Z3eTlsRDVrMzBYZ2hJaUpDbzBSa0l1Yk9mR1k4dEJzYTFxR2hCa0Jodnh5NGx0RWs2X3hJeS14SdIBc0FVX3lxTE5VQkVXRVhFTjVXX3lpbmNkVEdPdkdkSmV0VEhvYU5GNFBnRHlSSy1kemxVbWNTTlZmUGY3QkgtdjVCeEN5ZXRBXzR4YTBXeVdwMFVvOFRHQVFzTmU5azlkcEhCZDFMeU1HS3k5Q1VLYkgyTVE?oc=5"
-      },
-      {
-        "date": "2024-08-20",
-        "category": "新闻稿",
-        "title": "Le Cashmere 推出环保染色方法",
-        "summary": "Le Cashmere 推出环保染色方法 TIN News",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1UT2h6V1FnaGdDaTB0amwzT1N1Q2NtWjJvZ3hienpSZldNZ2FyMVVOTzk5cUppaXJ6aDl6MlBJZ0RqeHBJTHc?oc=5"
-      },
-      {
-        "date": "2024-08-20",
-        "category": "新闻稿",
-        "title": "Kolon FnC Le Cashmere 参加“2024 年首尔预览”",
-        "summary": "Kolon FnC Le Cashmere 参加“2024 年首尔预览”首尔财经",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NTzhvY3Uwck9aVmF6bVJXLWhGN0ZCc1gzR2RyMDB0ZlU2Y2hRbHEzOFN0SnJzQ2wtOW9LTEEwanVZajBVc2ZUb1hxLUZPbWNhNDAtd05mdEh1UFZPaTNTS0cwLWh5ZWMxemc?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9rOUdjSzJRUmFOR2tJMjJvampzU3Y4Y2lfbUdCa1hxM2Y5QlhfelREbXNMbGhncDFfc0U3T21LZDZyOFJSU3hIV2dOX2NZclk5OFlLZE9FdzBhdFo0TnBDajU0TS1ENDViQlBUUm5hTkZzTGJMeS1F?oc=5",
+        "sourceTitle": "르캐시미어, 친환경 염색 '아쿠아인디고'로 프리뷰인서울 2024 참가 눈길",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-14",
         "category": "新闻稿",
-        "title": "靛蓝天然染色推动可持续、环保的时尚产业",
-        "summary": "靛蓝天然染色推动可持续、环保的时尚产业​韩国纺织新闻",
+        "title": "蓝色天然染色，推动可持续环保时尚产业",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4ZDFhTmVpd1pZWUxWanFfY0g1c3B6QXRIQ29zRDgzOW4tX2xlVGlnYW1xM2xOdnh6S3VPd1hIa2VoRzgtaGFuWnE0NkRHRmxuSThEOHk3TXNNNG5zN2I0VFhNWE4zX21y?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4ZDFhTmVpd1pZWUxWanFfY0g1c3B6QXRIQ29zRDgzOW4tX2xlVGlnYW1xM2xOdnh6S3VPd1hIa2VoRzgtaGFuWnE0NkRHRmxuSThEOHk3TXNNNG5zN2I0VFhNWE4zX21y?oc=5",
+        "sourceTitle": "쪽빛 천연염색, 지속가능 친환경 패션산업 앞당긴다",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-12",
@@ -204,215 +854,99 @@
         "title": "CutisBio 开发环保生物靛蓝染色方法“Aqua Indigo”",
         "summary": "我们通过开发“AquaIndigo”进入环保时尚材料市场，该产品利用合成生物学技术通过微生物发酵实现靛蓝染色。",
         "thumbnailAlt": "水靛蓝缩略图",
-        "link": "https://www.tinnews.co.kr/26601"
+        "link": "https://www.tinnews.co.kr/26601",
+        "sourceTitle": "큐티스바이오, 친환경 바이오 인디고 염색법 '아쿠아인디고' 개발",
+        "sourceSummary": "합성생물학 기술을 활용해 미생물 발효로 인디고 염색법을 구현한 '아쿠아인디고(AquaIndigo)'를 개발하여 친환경 패션 소재 시장에 진출했습니다."
       },
       {
-        "date": "2024-08-07",
+        "date": "2023-12-18",
         "category": "新闻稿",
-        "title": "绿色制药和制药行业的创新合成技术",
-        "summary": "制药行业的环保药物和创新合成技术 High News",
+        "title": "推广可持续时尚的空间‘循环图书馆’",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBfakdzSFFzSDFTRVVCekU0UVJSQllTc2w2MlRFNjdaZDdtVDJRX2RfTjQtMXdwS3MxRE5pV3N6VlJpNHhNdUZlbUxnbW9VcHc1S1lMT0Rqdjk5WFZIVzVjaW54RDFtU3BTNDl0UU5HTjljYkg3RHR3?oc=5"
-      },
-      {
-        "date": "2024-07-31",
-        "category": "新闻稿",
-        "title": "【轻松科普】传统文化科技重生，梦想数字化跨越",
-        "summary": "【Easy Science】传统文化通过科技重生，梦想跨越数字生活 韩联社",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hYkF4NW9WUkYyWmlUSXJhTUlkM3ozQzlNSHBVdlpDRVFxNW9STVZ4ZjgxOGwtUl9NY010MEVaY3FVeDRMTHNKWkxFaDVLVVJUTklBZU1weHJSWW_SAWBBVV95cUxNcjNoZ19ZSU0wZnhFaVhjcWlsdUV6dnl2WENvQkFfWURYSDJMNFhXN1pPOW1DNnNBcVdLN2E1QXUtV244d2VHV21GaURoazloTlMzUGpwUGR2aGtzYXBIZEs?oc=5"
-      },
-      {
-        "date": "2024-05-13",
-        "category": "新闻稿",
-        "title": "连西方奢侈品都触手可及的“K传统文化”……高附加值工业化是答案",
-        "summary": "连西方奢侈品都接触到的“韩国传统文化”……高附加值工业化是答案 首尔新闻",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE93T011Wk1sSEJIUWw5T1dNNk5HVTctLXJtLUs1RnBaQzF2N0RGb1BxZXBCS2Q5Smg0VF9WR0VqNnVUd2hsblk3Ti1EODN6RHg1RTFrRjlqWVBMd194ZktiNThOaXFOY0NFYi1wSE9idWVYQ21PN2NXQkwzSHVqZw?oc=5"
-      },
-      {
-        "date": "2024-03-26",
-        "category": "新闻稿",
-        "title": "“忠清北道将成为高科技生物产业的领先基地。”",
-        "summary": "尹“忠清北道将成为高科技生物产业的领先基地” SPN首尔平壤新闻",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE03c0JuNkdLNkE2MFlNNWtQbjNTS2FpRWxVU0MybDVKLWlmckNnbXpNY0ZPVGxOemtlUDNIaWEwMmNISk15X0RpWkVwSno4UzlkWm43b00tR0FuR3V2NkNfcE5GYWs0NzNoelE?oc=5"
-      },
-      {
-        "date": "2023-12-20",
-        "category": "新闻稿",
-        "title": "Kolon FnC 在洛杉矶开设可持续时装店“Circular Library”",
-        "summary": "Kolon FnC 在洛杉矶开设可持续时装店“Circular Library” 首尔经济日报",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9rWGpmR0hKTlNUOHNScXZOd1ZydWs4Y0tnM3FUMzhZc0hwVW8zOWJpanhBNlI4MVhzOVNmMUpySXY5R0xsNVVvd3QwdHV3MXJ5VDVv0gFTQVVfeXFMT2tYamZHSEpOU1Q4c1Jxdk53VnJ1azhjS2czcVQzOFlzSHBVbzM5YmlqeEE2UjgxWHM5U2YxSnJJdjlHTGw1VW93dDB0dXcxcnlUNW8?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE5lcjJ4SDZFaVJuS1RSSkoteFNSQ3kySm44NkdEckpUY2xuMHJ3dEtfVkxtQ0xBZUZkbjhMSHVSZw?oc=5",
+        "sourceTitle": "지속가능패션을 알리는 공간 ‘서큘러 라이브러리’",
+        "sourceSummary": ""
       },
       {
         "date": "2023-10-11",
         "category": "新闻稿",
-        "title": "科技与传统文化产业会所Ditec研究院聚焦基础研究入选研究基金项目",
-        "summary": "Ditec研究所，科学技术与传统文化产业的结合体，通过选为《每日新闻》研究基础项目，专注于基础研究",
+        "title": "大德研究院，科学技术与传统文化产业的结合，因基金会项目选择专注基础研究",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiTWVSY2xJTFp3S0FSem9fWmREdnd3SXk0ZXJFMy1idmJpNnVBUjV5RzlOODZZb2hsMDFZQ2Z4S19JZ29iVDlnVGNabU5lQUJDSUZkSlNMOVJqSE4wYWFSMl9B?oc=5"
-      },
-      {
-        "date": "2023-09-26",
-        "category": "新闻稿",
-        "title": "Hideout 在 Avenuel Jamsil 店开设快闪店...扩大与顾客的接触点",
-        "summary": "Hideout 在 Avenuel Jamsil 店开设快闪店...扩大与顾客的接触点",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsZFVrU0xVU29jM0l3SERjM0lfUkR3bXI0RWEtNUdrcVZPR1Frb3E5dWR4TE9SSHNseTBfb1RSZXhkS1paUklaR3AxaHFMV3QtelFVc2EycDV5dVg1SzBlWXB1elV6eU3SAWtBVV95cUxOSUx2ZXdwZDNvSm5YUHdqOE4tUnFDTDEyc3RzaE4wbXdESUlfSi10dE8ya01wR1pLYXNjOFRVSzBSS2I3c0dWNm5nNW84ZkEwOGhxazRMN2FNOEZSTTUtamRUUzh1bVZVOTFlYw?oc=5"
-      },
-      {
-        "date": "2023-09-25",
-        "category": "新闻稿",
-        "title": "生物科技被大企业拥抱……后来者也“有诚意”",
-        "summary": "生物技术被大公司拥抱……后来者也“认真” Bizworld",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5OUjhKSzBqSTcwZm5ReE9zV1RHR0Z3ZjA3eksyakh4VGdzSjZEa18xbnR0SVFDM21WZk1QTHFpeEF5QmxQUHJ6cGVydXdvbUtHUTFuRkYtaWpBYVFqTWxoc2YxeHNyWnZVYVE?oc=5"
-      },
-      {
-        "date": "2023-09-18",
-        "category": "新闻稿",
-        "title": "Samba、Celltrion、乐天“我们将成为生物界的台积电”……SK、GS、LG、CJ正在挑战基因治疗等新药",
-        "summary": "Samba、Celltrion、乐天“我们将成为生物界的台积电”……SK、GS、LG、CJ正在挑战基因治疗等新药。 朝鲜日报",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSWoxWC1JOXU4ZFg4RWM4Tm9nM3VsUUxPTmVmRV9sQ0EyUHVaeUZ3Y1pNRDE0c1BqV1hvZzhmWHpUZV9ZMjhmUDZJRWZvdEN1dmswTzA1YVJGUWZIVC1ud1lMbGpqYnNJbGpuUkdFUUd6TmwzdDBEUDhJTFFLa2xCRWE5UQ?oc=5"
-      },
-      {
-        "date": "2023-09-11",
-        "category": "新闻稿",
-        "title": "Le Cashmere，十周年品牌焕新，跃上“循环时尚”前沿！ : 新闻稿 │ 新闻室",
-        "summary": "Le Cashmere，十周年品牌焕新，跃上“循环时尚”前沿！ : 新闻稿 │ 新闻中心​Kolon FnC",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBNWVgxaDdhX1hnRlVQWFVRUWNmWUx1Y1FWdVhBNVVQMFNDREFSV0tnQi05MUJraXBQV2pWN1ZQeFdyTC1laEt3YUh0NA?oc=5"
-      },
-      {
-        "date": "2023-09-11",
-        "category": "新闻稿",
-        "title": "Kolon FnC 开启环保染色方法时代",
-        "summary": "Kolon FnC 开启环保染色方式时代 Fashion Insight",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wVjNmLTZZRXJXWG1hekViUWx1clZXRTdCLW5jTTZNTUcwUHVobXNVc3FoeXpYVnB4SmQ2YkNoYVZBa3B0UVIxbWpxV05kcVZ0OEpDWlZ3?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiTWVSY2xJTFp3S0FSem9fWmREdnd3SXk0ZXJFMy1idmJpNnVBUjV5RzlOODZZb2hsMDFZQ2Z4S19JZ29iVDlnVGNabU5lQUJDSUZkSlNMOVJqSE4wYWFSMl9B?oc=5",
+        "sourceTitle": "다이텍연구원, 과학기술과 전통문화산업의 만남, 연구재단 사업 선정으로 기초연구 집중",
+        "sourceSummary": ""
       },
       {
         "date": "2023-09-08",
         "category": "新闻稿",
-        "title": "KOLON FnC │ KOLON 时尚文化",
-        "summary": "KOLON FnC │ KOLON 时尚文化 ​ KOLON FnC",
+        "title": "科隆FnC，携手CutisBio，加速环保步伐",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5jNzZEcHJHelR4eUJtMndXYVlXZUtVTkFDUHBiVzhGSFhPUDlzcENhQk1aVUs5T0VKVEgxMjVZTTAtRUxQMU9GS0pR?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5nSjFFYU1iRXFCbEJDZ1FtSEQ4bTdSZWhOOS1oU3Jsd19nSjB6LThCeVZfUTJhd3J2eGJvWjgtbUlsaDJ6Y0MyMDZiN2d5VlFFRnhQS3VVYWFyd1pmTDEyRTYzcnpDQ00?oc=5",
+        "sourceTitle": "코오롱FnC, 큐티스바이오와 손잡고 친환경 행보 가속",
+        "sourceSummary": ""
       },
       {
         "date": "2023-09-08",
         "category": "新闻稿",
-        "title": "Kolon FnC 将“环保染色材料和方法”商业化",
-        "summary": "可隆FnC将“环保染色材料和方法”商业化 新亚洲日报",
+        "title": "Kolon FnC与CutisBio签署MOU……更进一步循环时尚",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBFcDloQmN3LWh4bzZmZEhrcHlWVlBjVGJ3amt3TUJueGJ3TmtFSjRtMHlEZFYyZmhDeklBRHdsRmNkb3JzeDlxUi1fYlpIX0lsWDhQTVoxYVIxeXNDaUhLWkFmNkcyUFlXUlpMNVdQZzA?oc=5"
-      },
-      {
-        "date": "2023-09-08",
-        "category": "新闻稿",
-        "title": "Kolon FnC与Qtis Bio达成谅解备忘录‧‧‧离循环时尚又近了一步",
-        "summary": "Kolon FnC与Qtis Bio的MOU‧‧‧离循环时尚又近了一步。报告",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vX056X0VxZjR5SjdOMi1TLW5RdHlBRENrOU5yZWFUNDF6R2pYVTY3aWU3LTlyckYwckdOT2JBSlVfZkNyajY4M2ROYzVFbW5pSEdBcENfbklRQ1pfRGZkbDhjWHFoY1Q0eUdzS1hn?oc=5"
-      },
-      {
-        "date": "2023-09-04",
-        "category": "新闻稿",
-        "title": "首尔大学医学院的“极客们”齐聚……“京义分院”规模不断扩大[极客们]",
-        "summary": "首尔大学医学院的“极客”齐聚……“京义分院”规模不断扩大[极客]​韩国经济日报",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE93WEZ1N1FTN1ZJYnBhamVWd2dMekkyMUFjbkVlbGo3RmI4aWh4RXpMT2VoTDJqdUNsZlhpRGR1LTIwdFdUcjBkVFpjaHViWklFVWNXVU9oVm1zUQ?oc=5"
-      },
-      {
-        "date": "2023-09-01",
-        "category": "新闻稿",
-        "title": "“通过创业可以拯救更多的生命”首尔大学医学院毕业生的挑战",
-        "summary": "“通过创业可以拯救更多的生命”首尔大学医学院毕业生的挑战 Mobile Hankyung",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaE5vT1Z3ajlUTEh6amRqSHFZZmhlcGxGWW1idVhGNTFNYS03cE85d1VJZTFDWV9LclFkUVRibXZ1VlNmVHJ1YXVTakExS0ROTzRZenRNcUNyYWlibUYyclgzV1VaczFockdtT2w3ODctdm1WMzZVdzdIZHh6YUVnLUp5cmEyMG8?oc=5"
-      },
-      {
-        "date": "2023-08-08",
-        "category": "新闻稿",
-        "title": "GS 认真对待生物…Hugel 的 2 年收购成绩单是“A 级”",
-        "summary": "GS 认真对待生物…Hugel 的 2 年收购成绩单是“A 级”。 上师",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE52ZkNxN0dHNnp4d011NWVhSWc5TUNjUFhUU3F6cVRyRzhmbWRKRmE2cW5TSXF6Smo0ZUxQUmVXMU02Ym5vSW1IQ0dGQVFqT1FFQ0RyZEpnNUgxVWd2dldGczZB?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vX056X0VxZjR5SjdOMi1TLW5RdHlBRENrOU5yZWFUNDF6R2pYVTY3aWU3LTlyckYwckdOT2JBSlVfZkNyajY4M2ROYzVFbW5pSEdBcENfbklRQ1pfRGZkbDhjWHFoY1Q0eUdzS1hn?oc=5",
+        "sourceTitle": "코오롱FnC, 큐티스바이오와 MOU‧‧‧순환 패션 한 발짝 더",
+        "sourceSummary": ""
       },
       {
         "date": "2023-07-25",
-        "category": "商业协议",
+        "category": "业务合作协议",
         "title": "CutisBio、Kakao Healthcare 和欧莱雅签署谅解备忘录，开发精准美容解决方案",
         "summary": "我们已签订一项业务协议，利用生物信息学技术并结合我们的皮肤微生物组专业知识来开发精准美容解决方案。",
         "thumbnailAlt": "谅解备忘录缩略图",
-        "link": "https://www.medigatenews.com/news/3760434771"
-      },
-      {
-        "date": "2023-07-04",
-        "category": "新闻稿",
-        "title": "【医疗生物公告栏】Kakao Healthcare与欧莱雅集团签署谅解备忘录，开发精准美容解决方案",
-        "summary": "【医疗生物公告栏】Kakao Healthcare与欧莱雅集团签署谅解备忘录，开发精准美容解决方案 |东亚科学",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA2ZHhLYlJQT0NJTVI3aFlBV1JkMGRiakppSWRxZHQyWk9xWlRqbGpfSHRKSWk5X2tsLUJybEtka1ZBUXljRnUweHJ3d1dhMEtFSXU4Nw?oc=5"
+        "link": "https://www.medigatenews.com/news/3760434771",
+        "sourceTitle": "큐티스바이오-카카오헬스케어-로레알, 정밀 뷰티 솔루션 개발 MOU 체결",
+        "sourceSummary": "바이오인포매틱스 기술을 활용한 정밀 뷰티 솔루션 개발 업무협약을 맺고 피부 마이크로바이옴 전문성을 결합합니다."
       },
       {
         "date": "2023-07-03",
         "category": "新闻稿",
-        "title": "与欧莱雅集团、Kakao Healthcare、Qtis Bio签署业务协议，开发基于生物信息学的精准美容解决方案",
-        "summary": "欧莱雅集团、Kakao Healthcare 和 Qtis Bio 签署业务协议，开发基于生物信息学的精准美容解决方案 L'Oréal",
+        "title": "Kakao Healthcare与L'Oreal、CutisBio合作开发精准美容方案",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcktqZHZOdEVrMWV4SGwwXzhpY1RfUTRTSjgtUWxhcFd5NDRiTk0zTGU0OHlHVnFWNWJaMFByV2VLOUxMcTljQ2lPWVE0OG5WQnU2YlQwT3dJWERyc3ZneFptbVFaMGFWS25lbDJReWNESEZyZE5NSXJydFg5bTY5cWE5ZlVvOVAzYUVzeGo3T2E4Zw?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE03SDQxRU5tTUwxTlFCS1czNm1LbkRUamt4OGtPdUVHYUlCbThMOTFlYW94ekx0U21LWXgxQXFya01WemEwejVGckpvaDB2VW14Y3FQTFpMODVpLTNQbTBYcWlOLTYyV1BWb3FocHpKbEhET0xUeHFWTlE2UzQ?oc=5",
+        "sourceTitle": "카카오헬스케어, 로레알·큐티스바이오와 정밀 뷰티 솔루션 개발 협력",
+        "sourceSummary": ""
       },
       {
         "date": "2023-07-03",
         "category": "新闻稿",
-        "title": "Kakao Healthcare、欧莱雅和 CutisBio 签署业务协议，开发精准美容解决方案",
-        "summary": "Kakao Healthcare、欧莱雅和 CutisBio 签署开发精准美容解决方案的业务协议 newspim.com",
+        "title": "L'Oreal Group, Kakao Healthcare与CutisBio签署基于生物信息学的精准美容方案开发协议",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ZaWJBZDlTckJiWHZ4RzhmMUszN0xRRkdMMHFWd2wwZy1pZGQycjlPdHFKMXZ0ZjJSNjF5ckMwMjROSlJTYjlBcDBHa2FtYU83ckdueWFnR29qM29J?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcktqZHZOdEVrMWV4SGwwXzhpY1RfUTRTSjgtUWxhcFd5NDRiTk0zTGU0OHlHVnFWNWJaMFByV2VLOUxMcTljQ2lPWVE0OG5WQnU2YlQwT3dJWERyc3ZneFptbVFaMGFWS25lbDJReWNESEZyZE5NSXJydFg5bTY5cWE5ZlVvOVAzYUVzeGo3T2E4Zw?oc=5",
+        "sourceTitle": "로레알 그룹, 카카오헬스케어, 큐티스바이오와 바이오인포매틱스 기반 정밀 뷰티 솔루션 개발 업무협약 체결",
+        "sourceSummary": ""
       },
       {
         "date": "2023-07-03",
         "category": "新闻稿",
-        "title": "Kakao Health 与欧莱雅共同开发精准美容解决方案",
-        "summary": "Kakao Health 与欧莱雅共同开发精准美容解决方案​韩国经济日报电视台",
+        "title": "Kakao Healthcare、L'Oreal、CutisBio签署精准美容方案开发协议",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1zSTdoeUtaWHhzWDdMbUw0X2xxUGNxZkFNTGFGY0V4bi1LUnUtWm14T195RmNJWjdxU2pNUTdiOURLRFdGWnBkZWg0d3hMV0tpdXdpRkdLNExEbWF6Q3VWb1VaNjFKRktIeEVjZjBFWnJmU0FmeC1v?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ZaWJBZDlTckJiWHZ4RzhmMUszN0xRRkdMMHFWd2wwZy1pZGQycjlPdHFKMXZ0ZjJSNjF5ckMwMjROSlJTYjlBcDBHa2FtYU83ckdueWFnR29qM29J?oc=5",
+        "sourceTitle": "카카오헬스케어·로레알·큐티스바이오, 정밀 뷰티 솔루션 개발 업무협약 체결",
+        "sourceSummary": ""
       },
       {
         "date": "2023-07-03",
         "category": "新闻稿",
-        "title": "[License Beauty PICK]APR、B.Ready、LG生活健康、欧莱雅集团",
-        "summary": "【授权美容PICK】APR·Beready·LG生活保健·欧莱雅集团​授权新闻",
+        "title": "Kakao Healthcare与L'Oreal Group、CutisBio签署合作协议",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5WRnlwOFFqa0hjX0wycGhnQlhISnVDWWtvZThlZmpITUlYR0s4Y2IxN1RNdlNmR2JidmlIeWxJZmdyQ3pHUnlzOVZwZFBVbXBna1Fvb1U3OG1UblprbEU3c1Y2RDJiOUN4c3c?oc=5"
-      },
-      {
-        "date": "2023-07-03",
-        "category": "新闻稿",
-        "title": "Kakao Healthcare 与欧莱雅集团 CutisBio 签署业务协议",
-        "summary": "Kakao Healthcare 与欧莱雅集团 CutisBio 签署业务协议",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBicXh0NDJUTU1jTGFiSW1XOHctYTZIYjFHa2hmcUVjOTMtUzdXbGg1eDN0TVBXN0k5QUZqcWxaMWR1SWFPSDlGajZLOUxoTXRGS0JfQnhsbFRlRXRoVjdEVk1xWDRwaDl5OVE?oc=5"
-      },
-      {
-        "date": "2023-07-03",
-        "category": "新闻稿",
-        "title": "[每日IT简报]SKT云服务，即使没有专业人员也“OK”",
-        "summary": "【每日IT简报】SKT云服务，无需专人“OK”​新每日经济",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE84M0pPd1k0aVV2WnNHaHg2SlNvWmVWZjFNREZHQlVsOV9hOUpQWXRkSjNjblZyUFNfb1Z2Z1FlS2E1NXJ6bmFPbjE5N0RORi1sUlAzUXZQejlpMjM2Sm1ncEYzZmtReGoyTjVWVGJqMjdid1NyZkZkZ3FSUQ?oc=5"
-      },
-      {
-        "date": "2023-05-30",
-        "category": "新闻稿",
-        "title": "Infinis 在非时尚授权领域确立了无与伦比的地位",
-        "summary": "Infinis 在非时装授权领域确立了无与伦比的地位 ​ dressnews.co.kr",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9RVm1BcmFhdU1zLVFZbnBZb3hrNkFwblpMM0tUOTMwWlRGc3VMa2NSc2FRMFhDWm14WDhRVlNnSTJkdUZZQnU4Z2VoZUJPTUk4TUl5NGJFaFhNOU16Q1h1RTVxQQ?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBicXh0NDJUTU1jTGFiSW1XOHctYTZIYjFHa2hmcUVjOTMtUzdXbGg1eDN0TVBXN0k5QUZqcWxaMWR1SWFPSDlGajZLOUxoTXRGS0JfQnhsbFRlRXRoVjdEVk1xWDRwaDl5OVE?oc=5",
+        "sourceTitle": "카카오헬스케어, 로레알 그룹 큐티스바이오와 업무협약 체결",
+        "sourceSummary": ""
       },
       {
         "date": "2022-12-19",
@@ -420,128 +954,51 @@
         "title": "CutisBio-Immunobiome 开发下一代癌症微生物组免疫疗法",
         "summary": "我们正在与Immunobiome合作，利用基于合成生物学的重组菌株来开发下一代微生物组免疫抗癌药物。",
         "thumbnailAlt": "研究缩略图",
-        "link": "https://www.pharmnews.com/news/articleView.html?idxno=216348"
-      },
-      {
-        "date": "2022-12-07",
-        "category": "新闻稿",
-        "title": "[健康胶囊]亚洲大学医院在主楼地下1层等开设了“机器人手术中心”。",
-        "summary": "[健康胶囊]亚洲大学医院在主楼地下一层开设“机器人手术中心” 其他 东亚日报",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0tcTZKenBmeGlsaEM0Z0w1c0JydnFFME8wUkd1NkxKUkpyeTBoOGtXZ3NnLXFqY2l2Y055LUhTVGxFNWl0N0tmRzlaWTFHSTVEcHUwcHpiSS11UTFndlZlMDlidkRaazNrRjBySmQwb9IBZkFVX3lxTE5acHRmREVXMkNzN0lyYUw2bmpTVTVKdzA1MGRUaGdfS3dNQWpQQzFwZXFEdjE3V0NhV1UxZ1lGbExZdFlWSkNnLXZOTm05NTdUci1vVk02TjFaYXNLTkN2MFVtSk9oQQ?oc=5"
+        "link": "https://www.pharmnews.com/news/articleView.html?idxno=216348",
+        "sourceTitle": "큐티스바이오-이뮤노바이옴, 차세대 마이크로바이옴 면역항암제 개발",
+        "sourceSummary": "이뮤노바이옴과 협력하여 합성생물학 기반의 재조합 균주를 활용한 차세대 마이크로바이옴 면역항암제 개발 연구를 진행합니다."
       },
       {
         "date": "2022-12-05",
         "category": "新闻稿",
-        "title": "Cutis Bio——免疫组和微生物组免疫抗癌联合研究",
-        "summary": "皮肤生物免疫组、微生物组免疫抗癌治疗联合研究医药新闻",
+        "title": "CutisBio-Immunovab, 联合研究微生物组免疫抗癌治疗",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zbVMzQ0s3NVpxMG9HNUNiSFN2bG0yOTBRSk5ad01EUlNoSnNId1UxM1pYSkptbWNGcEJ4cHJRY3ZvR0tUTC01VmM5SVJVNlZqSVYxLTQ1YUNlWVFkT1UyVXMtTnBMenk4SHZvYg?oc=5"
-      },
-      {
-        "date": "2022-06-30",
-        "category": "新闻稿",
-        "title": "医药行业走向环保",
-        "summary": "制药业采用生态友好型 健康韩国新闻",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8tVE4yR3I2eE1Zdjh5V0hRSHhJME5fc25GV2VWaEgySjFUWm81UUdnMUpyRW1Ia1hYcllmb2RGT3ptYi1XNnpaQUx4ZGNPUXM1S0hYOERuNTlQOVVfSWctUXVB?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zbVMzQ0s3NVpxMG9HNUNiSFN2bG0yOTBRSk5ad01EUlNoSnNId1UxM1pYSkptbWNGcEJ4cHJRY3ZvR0tUTC01VmM5SVJVNlZqSVYxLTQ1YUNlWVFkT1UyVXMtTnBMenk4SHZvYg?oc=5",
+        "sourceTitle": "큐티스바이오-이뮤노바이옴,마이크로바이옴 면역항암 치료제 공동연구",
+        "sourceSummary": ""
       },
       {
         "date": "2022-06-27",
         "category": "新闻稿",
-        "title": "大熊制药 - 大熊生物 - Qtis Bio，环保药物材料开发和商业化协议",
-        "summary": "大熊制药 - 大熊生物 - Qtis Bio，环保药物材料开发和商业化协议 |医药新闻",
+        "title": "Daewoong Pharmaceutical-Daewoong Bio-CutisBio, 签署绿色药物材料开发及商业化协议",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5RNGRiRURDNjd4c0ZFSDg3bVY5ZXNBUFRMbjIwRFZDazZkWGpXdmhaUFMxa1lfS2pubzRFa3J5X1lMUDNxRm9WanZ3bDNobGpJamRidHFSSkJUOXlhazNDWFpQRElnYjVhYTlNcQ?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5RNGRiRURDNjd4c0ZFSDg3bVY5ZXNBUFRMbjIwRFZDazZkWGpXdmhaUFMxa1lfS2pubzRFa3J5X1lMUDNxRm9WanZ3bDNobGpJamRidHFSSkJUOXlhazNDWFpQRElnYjVhYTlNcQ?oc=5",
+        "sourceTitle": "대웅제약-대웅바이오-큐티스바이오,친환경 약물소재 개발∙상업화 협약",
+        "sourceSummary": ""
       },
       {
         "date": "2022-06-27",
         "category": "新闻稿",
-        "title": "大熊制药、大熊生物和 Qtis Bio 签署开发环保药物材料协议",
-        "summary": "Daewoong Pharmaceutical、Daewoong Bio 和 CutisBio 签署协议，开发环保药物材料。商业邮政",
+        "title": "Daewoong Pharmaceutical, Daewoong Bio, CutisBio签署绿色药物材料开发协议",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NdmpROGR2NTd2Z0cxMnI3bHRrZlE0LWhmcE1nMHdrQW9EMzRJeG5lWm4zSld1eG84OThaU0dhU1MyWFVnX0FiaHhrZXYyNnZpY2J0a2g4Q0lDamVqMXFFcFhnbDdYVUJDdk1qelc1LVREcWM?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NdmpROGR2NTd2Z0cxMnI3bHRrZlE0LWhmcE1nMHdrQW9EMzRJeG5lWm4zSld1eG84OThaU0dhU1MyWFVnX0FiaHhrZXYyNnZpY2J0a2g4Q0lDamVqMXFFcFhnbDdYVUJDdk1qelc1LVREcWM?oc=5",
+        "sourceTitle": "대웅제약 대웅바이오 큐티스바이오, 친환경 약물소재 개발 협약 맺어",
+        "sourceSummary": ""
       },
       {
         "date": "2022-06-27",
         "category": "新闻稿",
-        "title": "广东制药经销GSK过敏性鼻炎治疗药“Avamis鼻喷雾剂”",
-        "summary": "广东制药经销葛兰素史克过敏性鼻炎治疗药“Avamis鼻喷雾剂”等 医药新闻",
+        "title": "Daewoong Pharmaceutical-Daewoong Bio-CutisBio, 绿色药物材料开发协议",
+        "summary": "",
         "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MWHFfYk81YU82VUk4dy01OHZxUWtRdEk5WkRVbWQ5RkxWYjVIWGZwYzhCdDE5Q3RSSm11Yl9OSms4SHNXRDdLZXFGcUpIZFB2WWQ5dVpZZWNnTjlyamR1SFh1WWdoUk0?oc=5"
-      },
-      {
-        "date": "2022-06-27",
-        "category": "新闻稿",
-        "title": "大熊制药 - 大熊生物 - Qtis Bio，协议开发环保药物材料",
-        "summary": "Daewoong Pharmaceutical - Daewoong Bio - Qtis Bio，协议开发环保药物材料|热火新闻",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1qaFJ6ZnlzNUhEbWQ3TXJWNHdSWWhYVFF4cUpabWVBdVFZTXRqaXMySnJ6QXJPUlA0RGx3UkhmRUgwTVZEa3BpanhIVDJ5cFllZFdsYVJfOGtteFVVUGdvU0JZR3BGOHlCejlv?oc=5"
-      },
-      {
-        "date": "2022-06-27",
-        "category": "新闻稿",
-        "title": "Gucci “Towards the Sun”精选揭晓 Gucci, Towards the Sun-拉菲草效果-挚爱-科德角",
-        "summary": "Gucci “Towards the Sun”精选揭晓 Gucci, Towards the Sun-拉菲草效果-Beloved-Cape Cod 韩国免税店新闻",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBCVEZlWnNVM01jcV9LNERyZnRaMnVXNzhMVHRRZDJKWno2NTc2d2s1S29MSWtORXhTR0JlUWlzYzRjemVJUG9RNVdpdFJFOVNmdG5GcjRtWm1mUm9aZk1GdU9fQ09hdEJM?oc=5"
-      },
-      {
-        "date": "2021-09-28",
-        "category": "新闻稿",
-        "title": "GS 寻求新的增长引擎……“继生物之后，现在是能源”",
-        "summary": "GS寻求新的增长引擎……“继生物之后，现在是能源”《中央日报》",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9mM1QzeG82RExld2pvanF5V2xtMktTTk02Y01DbDRsWHhxU09KOW9pWmFwckVGaHVfcjEtbWlEY0N5MW50bFJpbkZoUXV6c2FxdENEalNR?oc=5"
-      },
-      {
-        "date": "2021-08-26",
-        "category": "新闻稿",
-        "title": "GS收购Hugel，标志着其进军生物行业的开始",
-        "summary": "GS收购Hugel标志着其进军生物行业的开始。生物时代",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8xMVVHb3pXeUx0b2pvRW03dXVVQ1k1T1V6d0o3bVBuUTJ5ZnFXMzQ2MDlrejhBY1g3bkxiblNTb19MazdxcnluWHV1NXU5V2NObkwyekUzcUUtWnhrQXg1RjVjQ1dPaXNkZWJZ?oc=5"
-      },
-      {
-        "date": "2021-06-08",
-        "category": "新闻稿",
-        "title": "韩国科学技术院开发出首个利用微生物生产天然彩虹色素的技术",
-        "summary": "韩国科学技术院开发出首个利用微生物生产天然彩虹色素的技术 Sejong Chungcheong News",
-        "thumbnailAlt": "新闻缩略图",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE14N2VtOWxvOEdlNmJuVUJVenVnZk5PbnE3VGhwWFdCQWVrSWZ5THhheHhCTHR6UWtZMkJmQ19XbzVnLUo3VllMblRVbVpCZ0QtZ0xGNGdJNUtnYTdKenk0N3ZoNnZGUkdJTGRj0gFvQVVfeXFMTmtBZ0swRkhRZ056M21TRURIdHFWSTBHSHpvWWxVNVZ6a1F5VWx6VEJoRnZObHZCZjZwVTVPYzVjdFMzSHBiWW1BV0JDRmZCME9OVUQzd1ctdXdVc3JFVXh4UlZ3QWZwM3RGMWpxWEZ3?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1qaFJ6ZnlzNUhEbWQ3TXJWNHdSWWhYVFF4cUpabWVBdVFZTXRqaXMySnJ6QXJPUlA0RGx3UkhmRUgwTVZEa3BpanhIVDJ5cFllZFdsYVJfOGtteFVVUGdvU0JZR3BGOHlCejlv?oc=5",
+        "sourceTitle": "대웅제약-대웅바이오-큐티스바이오, 친환경 약물소재 개발 협약",
+        "sourceSummary": ""
       }
-    ]
-  },
-  "Contact": {
-    "title": "联系我们",
-    "description": "如果您对CutisBio有任何疑问，请留言，我们将尽快给您回复。",
-    "addressTitle": "地址",
-    "addressDetail": "首尔特别市江南区论岘路 842 狎鸥亭大厦 8楼",
-    "emailTitle": "电子邮件",
-    "emailAddress": "contact@cutisbio.com",
-    "mapTitle": "位置地图"
-  },
-  "ProblemSolution": {
-    "problemTitle": "我们所穿丹宁的隐藏代价",
-    "problemText": "传统的染色过程依赖于石化产品，留下了严重的环境污染和健康威胁。其中“苯胺”是最致命的问题之一。",
-    "solutionTitle": "CutisBio 的创新答案",
-    "solutionText": "通过微生物发酵完全排除有毒物质的 100% 无苯胺染料。为您提供对人类和自然都安全的完美可持续性。"
-  },
-  "Process": {
-    "title": "生物制造过程",
-    "subtitle": "模仿自然的尖端合成生物学机制",
-    "step1Title": "1. DNA 设计",
-    "step1Text": "根据自然界中存在的酶途径，对微生物的 DNA 进行特殊重设计。",
-    "step2Title": "2. 精准发酵",
-    "step2Text": "在精确的发酵环境中，微生物像植物一样自发合成靛蓝前体。",
-    "step3Title": "3. 靛蓝纯化",
-    "step3Text": "通过环保的提纯工艺，完成 100% 生物基染料。",
-    "step4Title": "4. Drop-in 染色",
-    "step4Text": "保持现有的染色工厂基础设施不变，无需增加设备即可立即应用。"
-  },
-  "Partners": {
-    "title": "共同参与全球时尚未来的领导品牌",
-    "testimonial": "“CutisBio 基于微生物的靛蓝染料是真正的游戏规则改变者，它同时满足了环境保护和商业竞争力的要求。”",
-    "testimonialAuthor": "CEO interview"
+    ],
+    "listNote": "此列表自动汇集了公开发布的媒体报道。文章内容和表述属于各媒体，测试数据和认证信息请查看数据和认证页面。"
   }
 }

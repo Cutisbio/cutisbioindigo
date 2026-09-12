@@ -1,117 +1,155 @@
-import React from 'react';
-import { getTranslations } from 'next-intl/server';
-import SchemaOrg, { buildOrganizationSchema } from '@/components/seo/SchemaOrg';
+import type { Metadata } from 'next';
 import Image from 'next/image';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import SchemaOrg, { buildOrganizationSchema } from '@/components/seo/SchemaOrg';
+import SectionHeading from '@/components/blugene/SectionHeading';
+import { BRAND, CORPORATE_SITE_URL, LOCALES, SITE_URL, buildPageMetadata } from '@/data/blugene/site';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'About' });
-  return {
-    title: t('title'),
-    description: t('missionText'),
-  };
+  return buildPageMetadata({
+    locale,
+    path: '/about',
+    // 제목에 줄바꿈 묶음 태그(<keep>)가 있어 메타 제목은 태그를 뺀 문자열로 만든다.
+    title: t.markup('title', { keep: (chunks) => chunks }),
+    // missionText 는 회사의 고정 영문 문구이므로 설명문은 언어별로 번역된 별도 키를 쓴다
+    description: t('metaDescription'),
+  });
 }
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'About' });
-  
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cutisbioindigo.kr';
-  const orgSchema = buildOrganizationSchema('CutisBio', baseUrl, `${baseUrl}/logo.png`);
+  setRequestLocale(locale);
 
-  const historyData = t.raw('historyList') as { year: string, event: string }[];
+  const t = await getTranslations({ locale, namespace: 'About' });
+  const history = t.raw('historyList') as { year: string; event: string }[];
+  const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/brand/cutisbio-logo.png`);
+
+  const areas = [
+    { title: t('healthTitle'), text: t('healthText'), highlight: false },
+    { title: t('beautyTitle'), text: t('beautyText'), highlight: false },
+    { title: t('fashionTitle'), text: t('fashionText'), highlight: true },
+  ];
 
   return (
     <>
       <SchemaOrg schema={orgSchema} />
 
-      <div className="max-w-5xl mx-auto space-y-16 sm:space-y-20 py-8 sm:py-12 px-4 sm:px-6">
-        
-        {/* Hero Section */}
-        <section className="text-center flex flex-col items-center">
-          <div className="mt-8 mb-12 relative w-60 h-20 sm:w-72 sm:h-24 lg:w-80 lg:h-28 mx-auto mix-blend-multiply opacity-90 hover:opacity-100 transition-opacity duration-300">
-            <Image
-              src="/logo.png"
-              alt="CutisBio Logo"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-6 sm:mb-8 drop-shadow-sm leading-tight">
-            {t('title')}
-          </h1>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto italic border-l-4 border-blue-500 pl-4 sm:pl-6 py-3 sm:py-4 bg-gray-50 rounded-r-lg whitespace-pre-line leading-relaxed shadow-sm text-left">
-            {t('missionText')}
+      <section className="w-full border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
+        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+          {/* 원본 로고 SVG. 가로세로비 296.05:62.35 ≈ 4.7482:1 을 그대로 지킨다 */}
+          <Image
+            src="/brand/cutisbio-logo.svg"
+            alt={BRAND.companyLegal}
+            width={247}
+            height={52}
+            unoptimized
+            preload
+            className="mb-10 h-auto w-[200px] sm:w-[247px]"
+          />
+          {/*
+            아래 비전 문단에는 'OUR VISION' 라벨이 있다. 미션에도 같은 라벨을 붙여야
+            영문 문장이 한국어 제목의 부제가 아니라 회사의 고정 미션 문구로 읽힌다.
+          */}
+          {/* 2026-09-12 제목이 길어져(…더 건강하게 더 아름답게…) 기본 폭에서는 세 줄로 갈라지며 '더'가 줄 끝에 걸린다.
+              제목 상자를 넓히고, 문구의 <keep> 구간('더 아름답게 디자인하다')은 md 이상에서 한 줄에 둔다(브랜드 히어로와 같은 방식). */}
+          <SectionHeading
+            headingLevel="h1"
+            eyebrow={t('missionTitle')}
+            title={t.rich('title', {
+              keep: (chunks) => <span className="md:whitespace-nowrap">{chunks}</span>,
+            })}
+            body={t('missionText')}
+            size="hero"
+            titleWidth="wide"
+          />
+        </div>
+      </section>
+
+      <section className="on-indigo w-full bg-[var(--color-indigo-deep)] text-white">
+        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+          <p className="text-xs font-semibold tracking-[0.22em] text-white/55 uppercase">
+            {t('visionTitle')}
           </p>
-        </section>
+          <p className="mt-6 max-w-4xl text-xl leading-[1.7] break-keep sm:text-2xl lg:text-[2rem]">
+            {t('visionText')}
+          </p>
+        </div>
+      </section>
 
-        {/* Vision Banner */}
-        <section className="bg-gradient-to-br from-indigo-900 via-blue-800 to-indigo-900 text-white py-16 sm:py-20 px-8 sm:px-10 md:px-14 rounded-3xl shadow-2xl relative overflow-hidden mx-2 sm:mx-0">
-          <div className="absolute inset-0 bg-blue-500 opacity-20 mix-blend-overlay"></div>
-          <div className="relative z-10 text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-blue-200 uppercase tracking-widest drop-shadow-md">
-              {t('visionTitle')}
-            </h2>
-            <p className="text-lg sm:text-xl md:text-2xl font-light leading-relaxed max-w-4xl mx-auto px-2 sm:px-0 drop-shadow-sm">
-              {t('visionText')}
-            </p>
-          </div>
-        </section>
-
-        {/* Core Business Areas - Cards Grid */}
-        <section className="px-2 sm:px-0">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center text-gray-800 relative inline-block left-1/2 -translate-x-1/2">
-            {t('coreBusinessTitle')}
-            <span className="absolute -bottom-3 left-1/4 w-1/2 h-1 bg-blue-500 rounded-full"></span>
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-            
-            <div className="bg-white border border-gray-100 rounded-3xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center p-6 sm:p-8 group">
-              <div className="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition duration-300 shadow-inner">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-800">{t('medicalTitle')}</h3>
-              <p className="text-gray-600 leading-relaxed">{t('medicalText')}</p>
-            </div>
-
-            <div className="bg-white border border-gray-100 rounded-3xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center p-6 sm:p-8 group">
-              <div className="w-14 sm:w-16 h-14 sm:h-16 bg-pink-50 text-pink-600 rounded-full flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-pink-600 group-hover:text-white transition duration-300 shadow-inner">
-                <svg className="w-7 sm:w-8 h-7 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" /></svg>
-              </div>
-              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-gray-800">{t('beautyTitle')}</h3>
-              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{t('beautyText')}</p>
-            </div>
-
-            <div className="bg-white border border-gray-100 rounded-3xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center p-6 sm:p-8 group sm:col-span-2 md:col-span-1">
-              <div className="w-14 sm:w-16 h-14 sm:h-16 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-indigo-600 group-hover:text-white transition duration-300 shadow-inner">
-                <svg className="w-7 sm:w-8 h-7 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" /></svg>
-              </div>
-              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-gray-800">{t('fashionTitle')}</h3>
-              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{t('fashionText')}</p>
-            </div>
-          </div>
-        </section>
-
-        {/* History Vertical Timeline */}
-        <section className="px-4 sm:px-0">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center text-gray-800">
-            {t('historyTitle')}
-          </h2>
-          <div className="relative border-l-4 border-blue-200 ml-2 sm:ml-6 md:ml-12 pl-6 sm:pl-8 space-y-8 sm:space-y-10">
-            {historyData.map((item, index) => (
-              <div key={index} className="relative">
-                <div className="absolute -left-9 sm:-left-11 w-5 sm:w-6 h-5 sm:h-6 bg-blue-600 rounded-full border-4 border-white shadow-sm mt-1 sm:mt-1.5"></div>
-                <h3 className="text-xl sm:text-2xl font-black text-blue-600 mb-2">{item.year}</h3>
-                <p className="text-base sm:text-lg text-gray-700 bg-white p-4 sm:p-5 border rounded-lg shadow-sm hover:shadow-md transition leading-relaxed">
-                  {item.event}
+      <section className="w-full bg-white">
+        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+          <SectionHeading title={t('coreBusinessTitle')} size="lg" />
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {areas.map((area) => (
+              <article
+                key={area.title}
+                className={`rounded-md border p-7 ${
+                  area.highlight
+                    ? 'border-[var(--color-indigo-deep)] bg-[var(--color-ivory)]'
+                    : 'border-[color:var(--color-washed)] bg-white'
+                }`}
+              >
+                <h3 className="text-lg font-semibold break-keep text-[var(--color-indigo-deep)]">
+                  {area.title}
+                </h3>
+                <p className="mt-3 text-base leading-relaxed break-keep text-[var(--color-ink)]/85">
+                  {area.text}
                 </p>
-              </div>
+              </article>
             ))}
           </div>
-        </section>
 
-      </div>
+          <div className="mt-14 max-w-3xl rounded-md border border-[color:var(--color-washed)] bg-[var(--color-ivory)] p-7">
+            <h3 className="text-lg font-semibold break-keep text-[var(--color-indigo-deep)]">
+              {t('blugeneNoteTitle')}
+            </h3>
+            {/* 2026-09-12 고객 요청: 설명문과 '브랜드 →' 링크 대신 회사 공식 홈페이지 바로가기 버튼. 외부 사이트라 새 창으로 열고,
+                보조기기에는 '새 창에서 열림'을 읽어 준다. 주소는 site.ts 의 CORPORATE_SITE_URL. */}
+            <div className="mt-5">
+              <a
+                href={CORPORATE_SITE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-md bg-[var(--color-indigo-deep)] px-6 py-3.5 text-sm font-semibold break-keep text-white transition-colors hover:bg-[var(--color-denim)] sm:text-base"
+              >
+                {t('corporateSiteCta')}
+                <span aria-hidden="true">↗</span>
+                <span className="sr-only"> ({t('corporateSiteNewTab')})</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full bg-[var(--color-ivory)]">
+        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+          <SectionHeading title={t('historyTitle')} size="lg" />
+          <ol className="mt-10 border-l-2 border-[color:var(--color-washed)] pl-6 sm:pl-8">
+            {history.map((item) => (
+              <li key={item.year} className="relative pb-8 last:pb-0">
+                <span
+                  aria-hidden="true"
+                  className="absolute -left-[1.9rem] mt-1.5 h-3 w-3 rounded-full bg-[var(--color-denim)] ring-4 ring-[var(--color-ivory)] sm:-left-[2.4rem]"
+                />
+                <p className="text-lg font-bold text-[var(--color-denim)]">{item.year}</p>
+                <p className="mt-2 text-base leading-relaxed break-keep text-[var(--color-ink)]/85">
+                  {item.event}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
     </>
   );
 }

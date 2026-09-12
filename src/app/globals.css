@@ -1,51 +1,244 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* =========================================================================
+   Blugene by CutisBio — 디자인 토큰
+   고급 데님 브랜드의 화면에 바이오기업의 데이터가 자연스럽게 이어지도록 구성한다.
+   대비는 WCAG AA(본문 4.5:1, 큰 글자·그래픽 3:1) 기준으로 확인했다.
+   ========================================================================= */
+
+@theme {
+  /* 주조색 */
+  --color-indigo-deep: #101d46; /* Deep Indigo  — 흰 글자 대비 15.6:1 */
+  --color-denim: #365a83; /* Denim Blue   — 흰 배경 위 7.3:1 */
+  --color-washed: #bdd0e3; /* Washed Blue  — 배경/장식용 경계 (흰 배경 위 1.6:1) */
+  /*
+    표 선 전용. washed 는 흰 배경 위 1.6:1 이라 9행 6열 시험표를 눈으로 따라갈 때 행이 사라진다.
+    비텍스트 대비 3:1 을 넘겨야 해서 상대휘도 0.258 로 잡았다 — 흰 배경 3.4:1, ivory 헤더 행 3.1:1.
+    카드 테두리·스와치 테두리까지 이 값으로 올리면 화면이 격자로 보이므로 표 선에만 쓴다.
+  */
+  --color-rule: #788da6;
+
+  /* 바탕 */
+  --color-ivory: #f6f3ec; /* Cotton Ivory */
+  --color-paper: #ffffff;
+
+  /* 글자 */
+  --color-ink: #172133; /* 본문       — ivory 위 14.9:1 */
+  --color-slate-muted: #566378; /* 보조 텍스트 — ivory 위 5.3:1 */
+
+  /* 합성생물학 포인트 (면적을 넓게 쓰지 않는다) */
+  --color-sage: #718772; /* 그래픽·아이콘 전용 (3.8:1) */
+  --color-sage-ink: #4e6350; /* 텍스트용 어두운 변형 (6.3:1) */
+
+  /* 타이포그래피 스택 — 추가 웹폰트를 내려받지 않고 각 언어의 시스템 폰트를 쓴다 */
+  --font-sans:
+    var(--font-geist-sans), "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Segoe UI", Roboto, sans-serif;
+  --font-serif: Georgia, "Times New Roman", "Nanum Myeongjo", serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* 레이아웃 */
+  --spacing-gutter: 1.5rem;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+:root {
+  --background: #ffffff;
+  --foreground: #172133;
+  /* 헤더 높이 — 고정 헤더 아래 여백 계산에 사용 */
+  --header-h: 4.5rem;
+}
+
+@media (min-width: 768px) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --header-h: 5.25rem;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
 }
 
-/* CJK i18n Typography & Layout Fixes */
-/* 
- * The Tailwind .break-keep class uses `word-break: keep-all`, which works perfectly for Korean 
- * by keeping words together based on spaces. However, Japanese and Chinese do not use spaces, 
- * so keep-all forces entire paragraphs into a single line, breaking layouts.
- * We override it here globally based on the HTML lang attribute.
+/* 브랜드 워드마크 — 정돈된 산세리프, 좁은 자간 */
+.blugene-wordmark {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+/*
+ * 브랜드 마크 색 순환 — 워드마크 앞의 열두 갈래 문양 (BlugeneMark.tsx, Wordmark.tsx).
+ * 1초마다 네이비 → 미드나잇 → 인디고 → 코발트 → 로열 → 세룰리안 → 스카이 순으로 돌고
+ * 다시 네이비로 돌아온다(한 바퀴 7초). 각 색을 0.8초 유지하고 0.2초 동안 다음 색으로 섞여
+ * 넘어간다. 색값을 바꾸려면 아래 변수만 고친다. 모션 축소 설정에서는 아래 '접근성 · 모션'
+ * 규칙이 애니메이션을 사실상 끄므로 기본색(네이비)에 머문다.
+ */
+.blugene-mark {
+  --mark-navy: #000080; /* 네이비블루 */
+  --mark-midnight: #191970; /* 미드나잇블루 */
+  --mark-indigo: #26428b; /* 인디고블루 */
+  --mark-cobalt: #0047ab; /* 코발트블루 */
+  --mark-royal: #4169e1; /* 로열블루 */
+  --mark-cerulean: #007ba7; /* 세룰리안블루 */
+  --mark-sky: #87ceeb; /* 스카이블루 */
+  color: var(--mark-navy);
+  animation: blugene-mark-cycle 7s linear infinite;
+}
+
+@keyframes blugene-mark-cycle {
+  0%,
+  11.43% {
+    color: var(--mark-navy);
+  }
+  14.29%,
+  25.71% {
+    color: var(--mark-midnight);
+  }
+  28.57%,
+  40% {
+    color: var(--mark-indigo);
+  }
+  42.86%,
+  54.29% {
+    color: var(--mark-cobalt);
+  }
+  57.14%,
+  68.57% {
+    color: var(--mark-royal);
+  }
+  71.43%,
+  82.86% {
+    color: var(--mark-cerulean);
+  }
+  85.71%,
+  97.14% {
+    color: var(--mark-sky);
+  }
+  100% {
+    color: var(--mark-navy);
+  }
+}
+
+/* 영문 태그라인용 세리프 (예: Better Blue for Everyday Denim) */
+.blugene-tagline {
+  font-family: var(--font-serif);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* =========================================================================
+   다국어 타이포그래피
+   ========================================================================= */
+
+/*
+ * Tailwind 의 .break-keep 은 `word-break: keep-all` 이다. 한국어에는 알맞지만
+ * 일본어·중국어는 띄어쓰기가 없어 문단 전체가 한 줄이 되므로 언어별로 되돌린다.
  */
 :lang(ja) .break-keep,
 :lang(zh) .break-keep {
   word-break: normal !important;
-  word-wrap: break-word !important;
   overflow-wrap: break-word !important;
 }
 
-/* Beautiful native typography fallbacks for Chinese and Japanese readability */
 :lang(ja) body {
-  font-family: var(--font-geist-sans), "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-family:
+    var(--font-geist-sans), "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo,
+    sans-serif;
   letter-spacing: 0.02em;
 }
 
 :lang(zh) body {
-  font-family: var(--font-geist-sans), "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family:
+    var(--font-geist-sans), "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   letter-spacing: 0.02em;
+}
+
+/* 프랑스어 · 이탈리아어 · 튀르키예어는 기본 라틴 스택(--font-sans)으로 충분하다. (벵골어 전용 규칙은 2026-09-11 언어 제외와 함께 지웠다.) */
+:lang(tr) body {
+  font-family: var(--font-sans);
+}
+
+/* =========================================================================
+   접근성 · 모션
+   ========================================================================= */
+
+/*
+ * 스크롤 진입 애니메이션에 본문 가시성을 의존시키지 않는다.
+ * JS 가 실패하거나 모션을 끈 경우에도 모든 본문이 읽혀야 한다.
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 키보드 포커스 링 — 인디고 배경에서도 보이도록 두 겹으로 그린다 */
+:where(a, button, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-denim);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.on-indigo :where(a, button, select, summary, [tabindex]):focus-visible {
+  outline-color: #ffffff;
+}
+
+/* 건너뛰기 링크 */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: 0.75rem;
+  top: 0.75rem;
+  padding: 0.65rem 1rem;
+  background: var(--color-indigo-deep);
+  color: #fff;
+  border-radius: 0.375rem;
+}
+
+/* 표는 좁은 화면에서 가로 스크롤한다. 본문이 가로로 넘치지 않게 한다. */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  /*
+   * position: relative 가 필요하다.
+   * 표 안의 `.sr-only` 요소는 position:absolute 인데, 위치 지정된 조상이 없으면
+   * 초기 컨테이닝 블록(html)을 기준으로 배치된다. 그러면 가로로 스크롤되는 넓은 표 안의
+   * 정적 위치가 뷰포트 밖으로 나가 문서 전체에 가로 스크롤이 생긴다.
+   * (모바일 390px 에서 documentElement.scrollWidth 가 1045px 이 되던 원인)
+   */
+  position: relative;
+}
+
+/* 가로 스크롤 영역은 키보드로도 스크롤할 수 있어야 한다 (WCAG 2.1.1) */
+.table-scroll:focus-visible {
+  outline: 2px solid var(--color-denim);
+  outline-offset: 2px;
+}
+
+.table-scroll table {
+  border-collapse: collapse;
+}
+
+/* 원단·색상 견본 사진은 어떤 필터도 적용하지 않는다 (색 정보 보존) */
+.swatch-true-color {
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  image-rendering: auto;
 }

@@ -1,63 +1,731 @@
 {
-  "Blog": {
-    "eyebrow": "인사이트 & 기술",
-    "title": "블로그",
-    "description": "CutisBio의 합성생물학 기술과 친환경 패션에 관한 심층 아티클을 소개합니다.",
-    "categoryTech": "기술 소개",
-    "readMore": "자세히 읽기",
-    "readTime": "{minutes}분 읽기"
-  },
-  "Layout": {
-    "home": "홈",
-    "about": "회사 소개",
-    "tech": "기술 소개",
-    "news": "최신 소식",
+  "Nav": {
+    "brand": "브랜드",
+    "technology": "기술",
+    "dyeingPrinting": "염색 · 프린팅",
+    "dataCertifications": "데이터 · 인증",
+    "sampleInquiry": "샘플 문의",
+    "about": "회사소개",
+    "news": "소식",
     "contact": "문의하기",
-    "footerText": "Sustainable Denim Dye. Aniline free - Human safe. © 2026 CutisBio. All rights reserved."
+    "menu": "메뉴",
+    "openMenu": "메뉴 열기",
+    "closeMenu": "메뉴 닫기",
+    "languageLabel": "언어 선택",
+    "skipToContent": "본문으로 건너뛰기",
+    "homeAria": "Blugene 홈으로"
+  },
+  "Footer": {
+    "tagline": "Better Blue for Everyday Denim",
+    "sitemapTitle": "사이트 안내",
+    "contactTitle": "문의",
+    "legalTitle": "자료 안내",
+    "sourceNote": "이 사이트의 시험 수치·인증 정보는 2026년 7월 발행 CutisBio 카탈로그에 수록된 자료입니다. 자료 기준일 {date}.",
+    "companyLine": "CutisBio Co., Ltd. (큐티스바이오)",
+    "rights": "© 2026 CutisBio Co., Ltd. All rights reserved.",
+    "catalogueLink": "원본 카탈로그(PDF) 내려받기"
   },
   "Home": {
-    "heroTitle": "차세대 친환경 데님 염료, CutisBio Indigo",
-    "heroSubtitle": "우리 피부에 안전한 인디고 염료. 합성생물학 기술로 유독성 물질(아닐린) 없이 탄생한 가장 지속 가능한 데님 염색 솔루션입니다.",
-    "heroImageAlt": "푸른색 데님 원단과 깨끗한 물방울이 교차하는 직관적인 친환경 이미지",
-    "impactMetricsTitle": "CutisBio가 만드는 긍정적 변화",
-    "metric1Value": "100%",
-    "metric1Text": "Aniline-Free (독성 물질 완벽 차단)",
-    "metric2Value": "Drop-in",
-    "metric2Text": "기존 염색 공장 설비에 즉시 적용 가능",
-    "metric3Value": "Eco-friendly",
-    "metric3Text": "생산 과정의 수질 오염 및 탄소 배출 극소화",
-    "coreValuesTitle": "CutisBio 기술의 핵심 가치",
-    "coreValuesDesc": "전통적인 석유화학 기반의 염색 산업을 합성생물학(Synthetic Biology)을 통해 혁신합니다.",
-    "feature1": "정밀 발효(Precision Fermentation)",
-    "benefit1": "지속 가능한 생합성 과정으로 자연 생태계 모방",
-    "feature2": "아닐린 프리(Aniline-Free)",
-    "benefit2": "작업자와 소비자를 위협하는 발암물질 원천 배제",
-    "feature3": "친환경 인디고(Sustainable Indigo)",
-    "benefit3": "수질 오염 최소화 및 패션 산업의 순환 경제 달성",
-    "ctaTitle": "지속가능한 패션의 미래, 함께하시겠습니까?",
-    "ctaText": "CutisBio의 혁신적인 미생물 기반 인디고 염료가 어떻게 전통 염색 공정을 대체하는지 확인해 보세요.",
-    "ctaButton": "기술 상세 보기",
-    "qualityTitle": "우수한 염색성 및 견뢰도 검증",
-    "qualitySubtitle": "일본 프리미엄 데님 염색 업체의 철저한 비교 테스트 결과, 큐티스바이오 인디고가 기존 화학 인디고 대비 더 뛰어나고 깊은 색감과 우수한 내구성을 보임이 입증되었습니다.",
-    "qualityImageAlt": "데님 염색 및 견뢰도 테스트 결과 이미지",
-    "qualityBadge": "Quality Proven"
+    "metaTitle": "인디고DNA와 발효로 빚어낸 푸른색.",
+    "metaDescription": "인디고DNA와 발효로 빚어낸 푸른색. 미생물 발효로 생산하는 바이오 인디고 Blugene — 바이오 기반 탄소 함량 98%, 아닐린 · N-메틸아닐린 불검출(검출한계 5 mg/kg).",
+    "ctaTitle": "다음 데님의 파랑을, 함께 만드세요.",
+    "ctaText": "데님 브랜드, 원단업체, 염색공장, 프린팅 업체의 문의를 기다립니다.",
+    "ctaButton": "Blugene 샘플 문의"
+  },
+  "Hero": {
+    "descriptor": "인디고DNA와 발효로 빚어낸 푸른색.",
+    "titleLine1": "평생 함께하는 데님,",
+    "titleLine2": "더 안전한 블루.",
+    "body": "피부에 평생 접촉하는 그 푸른색이 합성생물학으로 재탄생했습니다. 피부건강을 위해 작은 위험까지 타협하지 않는 인디고 Blugene.",
+    "ctaPrimary": "Blugene 샘플 문의",
+    "ctaSecondary": "데이터와 인증 보기",
+    "tagline": "Better Blue for Everyday Denim",
+    "imageAlt": "데님 재킷을 입은 보호자가 아이를 안고 옥수수밭과 초원, 물가가 보이는 풍경을 바라보는 장면. 제공 카탈로그 표지의 브랜드 이미지입니다.",
+    "imageCredit": "카탈로그 p.1 수록 이미지"
+  },
+  "EvidenceStrip": {
+    "carbonValue": "98%",
+    "carbonLabel": "바이오 기반 탄소 함량",
+    "anilineValue": "불검출",
+    "anilineLabel": "아닐린",
+    "nMethylanilineValue": "불검출",
+    "nMethylanilineLabel": "N-메틸아닐린",
+    "note": "제공 카탈로그의 시험 결과입니다. 불검출은 제시된 시험법에서 방법 검출한계 5 mg/kg 미만이라는 뜻이며, 함유량 0을 의미하지 않습니다. 98%는 바이오 기반 탄소 함량이며 인디고 순도나 배출 감축률이 아닙니다.",
+    "sourceCarbon": "출처: 카탈로그 p.3 Table 1-1 (KATRI, ASTM D6866-24a Method B)",
+    "sourceAniline": "출처: 카탈로그 p.5 Table 2-3 (KOTERI, KS K 0734 2019)",
+    "cta": "상세 시험정보 보기"
+  },
+  "Manifesto": {
+    "eyebrow": "ACROSS BORDERS. ACROSS GENERATIONS.",
+    "title": "우리의 피부와 평생 접촉하는 옷이기에.",
+    "body": "어느 나라에서 살아도, 어떤 나이를 지나도. 데님은 우리의 일상과 함께합니다. 오래 입고, 매일 피부에 닿는 옷이기에, 우리는 색을 만드는 과정부터 염색하는 과정 그리고 데님을 입는 그 순간까지 모든 과정을 피부건강에 전문가인 피부과전문의와 다시 물었습니다. Blugene은 아래 세 질문에서 시작됐습니다.",
+    "questions": [
+      "무엇으로 만들었는가",
+      "어떤 불순물이 남는가",
+      "그 결과를 확인할 수 있는가"
+    ],
+    "cta": "질문에 답을 듣기",
+    "portraitAlt": "흰 가운을 입고 미소 짓는 피부과전문의 최원우 (의학박사)",
+    "portraitName": "Blugene 기획자: 피부과전문의, 의학박사 최원우",
+    "portraitCredential": "Blugene director: CHOI WONWOO M.D., Ph.D., Board Certified Dermatologist"
+  },
+  "Impurity": {
+    "eyebrow": "WHAT REMAINS MATTERS",
+    "title": "보이지 않는 것까지, 우리의 기준입니다.",
+    "body": "Blugene의 기반이 된 큐티스바이오 바이오 인디고는 카탈로그에 제시된 시험에서 아닐린과 N-메틸아닐린이 검출되지 않았습니다.",
+    "context": "아닐린과 N-메틸아닐린은 화학 합성 경로에서 출발물질이나 중간체로 쓰이며, 최종 인디고 분말에 미반응 잔류물로 남을 수 있습니다. 여러 인증 기준이 섬유용 염료와 최종 제품에서 이 물질의 허용 농도를 제한합니다.",
+    "cta": "전체 비교 데이터 보기",
+    "chartTitle": "시판 인디고 염료의 아닐린 · N-메틸아닐린 분석",
+    "chartCaption": "카탈로그 p.5 Figure 2-2 · Table 2-3 의 9개 시판 샘플. 세로축은 mg/kg 이며 0에서 시작합니다."
+  },
+  "Science": {
+    "eyebrow": "SYNTHETIC BIOLOGY",
+    "title": "인디고의 DNA를, 새롭게 쓰다.",
+    "body": "큐티스바이오는 미생물의 생합성 경로와 발효를 활용해 인디고를 생산합니다.",
+    "cta": "기술 자세히 보기",
+    "diagramTitle": "원료에서 원단까지",
+    "diagramNote": "Blugene이 데님으로 만들어지는 그 시작은 재생 가능한 식물 원료이며, 인디고의 푸른색 DNA가 합성생물학과 정밀 발효 공정을 통해 염료와 잉크로 재탄생합니다. 이렇게 만들어진 Blugene 인디고 염료는 ZDHC MRSL · OEKO-TEX ECO PASSPORT · USDA BioPreferred 등의 인증을 받은 염료로, 우리가 입는 데님 원단을 물들입니다.",
+    "steps": [
+      {
+        "title": "재생 가능한 원료",
+        "text": "옥수수 등 바이오매스에서 나오는 재생 가능한 탄소가 출발점입니다.",
+        "imageAlt": "옥수수밭 사진. 바이오매스 원료를 나타내는 개념 이미지이며, CutisBio 의 농장을 찍은 것이 아닙니다."
+      },
+      {
+        "title": "미생물 발효",
+        "text": "미생물의 생합성 경로를 활용한 발효로 인디고를 만듭니다.",
+        "imageAlt": "발효 설비 사진. 투시창 안으로 푸른 배양액이 보이는 발효조들과 제어반 앞의 작업자 두 명. 발효 공정을 나타내는 개념 이미지이며, CutisBio 의 설비와 직원을 찍은 것이 아닙니다."
+      },
+      {
+        "title": "인디고 회수 · 제품화",
+        "text": "회수와 정제를 거쳐 분말과 디지털 프린팅 잉크로 제품화합니다.",
+        "imageAlt": "푸른 인디고 분말이 담긴 유리병과 디지털 프린팅 잉크 병 사진. 두 가지 제품 형태를 나타내는 개념 이미지이며, CutisBio 의 제품을 찍은 것이 아닙니다."
+      },
+      {
+        "title": "원단 염색 · 프린팅",
+        "text": "면 · 실크 · 캐시미어 염색과 디지털 프린팅에 적용합니다.",
+        "imageAlt": "인디고 염액 통 위로 푸른 실 다발이 롤러를 지나는 염색 공장 사진. 원단 염색을 나타내는 개념 이미지이며, CutisBio 의 설비를 찍은 것이 아닙니다."
+      }
+    ]
+  },
+  "Environment": {
+    "eyebrow": "FROM RENEWABLE CARBON",
+    "title": "입는 사람을 생각하며. 만드는 과정도 생각하며.",
+    "body": "재생 가능한 탄소에서 출발하는 인디고. 원료의 출처부터 성분 분석까지, 확인할 수 있는 자료로 우리의 접근을 설명합니다.",
+    "carbonCardTitle": "바이오 기반 탄소 함량",
+    "carbonCardText": "제품에 들어 있는 탄소 가운데 재생 가능한 원료에서 온 비율입니다. 카탈로그 p.3 Table 1-1 의 측정값(pMC 97.73)에 근거하며, 인디고 순도나 탄소 배출 감축률이 아닙니다.",
+    "scopeNote": "제품별 전과정평가(LCA), 물 사용량, 에너지, 탄소 배출량 자료는 이 카탈로그에 포함되어 있지 않습니다. 확인된 범위 밖의 환경 성과 수치는 이 사이트에 표시하지 않습니다.",
+    "cta": "근거 자료 보기",
+    "imageAlt": "원료 작물, 발효 설비, 푸른 원단, 데님을 입은 사람으로 이어지는 가치사슬 개념 이미지. 실제 CutisBio 공장이나 직원 사진이 아닙니다."
+  },
+  "Performance": {
+    "eyebrow": "PERFORMANCE",
+    "title": "실제 원단으로 확인한 염색성.",
+    "body": "식물성 · 화학 · 바이오 인디고로 면, 실크, 캐시미어를 염색해 비교했습니다. 카탈로그는 세탁 · 일광 · 마찰 · 땀 견뢰도에서 서로 견줄 만한 성능(comparable performance)이라고 기록합니다.",
+    "fabricAlt": "9개 원단 견본 사진. 왼쪽부터 식물성 인디고로 염색한 면 · 실크 · 캐시미어(#1~#3), 화학 인디고(#4~#6), 바이오 인디고(#7~#9) 순입니다.",
+    "fabricCaption": "카탈로그 p.6 Figure 3-1.",
+    "sampleLegendPlant": "식물성 인디고",
+    "sampleLegendChemical": "화학 인디고",
+    "sampleLegendBio": "바이오 인디고",
+    "fiberCotton": "면",
+    "fiberSilk": "실크",
+    "fiberCashmere": "캐시미어",
+    "cta": "견뢰도 전체 표 보기",
+    "honestNote": "모든 항목에서 우월하다는 뜻이 아닙니다. 일부 마찰 견뢰도 항목에서는 낮은 등급도 함께 기록되어 있으며, 표에 그대로 표시했습니다.",
+    "additionalCaseTitle": "추가 원단 평가 사례",
+    "additionalCaseBody": "저장소에 보관되어 있던 별도의 염색 평가 사진입니다. 아래 값은 원본에 인쇄된 일본어 라벨 그대로이며, ‘合成’ 은 합성을 뜻합니다.",
+    "additionalCaseAlt": "4회 · 6회 · 8회 염색 조건에서 바이오②-1, 합성, 바이오②-2 로 염색한 원단을 비교한 사진",
+    "additionalCaseProvenance": "시험기관 · 시험법 · 시험일자 · 의뢰처 정보가 확인되지 않아 카탈로그 p.6 시험과 분리해 표시합니다. 위 표의 샘플 #1~#9 와는 다른 자료입니다.",
+    "additionalCaseCyclesLabel": "염색 횟수",
+    "additionalCaseRowsLabel": "구분"
+  },
+  "Fastness": {
+    "title": "견뢰도 시험 결과",
+    "intro": "카탈로그 p.6 Table 3-1 ~ 3-4 를 그대로 옮긴 표입니다. 등급은 원문의 순위 표기(예: 4-5)를 유지했으며 소수로 바꾸지 않았습니다.",
+    "sampleHeader": "샘플",
+    "itemHeader": "시험 항목",
+    "methodLabel": "시험법",
+    "tableLaundering": "세탁 견뢰도",
+    "tableLight": "일광 견뢰도",
+    "tableRubbing": "마찰 견뢰도",
+    "tablePerspiration": "땀 견뢰도",
+    "captionLaundering": "표 3-1. 세탁 견뢰도 시험 결과 (샘플 #1~#9)",
+    "captionLight": "표 3-2. 일광 견뢰도 시험 결과 (샘플 #1~#9)",
+    "captionRubbing": "표 3-3. 마찰 견뢰도 시험 결과 (샘플 #1~#9, 경사 · 위사 구분)",
+    "captionPerspiration": "표 3-4. 땀 견뢰도 시험 결과 (샘플 #1~#9, 산성 · 알칼리성 구분)",
+    "groupChange": "색 변화",
+    "groupStain": "오염",
+    "rowColorChange": "색 변화",
+    "rowAcetate": "아세테이트",
+    "rowCotton": "면",
+    "rowNylon": "나일론",
+    "rowPolyester": "폴리에스터",
+    "rowAcrylic": "아크릴",
+    "rowWool": "울",
+    "rowDry": "건조",
+    "rowWet": "습윤",
+    "subWarp": "경사",
+    "subWeft": "위사",
+    "subAcid": "산성",
+    "subAlkali": "알칼리성",
+    "sourceImageCta": "원본 표 이미지 보기",
+    "sourceImageAlt": "카탈로그 p.6 의 견뢰도 표 3-1 ~ 3-4 원본 이미지",
+    "gradeNote": "등급은 1(낮음)에서 5(높음) 사이의 순위 값이며, ‘4-5’는 두 등급 사이를 뜻하는 원문 표기입니다. 4 미만으로 기록된 등급은 표에서 굵게 표시했습니다."
+  },
+  "ShadeLibrary": {
+    "eyebrow": "SHADE LIBRARY",
+    "title": "당신의 브랜드에는, 당신만의 파랑을.",
+    "body": "염료 농도와 염색 횟수에 따라 색의 깊이가 달라집니다. 인디고와 인디루빈의 비율을 조정하면 브랜드만의 색조를 만들 수 있습니다.",
+    "gridTitle": "카탈로그 농도별 견본",
+    "gridHelp": "카탈로그에는 각 견본의 농도 수치가 제시되어 있지 않아 위치 기준 구분자(A1~B6)로 표기합니다.",
+    "axisLow": "Low",
+    "axisHigh": "High",
+    "axisLabel": "Blugene 농도",
+    "rowA": "A행",
+    "rowB": "B행",
+    "swatchAlt": "카탈로그 p.7 Figure 4-1 의 농도별 염색 견본 {code}",
+    "indirubinTitle": "인디루빈이 만드는 색조 변화",
+    "indirubinBody": "인디루빈은 인디고의 붉은 이성질체입니다. 미생물 발효로 만들어지는 인디고와 인디루빈의 조성을 조절하면 브랜드 고유의 파랑을 만들 수 있습니다.",
+    "indirubinAltA": "인디고 100% 로 염색한 데님 원단 사진 (카탈로그 p.7 Figure 4-2)",
+    "indirubinAltB": "인디고 94% · 인디루빈 6% 로 염색한 데님 원단 사진 (카탈로그 p.7 Figure 4-2)",
+    "indirubinLabelA": "인디고 100%",
+    "indirubinLabelB": "인디고 94%, 인디루빈 6%",
+    "indirubinToggle": "두 조성 비교",
+    "indirubinNote": "카탈로그에 제시된 두 가지 조성의 사진입니다. 그 사이의 혼합비는 제공되지 않았으므로 화면에서 색을 만들어 보여 주지 않습니다.",
+    "colorDisclaimer": "화면·원단·염색 조건에 따라 실제 색상은 달라질 수 있습니다. 원단 샘플로 확인해 주세요.",
+    "medicalNote": "인디루빈의 약리 활성은 이 사이트에서 다루지 않습니다. 색조 조절과 제품개발 관점만 설명합니다."
+  },
+  "Products": {
+    "eyebrow": "PRODUCT FORMS",
+    "title": "분말과 프린팅 잉크, 두 가지 형태로.",
+    "body": "미생물 발효로 만든 인디고를 원단 염색용 분말과 디지털 프린팅용 잉크로 제공합니다.",
+    "powderTitle": "Blugene Indigo Powder",
+    "powderText": "면 · 실크 · 캐시미어 염색 평가 자료가 카탈로그에 수록되어 있습니다.",
+    "powderAlt": "접시에 담긴 짙은 청색 바이오 인디고 분말 (카탈로그 p.9)",
+    "inkTitle": "Blugene Digital Printing Ink",
+    "inkText": "디지털 프린팅용 바이오 인디고 잉크입니다. 적용성과 샘플에 대해 상담해 드립니다.",
+    "inkAlt": "짙은 청색 바이오 인디고 디지털 프린팅 잉크가 담긴 유리병 (카탈로그 p.9)",
+    "nameNote": "위 제품명은 신규 브랜드의 웹 표시안입니다. 카탈로그와 인증서의 원문 제품명은 “{catalogueName}” 입니다.",
+    "specNote": "입도 · 점도 · 보관기간 · 최소주문수량 · 생산능력 · 가격은 제공 자료에 없어 표시하지 않습니다. 필요하신 규격은 문의해 주시면 확인해 안내드립니다.",
+    "cyclesTitle": "염색 횟수에 따른 발색 비교",
+    "cyclesCaption": "카탈로그 p.8 Figure 5-1. 화학 인디고(분말) · 바이오 인디고(분말) · 바이오 인디고(디지털 프린팅 잉크)를 1~4회 염색한 면 원단 비교입니다.",
+    "cyclesAlt": "3행 4열 비교 도판. 행은 화학 인디고 분말, 바이오 인디고 분말, 바이오 인디고 디지털 프린팅 잉크이고 열은 1~4회 염색입니다.",
+    "cyclesNote": "카탈로그는 이 예시에서 색 강도를 “디지털 프린팅 잉크 > 화학 인디고 ≈ 바이오 인디고 분말”로 표기합니다. 사진의 색 농담을 K/S 값이나 색차 ΔE 측정값으로 환산하지 않았으며, 모든 조건에서의 성능 우위를 뜻하지 않습니다.",
+    "cta": "제품 자료 문의"
+  },
+  "Printing": {
+    "eyebrow": "PRINTED IN BLUE",
+    "title": "프린팅으로 넓어지는 표현.",
+    "body": "디지털 프린팅은 필요한 자리에 색을 직접 올려 정교한 패턴을 구현합니다. 바이오 인디고 잉크로 프린팅한 결과를 원작 이미지와 함께 보여 드립니다.",
+    "pairOriginal": "원작 이미지",
+    "pairPrinted": "바이오 인디고 잉크 프린팅 결과",
+    "pairAltOriginal": "디지털 프린팅에 사용한 원작 이미지 {index} (카탈로그 p.9 Figure 6-2)",
+    "pairAltPrinted": "같은 이미지를 바이오 인디고 잉크로 디지털 프린팅한 결과 {index} (카탈로그 p.9 Figure 6-2)",
+    "pairNote": "제품 사용 전후의 성능 개선을 나타내는 사진이 아니며, 원작자 · 고객 · 납품처 정보는 제공 자료에 없습니다.",
+    "processTitle": "잉크 제조 흐름",
+    "processCaption": "카탈로그 p.9 Figure 6-1 의 단계입니다. 원문 표기를 함께 적었습니다.",
+    "processAlt": "원료 준비, 프리믹싱, 밀링, 여과, 제형 완성으로 이어지는 잉크 제조 흐름 도식 (카탈로그 p.9)",
+    "processNote": "카탈로그 원문의 마지막 단계는 “Formation” 입니다. 확정된 공정 전문용어로 바꾸지 않고 원문을 함께 표기합니다. 정확한 생산 레시피를 공개하는 자료가 아닙니다.",
+    "steps": [
+      {
+        "title": "원료 준비",
+        "text": "바이오 인디고 분말과 부원료를 계량해 준비합니다."
+      },
+      {
+        "title": "프리믹싱",
+        "text": "분산 매질과 함께 1차로 섞습니다."
+      },
+      {
+        "title": "밀링",
+        "text": "입자를 균일하게 분쇄 · 분산합니다."
+      },
+      {
+        "title": "여과",
+        "text": "잔여 입자를 걸러 프린팅에 적합한 상태로 만듭니다."
+      },
+      {
+        "title": "제형 완성",
+        "text": "최종 잉크 형태로 조정합니다. (원문 표기: Formation)"
+      }
+    ],
+    "advantagesTitle": "디지털 프린팅의 특징",
+    "advantages": [
+      "전통 염색으로 구현하기 어려운 고해상도 패턴과 색 조합이 가능합니다.",
+      "필요한 자리에 색을 직접 올려 소량 생산에도 적합합니다.",
+      "복잡한 디자인을 반복 재현하기에 유리합니다."
+    ],
+    "advantagesNote": "카탈로그 p.9 에는 일반적인 디지털 프린팅의 물 · 폐기물 절감 범위가 언급되어 있으나, Blugene 제품으로 측정한 값이 아니므로 이 사이트에서는 수치로 표시하지 않습니다."
+  },
+  "DataHub": {
+    "eyebrow": "DATA & CERTIFICATIONS",
+    "title": "원본으로 확인하는 신뢰.",
+    "body": "시험 결과와 인증서를 한곳에 모았습니다. 각 항목은 시험기관 · 시험법 · 보고서 번호 · 자료 기준일과 함께 원본을 확인할 수 있습니다.",
+    "carbonSectionTitle": "바이오 기반 탄소 (C14)",
+    "carbonSectionBody": "시판 인디고 염료의 바이오 기반(재생 가능) 탄소 비율을 측정한 결과입니다. 이 값은 바이오 기반 탄소 함량이며, 인디고 순도나 탄소 배출 감축률이 아닙니다.",
+    "anilineSectionTitle": "아닐린 · N-메틸아닐린 분석",
+    "anilineSectionBody": "시판 인디고 염료에 남아 있는 아닐린과 N-메틸아닐린을 분석한 결과입니다.",
+    "tableLab": "시험기관",
+    "tableMethod": "시험법",
+    "tableReport": "시험성적서 번호",
+    "tableReportDate": "성적서 일자",
+    "reportDateNote": "성적서 번호 SBED25-00000153-1 은 카탈로그 Table 1-1 에 서로 다른 발행일로 두 번 표기되어 있습니다. 원본 표기를 그대로 옮겼습니다.",
+    "tableDetectionLimit": "방법 검출한계",
+    "tableType": "인디고 유형",
+    "tableSample": "샘플",
+    "tablePmc": "pMC",
+    "tableBiobased": "바이오 기반 탄소 함량 (%)",
+    "tableAniline": "아닐린 (mg/kg)",
+    "tableNMethylaniline": "N-메틸아닐린 (mg/kg)",
+    "typeChemical": "화학",
+    "typePlant": "식물",
+    "typeBio": "바이오",
+    "notDetected": "불검출",
+    "notDetectedShort": "N.D.",
+    "notDetectedExplain": "불검출(N.D.)은 제시된 시험법에서 방법 검출한계 미만이라는 뜻입니다. 측정값 0 이 아니며, 그래프에서도 0 인 막대로 표시하지 않습니다.",
+    "sameLabelNote": "Company M 은 화학 인디고와 식물 인디고 두 유형에 각각 등장합니다. 유형과 함께 표기해 구분합니다.",
+    "anonymousNote": "회사명은 카탈로그의 익명 표기를 그대로 사용했습니다. 실제 회사명을 추정하지 않습니다.",
+    "sampleScopeNote": "이 값들은 카탈로그에 수록된 9개 샘플의 비교 결과이며, 시장 전체를 대표하는 통계가 아닙니다. 탄소 시험과 아닐린 시험은 기관 · 시험법 · 일자가 서로 달라 하나의 지표로 합치지 않았습니다.",
+    "chartCarbonTitle": "바이오 기반 탄소 함량 비교 (%)",
+    "chartAnilineTitle": "아닐린 · N-메틸아닐린 비교 (mg/kg)",
+    "chartAccessibleNote": "그래프의 모든 값은 아래 표에서도 확인할 수 있습니다.",
+    "regulatoryOmitted": "카탈로그 p.4 의 국가별 · 인증별 허용한도 표는 국가와 제품군에 따라 적용 범위가 달라 최신 원문 확인이 필요하므로, 이 사이트 본문에서는 수치를 옮기거나 해석하지 않습니다. 아래 <link>원본 카탈로그 4쪽</link>에서 원문 그대로 확인하실 수 있으며, 실제 적용 기준은 각 규정의 최신 원문을 확인해 주세요.",
+    "catalogueTitle": "원본 카탈로그",
+    "catalogueBody": "제공 카탈로그 12쪽 전체를 확인할 수 있습니다.",
+    "cataloguePage": "{page}쪽",
+    "cataloguePageAlt": "CutisBio 바이오 인디고 카탈로그 {page}쪽",
+    "catalogueDownload": "PDF 내려받기 ({size})",
+    "catalogueAnchorNote": "내려받는 PDF 는 카탈로그 원본 12쪽 전체이며, 위 썸네일의 쪽 번호와 같은 순서입니다.",
+    "carbonZeroNote": "Company Z 의 바이오 기반 탄소 함량은 카탈로그 Table 1-1 에 0 (pMC 0.30)으로, Figure 1-3 에는 N.D. 로 표기되어 있습니다. 이 표는 Table 1-1 의 값을 옮긴 것입니다."
+  },
+  "Certifications": {
+    "title": "글로벌 인증",
+    "body": "제공 카탈로그에 수록된 인증서입니다. 각 항목에서 원본 인증서를 확대해 볼 수 있습니다.",
+    "numberLabel": "인증번호",
+    "issuerLabel": "인증기관",
+    "productLabel": "적용 제품",
+    "pageLabel": "카탈로그 쪽",
+    "certificateAlt": "{name} 인증서 원본 이미지",
+    "logoAlt": "{name} 인증 마크",
+    "noExpiry": "문서에 만료일이 표시되어 있지 않습니다",
+    "statusDocumented": "2026년 7월 카탈로그 수록 인증자료",
+    "statusWithinPeriod": "문서 기재 유효기간 내",
+    "statusPastPeriod": "문서 기재 유효기간이 지났습니다. 최신 자료를 문의해 주세요.",
+    "verificationNote": "문서에 적힌 날짜를 확인한 것이며, 인증기관 데이터베이스에서 현재 인증 상태를 조회한 결과가 아닙니다.",
+    "brandNameNote": "인증서의 제품명은 “CB Bio Indigo Dye Powder” 입니다. Blugene은 이 제품을 포함한 큐티스바이오 바이오 인디고 사업의 신규 브랜드명이며, 인증서 이미지의 제품명을 바꾸지 않았습니다.",
+    "scopeNote": "인증 범위는 각 인증서에 적힌 제품에 한정됩니다. 디지털 프린팅 잉크나 최종 데님 의류까지 자동으로 인증된다는 뜻이 아닙니다.",
+    "asOfLabel": "자료 기준일",
+    "nextReviewLabel": "다음 인증 상태 점검 권장일",
+    "requestLatest": "최신 인증자료 문의",
+    "zdhcScope": "적용 범위는 인증서에 기재된 화학 조성물(CB Bio Indigo Dye Powder)입니다. 사용 분류는 Natural dyes (1.7.27) 입니다.",
+    "oekoScope": "제품 목록은 인증서의 별첨(enclosure)에 있으며 카탈로그에 함께 수록되어 있지 않습니다. 제품 분류는 2.9 Natural dyes 입니다. 별첨을 확인하기 전에는 적용 제품 범위를 특정하지 않습니다.",
+    "usdaScope": "USDA Certified Biobased Product 라벨 취득 사실을 확인하는 참가 증서이며, 라벨 표시 비율은 98% 입니다. 카탈로그 p.11 에는 이 결과의 정밀도가 ±3%(절대값)로 각주 표기되어 있습니다.",
+    "okbiobasedScope": "Class 5 는 바이오 기반 탄소 함량 97% 이상 100% 이하를 뜻합니다. 인증서에는 EN 16640 방법과 인증제도 OK 20 edition D 가 기재되어 있습니다.",
+    "zoomOpen": "인증서 확대해 보기",
+    "zoomClose": "닫기",
+    "zoomHint": "Esc 키로 닫을 수 있습니다."
+  },
+  "Inquiry": {
+    "eyebrow": "SAMPLE INQUIRY",
+    "title": "다음 데님의 파랑을, 함께 만드세요.",
+    "body": "문의 유형을 고르고 내용을 남겨 주세요.",
+    "topicLabel": "문의 유형",
+    "topicFabricDyeing": "원단 염색",
+    "topicDigitalPrinting": "디지털 프린팅",
+    "topicShadeDevelopment": "색상 공동개발",
+    "topicTechnicalData": "기술 · 인증자료",
+    "messageLabel": "함께 알려주시면 좋은 내용",
+    "messagePlaceholder": "회사명, 담당자, 원단 종류, 필요한 수량과 일정 등을 적어 주세요.",
+    "submit": "이메일로 문의하기",
+    "submitHint": "버튼을 누르면 기본 이메일 프로그램이 열리고 수신자 · 제목 · 내용이 채워집니다. 마지막 ‘보내기’는 직접 눌러 주셔야 접수됩니다. 메일 프로그램이 열리지 않으면 {email} 으로 바로 보내 주세요. 이 화면에서는 어떤 정보도 외부로 전송하지 않습니다.",
+    "mailSubject": "[Blugene 샘플 문의] {topic}",
+    "mailIntro": "Blugene 샘플 · 기술자료 문의드립니다.",
+    "mailTopicLine": "문의 유형: {topic}",
+    "mailShadeLine": "관심 색상 견본: {shade}",
+    "mailFooter": "— 이 메일은 blugene.co 문의 화면에서 작성되었습니다.",
+    "emailLabel": "이메일",
+    "telLabel": "전화",
+    "addressLabel": "주소",
+    "companyRelationTitle": "Blugene과 CutisBio",
+    "companyRelationBody": "Blugene은 큐티스바이오(CutisBio Co., Ltd.)가 개발한 바이오 인디고의 브랜드명입니다. 카탈로그와 인증서에는 원래 제품명인 “Bio Indigo Dye Powder (Microbial Fermentation)” 로 기재되어 있습니다.",
+    "sampleNote": "샘플은 문의 시 제공 가능 여부를 확인해 안내드립니다. (카탈로그 p.11: Samples are available upon request)"
+  },
+  "Common": {
+    "sourceLabel": "출처",
+    "cataloguePage": "카탈로그 p.{page}",
+    "asOf": "자료 기준일 {date}",
+    "viewOriginal": "원본 보기",
+    "viewSource": "원본 자료 보기",
+    "close": "닫기",
+    "openImage": "이미지 확대",
+    "conceptImage": "개념 이미지",
+    "brandImage": "브랜드 이미지",
+    "testPhoto": "시험 사진",
+    "imageNoteConcept": "개념을 설명하기 위한 이미지이며, 실제 시설 · 고객 · 시험 결과를 촬영한 사진이 아닙니다.",
+    "imageNotePhoto": "제공 카탈로그에 수록된 사진을 색보정 없이 웹용으로 크기만 조정해 사용했습니다.",
+    "scrollableRegion": "가로로 스크롤할 수 있는 영역",
+    "catalogueFigure": "카탈로그 도판"
+  },
+  "Brand": {
+    "metaTitle": "브랜드 이야기",
+    "metaDescription": "Blugene은 평생 함께하는 데님을 위해 인디고를 다시 만드는 큐티스바이오의 바이오 인디고 브랜드입니다.",
+    "heroEyebrow": "THE STORY",
+    "heroTitle": "데님, 매일 입는 옷이기에 <keep>염료부터 꼼꼼히 확인해야 합니다.</keep>",
+    "heroBody": "인디고 염료를 만드는 방식을 살아 숨쉬는 발효공정을 통해 새로 썼습니다. 데님은 인종과 국가를 넘어 우리의 일상과 평생을 함께하는 옷입니다. 그래서 우리는 그 안의 작은 불순물에도 타협하지 않습니다. 피부와 환경을 생각하며 인디고를 다시 만듭니다. 그것이 Blugene 입니다.",
+    "nameTitle": "이름에 담은 뜻",
+    "nameBody": "인디고의 푸른색을 의미하는 Blue와 생물의 근본이 되는 gene을 합성한 이름입니다. 오래 사랑받아 온 인디고 푸른색을 첨단 기술인 합성생물학과 정밀 발효 방식으로 새롭게 만든다는 뜻을 담았습니다.",
+    "promiseTitle": "우리가 약속하는 것",
+    "promiseBody": "우리가 약속할 수 있는 것은 확인할 수 있는 자료입니다.",
+    "promiseItems": [
+      {
+        "title": "원료를 밝힙니다",
+        "text": "재생 가능한 탄소에서 출발합니다. 바이오 기반 탄소 함량은 시험 결과로 공개합니다."
+      },
+      {
+        "title": "불순물을 확인합니다",
+        "text": "아닐린과 N-메틸아닐린을 공인 시험법으로 분석하고 검출한계와 함께 결과를 공개합니다."
+      },
+      {
+        "title": "원본을 보여드립니다",
+        "text": "시험성적서 번호, 인증번호, 인증서 원본 이미지를 사이트에서 직접 확인할 수 있습니다."
+      }
+    ],
+    "relationTitle": "CutisBio 와의 관계",
+    "relationBody": "Blugene은 큐티스바이오(CutisBio Co., Ltd.)의 인디고 사업 브랜드입니다. 법인명과 인증서 · 시험성적서의 표기는 CutisBio 를 그대로 사용합니다.",
+    "cta": "샘플 · 기술자료 문의"
+  },
+  "Technology": {
+    "metaTitle": "기술",
+    "metaDescription": "인디고를 만드는 네 가지 경로, 미생물 발효 기반 생산, 바이오 기반 탄소 시험 결과를 설명합니다.",
+    "heroEyebrow": "TECHNOLOGY",
+    "heroTitle": "파랑을 만드는 네 가지 길, 그리고 우리의 선택.",
+    "heroBody": "인디고 염료를 생산하는 방법은 네 가지 길이 있습니다. Blugene은 탄소순환적인 정밀 발효 공정을 선택했습니다. 우리의 선택은 환경과 우리의 삶에 지속가능성을 높여줍니다.",
+    "routesTitle": "인디고 합성의 네 가지 경로",
+    "routeOursLabel": "우리의 경로 Blugene",
+    "routesCaption": "카탈로그 p.2 Figure 1-1. 화학 경로는 붉은색, 생물학적 경로는 노란색으로 구분되어 있습니다.",
+    "routesAlt": "원유 · 바이오매스 · 인디고 식물에서 출발하는 네 가지 인디고 합성 경로 도식 (카탈로그 p.2)",
+    "routes": [
+      {
+        "name": "화학 인디고",
+        "feedstock": "원유 (재생 불가능)",
+        "intermediate": "아닐린",
+        "text": "원유에서 얻은 아닐린을 거쳐 인디고를 합성합니다. 카탈로그는 이 경로를 화학 경로로 표시합니다."
+      },
+      {
+        "name": "하이브리드 인디고",
+        "feedstock": "바이오매스",
+        "intermediate": "안트라닐산",
+        "text": "바이오매스에서 얻은 안트라닐산을 거쳐 인디고를 만듭니다. 원료는 재생 가능하지만 중간 단계가 순수 미생물 경로와 다릅니다."
+      },
+      {
+        "name": "바이오 인디고 (정밀 발효 유래)",
+        "feedstock": "바이오매스(식물 원료)",
+        "intermediate": "트립토판",
+        "text": "바이오매스에서 얻은 트립토판을 미생물이 인디고로 전환합니다. 큐티스바이오 바이오 인디고가 이 경로에 해당합니다."
+      },
+      {
+        "name": "천연 인디고 (식물 유래)",
+        "feedstock": "인디고 식물",
+        "intermediate": "추출",
+        "text": "인디고 식물에서 색소를 추출합니다. 카탈로그는 시판 식물 유래 인디고 가운데 화학 인디고가 섞인 것으로 보이는 사례가 있다고 기록합니다."
+      }
+    ],
+    "routeFeedstockLabel": "원료",
+    "routeIntermediateLabel": "주요 중간 단계",
+    "routesNote": "하이브리드 경로의 안트라닐산 단계는 미생물 경로의 트립토판 단계와 다릅니다. 두 경로를 같은 것으로 단순화하지 않았습니다.",
+    "routesFigureBridge": "위 네 경로를 한 장에 정리한 카탈로그 도식입니다. 그림에 나오는 순서 역시 카드와 같습니다.",
+    "carbonTitle": "탄소는 어디에서 오는가",
+    "carbon": {
+      "lead": "땅속 석유에서, 다시 자라는 바이오매스로. Blugene은 바이오매스를 발효해 인디고를 만듭니다. 색을 만드는 탄소의 출발점부터 생각합니다. 그 파랑은 어디에서 올까요?",
+      "journey": {
+        "eyebrow": "01 / FOLLOW THE CARBON",
+        "title": "같은 파랑. 다른 탄소의 여정.",
+        "body": "인디고의 파란색을 이루는 분자에도 탄소가 들어 있습니다. 그 탄소가 어디에서 왔는지, 경로를 따라가 보세요.",
+        "guide": "탄소의 출발점부터, 같은 순서로 따라가 보세요.",
+        "order": "원료 → 생산 → 인디고 · 데님 → 사용 이후",
+        "legendSolid": "원료에서 제품으로 이동",
+        "legendDashed": "처리 · 성장 조건에 따른 배출과 재흡수",
+        "legendNote": "나무와 설비는 이해를 돕는 예시 그림입니다.",
+        "evidenceLink": "근거"
+      },
+      "routes": [
+        {
+          "eyebrow": "BIO-BASED INDIGO",
+          "title": "바이오 기반 인디고",
+          "lede": "식물이 흡수한 탄소로 새로운 파랑을 만듭니다.",
+          "chip": "공기 중 CO₂ 흡수",
+          "steps": [
+            {
+              "label": "01 / 원료",
+              "title": "다시 자라는 바이오매스",
+              "text": "식물이 광합성으로 흡수한 탄소가 원료에 담깁니다.",
+              "imageAlt": "초록 잎과 풀을 가진 나무 그림: 식물성 바이오매스의 예시"
+            },
+            {
+              "label": "02 / 생산",
+              "title": "미생물 발효",
+              "text": "바이오매스 유래 원료를 미생물이 인디고로 바꿉니다.",
+              "imageAlt": "배양액과 미생물로 인디고를 생산하는 발효조 그림",
+              "note": "발효 중에도 일부 CO₂ 배출"
+            },
+            {
+              "label": "03 / 제품",
+              "title": "인디고, 그리고 데님",
+              "text": "바이오매스에서 온 탄소가 데님의 파란색에 담깁니다.",
+              "imageAlt": "푸른 인디고 분말과 접힌 청바지 그림"
+            },
+            {
+              "label": "04 / 사용 이후",
+              "title": "일부는 다시 대기로",
+              "text": "소각 · 분해 등으로 CO₂가 되면 대기 중으로 돌아갈 수 있습니다.",
+              "imageAlt": "사용 후 처리에서 CO₂가 배출될 때 탄소가 돌아가는 대기를 나타내는 구름 그림",
+              "note": "경로와 시점은 처리 방식에 따라 달라짐"
+            }
+          ],
+          "loop": "새로운 식물이 자라면서 CO₂를 다시 흡수할 수 있습니다.",
+          "loopSub": "최근의 생물학적 탄소순환과 연결된 원료",
+          "coreLabel": "이 경로의 핵심",
+          "core": "공기에서 식물로, 식물에서 파랑으로.",
+          "coreSub": "재생 가능한 원료의 탄소를 활용합니다."
+        },
+        {
+          "eyebrow": "FOSSIL-BASED INDIGO",
+          "title": "석유화학 합성 인디고",
+          "lede": "땅속에 오래 저장된 탄소를 꺼내 파란색의 원료로 사용합니다.",
+          "steps": [
+            {
+              "label": "01 / 원료",
+              "title": "땅속에 저장된 석유",
+              "text": "오랜 지질학적 시간 동안 저장된 화석 탄소를 꺼냅니다.",
+              "imageAlt": "지층 아래 석유를 끌어올리는 원유 채굴 펌프와 석유통 그림"
+            },
+            {
+              "label": "02 / 생산",
+              "title": "석유계 원료의 화학 합성",
+              "text": "석유계 원료를 화학 공정으로 인디고로 전환합니다.",
+              "imageAlt": "석유계 원료를 인디고로 전환하는 화학 공장 그림"
+            },
+            {
+              "label": "03 / 제품",
+              "title": "인디고, 그리고 데님",
+              "text": "석유에서 온 탄소가 데님의 파란색에 담깁니다.",
+              "imageAlt": "푸른 인디고 분말과 접힌 청바지 그림"
+            },
+            {
+              "label": "04 / 사용 이후",
+              "title": "배출되면 대기로 유입",
+              "text": "CO₂로 배출되면 지하의 탄소가 대기 · 생물권으로 이동합니다.",
+              "imageAlt": "사용 후 CO₂로 배출된 화석 탄소가 유입되는 대기를 나타내는 구름 그림",
+              "note": "제품 탄소가 모두 즉시 배출되는 것은 아님"
+            }
+          ],
+          "loop": "석유는 우리가 사용하는 속도에 맞춰 다시 만들어지지 않습니다.",
+          "loopSub": "배출된 탄소가 식물에 흡수되어도, 지하의 석유 저장고가 곧바로 채워지는 것은 아닙니다.",
+          "coreLabel": "이 경로의 핵심",
+          "core": "지하에 저장된 탄소를 꺼내 파랑으로.",
+          "coreSub": "배출될 때 오래 저장된 탄소가 대기로 들어옵니다."
+        }
+      ],
+      "footnote": "원료 탄소의 흐름을 단순화한 개념도입니다. 나무 그림은 식물성 바이오매스를 상징하며 실제 Blugene 원료나 설비를 특정하지 않습니다. 두 경로 모두 생산 에너지 · 정제 · 운송 등에서 배출이 발생할 수 있습니다. 점선은 가능한 경로이며, 전량 회수 · 완전 생분해 · 즉각적인 재흡수나 탄소중립을 뜻하지 않습니다.",
+      "origin": {
+        "eyebrow": "02 / WHY THE ORIGIN MATTERS",
+        "title": "탄소는 같아도, 시간은 다릅니다.",
+        "body": "차이는 CO₂의 성질이 아니라, 탄소를 가져오는 저장고와 다시 채워지는 시간에 있습니다.",
+        "items": [
+          {
+            "label": "석유 기반 탄소",
+            "title": "오래 저장된 탄소",
+            "text": "오랜 세월 땅속에 저장된 탄소를 꺼내 씁니다. 석유는 우리가 쓰는 속도에 맞춰 다시 만들어지지 않습니다.",
+            "tags": [
+              "지질학적 시간의 저장",
+              "채굴 · 사용"
+            ]
+          },
+          {
+            "label": "바이오 기반 탄소",
+            "title": "다시 자라는 자원의 탄소",
+            "text": "식물이 최근 공기 중에서 흡수한 탄소를 사용합니다. 바이오매스를 재생하면 새로운 식물의 성장과 함께 탄소 흡수가 이어질 수 있습니다.",
+            "tags": [
+              "성장 · 흡수",
+              "사용 · 재생"
+            ]
+          }
+        ],
+        "closing": "Blugene이 바꾸려는 것은 파란색을 만드는 탄소의 출발점입니다."
+      },
+      "evidence": {
+        "eyebrow": "03 / A CLEARER BLUE",
+        "title": "좋은 설명에는 분명한 근거가 필요하니까.",
+        "body": "원료가 어디서 왔는지와 환경에 얼마나 영향을 주는지는 서로 다른 질문입니다.",
+        "items": [
+          {
+            "label": "탄소의 출처",
+            "title": "“바이오 기반인가요?”",
+            "text": "방사성탄소 분석인 ASTM D6866 같은 시험으로, 시료의 유기탄소 중 바이오 기반 탄소의 비율을 확인할 수 있습니다.",
+            "tag": "바이오 기반 탄소 함량 시험"
+          },
+          {
+            "label": "전 과정의 영향",
+            "title": "“탄소배출은 얼마나 줄었나요?”",
+            "text": "원료 재배 · 생산 · 운송 · 폐기 등 비교 범위에 포함되는 과정과 에너지를 함께 계산해야 합니다. 전과정평가(LCA)가 이 질문에 답합니다.",
+            "tag": "같은 기능 · 같은 범위의 LCA 비교"
+          }
+        ],
+        "calloutTitle": "바이오 기반이라고 해서 자동으로 탄소중립은 아닙니다.",
+        "calloutBody": "탄소순환적 원료를 사용하는 것과 제품의 순배출량이 0인 것은 다릅니다. 이 단락은 원료 경로를 설명하며, 제품별 배출 저감 수치를 제시하지 않습니다. Blugene의 바이오 기반 탄소 함량 시험 결과는 <link>데이터 · 인증 페이지</link>에서 시험기관 · 시험법 · 성적서 번호와 함께 확인할 수 있습니다."
+      },
+      "faq": {
+        "eyebrow": "A FEW GOOD QUESTIONS",
+        "title": "데님을 사랑하는 당신의 질문.",
+        "items": [
+          {
+            "question": "발효하면 왜 ‘탄소순환’과 연결되나요?",
+            "answers": [
+              "발효 자체보다 원료의 출처가 핵심입니다. 바이오매스에 담긴 탄소는 식물이 대기 중 CO₂를 흡수해 만든 것입니다. 이 탄소를 미생물이 인디고로 전환하므로, 최근의 생물학적 탄소순환과 연결된 원료를 사용하는 것입니다.",
+              "발효에는 에너지가 필요하고 CO₂도 발생할 수 있습니다. 따라서 ‘발효로 만들었다’는 이유만으로 전체 배출량이 0이 되는 것은 아닙니다."
+            ]
+          },
+          {
+            "question": "청바지를 입으면 탄소가 줄어드나요?",
+            "answers": [
+              "청바지를 입는 행위 자체가 공기 중 탄소를 제거하는 것은 아닙니다. 여기에서 설명하는 변화는 인디고 염료의 원료 탄소를 석유 기반에서 바이오매스 기반으로 바꾸는 것입니다. 완성된 청바지 전체의 환경영향은 면화 재배, 직조, 염색, 세탁 등도 함께 살펴야 합니다."
+            ]
+          },
+          {
+            "question": "옷의 탄소는 결국 모두 자연으로 돌아가나요?",
+            "answers": [
+              "경로와 속도는 재사용 · 재활용 · 소각 · 매립 등 실제 처리 방식에 따라 다릅니다. 순환 표시는 탄소가 CO₂로 방출되고 식물에 재흡수될 수 있다는 개념을 보여 줍니다. 옷이나 염료의 완전한 생분해성, 퇴비화 가능성, 전량 회수를 뜻하지는 않습니다."
+            ]
+          },
+          {
+            "question": "‘바이오 기반 탄소 함량’ 수치는 무엇을 뜻하나요?",
+            "answers": [
+              "ASTM D6866 방식의 바이오 기반 탄소 함량은 시험한 시료의 유기탄소 가운데 바이오 기반 탄소의 비율입니다. 염료 순도, 제품 전체 질량 중 식물 원료의 비율, 탄소배출 감축률을 뜻하지 않습니다.",
+              "실제 제품의 함량을 확인할 때는 시험 대상과 방법, 시료 · 배치, 시험기관과 결과를 함께 보세요. Blugene의 측정값(98%, pMC 97.73)은 데이터 · 인증 페이지에 시험기관 · 시험법 · 성적서 번호와 함께 있습니다."
+            ]
+          },
+          {
+            "question": "바이오 인디고는 식물에서 색을 추출한 천연염료인가요?",
+            "answers": [
+              "Blugene의 방식은 바이오매스를 미생물 발효로 전환해 인디고를 생산하는 것입니다. 쪽잎 등에서 색소를 추출하는 전통적인 천연 인디고 생산 방식과는 다릅니다. ‘바이오 기반’은 색소를 만드는 탄소의 출처에 관한 설명입니다."
+            ]
+          }
+        ]
+      },
+      "closing": {
+        "eyebrow": "FOR THE DENIM WE LOVE.",
+        "text": "오래 사랑할 파랑. 그 시작부터 새롭게."
+      },
+      "sources": {
+        "summary": "이 이야기를 뒷받침하는 자료",
+        "introStrong": "문헌 · 표준에 근거한 설명",
+        "introText": "생물학적 탄소순환과 화석 탄소, 바이오 기반 탄소 함량 시험 및 전과정평가의 구분입니다.",
+        "items": [
+          {
+            "title": "NASA Earth Observatory — The Carbon Cycle",
+            "note": "광합성, 빠른 · 느린 탄소순환, 화석 탄소의 대기 유입."
+          },
+          {
+            "title": "ASTM D6866 — 방사성탄소 분석에 의한 바이오 기반 함량 측정",
+            "note": "시험은 탄소의 생물학적 기원을 평가하며, 온실가스 감축률을 직접 측정하지 않습니다."
+          },
+          {
+            "title": "GHG Protocol — Product Life Cycle Standard",
+            "note": "전과정 관점에서 제품의 온실가스 영향을 정량화하는 원칙."
+          },
+          {
+            "title": "USDA BioPreferred — 자주 묻는 질문",
+            "note": "유기탄소 기준 함량의 의미와 환경영향 · 성능 평가의 구분."
+          }
+        ],
+        "processStrong": "Blugene 공정 설명",
+        "processText": "바이오매스 발효로 인디고를 생산한다는 브랜드 제공 정보를 바탕으로 구성했습니다. 도식은 이해를 돕기 위한 편집이며 실제 물질수지나 배출량을 나타내지 않습니다.",
+        "externalLinkHint": "새 창에서 열림"
+      }
+    },
+    "processTitle": "원료에서 원단까지",
+    "impurityTitle": "왜 아닐린을 확인하는가",
+    "impurityBody": "아닐린과 N-메틸아닐린은 화학 합성 경로의 출발물질 또는 중간체이며, 최종 인디고 분말에 미반응 잔류물로 남을 수 있습니다. 독성과 발암 가능성 때문에 여러 인증 기준이 섬유용 염료와 최종 제품에서 허용 농도를 제한합니다.",
+    "cta": "시험 데이터 전체 보기"
+  },
+  "DyeingPrinting": {
+    "metaTitle": "염색 · 프린팅",
+    "metaDescription": "면 · 실크 · 캐시미어 염색 비교, 견뢰도 시험 결과, 농도별 색상 견본, 분말과 디지털 프린팅 잉크를 소개합니다.",
+    "heroEyebrow": "DYEING & PRINTING",
+    "heroTitle": "원단 위에서 확인하는 색.",
+    "heroBody": "염색성과 견뢰도, 색조와 제형까지. 실제 원단에서 확인한 자료를 그대로 보여 드립니다.",
+    "jumpNavLabel": "이 페이지 안에서 이동",
+    "jumpNav": [
+      "염색성",
+      "견뢰도",
+      "색상 라이브러리",
+      "제품군",
+      "프린팅"
+    ],
+    "cta": "원단 샘플 문의"
+  },
+  "Tech": {
+    "title": "미생물 발효로 만드는 인디고, Blugene",
+    "description": "Blugene by CutisBio 의 바이오 인디고가 어떤 경로로 만들어지는지, 어떤 시험으로 확인했는지 설명합니다.",
+    "intro": "가장 사랑받는 옷감인 블루 데님. 그 색을 만드는 방법은 하나가 아닙니다. 큐티스바이오는 미생물의 생합성 경로와 발효를 활용해 인디고를 생산합니다.",
+    "section1Title": "1. 왜 불순물을 확인하는가",
+    "section1Text": "아닐린과 N-메틸아닐린은 화학 합성 인디고의 출발물질이거나 중간체이며, 최종 분말에 미반응 잔류물로 남을 수 있습니다. 독성과 발암 가능성 때문에 ZDHC, OEKO-TEX, GOTS 등 여러 인증 기준이 섬유용 염료와 최종 제품에서 이 물질의 허용 농도를 제한합니다. 그래서 우리는 제품마다 이 두 물질을 분석하고, 검출한계와 함께 결과를 공개합니다.",
+    "comparisonCaption": "카탈로그 p.4 의 기재 범위(출발물질 · 중간체, 독성 · 발암 가능성)를 넘지 않는 서술입니다.",
+    "section2Title": "2. 미생물 발효로 만드는 인디고",
+    "section2Text": "큐티스바이오는 미생물의 생합성 경로를 활용해 바이오매스에서 얻은 트립토판을 인디고로 전환하는 발효 공정을 사용합니다. 카탈로그가 제시하는 네 가지 인디고 합성 경로 가운데 미생물 유래 경로에 해당합니다.",
+    "section3Title": "3. 시험으로 확인한 결과",
+    "section3Text": "KATRI 의 ASTM D6866-24a Method B 시험에서 바이오 기반 탄소 함량 98%(pMC 97.73)로 측정되었고, KOTERI 의 KS K 0734 2019 시험에서 아닐린과 N-메틸아닐린이 검출되지 않았습니다(방법 검출한계 5 mg/kg). 견뢰도는 카탈로그 기준으로 식물성 · 화학 인디고와 견줄 만한 수준(comparable performance)이며, 항목별 등급은 데이터 페이지의 표에서 그대로 확인할 수 있습니다.",
+    "certSectionTitle": "글로벌 인증",
+    "certSectionText": "제공 카탈로그에 수록된 인증서입니다. 원본을 그대로 확인할 수 있습니다.",
+    "faqTitle": "자주 묻는 질문",
+    "faqList": [
+      {
+        "question": "Blugene은 무엇인가요?",
+        "answer": "Blugene은 큐티스바이오(CutisBio Co., Ltd.)가 미생물 발효로 생산하는 바이오 인디고의 브랜드명입니다. 카탈로그와 인증서에는 원래 제품명인 “Bio Indigo Dye Powder (Microbial Fermentation)” 로 기재되어 있습니다."
+      },
+      {
+        "question": "‘바이오 기반 탄소 함량 98%’ 는 무슨 뜻인가요?",
+        "answer": "제품에 들어 있는 탄소 가운데 재생 가능한 원료에서 온 비율이 98% 라는 뜻입니다. KATRI 의 ASTM D6866-24a Method B (AMS) 시험 결과이며(pMC 97.73, 보고서 SBED25-00000153-1, 2025-05-22), 인디고 순도나 탄소 배출 감축률이 아닙니다."
+      },
+      {
+        "question": "‘아닐린 불검출’ 은 함유량이 0 이라는 뜻인가요?",
+        "answer": "아닙니다. KOTERI 의 KS K 0734 2019 시험에서 방법 검출한계 5 mg/kg 미만이어서 검출되지 않았다는 뜻입니다(보고서 2025-0604-1132-C03, 2025-06-10). 0 ppm 이나 완전 무함유를 의미하지 않습니다."
+      },
+      {
+        "question": "기존 염색 설비에서 그대로 쓸 수 있나요?",
+        "answer": "카탈로그는 면 · 실크 · 캐시미어 염색에서 식물성 · 화학 인디고와 견줄 만한 성능(comparable performance)을 기록하고 있습니다. 다만 공장과 원단, 공정 조건에 따라 결과가 달라질 수 있으므로 실제 적용은 원단 샘플로 확인하시기를 권합니다."
+      },
+      {
+        "question": "인증은 어떤 제품에 적용되나요?",
+        "answer": "인증서에 기재된 제품은 “CB Bio Indigo Dye Powder” 입니다. OEKO-TEX ECO PASSPORT 의 제품 목록은 인증서 별첨에 있어 카탈로그만으로는 범위를 특정할 수 없습니다. 디지털 프린팅 잉크나 최종 데님 의류가 자동으로 인증되는 것은 아닙니다."
+      }
+    ],
+    "structuresTitle": "아닐린과 N-메틸아닐린의 화학 구조",
+    "structuresNote": "검증된 화학 구조를 코드(SVG)로 직접 그린 골격 구조식입니다. 이미지 생성 도구로 만들지 않았습니다.",
+    "structureAnilineName": "아닐린",
+    "structureAnilineDesc": "벤젠 고리에 아미노기(NH2)가 하나 결합한 골격 구조식입니다.",
+    "structureNMethylanilineName": "N-메틸아닐린",
+    "structureNMethylanilineDesc": "벤젠 고리에 결합한 질소에 수소 하나와 메틸기(CH3)가 붙은 골격 구조식입니다."
   },
   "About": {
-    "title": "합성생물학으로 일상을 더 아름답게 디자인하다",
+    "title": "합성생물학으로 일상을 더 건강하게 <keep>더 아름답게 디자인하다</keep>",
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "합성생물학 기술로 고성능 바이오 소재를 양산하여, 일상의 지속가능성을 확장한다.",
+    "visionText": "인간의 삶을 더 아름답고 건강하게 하기 위한 혁신적인 바이오소재의 글로벌 개척자가 되는 것이 우리의 비전입니다. Blugene 바이오 인디고 염료는 오랫동안 전 인류에게 공통으로 사랑받는 데님, 청바지를 혁신하여 인류의 건강과 지구환경의 지속가능성을 높이기 위한 바이오소재입니다.",
     "aboutImageAlt": "큐티스바이오 연구원들의 심도 있는 바이오 연구 전경",
-    "coreBusinessTitle": "선도적인 바이오 기반 특수 소재 개발",
-    "medicalTitle": "의료 (Medical)",
-    "medicalText": "바이오공정으로만 가능한 의약품 원료소재 개발",
-    "beautyTitle": "미용 (Beauty)",
-    "beautyText": "피부 마이크로바이옴 빅데이터 및 합성생물학을 융합한 정밀 뷰티 솔루션 고부가가치 소재 및 제품개발",
-    "fashionTitle": "패션 (Fashion)",
-    "fashionText": "100% 무독성 아닐린 프리 'Bio-Indigo' 상용화를 통한 인체안전 및 친환경 데님 패션완성",
-    "historyTitle": "주요 연혁 및 성과",
+    "coreBusinessTitle": "핵심 사업 영역",
+    "healthTitle": "건강",
+    "healthText": "건강한 일상과 장수를 위해 필수적인 물질을 합성생물학으로 만듭니다.",
+    "beautyTitle": "미용",
+    "beautyText": "피부와 모발의 노화를 제어하는 물질과 제품을 개발합니다.",
+    "fashionTitle": "패션 (Blugene)",
+    "fashionText": "미생물 발효로 생산한 바이오 인디고를 데님 염색과 디지털 프린팅에 공급합니다.",
+    "historyTitle": "연혁",
     "historyList": [
+      {
+        "year": "2025",
+        "event": "바이오 기반 인디고 염료의 다수 세계적 프리미엄 데님 회사와 염색 실증 완료"
+      },
       {
         "year": "2024",
         "event": "Bio-Indigo 바이오 염료 대량 생산 시스템 구축 및 본격적인 상용화 전개"
@@ -78,51 +746,44 @@
         "year": "2020",
         "event": "큐티스바이오(CutisBio) 설립"
       }
-    ]
+    ],
+    "blugeneNoteTitle": "이 사이트에 대하여",
+    "corporateSiteCta": "큐티스바이오 회사 공식 홈페이지 바로가기",
+    "corporateSiteNewTab": "새 창에서 열림",
+    "metaDescription": "큐티스바이오는 미생물의 생합성 능력을 설계해 산업 소재를 만듭니다. 바이오 인디고 브랜드 Blugene을 포함한 사업 영역과 연혁을 소개합니다."
   },
-  "Tech": {
-    "title": "미생물 발효를 통한 지속 가능한 데님 염색",
-    "description": "CutisBio의 아닐린 프리(Aniline-free) 인디고 염료 개발 배경과 친환경 데님 패션의 미래를 소개합니다.",
-    "intro": "모두가 가장 사랑하는 패션 아이템인 '블루 데님(Blue Denim)'. 하지만 그 아름다운 색 뒤에는 환경과 건강을 위협하는 석유화학 유래 물질, '아닐린(Aniline)'이 숨어 있었습니다. CutisBio는 미생물을 활용해 이 문제를 근본적으로 해결합니다.",
-    "section1Title": "1. 아닐린 프리(Aniline-Free)의 절대적 필요성",
-    "section1Text": "아닐린은 세계보건기구(WHO) 산하 국제암연구소에서 잠재적 발암물질로 분류한 유해 물질입니다. 데님 생산 과정에서 수자원으로 무분별하게 방류되어 생태계를 파괴할 뿐 아니라, 피부와 오랫동안 접촉하는 최종 소비자에게도 악영향을 미칠 수 있습니다.",
-    "comparisonImageAlt": "아닐린과 메칠아닐린 화학 구조식 및 피부염, 방광암 위험성을 나타내는 인포그래픽",
-    "comparisonCaption": "아닐린 및 메칠아닐린의 화학 구조와 이로 인한 접촉성 피부염, 방광암 등 치명적인 인체 건강 위협",
-    "section2Title": "2. CutisBio의 혁신: 미생물을 공장으로 만들다",
-    "section2Text": "자연이 정답을 가지고 있었습니다. 우리는 첨단 합성생물학 기술을 이용해 특수 미생물에게 식물과 유사한 대사 경로를 부여했습니다. 이 미생물들은 스스로 인디고 전구체를 만들어 내며, 이 과정을 통해 아닐린과 같은 치명적인 화학 물질의 사용을 원천적으로 차단합니다.",
-    "section3Title": "3. 품질의 타협 없는 'Drop-in' 솔루션",
-    "section3Text": "친환경적이라고 해서 품질을 포기할 필요는 없습니다. CutisBio의 바이오 인디고는 기존 염색 공장의 인프라 변경 없이 바로 투입 가능한 'Drop-in' 형태를 띱니다. 기존 화학 염료와 동일한 색상 깊이(Shade)와 마찰 견뢰도를 완벽하게 구현합니다.",
-    "certSectionTitle": "글로벌 지속가능성 인증",
-    "certSectionText": "다양한 지속가능성과 친환경, 그리고 인체 안전에 대한 세계적인 인증이 완료되었음을 알립니다.",
-    "certOkbiobased": "OK biobased 인증 마크",
-    "certBioPreferred": "USDA BioPreferred 인증 마크",
-    "certOekoTex": "OEKO-TEX Eco Passport 인증 마크",
-    "certZdhc": "ZDHC 인증 마크",
-    "faqTitle": "자주 묻는 질문 (FAQ)",
-    "faqList": [
-      {
-        "question": "전통적인 인디고 염색의 문제점은 무엇인가요?",
-        "answer": "기존 합성 인디고 염료는 석유 화학물질인 아닐린(Aniline)과 시안화수소 등을 사용하여 생산됩니다. 이는 심각한 수질 오염을 유발하며, 노동자와 최종 소비자의 건강에도 위협이 될 수 있습니다."
-      },
-      {
-        "question": "미생물 발효 기반 인디고 염료란 무엇인가요?",
-        "answer": "CutisBio의 기술은 특수하게 설계된 미생물을 사용하여 자연적인 발효 과정을 통해 인디고 전구체를 생산합니다. 화학적 합성 대신 생물학적 메커니즘을 이용하므로 100% 아닐린 프리 염료를 만들 수 있습니다."
-      },
-      {
-        "question": "기존 의류 품질에 차이가 있나요?",
-        "answer": "아닙니다. 기존의 전통적인 인디고 데님 염색의 품질, 색상 깊이, 세탁 및 마찰 견뢰도 등을 동일하게 또는 그 이상으로 구현합니다. 품질 타협 없이 완벽한 형태의 지속가능성을 달성했습니다."
-      }
-    ]
+  "Blog": {
+    "eyebrow": "인사이트 & 기술",
+    "title": "블로그",
+    "description": "CutisBio의 합성생물학 기술과 친환경 패션에 관한 심층 아티클을 소개합니다.",
+    "categoryTech": "기술 소개",
+    "readMore": "자세히 읽기",
+    "readTime": "{minutes}분 읽기"
+  },
+  "Contact": {
+    "title": "문의하기",
+    "description": "Blugene 바이오 인디고의 샘플과 기술 · 인증자료 문의를 받습니다.",
+    "addressDetail": "서울특별시 강남구 논현로 842 압구정빌딩 8층 (우 06025)\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
+    "mapTitle": "찾아오시는 길"
+  },
+  "NotFound": {
+    "title": "찾으시는 페이지가 없습니다.",
+    "body": "주소가 바뀌었거나 삭제된 페이지일 수 있습니다. 아래에서 필요한 내용을 찾아보세요.",
+    "backHome": "홈으로 가기"
   },
   "News": {
     "title": "CutisBio 뉴스룸",
     "description": "합성생물학으로 만들어가는 친환경 패션의 최신 소식을 확인하세요.",
+    "listNote": "이 목록에는 공개된 언론 보도가 자동으로 함께 모입니다. 기사 내용과 표현은 각 매체의 것이며, 시험 수치와 인증 정보는 데이터 · 인증 화면을 확인해 주세요.",
+    "categoryVideo": "영상",
+    "categoryPost": "소식",
+    "playVideo": "영상 재생",
     "articles": [
       {
         "date": "2025-11-19",
         "category": "보도자료",
         "title": "㈜에스스킨×큐티스바이오, 스킨부스터용 융합폴리펩타이드 소재 사업화 MOU 체결",
-        "summary": "㈜에스스킨×큐티스바이오, 스킨부스터용 융합폴리펩타이드 소재 사업화 MOU 체결  cncnews.co.kr",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBBb2F5Sjh2MlYtZVBQaThpM3N1dEYtLUhNaGFhTlVVWTJMcHc1RnN6SU9aVUhmNjVBbWtDemtGVEg5M0dLTm1lUncyRWV0WXhuRFdub1FndHlGSE1FNUNBZXR0NDg?oc=5"
       },
@@ -130,71 +791,47 @@
         "date": "2025-11-19",
         "category": "보도자료",
         "title": "(주)에스스킨 × 큐티스바이오 MOU... 스킨부스터용 융합폴리펩타이드 소재 사업화 협업",
-        "summary": "(주)에스스킨 × 큐티스바이오 MOU... 스킨부스터용 융합폴리펩타이드 소재 사업화 협업  코스인코리아닷컴",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
         "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UZFRlVjlLNjVfbkxkNFYyOTJlTThaRDdUQmVQdWxPeVFDVnJoZGFSWE80OWdiSG9yZzJJMzhpLVBVUmtHQmtIVTBRazE2WVRGSHBXN1cteU41eVFrQVg0WjQydw?oc=5"
-      },
-      {
-        "date": "2025-05-06",
-        "category": "보도자료",
-        "title": "[기고]\"합성생물학, 첨단바이오제조 실증허브부터 구축해야\"",
-        "summary": "[기고]\"합성생물학, 첨단바이오제조 실증허브부터 구축해야\"  지디넷코리아",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5xeC1RWVJiSmJtZjh4NExKR2xzN29hQUdNXzZNYmNWRGI5MG1JWHFORDFPcGY1dlBvNU84TmI0T254cUh4QkhmbWs5cEwxRUdydnJ4XzlR?oc=5"
       },
       {
         "date": "2024-08-27",
         "category": "보도자료",
         "title": "인디고 염색의 ‘표준화 및 상용화’",
-        "summary": "인디고 염색의 ‘표준화 및 상용화’  TIN뉴스",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
         "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8yZTRHUWFXU2dMdHp0WS1PMTVNcmQxX2ZmMDR5M2MwQzlQMTc3YkFOMEpZNkdvX3JmaFhBb1FsSnVSZ21Vemc?oc=5"
+      },
+      {
+        "date": "2024-08-21",
+        "category": "보도자료",
+        "title": "리사이클 원사 개발부터 친환경 염색까지...패션업계 '친환경 경영' 승부",
+        "summary": "",
+        "thumbnailAlt": "News thumbnail",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9WU1FJWW92UEpSX09GTkpMZTRVNjlKblpXVGRiRXV5Ull2WUdoVFNIOEx1cTBGeV9RNlRWTHJIb0NlbHNTems0c3psczU3QXV5MXg1R3k2cDJGYTVnZHNaNTRucmpVaGJBemktV0g2bTbSAXRBVV95cUxOZmhEdFFGaUxvemlfMkR5LTNZOUVad0hOZlM1Q3JCeWRlWW9ZT3k0V3NaTi1fbEVXUlF2MXlMLUVXMkhMeGhNOUFzN09qa1BKdDB6TXpzN25nLUdRdUthQ2k1WlNuZ0VsckFwSGRNLUpSSWNtcg?oc=5"
       },
       {
         "date": "2024-08-20",
         "category": "보도자료",
         "title": "코오롱FnC 르캐시미어, 프리뷰 인 서울서 친환경 염색공법 공개",
-        "summary": "코오롱FnC 르캐시미어, 프리뷰 인 서울서 친환경 염색공법 공개  연합뉴스",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9WUFAwR09kREVwYWJ5WEZwSjdmVDhYd216OU1tc09rNldONW81b0pQeUZYNWYzeDBXQWItRjRWUWotdDdfWDVtQS1ZM0hwX1pYNWNmeFpBakE3Z3PSAWBBVV95cUxNMnI2QVhYNGtnbUN6WmZZaWRkWGMyd2JGUGs3TTVKYkVQdlM3VFdiWm5UOUNDc2dxOE1DU28tdW5Ud0RWLTBxN1BfZ3hEX0NRQ3hlWTg1NHoyUVZ6cmVRWmQ?oc=5"
       },
       {
         "date": "2024-08-20",
         "category": "보도자료",
-        "title": "코오롱 FnC 르캐시미어, 프리뷰인서울에서 친환경 염색 상품 선보여",
-        "summary": "코오롱 FnC 르캐시미어, 프리뷰인서울에서 친환경 염색 상품 선보여  smarttoday.co.kr",
+        "title": "르캐시미어, 친환경 염색 '아쿠아인디고'로 프리뷰인서울 2024 참가 눈길",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5fZ1h1N0xZTjJIOWJQQWZJQVFHenRaU2JGOTdwWVc5Y2k3eGNEcEF6bjJ6ajRQTkVpS3BldHVXR21qaVh2ZWQxci1kSW9GMno0WEpxc2ZoaXVSd0VnVXc?oc=5"
-      },
-      {
-        "date": "2024-08-20",
-        "category": "보도자료",
-        "title": "코오롱FnC '르캐시미어', '프리뷰 인 서울'서 친환경 염색공법 상품 대거 공개",
-        "summary": "코오롱FnC '르캐시미어', '프리뷰 인 서울'서 친환경 염색공법 상품 대거 공개  newsquest.co.kr",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5PSnJGX2pPbTlRM2JMVEZMcmdvY0lXTUFNUmpDSDQ2UkxZQ29fSU96ZWRqZGJWY0Z3eTlsRDVrMzBYZ2hJaUpDbzBSa0l1Yk9mR1k4dEJzYTFxR2hCa0Jodnh5NGx0RWs2X3hJeS14SdIBc0FVX3lxTE5VQkVXRVhFTjVXX3lpbmNkVEdPdkdkSmV0VEhvYU5GNFBnRHlSSy1kemxVbWNTTlZmUGY3QkgtdjVCeEN5ZXRBXzR4YTBXeVdwMFVvOFRHQVFzTmU5azlkcEhCZDFMeU1HS3k5Q1VLYkgyTVE?oc=5"
-      },
-      {
-        "date": "2024-08-20",
-        "category": "보도자료",
-        "title": "르캐시미어, 친환경 염색공법 알린다",
-        "summary": "르캐시미어, 친환경 염색공법 알린다  TIN뉴스",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1UT2h6V1FnaGdDaTB0amwzT1N1Q2NtWjJvZ3hienpSZldNZ2FyMVVOTzk5cUppaXJ6aDl6MlBJZ0RqeHBJTHc?oc=5"
-      },
-      {
-        "date": "2024-08-20",
-        "category": "보도자료",
-        "title": "코오롱 FnC 르캐시미어, '프리뷰 인 서울 2024' 참가",
-        "summary": "코오롱 FnC 르캐시미어, '프리뷰 인 서울 2024' 참가  서울파이낸스",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NTzhvY3Uwck9aVmF6bVJXLWhGN0ZCc1gzR2RyMDB0ZlU2Y2hRbHEzOFN0SnJzQ2wtOW9LTEEwanVZajBVc2ZUb1hxLUZPbWNhNDAtd05mdEh1UFZPaTNTS0cwLWh5ZWMxemc?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9rOUdjSzJRUmFOR2tJMjJvampzU3Y4Y2lfbUdCa1hxM2Y5QlhfelREbXNMbGhncDFfc0U3T21LZDZyOFJSU3hIV2dOX2NZclk5OFlLZE9FdzBhdFo0TnBDajU0TS1ENDViQlBUUm5hTkZzTGJMeS1F?oc=5"
       },
       {
         "date": "2024-08-14",
         "category": "보도자료",
         "title": "쪽빛 천연염색, 지속가능 친환경 패션산업 앞당긴다",
-        "summary": "쪽빛 천연염색, 지속가능 친환경 패션산업 앞당긴다  한국섬유신문",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4ZDFhTmVpd1pZWUxWanFfY0g1c3B6QXRIQ29zRDgzOW4tX2xlVGlnYW1xM2xOdnh6S3VPd1hIa2VoRzgtaGFuWnE0NkRHRmxuSThEOHk3TXNNNG5zN2I0VFhNWE4zX21y?oc=5"
       },
@@ -207,140 +844,36 @@
         "link": "https://www.tinnews.co.kr/26601"
       },
       {
-        "date": "2024-08-07",
+        "date": "2023-12-18",
         "category": "보도자료",
-        "title": "제약 산업에서의 친환경 제약과 혁신적인 합성 기술",
-        "summary": "제약 산업에서의 친환경 제약과 혁신적인 합성 기술  하이뉴스",
+        "title": "지속가능패션을 알리는 공간 ‘서큘러 라이브러리’",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBfakdzSFFzSDFTRVVCekU0UVJSQllTc2w2MlRFNjdaZDdtVDJRX2RfTjQtMXdwS3MxRE5pV3N6VlJpNHhNdUZlbUxnbW9VcHc1S1lMT0Rqdjk5WFZIVzVjaW54RDFtU3BTNDl0UU5HTjljYkg3RHR3?oc=5"
-      },
-      {
-        "date": "2024-07-31",
-        "category": "보도자료",
-        "title": "[이지 사이언스] 과학기술로 재탄생한 전통문화, 디지털로 도약 꿈꾼다",
-        "summary": "[이지 사이언스] 과학기술로 재탄생한 전통문화, 디지털로 도약 꿈꾼다  연합뉴스",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hYkF4NW9WUkYyWmlUSXJhTUlkM3ozQzlNSHBVdlpDRVFxNW9STVZ4ZjgxOGwtUl9NY010MEVaY3FVeDRMTHNKWkxFaDVLVVJUTklBZU1weHJSWW_SAWBBVV95cUxNcjNoZ19ZSU0wZnhFaVhjcWlsdUV6dnl2WENvQkFfWURYSDJMNFhXN1pPOW1DNnNBcVdLN2E1QXUtV244d2VHV21GaURoazloTlMzUGpwUGR2aGtzYXBIZEs?oc=5"
-      },
-      {
-        "date": "2024-05-13",
-        "category": "보도자료",
-        "title": "서양 명품도 손내민 ‘K전통문화’… 고부가가치 산업화가 답이다",
-        "summary": "서양 명품도 손내민 ‘K전통문화’… 고부가가치 산업화가 답이다  서울신문",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE93T011Wk1sSEJIUWw5T1dNNk5HVTctLXJtLUs1RnBaQzF2N0RGb1BxZXBCS2Q5Smg0VF9WR0VqNnVUd2hsblk3Ti1EODN6RHg1RTFrRjlqWVBMd194ZktiNThOaXFOY0NFYi1wSE9idWVYQ21PN2NXQkwzSHVqZw?oc=5"
-      },
-      {
-        "date": "2024-03-26",
-        "category": "보도자료",
-        "title": "尹 “충북, 첨단 바이오 산업 선도기지 될 것”",
-        "summary": "尹 “충북, 첨단 바이오 산업 선도기지 될 것”  SPN 서울평양뉴스",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE03c0JuNkdLNkE2MFlNNWtQbjNTS2FpRWxVU0MybDVKLWlmckNnbXpNY0ZPVGxOemtlUDNIaWEwMmNISk15X0RpWkVwSno4UzlkWm43b00tR0FuR3V2NkNfcE5GYWs0NzNoelE?oc=5"
-      },
-      {
-        "date": "2023-12-20",
-        "category": "보도자료",
-        "title": "코오롱FnC, LA에 지속가능 패션스토어 '서큘러 라이브러리' 오픈",
-        "summary": "코오롱FnC, LA에 지속가능 패션스토어 '서큘러 라이브러리' 오픈  서울경제",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9rWGpmR0hKTlNUOHNScXZOd1ZydWs4Y0tnM3FUMzhZc0hwVW8zOWJpanhBNlI4MVhzOVNmMUpySXY5R0xsNVVvd3QwdHV3MXJ5VDVv0gFTQVVfeXFMT2tYamZHSEpOU1Q4c1Jxdk53VnJ1azhjS2czcVQzOFlzSHBVbzM5YmlqeEE2UjgxWHM5U2YxSnJJdjlHTGw1VW93dDB0dXcxcnlUNW8?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE5lcjJ4SDZFaVJuS1RSSkoteFNSQ3kySm44NkdEckpUY2xuMHJ3dEtfVkxtQ0xBZUZkbjhMSHVSZw?oc=5"
       },
       {
         "date": "2023-10-11",
         "category": "보도자료",
         "title": "다이텍연구원, 과학기술과 전통문화산업의 만남, 연구재단 사업 선정으로 기초연구 집중",
-        "summary": "다이텍연구원, 과학기술과 전통문화산업의 만남, 연구재단 사업 선정으로 기초연구 집중  매일신문",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
         "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiTWVSY2xJTFp3S0FSem9fWmREdnd3SXk0ZXJFMy1idmJpNnVBUjV5RzlOODZZb2hsMDFZQ2Z4S19JZ29iVDlnVGNabU5lQUJDSUZkSlNMOVJqSE4wYWFSMl9B?oc=5"
       },
       {
-        "date": "2023-09-26",
-        "category": "보도자료",
-        "title": "하이드아웃, 에비뉴엘 잠실점서 팝업스토어 전개…고객과 접점 확대한다",
-        "summary": "하이드아웃, 에비뉴엘 잠실점서 팝업스토어 전개…고객과 접점 확대한다  직썰",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsZFVrU0xVU29jM0l3SERjM0lfUkR3bXI0RWEtNUdrcVZPR1Frb3E5dWR4TE9SSHNseTBfb1RSZXhkS1paUklaR3AxaHFMV3QtelFVc2EycDV5dVg1SzBlWXB1elV6eU3SAWtBVV95cUxOSUx2ZXdwZDNvSm5YUHdqOE4tUnFDTDEyc3RzaE4wbXdESUlfSi10dE8ya01wR1pLYXNjOFRVSzBSS2I3c0dWNm5nNW84ZkEwOGhxazRMN2FNOEZSTTUtamRUUzh1bVZVOTFlYw?oc=5"
-      },
-      {
-        "date": "2023-09-25",
-        "category": "보도자료",
-        "title": "대기업이 품은 바이오…후발주자도 ’진심‘",
-        "summary": "대기업이 품은 바이오…후발주자도 ’진심‘  비즈월드",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5OUjhKSzBqSTcwZm5ReE9zV1RHR0Z3ZjA3eksyakh4VGdzSjZEa18xbnR0SVFDM21WZk1QTHFpeEF5QmxQUHJ6cGVydXdvbUtHUTFuRkYtaWpBYVFqTWxoc2YxeHNyWnZVYVE?oc=5"
-      },
-      {
-        "date": "2023-09-18",
-        "category": "보도자료",
-        "title": "삼바·셀트리온·롯데 \"바이오의 TSMC 되겠다\"… SK·GS·LG·CJ는 유전자 치료제 등 신약에 도전",
-        "summary": "삼바·셀트리온·롯데 \"바이오의 TSMC 되겠다\"… SK·GS·LG·CJ는 유전자 치료제 등 신약에 도전  조선일보",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSWoxWC1JOXU4ZFg4RWM4Tm9nM3VsUUxPTmVmRV9sQ0EyUHVaeUZ3Y1pNRDE0c1BqV1hvZzhmWHpUZV9ZMjhmUDZJRWZvdEN1dmswTzA1YVJGUWZIVC1ud1lMbGpqYnNJbGpuUkdFUUd6TmwzdDBEUDhJTFFLa2xCRWE5UQ?oc=5"
-      },
-      {
-        "date": "2023-09-11",
-        "category": "보도자료",
-        "title": "르캐시미어, 10주년 브랜드 리뉴얼 ‘순환 패션’ 선두로 도약! : 보도자료 │ News Room",
-        "summary": "르캐시미어, 10주년 브랜드 리뉴얼 ‘순환 패션’ 선두로 도약! : 보도자료 │ News Room  코오롱FnC",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBNWVgxaDdhX1hnRlVQWFVRUWNmWUx1Y1FWdVhBNVVQMFNDREFSV0tnQi05MUJraXBQV2pWN1ZQeFdyTC1laEt3YUh0NA?oc=5"
-      },
-      {
-        "date": "2023-09-11",
-        "category": "보도자료",
-        "title": "코오롱FnC, 친환경 염색 공법 시대를 열다",
-        "summary": "코오롱FnC, 친환경 염색 공법 시대를 열다  Fashion Insight",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wVjNmLTZZRXJXWG1hekViUWx1clZXRTdCLW5jTTZNTUcwUHVobXNVc3FoeXpYVnB4SmQ2YkNoYVZBa3B0UVIxbWpxV05kcVZ0OEpDWlZ3?oc=5"
-      },
-      {
         "date": "2023-09-08",
         "category": "보도자료",
-        "title": "코오롱FnC │ KOLON Fashion n Culture",
-        "summary": "코오롱FnC │ KOLON Fashion n Culture  코오롱FnC",
+        "title": "코오롱FnC, 큐티스바이오와 손잡고 친환경 행보 가속",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5jNzZEcHJHelR4eUJtMndXYVlXZUtVTkFDUHBiVzhGSFhPUDlzcENhQk1aVUs5T0VKVEgxMjVZTTAtRUxQMU9GS0pR?oc=5"
-      },
-      {
-        "date": "2023-09-08",
-        "category": "보도자료",
-        "title": "코오롱FnC, '친환경 염색 소재·공법' 사업화",
-        "summary": "코오롱FnC, '친환경 염색 소재·공법' 사업화  신아일보",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBFcDloQmN3LWh4bzZmZEhrcHlWVlBjVGJ3amt3TUJueGJ3TmtFSjRtMHlEZFYyZmhDeklBRHdsRmNkb3JzeDlxUi1fYlpIX0lsWDhQTVoxYVIxeXNDaUhLWkFmNkcyUFlXUlpMNVdQZzA?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5nSjFFYU1iRXFCbEJDZ1FtSEQ4bTdSZWhOOS1oU3Jsd19nSjB6LThCeVZfUTJhd3J2eGJvWjgtbUlsaDJ6Y0MyMDZiN2d5VlFFRnhQS3VVYWFyd1pmTDEyRTYzcnpDQ00?oc=5"
       },
       {
         "date": "2023-09-08",
         "category": "보도자료",
         "title": "코오롱FnC, 큐티스바이오와 MOU‧‧‧순환 패션 한 발짝 더",
-        "summary": "코오롱FnC, 큐티스바이오와 MOU‧‧‧순환 패션 한 발짝 더  더리포트",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vX056X0VxZjR5SjdOMi1TLW5RdHlBRENrOU5yZWFUNDF6R2pYVTY3aWU3LTlyckYwckdOT2JBSlVfZkNyajY4M2ROYzVFbW5pSEdBcENfbklRQ1pfRGZkbDhjWHFoY1Q0eUdzS1hn?oc=5"
-      },
-      {
-        "date": "2023-09-04",
-        "category": "보도자료",
-        "title": "서울대 의대 출신 '괴짜'들 뭉쳤다…몸집 키우는 '경의지회' [긱스]",
-        "summary": "서울대 의대 출신 '괴짜'들 뭉쳤다…몸집 키우는 '경의지회' [긱스]  한국경제",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE93WEZ1N1FTN1ZJYnBhamVWd2dMekkyMUFjbkVlbGo3RmI4aWh4RXpMT2VoTDJqdUNsZlhpRGR1LTIwdFdUcjBkVFpjaHViWklFVWNXVU9oVm1zUQ?oc=5"
-      },
-      {
-        "date": "2023-09-01",
-        "category": "보도자료",
-        "title": "\"창업으로 더 많은 생명 구할 수 있죠\" 서울의대 출신들의 도전",
-        "summary": "\"창업으로 더 많은 생명 구할 수 있죠\" 서울의대 출신들의 도전  모바일한경",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaE5vT1Z3ajlUTEh6amRqSHFZZmhlcGxGWW1idVhGNTFNYS03cE85d1VJZTFDWV9LclFkUVRibXZ1VlNmVHJ1YXVTakExS0ROTzRZenRNcUNyYWlibUYyclgzV1VaczFockdtT2w3ODctdm1WMzZVdzdIZHh6YUVnLUp5cmEyMG8?oc=5"
-      },
-      {
-        "date": "2023-08-08",
-        "category": "보도자료",
-        "title": "바이오에 진심인 GS…휴젤 인수 2년 성적표는 'A학점'",
-        "summary": "바이오에 진심인 GS…휴젤 인수 2년 성적표는 'A학점'  더구루",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE52ZkNxN0dHNnp4d011NWVhSWc5TUNjUFhUU3F6cVRyRzhmbWRKRmE2cW5TSXF6Smo0ZUxQUmVXMU02Ym5vSW1IQ0dGQVFqT1FFQ0RyZEpnNUgxVWd2dldGczZB?oc=5"
       },
       {
         "date": "2023-07-25",
@@ -351,18 +884,18 @@
         "link": "https://www.medigatenews.com/news/3760434771"
       },
       {
-        "date": "2023-07-04",
+        "date": "2023-07-03",
         "category": "보도자료",
-        "title": "[의학바이오게시판] 카카오헬스케어, 로레알그룹과 정밀 뷰티 솔루션 개발 MOU",
-        "summary": "[의학바이오게시판] 카카오헬스케어, 로레알그룹과 정밀 뷰티 솔루션 개발 MOU  동아사이언스",
+        "title": "카카오헬스케어, 로레알·큐티스바이오와 정밀 뷰티 솔루션 개발 협력",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA2ZHhLYlJQT0NJTVI3aFlBV1JkMGRiakppSWRxZHQyWk9xWlRqbGpfSHRKSWk5X2tsLUJybEtka1ZBUXljRnUweHJ3d1dhMEtFSXU4Nw?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE03SDQxRU5tTUwxTlFCS1czNm1LbkRUamt4OGtPdUVHYUlCbThMOTFlYW94ekx0U21LWXgxQXFya01WemEwejVGckpvaDB2VW14Y3FQTFpMODVpLTNQbTBYcWlOLTYyV1BWb3FocHpKbEhET0xUeHFWTlE2UzQ?oc=5"
       },
       {
         "date": "2023-07-03",
         "category": "보도자료",
         "title": "로레알 그룹, 카카오헬스케어, 큐티스바이오와 바이오인포매틱스 기반 정밀 뷰티 솔루션 개발 업무협약 체결",
-        "summary": "로레알 그룹, 카카오헬스케어, 큐티스바이오와 바이오인포매틱스 기반 정밀 뷰티 솔루션 개발 업무협약 체결  loreal.com",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
         "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcktqZHZOdEVrMWV4SGwwXzhpY1RfUTRTSjgtUWxhcFd5NDRiTk0zTGU0OHlHVnFWNWJaMFByV2VLOUxMcTljQ2lPWVE0OG5WQnU2YlQwT3dJWERyc3ZneFptbVFaMGFWS25lbDJReWNESEZyZE5NSXJydFg5bTY5cWE5ZlVvOVAzYUVzeGo3T2E4Zw?oc=5"
       },
@@ -370,49 +903,17 @@
         "date": "2023-07-03",
         "category": "보도자료",
         "title": "카카오헬스케어·로레알·큐티스바이오, 정밀 뷰티 솔루션 개발 업무협약 체결",
-        "summary": "카카오헬스케어·로레알·큐티스바이오, 정밀 뷰티 솔루션 개발 업무협약 체결  뉴스핌",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
         "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ZaWJBZDlTckJiWHZ4RzhmMUszN0xRRkdMMHFWd2wwZy1pZGQycjlPdHFKMXZ0ZjJSNjF5ckMwMjROSlJTYjlBcDBHa2FtYU83ckdueWFnR29qM29J?oc=5"
       },
       {
         "date": "2023-07-03",
         "category": "보도자료",
-        "title": "카카오헬스, 로레알과 정밀뷰티솔루션 개발",
-        "summary": "카카오헬스, 로레알과 정밀뷰티솔루션 개발  한국경제TV",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1zSTdoeUtaWHhzWDdMbUw0X2xxUGNxZkFNTGFGY0V4bi1LUnUtWm14T195RmNJWjdxU2pNUTdiOURLRFdGWnBkZWg0d3hMV0tpdXdpRkdLNExEbWF6Q3VWb1VaNjFKRktIeEVjZjBFWnJmU0FmeC1v?oc=5"
-      },
-      {
-        "date": "2023-07-03",
-        "category": "보도자료",
-        "title": "[라이센스 뷰티 PICK] 에이피알·비레디·LG생활건강·로레알 그룹",
-        "summary": "[라이센스 뷰티 PICK] 에이피알·비레디·LG생활건강·로레알 그룹  라이센스뉴스",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5WRnlwOFFqa0hjX0wycGhnQlhISnVDWWtvZThlZmpITUlYR0s4Y2IxN1RNdlNmR2JidmlIeWxJZmdyQ3pHUnlzOVZwZFBVbXBna1Fvb1U3OG1UblprbEU3c1Y2RDJiOUN4c3c?oc=5"
-      },
-      {
-        "date": "2023-07-03",
-        "category": "보도자료",
         "title": "카카오헬스케어, 로레알 그룹 큐티스바이오와 업무협약 체결",
-        "summary": "카카오헬스케어, 로레알 그룹 큐티스바이오와 업무협약 체결  의학신문",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBicXh0NDJUTU1jTGFiSW1XOHctYTZIYjFHa2hmcUVjOTMtUzdXbGg1eDN0TVBXN0k5QUZqcWxaMWR1SWFPSDlGajZLOUxoTXRGS0JfQnhsbFRlRXRoVjdEVk1xWDRwaDl5OVE?oc=5"
-      },
-      {
-        "date": "2023-07-03",
-        "category": "보도자료",
-        "title": "[데일리 IT 단신] SKT 클라우드 서비스, 전문 인력 없어도 \"OK\" 外",
-        "summary": "[데일리 IT 단신] SKT 클라우드 서비스, 전문 인력 없어도 \"OK\" 外  뉴데일리 경제",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE84M0pPd1k0aVV2WnNHaHg2SlNvWmVWZjFNREZHQlVsOV9hOUpQWXRkSjNjblZyUFNfb1Z2Z1FlS2E1NXJ6bmFPbjE5N0RORi1sUlAzUXZQejlpMjM2Sm1ncEYzZmtReGoyTjVWVGJqMjdid1NyZkZkZ3FSUQ?oc=5"
-      },
-      {
-        "date": "2023-05-30",
-        "category": "보도자료",
-        "title": "인피니스, 비(非) 패션 라이선스 독보적 입지 구축",
-        "summary": "인피니스, 비(非) 패션 라이선스 독보적 입지 구축  apparelnews.co.kr",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9RVm1BcmFhdU1zLVFZbnBZb3hrNkFwblpMM0tUOTMwWlRGc3VMa2NSc2FRMFhDWm14WDhRVlNnSTJkdUZZQnU4Z2VoZUJPTUk4TUl5NGJFaFhNOU16Q1h1RTVxQQ?oc=5"
       },
       {
         "date": "2022-12-19",
@@ -423,34 +924,18 @@
         "link": "https://www.pharmnews.com/news/articleView.html?idxno=216348"
       },
       {
-        "date": "2022-12-07",
-        "category": "보도자료",
-        "title": "[헬스캡슐]아주대병원, 본관 지하 1층에 ‘로봇 수술센터’ 개소 外",
-        "summary": "[헬스캡슐]아주대병원, 본관 지하 1층에 ‘로봇 수술센터’ 개소 外  동아일보",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0tcTZKenBmeGlsaEM0Z0w1c0JydnFFME8wUkd1NkxKUkpyeTBoOGtXZ3NnLXFqY2l2Y055LUhTVGxFNWl0N0tmRzlaWTFHSTVEcHUwcHpiSS11UTFndlZlMDlidkRaazNrRjBySmQwb9IBZkFVX3lxTE5acHRmREVXMkNzN0lyYUw2bmpTVTVKdzA1MGRUaGdfS3dNQWpQQzFwZXFEdjE3V0NhV1UxZ1lGbExZdFlWSkNnLXZOTm05NTdUci1vVk02TjFaYXNLTkN2MFVtSk9oQQ?oc=5"
-      },
-      {
         "date": "2022-12-05",
         "category": "보도자료",
         "title": "큐티스바이오-이뮤노바이옴,마이크로바이옴 면역항암 치료제 공동연구",
-        "summary": "큐티스바이오-이뮤노바이옴,마이크로바이옴 면역항암 치료제 공동연구  팜뉴스",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zbVMzQ0s3NVpxMG9HNUNiSFN2bG0yOTBRSk5ad01EUlNoSnNId1UxM1pYSkptbWNGcEJ4cHJRY3ZvR0tUTC01VmM5SVJVNlZqSVYxLTQ1YUNlWVFkT1UyVXMtTnBMenk4SHZvYg?oc=5"
-      },
-      {
-        "date": "2022-06-30",
-        "category": "보도자료",
-        "title": "제약업계, 친환경을 입다",
-        "summary": "제약업계, 친환경을 입다  헬스코리아뉴스",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8tVE4yR3I2eE1Zdjh5V0hRSHhJME5fc25GV2VWaEgySjFUWm81UUdnMUpyRW1Ia1hYcllmb2RGT3ptYi1XNnpaQUx4ZGNPUXM1S0hYOERuNTlQOVVfSWctUXVB?oc=5"
       },
       {
         "date": "2022-06-27",
         "category": "보도자료",
         "title": "대웅제약-대웅바이오-큐티스바이오,친환경 약물소재 개발∙상업화 협약",
-        "summary": "대웅제약-대웅바이오-큐티스바이오,친환경 약물소재 개발∙상업화 협약  팜뉴스",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5RNGRiRURDNjd4c0ZFSDg3bVY5ZXNBUFRMbjIwRFZDazZkWGpXdmhaUFMxa1lfS2pubzRFa3J5X1lMUDNxRm9WanZ3bDNobGpJamRidHFSSkJUOXlhazNDWFpQRElnYjVhYTlNcQ?oc=5"
       },
@@ -458,90 +943,18 @@
         "date": "2022-06-27",
         "category": "보도자료",
         "title": "대웅제약 대웅바이오 큐티스바이오, 친환경 약물소재 개발 협약 맺어",
-        "summary": "대웅제약 대웅바이오 큐티스바이오, 친환경 약물소재 개발 협약 맺어  비즈니스포스트",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
         "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NdmpROGR2NTd2Z0cxMnI3bHRrZlE0LWhmcE1nMHdrQW9EMzRJeG5lWm4zSld1eG84OThaU0dhU1MyWFVnX0FiaHhrZXYyNnZpY2J0a2g4Q0lDamVqMXFFcFhnbDdYVUJDdk1qelc1LVREcWM?oc=5"
       },
       {
         "date": "2022-06-27",
         "category": "보도자료",
-        "title": "광동제약, GSK 알레르기 비염 치료제 ‘아바미스 나잘 스프레이’ 유통 外",
-        "summary": "광동제약, GSK 알레르기 비염 치료제 ‘아바미스 나잘 스프레이’ 유통 外  의약뉴스",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MWHFfYk81YU82VUk4dy01OHZxUWtRdEk5WkRVbWQ5RkxWYjVIWGZwYzhCdDE5Q3RSSm11Yl9OSms4SHNXRDdLZXFGcUpIZFB2WWQ5dVpZZWNnTjlyamR1SFh1WWdoUk0?oc=5"
-      },
-      {
-        "date": "2022-06-27",
-        "category": "보도자료",
         "title": "대웅제약-대웅바이오-큐티스바이오, 친환경 약물소재 개발 협약",
-        "summary": "대웅제약-대웅바이오-큐티스바이오, 친환경 약물소재 개발 협약  히트뉴스",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1qaFJ6ZnlzNUhEbWQ3TXJWNHdSWWhYVFF4cUpabWVBdVFZTXRqaXMySnJ6QXJPUlA0RGx3UkhmRUgwTVZEa3BpanhIVDJ5cFllZFdsYVJfOGtteFVVUGdvU0JZR3BGOHlCejlv?oc=5"
-      },
-      {
-        "date": "2022-06-27",
-        "category": "보도자료",
-        "title": "구찌 ‘투워즈 더 선’ 셀렉션 공개 Gucci, Towards the Sun-Raffia effect-Beloved-Cape Cod",
-        "summary": "구찌 ‘투워즈 더 선’ 셀렉션 공개 Gucci, Towards the Sun-Raffia effect-Beloved-Cape Cod  한국면세뉴스",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBCVEZlWnNVM01jcV9LNERyZnRaMnVXNzhMVHRRZDJKWno2NTc2d2s1S29MSWtORXhTR0JlUWlzYzRjemVJUG9RNVdpdFJFOVNmdG5GcjRtWm1mUm9aZk1GdU9fQ09hdEJM?oc=5"
-      },
-      {
-        "date": "2021-09-28",
-        "category": "보도자료",
-        "title": "신성장 동력 찾기 나선 GS…“바이오 이어 이번엔 에너지”",
-        "summary": "신성장 동력 찾기 나선 GS…“바이오 이어 이번엔 에너지”  중앙일보",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9mM1QzeG82RExld2pvanF5V2xtMktTTk02Y01DbDRsWHhxU09KOW9pWmFwckVGaHVfcjEtbWlEY0N5MW50bFJpbkZoUXV6c2FxdENEalNR?oc=5"
-      },
-      {
-        "date": "2021-08-26",
-        "category": "보도자료",
-        "title": "휴젤 인수한 GS, 바이오 산업 진출의 본격적인 서막 올라",
-        "summary": "휴젤 인수한 GS, 바이오 산업 진출의 본격적인 서막 올라  바이오타임즈",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8xMVVHb3pXeUx0b2pvRW03dXVVQ1k1T1V6d0o3bVBuUTJ5ZnFXMzQ2MDlrejhBY1g3bkxiblNTb19MazdxcnluWHV1NXU5V2NObkwyekUzcUUtWnhrQXg1RjVjQ1dPaXNkZWJZ?oc=5"
-      },
-      {
-        "date": "2021-06-08",
-        "category": "보도자료",
-        "title": "KAIST, 미생물 이용한 천연 무지개 색소 생산 기술 최초 개발",
-        "summary": "KAIST, 미생물 이용한 천연 무지개 색소 생산 기술 최초 개발  세종충청뉴스",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE14N2VtOWxvOEdlNmJuVUJVenVnZk5PbnE3VGhwWFdCQWVrSWZ5THhheHhCTHR6UWtZMkJmQ19XbzVnLUo3VllMblRVbVpCZ0QtZ0xGNGdJNUtnYTdKenk0N3ZoNnZGUkdJTGRj0gFvQVVfeXFMTmtBZ0swRkhRZ056M21TRURIdHFWSTBHSHpvWWxVNVZ6a1F5VWx6VEJoRnZObHZCZjZwVTVPYzVjdFMzSHBiWW1BV0JDRmZCME9OVUQzd1ctdXdVc3JFVXh4UlZ3QWZwM3RGMWpxWEZ3?oc=5"
       }
     ]
-  },
-  "Contact": {
-    "title": "문의하기",
-    "description": "큐티스바이오에 대한 문의사항을 남겨주시면 빠르게 답변해 드리겠습니다.",
-    "addressTitle": "오시는 길",
-    "addressDetail": "서울시 강남구 논현로 842 압구정빌딩 8층",
-    "emailTitle": "이메일",
-    "emailAddress": "contact@cutisbio.com",
-    "mapTitle": "구글 지도"
-  },
-  "ProblemSolution": {
-    "problemTitle": "우리가 입는 데님의 숨겨진 대가",
-    "problemText": "전통적인 염색 공정은 석유 화학 물질에 의존하여 심각한 환경 오염과 건강 위협을 남깁니다. 특히 '아닐린'은 가장 치명적인 문제 중 하나입니다.",
-    "solutionTitle": "CutisBio의 혁신적인 해답",
-    "solutionText": "미생물 발효를 통해 유독성 물질을 완전히 배제한 100% 아닐린 프리 염료. 사람과 자연 모두에게 안전한 완전한 지속가능성을 제공합니다."
-  },
-  "Process": {
-    "title": "바이오제조 프로세스",
-    "subtitle": "자연을 모방한 첨단 합성생물학 메커니즘",
-    "step1Title": "1. DNA 설계",
-    "step1Text": "자연에 존재하는 효소 경로를 바탕으로 미생물의 DNA를 특수하게 재설계합니다.",
-    "step2Title": "2. 정밀 발효",
-    "step2Text": "정밀한 발효 환경에서 미생물들이 마치 식물처럼 인디고 전구체를 스스로 생산합니다.",
-    "step3Title": "3. 인디고 정제",
-    "step3Text": "친환경적 정제 공정을 통해 100% 바이오 기반 염료를 완성합니다.",
-    "step4Title": "4. Drop-in 염색",
-    "step4Text": "기존 염색 공장 인프라 그대로, 추가적인 설비 교체 없이 즉각 적용 가능합니다."
-  },
-  "Partners": {
-    "title": "글로벌 패션의 미래를 함께하는 선도 브랜드들",
-    "testimonial": "\"CutisBio의 합성생물학기반 인디고는 데님을 사랑하는 사람들의 건강을 지켜주면서 데님 브랜드의 차별화된 경쟁력을 보장하는 진정한 게임체인저다\"",
-    "testimonialAuthor": "CEO interview"
   }
 }

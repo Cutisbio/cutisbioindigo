@@ -1,63 +1,731 @@
 {
-  "Blog": {
-    "eyebrow": "インサイト & テクノロジー",
-    "title": "ブログ",
-    "description": "CutisBioの合成生物学技術とサステナブルファッションに関する深掘り記事。",
-    "categoryTech": "テクノロジー",
-    "readMore": "続きを読む",
-    "readTime": "{minutes}分で読める"
-  },
-  "Layout": {
-    "home": "ホーム",
-    "about": "会社紹介",
-    "tech": "技術紹介",
+  "Nav": {
+    "brand": "ブランド",
+    "technology": "技術",
+    "dyeingPrinting": "染色・プリント",
+    "dataCertifications": "データ・認証",
+    "sampleInquiry": "サンプルのお問い合わせ",
+    "about": "会社概要",
     "news": "ニュース",
     "contact": "お問い合わせ",
-    "footerText": "Sustainable Denim Dye. Aniline free - Human safe. © 2026 CutisBio. All rights reserved."
+    "menu": "メニュー",
+    "openMenu": "メニューを開く",
+    "closeMenu": "メニューを閉じる",
+    "languageLabel": "言語を選択",
+    "skipToContent": "本文へスキップ",
+    "homeAria": "Blugene ホームへ"
+  },
+  "Footer": {
+    "tagline": "Better Blue for Everyday Denim",
+    "sitemapTitle": "サイトのご案内",
+    "contactTitle": "お問い合わせ",
+    "legalTitle": "資料について",
+    "sourceNote": "本サイトの試験数値・認証情報は、2026年7月発行のCutisBioカタログに収録された資料です。データ基準日 {date}。",
+    "companyLine": "CutisBio Co., Ltd.(キューティスバイオ)",
+    "rights": "© 2026 CutisBio Co., Ltd. All rights reserved.",
+    "catalogueLink": "オリジナルカタログ(PDF)をダウンロード"
   },
   "Home": {
-    "heroTitle": "次世代の持続可能なデニム染料、CutisBio Indigo",
-    "heroSubtitle": "私たちの肌に安全なインディゴ染料。合成生物学技術により、有毒物質（アニリン）を使用せずに誕生した、最も持続可能なデニム染色ソリューションです。",
-    "heroImageAlt": "青いデニム生地ときれいな水滴が交差する直感的なエコイメージ",
-    "impactMetricsTitle": "CutisBioがもたらすポジティブな変化",
-    "metric1Value": "100%",
-    "metric1Text": "Aniline-Free (毒性物質を完全に遮断)",
-    "metric2Value": "Drop-in",
-    "metric2Text": "既存の染色工場の設備に直ちに適用可能",
-    "metric3Value": "Eco-friendly",
-    "metric3Text": "生産工程の水質汚染と炭素排出を極小化",
-    "coreValuesTitle": "CutisBio技術のコアバリュー",
-    "coreValuesDesc": "伝統的な石油化学ベースの染色産業を合成生物学(Synthetic Biology)を通じて革新します。",
-    "feature1": "精密発酵 (Precision Fermentation)",
-    "benefit1": "持続可能な生合成プロセスで自然生態系を模倣",
-    "feature2": "アニリンフリー (Aniline-Free)",
-    "benefit2": "作業者と消費者を脅かす発がん性物質を根本的に排除",
-    "feature3": "持続可能なインディゴ (Sustainable Indigo)",
-    "benefit3": "水質汚染の最小化とファッション業界の循環経済の達成",
-    "ctaTitle": "持続可能なファッションの未来に、参加しませんか？",
-    "ctaText": "CutisBioの革新的な微生物ベースのインディゴ染料が、従来の染色プロセスにどう代わるのかご確認ください。",
-    "ctaButton": "技術の詳細を見る",
-    "qualityTitle": "優れた染色性と堅牢度の検証",
-    "qualitySubtitle": "日本のプレミアムデニム染色業者による徹底的な比較テストの結果、CutisBioインディゴが従来の化学インディゴに比べて、より深く優れた色合いと高い耐久性を示すことが立証されました。",
-    "qualityImageAlt": "デニム染色と堅牢度テスト結果の画像",
-    "qualityBadge": "Quality Proven"
+    "metaTitle": "インディゴのDNAと発酵から生まれた青。",
+    "metaDescription": "微生物発酵でつくるバイオインディゴ Blugene。バイオベース炭素含有率 98%、アニリン・N-メチルアニリンは不検出（検出限界 5 mg/kg）。",
+    "ctaTitle": "次のデニムの青を、ともにつくりませんか。",
+    "ctaText": "デニムブランド、生地メーカー、染色工場、プリント事業者からのお問い合わせをお待ちしています。",
+    "ctaButton": "Blugene サンプルのお問い合わせ"
+  },
+  "Hero": {
+    "descriptor": "インディゴのDNAと発酵から生まれた青。",
+    "titleLine1": "一生をともにするデニム、",
+    "titleLine2": "より安全な青。",
+    "body": "肌に一生触れ続けるその青が、合成生物学で生まれ変わりました。肌の健康のために、わずかなリスクにも妥協しないインディゴ、Blugene。",
+    "ctaPrimary": "Blugene サンプルのお問い合わせ",
+    "ctaSecondary": "データと認証を見る",
+    "tagline": "Better Blue for Everyday Denim",
+    "imageAlt": "デニムジャケットを着た保護者が子どもを抱き、トウモロコシ畑と草原、水辺の広がる風景を眺めている場面。提供カタログ表紙のブランドイメージです。",
+    "imageCredit": "カタログ p.1 掲載画像"
+  },
+  "EvidenceStrip": {
+    "carbonValue": "98%",
+    "carbonLabel": "バイオベース炭素含有率",
+    "anilineValue": "不検出",
+    "anilineLabel": "アニリン",
+    "nMethylanilineValue": "不検出",
+    "nMethylanilineLabel": "N-メチルアニリン",
+    "note": "提供カタログの試験結果です。不検出とは、提示された試験法において方法検出限界5 mg/kg未満であることを意味し、含有量が0であることを示すものではありません。98%はバイオベース炭素含有率であり、インディゴの純度や排出削減率ではありません。",
+    "sourceCarbon": "出典:カタログ p.3 Table 1-1 (KATRI, ASTM D6866-24a Method B)",
+    "sourceAniline": "出典:カタログ p.5 Table 2-3 (KOTERI, KS K 0734 2019)",
+    "cta": "詳細な試験情報を見る"
+  },
+  "Manifesto": {
+    "eyebrow": "ACROSS BORDERS. ACROSS GENERATIONS.",
+    "title": "私たちの肌に一生触れる服だからこそ。",
+    "body": "どの国に住んでも、どんな年齢を過ぎても。デニムは私たちの日常と共にあります。長く着て、毎日肌に触れる服だからこそ、色を作る過程から染める過程、そしてデニムを着るその瞬間まで、すべての過程を肌の健康の専門家である皮膚科専門医とともに問い直しました。Blugeneは次の3つの質問から始まりました。",
+    "questions": [
+      "何からつくられているのか",
+      "どんな不純物が残るのか",
+      "その結果を確かめられるのか"
+    ],
+    "cta": "質問への答えを聞く",
+    "portraitAlt": "白衣を着て微笑む皮膚科専門医チェ・ウォヌ（医学博士）",
+    "portraitName": "Blugene 企画者: 皮膚科専門医・医学博士 チェ・ウォヌ",
+    "portraitCredential": "Blugene director: CHOI WONWOO M.D., Ph.D., Board Certified Dermatologist"
+  },
+  "Impurity": {
+    "eyebrow": "WHAT REMAINS MATTERS",
+    "title": "目に見えないものまで、私たちの基準です。",
+    "body": "Blugeneの基盤となったCutisBio バイオインディゴは、カタログに提示された試験でアニリンとN-メチルアニリンが不検出でした。",
+    "context": "アニリンとN-メチルアニリンは化学合成経路で出発物質や中間体として用いられ、最終的なインディゴ粉末に未反応の残留物として残ることがあります。複数の認証基準が、繊維用染料および最終製品におけるこれらの物質の許容濃度を制限しています。",
+    "cta": "比較データの全体を見る",
+    "chartTitle": "市販インディゴ染料のアニリン・N-メチルアニリン分析",
+    "chartCaption": "カタログ p.5 Figure 2-2・Table 2-3 の市販9サンプル。縦軸は mg/kg で、0から始まります。"
+  },
+  "Science": {
+    "eyebrow": "SYNTHETIC BIOLOGY",
+    "title": "インディゴのDNAを、新たに書く。",
+    "body": "CutisBioは微生物の生合成経路と発酵を活用してインディゴを生産します。",
+    "cta": "技術を詳しく見る",
+    "diagramTitle": "原料から生地まで",
+    "diagramNote": "Blugeneのデニムの始まりは再生可能な植物原料であり、インディゴの青いDNAは合成生物学と精密発酵プロセスを通じて染料とインクに生まれ変わります。こうして作られるBlugeneインディゴ染料は、ZDHC MRSL・OEKO-TEX ECO PASSPORT・USDA BioPreferredなどの認証を受けた染料で、私たちが着るデニム生地を染めます。",
+    "steps": [
+      {
+        "title": "再生可能な原料",
+        "text": "トウモロコシなどのバイオマス由来の再生可能な炭素が出発点です。",
+        "imageAlt": "トウモロコシ畑の写真。バイオマス原料を示す概念イメージであり、CutisBioの農場を撮影したものではありません。"
+      },
+      {
+        "title": "微生物発酵",
+        "text": "微生物の生合成経路を活用した発酵によってインディゴをつくります。",
+        "imageAlt": "発酵設備の写真。透視窓の中に青い培養液が見える発酵槽と制御盤の前の作業者二人。発酵工程を示す概念イメージであり、CutisBioの設備やスタッフを撮影したものではありません。"
+      },
+      {
+        "title": "インディゴの回収・製品化",
+        "text": "回収と精製を経て、粉末とデジタルプリント用インクとして製品化します。",
+        "imageAlt": "青いインディゴ粉末が入ったガラス瓶とデジタル印刷インク瓶の写真。二つの製品形態を示す概念イメージであり、CutisBioの製品を撮影したものではありません。"
+      },
+      {
+        "title": "生地の染色・プリント",
+        "text": "綿・シルク・カシミヤの染色とデジタルプリントに適用します。",
+        "imageAlt": "インディゴ染液の入ったタンクの上を青い糸の束がローラーを通過している染色工場の写真。生地染色を示す概念イメージであり、CutisBioの設備を撮影したものではありません。"
+      }
+    ]
+  },
+  "Environment": {
+    "eyebrow": "FROM RENEWABLE CARBON",
+    "title": "着る人を思いながら。つくる工程も考えながら。",
+    "body": "再生可能な炭素から出発するインディゴ。原料の由来から成分分析まで、確認できる資料をもとに私たちのアプローチをご説明します。",
+    "carbonCardTitle": "バイオベース炭素含有率",
+    "carbonCardText": "製品に含まれる炭素のうち、再生可能な原料に由来する割合です。カタログ p.3 Table 1-1 の測定値(pMC 97.73)に基づくもので、インディゴの純度や炭素排出削減率ではありません。",
+    "scopeNote": "製品ごとのライフサイクルアセスメント(LCA)、水使用量、エネルギー、炭素排出量の資料は、このカタログには含まれていません。確認された範囲を超える環境パフォーマンスの数値は、本サイトには掲載しません。",
+    "cta": "根拠資料を見る",
+    "imageAlt": "原料作物、発酵設備、青い生地、デニムを着た人へとつながるバリューチェーンのコンセプト画像。実際のCutisBioの工場や従業員を撮影した写真ではありません。"
+  },
+  "Performance": {
+    "eyebrow": "PERFORMANCE",
+    "title": "実際の生地で確かめた染色性。",
+    "body": "植物由来・化学・バイオインディゴで綿、シルク、カシミヤを染色して比較しました。カタログは、洗濯・耐光・摩擦・汗の各堅牢度において互いに比肩しうる性能(comparable performance)であると記録しています。",
+    "fabricAlt": "9点の生地見本の写真。左から植物由来インディゴで染色した綿・シルク・カシミヤ(#1~#3)、化学インディゴ(#4~#6)、バイオインディゴ(#7~#9)の順です。",
+    "fabricCaption": "カタログ p.6 Figure 3-1.",
+    "sampleLegendPlant": "植物由来インディゴ",
+    "sampleLegendChemical": "化学インディゴ",
+    "sampleLegendBio": "バイオインディゴ",
+    "fiberCotton": "綿",
+    "fiberSilk": "シルク",
+    "fiberCashmere": "カシミヤ",
+    "cta": "堅牢度の全表を見る",
+    "honestNote": "すべての項目で優れているという意味ではありません。一部の摩擦堅牢度の項目では低い等級も併せて記録されており、表にそのまま表示しています。",
+    "additionalCaseTitle": "追加の生地評価事例",
+    "additionalCaseBody": "保管されていた別の染色評価写真です。以下の値は原本に印刷された日本語ラベルそのままであり、『合成』は合成を意味します。",
+    "additionalCaseAlt": "4回・6回・8回の染色条件で、バイオ②-1、合成、バイオ②-2 で染色した生地を比較した写真",
+    "additionalCaseProvenance": "試験機関・試験法・試験日・依頼元の情報が確認できないため、カタログ p.6 の試験とは分けて表示しています。上の表のサンプル #1~#9 とは別の資料です。",
+    "additionalCaseCyclesLabel": "染色回数",
+    "additionalCaseRowsLabel": "区分"
+  },
+  "Fastness": {
+    "title": "堅牢度試験の結果",
+    "intro": "カタログ p.6 Table 3-1 ~ 3-4 をそのまま転載した表です。等級は原文の順位表記(例:4-5)を維持し、小数には変換していません。",
+    "sampleHeader": "サンプル",
+    "itemHeader": "試験項目",
+    "methodLabel": "試験法",
+    "tableLaundering": "洗濯堅牢度",
+    "tableLight": "耐光堅牢度",
+    "tableRubbing": "摩擦堅牢度",
+    "tablePerspiration": "汗堅牢度",
+    "captionLaundering": "表3-1. 洗濯堅牢度試験の結果(サンプル #1~#9)",
+    "captionLight": "表3-2. 耐光堅牢度試験の結果(サンプル #1~#9)",
+    "captionRubbing": "表3-3. 摩擦堅牢度試験の結果(サンプル #1~#9、経糸・緯糸の区分)",
+    "captionPerspiration": "表3-4. 汗堅牢度試験の結果(サンプル #1~#9、酸性・アルカリ性の区分)",
+    "groupChange": "変退色",
+    "groupStain": "汚染",
+    "rowColorChange": "変退色",
+    "rowAcetate": "アセテート",
+    "rowCotton": "綿",
+    "rowNylon": "ナイロン",
+    "rowPolyester": "ポリエステル",
+    "rowAcrylic": "アクリル",
+    "rowWool": "毛",
+    "rowDry": "乾燥",
+    "rowWet": "湿潤",
+    "subWarp": "経糸",
+    "subWeft": "緯糸",
+    "subAcid": "酸性",
+    "subAlkali": "アルカリ性",
+    "sourceImageCta": "オリジナルの表画像を見る",
+    "sourceImageAlt": "カタログ p.6 の堅牢度表 3-1 ~ 3-4 のオリジナル画像",
+    "gradeNote": "等級は1（低い）から5（高い）までの順位で、『4-5』は二つの等級の間を意味する原文表記です。4未満で記録された等級は表で太字表示されています。"
+  },
+  "ShadeLibrary": {
+    "eyebrow": "SHADE LIBRARY",
+    "title": "あなたのブランドには、あなただけの青を。",
+    "body": "染料の濃度と染色回数によって色の深さが変わります。インディゴとインジルビンの比率を調整すれば、ブランド独自の色調をつくることができます。",
+    "gridTitle": "カタログ掲載の濃度別見本",
+    "gridHelp": "カタログには各見本の濃度数値が示されていないため、位置に基づく識別子(A1~B6)で表記します。",
+    "axisLow": "Low",
+    "axisHigh": "High",
+    "axisLabel": "Blugene 濃度",
+    "rowA": "A行",
+    "rowB": "B行",
+    "swatchAlt": "カタログ p.7 Figure 4-1 の濃度別染色見本 {code}",
+    "indirubinTitle": "インジルビンがつくる色調の変化",
+    "indirubinBody": "インジルビンはインディゴの赤い異性体です。微生物発酵でつくられるインディゴとインジルビンの組成を調整することで、ブランド固有の青をつくることができます。",
+    "indirubinAltA": "インディゴ100%で染色したデニム生地の写真(カタログ p.7 Figure 4-2)",
+    "indirubinAltB": "インディゴ94%・インジルビン6%で染色したデニム生地の写真(カタログ p.7 Figure 4-2)",
+    "indirubinLabelA": "インディゴ 100%",
+    "indirubinLabelB": "インディゴ 94%、インジルビン 6%",
+    "indirubinToggle": "2つの組成を比較",
+    "indirubinNote": "カタログに示された2種類の組成の写真です。その中間の配合比は提供されていないため、画面上で色をつくって表示することはしません。",
+    "colorDisclaimer": "画面・生地・染色条件によって実際の色は異なる場合があります。生地サンプルでご確認ください。",
+    "medicalNote": "インジルビンの薬理活性については本サイトでは扱いません。色調の調整と製品開発の観点のみをご説明します。"
+  },
+  "Products": {
+    "eyebrow": "PRODUCT FORMS",
+    "title": "粉末とプリント用インク、2つの形態で。",
+    "body": "微生物発酵でつくったインディゴを、生地染色用の粉末とデジタルプリント用のインクとしてご提供します。",
+    "powderTitle": "Blugene Indigo Powder",
+    "powderText": "綿・シルク・カシミア染色評価資料がカタログに収録されています。",
+    "powderAlt": "皿に盛られた濃い青色のバイオインディゴ粉末(カタログ p.9)",
+    "inkTitle": "Blugene Digital Printing Ink",
+    "inkText": "デジタルプリント用のバイオインディゴインクです。適用性やサンプルについてご相談を承ります。",
+    "inkAlt": "濃い青色のバイオインディゴ・デジタルプリントインクが入ったガラス瓶(カタログ p.9)",
+    "nameNote": "上記の製品名は新ブランドのウェブ表示名です。カタログおよび認証書の原文製品名は「{catalogueName}」です。",
+    "specNote": "粒度・粘度・保管期間・最低発注数量・生産能力・価格は提供資料に記載がないため表示していません。必要な仕様はお問い合わせいただければ、確認のうえご案内します。",
+    "cyclesTitle": "染色回数による発色の比較",
+    "cyclesCaption": "カタログ p.8 Figure 5-1。化学インディゴ(粉末)・バイオインディゴ(粉末)・バイオインディゴ(デジタルプリントインク)で綿生地を1~4回染色した比較です。",
+    "cyclesAlt": "3行4列の比較図版。行は化学インディゴ粉末、バイオインディゴ粉末、バイオインディゴ・デジタルプリントインクで、列は1~4回の染色です。",
+    "cyclesNote": "カタログはこの例における色の強さを「デジタルプリントインク > 化学インディゴ ≈ バイオインディゴ粉末」と表記しています。写真の色の濃淡をK/S値や色差ΔEの測定値に換算したものではなく、すべての条件における性能の優位性を意味するものではありません。",
+    "cta": "製品資料のお問い合わせ"
+  },
+  "Printing": {
+    "eyebrow": "PRINTED IN BLUE",
+    "title": "プリントで広がる表現。",
+    "body": "デジタルプリントは必要な箇所に直接色をのせ、緻密なパターンを実現します。バイオインディゴインクでプリントした結果を、元の画像とあわせてご覧いただけます。",
+    "pairOriginal": "元の画像",
+    "pairPrinted": "バイオインディゴインクによるプリント結果",
+    "pairAltOriginal": "デジタルプリントに使用した元の画像 {index}(カタログ p.9 Figure 6-2)",
+    "pairAltPrinted": "同じ画像をバイオインディゴインクでデジタルプリントした結果 {index}(カタログ p.9 Figure 6-2)",
+    "pairNote": "製品使用前後の性能改善を示す写真ではなく、原作者・顧客・納品先情報は提供資料にありません。",
+    "processTitle": "インク製造の流れ",
+    "processCaption": "カタログ p.9 Figure 6-1 の工程です。原文表記も併記しています。",
+    "processAlt": "原料準備、プレミキシング、ミリング、ろ過、製剤完成へと続くインク製造工程の図(カタログ p.9)",
+    "processNote": "カタログ原文の最終工程は「Formation」です。確定した工程専門用語に置き換えず、原文を併記しています。正確な生産レシピを公開する資料ではありません。",
+    "steps": [
+      {
+        "title": "原料準備",
+        "text": "バイオインディゴ粉末と副原料を計量して準備します。"
+      },
+      {
+        "title": "プレミキシング",
+        "text": "分散媒とともに一次混合を行います。"
+      },
+      {
+        "title": "ミリング",
+        "text": "粒子を均一に粉砕・分散します。"
+      },
+      {
+        "title": "ろ過",
+        "text": "残留粒子を除去し、プリントに適した状態に整えます。"
+      },
+      {
+        "title": "製剤完成",
+        "text": "最終的なインクの形に調整します。(原文表記:Formation)"
+      }
+    ],
+    "advantagesTitle": "デジタルプリントの特長",
+    "advantages": [
+      "従来の染色では実現しにくい高解像度のパターンや色の組み合わせが可能です。",
+      "必要な箇所に直接色をのせるため、少量生産にも適しています。",
+      "複雑なデザインを繰り返し再現するのに有利です。"
+    ],
+    "advantagesNote": "カタログ p.9 には一般的なデジタルプリントにおける水・廃棄物の削減幅が言及されていますが、Blugene 製品で測定した値ではないため、本サイトでは数値として表示していません。"
+  },
+  "DataHub": {
+    "eyebrow": "DATA & CERTIFICATIONS",
+    "title": "原本で確かめる信頼。",
+    "body": "試験結果と認証書を一か所にまとめました。各項目は、試験機関・試験法・報告書番号・データ基準日とあわせて原本をご確認いただけます。",
+    "carbonSectionTitle": "バイオベース炭素 (C14)",
+    "carbonSectionBody": "市販インディゴ染料のバイオベース（再生可能）炭素比率を測定した結果です。この値はバイオベース炭素含有率であり、インディゴ純度や炭素排出削減率ではありません。",
+    "anilineSectionTitle": "アニリン・N-メチルアニリン分析",
+    "anilineSectionBody": "市販インディゴ染料に残留するアニリンとN-メチルアニリンを分析した結果です。",
+    "tableLab": "試験機関",
+    "tableMethod": "試験法",
+    "tableReport": "試験成績書番号",
+    "tableReportDate": "成績書日付",
+    "tableDetectionLimit": "方法検出限界",
+    "tableType": "インディゴの種類",
+    "tableSample": "サンプル",
+    "tablePmc": "pMC",
+    "tableBiobased": "バイオベース炭素含有率 (%)",
+    "tableAniline": "アニリン (mg/kg)",
+    "tableNMethylaniline": "N-メチルアニリン (mg/kg)",
+    "typeChemical": "化学",
+    "typePlant": "植物",
+    "typeBio": "バイオ",
+    "notDetected": "不検出",
+    "notDetectedShort": "N.D.",
+    "notDetectedExplain": "不検出(N.D.)とは、提示された試験法において方法検出限界未満であることを意味します。測定値が0ということではなく、グラフでも0の棒としては表示していません。",
+    "sameLabelNote": "Company M は化学インディゴと植物インディゴの2つの種類にそれぞれ登場します。種類とあわせて表記し、区別しています。",
+    "anonymousNote": "会社名はカタログの匿名表記をそのまま使用しています。実際の会社名を推測することはしません。",
+    "sampleScopeNote": "これらの値はカタログに収録された9サンプルの比較結果であり、市場全体を代表する統計ではありません。炭素試験とアニリン試験は機関・試験法・実施日が異なるため、1つの指標に統合していません。",
+    "chartCarbonTitle": "バイオベース炭素含有率の比較 (%)",
+    "chartAnilineTitle": "アニリン・N-メチルアニリンの比較 (mg/kg)",
+    "chartAccessibleNote": "グラフのすべての値は、下の表でもご確認いただけます。",
+    "regulatoryOmitted": "カタログp.4の国別・認証別許容限度表は国と製品グループにより適用範囲が異なるため、最新の原文確認が必要です。このサイト本文では数値を移したり解釈したりしません。下の<link>原本カタログ4ページ</link>で原文をそのままご確認いただけます。実際の適用基準はそれぞれの規定の最新原文をご確認ください。",
+    "catalogueTitle": "オリジナルカタログ",
+    "catalogueBody": "提供カタログ全12ページをご確認いただけます。",
+    "cataloguePage": "{page}ページ",
+    "cataloguePageAlt": "CutisBio バイオインディゴカタログ {page}ページ",
+    "catalogueDownload": "PDFをダウンロード ({size})",
+    "catalogueAnchorNote": "ダウンロードするPDFはカタログ原本の12ページ全体で、上のサムネイルのページ番号と同じ順序です。",
+    "carbonZeroNote": "Company Z のバイオベース炭素含有率は、カタログ Table 1-1 では 0（pMC 0.30）、Figure 1-3 では N.D. と表記されています。この表は Table 1-1 の値を掲載しています。",
+    "reportDateNote": "試験成績書番号 SBED25-00000153-1 はカタログ Table 1-1 に異なる発行日で2回記載されています。原本の表記をそのまま引用しました。"
+  },
+  "Certifications": {
+    "title": "グローバル認証",
+    "body": "提供カタログに収録された認証書です。各項目で原本認証書を拡大して見ることができます。",
+    "numberLabel": "認証番号",
+    "issuerLabel": "認証機関",
+    "productLabel": "対象製品",
+    "pageLabel": "カタログのページ",
+    "certificateAlt": "{name} 認証書の原本画像",
+    "logoAlt": "{name} 認証マーク",
+    "noExpiry": "文書に有効期限は記載されていません",
+    "statusDocumented": "2026年7月カタログ収録の認証資料",
+    "statusWithinPeriod": "文書記載の有効期間内",
+    "statusPastPeriod": "文書記載の有効期間を過ぎています。最新の資料をお問い合わせください。",
+    "verificationNote": "文書に記載された日付を確認したものであり、認証機関のデータベースで現在の認証状況を照会した結果ではありません。",
+    "brandNameNote": "認証書の製品名は「CB Bio Indigo Dye Powder」です。Blugene は、この製品を含むキューティスバイオのバイオインディゴ事業の新しいブランド名であり、認証書画像の製品名は変更していません。",
+    "scopeNote": "認証範囲は各認証書に記載された製品に限定されます。デジタルプリントインクや最終的なデニム衣料まで自動的に認証されるという意味ではありません。",
+    "asOfLabel": "データ基準日",
+    "nextReviewLabel": "次回の認証状況の確認推奨日",
+    "requestLatest": "最新の認証資料のお問い合わせ",
+    "zdhcScope": "適用範囲は認証書に記載された化学組成物(CB Bio Indigo Dye Powder)です。使用分類は Natural dyes (1.7.27) です。",
+    "oekoScope": "製品リストは認証書の別紙(enclosure)にあり、カタログには併せて収録されていません。製品分類は 2.9 Natural dyes です。別紙を確認するまでは、対象製品の範囲を特定しません。",
+    "usdaScope": "USDA Certified Biobased Product ラベルの取得を確認する参加証であり、ラベル表示比率は 98% です。カタログ p.11 には、この結果の精度が ±3%（絶対値）と注記されています。",
+    "okbiobasedScope": "Class 5 はバイオベース炭素含有率 97% 以上 100% 以下を意味します。認証書には方法 EN 16640 と認証制度 OK 20 edition D が記載されています。",
+    "zoomOpen": "認証書を拡大して見る",
+    "zoomClose": "閉じる",
+    "zoomHint": "Escキーで閉じることができます。"
+  },
+  "Inquiry": {
+    "eyebrow": "SAMPLE INQUIRY",
+    "title": "次のデニムの青を、ともにつくりませんか。",
+    "body": "問い合わせの種類を選んで内容を残してください。",
+    "topicLabel": "お問い合わせ種別",
+    "topicFabricDyeing": "生地染色",
+    "topicDigitalPrinting": "デジタルプリント",
+    "topicShadeDevelopment": "色の共同開発",
+    "topicTechnicalData": "技術・認証資料",
+    "messageLabel": "あわせてお知らせいただきたい内容",
+    "messagePlaceholder": "会社名、ご担当者、生地の種類、必要な数量やスケジュールなどをご記入ください。",
+    "submit": "メールでお問い合わせ",
+    "submitHint": "ボタンを押すと標準のメールプログラムが開き、受信者・件名・内容が記入されます。最後に「送信」を押す必要があります。メールプログラムが開かない場合は、{email}に直接送信してください。この画面からはどの情報も外部に送信されません。",
+    "mailSubject": "[Blugene サンプルのお問い合わせ] {topic}",
+    "mailIntro": "Blugene のサンプル・技術資料についてお問い合わせいたします。",
+    "mailTopicLine": "お問い合わせ種別: {topic}",
+    "mailShadeLine": "関心のある色見本: {shade}",
+    "mailFooter": "— このメールは blugene.co のお問い合わせ画面で作成されました。",
+    "emailLabel": "Eメール",
+    "telLabel": "電話",
+    "addressLabel": "住所",
+    "companyRelationTitle": "Blugene と CutisBio",
+    "companyRelationBody": "Blugene は、キューティスバイオ(CutisBio Co., Ltd.)が開発したバイオインディゴのブランド名です。カタログおよび認証書には、本来の製品名である「Bio Indigo Dye Powder (Microbial Fermentation)」と記載されています。",
+    "sampleNote": "サンプルは、お問い合わせ時に提供可否を確認のうえご案内します。(カタログ p.11: Samples are available upon request)"
+  },
+  "Common": {
+    "sourceLabel": "出典",
+    "cataloguePage": "カタログ p.{page}",
+    "asOf": "データ基準日 {date}",
+    "viewOriginal": "原本を見る",
+    "viewSource": "原資料を見る",
+    "close": "閉じる",
+    "openImage": "画像を拡大",
+    "conceptImage": "コンセプト画像",
+    "brandImage": "ブランド画像",
+    "testPhoto": "試験写真",
+    "imageNoteConcept": "概念を説明するための画像であり、実際の施設・顧客・試験結果を撮影した写真ではありません。",
+    "imageNotePhoto": "提供カタログに収録された写真を、色補正せずにウェブ用にサイズのみ調整して使用しています。",
+    "scrollableRegion": "横スクロールできる領域",
+    "catalogueFigure": "カタログ図版"
+  },
+  "Brand": {
+    "metaTitle": "ブランドストーリー",
+    "metaDescription": "Blugene は、一生をともにするデニムのためにインディゴをつくり直す、キューティスバイオのバイオインディゴブランドです。",
+    "heroEyebrow": "THE STORY",
+    "heroTitle": "デニムは毎日着る服だからこそ、染料から丁寧に確かめなければなりません。",
+    "heroBody": "インディゴ染料をつくる方法を、生きて息づく発酵工程によって新たに書き直しました。デニムは人種や国を越えて、私たちの日常と生涯をともにする服です。だからこそ、私たちはそのなかのわずかな不純物にも妥協しません。肌と環境を思いながら、インディゴをつくり直す。それが Blugene です。",
+    "nameTitle": "名前に込めた意味",
+    "nameBody": "インディゴの青を意味する Blue と、生命の根本である gene を合わせた名前です。長く愛されてきたインディゴの青を、先端技術である合成生物学と精密発酵の方法で新しくつくるという意味を込めました。",
+    "promiseTitle": "私たちがお約束すること",
+    "promiseBody": "私たちが約束できるのは確認できる資料です。",
+    "promiseItems": [
+      {
+        "title": "原料を明らかにします",
+        "text": "再生可能な炭素から出発します。バイオベース炭素含有率は試験結果として公開します。"
+      },
+      {
+        "title": "不純物を確認します",
+        "text": "アニリンとN-メチルアニリンを公認試験法で分析し、検出限界とあわせて結果を公開します。"
+      },
+      {
+        "title": "原本をお見せします",
+        "text": "試験成績書番号、認証番号、認証書の原本画像を、サイト上で直接ご確認いただけます。"
+      }
+    ],
+    "relationTitle": "CutisBio との関係",
+    "relationBody": "Blugene は、キューティスバイオ(CutisBio Co., Ltd.)のインディゴ事業のブランドです。法人名および認証書・試験成績書の表記には、CutisBio をそのまま使用します。",
+    "cta": "サンプル・技術資料のお問い合わせ"
+  },
+  "Technology": {
+    "metaTitle": "技術",
+    "metaDescription": "インディゴをつくる4つの経路、微生物発酵による生産、バイオベース炭素の試験結果をご説明します。",
+    "heroEyebrow": "TECHNOLOGY",
+    "heroTitle": "青をつくる4つの道、そして私たちの選択。",
+    "heroBody": "インディゴ染料をつくる方法には四つの道があります。Blugene は炭素循環に沿った精密発酵プロセスを選びました。この選択は、環境と私たちの暮らしの持続可能性を高めます。",
+    "routesTitle": "インディゴ合成の4つの経路",
+    "routesCaption": "カタログ p.2 Figure 1-1。化学的経路は赤色、生物学的経路は黄色で区別されています。",
+    "routesAlt": "原油・バイオマス・インディゴ植物から出発する4つのインディゴ合成経路の図(カタログ p.2)",
+    "routes": [
+      {
+        "name": "化学インディゴ",
+        "feedstock": "原油(再生不可能)",
+        "intermediate": "アニリン",
+        "text": "原油から得たアニリンを経てインディゴを合成します。カタログはこの経路を化学的経路として示しています。"
+      },
+      {
+        "name": "ハイブリッドインディゴ",
+        "feedstock": "バイオマス",
+        "intermediate": "アントラニル酸",
+        "text": "バイオマスから得たアントラニル酸を経てインディゴをつくります。原料は再生可能ですが、中間段階が純粋な微生物経路とは異なります。"
+      },
+      {
+        "name": "バイオインディゴ(精密発酵由来)",
+        "feedstock": "バイオマス(植物原料)",
+        "intermediate": "トリプトファン",
+        "text": "バイオマスから得たトリプトファンを微生物がインディゴへ変換します。キューティスバイオのバイオインディゴはこの経路にあたります。"
+      },
+      {
+        "name": "天然インディゴ(植物由来)",
+        "feedstock": "インディゴ植物",
+        "intermediate": "抽出",
+        "text": "インディゴ植物から色素を抽出します。カタログは、市販の植物由来インディゴのなかに化学インディゴが混ざっていると見られる事例があると記録しています。"
+      }
+    ],
+    "routeFeedstockLabel": "原料",
+    "routeIntermediateLabel": "主な中間段階",
+    "routesNote": "ハイブリッド経路のアントラニル酸の段階は、微生物経路のトリプトファンの段階とは異なります。2つの経路を同一のものとして単純化していません。",
+    "carbonTitle": "炭素はどこから来るのか",
+    "carbon": {
+      "lead": "地中の石油から、再び育つバイオマスへ。Blugene はバイオマスを発酵させてインディゴをつくります。色をつくる炭素の出発点から考えます。その青は、どこから来るのでしょう。",
+      "journey": {
+        "eyebrow": "01 / FOLLOW THE CARBON",
+        "title": "同じ青。異なる炭素の旅。",
+        "body": "インディゴの青をつくる分子にも炭素が含まれています。その炭素がどこから来たのか、経路をたどってみてください。",
+        "guide": "炭素の出発点から、同じ順序でたどってみてください。",
+        "order": "原料 → 生産 → インディゴ・デニム → 使用後",
+        "legendSolid": "原料から製品への移動",
+        "legendDashed": "処理・成長条件による排出と再吸収",
+        "legendNote": "木と設備は理解を助けるための例示です。",
+        "evidenceLink": "根拠"
+      },
+      "routes": [
+        {
+          "eyebrow": "BIO-BASED INDIGO",
+          "title": "バイオベースのインディゴ",
+          "lede": "植物が吸収した炭素で、新しい青をつくります。",
+          "chip": "大気中の CO₂ を吸収",
+          "steps": [
+            {
+              "label": "01 / 原料",
+              "title": "再び育つバイオマス",
+              "text": "植物が光合成で吸収した炭素が原料に含まれます。",
+              "imageAlt": "緑の葉と草のある木のイラスト：植物性バイオマスの例"
+            },
+            {
+              "label": "02 / 生産",
+              "title": "微生物発酵",
+              "text": "バイオマス由来の原料を微生物がインディゴに変えます。",
+              "imageAlt": "培養液と微生物でインディゴを生産する発酵槽のイラスト",
+              "note": "発酵中にも一部の CO₂ が排出されます"
+            },
+            {
+              "label": "03 / 製品",
+              "title": "インディゴ、そしてデニム",
+              "text": "バイオマスから来た炭素がデニムの青に含まれます。",
+              "imageAlt": "青いインディゴの粉末と畳んだジーンズのイラスト"
+            },
+            {
+              "label": "04 / 使用後",
+              "title": "一部は再び大気へ",
+              "text": "焼却・分解などで CO₂ になると、大気中へ戻ることがあります。",
+              "imageAlt": "使用後の処理で CO₂ が排出されるとき炭素が戻る大気を表す雲のイラスト",
+              "note": "経路と時期は処理方法によって異なります"
+            }
+          ],
+          "loop": "新しい植物が育つことで、CO₂ を再び吸収できます。",
+          "loopSub": "近年の生物学的炭素循環とつながった原料",
+          "coreLabel": "この経路の要点",
+          "core": "空気から植物へ、植物から青へ。",
+          "coreSub": "再生可能な原料の炭素を活用します。"
+        },
+        {
+          "eyebrow": "FOSSIL-BASED INDIGO",
+          "title": "石油化学合成インディゴ",
+          "lede": "地中に長く貯蔵された炭素を取り出し、青の原料として使います。",
+          "steps": [
+            {
+              "label": "01 / 原料",
+              "title": "地中に貯蔵された石油",
+              "text": "長い地質学的時間をかけて貯蔵された化石炭素を取り出します。",
+              "imageAlt": "地層の下から石油をくみ上げるポンプと石油缶のイラスト"
+            },
+            {
+              "label": "02 / 生産",
+              "title": "石油系原料の化学合成",
+              "text": "石油系原料を化学プロセスでインディゴに転換します。",
+              "imageAlt": "石油系原料をインディゴに転換する化学工場のイラスト"
+            },
+            {
+              "label": "03 / 製品",
+              "title": "インディゴ、そしてデニム",
+              "text": "石油から来た炭素がデニムの青に含まれます。",
+              "imageAlt": "青いインディゴの粉末と畳んだジーンズのイラスト"
+            },
+            {
+              "label": "04 / 使用後",
+              "title": "排出されると大気へ",
+              "text": "CO₂ として排出されると、地下の炭素が大気・生物圏へ移動します。",
+              "imageAlt": "CO₂ として排出された地下の炭素が移動する大気を表す雲のイラスト",
+              "note": "製品の炭素がすべて直ちに排出されるわけではありません"
+            }
+          ],
+          "loop": "石油は、私たちが使う速さに合わせて再びつくられることはありません。",
+          "loopSub": "排出された炭素が植物に吸収されても、地下の石油の貯蔵がすぐに満たされるわけではありません。",
+          "coreLabel": "この経路の要点",
+          "core": "地下に貯蔵された炭素を取り出して青へ。",
+          "coreSub": "排出されるとき、長く貯蔵されていた炭素が大気に入ります。"
+        }
+      ],
+      "footnote": "原料炭素の流れを単純化した概念図です。木の絵は植物性バイオマスを象徴するもので、実際の Blugene の原料や設備を特定するものではありません。どちらの経路も、生産エネルギー・精製・輸送などで排出が生じることがあります。点線は起こり得る経路を示すものであり、全量回収・完全な生分解・即時の再吸収やカーボンニュートラルを意味するものではありません。",
+      "origin": {
+        "eyebrow": "02 / WHY THE ORIGIN MATTERS",
+        "title": "炭素は同じでも、時間は違います。",
+        "body": "違いは CO₂ の性質ではなく、炭素を取り出す貯蔵庫と、それが再び満たされるまでの時間にあります。",
+        "items": [
+          {
+            "label": "石油由来の炭素",
+            "title": "長く貯蔵された炭素",
+            "text": "長い歳月をかけて地中に貯蔵された炭素を取り出して使います。石油は、私たちが使う速さに合わせて再びつくられることはありません。",
+            "tags": [
+              "地質学的時間の貯蔵",
+              "採掘・使用"
+            ]
+          },
+          {
+            "label": "バイオベースの炭素",
+            "title": "再び育つ資源の炭素",
+            "text": "植物が最近大気中から吸収した炭素を使います。バイオマスを再生すれば、新しい植物の成長とともに炭素の吸収が続くことがあります。",
+            "tags": [
+              "成長・吸収",
+              "使用・再生"
+            ]
+          }
+        ],
+        "closing": "Blugene が変えようとしているのは、青をつくる炭素の出発点です。"
+      },
+      "evidence": {
+        "eyebrow": "03 / A CLEARER BLUE",
+        "title": "よい説明には、はっきりした根拠が必要だから。",
+        "body": "原料がどこから来たかと、環境にどれだけ影響するかは、別々の問いです。",
+        "items": [
+          {
+            "label": "炭素の出所",
+            "title": "「バイオベースですか？」",
+            "text": "放射性炭素分析である ASTM D6866 のような試験で、試料の有機炭素のうちバイオベース炭素の割合を確認できます。",
+            "tag": "バイオベース炭素含有率の試験"
+          },
+          {
+            "label": "ライフサイクル全体の影響",
+            "title": "「炭素排出はどれだけ減りましたか？」",
+            "text": "原料栽培・生産・輸送・廃棄など、比較の範囲に含まれる工程とエネルギーをあわせて計算する必要があります。この問いに答えるのがライフサイクルアセスメント（LCA）です。",
+            "tag": "同じ機能・同じ範囲での LCA 比較"
+          }
+        ],
+        "calloutTitle": "バイオベースだからといって、自動的にカーボンニュートラルになるわけではありません。",
+        "calloutBody": "炭素循環に沿った原料を使うことと、製品の正味排出量がゼロであることは別のことです。この段落は原料の経路を説明するものであり、製品ごとの排出削減数値を示すものではありません。Blugene のバイオベース炭素含有率の試験結果は、<link>データ・認証ページ</link>で試験機関・試験法・成績書番号とあわせて確認できます。"
+      },
+      "faq": {
+        "eyebrow": "A FEW GOOD QUESTIONS",
+        "title": "デニムを愛するあなたの問い。",
+        "items": [
+          {
+            "question": "発酵すると、なぜ「炭素循環」とつながるのですか？",
+            "answers": [
+              "発酵そのものより、原料の出所が要点です。バイオマスに含まれる炭素は、植物が大気中の CO₂ を吸収してつくったものです。この炭素を微生物がインディゴに転換するので、近年の生物学的炭素循環とつながった原料を使っていることになります。",
+              "発酵にはエネルギーが必要で、CO₂ が発生することもあります。したがって「発酵でつくった」という理由だけで、排出量全体がゼロになるわけではありません。"
+            ]
+          },
+          {
+            "question": "ジーンズを着ると炭素が減るのですか？",
+            "answers": [
+              "ジーンズを着る行為そのものが大気中の炭素を取り除くわけではありません。ここで説明している変化は、インディゴ染料の原料炭素を石油由来からバイオマス由来に変えることです。完成したジーンズ全体の環境影響は、綿花の栽培、製織、染色、洗濯なども合わせて見る必要があります。"
+            ]
+          },
+          {
+            "question": "衣類の炭素は、最終的にすべて自然に戻るのですか？",
+            "answers": [
+              "経路と速さは、再使用・リサイクル・焼却・埋立など実際の処理方法によって異なります。循環の矢印は、炭素が CO₂ として放出され、植物に再吸収され得るという概念を示しています。衣類や染料の完全な生分解性、コンポスト化の可能性、全量回収を意味するものではありません。"
+            ]
+          },
+          {
+            "question": "「バイオベース炭素含有率」の数値は何を意味しますか？",
+            "answers": [
+              "ASTM D6866 方式のバイオベース炭素含有率は、試験した試料の有機炭素のうちバイオベース炭素が占める割合です。染料の純度や、製品全体の質量に占める植物原料の割合、炭素排出の削減率を意味するものではありません。",
+              "実際の製品の含有率を確認するときは、試験対象と方法、試料・バッチ、試験機関と結果をあわせて見てください。Blugene の測定値（98%、pMC 97.73）は、データ・認証ページに試験機関・試験法・成績書番号とともに掲載しています。"
+            ]
+          },
+          {
+            "question": "バイオインディゴは、植物から色を抽出した天然染料ですか？",
+            "answers": [
+              "Blugene の方式は、バイオマスを微生物発酵で転換してインディゴを生産するものです。藍の葉などから色素を抽出する伝統的な天然インディゴの生産方式とは異なります。「バイオベース」は、色素をつくる炭素の出所についての説明です。"
+            ]
+          }
+        ]
+      },
+      "closing": {
+        "eyebrow": "FOR THE DENIM WE LOVE.",
+        "text": "長く愛される青を。その始まりから、新しく。"
+      },
+      "sources": {
+        "summary": "この話を支える資料",
+        "introStrong": "文献・規格に基づく説明",
+        "introText": "生物学的炭素循環と化石炭素、バイオベース炭素含有率試験とライフサイクルアセスメントの区別についてです。",
+        "items": [
+          {
+            "title": "NASA Earth Observatory — The Carbon Cycle",
+            "note": "光合成、速い炭素循環と遅い炭素循環、化石炭素の大気への流入。"
+          },
+          {
+            "title": "ASTM D6866 — 放射性炭素分析によるバイオベース含有率の測定",
+            "note": "試験は炭素の生物学的起源を評価するもので、温室効果ガスの削減率を直接測定するものではありません。"
+          },
+          {
+            "title": "GHG Protocol — Product Life Cycle Standard",
+            "note": "ライフサイクルの観点から製品の温室効果ガス影響を定量化する原則。"
+          },
+          {
+            "title": "USDA BioPreferred — よくある質問",
+            "note": "有機炭素基準の含有率の意味と、環境影響・性能評価との区別。"
+          }
+        ],
+        "processStrong": "Blugene の工程説明",
+        "processText": "バイオマス発酵でインディゴを生産するというブランド提供情報に基づいて構成しました。図は理解を助けるための編集であり、実際の物質収支や排出量を表すものではありません。",
+        "externalLinkHint": "新しいウィンドウで開きます"
+      }
+    },
+    "processTitle": "原料から生地まで",
+    "impurityTitle": "なぜアニリンを確認するのか",
+    "impurityBody": "アニリンとN-メチルアニリンは化学合成経路の出発物質または中間体であり、最終的なインディゴ粉末に未反応の残留物として残ることがあります。毒性と発がん性の可能性から、複数の認証基準が繊維用染料および最終製品における許容濃度を制限しています。",
+    "cta": "試験データの全体を見る",
+    "routeOursLabel": "私たちの経路 · Blugene",
+    "routesFigureBridge": "上記の4つの経路を1枚にまとめたカタログの図です。図中の並び順もカードと同じです。"
+  },
+  "DyeingPrinting": {
+    "metaTitle": "染色・プリント",
+    "metaDescription": "綿・シルク・カシミヤの染色比較、堅牢度試験の結果、濃度別の色見本、粉末とデジタルプリントインクをご紹介します。",
+    "heroEyebrow": "DYEING & PRINTING",
+    "heroTitle": "生地の上で確かめる色。",
+    "heroBody": "染色性と堅牢度、色調から製剤まで。実際の生地で確認した資料をそのままご覧いただけます。",
+    "cta": "生地サンプルのお問い合わせ",
+    "jumpNavLabel": "このページ内での移動",
+    "jumpNav": [
+      "染色性",
+      "堅牢度",
+      "カラ―ライブラリ",
+      "製品群",
+      "プリンティング"
+    ]
+  },
+  "Tech": {
+    "title": "微生物発酵でつくるインディゴ、Blugene",
+    "description": "Blugene by CutisBio のバイオインディゴがどのような経路でつくられ、どのような試験で確認されたのかをご説明します。",
+    "intro": "最も愛される生地であるブルーデニム。その色をつくる方法は1つではありません。キューティスバイオは、微生物の生合成経路と発酵を活用してインディゴを生産します。",
+    "section1Title": "1. なぜ不純物を確認するのか",
+    "section1Text": "アニリンとN-メチルアニリンは化学合成インディゴの出発物質または中間体であり、最終的な粉末に未反応の残留物として残ることがあります。毒性と発がん性の可能性から、ZDHC、OEKO-TEX、GOTS など複数の認証基準が、繊維用染料および最終製品におけるこれらの物質の許容濃度を制限しています。そのため私たちは、製品ごとにこの2つの物質を分析し、検出限界とあわせて結果を公開しています。",
+    "comparisonCaption": "カタログ p.4 の記載範囲（出発物質・中間体、毒性・発がん可能性）を超えない記述です。",
+    "section2Title": "2. 微生物発酵でつくるインディゴ",
+    "section2Text": "キューティスバイオは、微生物の生合成経路を活用し、バイオマスから得たトリプトファンをインディゴへ変換する発酵プロセスを用いています。カタログが提示する4つのインディゴ合成経路のうち、微生物由来の経路にあたります。",
+    "section3Title": "3. 試験で確認した結果",
+    "section3Text": "KATRI の ASTM D6866-24a Method B 試験でバイオベース炭素含有率98%(pMC 97.73)と測定され、KOTERI の KS K 0734 2019 試験ではアニリンとN-メチルアニリンが検出されませんでした(方法検出限界5 mg/kg)。堅牢度はカタログによれば植物由来・化学インディゴと比肩しうる水準(comparable performance)であり、項目別の等級はデータページの表でそのままご確認いただけます。",
+    "certSectionTitle": "グローバル認証",
+    "certSectionText": "提供カタログに収録された認証書です。原本をそのまま確認できます。",
+    "faqTitle": "よくある質問",
+    "faqList": [
+      {
+        "question": "Blugene とは何ですか?",
+        "answer": "Blugene は、キューティスバイオ(CutisBio Co., Ltd.)が微生物発酵で生産するバイオインディゴのブランド名です。カタログおよび認証書には、本来の製品名である「Bio Indigo Dye Powder (Microbial Fermentation)」と記載されています。"
+      },
+      {
+        "question": "「バイオベース炭素含有率98%」とはどういう意味ですか?",
+        "answer": "製品に含まれる炭素のうち、再生可能な原料に由来する割合が98%であるという意味です。KATRI の ASTM D6866-24a Method B (AMS) 試験の結果であり(pMC 97.73、報告書 SBED25-00000153-1、2025-05-22)、インディゴの純度や炭素排出削減率ではありません。"
+      },
+      {
+        "question": "「アニリン不検出」は含有量が0という意味ですか?",
+        "answer": "いいえ。KOTERI の KS K 0734 2019 試験において方法検出限界5 mg/kg未満であったため、検出されなかったという意味です(報告書 2025-0604-1132-C03、2025-06-10)。0 ppm や完全な無含有を意味するものではありません。"
+      },
+      {
+        "question": "既存の染色設備でそのまま使用できますか?",
+        "answer": "カタログは、綿・シルク・カシミヤの染色において植物由来・化学インディゴと比肩しうる性能(comparable performance)を記録しています。ただし、工場や生地、工程条件によって結果が異なる場合があるため、実際の適用は生地サンプルでご確認いただくことをおすすめします。"
+      },
+      {
+        "question": "認証はどの製品に適用されますか?",
+        "answer": "認証書に記載された製品は「CB Bio Indigo Dye Powder」です。OEKO-TEX ECO PASSPORT の製品リストは認証書の別紙にあるため、カタログのみでは範囲を特定できません。デジタルプリントインクや最終的なデニム衣料が自動的に認証されるわけではありません。"
+      }
+    ],
+    "structuresTitle": "アニリンと N-メチルアニリンの化学構造",
+    "structuresNote": "検証済みの化学構造をコード（SVG）で直接描いた骨格構造式です。画像生成ツールは使用していません。",
+    "structureAnilineName": "アニリン",
+    "structureAnilineDesc": "ベンゼン環にアミノ基（NH2）が 1 つ結合した骨格構造式です。",
+    "structureNMethylanilineName": "N-メチルアニリン",
+    "structureNMethylanilineDesc": "ベンゼン環に結合した窒素に水素 1 つとメチル基（CH3）が付いた骨格構造式です。"
   },
   "About": {
-    "title": "合成生物学で日常をより美しくデザインする",
+    "title": "合成生物学で日常をより健やかに、より美しくデザインする",
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "合成生物学技術により高性能バイオ素材を量産し、日常の持続可能性を拡張する。",
-    "aboutImageAlt": "CutisBioの研究員による緻密なバイオ研究の様子",
-    "coreBusinessTitle": "先導的なバイオベース特殊素材の開発",
-    "medicalTitle": "医療 (Medical)",
-    "medicalText": "バイオプロセスでのみ可能な医薬品原料素材の開発",
-    "beautyTitle": "美容 (Beauty)",
-    "beautyText": "皮膚マイクロバイオームのビッグデータと合成生物学を融合した精密美容ソリューションの高付加価値素材および製品開発",
-    "fashionTitle": "ファッション (Fashion)",
-    "fashionText": "100%無毒性アニリンフリー「Bio-Indigo」の商用化を通じた人体に安全で環境に優しいデニムファッションの完成",
-    "historyTitle": "主な沿革と成果",
+    "visionText": "人の暮らしをより美しく、より健やかにする革新的なバイオ素材のグローバルな開拓者になることが、私たちのビジョンです。Blugene バイオインディゴ染料は、長く全人類に共通して愛されてきたデニム、ジーンズを革新し、人類の健康と地球環境の持続可能性を高めるためのバイオ素材です。",
+    "aboutImageAlt": "キューティスバイオの研究員による緻密なバイオ研究の様子",
+    "coreBusinessTitle": "中核事業領域",
+    "healthTitle": "健康",
+    "healthText": "健康的な日常と長寿のために重要な物質を合成生物学でつくります。",
+    "beautyTitle": "美容",
+    "beautyText": "肌と毛髪の老化を管理する物質と製品を開発します。",
+    "fashionTitle": "ファッション (Blugene)",
+    "fashionText": "微生物発酵で生産したバイオインディゴを、デニム染色とデジタルプリントに供給します。",
+    "historyTitle": "沿革",
     "historyList": [
+      {
+        "year": "2025",
+        "event": "バイオ由来インディゴ染料について、世界的なプレミアムデニム企業複数社との染色実証を完了"
+      },
       {
         "year": "2024",
         "event": "Bio-Indigoバイオ染料の大量生産システムの構築および本格的な商用化の展開"
@@ -78,341 +746,207 @@
         "year": "2020",
         "event": "CutisBio株式会社設立"
       }
-    ]
+    ],
+    "blugeneNoteTitle": "本サイトについて",
+    "corporateSiteCta": "CutisBio 会社公式ホームページへ",
+    "corporateSiteNewTab": "新しいウィンドウで開きます",
+    "metaDescription": "キューティスバイオは微生物の生合成能力を設計し、産業素材をつくります。バイオインディゴブランド Blugene を含む事業領域と沿革をご紹介します。"
   },
-  "Tech": {
-    "title": "微生物発酵による持続可能なデニム染色",
-    "description": "CutisBioのアニリンフリー(Aniline-free)インディゴ染料の開発背景とエコなデニムファッションの未来をご紹介します。",
-    "intro": "誰もが愛するファッションアイテム、「ブルーデニム (Blue Denim)」。しかし、その美しい色の裏には環境と健康を脅かす石油化学由来物質「アニリン(Aniline)」が隠れていました。CutisBioは微生物を活用し、この問題を根本的に解決します。",
-    "section1Title": "1. アニリンフリー (Aniline-Free) の絶対的必要性",
-    "section1Text": "アニリンは、WHO傘下の国際がん研究機関で潜在的な発がん性物質に分類している有害物質です。デニム生産過程で水資源に無差別に放流され生態系を破壊するだけでなく、肌に長時間触れる最終消費者にも悪影響を及ぼす可能性があります。",
-    "comparisonImageAlt": "アニリンとメチルアニリンの化学構造、および皮膚炎や膀胱癌のリスクを示すインフォグラフィック",
-    "comparisonCaption": "アニリンおよびメチルアニリンの化学構造と、接触性皮膚炎や膀胱癌など、それらがもたらす致命的な人体への健康上の脅威",
-    "section2Title": "2. CutisBioの革新：微生物を工場にする",
-    "section2Text": "自然が答えを持っていました。私たちは先端の合成生物学技術を用いて、特殊な微生物に植物と似た代謝経路を与えました。これらの微生物は自らインディゴ前駆体を作り出し、このプロセスを通じてアニリンのような致命的な化学物質の使用を根本的に遮断します。",
-    "section3Title": "3. 品質の妥協がない「Drop-in」ソリューション",
-    "section3Text": "エコだからといって品質を諦める必要はありません。CutisBioのバイオインディゴは、既存の染色工場のインフラを変更することなく直ちに投入可能な「Drop-in」形態をとります。既存の化学染料と同じ色の深さ(Shade)と摩擦堅牢度を完璧に再現します。",
-    "certSectionTitle": "グローバルサステナビリティ認証",
-    "certSectionText": "私たちは、持続可能性、環境への配慮、および人類の安全に関連するさまざまな側面で、世界クラスの認証を完了したことを発表します。",
-    "certOkbiobased": "OK biobased 認証マーク",
-    "certBioPreferred": "USDA BioPreferred 認証マーク",
-    "certOekoTex": "OEKO-TEX Eco Passport 認証マーク",
-    "certZdhc": "ZDHC 認証マーク",
-    "faqTitle": "よくある質問 (FAQ)",
-    "faqList": [
-      {
-        "question": "従来のインディゴ染色の問題点は何ですか？",
-        "answer": "従来の合成インディゴ染料は、石油化学物質であるアニリン(Aniline)やシアン化水素などを使用して生産されます。これは深刻な水質汚染を引き起こし、労働者や最終消費者の健康にも脅威となる可能性があります。"
-      },
-      {
-        "question": "微生物発酵ベースのインディゴ染料とは何ですか？",
-        "answer": "CutisBioの技術は、特別に設計された微生物を使用し、自然な発酵プロセスを通じてインディゴ前駆体を生産します。化学合成の代わりに生物学的メカニズムを利用するため、100%アニリンフリーの染料を作ることができます。"
-      },
-      {
-        "question": "既存の衣類の品質に違いはありますか？",
-        "answer": "いいえ。従来のインディゴデニム染色の品質、色の深さ、洗濯および摩擦堅牢度などと同等、またはそれ以上を実現します。品質に関して妥協することなく、完全な持続可能性を達成しました。"
-      }
-    ]
+  "Blog": {
+    "eyebrow": "インサイト & 技術",
+    "title": "ブログ",
+    "description": "CutisBio の合成生物学技術と環境配慮型ファッションに関する詳しい記事をご紹介します。",
+    "categoryTech": "技術紹介",
+    "readMore": "詳しく読む",
+    "readTime": "{minutes}分で読めます"
+  },
+  "Contact": {
+    "title": "お問い合わせ",
+    "description": "Blugene バイオインディゴのサンプルと技術・認証資料の問い合わせを受け付けています。",
+    "addressDetail": "ソウル特別市江南区論峴路842 狎鴎亭ビル8階 (06025)\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
+    "mapTitle": "アクセス"
+  },
+  "NotFound": {
+    "title": "お探しのページが見つかりません。",
+    "body": "アドレスが変わったか、削除されたページの可能性があります。以下からお探しの内容をご覧ください。",
+    "backHome": "ホームへ"
   },
   "News": {
-    "title": "CutisBio ニュースルーム",
-    "description": "合成生物学で創るエコファッションの最新ニュースをご確認ください。",
+    "title": "CutisBioニュースルーム",
+    "description": "合成生物学で作る環境に優しいファッションの最新情報をご確認ください。",
+    "categoryVideo": "ビデオ",
+    "categoryPost": "ニュース",
+    "playVideo": "ビデオ再生",
     "articles": [
       {
         "date": "2025-11-19",
         "category": "プレスリリース",
-        "title": "(株)エススキン-キューティスバイオ、スキンブースター用融合ポリペプチド素材事業化MOU締結",
-        "summary": "(株)エススキン-キューティスバイオ、スキンブースター用融合ポリペプチド素材事業化 MOU締結 cncnews.co.kr",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBBb2F5Sjh2MlYtZVBQaThpM3N1dEYtLUhNaGFhTlVVWTJMcHc1RnN6SU9aVUhmNjVBbWtDemtGVEg5M0dLTm1lUncyRWV0WXhuRFdub1FndHlGSE1FNUNBZXR0NDg?oc=5"
+        "title": "㈜エススキン×CutisBio、スキンブースター用融合ポリペプタイド素材事業化MOU締結",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBBb2F5Sjh2MlYtZVBQaThpM3N1dEYtLUhNaGFhTlVVWTJMcHc1RnN6SU9aVUhmNjVBbWtDemtGVEg5M0dLTm1lUncyRWV0WXhuRFdub1FndHlGSE1FNUNBZXR0NDg?oc=5",
+        "sourceTitle": "㈜에스스킨×큐티스바이오, 스킨부스터용 융합폴리펩타이드 소재 사업화 MOU 체결",
+        "sourceSummary": ""
       },
       {
         "date": "2025-11-19",
         "category": "プレスリリース",
-        "title": "（株）エススキン×キューティスバイオMOU…スキンブースター用融合ポリペプチド素材事業化協業",
-        "summary": "(株)エススキン×キューティスバイオMOU... スキンブースター用融合ポリペプチド素材事業化コラボレーションコース",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UZFRlVjlLNjVfbkxkNFYyOTJlTThaRDdUQmVQdWxPeVFDVnJoZGFSWE80OWdiSG9yZzJJMzhpLVBVUmtHQmtIVTBRazE2WVRGSHBXN1cteU41eVFrQVg0WjQydw?oc=5"
-      },
-      {
-        "date": "2025-05-06",
-        "category": "プレスリリース",
-        "title": "[寄稿]「合成生物学、先端バイオ製造実証ハブから構築すべき」",
-        "summary": "[寄稿]「合成生物学、先端バイオ製造実証ハブから構築すべき」 zdnet.co.kr",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5xeC1RWVJiSmJtZjh4NExKR2xzN29hQUdNXzZNYmNWRGI5MG1JWHFORDFPcGY1dlBvNU84TmI0T254cUh4QkhmbWs5cEwxRUdydnJ4XzlR?oc=5"
+        "title": "㈜エススキン × CutisBio MOU... スキンブースター用融合ポリペプタイド素材事業化協力",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UZFRlVjlLNjVfbkxkNFYyOTJlTThaRDdUQmVQdWxPeVFDVnJoZGFSWE80OWdiSG9yZzJJMzhpLVBVUmtHQmtIVTBRazE2WVRGSHBXN1cteU41eVFrQVg0WjQydw?oc=5",
+        "sourceTitle": "(주)에스스킨 × 큐티스바이오 MOU... 스킨부스터용 융합폴리펩타이드 소재 사업화 협업",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-27",
         "category": "プレスリリース",
-        "title": "インディゴ染色の「標準化および商用化」",
-        "summary": "インディゴ染色の「標準化および商用化」TINニュース",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8yZTRHUWFXU2dMdHp0WS1PMTVNcmQxX2ZmMDR5M2MwQzlQMTc3YkFOMEpZNkdvX3JmaFhBb1FsSnVSZ21Vemc?oc=5"
+        "title": "インディゴ染色の‘標準化と商用化’",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8yZTRHUWFXU2dMdHp0WS1PMTVNcmQxX2ZmMDR5M2MwQzlQMTc3YkFOMEpZNkdvX3JmaFhBb1FsSnVSZ21Vemc?oc=5",
+        "sourceTitle": "인디고 염색의 ‘표준화 및 상용화’",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2024-08-21",
+        "category": "プレスリリース",
+        "title": "リサイクル糸開発から環境に配慮した染色まで...ファッション業界の'環境経営'勝負",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9WU1FJWW92UEpSX09GTkpMZTRVNjlKblpXVGRiRXV5Ull2WUdoVFNIOEx1cTBGeV9RNlRWTHJIb0NlbHNTems0c3psczU3QXV5MXg1R3k2cDJGYTVnZHNaNTRucmpVaGJBemktV0g2bTbSAXRBVV95cUxOZmhEdFFGaUxvemlfMkR5LTNZOUVad0hOZlM1Q3JCeWRlWW9ZT3k0V3NaTi1fbEVXUlF2MXlMLUVXMkhMeGhNOUFzN09qa1BKdDB6TXpzN25nLUdRdUthQ2k1WlNuZ0VsckFwSGRNLUpSSWNtcg?oc=5",
+        "sourceTitle": "리사이클 원사 개발부터 친환경 염색까지...패션업계 '친환경 경영' 승부",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-20",
         "category": "プレスリリース",
-        "title": "コーロンFnCルカシミア、プレビューインソウルで環境に優しい染色工法公開",
-        "summary": "コーロンFnCルカシミア、プレビューインソウルで環境に優しい染色工法公開",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9WUFAwR09kREVwYWJ5WEZwSjdmVDhYd216OU1tc09rNldONW81b0pQeUZYNWYzeDBXQWItRjRWUWotdDdfWDVtQS1ZM0hwX1pYNWNmeFpBakE3Z3PSAWBBVV95cUxNMnI2QVhYNGtnbUN6WmZZaWRkWGMyd2JGUGs3TTVKYkVQdlM3VFdiWm5UOUNDc2dxOE1DU28tdW5Ud0RWLTBxN1BfZ3hEX0NRQ3hlWTg1NHoyUVZ6cmVRWmQ?oc=5"
+        "title": "コオロングループFnC ルキャシミア、プレビューインソウルで環境に優しい染色技法公開",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9WUFAwR09kREVwYWJ5WEZwSjdmVDhYd216OU1tc09rNldONW81b0pQeUZYNWYzeDBXQWItRjRWUWotdDdfWDVtQS1ZM0hwX1pYNWNmeFpBakE3Z3PSAWBBVV95cUxNMnI2QVhYNGtnbUN6WmZZaWRkWGMyd2JGUGs3TTVKYkVQdlM3VFdiWm5UOUNDc2dxOE1DU28tdW5Ud0RWLTBxN1BfZ3hEX0NRQ3hlWTg1NHoyUVZ6cmVRWmQ?oc=5",
+        "sourceTitle": "코오롱FnC 르캐시미어, 프리뷰 인 서울서 친환경 염색공법 공개",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-20",
         "category": "プレスリリース",
-        "title": "コーロンFnCルカシミア、プレビューインソウルで環境に優しい染色商品を披露",
-        "summary": "コーロンFnCルカシミア、プレビューインソウルで環境に優しい染色商品を紹介します。",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5fZ1h1N0xZTjJIOWJQQWZJQVFHenRaU2JGOTdwWVc5Y2k3eGNEcEF6bjJ6ajRQTkVpS3BldHVXR21qaVh2ZWQxci1kSW9GMno0WEpxc2ZoaXVSd0VnVXc?oc=5"
-      },
-      {
-        "date": "2024-08-20",
-        "category": "プレスリリース",
-        "title": "コロンFnC「ルカシミア」、「プレビューインソウル」で環境に優しい染色工法商品大挙公開",
-        "summary": "コーロンFnC「ルカシミア」、「プレビューインソウル」で環境に優しい染色工法商品を大挙公開",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5PSnJGX2pPbTlRM2JMVEZMcmdvY0lXTUFNUmpDSDQ2UkxZQ29fSU96ZWRqZGJWY0Z3eTlsRDVrMzBYZ2hJaUpDbzBSa0l1Yk9mR1k4dEJzYTFxR2hCa0Jodnh5NGx0RWs2X3hJeS14SdIBc0FVX3lxTE5VQkVXRVhFTjVXX3lpbmNkVEdPdkdkSmV0VEhvYU5GNFBnRHlSSy1kemxVbWNTTlZmUGY3QkgtdjVCeEN5ZXRBXzR4YTBXeVdwMFVvOFRHQVFzTmU5azlkcEhCZDFMeU1HS3k5Q1VLYkgyTVE?oc=5"
-      },
-      {
-        "date": "2024-08-20",
-        "category": "プレスリリース",
-        "title": "ルカシミア、環境にやさしい染色工法を知らせる",
-        "summary": "ルカシミア、環境にやさしい染色工法を知らせるTINニュース",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1UT2h6V1FnaGdDaTB0amwzT1N1Q2NtWjJvZ3hienpSZldNZ2FyMVVOTzk5cUppaXJ6aDl6MlBJZ0RqeHBJTHc?oc=5"
-      },
-      {
-        "date": "2024-08-20",
-        "category": "プレスリリース",
-        "title": "コロンFnCルカシミア、「プレビューインソウル2024」に参加",
-        "summary": "コロンFnCルカシミア、「プレビューインソウル2024」参加｜ソウルファイナンス",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NTzhvY3Uwck9aVmF6bVJXLWhGN0ZCc1gzR2RyMDB0ZlU2Y2hRbHEzOFN0SnJzQ2wtOW9LTEEwanVZajBVc2ZUb1hxLUZPbWNhNDAtd05mdEh1UFZPaTNTS0cwLWh5ZWMxemc?oc=5"
+        "title": "ルキャシミア、環境に配慮した染色法‘アクアインディゴ’でプレビューインソウル2024参加注目",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9rOUdjSzJRUmFOR2tJMjJvampzU3Y4Y2lfbUdCa1hxM2Y5QlhfelREbXNMbGhncDFfc0U3T21LZDZyOFJSU3hIV2dOX2NZclk5OFlLZE9FdzBhdFo0TnBDajU0TS1ENDViQlBUUm5hTkZzTGJMeS1F?oc=5",
+        "sourceTitle": "르캐시미어, 친환경 염색 '아쿠아인디고'로 프리뷰인서울 2024 참가 눈길",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-14",
         "category": "プレスリリース",
-        "title": "サイドライト天然染色、持続可能な環境に優しいファッション産業を引き上げる",
-        "summary": "サイドライト天然染色、持続可能な環境にやさしいファッション産業を促進する韓国の繊維新聞",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4ZDFhTmVpd1pZWUxWanFfY0g1c3B6QXRIQ29zRDgzOW4tX2xlVGlnYW1xM2xOdnh6S3VPd1hIa2VoRzgtaGFuWnE0NkRHRmxuSThEOHk3TXNNNG5zN2I0VFhNWE4zX21y?oc=5"
+        "title": "藍色の天然染色、持続可能なエコファッション産業を促進",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4ZDFhTmVpd1pZWUxWanFfY0g1c3B6QXRIQ29zRDgzOW4tX2xlVGlnYW1xM2xOdnh6S3VPd1hIa2VoRzgtaGFuWnE0NkRHRmxuSThEOHk3TXNNNG5zN2I0VFhNWE4zX21y?oc=5",
+        "sourceTitle": "쪽빛 천연염색, 지속가능 친환경 패션산업 앞당긴다",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-12",
-        "category": "製品リリース",
+        "category": "製品発表",
         "title": "キューティスバイオ、エコバイオインディゴ染色法「アクアインディゴ」開発",
         "summary": "合成生物学技術を活用して微生物発酵でインディゴ染色法を具現した「アクアインディゴ（AquaIndigo）」を開発し、環境にやさしいファッション素材市場に進出しました。",
         "thumbnailAlt": "アクアインディゴのサムネイル",
-        "link": "https://www.tinnews.co.kr/26601"
+        "link": "https://www.tinnews.co.kr/26601",
+        "sourceTitle": "큐티스바이오, 친환경 바이오 인디고 염색법 '아쿠아인디고' 개발",
+        "sourceSummary": "합성생물학 기술을 활용해 미생물 발효로 인디고 염색법을 구현한 '아쿠아인디고(AquaIndigo)'를 개발하여 친환경 패션 소재 시장에 진출했습니다."
       },
       {
-        "date": "2024-08-07",
+        "date": "2023-12-18",
         "category": "プレスリリース",
-        "title": "製薬産業における環境に優しい制約と革新的な合成技術",
-        "summary": "製薬業界における環境にやさしい制約と革新的な合成技術ハイハイス",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBfakdzSFFzSDFTRVVCekU0UVJSQllTc2w2MlRFNjdaZDdtVDJRX2RfTjQtMXdwS3MxRE5pV3N6VlJpNHhNdUZlbUxnbW9VcHc1S1lMT0Rqdjk5WFZIVzVjaW54RDFtU3BTNDl0UU5HTjljYkg3RHR3?oc=5"
-      },
-      {
-        "date": "2024-07-31",
-        "category": "プレスリリース",
-        "title": "[イージーサイエンス]科学技術で再誕生した伝統文化、デジタルに跳躍夢を見る",
-        "summary": "[イージーサイエンス]科学技術で再誕生した伝統文化、デジタルに跳躍夢を見る連合ニュース",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hYkF4NW9WUkYyWmlUSXJhTUlkM3ozQzlNSHBVdlpDRVFxNW9STVZ4ZjgxOGwtUl9NY010MEVaY3FVeDRMTHNKWkxFaDVLVVJUTklBZU1weHJSWW_SAWBBVV95cUxNcjNoZ19ZSU0wZnhFaVhjcWlsdUV6dnl2WENvQkFfWURYSDJMNFhXN1pPOW1DNnNBcVdLN2E1QXUtV244d2VHV21GaURoazloTlMzUGpwUGR2aGtzYXBIZEs?oc=5"
-      },
-      {
-        "date": "2024-05-13",
-        "category": "プレスリリース",
-        "title": "西洋の名品も孫内民「K伝統文化」… 高付加価値産業化が答えです",
-        "summary": "西洋の名品も孫内民「K伝統文化」… 高付加価値の産業化が答えです ソウル新聞",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE93T011Wk1sSEJIUWw5T1dNNk5HVTctLXJtLUs1RnBaQzF2N0RGb1BxZXBCS2Q5Smg0VF9WR0VqNnVUd2hsblk3Ti1EODN6RHg1RTFrRjlqWVBMd194ZktiNThOaXFOY0NFYi1wSE9idWVYQ21PN2NXQkwzSHVqZw?oc=5"
-      },
-      {
-        "date": "2024-03-26",
-        "category": "プレスリリース",
-        "title": "ユン「忠北、先端バイオ産業先導基地になること」",
-        "summary": "ユン「忠北、先端バイオ産業先導基地になるだろう」 SPNソウル平壌ニュース",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE03c0JuNkdLNkE2MFlNNWtQbjNTS2FpRWxVU0MybDVKLWlmckNnbXpNY0ZPVGxOemtlUDNIaWEwMmNISk15X0RpWkVwSno4UzlkWm43b00tR0FuR3V2NkNfcE5GYWs0NzNoelE?oc=5"
-      },
-      {
-        "date": "2023-12-20",
-        "category": "プレスリリース",
-        "title": "コロンFnC、LAに持続可能なファッションストア「サーキュラーライブラリ」オープン",
-        "summary": "コロンFnC、LAに持続可能なファッションストア「サーキュラーライブラリ」オープンソウル経済",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9rWGpmR0hKTlNUOHNScXZOd1ZydWs4Y0tnM3FUMzhZc0hwVW8zOWJpanhBNlI4MVhzOVNmMUpySXY5R0xsNVVvd3QwdHV3MXJ5VDVv0gFTQVVfeXFMT2tYamZHSEpOU1Q4c1Jxdk53VnJ1azhjS2czcVQzOFlzSHBVbzM5YmlqeEE2UjgxWHM5U2YxSnJJdjlHTGw1VW93dDB0dXcxcnlUNW8?oc=5"
+        "title": "持続可能なファッションを知らせる空間‘サーキュラーライブラリー’",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE5lcjJ4SDZFaVJuS1RSSkoteFNSQ3kySm44NkdEckpUY2xuMHJ3dEtfVkxtQ0xBZUZkbjhMSHVSZw?oc=5",
+        "sourceTitle": "지속가능패션을 알리는 공간 ‘서큘러 라이브러리’",
+        "sourceSummary": ""
       },
       {
         "date": "2023-10-11",
         "category": "プレスリリース",
-        "title": "ダイテック研究院、科学技術と伝統文化産業の出会い、研究財団事業選定で基礎研究集中",
-        "summary": "ダイテック研究院、科学技術と伝統文化産業の出会い、研究財団事業選定で基礎研究集中",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiTWVSY2xJTFp3S0FSem9fWmREdnd3SXk0ZXJFMy1idmJpNnVBUjV5RzlOODZZb2hsMDFZQ2Z4S19JZ29iVDlnVGNabU5lQUJDSUZkSlNMOVJqSE4wYWFSMl9B?oc=5"
-      },
-      {
-        "date": "2023-09-26",
-        "category": "プレスリリース",
-        "title": "ハイドアウト、アベニューエルチャムシル店でポップアップストア展開… 顧客と接点を拡大する",
-        "summary": "ハイドアウト、アベニューエルチャムシル店でポップアップストア展開… 顧客との接点を拡大する",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsZFVrU0xVU29jM0l3SERjM0lfUkR3bXI0RWEtNUdrcVZPR1Frb3E5dWR4TE9SSHNseTBfb1RSZXhkS1paUklaR3AxaHFMV3QtelFVc2EycDV5dVg1SzBlWXB1elV6eU3SAWtBVV95cUxOSUx2ZXdwZDNvSm5YUHdqOE4tUnFDTDEyc3RzaE4wbXdESUlfSi10dE8ya01wR1pLYXNjOFRVSzBSS2I3c0dWNm5nNW84ZkEwOGhxazRMN2FNOEZSTTUtamRUUzh1bVZVOTFlYw?oc=5"
-      },
-      {
-        "date": "2023-09-25",
-        "category": "プレスリリース",
-        "title": "大企業が抱えるバイオ… 後発走者も「本気」",
-        "summary": "大企業が抱えるバイオ… 後発走者も「本気」ビーズワールド",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5OUjhKSzBqSTcwZm5ReE9zV1RHR0Z3ZjA3eksyakh4VGdzSjZEa18xbnR0SVFDM21WZk1QTHFpeEF5QmxQUHJ6cGVydXdvbUtHUTFuRkYtaWpBYVFqTWxoc2YxeHNyWnZVYVE?oc=5"
-      },
-      {
-        "date": "2023-09-18",
-        "category": "プレスリリース",
-        "title": "サンバ・セルトリオン・ロッテ「バイオのTSMCになる」… SK・GS・LG・CJは遺伝子治療剤など新薬に挑戦",
-        "summary": "サンバ・セルトリオン・ロッテ「バイオのTSMCになる」… SK・GS・LG・CJは遺伝子治療剤など新薬に挑戦",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSWoxWC1JOXU4ZFg4RWM4Tm9nM3VsUUxPTmVmRV9sQ0EyUHVaeUZ3Y1pNRDE0c1BqV1hvZzhmWHpUZV9ZMjhmUDZJRWZvdEN1dmswTzA1YVJGUWZIVC1ud1lMbGpqYnNJbGpuUkdFUUd6TmwzdDBEUDhJTFFLa2xCRWE5UQ?oc=5"
-      },
-      {
-        "date": "2023-09-11",
-        "category": "プレスリリース",
-        "title": "ル・カシミア、10周年ブランドリニューアル「循環ファッション」先頭に飛躍！ ：プレスリリース│ニュースルーム",
-        "summary": "ル・カシミア、10周年ブランドリニューアル「循環ファッション」先頭に飛躍！ ：プレスリリース│News Room コロンFnC",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBNWVgxaDdhX1hnRlVQWFVRUWNmWUx1Y1FWdVhBNVVQMFNDREFSV0tnQi05MUJraXBQV2pWN1ZQeFdyTC1laEt3YUh0NA?oc=5"
-      },
-      {
-        "date": "2023-09-11",
-        "category": "プレスリリース",
-        "title": "コーロンFnC、環境にやさしい染色工法時代を開く",
-        "summary": "コーロンFnC、環境にやさしい染色工法時代を開くFashion Insight",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wVjNmLTZZRXJXWG1hekViUWx1clZXRTdCLW5jTTZNTUcwUHVobXNVc3FoeXpYVnB4SmQ2YkNoYVZBa3B0UVIxbWpxV05kcVZ0OEpDWlZ3?oc=5"
+        "title": "ダイテック研究院、科学技術と伝統文化産業の出会い、研究財団事業選定で基礎研究に集中",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiTWVSY2xJTFp3S0FSem9fWmREdnd3SXk0ZXJFMy1idmJpNnVBUjV5RzlOODZZb2hsMDFZQ2Z4S19JZ29iVDlnVGNabU5lQUJDSUZkSlNMOVJqSE4wYWFSMl9B?oc=5",
+        "sourceTitle": "다이텍연구원, 과학기술과 전통문화산업의 만남, 연구재단 사업 선정으로 기초연구 집중",
+        "sourceSummary": ""
       },
       {
         "date": "2023-09-08",
         "category": "プレスリリース",
-        "title": "コロンFnC│KOLON Fashion n Culture",
-        "summary": "コロンFnC│KOLON Fashion n Culture コロンFnC",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5jNzZEcHJHelR4eUJtMndXYVlXZUtVTkFDUHBiVzhGSFhPUDlzcENhQk1aVUs5T0VKVEgxMjVZTTAtRUxQMU9GS0pR?oc=5"
+        "title": "コオロングループFnC、CutisBioと協力し環境に配慮した歩みを加速",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5nSjFFYU1iRXFCbEJDZ1FtSEQ4bTdSZWhOOS1oU3Jsd19nSjB6LThCeVZfUTJhd3J2eGJvWjgtbUlsaDJ6Y0MyMDZiN2d5VlFFRnhQS3VVYWFyd1pmTDEyRTYzcnpDQ00?oc=5",
+        "sourceTitle": "코오롱FnC, 큐티스바이오와 손잡고 친환경 행보 가속",
+        "sourceSummary": ""
       },
       {
         "date": "2023-09-08",
         "category": "プレスリリース",
-        "title": "コーロンFnC、「環境にやさしい染色素材・工法」事業化",
-        "summary": "コーロンFnC、「環境にやさしい染色素材・工法」事業化",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBFcDloQmN3LWh4bzZmZEhrcHlWVlBjVGJ3amt3TUJueGJ3TmtFSjRtMHlEZFYyZmhDeklBRHdsRmNkb3JzeDlxUi1fYlpIX0lsWDhQTVoxYVIxeXNDaUhLWkFmNkcyUFlXUlpMNVdQZzA?oc=5"
-      },
-      {
-        "date": "2023-09-08",
-        "category": "プレスリリース",
-        "title": "コーロンFnC、キューティスバイオとMOU‧‧‧循環ファッション",
-        "summary": "コーロンFnC、キューティスバイオとMOU‧‧‧循環ファッションもう一つの足",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vX056X0VxZjR5SjdOMi1TLW5RdHlBRENrOU5yZWFUNDF6R2pYVTY3aWU3LTlyckYwckdOT2JBSlVfZkNyajY4M2ROYzVFbW5pSEdBcENfbklRQ1pfRGZkbDhjWHFoY1Q0eUdzS1hn?oc=5"
-      },
-      {
-        "date": "2023-09-04",
-        "category": "プレスリリース",
-        "title": "ソウル大医大出身「オタク」たち団結した… 小柄育てる「敬意支会」 [ギグス]",
-        "summary": "ソウル大医大出身「オタク」たち団結した… 小柄育てる「敬意支会」 [ギグス] 韓国経済",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE93WEZ1N1FTN1ZJYnBhamVWd2dMekkyMUFjbkVlbGo3RmI4aWh4RXpMT2VoTDJqdUNsZlhpRGR1LTIwdFdUcjBkVFpjaHViWklFVWNXVU9oVm1zUQ?oc=5"
-      },
-      {
-        "date": "2023-09-01",
-        "category": "プレスリリース",
-        "title": "「創業でより多くの命を救うことができます」ソウル医大出身の挑戦",
-        "summary": "「創業でより多くの命を救うことができます」ソウルの大学出身の挑戦",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaE5vT1Z3ajlUTEh6amRqSHFZZmhlcGxGWW1idVhGNTFNYS03cE85d1VJZTFDWV9LclFkUVRibXZ1VlNmVHJ1YXVTakExS0ROTzRZenRNcUNyYWlibUYyclgzV1VaczFockdtT2w3ODctdm1WMzZVdzdIZHh6YUVnLUp5cmEyMG8?oc=5"
-      },
-      {
-        "date": "2023-08-08",
-        "category": "プレスリリース",
-        "title": "バイオに心からのGS… ヒューゼル買収2年の成績表は「Aクレジット」",
-        "summary": "バイオに心からのGS… ヒューゼル買収2年の成績表は「Aクレジット」です。",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE52ZkNxN0dHNnp4d011NWVhSWc5TUNjUFhUU3F6cVRyRzhmbWRKRmE2cW5TSXF6Smo0ZUxQUmVXMU02Ym5vSW1IQ0dGQVFqT1FFQ0RyZEpnNUgxVWd2dldGczZB?oc=5"
+        "title": "Kolon FnC、CutisBioとMOU‧‧‧循環ファッションに一歩前進",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vX056X0VxZjR5SjdOMi1TLW5RdHlBRENrOU5yZWFUNDF6R2pYVTY3aWU3LTlyckYwckdOT2JBSlVfZkNyajY4M2ROYzVFbW5pSEdBcENfbklRQ1pfRGZkbDhjWHFoY1Q0eUdzS1hn?oc=5",
+        "sourceTitle": "코오롱FnC, 큐티스바이오와 MOU‧‧‧순환 패션 한 발짝 더",
+        "sourceSummary": ""
       },
       {
         "date": "2023-07-25",
-        "category": "業務条約",
+        "category": "業務提携",
         "title": "キューティスバイオ - カカオヘルスケア - ロレアル、精密美容ソリューション開発MOU締結",
         "summary": "バイオインフォマティクス技術を活用した精密美容ソリューション開発業務協約を結び、肌のマイクロバイオーム専門性を組み合わせます。",
         "thumbnailAlt": "覚書サムネイル",
-        "link": "https://www.medigatenews.com/news/3760434771"
-      },
-      {
-        "date": "2023-07-04",
-        "category": "プレスリリース",
-        "title": "[医学バイオ掲示板]カカオヘルスケア、ロレアルグループと精密美容ソリューション開発MOU",
-        "summary": "[医学バイオ掲示板]カカオヘルスケア、ロレアルグループと精密美容ソリューション開発MOU 東アサイエンス",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA2ZHhLYlJQT0NJTVI3aFlBV1JkMGRiakppSWRxZHQyWk9xWlRqbGpfSHRKSWk5X2tsLUJybEtka1ZBUXljRnUweHJ3d1dhMEtFSXU4Nw?oc=5"
+        "link": "https://www.medigatenews.com/news/3760434771",
+        "sourceTitle": "큐티스바이오-카카오헬스케어-로레알, 정밀 뷰티 솔루션 개발 MOU 체결",
+        "sourceSummary": "바이오인포매틱스 기술을 활용한 정밀 뷰티 솔루션 개발 업무협약을 맺고 피부 마이크로바이옴 전문성을 결합합니다."
       },
       {
         "date": "2023-07-03",
         "category": "プレスリリース",
-        "title": "ロレアルグループ、カカオヘルスケア、キューティスバイオとバイオインフォマティクスベースの精密美容ソリューション開発業務協定締結",
-        "summary": "ロレアルグループ、カカオヘルスケア、キューティスバイオ、バイオインフォマティクスベースの精密美容ソリューション開発業務協定締結 L'Oréal",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcktqZHZOdEVrMWV4SGwwXzhpY1RfUTRTSjgtUWxhcFd5NDRiTk0zTGU0OHlHVnFWNWJaMFByV2VLOUxMcTljQ2lPWVE0OG5WQnU2YlQwT3dJWERyc3ZneFptbVFaMGFWS25lbDJReWNESEZyZE5NSXJydFg5bTY5cWE5ZlVvOVAzYUVzeGo3T2E4Zw?oc=5"
+        "title": "カカオヘルスケア、ロレアル・CutisBioと精密ビューティソリューション開発協力",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE03SDQxRU5tTUwxTlFCS1czNm1LbkRUamt4OGtPdUVHYUlCbThMOTFlYW94ekx0U21LWXgxQXFya01WemEwejVGckpvaDB2VW14Y3FQTFpMODVpLTNQbTBYcWlOLTYyV1BWb3FocHpKbEhET0xUeHFWTlE2UzQ?oc=5",
+        "sourceTitle": "카카오헬스케어, 로레알·큐티스바이오와 정밀 뷰티 솔루션 개발 협력",
+        "sourceSummary": ""
       },
       {
         "date": "2023-07-03",
         "category": "プレスリリース",
-        "title": "カカオヘルスケア・ロレアル・キューティスバイオ、精密ビューティーソリューション開発業務協約締結",
-        "summary": "カカオヘルスケア・ロレアル・キューティスバイオ、精密美容ソリューション開発業務協約締結 newspim.com",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ZaWJBZDlTckJiWHZ4RzhmMUszN0xRRkdMMHFWd2wwZy1pZGQycjlPdHFKMXZ0ZjJSNjF5ckMwMjROSlJTYjlBcDBHa2FtYU83ckdueWFnR29qM29J?oc=5"
+        "title": "ロレアルグループ、カカオヘルスケア、CutisBioとバイオインフォマティクス基盤の精密ビューティソリューション開発業務協約締結",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcktqZHZOdEVrMWV4SGwwXzhpY1RfUTRTSjgtUWxhcFd5NDRiTk0zTGU0OHlHVnFWNWJaMFByV2VLOUxMcTljQ2lPWVE0OG5WQnU2YlQwT3dJWERyc3ZneFptbVFaMGFWS25lbDJReWNESEZyZE5NSXJydFg5bTY5cWE5ZlVvOVAzYUVzeGo3T2E4Zw?oc=5",
+        "sourceTitle": "로레알 그룹, 카카오헬스케어, 큐티스바이오와 바이오인포매틱스 기반 정밀 뷰티 솔루션 개발 업무협약 체결",
+        "sourceSummary": ""
       },
       {
         "date": "2023-07-03",
         "category": "プレスリリース",
-        "title": "カカオヘルス、ロレアルと精密美容ソリューションの開発",
-        "summary": "カカオヘルス、ロレアルと精密ビューティーソリューション開発 韓国経済テレビ",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1zSTdoeUtaWHhzWDdMbUw0X2xxUGNxZkFNTGFGY0V4bi1LUnUtWm14T195RmNJWjdxU2pNUTdiOURLRFdGWnBkZWg0d3hMV0tpdXdpRkdLNExEbWF6Q3VWb1VaNjFKRktIeEVjZjBFWnJmU0FmeC1v?oc=5"
+        "title": "カカオヘルスケア・ロレアル・CutisBio、精密ビューティソリューション開発業務協約締結",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ZaWJBZDlTckJiWHZ4RzhmMUszN0xRRkdMMHFWd2wwZy1pZGQycjlPdHFKMXZ0ZjJSNjF5ckMwMjROSlJTYjlBcDBHa2FtYU83ckdueWFnR29qM29J?oc=5",
+        "sourceTitle": "카카오헬스케어·로레알·큐티스바이오, 정밀 뷰티 솔루션 개발 업무협약 체결",
+        "sourceSummary": ""
       },
       {
         "date": "2023-07-03",
         "category": "プレスリリース",
-        "title": "[ライセンスビューティーPICK]エピアル・ビレディ・LG生活健康・ロレアルグループ",
-        "summary": "[ライセンスビューティーPICK]エピアル・ビレディ・LG生活健康・ロレアルグループ ライセンスニュース",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5WRnlwOFFqa0hjX0wycGhnQlhISnVDWWtvZThlZmpITUlYR0s4Y2IxN1RNdlNmR2JidmlIeWxJZmdyQ3pHUnlzOVZwZFBVbXBna1Fvb1U3OG1UblprbEU3c1Y2RDJiOUN4c3c?oc=5"
-      },
-      {
-        "date": "2023-07-03",
-        "category": "プレスリリース",
-        "title": "カカオヘルスケア、ロレアルグループキューティスバイオと業務協約締結",
-        "summary": "カカオヘルスケア、ロレアルグループキューティスバイオと業務協約締結 医学新聞",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBicXh0NDJUTU1jTGFiSW1XOHctYTZIYjFHa2hmcUVjOTMtUzdXbGg1eDN0TVBXN0k5QUZqcWxaMWR1SWFPSDlGajZLOUxoTXRGS0JfQnhsbFRlRXRoVjdEVk1xWDRwaDl5OVE?oc=5"
-      },
-      {
-        "date": "2023-07-03",
-        "category": "プレスリリース",
-        "title": "【デイリーIT単身】SKTクラウドサービス、専門スタッフがいなくても「OK」外",
-        "summary": "[デイリーIT単身] SKTクラウドサービス、専門人材なしで「OK」外ニューデイリー経済",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE84M0pPd1k0aVV2WnNHaHg2SlNvWmVWZjFNREZHQlVsOV9hOUpQWXRkSjNjblZyUFNfb1Z2Z1FlS2E1NXJ6bmFPbjE5N0RORi1sUlAzUXZQejlpMjM2Sm1ncEYzZmtReGoyTjVWVGJqMjdid1NyZkZkZ3FSUQ?oc=5"
-      },
-      {
-        "date": "2023-05-30",
-        "category": "プレスリリース",
-        "title": "インフィニス、非ファッションライセンス独自の立地構築",
-        "summary": "インフィニス、非ファッションライセンスのユニークな立場を構築",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9RVm1BcmFhdU1zLVFZbnBZb3hrNkFwblpMM0tUOTMwWlRGc3VMa2NSc2FRMFhDWm14WDhRVlNnSTJkdUZZQnU4Z2VoZUJPTUk4TUl5NGJFaFhNOU16Q1h1RTVxQQ?oc=5"
+        "title": "カカオヘルスケア、ロレアルグループCutisBioと業務協約締結",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBicXh0NDJUTU1jTGFiSW1XOHctYTZIYjFHa2hmcUVjOTMtUzdXbGg1eDN0TVBXN0k5QUZqcWxaMWR1SWFPSDlGajZLOUxoTXRGS0JfQnhsbFRlRXRoVjdEVk1xWDRwaDl5OVE?oc=5",
+        "sourceTitle": "카카오헬스케어, 로레알 그룹 큐티스바이오와 업무협약 체결",
+        "sourceSummary": ""
       },
       {
         "date": "2022-12-19",
@@ -420,128 +954,51 @@
         "title": "キューティスバイオ-イムノバイオム、次世代マイクロバイオム免疫抗がん剤開発",
         "summary": "イムノバイオームと協力して、合成生物学ベースの組換え株を活用した次世代マイクロバイオーム免疫抗がん剤開発研究を進めています。",
         "thumbnailAlt": "研究のサムネイル",
-        "link": "https://www.pharmnews.com/news/articleView.html?idxno=216348"
-      },
-      {
-        "date": "2022-12-07",
-        "category": "プレスリリース",
-        "title": "【ヘルスカプセル】亜州大病院、本館地下1階に「ロボット手術センター」開所外",
-        "summary": "[ヘルスカプセル]亜州大病院、本館地下1階に「ロボット手術センター」箇所外東東日報",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0tcTZKenBmeGlsaEM0Z0w1c0JydnFFME8wUkd1NkxKUkpyeTBoOGtXZ3NnLXFqY2l2Y055LUhTVGxFNWl0N0tmRzlaWTFHSTVEcHUwcHpiSS11UTFndlZlMDlidkRaazNrRjBySmQwb9IBZkFVX3lxTE5acHRmREVXMkNzN0lyYUw2bmpTVTVKdzA1MGRUaGdfS3dNQWpQQzFwZXFEdjE3V0NhV1UxZ1lGbExZdFlWSkNnLXZOTm05NTdUci1vVk02TjFaYXNLTkN2MFVtSk9oQQ?oc=5"
+        "link": "https://www.pharmnews.com/news/articleView.html?idxno=216348",
+        "sourceTitle": "큐티스바이오-이뮤노바이옴, 차세대 마이크로바이옴 면역항암제 개발",
+        "sourceSummary": "이뮤노바이옴과 협력하여 합성생물학 기반의 재조합 균주를 활용한 차세대 마이크로바이옴 면역항암제 개발 연구를 진행합니다."
       },
       {
         "date": "2022-12-05",
         "category": "プレスリリース",
-        "title": "キューティスバイオ - イムノバイオム、マイクロバイオム免疫抗がん治療剤共同研究",
-        "summary": "キューティスバイオ - イムノバイオム、マイクロバイオム免疫抗がん治療剤共同研究 パームニュース",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zbVMzQ0s3NVpxMG9HNUNiSFN2bG0yOTBRSk5ad01EUlNoSnNId1UxM1pYSkptbWNGcEJ4cHJRY3ZvR0tUTC01VmM5SVJVNlZqSVYxLTQ1YUNlWVFkT1UyVXMtTnBMenk4SHZvYg?oc=5"
-      },
-      {
-        "date": "2022-06-30",
-        "category": "プレスリリース",
-        "title": "製薬業界、環境にやさしい",
-        "summary": "製薬業界、環境にやさしいヘルスコリアニュース",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8tVE4yR3I2eE1Zdjh5V0hRSHhJME5fc25GV2VWaEgySjFUWm81UUdnMUpyRW1Ia1hYcllmb2RGT3ptYi1XNnpaQUx4ZGNPUXM1S0hYOERuNTlQOVVfSWctUXVB?oc=5"
+        "title": "CutisBio-イムノバイオーム、マイクロバイオーム免疫抗がん剤共同研究",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zbVMzQ0s3NVpxMG9HNUNiSFN2bG0yOTBRSk5ad01EUlNoSnNId1UxM1pYSkptbWNGcEJ4cHJRY3ZvR0tUTC01VmM5SVJVNlZqSVYxLTQ1YUNlWVFkT1UyVXMtTnBMenk4SHZvYg?oc=5",
+        "sourceTitle": "큐티스바이오-이뮤노바이옴,마이크로바이옴 면역항암 치료제 공동연구",
+        "sourceSummary": ""
       },
       {
         "date": "2022-06-27",
         "category": "プレスリリース",
-        "title": "大雄製薬-大雄バイオ-キューティスバイオ、環境にやさしい薬物素材開発・商業化協約",
-        "summary": "大雄製薬-大雄バイオ-キューティスバイオ、環境にやさしい薬物素材開発・商業化協約",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5RNGRiRURDNjd4c0ZFSDg3bVY5ZXNBUFRMbjIwRFZDazZkWGpXdmhaUFMxa1lfS2pubzRFa3J5X1lMUDNxRm9WanZ3bDNobGpJamRidHFSSkJUOXlhazNDWFpQRElnYjVhYTlNcQ?oc=5"
+        "title": "大雄製薬-大雄バイオ-CutisBio、エコフレンドリー薬物素材開発・商業化協約",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5RNGRiRURDNjd4c0ZFSDg3bVY5ZXNBUFRMbjIwRFZDazZkWGpXdmhaUFMxa1lfS2pubzRFa3J5X1lMUDNxRm9WanZ3bDNobGpJamRidHFSSkJUOXlhazNDWFpQRElnYjVhYTlNcQ?oc=5",
+        "sourceTitle": "대웅제약-대웅바이오-큐티스바이오,친환경 약물소재 개발∙상업화 협약",
+        "sourceSummary": ""
       },
       {
         "date": "2022-06-27",
         "category": "プレスリリース",
-        "title": "大雄製薬大雄バイオキューティスバイオ、環境にやさしい薬物素材開発協約",
-        "summary": "大雄製薬 大雄バイオ キューティスバイオ、環境にやさしい薬物素材開発協約を結ぶビジネスポスト",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NdmpROGR2NTd2Z0cxMnI3bHRrZlE0LWhmcE1nMHdrQW9EMzRJeG5lWm4zSld1eG84OThaU0dhU1MyWFVnX0FiaHhrZXYyNnZpY2J0a2g4Q0lDamVqMXFFcFhnbDdYVUJDdk1qelc1LVREcWM?oc=5"
+        "title": "大雄製薬 大雄バイオ CutisBio、エコフレンドリー薬物素材開発協約を締結",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NdmpROGR2NTd2Z0cxMnI3bHRrZlE0LWhmcE1nMHdrQW9EMzRJeG5lWm4zSld1eG84OThaU0dhU1MyWFVnX0FiaHhrZXYyNnZpY2J0a2g4Q0lDamVqMXFFcFhnbDdYVUJDdk1qelc1LVREcWM?oc=5",
+        "sourceTitle": "대웅제약 대웅바이오 큐티스바이오, 친환경 약물소재 개발 협약 맺어",
+        "sourceSummary": ""
       },
       {
         "date": "2022-06-27",
         "category": "プレスリリース",
-        "title": "広東製薬、GSKアレルギー鼻炎治療剤「アバミスナザルスプレー」流通外",
-        "summary": "広東製薬、GSKアレルギー鼻炎治療剤「アバミスナザルスプレー」流通外の医薬品ニュース",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MWHFfYk81YU82VUk4dy01OHZxUWtRdEk5WkRVbWQ5RkxWYjVIWGZwYzhCdDE5Q3RSSm11Yl9OSms4SHNXRDdLZXFGcUpIZFB2WWQ5dVpZZWNnTjlyamR1SFh1WWdoUk0?oc=5"
-      },
-      {
-        "date": "2022-06-27",
-        "category": "プレスリリース",
-        "title": "大雄製薬 - 大雄バイオ - キューティスバイオ、環境にやさしい薬物材料開発協定",
-        "summary": "大雄製薬-大雄バイオ-キューティスバイオ、環境にやさしい薬物素材開発協約",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1qaFJ6ZnlzNUhEbWQ3TXJWNHdSWWhYVFF4cUpabWVBdVFZTXRqaXMySnJ6QXJPUlA0RGx3UkhmRUgwTVZEa3BpanhIVDJ5cFllZFdsYVJfOGtteFVVUGdvU0JZR3BGOHlCejlv?oc=5"
-      },
-      {
-        "date": "2022-06-27",
-        "category": "プレスリリース",
-        "title": "グッチ「トゥワーズザライン」セレクション公開Gucci, Towards the Sun-Raffia effect-Beloved-Cape Cod",
-        "summary": "グッチ「トゥワーズザライン」セレクション公開Gucci, Towards the Sun-Raffia effect-Beloved-Cape Cod",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBCVEZlWnNVM01jcV9LNERyZnRaMnVXNzhMVHRRZDJKWno2NTc2d2s1S29MSWtORXhTR0JlUWlzYzRjemVJUG9RNVdpdFJFOVNmdG5GcjRtWm1mUm9aZk1GdU9fQ09hdEJM?oc=5"
-      },
-      {
-        "date": "2021-09-28",
-        "category": "プレスリリース",
-        "title": "新成長動力探しスパイラルGS… 「バイオイヤー今回はエネルギー」",
-        "summary": "新成長動力探しスパイラルGS… 「バイオイヤー今回はエネルギー」 中央日報",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9mM1QzeG82RExld2pvanF5V2xtMktTTk02Y01DbDRsWHhxU09KOW9pWmFwckVGaHVfcjEtbWlEY0N5MW50bFJpbkZoUXV6c2FxdENEalNR?oc=5"
-      },
-      {
-        "date": "2021-08-26",
-        "category": "プレスリリース",
-        "title": "ヒューゼルが買収したGS、バイオ産業進出の本格的な西幕アップ",
-        "summary": "ヒューゼル買収したGS、バイオ産業進出の本格的な西幕アップバイオタイムズ",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8xMVVHb3pXeUx0b2pvRW03dXVVQ1k1T1V6d0o3bVBuUTJ5ZnFXMzQ2MDlrejhBY1g3bkxiblNTb19MazdxcnluWHV1NXU5V2NObkwyekUzcUUtWnhrQXg1RjVjQ1dPaXNkZWJZ?oc=5"
-      },
-      {
-        "date": "2021-06-08",
-        "category": "プレスリリース",
-        "title": "KAIST、微生物利用した天然虹色素生産技術初開発",
-        "summary": "KAIST、微生物利用した天然虹色素生産技術初開発 世宗忠清ニュース",
-        "thumbnailAlt": "ニュースのサムネイル",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE14N2VtOWxvOEdlNmJuVUJVenVnZk5PbnE3VGhwWFdCQWVrSWZ5THhheHhCTHR6UWtZMkJmQ19XbzVnLUo3VllMblRVbVpCZ0QtZ0xGNGdJNUtnYTdKenk0N3ZoNnZGUkdJTGRj0gFvQVVfeXFMTmtBZ0swRkhRZ056M21TRURIdHFWSTBHSHpvWWxVNVZ6a1F5VWx6VEJoRnZObHZCZjZwVTVPYzVjdFMzSHBiWW1BV0JDRmZCME9OVUQzd1ctdXdVc3JFVXh4UlZ3QWZwM3RGMWpxWEZ3?oc=5"
+        "title": "大雄製薬-大雄バイオ-CutisBio、エコフレンドリー薬物素材開発協約",
+        "summary": "",
+        "thumbnailAlt": "ニュースサムネイル",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1qaFJ6ZnlzNUhEbWQ3TXJWNHdSWWhYVFF4cUpabWVBdVFZTXRqaXMySnJ6QXJPUlA0RGx3UkhmRUgwTVZEa3BpanhIVDJ5cFllZFdsYVJfOGtteFVVUGdvU0JZR3BGOHlCejlv?oc=5",
+        "sourceTitle": "대웅제약-대웅바이오-큐티스바이오, 친환경 약물소재 개발 협약",
+        "sourceSummary": ""
       }
-    ]
-  },
-  "Contact": {
-    "title": "お問い合わせ",
-    "description": "CutisBioに関するお問い合わせがございましたら、メッセージを残してください。すぐにお返事いたします。",
-    "addressTitle": "住所",
-    "addressDetail": "ソウル特別市江南区論峴路842 狎鴎亭ビル8階",
-    "emailTitle": "Eメール",
-    "emailAddress": "contact@cutisbio.com",
-    "mapTitle": "マップ"
-  },
-  "ProblemSolution": {
-    "problemTitle": "私たちが着るデニムの隠された代償",
-    "problemText": "伝統的な染色プロセスは石油化学物質に依存しており、深刻な環境汚染と健康への脅威を残します。特に「アニリン」は最も致命的な問題の一つです。",
-    "solutionTitle": "CutisBioの革新的な解答",
-    "solutionText": "微生物発酵を通じて毒性物質を完全に排除した100%アニリンフリー染料。人と自然の双方に安全な完全なる持続可能性を提供します。"
-  },
-  "Process": {
-    "title": "バイオ製造プロセス",
-    "subtitle": "自然を模倣した先端合成生物学メカニズム",
-    "step1Title": "1. DNA設計",
-    "step1Text": "自然に存在する酵素経路を元に微生物のDNAを特殊に再設計します。",
-    "step2Title": "2. 精密発酵",
-    "step2Text": "精密な発酵環境において、微生物が植物のように自らインディゴ前駆体を生産します。",
-    "step3Title": "3. インディゴ精製",
-    "step3Text": "環境に配慮した精製プロセスを通じて、100%バイオベースの染料を完成させます。",
-    "step4Title": "4. Drop-in 染色",
-    "step4Text": "既存の染色インフラをそのまま使用し、追加の設備交換なしに即座に適用可能です。"
-  },
-  "Partners": {
-    "title": "グローバルファッションの未来を共にするリーディングブランド",
-    "testimonial": "\"CutisBioの微生物ベースのインディゴは、環境保護とビジネス競争力を同時に満たす真のゲームチェンジャーだ。\"",
-    "testimonialAuthor": "CEO interview"
+    ],
+    "listNote": "このリストには公開されたメディア報道が自動的に集められます。記事内容と表現は各メディアのものですので、試験数値および認証情報についてはデータ・認証ページをご覧ください。"
   }
 }

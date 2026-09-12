@@ -1,63 +1,731 @@
 {
-  "Blog": {
-    "eyebrow": "Insights & Technology",
-    "title": "Blog",
-    "description": "In-depth articles on CutisBio's synthetic biology technology and sustainable fashion.",
-    "categoryTech": "Technology",
-    "readMore": "Read More",
-    "readTime": "{minutes} min read"
-  },
-  "Layout": {
-    "home": "Home",
+  "Nav": {
+    "brand": "Brand",
+    "technology": "Technology",
+    "dyeingPrinting": "Dyeing & Printing",
+    "dataCertifications": "Data & Certifications",
+    "sampleInquiry": "Sample Inquiry",
     "about": "About Us",
-    "tech": "Technology",
     "news": "News",
-    "contact": "Contact Us",
-    "footerText": "Sustainable Denim Dye. Aniline free - Human safe. © 2026 CutisBio. All rights reserved."
+    "contact": "Contact",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "languageLabel": "Select language",
+    "skipToContent": "Skip to content",
+    "homeAria": "Blugene home"
+  },
+  "Footer": {
+    "tagline": "Better Blue for Everyday Denim",
+    "sitemapTitle": "Site map",
+    "contactTitle": "Contact",
+    "legalTitle": "About this material",
+    "sourceNote": "The test values and certification details on this site are taken from the CutisBio catalogue published in July 2026. Data as of {date}.",
+    "companyLine": "CutisBio Co., Ltd.",
+    "rights": "© 2026 CutisBio Co., Ltd. All rights reserved.",
+    "catalogueLink": "Download the original catalogue (PDF)"
   },
   "Home": {
-    "heroTitle": "Next-Generation Sustainable Denim Dye, CutisBio Indigo",
-    "heroSubtitle": "Indigo dye safe for our skin. The most sustainable denim dyeing solution, born from synthetic biology technology without toxic substances (aniline).",
-    "heroImageAlt": "Intuitive eco-friendly image intertwining blue denim fabric and clean water drops",
-    "impactMetricsTitle": "Positive Changes Created by CutisBio",
-    "metric1Value": "100%",
-    "metric1Text": "Aniline-Free (Perfect block of toxic substances)",
-    "metric2Value": "Drop-in",
-    "metric2Text": "Immediately applicable to existing dyeing factory facilities",
-    "metric3Value": "Eco-friendly",
-    "metric3Text": "Minimization of water pollution and carbon emissions during production",
-    "coreValuesTitle": "Core Values of CutisBio Technology",
-    "coreValuesDesc": "We revolutionize the traditional petrochemical-based dyeing industry through Synthetic Biology.",
-    "feature1": "Precision Fermentation",
-    "benefit1": "Mimicking natural ecosystems with sustainable biosynthesis",
-    "feature2": "Aniline-Free",
-    "benefit2": "Fundamental elimination of carcinogens threatening workers and consumers",
-    "feature3": "Sustainable Indigo",
-    "benefit3": "Minimization of water pollution and achieving a circular economy in the fashion industry",
-    "ctaTitle": "Will you join the future of sustainable fashion?",
-    "ctaText": "Discover how CutisBio's innovative microbial-based indigo dye is replacing traditional dyeing processes.",
-    "ctaButton": "View Technology Details",
-    "qualityTitle": "Superior Dyeability and Fastness Verified",
-    "qualitySubtitle": "Thorough comparative tests by a premium Japanese denim dyeing company proved that CutisBio Indigo exhibits deeper color and superior durability compared to conventional chemical indigo.",
-    "qualityImageAlt": "Denim dyeing and fastness test result image",
-    "qualityBadge": "Quality Proven"
+    "metaTitle": "Blue, crafted through indigo DNA and fermentation.",
+    "metaDescription": "Blugene is a bio indigo made by microbial fermentation — 98% biobased carbon, aniline and N-methylaniline not detected (detection limit 5 mg/kg).",
+    "ctaTitle": "Let's create your next blue.",
+    "ctaText": "We welcome inquiries from denim brands, fabric mills, dye houses, and printing companies.",
+    "ctaButton": "Request a Blugene sample"
+  },
+  "Hero": {
+    "descriptor": "Blue, crafted through indigo DNA and fermentation.",
+    "titleLine1": "Better Blue",
+    "titleLine2": "for Everyday Denim",
+    "body": "The blue that touches your skin throughout life has been reborn through synthetic biology. For skin health, Blugene is an indigo that never compromises—even on the smallest risks.",
+    "ctaPrimary": "Request a Blugene sample",
+    "ctaSecondary": "Explore data & certifications",
+    "tagline": "Better Blue for Everyday Denim",
+    "imageAlt": "A caregiver in a denim jacket holds a child while looking out over cornfields, meadows and water. This is the brand image used on the cover of the supplied catalogue.",
+    "imageCredit": "Image included on p.1 of the catalog"
+  },
+  "EvidenceStrip": {
+    "carbonValue": "98%",
+    "carbonLabel": "Biobased carbon content",
+    "anilineValue": "Not detected",
+    "anilineLabel": "Aniline",
+    "nMethylanilineValue": "Not detected",
+    "nMethylanilineLabel": "N-methylaniline",
+    "note": "These are test results from the supplied catalogue. Not detected means below the method detection limit of 5 mg/kg under the stated test method; it does not mean a content of 0. The 98% figure is biobased carbon content, not indigo purity or an emissions reduction rate.",
+    "sourceCarbon": "Source: catalogue p.3 Table 1-1 (KATRI, ASTM D6866-24a Method B)",
+    "sourceAniline": "Source: catalogue p.5 Table 2-3 (KOTERI, KS K 0734 2019)",
+    "cta": "See the detailed test data"
+  },
+  "Manifesto": {
+    "eyebrow": "ACROSS BORDERS. ACROSS GENERATIONS.",
+    "title": "Because it touches our skin for a lifetime.",
+    "body": "No matter the country or age, denim is part of our daily life. Because it is worn for years and touches the skin every day, we re-examined every step, from making the color and dyeing to the moment the denim is worn, together with dermatologists, the specialists in skin health. Blugene began with the following three questions.",
+    "questions": [
+      "What is it made from",
+      "What impurities remain",
+      "Can the results be verified"
+    ],
+    "cta": "Hear the answers",
+    "portraitAlt": "Choi Wonwoo, M.D., Ph.D., board-certified dermatologist, smiling in a white coat",
+    "portraitName": "Blugene director: CHOI WONWOO M.D., Ph.D., Board Certified Dermatologist",
+    "portraitCredential": "Blugene director: CHOI WONWOO M.D., Ph.D., Board Certified Dermatologist"
+  },
+  "Impurity": {
+    "eyebrow": "WHAT REMAINS MATTERS",
+    "title": "Our standards reach beyond what you can see.",
+    "body": "In the tests presented in the catalog, CutisBio bio indigo, the foundation of Blugene, showed that aniline and N-methylaniline were not detected.",
+    "context": "Aniline and N-methylaniline are used as starting materials or intermediates in chemical synthesis routes, and they can remain as unreacted residues in the final indigo powder. A number of certification standards limit the permitted concentration of these substances in textile dyes and in finished products.",
+    "cta": "See the full comparison data",
+    "chartTitle": "Aniline and N-methylaniline analysis of commercial indigo dyes",
+    "chartCaption": "The nine commercial samples from catalogue p.5 Figure 2-2 and Table 2-3. The vertical axis is in mg/kg and starts at 0."
+  },
+  "Science": {
+    "eyebrow": "SYNTHETIC BIOLOGY",
+    "title": "Rewriting the DNA of indigo.",
+    "body": "CutisBio produces indigo by utilizing microorganisms' biosynthetic pathways and fermentation.",
+    "cta": "Explore the technology",
+    "diagramTitle": "From feedstock to fabric",
+    "diagramNote": "Blugene's journey into denim begins with renewable plant feedstock: the blue DNA of indigo is reborn as dye and ink through synthetic biology and precision fermentation. The resulting Blugene indigo dye holds certifications such as ZDHC MRSL, OEKO-TEX ECO PASSPORT and USDA BioPreferred, and it is the dye that colors the denim we wear.",
+    "steps": [
+      {
+        "title": "Renewable feedstock",
+        "text": "Renewable carbon from biomass such as corn is the starting point.",
+        "imageAlt": "Photo of a cornfield. This is a conceptual image representing biomass raw materials and is not a photograph of CutisBio's farm."
+      },
+      {
+        "title": "Microbial fermentation",
+        "text": "Indigo is made by fermentation that draws on the biosynthetic pathways of microorganisms.",
+        "imageAlt": "Photograph of fermentation equipment. Two workers stand in front of control panels, with fermenters showing blue culture solution through inspection windows. This is a conceptual image representing the fermentation process and not a photo of CutisBio facilities or employees."
+      },
+      {
+        "title": "Indigo recovery and product forms",
+        "text": "After recovery and purification, it is made into powder and digital printing ink.",
+        "imageAlt": "Photo of a glass jar containing blue indigo powder and a bottle of digital printing ink. This is a conceptual image representing two product forms and is not a photograph of CutisBio's products."
+      },
+      {
+        "title": "Fabric dyeing and printing",
+        "text": "It is applied to cotton, silk and cashmere dyeing and to digital printing.",
+        "imageAlt": "Photograph of a dyeing factory where blue bundles of yarn pass over rollers on an indigo dye vat. This is a conceptual image representing fabric dyeing and not a photo of CutisBio facilities."
+      }
+    ]
+  },
+  "Environment": {
+    "eyebrow": "FROM RENEWABLE CARBON",
+    "title": "Thinking of the wearer. And of how it is made.",
+    "body": "An indigo that starts from renewable carbon. From the origin of the feedstock through to compositional analysis, we explain our approach with material you can verify.",
+    "carbonCardTitle": "Biobased carbon content",
+    "carbonCardText": "This is the share of the carbon in the product that comes from renewable feedstock. It is based on the measured value in catalogue p.3 Table 1-1 (pMC 97.73), and it is not indigo purity or a carbon emissions reduction rate.",
+    "scopeNote": "Product-level life cycle assessment (LCA), water use, energy and carbon emissions data are not included in this catalogue. Environmental performance figures outside the verified scope are not shown on this site.",
+    "cta": "See the supporting material",
+    "imageAlt": "A conceptual value-chain image running from feedstock crops through fermentation equipment and blue fabric to a person wearing denim. These are not photographs of an actual CutisBio plant or staff."
+  },
+  "Performance": {
+    "eyebrow": "PERFORMANCE",
+    "title": "Dyeability confirmed on real fabric.",
+    "body": "Cotton, silk and cashmere were dyed with plant, chemical and bio indigo and compared. The catalogue records comparable performance in colorfastness to laundering, light, rubbing and perspiration.",
+    "fabricAlt": "Photograph of nine fabric swatches. From the left: cotton, silk and cashmere dyed with plant indigo (#1–#3), then chemical indigo (#4–#6), then bio indigo (#7–#9).",
+    "fabricCaption": "Catalog p.6 Figure 3-1.",
+    "sampleLegendPlant": "Plant indigo",
+    "sampleLegendChemical": "Chemical indigo",
+    "sampleLegendBio": "Bio indigo",
+    "fiberCotton": "Cotton",
+    "fiberSilk": "Silk",
+    "fiberCashmere": "Cashmere",
+    "cta": "See the full colorfastness tables",
+    "honestNote": "This does not mean superiority in every category. Lower grades are also recorded for some colorfastness to rubbing items, and they appear in the tables exactly as recorded.",
+    "additionalCaseTitle": "Additional fabric evaluation case",
+    "additionalCaseBody": "This is a separate dyeing evaluation photo stored in the repository. The value below is exactly as printed on the original Japanese label, with ‘合成’ meaning synthesis.",
+    "additionalCaseAlt": "Photograph comparing fabrics dyed with バイオ②-1, 合成 and バイオ②-2 under 4, 6 and 8 dyeing cycles",
+    "additionalCaseProvenance": "The testing institute, test method, test date and client are not confirmed, so this is shown separately from the tests on catalogue p.6. It is different material from samples #1–#9 in the table above.",
+    "additionalCaseCyclesLabel": "Dyeing cycles",
+    "additionalCaseRowsLabel": "Categories"
+  },
+  "Fastness": {
+    "title": "Colorfastness test results",
+    "intro": "These tables reproduce catalogue p.6 Tables 3-1 to 3-4 as they appear. Grades keep the ranking notation of the source (for example 4-5) and have not been converted into decimals.",
+    "sampleHeader": "Sample",
+    "itemHeader": "Test item",
+    "methodLabel": "Test method",
+    "tableLaundering": "Colorfastness to laundering",
+    "tableLight": "Colorfastness to light",
+    "tableRubbing": "Colorfastness to rubbing",
+    "tablePerspiration": "Colorfastness to perspiration",
+    "captionLaundering": "Table 3-1. Colorfastness to laundering test results (samples #1–#9)",
+    "captionLight": "Table 3-2. Colorfastness to light test results (samples #1–#9)",
+    "captionRubbing": "Table 3-3. Colorfastness to rubbing test results (samples #1–#9, warp and weft)",
+    "captionPerspiration": "Table 3-4. Colorfastness to perspiration test results (samples #1–#9, acid and alkaline)",
+    "groupChange": "Color change",
+    "groupStain": "Staining",
+    "rowColorChange": "Color change",
+    "rowAcetate": "Acetate",
+    "rowCotton": "Cotton",
+    "rowNylon": "Nylon",
+    "rowPolyester": "Polyester",
+    "rowAcrylic": "Acrylic",
+    "rowWool": "Wool",
+    "rowDry": "Dry",
+    "rowWet": "Wet",
+    "subWarp": "Warp",
+    "subWeft": "Weft",
+    "subAcid": "Acid",
+    "subAlkali": "Alkaline",
+    "sourceImageCta": "View the original table image",
+    "sourceImageAlt": "Original image of colorfastness Tables 3-1 to 3-4 on catalogue p.6",
+    "gradeNote": "The grade is a ranking value between 1 (low) and 5 (high), with ‘4-5’ indicating a range between the two grades, as per the original text. Grades recorded below 4 are highlighted in bold in the table."
+  },
+  "ShadeLibrary": {
+    "eyebrow": "SHADE LIBRARY",
+    "title": "Your brand. Your blue.",
+    "body": "Shade depth changes with dye concentration and the number of dyeing cycles. Adjusting the ratio of indigo to indirubin makes it possible to create a shade that belongs to your brand alone.",
+    "gridTitle": "Catalogue swatches by concentration",
+    "gridHelp": "The catalogue does not give concentration values for the individual swatches, so they are identified by position (A1–B6).",
+    "axisLow": "Low",
+    "axisHigh": "High",
+    "axisLabel": "Blugene concentration",
+    "rowA": "Row A",
+    "rowB": "Row B",
+    "swatchAlt": "Dyed swatch {code} by concentration from catalogue p.7 Figure 4-1",
+    "indirubinTitle": "How indirubin shifts the shade",
+    "indirubinBody": "Indirubin is the red isomer of indigo. Adjusting the composition of indigo and indirubin produced by microbial fermentation makes it possible to create a blue that is unique to your brand.",
+    "indirubinAltA": "Photograph of denim fabric dyed with 100% indigo (catalogue p.7 Figure 4-2)",
+    "indirubinAltB": "Photograph of denim fabric dyed with 94% indigo and 6% indirubin (catalogue p.7 Figure 4-2)",
+    "indirubinLabelA": "Indigo 100%",
+    "indirubinLabelB": "Indigo 94%, indirubin 6%",
+    "indirubinToggle": "Compare the two compositions",
+    "indirubinNote": "These are photographs of the two compositions presented in the catalogue. Mixing ratios in between are not provided, so we do not generate those colors on screen.",
+    "colorDisclaimer": "Actual color may differ depending on the screen, the fabric and the dyeing conditions. Please confirm with a fabric sample.",
+    "medicalNote": "The pharmacological activity of indirubin is not covered on this site. We describe it only from the perspective of shade control and product development."
+  },
+  "Products": {
+    "eyebrow": "PRODUCT FORMS",
+    "title": "Two forms: powder and printing ink.",
+    "body": "Indigo made by microbial fermentation is supplied as a powder for fabric dyeing and as an ink for digital printing.",
+    "powderTitle": "Blugene Indigo Powder",
+    "powderText": "Cotton, silk, and cashmere dyeing evaluation data are included in the catalog.",
+    "powderAlt": "Deep blue bio indigo powder in a dish (catalogue p.9)",
+    "inkTitle": "Blugene Digital Printing Ink",
+    "inkText": "A bio indigo ink for digital printing. We are glad to discuss applications and samples with you.",
+    "inkAlt": "A glass bottle of deep blue bio indigo digital printing ink (catalogue p.9)",
+    "nameNote": "The product names above are the web-facing names of the new brand. In the catalogue and the certificates the original product name is “{catalogueName}”.",
+    "specNote": "Particle size, viscosity, shelf life, minimum order quantity, production capacity and pricing are not in the supplied material and are therefore not shown. Please contact us and we will confirm the specifications you need.",
+    "cyclesTitle": "Color development by number of dyeing cycles",
+    "cyclesCaption": "Catalogue p.8 Figure 5-1. A comparison of cotton fabric dyed 1 to 4 times with chemical indigo (powder), bio indigo (powder) and bio indigo (digital printing ink).",
+    "cyclesAlt": "A three-row, four-column comparison plate. The rows are chemical indigo powder, bio indigo powder and bio indigo digital printing ink; the columns are 1 to 4 dyeing cycles.",
+    "cyclesNote": "For this example the catalogue records color strength as “digital printing ink > chemical indigo ≈ bio indigo powder”. The shade depth in the photograph has not been converted into K/S values or ΔE color difference measurements, and it does not imply superior performance under all conditions.",
+    "cta": "Request product information"
+  },
+  "Printing": {
+    "eyebrow": "PRINTED IN BLUE",
+    "title": "Printing widens what color can say.",
+    "body": "Digital printing places color exactly where it is needed and renders intricate patterns. Here are results printed with bio indigo ink, shown alongside the original images.",
+    "pairOriginal": "Original image",
+    "pairPrinted": "Printed with bio indigo ink",
+    "pairAltOriginal": "Original image {index} used for digital printing (catalogue p.9 Figure 6-2)",
+    "pairAltPrinted": "The same image {index} digitally printed with bio indigo ink (catalogue p.9 Figure 6-2)",
+    "pairNote": "These are not photos showing performance improvement before and after product use, and the information of the original creator, customer, or supplier is not provided in the materials.",
+    "processTitle": "Ink manufacturing flow",
+    "processCaption": "The stages shown in catalogue p.9 Figure 6-1. The original labels are given alongside.",
+    "processAlt": "Diagram of the ink manufacturing flow from raw material preparation through premixing, milling and filtration to formation (catalogue p.9)",
+    "processNote": "The final stage in the catalogue is written as “Formation”. We keep the original wording rather than replacing it with a settled process term. This is not a disclosure of the exact production recipe.",
+    "steps": [
+      {
+        "title": "Raw Material Preparation",
+        "text": "The bio indigo powder and auxiliary materials are weighed out and prepared."
+      },
+      {
+        "title": "Premixing",
+        "text": "The materials are pre-mixed with the dispersion medium."
+      },
+      {
+        "title": "Milling",
+        "text": "The particles are ground and dispersed uniformly."
+      },
+      {
+        "title": "Filtration",
+        "text": "Residual particles are filtered out to bring the ink to a state suited to printing."
+      },
+      {
+        "title": "Formation",
+        "text": "The ink is adjusted into its final form. (Original catalogue label: Formation)"
+      }
+    ],
+    "advantagesTitle": "Characteristics of digital printing",
+    "advantages": [
+      "High-resolution patterns and color combinations that are difficult to achieve with conventional dyeing become possible.",
+      "Color is placed only where it is needed, which also suits small production runs.",
+      "Complex designs are easy to reproduce consistently."
+    ],
+    "advantagesNote": "Catalogue p.9 mentions ranges for water and waste reduction in digital printing generally, but these were not measured on Blugene products, so no figures are shown on this site."
+  },
+  "DataHub": {
+    "eyebrow": "DATA & CERTIFICATIONS",
+    "title": "Trust you can check against the source.",
+    "body": "Test results and certificates are gathered in one place. Each item is shown with its testing institute, test method, report number and data as-of date, and the original can be viewed.",
+    "carbonSectionTitle": "Biobased carbon (C14)",
+    "carbonSectionBody": "This is the result of measuring the biobased (renewable) carbon ratio of commercially available indigo dye. This value is the biobased carbon content, not the purity of indigo or a reduction rate of carbon emissions.",
+    "anilineSectionTitle": "Aniline and N-methylaniline analysis",
+    "anilineSectionBody": "Results of analyzing the aniline and N-methylaniline remaining in commercial indigo dyes.",
+    "tableLab": "Testing institute",
+    "tableMethod": "Test method",
+    "tableReport": "Test report number",
+    "tableReportDate": "Test report date",
+    "tableDetectionLimit": "Method detection limit",
+    "tableType": "Indigo type",
+    "tableSample": "Sample",
+    "tablePmc": "pMC",
+    "tableBiobased": "Biobased carbon content (%)",
+    "tableAniline": "Aniline (mg/kg)",
+    "tableNMethylaniline": "N-methylaniline (mg/kg)",
+    "typeChemical": "Chemical",
+    "typePlant": "Plant",
+    "typeBio": "Bio",
+    "notDetected": "Not detected",
+    "notDetectedShort": "N.D.",
+    "notDetectedExplain": "Not detected (N.D.) means below the method detection limit under the stated test method. It is not a measured value of 0, and it is not shown as a zero bar in the charts.",
+    "sameLabelNote": "Company M appears under both chemical indigo and plant indigo. It is labelled with its type so the two can be told apart.",
+    "anonymousNote": "Company names follow the anonymized labels used in the catalogue. We do not speculate about the actual company names.",
+    "sampleScopeNote": "These values are a comparison of the nine samples included in the catalogue and are not statistics representing the market as a whole. The carbon test and the aniline test differ in institute, method and date, so they have not been combined into a single indicator.",
+    "chartCarbonTitle": "Biobased carbon content comparison (%)",
+    "chartAnilineTitle": "Aniline and N-methylaniline comparison (mg/kg)",
+    "chartAccessibleNote": "Every value in the charts can also be found in the tables below.",
+    "regulatoryOmitted": "The limits table by country and certification on p.4 of the catalog may have varying scopes depending on the country and product group, and requires checking the latest original text, so figures are not transcribed or interpreted in this site text. You can check the original text on <link>page 4 of the original catalog</link> below, and please verify the actual application standards by checking the latest original text of each regulation.",
+    "catalogueTitle": "The original catalogue",
+    "catalogueBody": "All 12 pages of the supplied catalogue can be viewed.",
+    "cataloguePage": "Page {page}",
+    "cataloguePageAlt": "CutisBio bio indigo catalogue page {page}",
+    "catalogueDownload": "Download PDF ({size})",
+    "catalogueAnchorNote": "The downloaded PDF contains the entirety of the original catalog page 12, and follows the same order as the page numbers in the above thumbnail.",
+    "carbonZeroNote": "Company Z's biobased carbon content is printed as 0 (pMC 0.30) in catalogue Table 1-1 and as N.D. in Figure 1-3. This table reproduces the Table 1-1 value.",
+    "reportDateNote": "The test report number SBED25-00000153-1 is listed twice in Catalog Table 1-1 with different issue dates. The original listing has been transcribed as is."
+  },
+  "Certifications": {
+    "title": "Global certifications",
+    "body": "The certificates included in the provided catalog. You can enlarge the original certificates for each item.",
+    "numberLabel": "Certificate number",
+    "issuerLabel": "Certification body",
+    "productLabel": "Covered product",
+    "pageLabel": "Catalogue page",
+    "certificateAlt": "Original image of the {name} certificate",
+    "logoAlt": "{name} certification mark",
+    "noExpiry": "No expiry date is stated in the document",
+    "statusDocumented": "Certification material included in the July 2026 catalogue",
+    "statusWithinPeriod": "Within the validity period stated in the document",
+    "statusPastPeriod": "The validity period stated in the document has passed. Please contact us for the latest documentation.",
+    "verificationNote": "We have confirmed the dates written in the documents; this is not a check of current certification status in the certification body's database.",
+    "brandNameNote": "The product name on the certificates is “CB Bio Indigo Dye Powder”. Blugene is the new brand name for the CutisBio bio indigo business, which includes this product, and the product names in the certificate images have not been changed.",
+    "scopeNote": "The certification scope is limited to the product named on each certificate. It does not mean that digital printing ink or finished denim garments are automatically certified.",
+    "asOfLabel": "Data as of",
+    "nextReviewLabel": "Recommended date for the next certification status check",
+    "requestLatest": "Request the latest certification documents",
+    "zdhcScope": "The scope covers the chemical formulation named on the certificate (CB Bio Indigo Dye Powder). The use category is Natural dyes (1.7.27).",
+    "oekoScope": "The product list is in the enclosure to the certificate and is not included in the catalogue. The product class is 2.9 Natural dyes. Until the enclosure has been checked, we do not specify the range of covered products.",
+    "usdaScope": "A participation certificate confirming that the USDA Certified Biobased Product Label was obtained; the label states 98%. Catalogue p.11 footnotes the precision of this result as ±3% (absolute).",
+    "okbiobasedScope": "Class 5 means a biobased carbon content of 97% or more and up to 100%. The certificate cites method EN 16640 and certification scheme OK 20 edition D.",
+    "zoomOpen": "View the certificate enlarged",
+    "zoomClose": "Close",
+    "zoomHint": "Press Esc to close."
+  },
+  "Inquiry": {
+    "eyebrow": "SAMPLE INQUIRY",
+    "title": "Let's create your next blue.",
+    "body": "Please select an inquiry type and leave the details.",
+    "topicLabel": "Inquiry type",
+    "topicFabricDyeing": "Fabric dyeing",
+    "topicDigitalPrinting": "Digital printing",
+    "topicShadeDevelopment": "Joint shade development",
+    "topicTechnicalData": "Technical and certification documents",
+    "messageLabel": "Details that help us respond",
+    "messagePlaceholder": "Company name, contact person, fabric type, the quantity and timeline you need, and so on.",
+    "submit": "Send an email inquiry",
+    "submitHint": "Pressing the button opens the default email program with the recipient, subject, and content filled in. You must press 'Send' yourself to complete submission. If the email program does not open, please send directly to {email}. This screen does not transmit any information externally.",
+    "mailSubject": "[Blugene sample inquiry] {topic}",
+    "mailIntro": "I would like to inquire about Blugene samples and technical documentation.",
+    "mailTopicLine": "Inquiry type: {topic}",
+    "mailShadeLine": "Shade swatch of interest: {shade}",
+    "mailFooter": "— This email was composed on the inquiry page at blugene.co.",
+    "emailLabel": "Email",
+    "telLabel": "Phone",
+    "addressLabel": "Address",
+    "companyRelationTitle": "Blugene and CutisBio",
+    "companyRelationBody": "Blugene is the brand name of the bio indigo developed by CutisBio Co., Ltd. In the catalogue and the certificates it is recorded under its original product name, “Bio Indigo Dye Powder (Microbial Fermentation)”.",
+    "sampleNote": "We will confirm sample availability when you get in touch. (Catalogue p.11: Samples are available upon request)"
+  },
+  "Common": {
+    "sourceLabel": "Source",
+    "cataloguePage": "Catalogue p.{page}",
+    "asOf": "Data as of {date}",
+    "viewOriginal": "View the original",
+    "viewSource": "View the source material",
+    "close": "Close",
+    "openImage": "Enlarge image",
+    "conceptImage": "Concept image",
+    "brandImage": "Brand image",
+    "testPhoto": "Test photograph",
+    "imageNoteConcept": "This image is used to illustrate a concept; it is not a photograph of an actual facility, customer or test result.",
+    "imageNotePhoto": "Photographs from the supplied catalogue, resized for the web without any color correction.",
+    "scrollableRegion": "Horizontally scrollable region",
+    "catalogueFigure": "Catalogue figure"
+  },
+  "Brand": {
+    "metaTitle": "Brand story",
+    "metaDescription": "Blugene is the CutisBio bio indigo brand, remaking indigo for denim that stays with you for a lifetime.",
+    "heroEyebrow": "THE STORY",
+    "heroTitle": "Denim is worn every day. So the dye must be checked with care.",
+    "heroBody": "Through a living fermentation process, we have rewritten the way indigo dye is made. Denim crosses ethnicities and borders and stays with us for a lifetime. That is why we do not compromise, even on the smallest impurity within it. We remake indigo with skin and the environment in mind. That is Blugene.",
+    "nameTitle": "The meaning in the name",
+    "nameBody": "The name joins Blue, for the blue of indigo, with gene, the basis of living things. It carries the idea of creating the long-loved indigo blue anew through advanced technology: synthetic biology and precision fermentation.",
+    "promiseTitle": "What we promise",
+    "promiseBody": "What we can promise is the information that can be verified.",
+    "promiseItems": [
+      {
+        "title": "We disclose the feedstock",
+        "text": "We start from renewable carbon. Biobased carbon content is published as a test result."
+      },
+      {
+        "title": "We check the impurities",
+        "text": "Aniline and N-methylaniline are analyzed by accredited test methods, and the results are published together with the detection limit."
+      },
+      {
+        "title": "We show the originals",
+        "text": "Test report numbers, certificate numbers and original certificate images can be checked directly on this site."
+      }
+    ],
+    "relationTitle": "Our relationship with CutisBio",
+    "relationBody": "Blugene is the indigo business brand of CutisBio Co., Ltd. The corporate name and the wording used on certificates and test reports remain CutisBio.",
+    "cta": "Inquire about samples and technical documents"
+  },
+  "Technology": {
+    "metaTitle": "Technology",
+    "metaDescription": "An explanation of the four routes to indigo, production based on microbial fermentation, and the biobased carbon test results.",
+    "heroEyebrow": "TECHNOLOGY",
+    "heroTitle": "Four ways to make blue, and the one we chose.",
+    "heroBody": "There are four ways to produce indigo dye. Blugene chose a precision fermentation process that follows the carbon cycle. Our choice raises sustainability for the environment and for our lives.",
+    "routesTitle": "Four routes to indigo synthesis",
+    "routesCaption": "Catalogue p.2 Figure 1-1. Chemical routes are marked in red and biological routes in yellow.",
+    "routesAlt": "Diagram of four indigo synthesis routes starting from crude oil, biomass and indigo plants (catalogue p.2)",
+    "routes": [
+      {
+        "name": "Chemical indigo",
+        "feedstock": "Crude oil (non-renewable)",
+        "intermediate": "Aniline",
+        "text": "Indigo is synthesized via aniline obtained from crude oil. The catalogue marks this as a chemical route."
+      },
+      {
+        "name": "Hybrid indigo",
+        "feedstock": "Biomass",
+        "intermediate": "Anthranilic acid",
+        "text": "Indigo is made via anthranilic acid obtained from biomass. The feedstock is renewable, but the intermediate stage differs from the purely microbial route."
+      },
+      {
+        "name": "Bio indigo (from precision fermentation)",
+        "feedstock": "Biomass (plant feedstock)",
+        "intermediate": "Tryptophan",
+        "text": "Microorganisms convert tryptophan obtained from biomass into indigo. CutisBio bio indigo follows this route."
+      },
+      {
+        "name": "Natural indigo (plant-derived)",
+        "feedstock": "Indigo plants",
+        "intermediate": "Extraction",
+        "text": "The pigment is extracted from indigo plants. The catalogue notes cases among commercial plant-derived indigos that appear to contain chemical indigo."
+      }
+    ],
+    "routeFeedstockLabel": "Feedstock",
+    "routeIntermediateLabel": "Key intermediate stage",
+    "routesNote": "The anthranilic acid stage of the hybrid route differs from the tryptophan stage of the microbial route. We have not simplified the two routes into one.",
+    "carbonTitle": "Where the carbon comes from",
+    "carbon": {
+      "lead": "From oil underground to biomass that grows again. Blugene makes indigo by fermenting biomass, thinking from the very origin of the carbon that makes the color. So where does that blue come from?",
+      "journey": {
+        "eyebrow": "01 / FOLLOW THE CARBON",
+        "title": "The same blue. A different carbon journey.",
+        "body": "The molecule that gives indigo its blue contains carbon, too. Follow the route to see where that carbon came from.",
+        "guide": "Start from the origin of the carbon and follow both routes in the same order.",
+        "order": "Feedstock → Production → Indigo · Denim → After use",
+        "legendSolid": "Moves from feedstock to product",
+        "legendDashed": "Emission and re-absorption depending on treatment and growth conditions",
+        "legendNote": "The tree and the facilities are illustrative examples.",
+        "evidenceLink": "Sources"
+      },
+      "routes": [
+        {
+          "eyebrow": "BIO-BASED INDIGO",
+          "title": "Bio-based indigo",
+          "lede": "A new blue made from carbon that plants absorbed.",
+          "chip": "CO₂ absorbed from the air",
+          "steps": [
+            {
+              "label": "01 / Feedstock",
+              "title": "Biomass that grows again",
+              "text": "Carbon that plants absorbed through photosynthesis is held in the feedstock.",
+              "imageAlt": "Illustration of a tree with green leaves and grass: an example of plant biomass"
+            },
+            {
+              "label": "02 / Production",
+              "title": "Microbial fermentation",
+              "text": "Microorganisms convert biomass-derived feedstock into indigo.",
+              "imageAlt": "Illustration of a fermenter producing indigo with culture broth and microorganisms",
+              "note": "Some CO₂ is also released during fermentation"
+            },
+            {
+              "label": "03 / Product",
+              "title": "Indigo, and denim",
+              "text": "Carbon from biomass ends up in the blue of the denim.",
+              "imageAlt": "Illustration of blue indigo powder and folded jeans"
+            },
+            {
+              "label": "04 / After use",
+              "title": "Some returns to the air",
+              "text": "When it becomes CO₂ through incineration or decomposition, it can return to the atmosphere.",
+              "imageAlt": "Illustration of a cloud representing the atmosphere that carbon returns to when CO₂ is released after use",
+              "note": "Route and timing depend on how it is treated"
+            }
+          ],
+          "loop": "As new plants grow, they can absorb CO₂ again.",
+          "loopSub": "Feedstock linked to the recent biological carbon cycle",
+          "coreLabel": "The heart of this route",
+          "core": "From air to plant, from plant to blue.",
+          "coreSub": "It uses carbon from renewable feedstock."
+        },
+        {
+          "eyebrow": "FOSSIL-BASED INDIGO",
+          "title": "Petrochemical synthetic indigo",
+          "lede": "Carbon stored underground for ages is extracted and used as the raw material for blue.",
+          "steps": [
+            {
+              "label": "01 / Feedstock",
+              "title": "Oil stored underground",
+              "text": "Fossil carbon stored over long geological time is extracted.",
+              "imageAlt": "Illustration of a pumpjack lifting oil from underground strata, with an oil drum"
+            },
+            {
+              "label": "02 / Production",
+              "title": "Chemical synthesis from petroleum feedstock",
+              "text": "Petroleum-derived feedstock is converted into indigo by chemical processes.",
+              "imageAlt": "Illustration of a chemical plant converting petroleum feedstock into indigo"
+            },
+            {
+              "label": "03 / Product",
+              "title": "Indigo, and denim",
+              "text": "Carbon from oil ends up in the blue of the denim.",
+              "imageAlt": "Illustration of blue indigo powder and folded jeans"
+            },
+            {
+              "label": "04 / After use",
+              "title": "Emitted into the atmosphere",
+              "text": "When released as CO₂, underground carbon moves into the atmosphere and biosphere.",
+              "imageAlt": "Illustration of a cloud representing the atmosphere that underground carbon moves into when released as CO₂",
+              "note": "Not all product carbon is released immediately"
+            }
+          ],
+          "loop": "Oil is not replenished at the pace we use it.",
+          "loopSub": "Even if emitted carbon is absorbed by plants, the underground oil reservoir is not refilled right away.",
+          "coreLabel": "The heart of this route",
+          "core": "From carbon stored underground to blue.",
+          "coreSub": "When emitted, long-stored carbon enters the atmosphere."
+        }
+      ],
+      "footnote": "A simplified concept diagram of feedstock carbon flows. The tree symbolizes plant biomass and does not identify actual Blugene feedstock or facilities. Both routes can produce emissions from production energy, refining and transport. Dashed lines show possible routes; they do not mean full recovery, complete biodegradability, immediate re-absorption or carbon neutrality.",
+      "origin": {
+        "eyebrow": "02 / WHY THE ORIGIN MATTERS",
+        "title": "The carbon is the same. The timescale is not.",
+        "body": "The difference lies not in the nature of CO₂ but in the reservoir the carbon is taken from, and how long it takes to refill.",
+        "items": [
+          {
+            "label": "Oil-based carbon",
+            "title": "Carbon stored for ages",
+            "text": "Carbon stored underground over long ages is extracted and used. Oil is not replenished at the pace we use it.",
+            "tags": [
+              "Stored over geological time",
+              "Extraction · use"
+            ]
+          },
+          {
+            "label": "Bio-based carbon",
+            "title": "Carbon from a resource that grows again",
+            "text": "It uses carbon that plants recently absorbed from the air. When biomass is regenerated, carbon uptake can continue as new plants grow.",
+            "tags": [
+              "Growth · uptake",
+              "Use · regeneration"
+            ]
+          }
+        ],
+        "closing": "What Blugene sets out to change is the origin of the carbon that makes the blue."
+      },
+      "evidence": {
+        "eyebrow": "03 / A CLEARER BLUE",
+        "title": "A good explanation needs clear evidence.",
+        "body": "Where the feedstock came from and how much it affects the environment are two different questions.",
+        "items": [
+          {
+            "label": "Origin of the carbon",
+            "title": "“Is it bio-based?”",
+            "text": "Radiocarbon analysis such as ASTM D6866 can determine the share of bio-based carbon in the organic carbon of a sample.",
+            "tag": "Biobased carbon content test"
+          },
+          {
+            "label": "Life-cycle impact",
+            "title": "“How much were carbon emissions reduced?”",
+            "text": "Every process and energy input within the comparison boundary, from feedstock cultivation to production, transport and disposal, must be counted together. A life cycle assessment (LCA) answers this question.",
+            "tag": "LCA comparison of the same function and scope"
+          }
+        ],
+        "calloutTitle": "Being bio-based does not automatically mean carbon neutral.",
+        "calloutBody": "Using feedstock from the carbon cycle is not the same as a product having zero net emissions. This section explains the feedstock route and does not present emission reduction figures for products. Blugene’s biobased carbon content test results are on the <link>Data · Certifications page</link>, together with the laboratory, method and report number."
+      },
+      "faq": {
+        "eyebrow": "A FEW GOOD QUESTIONS",
+        "title": "Questions from people who love denim.",
+        "items": [
+          {
+            "question": "Why is fermentation linked to the carbon cycle?",
+            "answers": [
+              "The origin of the feedstock matters more than the fermentation itself. The carbon in biomass was made by plants absorbing CO₂ from the atmosphere. Because microorganisms convert this carbon into indigo, the feedstock is linked to the recent biological carbon cycle.",
+              "Fermentation needs energy and can also release CO₂. So the fact that something was made by fermentation does not by itself bring total emissions to zero."
+            ]
+          },
+          {
+            "question": "Does wearing jeans reduce carbon?",
+            "answers": [
+              "Wearing jeans does not itself remove carbon from the air. The change described here is switching the feedstock carbon of the indigo dye from oil-based to biomass-based. The environmental impact of a finished pair of jeans also depends on cotton cultivation, weaving, dyeing, laundering and more."
+            ]
+          },
+          {
+            "question": "Does the carbon in clothing all return to nature in the end?",
+            "answers": [
+              "The route and the pace depend on how it is actually treated: reuse, recycling, incineration or landfill. The cycle arrow shows the concept that carbon can be released as CO₂ and re-absorbed by plants. It does not mean that clothing or dye is fully biodegradable, compostable or entirely recoverable."
+            ]
+          },
+          {
+            "question": "What does a “biobased carbon content” figure mean?",
+            "answers": [
+              "Biobased carbon content by the ASTM D6866 method is the share of bio-based carbon in the organic carbon of the tested sample. It does not mean dye purity, the share of plant feedstock in the total mass of the product, or a reduction in carbon emissions.",
+              "When checking a real product, look at the test subject and method, the sample and batch, the laboratory and the result together. Blugene’s measured value (98%, pMC 97.73) is on the Data · Certifications page with the laboratory, method and report number."
+            ]
+          },
+          {
+            "question": "Is bio indigo a natural dye extracted from plants?",
+            "answers": [
+              "Blugene’s approach converts biomass into indigo through microbial fermentation. It differs from traditional natural indigo production, which extracts pigment from leaves such as Persicaria tinctoria. “Bio-based” describes the origin of the carbon that makes the pigment."
+            ]
+          }
+        ]
+      },
+      "closing": {
+        "eyebrow": "FOR THE DENIM WE LOVE.",
+        "text": "A blue to love for a long time. Renewed from the very beginning."
+      },
+      "sources": {
+        "summary": "Sources behind this story",
+        "introStrong": "Explanations grounded in literature and standards",
+        "introText": "The distinction between the biological carbon cycle and fossil carbon, and between biobased carbon content testing and life cycle assessment.",
+        "items": [
+          {
+            "title": "NASA Earth Observatory — The Carbon Cycle",
+            "note": "Photosynthesis, the fast and slow carbon cycles, and fossil carbon entering the atmosphere."
+          },
+          {
+            "title": "ASTM D6866 — Determining biobased content by radiocarbon analysis",
+            "note": "The test assesses the biological origin of carbon; it does not directly measure greenhouse gas reductions."
+          },
+          {
+            "title": "GHG Protocol — Product Life Cycle Standard",
+            "note": "Principles for quantifying the greenhouse gas impact of a product from a life-cycle perspective."
+          },
+          {
+            "title": "USDA BioPreferred — Frequently asked questions",
+            "note": "What content based on organic carbon means, as distinct from environmental impact or performance evaluation."
+          }
+        ],
+        "processStrong": "About the Blugene process",
+        "processText": "Compiled from brand-provided information that indigo is produced by fermenting biomass. The diagrams are edited to aid understanding and do not represent actual mass balances or emissions.",
+        "externalLinkHint": "Opens in a new window"
+      }
+    },
+    "processTitle": "From feedstock to fabric",
+    "impurityTitle": "Why we check for aniline",
+    "impurityBody": "Aniline and N-methylaniline are starting materials or intermediates in chemical synthesis routes, and they can remain as unreacted residues in the final indigo powder. Because of their toxicity and possible carcinogenicity, a number of certification standards limit the permitted concentration in textile dyes and in finished products.",
+    "cta": "See all the test data",
+    "routeOursLabel": "Our route · Blugene",
+    "routesFigureBridge": "This catalogue diagram lays out the four routes above on a single sheet. The figure follows the same order as the cards."
+  },
+  "DyeingPrinting": {
+    "metaTitle": "Dyeing & Printing",
+    "metaDescription": "A comparison of cotton, silk and cashmere dyeing, colorfastness test results, shade swatches by concentration, and the powder and digital printing ink.",
+    "heroEyebrow": "DYEING & PRINTING",
+    "heroTitle": "Color, confirmed on the fabric itself.",
+    "heroBody": "Dyeability and colorfastness, shade and product form. We show the data obtained on real fabric exactly as it stands.",
+    "cta": "Request a fabric sample",
+    "jumpNavLabel": "Move within this page",
+    "jumpNav": [
+      "Dyeing properties",
+      "Colorfastness",
+      "Color library",
+      "Product group",
+      "Printing"
+    ]
+  },
+  "Tech": {
+    "title": "Blugene, an indigo made by microbial fermentation",
+    "description": "How the bio indigo of Blugene by CutisBio is made, and how it has been confirmed by testing.",
+    "intro": "Blue denim is the most loved of fabrics. There is more than one way to make its color. CutisBio produces indigo using the biosynthetic pathways of microorganisms together with fermentation.",
+    "section1Title": "1. Why we check for impurities",
+    "section1Text": "Aniline and N-methylaniline are starting materials or intermediates for chemically synthesized indigo, and they can remain as unreacted residues in the final powder. Because of their toxicity and possible carcinogenicity, certification standards including ZDHC, OEKO-TEX and GOTS limit the permitted concentration of these substances in textile dyes and in finished products. That is why we analyze both substances for each product and publish the results together with the detection limit.",
+    "comparisonCaption": "This description does not exceed the scope stated on p.4 of the catalog (starting materials, intermediates, toxicity, carcinogenic potential).",
+    "section2Title": "2. Indigo made by microbial fermentation",
+    "section2Text": "CutisBio uses a fermentation process that draws on the biosynthetic pathways of microorganisms to convert tryptophan obtained from biomass into indigo. Of the four indigo synthesis routes presented in the catalogue, this is the microbial route.",
+    "section3Title": "3. What the tests confirmed",
+    "section3Text": "In KATRI's ASTM D6866-24a Method B test, biobased carbon content was measured at 98% (pMC 97.73), and in KOTERI's KS K 0734 2019 test aniline and N-methylaniline were not detected (method detection limit 5 mg/kg). According to the catalogue, colorfastness is at a level comparable to plant and chemical indigo, and the grade for each item can be seen exactly as recorded in the tables on the data page.",
+    "certSectionTitle": "Global certifications",
+    "certSectionText": "The certificates included in the provided catalog. You can check the originals as is.",
+    "faqTitle": "Frequently asked questions",
+    "faqList": [
+      {
+        "question": "What is Blugene?",
+        "answer": "Blugene is the brand name of the bio indigo that CutisBio Co., Ltd. produces by microbial fermentation. In the catalogue and the certificates it is recorded under its original product name, “Bio Indigo Dye Powder (Microbial Fermentation)”."
+      },
+      {
+        "question": "What does “98% biobased carbon content” mean?",
+        "answer": "It means that 98% of the carbon in the product comes from renewable feedstock. It is the result of KATRI's ASTM D6866-24a Method B (AMS) test (pMC 97.73, report SBED25-00000153-1, 2025-05-22), and it is not indigo purity or a carbon emissions reduction rate."
+      },
+      {
+        "question": "Does “aniline not detected” mean the content is 0?",
+        "answer": "No. It means that in KOTERI's KS K 0734 2019 test the result was below the method detection limit of 5 mg/kg and so was not detected (report 2025-0604-1132-C03, 2025-06-10). It does not mean 0 ppm or the complete absence of the substance."
+      },
+      {
+        "question": "Can it be used on existing dyeing equipment as it is?",
+        "answer": "The catalogue records comparable performance to plant and chemical indigo in the dyeing of cotton, silk and cashmere. Results can vary with the mill, the fabric and the process conditions, so we recommend confirming actual application with a fabric sample."
+      },
+      {
+        "question": "Which products do the certifications apply to?",
+        "answer": "The product named on the certificates is “CB Bio Indigo Dye Powder”. The product list for OEKO-TEX ECO PASSPORT is in an enclosure to the certificate, so the scope cannot be determined from the catalogue alone. Digital printing ink and finished denim garments are not automatically certified."
+      }
+    ],
+    "structuresTitle": "Chemical structures of aniline and N-methylaniline",
+    "structuresNote": "Skeletal formulae drawn directly in code (SVG) from verified chemical structures. They were not produced with an image generation tool.",
+    "structureAnilineName": "Aniline",
+    "structureAnilineDesc": "A skeletal formula showing a benzene ring with a single amino group (NH2).",
+    "structureNMethylanilineName": "N-methylaniline",
+    "structureNMethylanilineDesc": "A skeletal formula showing a benzene ring bonded to a nitrogen that carries one hydrogen and a methyl group (CH3)."
   },
   "About": {
-    "title": "Designing a more beautiful everyday life with synthetic biology",
+    "title": "Designing everyday life to be healthier and more beautiful through synthetic biology",
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "Expanding the sustainability of everyday life by mass-producing high-performance biomaterials with synthetic biology technology.",
-    "aboutImageAlt": "In-depth bio research view by CutisBio researchers",
-    "coreBusinessTitle": "Developing Leading Bio-based Specialty Materials",
-    "medicalTitle": "Medical",
-    "medicalText": "Development of pharmaceutical raw materials possible only through bioprocesses.",
+    "visionText": "Our vision is to become a global pioneer in innovative biomaterials that make human life more beautiful and healthier. Blugene bio indigo dye is a biomaterial created to reinvent denim and jeans, loved in common by all of humanity for so long, and to raise both human health and the sustainability of the global environment.",
+    "aboutImageAlt": "CutisBio researchers engaged in in-depth bio research",
+    "coreBusinessTitle": "Core business areas",
+    "healthTitle": "Health",
+    "healthText": "We use synthetic biology to create substances essential to a healthy everyday life and to longevity.",
     "beautyTitle": "Beauty",
-    "beautyText": "Development of precision beauty solutions and high value-added materials/products converging skin microbiome big data and synthetic biology.",
-    "fashionTitle": "Fashion",
-    "fashionText": "Completion of human-safe and eco-friendly denim fashion through the commercialization of 100% non-toxic, aniline-free 'Bio-Indigo'.",
-    "historyTitle": "Key Milestones and Achievements",
+    "beautyText": "We develop substances and products for managing the aging of skin and hair.",
+    "fashionTitle": "Fashion (Blugene)",
+    "fashionText": "We supply bio indigo produced by microbial fermentation for denim dyeing and digital printing.",
+    "historyTitle": "History",
     "historyList": [
+      {
+        "year": "2025",
+        "event": "Completed dyeing validation of the bio-based indigo dye with multiple global premium denim companies"
+      },
       {
         "year": "2024",
         "event": "Established massive production system for Bio-Indigo bio dye and initiated full-scale commercialization"
@@ -78,125 +746,107 @@
         "year": "2020",
         "event": "CutisBio Co., Ltd. established"
       }
-    ]
+    ],
+    "blugeneNoteTitle": "About this site",
+    "corporateSiteCta": "Go to the official CutisBio corporate website",
+    "corporateSiteNewTab": "opens in a new window",
+    "metaDescription": "CutisBio engineers the biosynthetic capability of microorganisms to make industrial materials. An overview of our business areas, including the bio indigo brand Blugene, and our history."
   },
-  "Tech": {
-    "title": "Sustainable Denim Dyeing through Microbial Fermentation",
-    "description": "Introducing the background of CutisBio's Aniline-free indigo dye development and the future of eco-friendly denim fashion.",
-    "intro": "The most loved fashion item, 'Blue Denim'. However, behind its beautiful color lurked 'aniline', a petrochemical-derived substance that threatens health and the environment. CutisBio fundamentally solves this problem using microbes.",
-    "section1Title": "1. The Absolute Necessity of Being Aniline-Free",
-    "section1Text": "Aniline is a hazardous substance classified as a potential carcinogen by the International Agency for Research on Cancer (IARC) under the WHO. It is indiscriminately discharged into water resources during denim production, destroying ecosystems and adversely affecting end consumers who have long-term skin contact.",
-    "comparisonImageAlt": "Infographic showing Aniline and Methylaniline chemical structures and the risks of dermatitis and bladder cancer",
-    "comparisonCaption": "Chemical structures of Aniline and Methylaniline, and their critical human health threats including contact dermatitis and bladder cancer.",
-    "section2Title": "2. CutisBio's Innovation: Turning Microbes into Factories",
-    "section2Text": "Nature had the answer. Using advanced synthetic biology technology, we endowed special microbes with metabolic pathways similar to plants. These microbes produce indigo precursors on their own, fundamentally blocking the use of fatal chemicals like aniline.",
-    "section3Title": "3. A 'Drop-in' Solution Without Compromising Quality",
-    "section3Text": "Being eco-friendly doesn't mean compromising on quality. CutisBio's bio-indigo takes a 'Drop-in' form that can be immediately introduced without modifying the infrastructure of existing dyeing factories. It perfectly replicates the same color depth (Shade) and rubbing fastness as conventional chemical dyes.",
-    "certSectionTitle": "Global Sustainability Certifications",
-    "certSectionText": "We are proud to announce the completion of world-class certifications for various aspects of sustainability, environmental friendliness, and human safety.",
-    "certOkbiobased": "OK biobased Certification Mark",
-    "certBioPreferred": "USDA BioPreferred Certification Mark",
-    "certOekoTex": "OEKO-TEX Eco Passport Certification Mark",
-    "certZdhc": "ZDHC Certification Mark",
-    "faqTitle": "Frequently Asked Questions (FAQ)",
-    "faqList": [
-      {
-        "question": "What are the problems with traditional indigo dyeing?",
-        "answer": "Conventional synthetic indigo dyes are produced using petrochemicals such as aniline and hydrogen cyanide. This causes severe water pollution and poses health threats to workers and end consumers."
-      },
-      {
-        "question": "What is microbial fermentation-based indigo dye?",
-        "answer": "CutisBio's technology uses specially engineered microbes to produce indigo precursors through a natural fermentation process. By using biological mechanisms instead of chemical synthesis, we create 100% aniline-free dye."
-      },
-      {
-        "question": "Is there any difference in conventional garment quality?",
-        "answer": "No. It achieves equal or superior quality, color depth, and washing/rubbing fastness compared to traditional indigo denim dyeing. We have achieved perfect sustainability without compromising quality."
-      }
-    ]
+  "Blog": {
+    "eyebrow": "INSIGHTS & TECHNOLOGY",
+    "title": "Blog",
+    "description": "In-depth articles on the synthetic biology technology of CutisBio and on sustainable fashion.",
+    "categoryTech": "Technology",
+    "readMore": "Read more",
+    "readTime": "{minutes} min read"
+  },
+  "Contact": {
+    "title": "Contact",
+    "description": "We accept inquiries about samples, technical information, and certifications of Blugene bio indigo.",
+    "addressDetail": "8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
+    "mapTitle": "How to find us"
+  },
+  "NotFound": {
+    "title": "We couldn't find that page.",
+    "body": "The address may have changed or the page may have been removed. Try one of the sections below.",
+    "backHome": "Go to home"
   },
   "News": {
     "title": "CutisBio Newsroom",
-    "description": "Check out the latest news on eco-friendly fashion driven by synthetic biology.",
+    "description": "Check out the latest in eco-friendly fashion created through synthetic biology.",
+    "categoryVideo": "Video",
+    "categoryPost": "News",
+    "playVideo": "Play Video",
     "articles": [
       {
         "date": "2025-11-19",
-        "category": "press release",
-        "title": "S Skin Co., Ltd. and CutisBio signed an MOU to commercialize fusion polypeptide materials for skin boosters",
-        "summary": "S-Skin Co., Ltd. and CutisBio signed an MOU to commercialize fusion polypeptide materials for skin boosters. cncnews.co.kr",
+        "category": "Press release",
+        "title": "S-Skin Co., Ltd. × CutisBio, MOU for Commercialization of Skin Booster Fusion Polypeptide Material",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBBb2F5Sjh2MlYtZVBQaThpM3N1dEYtLUhNaGFhTlVVWTJMcHc1RnN6SU9aVUhmNjVBbWtDemtGVEg5M0dLTm1lUncyRWV0WXhuRFdub1FndHlGSE1FNUNBZXR0NDg?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBBb2F5Sjh2MlYtZVBQaThpM3N1dEYtLUhNaGFhTlVVWTJMcHc1RnN6SU9aVUhmNjVBbWtDemtGVEg5M0dLTm1lUncyRWV0WXhuRFdub1FndHlGSE1FNUNBZXR0NDg?oc=5",
+        "sourceTitle": "㈜에스스킨×큐티스바이오, 스킨부스터용 융합폴리펩타이드 소재 사업화 MOU 체결",
+        "sourceSummary": ""
       },
       {
         "date": "2025-11-19",
-        "category": "press release",
-        "title": "S-Skin Co., Ltd. × CutisBio MOU... Collaboration on commercialization of fusion polypeptide material for skin booster",
-        "summary": "S-Skin Co., Ltd.",
+        "category": "Press release",
+        "title": "S-Skin Co., Ltd. × CutisBio MOU... Collaboration on Commercialization of Skin Booster Fusion Polypeptide Material",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UZFRlVjlLNjVfbkxkNFYyOTJlTThaRDdUQmVQdWxPeVFDVnJoZGFSWE80OWdiSG9yZzJJMzhpLVBVUmtHQmtIVTBRazE2WVRGSHBXN1cteU41eVFrQVg0WjQydw?oc=5"
-      },
-      {
-        "date": "2025-05-06",
-        "category": "press release",
-        "title": "[Contribution] \"Synthetic biology and advanced biomanufacturing demonstration hub must be established first.\"",
-        "summary": "[Contribution] \"Synthetic biology and advanced biomanufacturing demonstration hub must be established first\" ​ zdnet.co.kr",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5xeC1RWVJiSmJtZjh4NExKR2xzN29hQUdNXzZNYmNWRGI5MG1JWHFORDFPcGY1dlBvNU84TmI0T254cUh4QkhmbWs5cEwxRUdydnJ4XzlR?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UZFRlVjlLNjVfbkxkNFYyOTJlTThaRDdUQmVQdWxPeVFDVnJoZGFSWE80OWdiSG9yZzJJMzhpLVBVUmtHQmtIVTBRazE2WVRGSHBXN1cteU41eVFrQVg0WjQydw?oc=5",
+        "sourceTitle": "(주)에스스킨 × 큐티스바이오 MOU... 스킨부스터용 융합폴리펩타이드 소재 사업화 협업",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-27",
-        "category": "press release",
-        "title": "‘Standardization and commercialization’ of indigo dyeing",
-        "summary": "‘Standardization and commercialization’ of indigo dyeing TIN News",
+        "category": "Press release",
+        "title": "'Standardization and Commercialization' of Indigo Dyeing",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8yZTRHUWFXU2dMdHp0WS1PMTVNcmQxX2ZmMDR5M2MwQzlQMTc3YkFOMEpZNkdvX3JmaFhBb1FsSnVSZ21Vemc?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8yZTRHUWFXU2dMdHp0WS1PMTVNcmQxX2ZmMDR5M2MwQzlQMTc3YkFOMEpZNkdvX3JmaFhBb1FsSnVSZ21Vemc?oc=5",
+        "sourceTitle": "인디고 염색의 ‘표준화 및 상용화’",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2024-08-21",
+        "category": "Press release",
+        "title": "From Recycled Yarn Development to Eco-friendly Dyeing... The Fashion Industry Bets on 'Eco-friendly Management'",
+        "summary": "",
+        "thumbnailAlt": "News thumbnail",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9WU1FJWW92UEpSX09GTkpMZTRVNjlKblpXVGRiRXV5Ull2WUdoVFNIOEx1cTBGeV9RNlRWTHJIb0NlbHNTems0c3psczU3QXV5MXg1R3k2cDJGYTVnZHNaNTRucmpVaGJBemktV0g2bTbSAXRBVV95cUxOZmhEdFFGaUxvemlfMkR5LTNZOUVad0hOZlM1Q3JCeWRlWW9ZT3k0V3NaTi1fbEVXUlF2MXlMLUVXMkhMeGhNOUFzN09qa1BKdDB6TXpzN25nLUdRdUthQ2k1WlNuZ0VsckFwSGRNLUpSSWNtcg?oc=5",
+        "sourceTitle": "리사이클 원사 개발부터 친환경 염색까지...패션업계 '친환경 경영' 승부",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-20",
-        "category": "press release",
-        "title": "Kolon FnC Le Cashmere unveils eco-friendly dyeing method at Preview in Seoul",
-        "summary": "Kolon FnC Le Cashmere unveils eco-friendly dyeing method at Preview in Seoul Yonhap News",
+        "category": "Press release",
+        "title": "Kolon FnC ReCashmere Unveils Eco-friendly Dyeing Method at Preview in Seoul",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9WUFAwR09kREVwYWJ5WEZwSjdmVDhYd216OU1tc09rNldONW81b0pQeUZYNWYzeDBXQWItRjRWUWotdDdfWDVtQS1ZM0hwX1pYNWNmeFpBakE3Z3PSAWBBVV95cUxNMnI2QVhYNGtnbUN6WmZZaWRkWGMyd2JGUGs3TTVKYkVQdlM3VFdiWm5UOUNDc2dxOE1DU28tdW5Ud0RWLTBxN1BfZ3hEX0NRQ3hlWTg1NHoyUVZ6cmVRWmQ?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9WUFAwR09kREVwYWJ5WEZwSjdmVDhYd216OU1tc09rNldONW81b0pQeUZYNWYzeDBXQWItRjRWUWotdDdfWDVtQS1ZM0hwX1pYNWNmeFpBakE3Z3PSAWBBVV95cUxNMnI2QVhYNGtnbUN6WmZZaWRkWGMyd2JGUGs3TTVKYkVQdlM3VFdiWm5UOUNDc2dxOE1DU28tdW5Ud0RWLTBxN1BfZ3hEX0NRQ3hlWTg1NHoyUVZ6cmVRWmQ?oc=5",
+        "sourceTitle": "코오롱FnC 르캐시미어, 프리뷰 인 서울서 친환경 염색공법 공개",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-20",
-        "category": "press release",
-        "title": "Kolon FnC Le Cashmere presents eco-friendly dyeing products at Preview in Seoul",
-        "summary": "Kolon FnC Le Cashmere presents eco-friendly dyeing products at Preview in Seoul Smart Today",
+        "category": "Press release",
+        "title": "ReCashmere Draws Attention at Preview In Seoul 2024 with Eco-friendly Dyeing 'Aqua Indigo'",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5fZ1h1N0xZTjJIOWJQQWZJQVFHenRaU2JGOTdwWVc5Y2k3eGNEcEF6bjJ6ajRQTkVpS3BldHVXR21qaVh2ZWQxci1kSW9GMno0WEpxc2ZoaXVSd0VnVXc?oc=5"
-      },
-      {
-        "date": "2024-08-20",
-        "category": "press release",
-        "title": "Kolon FnC's 'Le Cashmere' unveils a large number of eco-friendly dyeing method products at 'Preview in Seoul'",
-        "summary": "Kolon FnC's 'Le Cashmere' unveils a large number of eco-friendly dyeing products at 'Preview in Seoul' ​ newsquest.co.kr",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5PSnJGX2pPbTlRM2JMVEZMcmdvY0lXTUFNUmpDSDQ2UkxZQ29fSU96ZWRqZGJWY0Z3eTlsRDVrMzBYZ2hJaUpDbzBSa0l1Yk9mR1k4dEJzYTFxR2hCa0Jodnh5NGx0RWs2X3hJeS14SdIBc0FVX3lxTE5VQkVXRVhFTjVXX3lpbmNkVEdPdkdkSmV0VEhvYU5GNFBnRHlSSy1kemxVbWNTTlZmUGY3QkgtdjVCeEN5ZXRBXzR4YTBXeVdwMFVvOFRHQVFzTmU5azlkcEhCZDFMeU1HS3k5Q1VLYkgyTVE?oc=5"
-      },
-      {
-        "date": "2024-08-20",
-        "category": "press release",
-        "title": "Le Cashmere announces eco-friendly dyeing method",
-        "summary": "Le Cashmere announces eco-friendly dyeing method TIN News",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1UT2h6V1FnaGdDaTB0amwzT1N1Q2NtWjJvZ3hienpSZldNZ2FyMVVOTzk5cUppaXJ6aDl6MlBJZ0RqeHBJTHc?oc=5"
-      },
-      {
-        "date": "2024-08-20",
-        "category": "press release",
-        "title": "Kolon FnC Le Cashmere participates in ‘Preview in Seoul 2024’",
-        "summary": "Kolon FnC Le Cashmere participates in ‘Preview in Seoul 2024’ Seoul Finance",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NTzhvY3Uwck9aVmF6bVJXLWhGN0ZCc1gzR2RyMDB0ZlU2Y2hRbHEzOFN0SnJzQ2wtOW9LTEEwanVZajBVc2ZUb1hxLUZPbWNhNDAtd05mdEh1UFZPaTNTS0cwLWh5ZWMxemc?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9rOUdjSzJRUmFOR2tJMjJvampzU3Y4Y2lfbUdCa1hxM2Y5QlhfelREbXNMbGhncDFfc0U3T21LZDZyOFJSU3hIV2dOX2NZclk5OFlLZE9FdzBhdFo0TnBDajU0TS1ENDViQlBUUm5hTkZzTGJMeS1F?oc=5",
+        "sourceTitle": "르캐시미어, 친환경 염색 '아쿠아인디고'로 프리뷰인서울 2024 참가 눈길",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-14",
-        "category": "press release",
-        "title": "Indigo natural dyeing advances the sustainable, eco-friendly fashion industry",
-        "summary": "Indigo natural dyeing advances sustainable, eco-friendly fashion industry ​Korea Textile News",
+        "category": "Press release",
+        "title": "Natural Indigo Dyeing Speeds Up Sustainable Eco-friendly Fashion Industry",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4ZDFhTmVpd1pZWUxWanFfY0g1c3B6QXRIQ29zRDgzOW4tX2xlVGlnYW1xM2xOdnh6S3VPd1hIa2VoRzgtaGFuWnE0NkRHRmxuSThEOHk3TXNNNG5zN2I0VFhNWE4zX21y?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4ZDFhTmVpd1pZWUxWanFfY0g1c3B6QXRIQ29zRDgzOW4tX2xlVGlnYW1xM2xOdnh6S3VPd1hIa2VoRzgtaGFuWnE0NkRHRmxuSThEOHk3TXNNNG5zN2I0VFhNWE4zX21y?oc=5",
+        "sourceTitle": "쪽빛 천연염색, 지속가능 친환경 패션산업 앞당긴다",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-12",
@@ -204,344 +854,151 @@
         "title": "CutisBio develops eco-friendly bio indigo dyeing method ‘Aqua Indigo’",
         "summary": "We entered the eco-friendly fashion material market by developing 'AquaIndigo', which implements indigo dyeing through microbial fermentation using synthetic biology technology.",
         "thumbnailAlt": "AquaIndigo thumbnail",
-        "link": "https://www.tinnews.co.kr/26601"
+        "link": "https://www.tinnews.co.kr/26601",
+        "sourceTitle": "큐티스바이오, 친환경 바이오 인디고 염색법 '아쿠아인디고' 개발",
+        "sourceSummary": "합성생물학 기술을 활용해 미생물 발효로 인디고 염색법을 구현한 '아쿠아인디고(AquaIndigo)'를 개발하여 친환경 패션 소재 시장에 진출했습니다."
       },
       {
-        "date": "2024-08-07",
-        "category": "press release",
-        "title": "Green pharmaceuticals and innovative synthesis technologies in the pharmaceutical industry",
-        "summary": "Eco-friendly pharmaceuticals and innovative synthesis technology in the pharmaceutical industry High News",
+        "date": "2023-12-18",
+        "category": "Press release",
+        "title": "The Space Promoting Sustainable Fashion 'Circular Library'",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBfakdzSFFzSDFTRVVCekU0UVJSQllTc2w2MlRFNjdaZDdtVDJRX2RfTjQtMXdwS3MxRE5pV3N6VlJpNHhNdUZlbUxnbW9VcHc1S1lMT0Rqdjk5WFZIVzVjaW54RDFtU3BTNDl0UU5HTjljYkg3RHR3?oc=5"
-      },
-      {
-        "date": "2024-07-31",
-        "category": "press release",
-        "title": "[Easy Science] Traditional culture reborn through science and technology, dreaming of taking a digital leap forward",
-        "summary": "[Easy Science] Traditional culture reborn through science and technology, dreaming of taking a leap forward into digital life Yonhap News",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hYkF4NW9WUkYyWmlUSXJhTUlkM3ozQzlNSHBVdlpDRVFxNW9STVZ4ZjgxOGwtUl9NY010MEVaY3FVeDRMTHNKWkxFaDVLVVJUTklBZU1weHJSWW_SAWBBVV95cUxNcjNoZ19ZSU0wZnhFaVhjcWlsdUV6dnl2WENvQkFfWURYSDJMNFhXN1pPOW1DNnNBcVdLN2E1QXUtV244d2VHV21GaURoazloTlMzUGpwUGR2aGtzYXBIZEs?oc=5"
-      },
-      {
-        "date": "2024-05-13",
-        "category": "press release",
-        "title": "‘K traditional culture’ that even Western luxury goods reach out to… High value-added industrialization is the answer",
-        "summary": "‘K traditional culture’ that even Western luxury goods reach out to… High value-added industrialization is the answer Seoul Newspaper",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE93T011Wk1sSEJIUWw5T1dNNk5HVTctLXJtLUs1RnBaQzF2N0RGb1BxZXBCS2Q5Smg0VF9WR0VqNnVUd2hsblk3Ti1EODN6RHg1RTFrRjlqWVBMd194ZktiNThOaXFOY0NFYi1wSE9idWVYQ21PN2NXQkwzSHVqZw?oc=5"
-      },
-      {
-        "date": "2024-03-26",
-        "category": "press release",
-        "title": "“Chungbuk will become a leading base for the high-tech bio industry.”",
-        "summary": "尹 “Chungbuk will become a leading base for the high-tech bio industry” SPN Seoul Pyongyang News",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE03c0JuNkdLNkE2MFlNNWtQbjNTS2FpRWxVU0MybDVKLWlmckNnbXpNY0ZPVGxOemtlUDNIaWEwMmNISk15X0RpWkVwSno4UzlkWm43b00tR0FuR3V2NkNfcE5GYWs0NzNoelE?oc=5"
-      },
-      {
-        "date": "2023-12-20",
-        "category": "press release",
-        "title": "Kolon FnC opens sustainable fashion store ‘Circular Library’ in LA",
-        "summary": "Kolon FnC opens sustainable fashion store ‘Circular Library’ in LA Seoul Economic Daily",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9rWGpmR0hKTlNUOHNScXZOd1ZydWs4Y0tnM3FUMzhZc0hwVW8zOWJpanhBNlI4MVhzOVNmMUpySXY5R0xsNVVvd3QwdHV3MXJ5VDVv0gFTQVVfeXFMT2tYamZHSEpOU1Q4c1Jxdk53VnJ1azhjS2czcVQzOFlzSHBVbzM5YmlqeEE2UjgxWHM5U2YxSnJJdjlHTGw1VW93dDB0dXcxcnlUNW8?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE5lcjJ4SDZFaVJuS1RSSkoteFNSQ3kySm44NkdEckpUY2xuMHJ3dEtfVkxtQ0xBZUZkbjhMSHVSZw?oc=5",
+        "sourceTitle": "지속가능패션을 알리는 공간 ‘서큘러 라이브러리’",
+        "sourceSummary": ""
       },
       {
         "date": "2023-10-11",
-        "category": "press release",
-        "title": "Ditec Research Institute, meeting of science and technology and traditional cultural industry, focuses on basic research by being selected as a research foundation project",
-        "summary": "Ditec Research Institute, meeting of science and technology and traditional cultural industry, focusing on basic research through selection as a research foundation project Maeil Shinmun",
+        "category": "Press release",
+        "title": "DyTech Institute, Meeting of Science Technology and Traditional Culture Industry, Focuses on Basic Research Through Foundation Project Selection",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiTWVSY2xJTFp3S0FSem9fWmREdnd3SXk0ZXJFMy1idmJpNnVBUjV5RzlOODZZb2hsMDFZQ2Z4S19JZ29iVDlnVGNabU5lQUJDSUZkSlNMOVJqSE4wYWFSMl9B?oc=5"
-      },
-      {
-        "date": "2023-09-26",
-        "category": "press release",
-        "title": "Hideout opens pop-up store at Avenuel Jamsil branch... Expand contact points with customers",
-        "summary": "Hideout opens pop-up store at Avenuel Jamsil branch... Expanding contact points with customers",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsZFVrU0xVU29jM0l3SERjM0lfUkR3bXI0RWEtNUdrcVZPR1Frb3E5dWR4TE9SSHNseTBfb1RSZXhkS1paUklaR3AxaHFMV3QtelFVc2EycDV5dVg1SzBlWXB1elV6eU3SAWtBVV95cUxOSUx2ZXdwZDNvSm5YUHdqOE4tUnFDTDEyc3RzaE4wbXdESUlfSi10dE8ya01wR1pLYXNjOFRVSzBSS2I3c0dWNm5nNW84ZkEwOGhxazRMN2FNOEZSTTUtamRUUzh1bVZVOTFlYw?oc=5"
-      },
-      {
-        "date": "2023-09-25",
-        "category": "press release",
-        "title": "Biotechnology embraced by large corporations… Even latecomers are ‘sincere’",
-        "summary": "Biotechnology embraced by large corporations… Even latecomers are ‘serious’ Bizworld",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5OUjhKSzBqSTcwZm5ReE9zV1RHR0Z3ZjA3eksyakh4VGdzSjZEa18xbnR0SVFDM21WZk1QTHFpeEF5QmxQUHJ6cGVydXdvbUtHUTFuRkYtaWpBYVFqTWxoc2YxeHNyWnZVYVE?oc=5"
-      },
-      {
-        "date": "2023-09-18",
-        "category": "press release",
-        "title": "Samba, Celltrion, Lotte “We will become the TSMC of bio”… SK, GS, LG, and CJ are challenging new drugs such as gene therapy",
-        "summary": "Samba, Celltrion, Lotte “We will become the TSMC of bio”… SK, GS, LG, and CJ are challenging new drugs such as gene therapy. Chosun Ilbo",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSWoxWC1JOXU4ZFg4RWM4Tm9nM3VsUUxPTmVmRV9sQ0EyUHVaeUZ3Y1pNRDE0c1BqV1hvZzhmWHpUZV9ZMjhmUDZJRWZvdEN1dmswTzA1YVJGUWZIVC1ud1lMbGpqYnNJbGpuUkdFUUd6TmwzdDBEUDhJTFFLa2xCRWE5UQ?oc=5"
-      },
-      {
-        "date": "2023-09-11",
-        "category": "press release",
-        "title": "Le Cashmere, leaps to the forefront of ‘circular fashion’ with its 10th anniversary brand renewal! : Press Release │ News Room",
-        "summary": "Le Cashmere, leaps to the forefront of ‘circular fashion’ with its 10th anniversary brand renewal! : Press Release │ News Room ​Kolon FnC",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBNWVgxaDdhX1hnRlVQWFVRUWNmWUx1Y1FWdVhBNVVQMFNDREFSV0tnQi05MUJraXBQV2pWN1ZQeFdyTC1laEt3YUh0NA?oc=5"
-      },
-      {
-        "date": "2023-09-11",
-        "category": "press release",
-        "title": "Kolon FnC opens an era of eco-friendly dyeing methods",
-        "summary": "Kolon FnC opens an era of eco-friendly dyeing methods Fashion Insight",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wVjNmLTZZRXJXWG1hekViUWx1clZXRTdCLW5jTTZNTUcwUHVobXNVc3FoeXpYVnB4SmQ2YkNoYVZBa3B0UVIxbWpxV05kcVZ0OEpDWlZ3?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiTWVSY2xJTFp3S0FSem9fWmREdnd3SXk0ZXJFMy1idmJpNnVBUjV5RzlOODZZb2hsMDFZQ2Z4S19JZ29iVDlnVGNabU5lQUJDSUZkSlNMOVJqSE4wYWFSMl9B?oc=5",
+        "sourceTitle": "다이텍연구원, 과학기술과 전통문화산업의 만남, 연구재단 사업 선정으로 기초연구 집중",
+        "sourceSummary": ""
       },
       {
         "date": "2023-09-08",
-        "category": "press release",
-        "title": "KOLON FnC │ KOLON Fashion n Culture",
-        "summary": "KOLON FnC │ KOLON Fashion n Culture ​ KOLON FnC",
+        "category": "Press release",
+        "title": "Kolon FnC Accelerates Eco-friendly Efforts by Partnering with CutisBio",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5jNzZEcHJHelR4eUJtMndXYVlXZUtVTkFDUHBiVzhGSFhPUDlzcENhQk1aVUs5T0VKVEgxMjVZTTAtRUxQMU9GS0pR?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5nSjFFYU1iRXFCbEJDZ1FtSEQ4bTdSZWhOOS1oU3Jsd19nSjB6LThCeVZfUTJhd3J2eGJvWjgtbUlsaDJ6Y0MyMDZiN2d5VlFFRnhQS3VVYWFyd1pmTDEyRTYzcnpDQ00?oc=5",
+        "sourceTitle": "코오롱FnC, 큐티스바이오와 손잡고 친환경 행보 가속",
+        "sourceSummary": ""
       },
       {
         "date": "2023-09-08",
-        "category": "press release",
-        "title": "Kolon FnC commercializes ‘eco-friendly dyeing materials and methods’",
-        "summary": "Kolon FnC commercializes ‘eco-friendly dyeing materials and methods’ Shin-A Ilbo",
+        "category": "Press release",
+        "title": "Kolon FnC and CutisBio Sign MOU for Sustainable Fashion",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBFcDloQmN3LWh4bzZmZEhrcHlWVlBjVGJ3amt3TUJueGJ3TmtFSjRtMHlEZFYyZmhDeklBRHdsRmNkb3JzeDlxUi1fYlpIX0lsWDhQTVoxYVIxeXNDaUhLWkFmNkcyUFlXUlpMNVdQZzA?oc=5"
-      },
-      {
-        "date": "2023-09-08",
-        "category": "press release",
-        "title": "Kolon FnC, MOU with Qtis Bio‧‧‧One step closer to circular fashion",
-        "summary": "Kolon FnC, MOU with Qtis Bio‧‧‧One step closer to circular fashion. The Report",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vX056X0VxZjR5SjdOMi1TLW5RdHlBRENrOU5yZWFUNDF6R2pYVTY3aWU3LTlyckYwckdOT2JBSlVfZkNyajY4M2ROYzVFbW5pSEdBcENfbklRQ1pfRGZkbDhjWHFoY1Q0eUdzS1hn?oc=5"
-      },
-      {
-        "date": "2023-09-04",
-        "category": "press release",
-        "title": "‘Geeks’ from Seoul National University School of Medicine gathered together… ‘Gyeongui Branch’ to grow in size [Geeks]",
-        "summary": "‘Geeks’ from Seoul National University School of Medicine gathered together… ‘Gyeongui Branch’ growing in size [Geeks] ​ Korea Economic Daily",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE93WEZ1N1FTN1ZJYnBhamVWd2dMekkyMUFjbkVlbGo3RmI4aWh4RXpMT2VoTDJqdUNsZlhpRGR1LTIwdFdUcjBkVFpjaHViWklFVWNXVU9oVm1zUQ?oc=5"
-      },
-      {
-        "date": "2023-09-01",
-        "category": "press release",
-        "title": "“More lives can be saved through entrepreneurship” Challenge of graduates of Seoul National University School of Medicine",
-        "summary": "“More lives can be saved through entrepreneurship” Challenge of graduates of Seoul National University Medical School Mobile Hankyung",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaE5vT1Z3ajlUTEh6amRqSHFZZmhlcGxGWW1idVhGNTFNYS03cE85d1VJZTFDWV9LclFkUVRibXZ1VlNmVHJ1YXVTakExS0ROTzRZenRNcUNyYWlibUYyclgzV1VaczFockdtT2w3ODctdm1WMzZVdzdIZHh6YUVnLUp5cmEyMG8?oc=5"
-      },
-      {
-        "date": "2023-08-08",
-        "category": "press release",
-        "title": "GS is serious about bio… Hugel's 2-year report card of acquisition is 'A grade'",
-        "summary": "GS is serious about bio… Hugel's 2-year report card of acquisition is 'A grade'. Theguru",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE52ZkNxN0dHNnp4d011NWVhSWc5TUNjUFhUU3F6cVRyRzhmbWRKRmE2cW5TSXF6Smo0ZUxQUmVXMU02Ym5vSW1IQ0dGQVFqT1FFQ0RyZEpnNUgxVWd2dldGczZB?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vX056X0VxZjR5SjdOMi1TLW5RdHlBRENrOU5yZWFUNDF6R2pYVTY3aWU3LTlyckYwckdOT2JBSlVfZkNyajY4M2ROYzVFbW5pSEdBcENfbklRQ1pfRGZkbDhjWHFoY1Q0eUdzS1hn?oc=5",
+        "sourceTitle": "코오롱FnC, 큐티스바이오와 MOU‧‧‧순환 패션 한 발짝 더",
+        "sourceSummary": ""
       },
       {
         "date": "2023-07-25",
-        "category": "business agreement",
+        "category": "Partnership agreement",
         "title": "CutisBio, Kakao Healthcare, and L’Oreal sign an MOU to develop precision beauty solutions",
-        "summary": "We have entered into a business agreement to develop precision beauty solutions using bioinformatics technology and combine our skin microbiome expertise.",
+        "summary": "We signed a business agreement to develop precision beauty solutions using bioinformatics technology and combined our skin microbiome expertise.",
         "thumbnailAlt": "MOU thumbnail",
-        "link": "https://www.medigatenews.com/news/3760434771"
-      },
-      {
-        "date": "2023-07-04",
-        "category": "press release",
-        "title": "[Medical Bio Bulletin Board] Kakao Healthcare signs MOU with L’Oreal Group to develop precision beauty solutions",
-        "summary": "[Medical Bio Bulletin Board] Kakao Healthcare signs MOU with L’Oréal Group to develop precision beauty solutions | Donga Science",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA2ZHhLYlJQT0NJTVI3aFlBV1JkMGRiakppSWRxZHQyWk9xWlRqbGpfSHRKSWk5X2tsLUJybEtka1ZBUXljRnUweHJ3d1dhMEtFSXU4Nw?oc=5"
+        "link": "https://www.medigatenews.com/news/3760434771",
+        "sourceTitle": "큐티스바이오-카카오헬스케어-로레알, 정밀 뷰티 솔루션 개발 MOU 체결",
+        "sourceSummary": "바이오인포매틱스 기술을 활용한 정밀 뷰티 솔루션 개발 업무협약을 맺고 피부 마이크로바이옴 전문성을 결합합니다."
       },
       {
         "date": "2023-07-03",
-        "category": "press release",
-        "title": "Signed a business agreement with L'Oreal Group, Kakao Healthcare, and Qtis Bio to develop bioinformatics-based precision beauty solutions",
-        "summary": "L'Oréal Group, Kakao Healthcare, and Qtis Bio sign a business agreement to develop bioinformatics-based precision beauty solutions L'Oréal",
+        "category": "Press release",
+        "title": "Kakao Healthcare Collaborates with L'Oréal and CutisBio for Precision Beauty Solutions",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcktqZHZOdEVrMWV4SGwwXzhpY1RfUTRTSjgtUWxhcFd5NDRiTk0zTGU0OHlHVnFWNWJaMFByV2VLOUxMcTljQ2lPWVE0OG5WQnU2YlQwT3dJWERyc3ZneFptbVFaMGFWS25lbDJReWNESEZyZE5NSXJydFg5bTY5cWE5ZlVvOVAzYUVzeGo3T2E4Zw?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE03SDQxRU5tTUwxTlFCS1czNm1LbkRUamt4OGtPdUVHYUlCbThMOTFlYW94ekx0U21LWXgxQXFya01WemEwejVGckpvaDB2VW14Y3FQTFpMODVpLTNQbTBYcWlOLTYyV1BWb3FocHpKbEhET0xUeHFWTlE2UzQ?oc=5",
+        "sourceTitle": "카카오헬스케어, 로레알·큐티스바이오와 정밀 뷰티 솔루션 개발 협력",
+        "sourceSummary": ""
       },
       {
         "date": "2023-07-03",
-        "category": "press release",
-        "title": "Kakao Healthcare, L’Oréal, and CutisBio signed a business agreement to develop precision beauty solutions",
-        "summary": "Kakao Healthcare, L'Oréal, and CutisBio sign a business agreement to develop precision beauty solutions ​ newspim.com",
+        "category": "Press release",
+        "title": "L'Oréal Group, Kakao Healthcare, and CutisBio Sign Agreement to Develop Bioinformatics-based Precision Beauty Solutions",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ZaWJBZDlTckJiWHZ4RzhmMUszN0xRRkdMMHFWd2wwZy1pZGQycjlPdHFKMXZ0ZjJSNjF5ckMwMjROSlJTYjlBcDBHa2FtYU83ckdueWFnR29qM29J?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcktqZHZOdEVrMWV4SGwwXzhpY1RfUTRTSjgtUWxhcFd5NDRiTk0zTGU0OHlHVnFWNWJaMFByV2VLOUxMcTljQ2lPWVE0OG5WQnU2YlQwT3dJWERyc3ZneFptbVFaMGFWS25lbDJReWNESEZyZE5NSXJydFg5bTY5cWE5ZlVvOVAzYUVzeGo3T2E4Zw?oc=5",
+        "sourceTitle": "로레알 그룹, 카카오헬스케어, 큐티스바이오와 바이오인포매틱스 기반 정밀 뷰티 솔루션 개발 업무협약 체결",
+        "sourceSummary": ""
       },
       {
         "date": "2023-07-03",
-        "category": "press release",
-        "title": "Kakao Health develops precision beauty solution with L’Oréal",
-        "summary": "Kakao Health develops precision beauty solution with L’Oréal ​ Korea Economic Daily TV",
+        "category": "Press release",
+        "title": "Kakao Healthcare, L'Oréal, and CutisBio Sign Agreement for Precision Beauty Solutions Development",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1zSTdoeUtaWHhzWDdMbUw0X2xxUGNxZkFNTGFGY0V4bi1LUnUtWm14T195RmNJWjdxU2pNUTdiOURLRFdGWnBkZWg0d3hMV0tpdXdpRkdLNExEbWF6Q3VWb1VaNjFKRktIeEVjZjBFWnJmU0FmeC1v?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ZaWJBZDlTckJiWHZ4RzhmMUszN0xRRkdMMHFWd2wwZy1pZGQycjlPdHFKMXZ0ZjJSNjF5ckMwMjROSlJTYjlBcDBHa2FtYU83ckdueWFnR29qM29J?oc=5",
+        "sourceTitle": "카카오헬스케어·로레알·큐티스바이오, 정밀 뷰티 솔루션 개발 업무협약 체결",
+        "sourceSummary": ""
       },
       {
         "date": "2023-07-03",
-        "category": "press release",
-        "title": "[License Beauty PICK] APR, B. Ready, LG Household & Health Care, L’Oreal Group",
-        "summary": "[License Beauty PICK] APR·Beready·LG Household & Health Care·L’Oréal Group ​ License News",
+        "category": "Press release",
+        "title": "Kakao Healthcare, L'Oréal Group, and CutisBio Sign Partnership Agreement",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5WRnlwOFFqa0hjX0wycGhnQlhISnVDWWtvZThlZmpITUlYR0s4Y2IxN1RNdlNmR2JidmlIeWxJZmdyQ3pHUnlzOVZwZFBVbXBna1Fvb1U3OG1UblprbEU3c1Y2RDJiOUN4c3c?oc=5"
-      },
-      {
-        "date": "2023-07-03",
-        "category": "press release",
-        "title": "Kakao Healthcare signs business agreement with L’Oréal Group CutisBio",
-        "summary": "Kakao Healthcare signs business agreement with L’Oréal Group CutisBio Medical Newspaper",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBicXh0NDJUTU1jTGFiSW1XOHctYTZIYjFHa2hmcUVjOTMtUzdXbGg1eDN0TVBXN0k5QUZqcWxaMWR1SWFPSDlGajZLOUxoTXRGS0JfQnhsbFRlRXRoVjdEVk1xWDRwaDl5OVE?oc=5"
-      },
-      {
-        "date": "2023-07-03",
-        "category": "press release",
-        "title": "[Daily IT Brief] SKT Cloud Service, “OK” even without professional staff",
-        "summary": "[Daily IT Brief] SKT Cloud Service, “OK” even without specialized personnel ​ New Daily Economy",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE84M0pPd1k0aVV2WnNHaHg2SlNvWmVWZjFNREZHQlVsOV9hOUpQWXRkSjNjblZyUFNfb1Z2Z1FlS2E1NXJ6bmFPbjE5N0RORi1sUlAzUXZQejlpMjM2Sm1ncEYzZmtReGoyTjVWVGJqMjdid1NyZkZkZ3FSUQ?oc=5"
-      },
-      {
-        "date": "2023-05-30",
-        "category": "press release",
-        "title": "Infinis establishes unrivaled position in non-fashion licensing",
-        "summary": "Infinis establishes unrivaled position in non-fashion licensing ​ apparelnews.co.kr",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9RVm1BcmFhdU1zLVFZbnBZb3hrNkFwblpMM0tUOTMwWlRGc3VMa2NSc2FRMFhDWm14WDhRVlNnSTJkdUZZQnU4Z2VoZUJPTUk4TUl5NGJFaFhNOU16Q1h1RTVxQQ?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBicXh0NDJUTU1jTGFiSW1XOHctYTZIYjFHa2hmcUVjOTMtUzdXbGg1eDN0TVBXN0k5QUZqcWxaMWR1SWFPSDlGajZLOUxoTXRGS0JfQnhsbFRlRXRoVjdEVk1xWDRwaDl5OVE?oc=5",
+        "sourceTitle": "카카오헬스케어, 로레알 그룹 큐티스바이오와 업무협약 체결",
+        "sourceSummary": ""
       },
       {
         "date": "2022-12-19",
-        "category": "joint research",
+        "category": "Joint research",
         "title": "CutisBio-Immunobiome develops next-generation microbiome immunotherapy for cancer",
         "summary": "In collaboration with Immunobiome, we are conducting research on the development of next-generation microbiome immune-anticancer drugs using recombinant strains based on synthetic biology.",
         "thumbnailAlt": "Research thumbnail",
-        "link": "https://www.pharmnews.com/news/articleView.html?idxno=216348"
-      },
-      {
-        "date": "2022-12-07",
-        "category": "press release",
-        "title": "[Health Capsule] Ajou University Hospital opens ‘Robotic Surgery Center’ on the first basement floor of the main building, etc.",
-        "summary": "[Health Capsule] Ajou University Hospital opens ‘Robotic Surgery Center’ on the first basement level of the main building Other Dong-A Ilbo",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0tcTZKenBmeGlsaEM0Z0w1c0JydnFFME8wUkd1NkxKUkpyeTBoOGtXZ3NnLXFqY2l2Y055LUhTVGxFNWl0N0tmRzlaWTFHSTVEcHUwcHpiSS11UTFndlZlMDlidkRaazNrRjBySmQwb9IBZkFVX3lxTE5acHRmREVXMkNzN0lyYUw2bmpTVTVKdzA1MGRUaGdfS3dNQWpQQzFwZXFEdjE3V0NhV1UxZ1lGbExZdFlWSkNnLXZOTm05NTdUci1vVk02TjFaYXNLTkN2MFVtSk9oQQ?oc=5"
+        "link": "https://www.pharmnews.com/news/articleView.html?idxno=216348",
+        "sourceTitle": "큐티스바이오-이뮤노바이옴, 차세대 마이크로바이옴 면역항암제 개발",
+        "sourceSummary": "이뮤노바이옴과 협력하여 합성생물학 기반의 재조합 균주를 활용한 차세대 마이크로바이옴 면역항암제 개발 연구를 진행합니다."
       },
       {
         "date": "2022-12-05",
-        "category": "press release",
-        "title": "Cutis Bio - Joint research on immunobiome and microbiome immune anti-cancer treatment",
-        "summary": "Cutis Bio-Immunobiome, Microbiome Immunoanticancer Treatment Joint Research Pharm News",
+        "category": "Press release",
+        "title": "CutisBio and Immunobiome Collaborate on Microbiome Immuno-Oncology Therapeutic Research",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zbVMzQ0s3NVpxMG9HNUNiSFN2bG0yOTBRSk5ad01EUlNoSnNId1UxM1pYSkptbWNGcEJ4cHJRY3ZvR0tUTC01VmM5SVJVNlZqSVYxLTQ1YUNlWVFkT1UyVXMtTnBMenk4SHZvYg?oc=5"
-      },
-      {
-        "date": "2022-06-30",
-        "category": "press release",
-        "title": "Pharmaceutical industry goes eco-friendly",
-        "summary": "Pharmaceutical industry adopts eco-friendliness Health Korea News",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8tVE4yR3I2eE1Zdjh5V0hRSHhJME5fc25GV2VWaEgySjFUWm81UUdnMUpyRW1Ia1hYcllmb2RGT3ptYi1XNnpaQUx4ZGNPUXM1S0hYOERuNTlQOVVfSWctUXVB?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zbVMzQ0s3NVpxMG9HNUNiSFN2bG0yOTBRSk5ad01EUlNoSnNId1UxM1pYSkptbWNGcEJ4cHJRY3ZvR0tUTC01VmM5SVJVNlZqSVYxLTQ1YUNlWVFkT1UyVXMtTnBMenk4SHZvYg?oc=5",
+        "sourceTitle": "큐티스바이오-이뮤노바이옴,마이크로바이옴 면역항암 치료제 공동연구",
+        "sourceSummary": ""
       },
       {
         "date": "2022-06-27",
-        "category": "press release",
-        "title": "Daewoong Pharmaceutical - Daewoong Bio - CutisBio, eco-friendly drug material development and commercialization agreement",
-        "summary": "Daewoong Pharmaceutical - Daewoong Bio - CutisBio, eco-friendly drug material development and commercialization agreement | Pharm News",
+        "category": "Press release",
+        "title": "Daewoong Pharmaceutical, Daewoong Bio, and CutisBio Sign Agreement for Eco-friendly Drug Material Development and Commercialization",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5RNGRiRURDNjd4c0ZFSDg3bVY5ZXNBUFRMbjIwRFZDazZkWGpXdmhaUFMxa1lfS2pubzRFa3J5X1lMUDNxRm9WanZ3bDNobGpJamRidHFSSkJUOXlhazNDWFpQRElnYjVhYTlNcQ?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5RNGRiRURDNjd4c0ZFSDg3bVY5ZXNBUFRMbjIwRFZDazZkWGpXdmhaUFMxa1lfS2pubzRFa3J5X1lMUDNxRm9WanZ3bDNobGpJamRidHFSSkJUOXlhazNDWFpQRElnYjVhYTlNcQ?oc=5",
+        "sourceTitle": "대웅제약-대웅바이오-큐티스바이오,친환경 약물소재 개발∙상업화 협약",
+        "sourceSummary": ""
       },
       {
         "date": "2022-06-27",
-        "category": "press release",
-        "title": "Daewoong Pharmaceutical, Daewoong Bio, and Qtis Bio sign an agreement to develop eco-friendly drug materials",
-        "summary": "Daewoong Pharmaceutical, Daewoong Bio, and CutisBio sign an agreement to develop eco-friendly drug materials. Business Post",
+        "category": "Press release",
+        "title": "Daewoong Pharmaceutical, Daewoong Bio, and CutisBio Enter Agreement for Eco-friendly Drug Material Development",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NdmpROGR2NTd2Z0cxMnI3bHRrZlE0LWhmcE1nMHdrQW9EMzRJeG5lWm4zSld1eG84OThaU0dhU1MyWFVnX0FiaHhrZXYyNnZpY2J0a2g4Q0lDamVqMXFFcFhnbDdYVUJDdk1qelc1LVREcWM?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NdmpROGR2NTd2Z0cxMnI3bHRrZlE0LWhmcE1nMHdrQW9EMzRJeG5lWm4zSld1eG84OThaU0dhU1MyWFVnX0FiaHhrZXYyNnZpY2J0a2g4Q0lDamVqMXFFcFhnbDdYVUJDdk1qelc1LVREcWM?oc=5",
+        "sourceTitle": "대웅제약 대웅바이오 큐티스바이오, 친환경 약물소재 개발 협약 맺어",
+        "sourceSummary": ""
       },
       {
         "date": "2022-06-27",
-        "category": "press release",
-        "title": "Kwangdong Pharmaceutical, distribution of GSK allergic rhinitis treatment ‘Avamis Nasal Spray’, etc.",
-        "summary": "Kwangdong Pharmaceutical distributes GSK allergic rhinitis treatment ‘Avamis Nasal Spray’, etc. Pharmaceutical News",
+        "category": "Press release",
+        "title": "Daewoong Pharmaceutical, Daewoong Bio, and CutisBio Sign Agreement on Eco-friendly Drug Material Development",
+        "summary": "",
         "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MWHFfYk81YU82VUk4dy01OHZxUWtRdEk5WkRVbWQ5RkxWYjVIWGZwYzhCdDE5Q3RSSm11Yl9OSms4SHNXRDdLZXFGcUpIZFB2WWQ5dVpZZWNnTjlyamR1SFh1WWdoUk0?oc=5"
-      },
-      {
-        "date": "2022-06-27",
-        "category": "press release",
-        "title": "Daewoong Pharmaceutical - Daewoong Bio - Qtis Bio, agreement to develop eco-friendly drug materials",
-        "summary": "Daewoong Pharmaceutical - Daewoong Bio - Qtis Bio, agreement to develop eco-friendly drug materials | Heat News",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1qaFJ6ZnlzNUhEbWQ3TXJWNHdSWWhYVFF4cUpabWVBdVFZTXRqaXMySnJ6QXJPUlA0RGx3UkhmRUgwTVZEa3BpanhIVDJ5cFllZFdsYVJfOGtteFVVUGdvU0JZR3BGOHlCejlv?oc=5"
-      },
-      {
-        "date": "2022-06-27",
-        "category": "press release",
-        "title": "Gucci ‘Towards the Sun’ selection revealed Gucci, Towards the Sun-Raffia effect-Beloved-Cape Cod",
-        "summary": "Gucci ‘Towards the Sun’ selection revealed Gucci, Towards the Sun-Raffia effect-Beloved-Cape Cod Korea Duty Free News",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBCVEZlWnNVM01jcV9LNERyZnRaMnVXNzhMVHRRZDJKWno2NTc2d2s1S29MSWtORXhTR0JlUWlzYzRjemVJUG9RNVdpdFJFOVNmdG5GcjRtWm1mUm9aZk1GdU9fQ09hdEJM?oc=5"
-      },
-      {
-        "date": "2021-09-28",
-        "category": "press release",
-        "title": "GS seeks new growth engine… “After bio, now energy”",
-        "summary": "GS seeks new growth engine… “After bio, now energy” JoongAng Ilbo",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9mM1QzeG82RExld2pvanF5V2xtMktTTk02Y01DbDRsWHhxU09KOW9pWmFwckVGaHVfcjEtbWlEY0N5MW50bFJpbkZoUXV6c2FxdENEalNR?oc=5"
-      },
-      {
-        "date": "2021-08-26",
-        "category": "press release",
-        "title": "GS acquires Hugel, marking the beginning of its entry into the bio industry",
-        "summary": "GS's acquisition of Hugel marks the beginning of its entry into the bio industry. BioTimes",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8xMVVHb3pXeUx0b2pvRW03dXVVQ1k1T1V6d0o3bVBuUTJ5ZnFXMzQ2MDlrejhBY1g3bkxiblNTb19MazdxcnluWHV1NXU5V2NObkwyekUzcUUtWnhrQXg1RjVjQ1dPaXNkZWJZ?oc=5"
-      },
-      {
-        "date": "2021-06-08",
-        "category": "press release",
-        "title": "KAIST develops the first natural rainbow pigment production technology using microorganisms",
-        "summary": "KAIST develops first natural rainbow pigment production technology using microorganisms Sejong Chungcheong News",
-        "thumbnailAlt": "News thumbnail",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE14N2VtOWxvOEdlNmJuVUJVenVnZk5PbnE3VGhwWFdCQWVrSWZ5THhheHhCTHR6UWtZMkJmQ19XbzVnLUo3VllMblRVbVpCZ0QtZ0xGNGdJNUtnYTdKenk0N3ZoNnZGUkdJTGRj0gFvQVVfeXFMTmtBZ0swRkhRZ056M21TRURIdHFWSTBHSHpvWWxVNVZ6a1F5VWx6VEJoRnZObHZCZjZwVTVPYzVjdFMzSHBiWW1BV0JDRmZCME9OVUQzd1ctdXdVc3JFVXh4UlZ3QWZwM3RGMWpxWEZ3?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1qaFJ6ZnlzNUhEbWQ3TXJWNHdSWWhYVFF4cUpabWVBdVFZTXRqaXMySnJ6QXJPUlA0RGx3UkhmRUgwTVZEa3BpanhIVDJ5cFllZFdsYVJfOGtteFVVUGdvU0JZR3BGOHlCejlv?oc=5",
+        "sourceTitle": "대웅제약-대웅바이오-큐티스바이오, 친환경 약물소재 개발 협약",
+        "sourceSummary": ""
       }
-    ]
-  },
-  "Contact": {
-    "title": "Contact Us",
-    "description": "If you have any questions about CutisBio, please leave a message and we will get back to you quickly.",
-    "addressTitle": "Address",
-    "addressDetail": "8F, Apgujeong Bldg, 842 Nonhyeon-ro, Gangnam-gu, Seoul",
-    "emailTitle": "Email",
-    "emailAddress": "contact@cutisbio.com",
-    "mapTitle": "Location Map"
-  },
-  "ProblemSolution": {
-    "problemTitle": "The Hidden Cost of Our Denim",
-    "problemText": "Traditional dyeing processes rely on petrochemicals, leaving severe environmental pollution and health threats. 'Aniline', in particular, is one of the most critical issues.",
-    "solutionTitle": "CutisBio's Innovative Answer",
-    "solutionText": "100% aniline-free dye completely devoid of toxic substances through microbial fermentation. Providing perfect sustainability safe for both humans and nature."
-  },
-  "Process": {
-    "title": "Biomanufacturing Process",
-    "subtitle": "Advanced synthetic biology mechanism mimicking nature",
-    "step1Title": "1. DNA Design",
-    "step1Text": "Specially redesigning microbial DNA based on enzyme pathways existing in nature.",
-    "step2Title": "2. Precision Fermentation",
-    "step2Text": "In a precise fermentation environment, microbes naturally produce indigo precursors like plants.",
-    "step3Title": "3. Indigo Purification",
-    "step3Text": "Completing a 100% bio-based dye through an eco-friendly purification process.",
-    "step4Title": "4. Drop-in Dyeing",
-    "step4Text": "Immediately applicable to existing dyeing factory infrastructure without need for additional equipment replacement."
-  },
-  "Partners": {
-    "title": "Leading Brands Joining the Future of Global Fashion",
-    "testimonial": "\"CutisBio's synthetic biology-based indigo is a true game changer that protects the health of those who love denim while guaranteeing the differentiated competitiveness of denim brands.\"",
-    "testimonialAuthor": "CEO interview"
+    ],
+    "listNote": "This list automatically compiles public news reports. The content and expressions of the articles belong to each media outlet; please check the data and certification side for test figures and certification information."
   }
 }

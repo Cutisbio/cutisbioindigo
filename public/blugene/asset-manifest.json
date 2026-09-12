@@ -1,0 +1,390 @@
+{
+  "/blugene/brand/hero-family-denim.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p01-xref27.png",
+    "width": 1732,
+    "height": 870,
+    "bytes": 208944
+  },
+  "/blugene/brand/hero-family-denim-1200.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p01-xref27.png",
+    "width": 1200,
+    "height": 603,
+    "bytes": 125664
+  },
+  "/blugene/brand/value-chain.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p12-xref184.png",
+    "width": 784,
+    "height": 258,
+    "bytes": 60716
+  },
+  "/blugene/brand/cutisbio-wordmark.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p01-xref6.png",
+    "width": 456,
+    "height": 103,
+    "bytes": 20208
+  },
+  "/blugene/technology/four-production-routes.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/figures/p02-four-production-routes.png",
+    "width": 1191,
+    "height": 771,
+    "bytes": 163971
+  },
+  "/blugene/technology/carbon-pathways.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/figures/p02-carbon-pathways.png",
+    "width": 1230,
+    "height": 678,
+    "bytes": 283960
+  },
+  "/blugene/technology/worker-safety.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/figures/p04-worker-safety-illustration.png",
+    "width": 988,
+    "height": 331,
+    "bytes": 193327
+  },
+  "/blugene/evidence/biobased-carbon-chart.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/figures/p03-biobased-carbon-chart.png",
+    "width": 1116,
+    "height": 681,
+    "bytes": 42209
+  },
+  "/blugene/evidence/biobased-carbon-table.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/figures/p03-biobased-carbon-table.png",
+    "width": 1151,
+    "height": 756,
+    "bytes": 158636
+  },
+  "/blugene/evidence/aniline-results.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/figures/p05-aniline-results.png",
+    "width": 1163,
+    "height": 1545,
+    "bytes": 136509
+  },
+  "/blugene/performance/fabric-comparison.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/figures/p06-fabric-comparison-labeled.png",
+    "width": 1075,
+    "height": 376,
+    "bytes": 55186
+  },
+  "/blugene/performance/fabric-strip.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p06-xref106.png",
+    "width": 1147,
+    "height": 193,
+    "bytes": 29138
+  },
+  "/blugene/performance/fastness-tables.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/figures/p06-fastness-tables.png",
+    "width": 1198,
+    "height": 943,
+    "bytes": 167655
+  },
+  "/blugene/shades/concentration-shades.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/figures/p07-concentration-shades.png",
+    "width": 1128,
+    "height": 570,
+    "bytes": 15296
+  },
+  "/blugene/shades/indirubin-indigo-100.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p07-xref134.png",
+    "width": 517,
+    "height": 386,
+    "bytes": 49446
+  },
+  "/blugene/shades/indirubin-indigo-94.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p07-xref135.png",
+    "width": 517,
+    "height": 386,
+    "bytes": 56300
+  },
+  "/blugene/products/powder.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p09-xref164.png",
+    "width": 290,
+    "height": 208,
+    "bytes": 36570
+  },
+  "/blugene/products/ink-jar.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p09-xref161.png",
+    "width": 176,
+    "height": 264,
+    "bytes": 22313
+  },
+  "/blugene/products/powder-ink-cycles.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/figures/p08-powder-ink-cycles.png",
+    "width": 1235,
+    "height": 1175,
+    "bytes": 83087
+  },
+  "/blugene/printing/ink-process.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/figures/p09-ink-process.png",
+    "width": 1363,
+    "height": 390,
+    "bytes": 125275
+  },
+  "/blugene/printing/pair-a-original.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p09-xref155.png",
+    "width": 184,
+    "height": 265,
+    "bytes": 19580
+  },
+  "/blugene/printing/pair-a-printed.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p09-xref156.png",
+    "width": 285,
+    "height": 458,
+    "bytes": 27690
+  },
+  "/blugene/printing/pair-b-original.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p09-xref157.png",
+    "width": 203,
+    "height": 231,
+    "bytes": 23542
+  },
+  "/blugene/printing/pair-b-printed.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p09-xref158.png",
+    "width": 384,
+    "height": 456,
+    "bytes": 56962
+  },
+  "/blugene/certifications/zdhc-certificate.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p10-xref171.png",
+    "width": 611,
+    "height": 868,
+    "bytes": 203357
+  },
+  "/blugene/certifications/oeko-certificate.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p10-xref172.png",
+    "width": 610,
+    "height": 875,
+    "bytes": 148278
+  },
+  "/blugene/certifications/usda-certificate.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p11-xref179.png",
+    "width": 689,
+    "height": 524,
+    "bytes": 220280
+  },
+  "/blugene/certifications/okbiobased-certificate.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p11-xref177.png",
+    "width": 590,
+    "height": 851,
+    "bytes": 338710
+  },
+  "/blugene/brand/og-cover.jpg": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p01-xref27.png",
+    "width": 1200,
+    "height": 630,
+    "bytes": 154254
+  },
+  "/blugene/shades/swatch-A1.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p07-xref121.png",
+    "width": 193,
+    "height": 182,
+    "bytes": 545
+  },
+  "/blugene/shades/swatch-A2.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p07-xref120.png",
+    "width": 193,
+    "height": 182,
+    "bytes": 545
+  },
+  "/blugene/shades/swatch-A3.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p07-xref119.png",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 5236
+  },
+  "/blugene/shades/swatch-A4.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p07-xref118.png",
+    "width": 193,
+    "height": 182,
+    "bytes": 544
+  },
+  "/blugene/shades/swatch-A5.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p07-xref117.png",
+    "width": 193,
+    "height": 182,
+    "bytes": 544
+  },
+  "/blugene/shades/swatch-A6.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p07-xref116.png",
+    "width": 193,
+    "height": 182,
+    "bytes": 545
+  },
+  "/blugene/shades/swatch-B1.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p07-xref116.png",
+    "width": 193,
+    "height": 182,
+    "bytes": 545
+  },
+  "/blugene/shades/swatch-B2.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p07-xref115.png",
+    "width": 193,
+    "height": 182,
+    "bytes": 545
+  },
+  "/blugene/shades/swatch-B3.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p07-xref114.png",
+    "width": 193,
+    "height": 182,
+    "bytes": 544
+  },
+  "/blugene/shades/swatch-B4.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p07-xref113.png",
+    "width": 193,
+    "height": 182,
+    "bytes": 545
+  },
+  "/blugene/shades/swatch-B5.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p07-xref112.png",
+    "width": 193,
+    "height": 182,
+    "bytes": 544
+  },
+  "/blugene/shades/swatch-B6.png": {
+    "source": "Blugene_Website_Brief/assets/catalogue/embedded/p07-xref111.png",
+    "width": 193,
+    "height": 182,
+    "bytes": 544
+  },
+  "/blugene/catalogue/page-01.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/pages/page-01.png",
+    "width": 936,
+    "height": 1297,
+    "bytes": 80378
+  },
+  "/blugene/catalogue/page-02.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/pages/page-02.png",
+    "width": 936,
+    "height": 1297,
+    "bytes": 71308
+  },
+  "/blugene/catalogue/page-03.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/pages/page-03.png",
+    "width": 936,
+    "height": 1297,
+    "bytes": 56786
+  },
+  "/blugene/catalogue/page-04.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/pages/page-04.png",
+    "width": 936,
+    "height": 1297,
+    "bytes": 76498
+  },
+  "/blugene/catalogue/page-05.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/pages/page-05.png",
+    "width": 936,
+    "height": 1297,
+    "bytes": 51328
+  },
+  "/blugene/catalogue/page-06.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/pages/page-06.png",
+    "width": 936,
+    "height": 1297,
+    "bytes": 84692
+  },
+  "/blugene/catalogue/page-07.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/pages/page-07.png",
+    "width": 936,
+    "height": 1297,
+    "bytes": 42850
+  },
+  "/blugene/catalogue/page-08.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/pages/page-08.png",
+    "width": 936,
+    "height": 1297,
+    "bytes": 43678
+  },
+  "/blugene/catalogue/page-09.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/pages/page-09.png",
+    "width": 936,
+    "height": 1297,
+    "bytes": 88740
+  },
+  "/blugene/catalogue/page-10.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/pages/page-10.png",
+    "width": 936,
+    "height": 1297,
+    "bytes": 63230
+  },
+  "/blugene/catalogue/page-11.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/pages/page-11.png",
+    "width": 936,
+    "height": 1297,
+    "bytes": 81968
+  },
+  "/blugene/catalogue/page-12.webp": {
+    "source": "Blugene_Website_Brief/assets/catalogue/pages/page-12.png",
+    "width": 936,
+    "height": 1297,
+    "bytes": 52514
+  },
+  "/blugene/catalogue/CutisBio-CB-Bioindigo-Catalogue-EN-2026-07.pdf": {
+    "source": "Blugene_Website_Brief/source/CutisBio_CB_Bioindigo_Catalogue_(EN)_July 2026.pdf",
+    "bytes": 2013636
+  },
+  "/blugene/technology/pathway/01-feedstock.jpg": {
+    "source": "고객 제공 — 2026-09-09 채팅 첨부 고해상도 사진(2000×1996)에서 시안 테두리와 01 배지를 제외하고 정사각으로 잘라냄. 카탈로그 자료가 아니며 생성 이미지로 보임",
+    "width": 1642,
+    "height": 1642,
+    "bytes": 601002
+  },
+  "/blugene/technology/pathway/02-fermentation.jpg": {
+    "source": "고객 제공 — 2026-09-09 채팅 첨부 고해상도 사진(2000×1091)에서 발효조 중심으로 정사각 잘라냄. 카탈로그 자료가 아니며 생성 이미지로 보임",
+    "width": 1091,
+    "height": 1091,
+    "bytes": 445463
+  },
+  "/blugene/technology/pathway/03-recovery.jpg": {
+    "source": "고객 제공 — 2026-09-09 채팅에 첨부한 홈 섹션 시안(2000×1567 JPEG)에서 잘라냄. 카탈로그 자료가 아니며 생성 이미지로 보임",
+    "width": 422,
+    "height": 423,
+    "bytes": 36640
+  },
+  "/blugene/technology/pathway/04-fabric.jpg": {
+    "source": "고객 제공 — 2026-09-09 채팅 첨부 고해상도 사진(2000×1091)에서 실 염색 라인 중심으로 정사각 잘라냄. 카탈로그 자료가 아니며 생성 이미지로 보임",
+    "width": 1091,
+    "height": 1091,
+    "bytes": 457408
+  },
+  "/blugene/brand/dermatologist-choi-wonwoo.webp": {
+    "source": "고객 제공 — 2026-09-11 채팅 첨부 인물 사진 원본(3744×5616 JPEG)을 자르지 않고 960px 폭으로 축소(WebP q86, 메타데이터 제거). 브랜드 페이지 선언 구역의 Blugene 기획자(피부과전문의 최원우) 소개",
+    "width": 960,
+    "height": 1440,
+    "bytes": 36236
+  },
+  "/blugene/technology/carbon/bio-biomass-tree.webp": {
+    "source": "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: 초록 잎 나무(식물성 바이오매스). 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임",
+    "width": 512,
+    "height": 512,
+    "bytes": 71790
+  },
+  "/blugene/technology/carbon/fermenter.webp": {
+    "source": "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: 발효조. 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임",
+    "width": 512,
+    "height": 512,
+    "bytes": 31732
+  },
+  "/blugene/technology/carbon/indigo-denim.webp": {
+    "source": "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: 인디고 분말과 청바지. 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임",
+    "width": 512,
+    "height": 512,
+    "bytes": 48060
+  },
+  "/blugene/technology/carbon/co2-cloud.webp": {
+    "source": "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: CO₂ 구름(대기). 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임",
+    "width": 512,
+    "height": 512,
+    "bytes": 17974
+  },
+  "/blugene/technology/carbon/fossil-oil-pump.webp": {
+    "source": "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: 원유 채굴 펌프와 석유통. 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임",
+    "width": 512,
+    "height": 512,
+    "bytes": 56660
+  },
+  "/blugene/technology/carbon/refinery.webp": {
+    "source": "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: 화학 공장. 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임",
+    "width": 512,
+    "height": 512,
+    "bytes": 46540
+  }
+}

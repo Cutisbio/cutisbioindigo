@@ -1,63 +1,731 @@
 {
-  "Blog": {
-    "eyebrow": "Görüşler & Teknoloji",
-    "title": "Blog",
-    "description": "CutisBio'nun sentetik biyoloji teknolojisi ve sürdürülebilir moda hakkında derinlemesine makaleler.",
-    "categoryTech": "Teknoloji",
-    "readMore": "Devamını Oku",
-    "readTime": "{minutes} dk okuma"
-  },
-  "Layout": {
-    "home": "Ana Sayfa",
+  "Nav": {
+    "brand": "Marka",
+    "technology": "Teknoloji",
+    "dyeingPrinting": "Boyama · Baskı",
+    "dataCertifications": "Veriler · Sertifikalar",
+    "sampleInquiry": "Numune talebi",
     "about": "Hakkımızda",
-    "tech": "Teknoloji",
     "news": "Haberler",
     "contact": "İletişim",
-    "footerText": "Sustainable Denim Dye. Aniline free - Human safe. © 2026 CutisBio. All rights reserved."
+    "menu": "Menü",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "languageLabel": "Dil seçimi",
+    "skipToContent": "İçeriğe geç",
+    "homeAria": "Blugene ana sayfa"
+  },
+  "Footer": {
+    "tagline": "Better Blue for Everyday Denim",
+    "sitemapTitle": "Site haritası",
+    "contactTitle": "İletişim",
+    "legalTitle": "Kaynak bilgisi",
+    "sourceNote": "Bu sitedeki test değerleri ve sertifika bilgileri, Temmuz 2026 tarihli CutisBio kataloğunda yer alan verilerdir. Veri tarihi: {date}.",
+    "companyLine": "CutisBio Co., Ltd.",
+    "rights": "© 2026 CutisBio Co., Ltd. Tüm hakları saklıdır.",
+    "catalogueLink": "Orijinal kataloğu (PDF) indirin"
   },
   "Home": {
-    "heroTitle": "Yeni Nesil Sürdürülebilir Denim Boyası, CutisBio Indigo",
-    "heroSubtitle": "Cildimiz için güvenli indigo boyası. Sentetik biyoloji teknolojisiyle toksik maddeler (anilin) olmadan doğan, en sürdürülebilir denim boyama çözümü.",
-    "heroImageAlt": "Mavi denim kumaşın temiz su damlacıkları ile iç içe geçtiği sezgisel çevre dostu görsel",
-    "impactMetricsTitle": "CutisBio'nun Yarattığı Pozitif Değişim",
-    "metric1Value": "100%",
-    "metric1Text": "Aniline-Free (Toksik maddelerin tamamen engellenmesi)",
-    "metric2Value": "Drop-in",
-    "metric2Text": "Mevcut boyama fabrikası tesislerine anında uygulanabilir",
-    "metric3Value": "Eco-friendly",
-    "metric3Text": "Üretim sürecinde su kirliliğinin ve karbon emisyonlarının en aza indirilmesi",
-    "coreValuesTitle": "CutisBio Teknolojisinin Temel Değerleri",
-    "coreValuesDesc": "Sentetik Biyoloji (Synthetic Biology) aracılığıyla geleneksel petrokimya tabanlı boyama endüstrisinde devrim yaratıyoruz.",
-    "feature1": "Hassas Fermantasyon (Precision Fermentation)",
-    "benefit1": "Sürdürülebilir biyosentez süreçleriyle doğal ekosistemleri taklit etmek",
-    "feature2": "Anilin İçermez (Aniline-Free)",
-    "benefit2": "Çalışanları ve tüketicileri tehdit eden kanserojenlerin temelden ortadan kaldırılması",
-    "feature3": "Sürdürülebilir İndigo (Sustainable Indigo)",
-    "benefit3": "Su kirliliğinin en aza indirilmesi ve moda endüstrisinde döngüsel ekonominin sağlanması",
-    "ctaTitle": "Sürdürülebilir modanın geleceğine katılmak ister misiniz?",
-    "ctaText": "CutisBio'nun yenilikçi mikrobiyal tabanlı indigo boyasının geleneksel boyama süreçlerinin yerini nasıl aldığını keşfedin.",
-    "ctaButton": "Teknoloji Detaylarını İncele",
-    "qualityTitle": "Üstün Boyanabilirlik ve Haslık Doğrulandı",
-    "qualitySubtitle": "Premium bir Japon denim boyama şirketinin kapsamlı karşılaştırmalı testleri, CutisBio İndigo'nun geleneksel kimyasal indigoya kıyasla daha derin renk ve üstün dayanıklılık gösterdiğini kanıtladı.",
-    "qualityImageAlt": "Denim boyama ve haslık testi sonucu görseli",
-    "qualityBadge": "Quality Proven"
+    "metaTitle": "İndigo DNA'sı ve fermantasyonla ortaya çıkan mavi.",
+    "metaDescription": "Mikrobiyal fermantasyonla üretilen biyo indigo Blugene — %98 biyobazlı karbon, anilin ve N-metilanilin tespit edilmedi (tespit limiti 5 mg/kg).",
+    "ctaTitle": "Bir sonraki denimin mavisini birlikte yaratalım.",
+    "ctaText": "Denim markalarından, kumaş üreticilerinden, boyahanelerden ve baskı firmalarından gelecek talepleri bekliyoruz.",
+    "ctaButton": "Blugene numune talebi"
+  },
+  "Hero": {
+    "descriptor": "İndigo DNA'sı ve fermantasyonla ortaya çıkan mavi.",
+    "titleLine1": "Ömür boyu sürecek denim,",
+    "titleLine2": "daha güvenli bir mavi.",
+    "body": "Cildinize ömür boyu temas eden o mavi, sentetik biyolojiyle yeniden doğdu. Cilt sağlığı için en küçük riskten bile ödün vermeyen indigo: Blugene.",
+    "ctaPrimary": "Blugene numune talebi",
+    "ctaSecondary": "Verileri ve sertifikaları görün",
+    "tagline": "Better Blue for Everyday Denim",
+    "imageAlt": "Denim ceket giyen bir ebeveynin kucağındaki çocuğuyla birlikte mısır tarlalarının, çayırların ve su kıyısının göründüğü manzaraya baktığı sahne. Sağlanan kataloğun kapağında yer alan marka görselidir.",
+    "imageCredit": "Katalog p.1 yer alan görüntü"
+  },
+  "EvidenceStrip": {
+    "carbonValue": "98%",
+    "carbonLabel": "Biyobazlı karbon içeriği",
+    "anilineValue": "Tespit edilmedi",
+    "anilineLabel": "Anilin",
+    "nMethylanilineValue": "Tespit edilmedi",
+    "nMethylanilineLabel": "N-metilanilin",
+    "note": "Sağlanan katalogda yer alan test sonuçlarıdır. Tespit edilmedi ifadesi, belirtilen test yönteminde yöntem tespit limiti olan 5 mg/kg'ın altında kalındığı anlamına gelir; içerik miktarının 0 olduğu anlamına gelmez. %98 değeri biyobazlı karbon içeriğidir; indigo saflığı ya da emisyon azaltım oranı değildir.",
+    "sourceCarbon": "Kaynak: Katalog s.3 Tablo 1-1 (KATRI, ASTM D6866-24a Method B)",
+    "sourceAniline": "Kaynak: Katalog s.5 Tablo 2-3 (KOTERI, KS K 0734 2019)",
+    "cta": "Ayrıntılı test bilgilerini görün"
+  },
+  "Manifesto": {
+    "eyebrow": "ACROSS BORDERS. ACROSS GENERATIONS.",
+    "title": "Ömür boyu tenimizle temas eden bir giysi olduğu için.",
+    "body": "Hangi ülkede yaşarsak yaşayalım, hangi yaşta olursak olalım, denim günlük hayatımızda yer alır. Uzun süre giyildiği ve her gün cilde temas ettiği için, rengi üretme sürecinden boyama sürecine ve denimin giyildiği ana kadar her adımı, cilt sağlığının uzmanı olan dermatologlarla birlikte yeniden sorguladık. Blugene, aşağıdaki üç sorudan doğdu.",
+    "questions": [
+      "Neyden yapıldı",
+      "Geriye hangi safsızlıklar kalıyor",
+      "Bu sonuç doğrulanabiliyor mu"
+    ],
+    "cta": "Soruların yanıtlarını dinleyin",
+    "portraitAlt": "Beyaz önlüğüyle gülümseyen dermatoloji uzmanı Choi Wonwoo (Tıp Doktoru, Ph.D.)",
+    "portraitName": "Blugene planlayıcısı: Dermatoloji uzmanı, tıp doktoru (Ph.D.) Choi Wonwoo",
+    "portraitCredential": "Blugene director: CHOI WONWOO M.D., Ph.D., Board Certified Dermatologist"
+  },
+  "Impurity": {
+    "eyebrow": "WHAT REMAINS MATTERS",
+    "title": "Görünmeyen de bizim ölçütümüzdür.",
+    "body": "Blugene'in temelini oluşturan CutisBio biyo indigo, katalogda sunulan testlerde anilin ve N-metilanilin tespit edilmedi.",
+    "context": "Anilin ve N-metilanilin, kimyasal sentez yolunda başlangıç maddesi veya ara ürün olarak kullanılır ve nihai indigo tozunda tepkimeye girmemiş kalıntı olarak kalabilir. Çeşitli sertifikasyon standartları, bu maddelerin tekstil boyalarında ve nihai üründe izin verilen konsantrasyonunu sınırlar.",
+    "cta": "Karşılaştırma verilerinin tamamını görün",
+    "chartTitle": "Piyasadaki indigo boyalarının anilin · N-metilanilin analizi",
+    "chartCaption": "Katalog s.5 Şekil 2-2 · Tablo 2-3'te yer alan 9 ticari numune. Dikey eksen mg/kg birimindedir ve 0'dan başlar."
+  },
+  "Science": {
+    "eyebrow": "SYNTHETIC BIOLOGY",
+    "title": "İndigonun DNA'sını yeniden yazmak.",
+    "body": "CutisBio, mikroorganizmaların biyosentetik yollarını ve fermentasyonu kullanarak indigo üretir.",
+    "cta": "Teknolojiyi ayrıntılı inceleyin",
+    "diagramTitle": "Hammaddeden kumaşa",
+    "diagramNote": "Blugene'in denime giden yolculuğu yenilenebilir bitkisel hammaddeyle başlar: indigonun mavi DNA'sı, sentetik biyoloji ve hassas fermantasyon süreciyle boya ve mürekkebe dönüşür. Bu şekilde üretilen Blugene indigo boyası ZDHC MRSL, OEKO-TEX ECO PASSPORT ve USDA BioPreferred gibi sertifikalara sahiptir ve giydiğimiz denim kumaşını renklendirir.",
+    "steps": [
+      {
+        "title": "Yenilenebilir hammadde",
+        "text": "Başlangıç noktası, mısır gibi biyokütlelerden gelen yenilenebilir karbondur.",
+        "imageAlt": "Mısır tarlası fotoğrafı. Biyokütle hammaddesini temsil eden kavramsal bir görseldir; gerçek CutisBio çiftliğinin fotoğrafı değildir."
+      },
+      {
+        "title": "Mikrobiyal fermantasyon",
+        "text": "İndigo, mikroorganizmaların biyosentez yolakları kullanılarak fermantasyonla üretilir.",
+        "imageAlt": "Fermantasyon tesisi fotoğrafı. Gözetleme camından mavi kültür sıvısı görünen fermantasyon tankları ve kontrol paneli önünde iki çalışan. Fermantasyon sürecini temsil eden kavramsal bir görseldir; gerçek CutisBio tesisinin veya çalışanlarının fotoğrafı değildir."
+      },
+      {
+        "title": "İndigonun geri kazanımı · ürünleştirme",
+        "text": "Geri kazanım ve saflaştırmanın ardından toz ve dijital baskı mürekkebi olarak ürünleştirilir.",
+        "imageAlt": "Mavi indigo tozu dolu cam kavanoz ile dijital baskı mürekkebi şişesinin fotoğrafı. İki ürün formunu temsil eden kavramsal bir görseldir; gerçek CutisBio ürünlerinin fotoğrafı değildir."
+      },
+      {
+        "title": "Kumaş boyama · baskı",
+        "text": "Pamuk · ipek · kaşmir boyamada ve dijital baskıda uygulanır.",
+        "imageAlt": "Boyama fabrikası fotoğrafı: indigo boya teknesinin üzerinde mavi iplik demetleri silindirlerden geçiyor. Kumaş boyamayı temsil eden kavramsal bir görseldir; gerçek CutisBio tesisinin fotoğrafı değildir."
+      }
+    ]
+  },
+  "Environment": {
+    "eyebrow": "FROM RENEWABLE CARBON",
+    "title": "Giyeni düşünerek. Üretim sürecini de düşünerek.",
+    "body": "Yenilenebilir karbondan yola çıkan bir indigo. Hammaddenin kaynağından bileşen analizine kadar, yaklaşımımızı doğrulanabilir belgelerle anlatıyoruz.",
+    "carbonCardTitle": "Biyobazlı karbon içeriği",
+    "carbonCardText": "Üründe bulunan karbonun yenilenebilir hammaddeden gelen oranıdır. Katalog s.3 Tablo 1-1'deki ölçüm değerine (pMC 97.73) dayanır; indigo saflığı ya da karbon emisyonu azaltım oranı değildir.",
+    "scopeNote": "Ürün bazlı yaşam döngüsü değerlendirmesi (LCA), su kullanımı, enerji ve karbon emisyonu verileri bu katalogda yer almamaktadır. Doğrulanmış kapsamın dışında kalan çevresel performans değerleri bu sitede gösterilmez.",
+    "cta": "Kanıt belgelerini görün",
+    "imageAlt": "Hammadde bitkilerinden fermantasyon tesisine, mavi kumaşa ve denim giyen insanlara uzanan değer zincirini anlatan kavramsal görsel. Gerçek CutisBio fabrikasının veya çalışanlarının fotoğrafı değildir."
+  },
+  "Performance": {
+    "eyebrow": "PERFORMANCE",
+    "title": "Gerçek kumaş üzerinde doğrulanan boyanabilirlik.",
+    "body": "Bitkisel · kimyasal · biyo indigo ile pamuk, ipek ve kaşmir boyanarak karşılaştırıldı. Katalog; yıkama, ışık, sürtme ve ter haslığında birbiriyle kıyaslanabilir bir performans (comparable performance) kaydedildiğini belirtiyor.",
+    "fabricAlt": "9 kumaş numunesinin fotoğrafı. Soldan itibaren bitkisel indigo ile boyanmış pamuk · ipek · kaşmir (#1~#3), kimyasal indigo (#4~#6) ve biyo indigo (#7~#9) sırasıyla yer alır.",
+    "fabricCaption": "Katalog p.6 Şekil 3-1.",
+    "sampleLegendPlant": "Bitkisel indigo",
+    "sampleLegendChemical": "Kimyasal indigo",
+    "sampleLegendBio": "Biyo indigo",
+    "fiberCotton": "Pamuk",
+    "fiberSilk": "İpek",
+    "fiberCashmere": "Kaşmir",
+    "cta": "Haslık tablosunun tamamını görün",
+    "honestNote": "Bu, tüm kalemlerde üstün olduğu anlamına gelmez. Bazı sürtme haslığı kalemlerinde düşük dereceler de kaydedilmiştir ve tabloda olduğu gibi gösterilmiştir.",
+    "additionalCaseTitle": "Ek kumaş değerlendirme örneği",
+    "additionalCaseBody": "Depoda saklanan ayrı bir boyama değerlendirme fotoğrafıdır. Aşağıdaki değerler, orijinalde Japonca etiketle yazıldığı gibi aynen bırakılmıştır, '合成' birleşimi ifade eder.",
+    "additionalCaseAlt": "4 · 6 · 8 kez boyama koşullarında バイオ②-1, 合成 ve バイオ②-2 ile boyanmış kumaşları karşılaştıran fotoğraf",
+    "additionalCaseProvenance": "Test kuruluşu · test yöntemi · test tarihi · talep eden bilgileri doğrulanamadığı için katalog s.6'daki testten ayrı olarak gösterilmektedir. Yukarıdaki tabloda yer alan #1~#9 numunelerinden farklı bir kaynaktır.",
+    "additionalCaseCyclesLabel": "Boyama sayısı",
+    "additionalCaseRowsLabel": "Kategoriler"
+  },
+  "Fastness": {
+    "title": "Haslık test sonuçları",
+    "intro": "Katalog s.6 Tablo 3-1 ~ 3-4'ün birebir aktarımıdır. Dereceler, orijinal metindeki sıralama gösterimiyle (örneğin 4-5) korunmuş, ondalık sayıya çevrilmemiştir.",
+    "sampleHeader": "Numune",
+    "itemHeader": "Test kalemi",
+    "methodLabel": "Test yöntemi",
+    "tableLaundering": "Yıkama haslığı",
+    "tableLight": "Işık haslığı",
+    "tableRubbing": "Sürtme haslığı",
+    "tablePerspiration": "Ter haslığı",
+    "captionLaundering": "Tablo 3-1. Yıkama haslığı test sonuçları (Numune #1~#9)",
+    "captionLight": "Tablo 3-2. Işık haslığı test sonuçları (Numune #1~#9)",
+    "captionRubbing": "Tablo 3-3. Sürtme haslığı test sonuçları (Numune #1~#9, çözgü · atkı ayrımıyla)",
+    "captionPerspiration": "Tablo 3-4. Ter haslığı test sonuçları (Numune #1~#9, asidik · alkali ayrımıyla)",
+    "groupChange": "Renk değişimi",
+    "groupStain": "Lekeleme",
+    "rowColorChange": "Renk değişimi",
+    "rowAcetate": "Asetat",
+    "rowCotton": "Pamuk",
+    "rowNylon": "Naylon",
+    "rowPolyester": "Polyester",
+    "rowAcrylic": "Akrilik",
+    "rowWool": "Yün",
+    "rowDry": "Kuru",
+    "rowWet": "Yaş",
+    "subWarp": "Çözgü",
+    "subWeft": "Atkı",
+    "subAcid": "Asidik",
+    "subAlkali": "Alkali",
+    "sourceImageCta": "Orijinal tablo görselini görün",
+    "sourceImageAlt": "Katalog s.6'daki haslık tabloları 3-1 ~ 3-4'ün orijinal görseli",
+    "gradeNote": "Derece, 1 (düşük) ile 5 (yüksek) arasında bir sıradadır ve '4-5' iki derece arasını ifade eden orijinal bir ifadedir. 4'ün altında kaydedilen dereceler tabloda kalın olarak belirtilmiştir."
+  },
+  "ShadeLibrary": {
+    "eyebrow": "SHADE LIBRARY",
+    "title": "Markanıza özel bir mavi.",
+    "body": "Boya konsantrasyonuna ve boyama sayısına göre rengin derinliği değişir. İndigo ile indirubin oranı ayarlanarak markaya özgü bir ton oluşturulabilir.",
+    "gridTitle": "Katalogdaki konsantrasyona göre numuneler",
+    "gridHelp": "Katalogda numunelerin konsantrasyon değerleri verilmediği için konuma dayalı tanımlayıcılarla (A1~B6) gösterilmektedir.",
+    "axisLow": "Low",
+    "axisHigh": "High",
+    "axisLabel": "Blugene konsantrasyonu",
+    "rowA": "A satırı",
+    "rowB": "B satırı",
+    "swatchAlt": "Katalog s.7 Şekil 4-1'de yer alan, konsantrasyona göre boyama numunesi {code}",
+    "indirubinTitle": "İndirubinin yarattığı ton değişimi",
+    "indirubinBody": "İndirubin, indigonun kırmızı izomeridir. Mikrobiyal fermantasyonla üretilen indigo ve indirubin bileşimi ayarlanarak markaya özgü bir mavi elde edilebilir.",
+    "indirubinAltA": "%100 indigo ile boyanmış denim kumaş fotoğrafı (Katalog s.7 Şekil 4-2)",
+    "indirubinAltB": "%94 indigo · %6 indirubin ile boyanmış denim kumaş fotoğrafı (Katalog s.7 Şekil 4-2)",
+    "indirubinLabelA": "İndigo %100",
+    "indirubinLabelB": "İndigo %94, indirubin %6",
+    "indirubinToggle": "İki bileşimi karşılaştır",
+    "indirubinNote": "Katalogda sunulan iki bileşimin fotoğraflarıdır. Aradaki karışım oranları verilmediği için ekranda renk üretilerek gösterilmemektedir.",
+    "colorDisclaimer": "Gerçek renk; ekrana, kumaşa ve boyama koşullarına göre değişebilir. Lütfen kumaş numunesiyle doğrulayın.",
+    "medicalNote": "İndirubinin farmakolojik etkinliği bu sitede ele alınmamaktadır. Yalnızca ton ayarı ve ürün geliştirme açısından açıklanmaktadır."
+  },
+  "Products": {
+    "eyebrow": "PRODUCT FORMS",
+    "title": "Toz ve baskı mürekkebi olmak üzere iki formda.",
+    "body": "Mikrobiyal fermantasyonla üretilen indigoyu, kumaş boyama için toz ve dijital baskı için mürekkep formunda sunuyoruz.",
+    "powderTitle": "Blugene Indigo Powder",
+    "powderText": "Katalogda pamuk, ipek ve kaşmir boyama değerlendirme materyalleri yer almaktadır.",
+    "powderAlt": "Bir kapta duran koyu mavi biyo indigo tozu (Katalog s.9)",
+    "inkTitle": "Blugene Digital Printing Ink",
+    "inkText": "Dijital baskı için geliştirilen biyo indigo mürekkebidir. Uygulanabilirlik ve numuneler konusunda danışmanlık sağlıyoruz.",
+    "inkAlt": "Koyu mavi biyo indigo dijital baskı mürekkebi içeren cam şişe (Katalog s.9)",
+    "nameNote": "Yukarıdaki ürün adları yeni markanın web gösterimidir. Katalogda ve sertifikalarda geçen orijinal ürün adı: \"{catalogueName}\".",
+    "specNote": "Partikül boyutu · viskozite · raf ömrü · minimum sipariş miktarı · üretim kapasitesi ve fiyat bilgileri sağlanan kaynaklarda bulunmadığı için gösterilmemektedir. İhtiyaç duyduğunuz spesifikasyonlar için bize ulaşın; kontrol ederek bilgi verelim.",
+    "cyclesTitle": "Boyama sayısına göre renk oluşumu karşılaştırması",
+    "cyclesCaption": "Katalog s.8 Şekil 5-1. Kimyasal indigo (toz) · biyo indigo (toz) · biyo indigo (dijital baskı mürekkebi) ile 1~4 kez boyanmış pamuklu kumaşların karşılaştırmasıdır.",
+    "cyclesAlt": "3 satır 4 sütunluk karşılaştırma görseli. Satırlar kimyasal indigo tozu, biyo indigo tozu ve biyo indigo dijital baskı mürekkebi; sütunlar 1~4 kez boyamadır.",
+    "cyclesNote": "Katalog bu örnekte renk yoğunluğunu \"dijital baskı mürekkebi > kimyasal indigo ≈ biyo indigo tozu\" şeklinde belirtir. Fotoğraftaki renk derinliği K/S değerine veya renk farkı ΔE ölçümüne dönüştürülmemiştir ve her koşulda performans üstünlüğü anlamına gelmez.",
+    "cta": "Ürün belgelerini talep edin"
+  },
+  "Printing": {
+    "eyebrow": "PRINTED IN BLUE",
+    "title": "Baskıyla genişleyen anlatım.",
+    "body": "Dijital baskı, rengi doğrudan gereken yere uygulayarak ince desenleri gerçekleştirir. Biyo indigo mürekkebiyle basılan sonuçları orijinal görsellerle birlikte sunuyoruz.",
+    "pairOriginal": "Orijinal görsel",
+    "pairPrinted": "Biyo indigo mürekkebiyle baskı sonucu",
+    "pairAltOriginal": "Dijital baskıda kullanılan orijinal görsel {index} (Katalog s.9 Şekil 6-2)",
+    "pairAltPrinted": "Aynı görselin biyo indigo mürekkebiyle dijital baskı sonucu {index} (Katalog s.9 Şekil 6-2)",
+    "pairNote": "Ürün kullanım öncesi ve sonrası performans artışını gösteren bir fotoğraf değildir, orijinal yaratıcı · müşteri · teslimatçı bilgisi sağlanan materyalde yoktur.",
+    "processTitle": "Mürekkep üretim akışı",
+    "processCaption": "Katalog s.9 Şekil 6-1'de yer alan adımlardır. Orijinal metindeki ifadeler de birlikte yazılmıştır.",
+    "processAlt": "Hammadde hazırlama, ön karıştırma, öğütme, filtrasyon ve formülasyonun tamamlanması adımlarıyla ilerleyen mürekkep üretim akış şeması (Katalog s.9)",
+    "processNote": "Katalogdaki orijinal metinde son adım \"Formation\" olarak geçer. Kesinleşmiş bir proses terimine çevirmeden orijinal ifadeyi de birlikte veriyoruz. Bu, kesin üretim reçetesini açıklayan bir belge değildir.",
+    "steps": [
+      {
+        "title": "Hammadde hazırlama",
+        "text": "Biyo indigo tozu ve yardımcı maddeler tartılarak hazırlanır."
+      },
+      {
+        "title": "Ön karıştırma",
+        "text": "Dispersiyon ortamıyla birlikte ilk karıştırma yapılır."
+      },
+      {
+        "title": "Öğütme",
+        "text": "Partiküller homojen biçimde öğütülür ve dağıtılır."
+      },
+      {
+        "title": "Filtrasyon",
+        "text": "Kalan partiküller süzülerek baskıya uygun hale getirilir."
+      },
+      {
+        "title": "Formülasyonun tamamlanması",
+        "text": "Nihai mürekkep formuna göre ayarlanır. (Orijinal metindeki ifade: Formation)"
+      }
+    ],
+    "advantagesTitle": "Dijital baskının özellikleri",
+    "advantages": [
+      "Geleneksel boyamayla elde edilmesi zor olan yüksek çözünürlüklü desenler ve renk kombinasyonları mümkün olur.",
+      "Renk doğrudan gereken yere uygulandığı için küçük hacimli üretime de uygundur.",
+      "Karmaşık tasarımların tekrar tekrar aynı şekilde üretilmesinde avantaj sağlar."
+    ],
+    "advantagesNote": "Katalog s.9'da genel olarak dijital baskının su ve atık azaltım aralığından söz edilmektedir; ancak bu, Blugene ürünüyle ölçülmüş bir değer olmadığı için bu sitede sayısal olarak gösterilmemektedir."
+  },
+  "DataHub": {
+    "eyebrow": "DATA & CERTIFICATIONS",
+    "title": "Orijinaliyle doğrulanan güven.",
+    "body": "Test sonuçları ve sertifikalar tek bir yerde toplandı. Her kalemi; test kuruluşu · test yöntemi · rapor numarası · veri tarihiyle birlikte orijinalinden doğrulayabilirsiniz.",
+    "carbonSectionTitle": "Biyobazlı karbon (C14)",
+    "carbonSectionBody": "Piyasada bulunan indigo boyasının biyobazlı (yenilenebilir) karbon oranını ölçen bir sonuçtur. Bu değer biyobazlı karbon içeriğidir ve indigo saflığı veya karbon emisyonu azaltma oranı değildir.",
+    "anilineSectionTitle": "Anilin · N-metilanilin analizi",
+    "anilineSectionBody": "Piyasadaki indigo boyalarında kalan anilin ve N-metilanilinin analiz sonuçlarıdır.",
+    "tableLab": "Test kuruluşu",
+    "tableMethod": "Test yöntemi",
+    "tableReport": "Test raporu numarası",
+    "tableReportDate": "Test raporu tarihi",
+    "tableDetectionLimit": "Yöntem tespit limiti",
+    "tableType": "İndigo türü",
+    "tableSample": "Numune",
+    "tablePmc": "pMC",
+    "tableBiobased": "Biyobazlı karbon içeriği (%)",
+    "tableAniline": "Anilin (mg/kg)",
+    "tableNMethylaniline": "N-metilanilin (mg/kg)",
+    "typeChemical": "Kimyasal",
+    "typePlant": "Bitkisel",
+    "typeBio": "Biyo",
+    "notDetected": "Tespit edilmedi",
+    "notDetectedShort": "N.D.",
+    "notDetectedExplain": "Tespit edilmedi (N.D.), belirtilen test yönteminde yöntem tespit limitinin altında kalındığı anlamına gelir. Ölçüm değerinin 0 olduğu anlamına gelmez ve grafikte de 0 uzunluğunda bir çubuk olarak gösterilmez.",
+    "sameLabelNote": "Company M, kimyasal indigo ve bitkisel indigo olmak üzere iki türde ayrı ayrı yer alır. Ayırt edilebilmesi için türüyle birlikte gösterilmektedir.",
+    "anonymousNote": "Şirket adlarında katalogdaki anonim gösterim olduğu gibi kullanılmıştır. Gerçek şirket adları tahmin edilmemiştir.",
+    "sampleScopeNote": "Bu değerler, katalogda yer alan 9 numunenin karşılaştırma sonuçlarıdır ve pazarın tamamını temsil eden bir istatistik değildir. Karbon testi ile anilin testi; kuruluş, yöntem ve tarih bakımından birbirinden farklı olduğu için tek bir göstergede birleştirilmemiştir.",
+    "chartCarbonTitle": "Biyobazlı karbon içeriği karşılaştırması (%)",
+    "chartAnilineTitle": "Anilin · N-metilanilin karşılaştırması (mg/kg)",
+    "chartAccessibleNote": "Grafikteki tüm değerler aşağıdaki tablodan da görülebilir.",
+    "regulatoryOmitted": "Katalog s.4'teki ülkelere ve sertifikalara göre izin verilen limitler tablosu, uygulama kapsamı ülke ve ürün grubuna göre değiştiği için güncel orijinal metnin incelenmesi gereklidir. Bu nedenle, bu sayfa metninde sayısal veriler aktarılmamış veya yorumlanmamıştır. Aşağıdaki <link>orijinal katalog 4. sayfa</link>dan orijinal metni olduğu gibi inceleyebilirsiniz ve gerçek uygulama kriterleri için her bir yönetmeliğin güncel orijinal metnini kontrol ediniz.",
+    "catalogueTitle": "Orijinal katalog",
+    "catalogueBody": "Sağlanan kataloğun 12 sayfasının tamamını inceleyebilirsiniz.",
+    "cataloguePage": "Sayfa {page}",
+    "cataloguePageAlt": "CutisBio biyo indigo kataloğu sayfa {page}",
+    "catalogueDownload": "PDF indir ({size})",
+    "catalogueAnchorNote": "İndirilen PDF, orijinal kataloğun 12. sayfasının tamamıdır ve üstteki küçük resmin sayfa numarasıyla aynı sıradadır.",
+    "carbonZeroNote": "Company Z'nin biyobazlı karbon içeriği katalogda Table 1-1'de 0 (pMC 0.30), Figure 1-3'te ise N.D. olarak yazılıdır. Bu tablo Table 1-1'deki değeri aktarmaktadır.",
+    "reportDateNote": "Test raporu numarası SBED25-00000153-1, katalog Tablo 1-1'de farklı yayımlanma tarihleriyle iki kez yer almaktadır. Orijinal yazımı aynen aktardık."
+  },
+  "Certifications": {
+    "title": "Küresel sertifikalar",
+    "body": "Sağlanan katalogda yer alan sertifikadır. Her bir madde için orijinal sertifikayı büyüterek görmek mümkündür.",
+    "numberLabel": "Sertifika numarası",
+    "issuerLabel": "Sertifika kuruluşu",
+    "productLabel": "Kapsanan ürün",
+    "pageLabel": "Katalog sayfası",
+    "certificateAlt": "{name} sertifikasının orijinal görseli",
+    "logoAlt": "{name} sertifika logosu",
+    "noExpiry": "Belgede son geçerlilik tarihi belirtilmemiştir",
+    "statusDocumented": "Temmuz 2026 kataloğunda yer alan sertifika belgesi",
+    "statusWithinPeriod": "Belgede yazan geçerlilik süresi içinde",
+    "statusPastPeriod": "Belgede yazan geçerlilik süresi dolmuştur. Lütfen güncel belgeler için bize ulaşın.",
+    "verificationNote": "Belgede yazan tarihler doğrulanmıştır; sertifika kuruluşunun veri tabanından güncel sertifika durumu sorgulanmamıştır.",
+    "brandNameNote": "Sertifikalarda geçen ürün adı: \"CB Bio Indigo Dye Powder\". Blugene, bu ürünü de kapsayan CutisBio biyo indigo işinin yeni marka adıdır ve sertifika görsellerindeki ürün adı değiştirilmemiştir.",
+    "scopeNote": "Sertifika kapsamı, her sertifikada yazan ürünle sınırlıdır. Dijital baskı mürekkebinin veya nihai denim giysilerin otomatik olarak sertifikalandığı anlamına gelmez.",
+    "asOfLabel": "Veri tarihi",
+    "nextReviewLabel": "Önerilen bir sonraki sertifika durumu kontrol tarihi",
+    "requestLatest": "Güncel sertifika belgelerini talep edin",
+    "zdhcScope": "Kapsam, sertifikada belirtilen kimyasal formülasyondur (CB Bio Indigo Dye Powder). Kullanım sınıfı: Natural dyes (1.7.27).",
+    "oekoScope": "Ürün listesi sertifikanın ekinde (enclosure) yer alır ve katalogda birlikte sunulmamıştır. Ürün sınıfı: 2.9 Natural dyes. Ek belge görülmeden kapsanan ürünlerin sınırı belirtilmez.",
+    "usdaScope": "USDA Certified Biobased Product etiketinin alındığını doğrulayan katılım belgesidir; etikette belirtilen oran 98%'dir. Katalog s.11'de bu sonucun hassasiyeti dipnotta ±3% (mutlak) olarak belirtilmiştir.",
+    "okbiobasedScope": "Class 5, biyobazlı karbon içeriğinin 97% ile 100% arasında olduğunu ifade eder. Sertifikada EN 16640 yöntemi ve OK 20 edition D sertifikasyon şeması yer alır.",
+    "zoomOpen": "Sertifikayı büyüterek görün",
+    "zoomClose": "Kapat",
+    "zoomHint": "Esc tuşuyla kapatabilirsiniz."
+  },
+  "Inquiry": {
+    "eyebrow": "SAMPLE INQUIRY",
+    "title": "Bir sonraki denimin mavisini birlikte yaratalım.",
+    "body": "Soru türünü seçin ve içeriği bırakın.",
+    "topicLabel": "Talep türü",
+    "topicFabricDyeing": "Kumaş boyama",
+    "topicDigitalPrinting": "Dijital baskı",
+    "topicShadeDevelopment": "Ortak renk geliştirme",
+    "topicTechnicalData": "Teknik · sertifika belgeleri",
+    "messageLabel": "Bizimle paylaşmanız yararlı olacak bilgiler",
+    "messagePlaceholder": "Şirket adı, ilgili kişi, kumaş türü, ihtiyaç duyulan miktar ve termin gibi bilgileri yazın.",
+    "submit": "E-posta ile iletişime geçin",
+    "submitHint": "Butona bastığınızda, varsayılan e-posta programı açılır ve alıcı, konu ve içerik doldurulur. Son olarak 'gönder' butonuna manuel olarak tıklamanız gereklidir ki gönderim yapılabilsin. E-posta programı açılmazsa, doğrudan {email} adresine gönderin. Bu ekrandan hiçbir bilgi dışa aktarılmaz.",
+    "mailSubject": "[Blugene numune talebi] {topic}",
+    "mailIntro": "Blugene numuneleri ve teknik belgeleri hakkında bilgi almak istiyorum.",
+    "mailTopicLine": "Talep türü: {topic}",
+    "mailShadeLine": "İlgilenilen renk numunesi: {shade}",
+    "mailFooter": "— Bu e-posta blugene.co iletişim ekranından oluşturulmuştur.",
+    "emailLabel": "E-posta",
+    "telLabel": "Telefon",
+    "addressLabel": "Adres",
+    "companyRelationTitle": "Blugene ve CutisBio",
+    "companyRelationBody": "Blugene, CutisBio Co., Ltd. tarafından geliştirilen biyo indigonun marka adıdır. Katalogda ve sertifikalarda orijinal ürün adı olan \"Bio Indigo Dye Powder (Microbial Fermentation)\" şeklinde yazılmıştır.",
+    "sampleNote": "Numunelerin sağlanıp sağlanamayacağı, talebiniz üzerine kontrol edilerek bildirilir. (Katalog s.11: Samples are available upon request)"
+  },
+  "Common": {
+    "sourceLabel": "Kaynak",
+    "cataloguePage": "Katalog s.{page}",
+    "asOf": "Veri tarihi: {date}",
+    "viewOriginal": "Orijinali görün",
+    "viewSource": "Orijinal belgeyi görün",
+    "close": "Kapat",
+    "openImage": "Görseli büyüt",
+    "conceptImage": "Kavramsal görsel",
+    "brandImage": "Marka görseli",
+    "testPhoto": "Test fotoğrafı",
+    "imageNoteConcept": "Kavramı anlatmak için hazırlanmış bir görseldir; gerçek tesis · müşteri · test sonuçlarının fotoğrafı değildir.",
+    "imageNotePhoto": "Sağlanan katalogda yer alan fotoğraf, renk düzeltmesi yapılmadan yalnızca web için yeniden boyutlandırılarak kullanılmıştır.",
+    "scrollableRegion": "Yatay olarak kaydırılabilir alan",
+    "catalogueFigure": "Katalog görseli"
+  },
+  "Brand": {
+    "metaTitle": "Marka hikâyesi",
+    "metaDescription": "Blugene, ömür boyu sürecek denim için indigoyu yeniden üreten CutisBio'nun biyo indigo markasıdır.",
+    "heroEyebrow": "THE STORY",
+    "heroTitle": "Denim her gün giyilen bir giysi olduğu için, önce boyayı titizlikle incelemek gerekir.",
+    "heroBody": "İndigo boyasının üretim biçimini canlı bir fermantasyon süreciyle yeniden yazdık. Denim; ırkları ve ülkeleri aşarak günlük hayatımıza ve tüm ömrümüze eşlik eden bir giysidir. Bu yüzden içindeki en küçük safsızlıktan bile ödün vermiyoruz. Cildi ve çevreyi düşünerek indigoyu yeniden üretiyoruz. İşte Blugene budur.",
+    "nameTitle": "İsmin anlamı",
+    "nameBody": "İndigonun mavisini simgeleyen Blue ile canlılığın temeli olan gene kelimelerinin birleşiminden oluşan bir isimdir. Uzun zamandır sevilen indigo mavisini ileri teknolojilerle, sentetik biyoloji ve hassas fermantasyonla yeniden yaratma anlamını taşır.",
+    "promiseTitle": "Söz verdiklerimiz",
+    "promiseBody": "Söz verebileceğimiz şey, doğrulanabilir materyallerdir.",
+    "promiseItems": [
+      {
+        "title": "Hammaddeyi açıklıyoruz",
+        "text": "Yenilenebilir karbondan yola çıkıyoruz. Biyobazlı karbon içeriğini test sonuçlarıyla paylaşıyoruz."
+      },
+      {
+        "title": "Safsızlıkları doğruluyoruz",
+        "text": "Anilin ve N-metilanilini akredite test yöntemleriyle analiz ediyor, sonuçları tespit limitiyle birlikte paylaşıyoruz."
+      },
+      {
+        "title": "Orijinali gösteriyoruz",
+        "text": "Test raporu numaralarını, sertifika numaralarını ve orijinal sertifika görsellerini sitede doğrudan inceleyebilirsiniz."
+      }
+    ],
+    "relationTitle": "CutisBio ile ilişkisi",
+    "relationBody": "Blugene, CutisBio Co., Ltd.'nin indigo işinin marka adıdır. Şirket unvanı ile sertifikalardaki ve test raporlarındaki gösterimde CutisBio adı olduğu gibi kullanılır.",
+    "cta": "Numune · teknik belge talebi"
+  },
+  "Technology": {
+    "metaTitle": "Teknoloji",
+    "metaDescription": "İndigo üretiminin dört yolunu, mikrobiyal fermantasyona dayalı üretimi ve biyobazlı karbon test sonuçlarını açıklıyoruz.",
+    "heroEyebrow": "TECHNOLOGY",
+    "heroTitle": "Maviyi üretmenin dört yolu ve bizim tercihimiz.",
+    "heroBody": "İndigo boyası üretmenin dört yolu vardır. Blugene, karbon döngüsüne uyumlu bir hassas fermantasyon sürecini seçti. Bu seçimimiz çevre ve yaşamımız için sürdürülebilirliği artırır.",
+    "routesTitle": "İndigo sentezinin dört yolu",
+    "routesCaption": "Katalog s.2 Şekil 1-1. Kimyasal yollar kırmızı, biyolojik yollar sarı renkle ayrılmıştır.",
+    "routesAlt": "Ham petrol · biyokütle · indigo bitkisinden başlayan dört indigo sentez yolunun şeması (Katalog s.2)",
+    "routes": [
+      {
+        "name": "Kimyasal indigo",
+        "feedstock": "Ham petrol (yenilenemez)",
+        "intermediate": "Anilin",
+        "text": "Ham petrolden elde edilen anilin üzerinden indigo sentezlenir. Katalog bu yolu kimyasal yol olarak gösterir."
+      },
+      {
+        "name": "Hibrit indigo",
+        "feedstock": "Biyokütle",
+        "intermediate": "Antranilik asit",
+        "text": "Biyokütleden elde edilen antranilik asit üzerinden indigo üretilir. Hammadde yenilenebilirdir; ancak ara basamak saf mikrobiyal yoldan farklıdır."
+      },
+      {
+        "name": "Biyo indigo (hassas fermantasyon kaynaklı)",
+        "feedstock": "Biyokütle (bitkisel ham madde)",
+        "intermediate": "Triptofan",
+        "text": "Biyokütleden elde edilen triptofan, mikroorganizmalar tarafından indigoya dönüştürülür. CutisBio biyo indigosu bu yola karşılık gelir."
+      },
+      {
+        "name": "Doğal indigo (bitki kökenli)",
+        "feedstock": "İndigo bitkisi",
+        "intermediate": "Ekstraksiyon",
+        "text": "İndigo bitkisinden pigment ekstrakte edilir. Katalog, piyasadaki bitki kökenli indigolar arasında kimyasal indigo karışmış görünen örnekler bulunduğunu kaydeder."
+      }
+    ],
+    "routeFeedstockLabel": "Hammadde",
+    "routeIntermediateLabel": "Başlıca ara basamak",
+    "routesNote": "Hibrit yolun antranilik asit basamağı, mikrobiyal yolun triptofan basamağından farklıdır. İki yol aynıymış gibi basitleştirilmemiştir.",
+    "carbonTitle": "Karbon nereden geliyor",
+    "carbon": {
+      "lead": "Yer altındaki petrolden, yeniden büyüyen biyokütleye. Blugene indigoyu biyokütleyi fermente ederek üretir ve rengi oluşturan karbonun çıkış noktasından düşünür. Peki o mavi nereden geliyor?",
+      "journey": {
+        "eyebrow": "01 / FOLLOW THE CARBON",
+        "title": "Aynı mavi. Farklı bir karbon yolculuğu.",
+        "body": "İndigonun mavisini oluşturan molekülde de karbon vardır. O karbonun nereden geldiğini görmek için yolu izleyin.",
+        "guide": "Karbonun çıkış noktasından başlayın ve iki yolu aynı sırayla izleyin.",
+        "order": "Ham madde → Üretim → İndigo · Denim → Kullanım sonrası",
+        "legendSolid": "Ham maddeden ürüne geçiş",
+        "legendDashed": "İşleme ve büyüme koşullarına bağlı salım ve yeniden soğurulma",
+        "legendNote": "Ağaç ve tesisler anlamayı kolaylaştıran örnek çizimlerdir.",
+        "evidenceLink": "Kaynaklar"
+      },
+      "routes": [
+        {
+          "eyebrow": "BIO-BASED INDIGO",
+          "title": "Biyobazlı indigo",
+          "lede": "Bitkilerin soğurduğu karbonla yeni bir mavi.",
+          "chip": "Havadan soğurulan CO₂",
+          "steps": [
+            {
+              "label": "01 / Ham madde",
+              "title": "Yeniden büyüyen biyokütle",
+              "text": "Bitkilerin fotosentezle soğurduğu karbon ham maddede yer alır.",
+              "imageAlt": "Yeşil yapraklı ve çimenli bir ağaç çizimi: bitkisel biyokütle örneği"
+            },
+            {
+              "label": "02 / Üretim",
+              "title": "Mikrobiyal fermantasyon",
+              "text": "Mikroorganizmalar biyokütle kaynaklı ham maddeyi indigoya dönüştürür.",
+              "imageAlt": "Kültür sıvısı ve mikroorganizmalarla indigo üreten fermentör çizimi",
+              "note": "Fermantasyon sırasında da bir miktar CO₂ salınır"
+            },
+            {
+              "label": "03 / Ürün",
+              "title": "İndigo, ardından denim",
+              "text": "Biyokütleden gelen karbon denimin mavisinde yer alır.",
+              "imageAlt": "Mavi indigo tozu ve katlanmış kot pantolon çizimi"
+            },
+            {
+              "label": "04 / Kullanım sonrası",
+              "title": "Bir kısmı yeniden havaya",
+              "text": "Yakma veya ayrışma ile CO₂ hâline gelince atmosfere geri dönebilir.",
+              "imageAlt": "Kullanım sonrası işlemde CO₂ salındığında karbonun geri döndüğü atmosferi temsil eden bulut çizimi",
+              "note": "Yol ve zaman, işleme yöntemine göre değişir"
+            }
+          ],
+          "loop": "Yeni bitkiler büyürken CO₂ yeniden soğurulabilir.",
+          "loopSub": "Yakın dönem biyolojik karbon döngüsüne bağlı ham madde",
+          "coreLabel": "Bu yolun özü",
+          "core": "Havadan bitkiye, bitkiden maviye.",
+          "coreSub": "Yenilenebilir ham maddenin karbonunu kullanır."
+        },
+        {
+          "eyebrow": "FOSSIL-BASED INDIGO",
+          "title": "Petrokimyasal sentetik indigo",
+          "lede": "Yer altında uzun süre depolanmış karbon çıkarılıp mavinin ham maddesi olarak kullanılır.",
+          "steps": [
+            {
+              "label": "01 / Ham madde",
+              "title": "Yer altında depolanmış petrol",
+              "text": "Uzun jeolojik zaman boyunca depolanmış fosil karbon çıkarılır.",
+              "imageAlt": "Yer altı katmanlarından petrol çeken pompa ve petrol varili çizimi"
+            },
+            {
+              "label": "02 / Üretim",
+              "title": "Petrol kaynaklı ham maddeden kimyasal sentez",
+              "text": "Petrol kaynaklı ham madde kimyasal süreçlerle indigoya dönüştürülür.",
+              "imageAlt": "Petrol kaynaklı ham maddeyi indigoya dönüştüren kimya tesisi çizimi"
+            },
+            {
+              "label": "03 / Ürün",
+              "title": "İndigo, ardından denim",
+              "text": "Petrolden gelen karbon denimin mavisinde yer alır.",
+              "imageAlt": "Mavi indigo tozu ve katlanmış kot pantolon çizimi"
+            },
+            {
+              "label": "04 / Kullanım sonrası",
+              "title": "Salındığında atmosfere karışır",
+              "text": "CO₂ olarak salındığında yer altındaki karbon atmosfere ve biyosfere geçer.",
+              "imageAlt": "CO₂ olarak salınan yer altı karbonunun geçtiği atmosferi temsil eden bulut çizimi",
+              "note": "Üründeki karbonun tamamı hemen salınmaz"
+            }
+          ],
+          "loop": "Petrol, bizim kullandığımız hızda yeniden oluşmaz.",
+          "loopSub": "Salınan karbon bitkilerce soğurulsa bile yer altındaki petrol rezervi hemen yeniden dolmaz.",
+          "coreLabel": "Bu yolun özü",
+          "core": "Yer altında depolanmış karbondan maviye.",
+          "coreSub": "Salındığında, çok uzun süre depolanmış karbon atmosfere girer."
+        }
+      ],
+      "footnote": "Ham madde karbon akışlarının basitleştirilmiş kavramsal şemasıdır. Ağaç, bitkisel biyokütleyi simgeler; Blugene’in gerçek ham maddesini veya tesisini göstermez. Her iki yolda da üretim enerjisi, rafinasyon ve taşıma gibi aşamalarda emisyon oluşabilir. Kesikli çizgiler olası yolları gösterir; tam geri kazanım, tamamen biyobozunurluk, anında yeniden soğurulma ya da karbon nötrlük demek değildir.",
+      "origin": {
+        "eyebrow": "02 / WHY THE ORIGIN MATTERS",
+        "title": "Karbon aynı olsa da zaman farklı.",
+        "body": "Fark CO₂’nin doğasında değil; karbonun alındığı rezervde ve onun yeniden dolma süresindedir.",
+        "items": [
+          {
+            "label": "Petrol kaynaklı karbon",
+            "title": "Uzun süre depolanmış karbon",
+            "text": "Çağlar boyu yer altında depolanmış karbon çıkarılıp kullanılır. Petrol, bizim kullandığımız hızda yeniden oluşmaz.",
+            "tags": [
+              "Jeolojik ölçekte depolama",
+              "Çıkarma · kullanım"
+            ]
+          },
+          {
+            "label": "Biyobazlı karbon",
+            "title": "Yeniden büyüyen bir kaynağın karbonu",
+            "text": "Bitkilerin yakın zamanda havadan soğurduğu karbon kullanılır. Biyokütle yenilendiğinde karbon soğurulması yeni bitkilerin büyümesiyle sürebilir.",
+            "tags": [
+              "Büyüme · soğurma",
+              "Kullanım · yenilenme"
+            ]
+          }
+        ],
+        "closing": "Blugene’in değiştirmek istediği şey, maviyi oluşturan karbonun çıkış noktasıdır."
+      },
+      "evidence": {
+        "eyebrow": "03 / A CLEARER BLUE",
+        "title": "İyi bir açıklama, açık bir dayanak ister.",
+        "body": "Ham maddenin nereden geldiği ile çevreye ne kadar etki ettiği, birbirinden farklı iki sorudur.",
+        "items": [
+          {
+            "label": "Karbonun kaynağı",
+            "title": "“Biyobazlı mı?”",
+            "text": "ASTM D6866 gibi bir radyokarbon analiziyle, numunenin organik karbonu içindeki biyobazlı karbon oranı belirlenebilir.",
+            "tag": "Biyobazlı karbon içeriği testi"
+          },
+          {
+            "label": "Yaşam döngüsü etkisi",
+            "title": "“Karbon emisyonu ne kadar azaldı?”",
+            "text": "Ham madde yetiştirme, üretim, taşıma ve bertaraf gibi karşılaştırma kapsamına giren tüm süreçler ve enerji birlikte hesaplanmalıdır. Bu soruyu yaşam döngüsü değerlendirmesi (LCA) yanıtlar.",
+            "tag": "Aynı işlev · aynı kapsamda LCA karşılaştırması"
+          }
+        ],
+        "calloutTitle": "Biyobazlı olmak, kendiliğinden karbon nötr olmak demek değildir.",
+        "calloutBody": "Karbon döngüsüne bağlı bir ham madde kullanmak ile bir ürünün net emisyonunun sıfır olması aynı şey değildir. Bu bölüm ham madde yolunu açıklar; ürün başına emisyon azaltım rakamı sunmaz. Blugene’in biyobazlı karbon içeriği test sonuçları, laboratuvar, yöntem ve rapor numarasıyla birlikte <link>Veri · Sertifikalar sayfasında</link> yer alır."
+      },
+      "faq": {
+        "eyebrow": "A FEW GOOD QUESTIONS",
+        "title": "Denimi sevenlerin soruları.",
+        "items": [
+          {
+            "question": "Fermantasyon neden karbon döngüsüyle bağlantılı?",
+            "answers": [
+              "Fermantasyonun kendisinden çok ham maddenin kaynağı önemlidir. Biyokütledeki karbon, bitkilerin atmosferdeki CO₂’yi soğurmasıyla oluşmuştur. Mikroorganizmalar bu karbonu indigoya dönüştürdüğü için, yakın dönem biyolojik karbon döngüsüne bağlı bir ham madde kullanılmış olur.",
+              "Fermantasyon enerji gerektirir ve CO₂ de açığa çıkabilir. Dolayısıyla yalnızca “fermantasyonla üretildi” diye toplam emisyon sıfır olmaz; bu tek başına yeterli bir gerekçe değildir."
+            ]
+          },
+          {
+            "question": "Kot giymek karbonu azaltır mı?",
+            "answers": [
+              "Kot giymek, kendi başına havadaki karbonu ortadan kaldırmaz. Burada anlatılan değişiklik, indigo boyasının ham madde karbonunun petrol kaynaklıdan biyokütle kaynaklıya geçirilmesidir. Bitmiş bir kotun toplam çevresel etkisi için pamuk yetiştirme, dokuma, boyama ve yıkama gibi aşamalara da bakılmalıdır."
+            ]
+          },
+          {
+            "question": "Giysideki karbon sonunda tamamen doğaya geri döner mi?",
+            "answers": [
+              "Yol ve hız; yeniden kullanım, geri dönüşüm, yakma veya depolama gibi gerçek işleme yöntemine göre değişir. Döngü oku, karbonun CO₂ olarak salınıp bitkilerce yeniden soğurulabileceği kavramını gösterir. Giysinin ya da boyanın tamamen biyobozunur, kompostlanabilir veya tümüyle geri kazanılabilir olduğu anlamına gelmez; böyle bir iddia değildir."
+            ]
+          },
+          {
+            "question": "“Biyobazlı karbon içeriği” değeri ne anlama gelir?",
+            "answers": [
+              "ASTM D6866 yöntemine göre biyobazlı karbon içeriği, test edilen numunenin organik karbonu içindeki biyobazlı karbon oranıdır. Boya saflığı, ürünün toplam kütlesinde bitkisel ham madde oranı ya da karbon emisyonunda azalma anlamına gelmez; bunlar farklı ölçütlerdir ve bu değer onlar değildir.",
+              "Gerçek bir ürünün içeriğini doğrularken test konusu ve yöntemi, numune ve parti, laboratuvar ve sonucu birlikte inceleyin. Blugene’in ölçüm değeri (%98, pMC 97.73) Veri · Sertifikalar sayfasında laboratuvar, yöntem ve rapor numarasıyla birlikte yer alır."
+            ]
+          },
+          {
+            "question": "Biyo indigo, bitkilerden renk çıkarılan doğal bir boya mı?",
+            "answers": [
+              "Blugene’in yöntemi, biyokütleyi mikrobiyal fermantasyonla indigoya dönüştürmektir. Çivit otu yapraklarından pigment çıkaran geleneksel doğal indigo üretiminden farklıdır. “Biyobazlı”, pigmenti oluşturan karbonun kaynağını anlatır."
+            ]
+          }
+        ]
+      },
+      "closing": {
+        "eyebrow": "FOR THE DENIM WE LOVE.",
+        "text": "Uzun süre sevilecek bir mavi. En başından yenilenmiş."
+      },
+      "sources": {
+        "summary": "Bu anlatının dayandığı kaynaklar",
+        "introStrong": "Literatüre ve standartlara dayalı açıklama",
+        "introText": "Biyolojik karbon döngüsü ile fosil karbon arasındaki ve biyobazlı karbon içeriği testi ile yaşam döngüsü değerlendirmesi arasındaki ayrım.",
+        "items": [
+          {
+            "title": "NASA Earth Observatory — The Carbon Cycle",
+            "note": "Fotosentez, hızlı ve yavaş karbon döngüleri, fosil karbonun atmosfere girişi."
+          },
+          {
+            "title": "ASTM D6866 — Radyokarbon analiziyle biyobazlı içeriğin belirlenmesi",
+            "note": "Test karbonun biyolojik kökenini değerlendirir; sera gazı azaltımını doğrudan ölçmez, bunun ölçüsü değildir."
+          },
+          {
+            "title": "GHG Protocol — Product Life Cycle Standard",
+            "note": "Bir ürünün sera gazı etkisini yaşam döngüsü bakışıyla ölçmenin ilkeleri."
+          },
+          {
+            "title": "USDA BioPreferred — Sık sorulan sorular",
+            "note": "Organik karbon esaslı içeriğin anlamı ve çevresel etki ile performans değerlendirmesinden farkı."
+          }
+        ],
+        "processStrong": "Blugene süreci hakkında",
+        "processText": "İndigonun biyokütle fermantasyonuyla üretildiğine ilişkin marka bilgisine dayanarak hazırlandı. Şemalar anlamayı kolaylaştırmak için düzenlenmiştir; gerçek madde dengesini veya emisyonları göstermez, bunların ölçümü değildir.",
+        "externalLinkHint": "Yeni pencerede açılır"
+      }
+    },
+    "processTitle": "Hammaddeden kumaşa",
+    "impurityTitle": "Anilin neden kontrol edilir",
+    "impurityBody": "Anilin ve N-metilanilin, kimyasal sentez yolunun başlangıç maddesi veya ara ürünüdür ve nihai indigo tozunda tepkimeye girmemiş kalıntı olarak kalabilir. Toksisitesi ve kanserojen olma ihtimali nedeniyle çeşitli sertifikasyon standartları, tekstil boyalarında ve nihai üründe izin verilen konsantrasyonu sınırlar.",
+    "cta": "Test verilerinin tamamını görün",
+    "routeOursLabel": "Yolumuz · Blugene",
+    "routesFigureBridge": "Yukarıdaki dört yolu tek sayfada toplayan katalog şemasıdır. Görseldeki sıra da kartlardakiyle aynıdır."
+  },
+  "DyeingPrinting": {
+    "metaTitle": "Boyama · Baskı",
+    "metaDescription": "Pamuk · ipek · kaşmir boyama karşılaştırması, haslık test sonuçları, konsantrasyona göre renk numuneleri, toz ve dijital baskı mürekkebi tanıtılmaktadır.",
+    "heroEyebrow": "DYEING & PRINTING",
+    "heroTitle": "Kumaş üzerinde doğrulanan renk.",
+    "heroBody": "Boyanabilirlikten haslığa, tondan ürün formuna kadar. Gerçek kumaş üzerinde doğrulanan verileri olduğu gibi sunuyoruz.",
+    "cta": "Kumaş numunesi talep edin",
+    "jumpNavLabel": "Bu sayfa içinde gezin",
+    "jumpNav": [
+      "Boyama yeteneği",
+      "Haslık",
+      "Renk kütüphanesi",
+      "Ürün grubu",
+      "Baskı"
+    ]
+  },
+  "Tech": {
+    "title": "Mikrobiyal fermantasyonla üretilen indigo: Blugene",
+    "description": "Blugene by CutisBio biyo indigosunun hangi yolla üretildiğini ve hangi testlerle doğrulandığını açıklıyoruz.",
+    "intro": "En sevilen kumaş olan mavi denim. O rengi üretmenin tek bir yolu yoktur. CutisBio, mikroorganizmaların biyosentez yolaklarını ve fermantasyonu kullanarak indigo üretir.",
+    "section1Title": "1. Safsızlıklar neden kontrol edilir",
+    "section1Text": "Anilin ve N-metilanilin, kimyasal sentez indigosunun başlangıç maddesi veya ara ürünüdür ve nihai tozda tepkimeye girmemiş kalıntı olarak kalabilir. Toksisitesi ve kanserojen olma ihtimali nedeniyle ZDHC, OEKO-TEX, GOTS gibi çeşitli sertifikasyon standartları, bu maddelerin tekstil boyalarında ve nihai üründe izin verilen konsantrasyonunu sınırlar. Bu nedenle her üründe bu iki maddeyi analiz ediyor ve sonuçları tespit limitiyle birlikte paylaşıyoruz.",
+    "comparisonCaption": "Katalog p.4'te belirtilen kapsamı (başlangıç maddesi · ara madde, toksisite · kanserojen olma olasılığı) aşmayan bir açıklamadır.",
+    "section2Title": "2. Mikrobiyal fermantasyonla üretilen indigo",
+    "section2Text": "CutisBio, mikroorganizmaların biyosentez yolaklarını kullanarak biyokütleden elde edilen triptofanı indigoya dönüştüren bir fermantasyon prosesi uygular. Kataloğun sunduğu dört indigo sentez yolu arasında mikrobiyal kökenli yola karşılık gelir.",
+    "section3Title": "3. Testlerle doğrulanan sonuçlar",
+    "section3Text": "KATRI tarafından yapılan ASTM D6866-24a Method B testinde biyobazlı karbon içeriği %98 (pMC 97.73) olarak ölçülmüş, KOTERI tarafından yapılan KS K 0734 2019 testinde ise anilin ve N-metilanilin tespit edilmemiştir (yöntem tespit limiti 5 mg/kg). Haslık, katalog verilerine göre bitkisel ve kimyasal indigoyla kıyaslanabilir düzeydedir (comparable performance); kalem bazındaki dereceleri veri sayfasındaki tablodan olduğu gibi görebilirsiniz.",
+    "certSectionTitle": "Küresel sertifikalar",
+    "certSectionText": "Sağlanan katalogda yer alınan sertifikadır. Orijinali aynen kontrol edilebilir.",
+    "faqTitle": "Sık sorulan sorular",
+    "faqList": [
+      {
+        "question": "Blugene nedir?",
+        "answer": "Blugene, CutisBio Co., Ltd.'nin mikrobiyal fermantasyonla ürettiği biyo indigonun marka adıdır. Katalogda ve sertifikalarda orijinal ürün adı olan \"Bio Indigo Dye Powder (Microbial Fermentation)\" şeklinde yazılmıştır."
+      },
+      {
+        "question": "'%98 biyobazlı karbon içeriği' ne anlama gelir?",
+        "answer": "Üründe bulunan karbonun %98'inin yenilenebilir hammaddeden geldiği anlamına gelir. KATRI tarafından yapılan ASTM D6866-24a Method B (AMS) testinin sonucudur (pMC 97.73, rapor SBED25-00000153-1, 2025-05-22); indigo saflığı ya da karbon emisyonu azaltım oranı değildir."
+      },
+      {
+        "question": "'Anilin tespit edilmedi' ifadesi içerik miktarının 0 olduğu anlamına mı gelir?",
+        "answer": "Hayır. KOTERI tarafından yapılan KS K 0734 2019 testinde yöntem tespit limiti olan 5 mg/kg'ın altında kalındığı için tespit edilmediği anlamına gelir (rapor 2025-0604-1132-C03, 2025-06-10). 0 ppm ya da tamamen içermeme anlamına gelmez."
+      },
+      {
+        "question": "Mevcut boyama ekipmanlarında olduğu gibi kullanılabilir mi?",
+        "answer": "Katalog; pamuk · ipek · kaşmir boyamada bitkisel ve kimyasal indigoyla kıyaslanabilir bir performans (comparable performance) kaydedildiğini belirtir. Ancak fabrikaya, kumaşa ve proses koşullarına göre sonuçlar değişebileceğinden, gerçek uygulamanın kumaş numunesiyle doğrulanmasını öneririz."
+      },
+      {
+        "question": "Sertifikalar hangi ürünler için geçerlidir?",
+        "answer": "Sertifikalarda yazan ürün adı: \"CB Bio Indigo Dye Powder\". OEKO-TEX ECO PASSPORT'un ürün listesi sertifikanın ekinde yer aldığı için yalnızca katalogla kapsam belirlenemez. Dijital baskı mürekkebi veya nihai denim giysiler otomatik olarak sertifikalanmış olmaz."
+      }
+    ],
+    "structuresTitle": "Anilin ve N-metilanilinin kimyasal yapısı",
+    "structuresNote": "Doğrulanmış kimyasal yapılardan doğrudan kodla (SVG) çizilmiş iskelet formülleridir. Görsel üretim aracıyla oluşturulmamıştır.",
+    "structureAnilineName": "Anilin",
+    "structureAnilineDesc": "Benzen halkasına bir amino grubunun (NH2) bağlı olduğunu gösteren iskelet formülü.",
+    "structureNMethylanilineName": "N-metilanilin",
+    "structureNMethylanilineDesc": "Benzen halkasına bağlı azot atomunda bir hidrojen ve bir metil grubu (CH3) bulunduğunu gösteren iskelet formülü."
   },
   "About": {
-    "title": "Sentetik Biyoloji ile günlük hayatı daha güzel tasarlamak",
+    "title": "Sentetik biyolojiyle günlük hayatı daha sağlıklı ve daha güzel tasarlamak",
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "Sentetik biyoloji teknolojisiyle yüksek performanslı biyo-materyaller üreterek günlük yaşamın sürdürülebilirliğini genişletmek.",
-    "aboutImageAlt": "CutisBio araştırmacıları tarafından yürütülen derinlemesine biyo araştırmalarından bir görünüm",
-    "coreBusinessTitle": "Öncü Biyo-tabanlı Özel Materyallerin Geliştirilmesi",
-    "medicalTitle": "Tıbbi (Medical)",
-    "medicalText": "Sadece biyo-süreçlerle mümkün olan farmasötik ham maddelerin geliştirilmesi",
-    "beautyTitle": "Güzellik (Beauty)",
-    "beautyText": "Cilt mikrobiyomu büyük verisi ve sentetik biyolojiyi birleştiren hassas güzellik çözümleri, yüksek katma değerli ürün ve materyallerin geliştirilmesi",
-    "fashionTitle": "Moda (Fashion)",
-    "fashionText": "%100 toksik olmayan, anilinsiz 'Bio-Indigo'nun ticarileştirilmesi yoluyla insan için güvenli ve çevre dostu denim modasının tamamlanması",
-    "historyTitle": "Önemli Kilometre Taşları ve Başarılar",
+    "visionText": "Vizyonumuz, insan yaşamını daha güzel ve daha sağlıklı kılan yenilikçi biyomalzemelerin küresel öncüsü olmaktır. Blugene biyo indigo boyası, tüm insanlığın uzun süredir ortak olarak sevdiği denim ve kot pantolonu yenileyerek insan sağlığını ve dünya çevresinin sürdürülebilirliğini artırmak için geliştirilmiş bir biyomalzemedir.",
+    "aboutImageAlt": "CutisBio araştırmacılarının derinlemesine biyoloji araştırmalarından bir görünüm",
+    "coreBusinessTitle": "Temel iş alanları",
+    "healthTitle": "Sağlık",
+    "healthText": "Sağlıklı bir günlük hayat ve uzun yaşam için önemli maddeleri sentetik biyolojiyle üretiyoruz.",
+    "beautyTitle": "Güzellik",
+    "beautyText": "Cilt ve saçın yaşlanmasını yöneten maddeler ve ürünler geliştiriyoruz.",
+    "fashionTitle": "Moda (Blugene)",
+    "fashionText": "Mikrobiyal fermantasyonla ürettiğimiz biyo indigoyu denim boyama ve dijital baskı için tedarik ediyoruz.",
+    "historyTitle": "Tarihçe",
     "historyList": [
+      {
+        "year": "2025",
+        "event": "Biyo bazlı indigo boyasının çok sayıda küresel premium denim şirketiyle boyama doğrulaması tamamlandı"
+      },
       {
         "year": "2024",
         "event": "Bio-Indigo biyo boya seri üretim sisteminin kurulması ve tam ölçekli ticarileştirmenin başlatılması"
@@ -78,125 +746,107 @@
         "year": "2020",
         "event": "CutisBio Co., Ltd.'nin kurulması"
       }
-    ]
+    ],
+    "blugeneNoteTitle": "Bu site hakkında",
+    "corporateSiteCta": "CutisBio kurumsal resmi web sitesine gidin",
+    "corporateSiteNewTab": "yeni pencerede açılır",
+    "metaDescription": "CutisBio, mikroorganizmaların biyosentez yeteneğini tasarlayarak endüstriyel malzemeler üretir. Biyo indigo markası Blugene dahil olmak üzere iş alanlarımızı ve tarihçemizi tanıtır."
   },
-  "Tech": {
-    "title": "Mikrobiyal Fermantasyon ile Sürdürülebilir Denim Boyama",
-    "description": "CutisBio'nun Anilin içermeyen indigo boya gelişiminin arka planı ve çevre dostu denim modasının geleceği.",
-    "intro": "En sevilen moda ürünü, 'Mavi Denim (Blue Denim)'. Ancak bu güzel rengin ardında doğayı ve sağlığı tehdit eden petrokimya türevli bir madde olan 'Anilin' gizliydi. CutisBio bu sorunu mikropları kullanarak kökten çözüyor.",
-    "section1Title": "1. Anilin İçermemesinin Kesin Gerekliliği",
-    "section1Text": "Anilin, DSÖ'ye bağlı Uluslararası Kanser Araştırmaları Ajansı (IARC) tarafından potansiyel kanserojen olarak sınıflandırılmış tehlikeli bir maddedir. Denim üretim sürecinde su kaynaklarına kontrolsüzce karışarak sadece ekosistemi tahrip etmekle kalmaz, aynı zamanda ciltleriyle uzun süre temas eden tüketicileri de olumsuz etkiler.",
-    "comparisonImageAlt": "Anilin ve Metilanilin kimyasal yapılarını ile dermatit ve mesane kanseri risklerini gösteren infografik",
-    "comparisonCaption": "Anilin ve Metilanilinin kimyasal yapıları ve temas dermatiti ile mesane kanseri gibi ölümcül insan sağlığı tehditleri",
-    "section2Title": "2. CutisBio'nun Yeniliği: Mikropları Fabrikalara Dönüştürmek",
-    "section2Text": "Doğada bir cevap vardı. Gelişmiş sentetik biyoloji teknolojisini kullanarak, özel mikropları bitkilere benzer bir metabolik yola sahip olacak şekilde donattık. Bu mikroplar kendi başlarına indigo öncüleri üreterek anilin gibi ölümcül kimyasalların kullanımını temelden engeller.",
-    "section3Title": "3. Kaliteden Ödün Vermeyen 'Drop-in' Çözümü",
-    "section3Text": "Çevre dostu olmak kaliteyi feda etmeniz gerektiği anlamına gelmez. CutisBio'nun biyo-indigosu, mevcut boyama fabrikalarının altyapısı değiştirilmeden hemen entegre edilebilecek bir 'Drop-in' forma sahiptir. Geleneksel kimyasal boyalarla aynı renk derinliğini (Shade) ve sürtünme haslığını mükemmel bir şekilde yansıtır.",
-    "certSectionTitle": "Küresel Sürdürülebilirlik Sertifikaları",
-    "certSectionText": "Sürdürülebilirlik, çevre dostu olma ve insan güvenliği ile ilgili çeşitli yönlerde birinci sınıf sertifikaları tamamladığımızı duyurmaktan gurur duyuyoruz.",
-    "certOkbiobased": "OK biobased Sertifika İşareti",
-    "certBioPreferred": "USDA BioPreferred Sertifika İşareti",
-    "certOekoTex": "OEKO-TEX Eco Passport Sertifika İşareti",
-    "certZdhc": "ZDHC Sertifika İşareti",
-    "faqTitle": "Sıkça Sorulan Sorular (SSS)",
-    "faqList": [
-      {
-        "question": "Geleneksel indigo boyamanın sorunları nelerdir?",
-        "answer": "Geleneksel sentetik indigo boyalar, anilin ve hidrojen siyanür gibi petrokimyasallar kullanılarak üretilir. Bu, ciddi su kirliliğine neden olur ve hem işçilerin hem de son tüketicilerin sağlığını tehdit eder."
-      },
-      {
-        "question": "Mikrobiyal fermantasyon tabanlı indigo boya nedir?",
-        "answer": "CutisBio'nun teknolojisi, doğal fermantasyon süreci ile indigo öncüleri üretmek için özel olarak tasarlanmış mikropları kullanır. Kimyasal sentez yerine biyolojik mekanizmaları kullanarak %100 anilin içermeyen bir boya yaratıyoruz."
-      },
-      {
-        "question": "Geleneksel giysi kalitesinde bir fark var mı?",
-        "answer": "Hayır. Geleneksel indigo denim boyamasıyla eşit veya daha üstün bir kalite, renk derinliği ve sürtünme haslığı elde eder. Kaliteden ödün vermeden mükemmel sürdürülebilirliğe ulaştık."
-      }
-    ]
+  "Blog": {
+    "eyebrow": "İçgörüler ve teknoloji",
+    "title": "Blog",
+    "description": "CutisBio'nun sentetik biyoloji teknolojisi ve sürdürülebilir moda üzerine derinlemesine makaleleri sunuyoruz.",
+    "categoryTech": "Teknoloji tanıtımı",
+    "readMore": "Devamını okuyun",
+    "readTime": "{minutes} dakikalık okuma"
+  },
+  "Contact": {
+    "title": "İletişim",
+    "description": "Blugene biyo indigo örnekleri ve teknik · sertifikasyon materyalleri hakkında sorular kabul edilmektedir.",
+    "addressDetail": "Apgujeong Binası 8. kat, Nonhyeon-ro 842, Gangnam-gu, Seul 06025, Kore\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
+    "mapTitle": "Yol tarifi"
+  },
+  "NotFound": {
+    "title": "Aradığınız sayfa bulunamadı.",
+    "body": "Adres değişmiş ya da sayfa kaldırılmış olabilir. Aşağıdaki bölümlerden aradığınızı bulabilirsiniz.",
+    "backHome": "Ana sayfaya git"
   },
   "News": {
-    "title": "CutisBio Haber Odası",
-    "description": "Sentetik biyoloji tarafından yönlendirilen çevre dostu modadaki en son haberlere göz atın.",
+    "title": "CutisBio Basın Odası",
+    "description": "Sentetik biyoloji ile oluşturulan sürdürülebilir moda konusundaki en son gelişmeleri keşfedin.",
+    "categoryVideo": "Video",
+    "categoryPost": "Haberler",
+    "playVideo": "Videoyu Oynat",
     "articles": [
       {
         "date": "2025-11-19",
-        "category": "basın bülteni",
-        "title": "S Skin Co., Ltd. ve Cutis Bio, cilt güçlendiriciler için füzyon polipeptit malzemelerinin ticarileştirilmesine yönelik bir Mutabakat Anlaşması imzaladı",
-        "summary": "S-Skin Co., Ltd. ve CutisBio, cilt güçlendiricilere yönelik füzyon polipeptit malzemelerinin ticarileştirilmesi için bir Mutabakat Anlaşması imzaladı. cncnews.co.kr",
+        "category": "Basın bülteni",
+        "title": "SSkin Co., Ltd × CutisBio, Cilt güçlendirici için polipeptid teknolojisi işbirliği MOU imzaladı",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBBb2F5Sjh2MlYtZVBQaThpM3N1dEYtLUhNaGFhTlVVWTJMcHc1RnN6SU9aVUhmNjVBbWtDemtGVEg5M0dLTm1lUncyRWV0WXhuRFdub1FndHlGSE1FNUNBZXR0NDg?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBBb2F5Sjh2MlYtZVBQaThpM3N1dEYtLUhNaGFhTlVVWTJMcHc1RnN6SU9aVUhmNjVBbWtDemtGVEg5M0dLTm1lUncyRWV0WXhuRFdub1FndHlGSE1FNUNBZXR0NDg?oc=5",
+        "sourceTitle": "㈜에스스킨×큐티스바이오, 스킨부스터용 융합폴리펩타이드 소재 사업화 MOU 체결",
+        "sourceSummary": ""
       },
       {
         "date": "2025-11-19",
-        "category": "basın bülteni",
-        "title": "S-Skin Co., Ltd. × CutisBio MOU... Cilt güçlendirici amaçlı füzyon polipeptit materyalinin ticarileştirilmesine yönelik işbirliği",
-        "summary": "S-Skin Co., Ltd.",
+        "category": "Basın bülteni",
+        "title": "SSkin Co., Ltd × CutisBio MOU... Cilt güçlendirici için polipeptid teknolojisi işbirliği",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UZFRlVjlLNjVfbkxkNFYyOTJlTThaRDdUQmVQdWxPeVFDVnJoZGFSWE80OWdiSG9yZzJJMzhpLVBVUmtHQmtIVTBRazE2WVRGSHBXN1cteU41eVFrQVg0WjQydw?oc=5"
-      },
-      {
-        "date": "2025-05-06",
-        "category": "basın bülteni",
-        "title": "[Katkı] \"Öncelikle sentetik biyoloji ve ileri biyoimalat tanıtım merkezi kurulmalı.\"",
-        "summary": "[Katkı] \"Öncelikle sentetik biyoloji ve ileri biyoimalat tanıtım merkezi kurulmalı\" ​ zdnet.co.kr",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5xeC1RWVJiSmJtZjh4NExKR2xzN29hQUdNXzZNYmNWRGI5MG1JWHFORDFPcGY1dlBvNU84TmI0T254cUh4QkhmbWs5cEwxRUdydnJ4XzlR?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UZFRlVjlLNjVfbkxkNFYyOTJlTThaRDdUQmVQdWxPeVFDVnJoZGFSWE80OWdiSG9yZzJJMzhpLVBVUmtHQmtIVTBRazE2WVRGSHBXN1cteU41eVFrQVg0WjQydw?oc=5",
+        "sourceTitle": "(주)에스스킨 × 큐티스바이오 MOU... 스킨부스터용 융합폴리펩타이드 소재 사업화 협업",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-27",
-        "category": "basın bülteni",
-        "title": "İndigo boyamanın 'standartlaştırılması ve ticarileştirilmesi'",
-        "summary": "İndigo boyamanın 'standartlaştırılması ve ticarileştirilmesi' TIN Haberleri",
+        "category": "Basın bülteni",
+        "title": "Indigo boyamanın 'standartlaştırılması ve ticarileştirilmesi'",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8yZTRHUWFXU2dMdHp0WS1PMTVNcmQxX2ZmMDR5M2MwQzlQMTc3YkFOMEpZNkdvX3JmaFhBb1FsSnVSZ21Vemc?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8yZTRHUWFXU2dMdHp0WS1PMTVNcmQxX2ZmMDR5M2MwQzlQMTc3YkFOMEpZNkdvX3JmaFhBb1FsSnVSZ21Vemc?oc=5",
+        "sourceTitle": "인디고 염색의 ‘표준화 및 상용화’",
+        "sourceSummary": ""
+      },
+      {
+        "date": "2024-08-21",
+        "category": "Basın bülteni",
+        "title": "Geri dönüştürülmüş iplikten çevre dostu boyamaya kadar... Moda sektöründe 'çevre yönetimi' yarışı",
+        "summary": "",
+        "thumbnailAlt": "Haber küçük resmi",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9WU1FJWW92UEpSX09GTkpMZTRVNjlKblpXVGRiRXV5Ull2WUdoVFNIOEx1cTBGeV9RNlRWTHJIb0NlbHNTems0c3psczU3QXV5MXg1R3k2cDJGYTVnZHNaNTRucmpVaGJBemktV0g2bTbSAXRBVV95cUxOZmhEdFFGaUxvemlfMkR5LTNZOUVad0hOZlM1Q3JCeWRlWW9ZT3k0V3NaTi1fbEVXUlF2MXlMLUVXMkhMeGhNOUFzN09qa1BKdDB6TXpzN25nLUdRdUthQ2k1WlNuZ0VsckFwSGRNLUpSSWNtcg?oc=5",
+        "sourceTitle": "리사이클 원사 개발부터 친환경 염색까지...패션업계 '친환경 경영' 승부",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-20",
-        "category": "basın bülteni",
-        "title": "Kolon FnC Le Cashmere, Seul'deki Preview'da çevre dostu boyama yöntemini tanıttı",
-        "summary": "Kolon FnC Le Cashmere, Seul'deki Preview'da çevre dostu boyama yöntemini tanıttı Yonhap News",
+        "category": "Basın bülteni",
+        "title": "Kolon FnC Le Cashmere, Preview in Seoul'de çevre dostu boyama yöntemi ortaya koyuyor",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9WUFAwR09kREVwYWJ5WEZwSjdmVDhYd216OU1tc09rNldONW81b0pQeUZYNWYzeDBXQWItRjRWUWotdDdfWDVtQS1ZM0hwX1pYNWNmeFpBakE3Z3PSAWBBVV95cUxNMnI2QVhYNGtnbUN6WmZZaWRkWGMyd2JGUGs3TTVKYkVQdlM3VFdiWm5UOUNDc2dxOE1DU28tdW5Ud0RWLTBxN1BfZ3hEX0NRQ3hlWTg1NHoyUVZ6cmVRWmQ?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9WUFAwR09kREVwYWJ5WEZwSjdmVDhYd216OU1tc09rNldONW81b0pQeUZYNWYzeDBXQWItRjRWUWotdDdfWDVtQS1ZM0hwX1pYNWNmeFpBakE3Z3PSAWBBVV95cUxNMnI2QVhYNGtnbUN6WmZZaWRkWGMyd2JGUGs3TTVKYkVQdlM3VFdiWm5UOUNDc2dxOE1DU28tdW5Ud0RWLTBxN1BfZ3hEX0NRQ3hlWTg1NHoyUVZ6cmVRWmQ?oc=5",
+        "sourceTitle": "코오롱FnC 르캐시미어, 프리뷰 인 서울서 친환경 염색공법 공개",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-20",
-        "category": "basın bülteni",
-        "title": "Kolon FnC Le Cashmere, Seul'deki Preview'da çevre dostu boyama ürünlerini sunuyor",
-        "summary": "Kolon FnC Le Cashmere, Seul Smart Today'deki Preview'da çevre dostu boyama ürünlerini sunuyor",
+        "category": "Basın bülteni",
+        "title": "Le Cashmere, çevre dostu 'Aqua Indigo' boyama ile Preview in Seoul 2024'e katılıyor",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5fZ1h1N0xZTjJIOWJQQWZJQVFHenRaU2JGOTdwWVc5Y2k3eGNEcEF6bjJ6ajRQTkVpS3BldHVXR21qaVh2ZWQxci1kSW9GMno0WEpxc2ZoaXVSd0VnVXc?oc=5"
-      },
-      {
-        "date": "2024-08-20",
-        "category": "basın bülteni",
-        "title": "Kolon FnC'nin 'Le Cashmere'i, 'Seul'deki Önizleme' etkinliğinde çok sayıda çevre dostu boyama yöntemi ürününü tanıtıyor",
-        "summary": "Kolon FnC'nin 'Le Cashmere'i, 'Seul'de Önizleme' etkinliğinde çok sayıda çevre dostu boyama ürününü tanıtıyor ​ newsquest.co.kr",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5PSnJGX2pPbTlRM2JMVEZMcmdvY0lXTUFNUmpDSDQ2UkxZQ29fSU96ZWRqZGJWY0Z3eTlsRDVrMzBYZ2hJaUpDbzBSa0l1Yk9mR1k4dEJzYTFxR2hCa0Jodnh5NGx0RWs2X3hJeS14SdIBc0FVX3lxTE5VQkVXRVhFTjVXX3lpbmNkVEdPdkdkSmV0VEhvYU5GNFBnRHlSSy1kemxVbWNTTlZmUGY3QkgtdjVCeEN5ZXRBXzR4YTBXeVdwMFVvOFRHQVFzTmU5azlkcEhCZDFMeU1HS3k5Q1VLYkgyTVE?oc=5"
-      },
-      {
-        "date": "2024-08-20",
-        "category": "basın bülteni",
-        "title": "Le Cashmere çevre dostu boyama yöntemini duyurdu",
-        "summary": "Le Cashmere çevre dostu boyama yöntemini duyurdu TIN Haberleri",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1UT2h6V1FnaGdDaTB0amwzT1N1Q2NtWjJvZ3hienpSZldNZ2FyMVVOTzk5cUppaXJ6aDl6MlBJZ0RqeHBJTHc?oc=5"
-      },
-      {
-        "date": "2024-08-20",
-        "category": "basın bülteni",
-        "title": "Kolon FnC Le Cashmere 'Seul 2024 Önizleme' etkinliğine katıldı",
-        "summary": "Kolon FnC Le Cashmere, 'Seul 2024'te Önizleme' Seul Finans'a katıldı",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NTzhvY3Uwck9aVmF6bVJXLWhGN0ZCc1gzR2RyMDB0ZlU2Y2hRbHEzOFN0SnJzQ2wtOW9LTEEwanVZajBVc2ZUb1hxLUZPbWNhNDAtd05mdEh1UFZPaTNTS0cwLWh5ZWMxemc?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9rOUdjSzJRUmFOR2tJMjJvampzU3Y4Y2lfbUdCa1hxM2Y5QlhfelREbXNMbGhncDFfc0U3T21LZDZyOFJSU3hIV2dOX2NZclk5OFlLZE9FdzBhdFo0TnBDajU0TS1ENDViQlBUUm5hTkZzTGJMeS1F?oc=5",
+        "sourceTitle": "르캐시미어, 친환경 염색 '아쿠아인디고'로 프리뷰인서울 2024 참가 눈길",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-14",
-        "category": "basın bülteni",
-        "title": "İndigo doğal boyama, sürdürülebilir, çevre dostu moda endüstrisini geliştiriyor",
-        "summary": "İndigo doğal boyama sürdürülebilir, çevre dostu moda endüstrisini geliştiriyor ​Kore Tekstil Haberleri",
+        "category": "Basın bülteni",
+        "title": "Mavi doğal boyama, sürdürülebilir çevre dostu moda endüstrisini hızlandırıyor",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4ZDFhTmVpd1pZWUxWanFfY0g1c3B6QXRIQ29zRDgzOW4tX2xlVGlnYW1xM2xOdnh6S3VPd1hIa2VoRzgtaGFuWnE0NkRHRmxuSThEOHk3TXNNNG5zN2I0VFhNWE4zX21y?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4ZDFhTmVpd1pZWUxWanFfY0g1c3B6QXRIQ29zRDgzOW4tX2xlVGlnYW1xM2xOdnh6S3VPd1hIa2VoRzgtaGFuWnE0NkRHRmxuSThEOHk3TXNNNG5zN2I0VFhNWE4zX21y?oc=5",
+        "sourceTitle": "쪽빛 천연염색, 지속가능 친환경 패션산업 앞당긴다",
+        "sourceSummary": ""
       },
       {
         "date": "2024-08-12",
@@ -204,344 +854,151 @@
         "title": "CutisBio, çevre dostu biyo indigo boyama yöntemi 'Aqua Indigo'yu geliştiriyor",
         "summary": "Sentetik biyoloji teknolojisini kullanarak mikrobiyal fermantasyon yoluyla indigo boyama uygulayan 'AquaIndigo'yu geliştirerek çevre dostu moda malzemesi pazarına girdik.",
         "thumbnailAlt": "AquaIndigo'nun küçük resmi",
-        "link": "https://www.tinnews.co.kr/26601"
+        "link": "https://www.tinnews.co.kr/26601",
+        "sourceTitle": "큐티스바이오, 친환경 바이오 인디고 염색법 '아쿠아인디고' 개발",
+        "sourceSummary": "합성생물학 기술을 활용해 미생물 발효로 인디고 염색법을 구현한 '아쿠아인디고(AquaIndigo)'를 개발하여 친환경 패션 소재 시장에 진출했습니다."
       },
       {
-        "date": "2024-08-07",
-        "category": "basın bülteni",
-        "title": "İlaç endüstrisinde yeşil ilaçlar ve yenilikçi sentez teknolojileri",
-        "summary": "İlaç endüstrisinde çevre dostu ilaçlar ve yenilikçi sentez teknolojisi",
+        "date": "2023-12-18",
+        "category": "Basın bülteni",
+        "title": "Sürdürülebilir modayı keşfedin: 'Döngüsel Kütüphane' alanı açıldı",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBfakdzSFFzSDFTRVVCekU0UVJSQllTc2w2MlRFNjdaZDdtVDJRX2RfTjQtMXdwS3MxRE5pV3N6VlJpNHhNdUZlbUxnbW9VcHc1S1lMT0Rqdjk5WFZIVzVjaW54RDFtU3BTNDl0UU5HTjljYkg3RHR3?oc=5"
-      },
-      {
-        "date": "2024-07-31",
-        "category": "basın bülteni",
-        "title": "[Easy Science] Geleneksel kültür, bilim ve teknoloji aracılığıyla yeniden doğuyor ve ileriye doğru dijital bir adım atmanın hayalini kuruyor",
-        "summary": "[Easy Science] Geleneksel kültür bilim ve teknolojiyle yeniden doğuyor, dijital hayata doğru bir adım atmayı hayal ediyor Yonha News",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hYkF4NW9WUkYyWmlUSXJhTUlkM3ozQzlNSHBVdlpDRVFxNW9STVZ4ZjgxOGwtUl9NY010MEVaY3FVeDRMTHNKWkxFaDVLVVJUTklBZU1weHJSWW_SAWBBVV95cUxNcjNoZ19ZSU0wZnhFaVhjcWlsdUV6dnl2WENvQkFfWURYSDJMNFhXN1pPOW1DNnNBcVdLN2E1QXUtV244d2VHV21GaURoazloTlMzUGpwUGR2aGtzYXBIZEs?oc=5"
-      },
-      {
-        "date": "2024-05-13",
-        "category": "basın bülteni",
-        "title": "Batılı lüks malların bile ulaştığı 'geleneksel kültür'... Cevap yüksek katma değerli sanayileşmedir",
-        "summary": "Batılı lüks malların bile ulaştığı 'geleneksel kültür'… Cevap yüksek katma değerli sanayileşme Seul Gazetesi",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE93T011Wk1sSEJIUWw5T1dNNk5HVTctLXJtLUs1RnBaQzF2N0RGb1BxZXBCS2Q5Smg0VF9WR0VqNnVUd2hsblk3Ti1EODN6RHg1RTFrRjlqWVBMd194ZktiNThOaXFOY0NFYi1wSE9idWVYQ21PN2NXQkwzSHVqZw?oc=5"
-      },
-      {
-        "date": "2024-03-26",
-        "category": "basın bülteni",
-        "title": "\"Chungbuk, yüksek teknolojili biyo endüstrisi için lider bir üs haline gelecek.\"",
-        "summary": "尹 “Chungbuk, yüksek teknolojili biyo endüstrisi için lider bir üs haline gelecek” SPN Seul Pyongyang Haberleri",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE03c0JuNkdLNkE2MFlNNWtQbjNTS2FpRWxVU0MybDVKLWlmckNnbXpNY0ZPVGxOemtlUDNIaWEwMmNISk15X0RpWkVwSno4UzlkWm43b00tR0FuR3V2NkNfcE5GYWs0NzNoelE?oc=5"
-      },
-      {
-        "date": "2023-12-20",
-        "category": "basın bülteni",
-        "title": "Kolon FnC, Los Angeles'ta sürdürülebilir moda mağazası 'Circular Library'yi açtı",
-        "summary": "Kolon FnC, Los Angeles'ta sürdürülebilir moda mağazası 'Circular Library'yi açtı Seul Ekonomik Günlük",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9rWGpmR0hKTlNUOHNScXZOd1ZydWs4Y0tnM3FUMzhZc0hwVW8zOWJpanhBNlI4MVhzOVNmMUpySXY5R0xsNVVvd3QwdHV3MXJ5VDVv0gFTQVVfeXFMT2tYamZHSEpOU1Q4c1Jxdk53VnJ1azhjS2czcVQzOFlzSHBVbzM5YmlqeEE2UjgxWHM5U2YxSnJJdjlHTGw1VW93dDB0dXcxcnlUNW8?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE5lcjJ4SDZFaVJuS1RSSkoteFNSQ3kySm44NkdEckpUY2xuMHJ3dEtfVkxtQ0xBZUZkbjhMSHVSZw?oc=5",
+        "sourceTitle": "지속가능패션을 알리는 공간 ‘서큘러 라이브러리’",
+        "sourceSummary": ""
       },
       {
         "date": "2023-10-11",
-        "category": "basın bülteni",
-        "title": "Bilim ve teknoloji ile geleneksel kültür endüstrisinin buluşması olan Ditec Araştırma Enstitüsü, bir araştırma vakfı projesi olarak seçilerek temel araştırmalara odaklanıyor",
-        "summary": "Ditec Araştırma Enstitüsü, bilim ve teknoloji ile geleneksel kültür endüstrisinin buluşması, bir araştırma vakfı projesi olarak seçim yoluyla temel araştırmaya odaklanıyor Maeil Shinmun",
+        "category": "Basın bülteni",
+        "title": "Dyetec Araştırma Enstitüsü, bilim teknolojisi ve geleneksel kültür endüstrisinin buluşması, araştırma fonu projesi ile temel araştırmalara yoğunlaşıyor",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiTWVSY2xJTFp3S0FSem9fWmREdnd3SXk0ZXJFMy1idmJpNnVBUjV5RzlOODZZb2hsMDFZQ2Z4S19JZ29iVDlnVGNabU5lQUJDSUZkSlNMOVJqSE4wYWFSMl9B?oc=5"
-      },
-      {
-        "date": "2023-09-26",
-        "category": "basın bülteni",
-        "title": "Hideout, Avenuel Jamsil şubesinde geçici mağaza açtı... Müşterilerle iletişim noktalarını genişletin",
-        "summary": "Hideout, Avenuel Jamsil şubesinde pop-up mağaza açtı... Müşterilerle iletişim noktalarını genişletiyor",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsZFVrU0xVU29jM0l3SERjM0lfUkR3bXI0RWEtNUdrcVZPR1Frb3E5dWR4TE9SSHNseTBfb1RSZXhkS1paUklaR3AxaHFMV3QtelFVc2EycDV5dVg1SzBlWXB1elV6eU3SAWtBVV95cUxOSUx2ZXdwZDNvSm5YUHdqOE4tUnFDTDEyc3RzaE4wbXdESUlfSi10dE8ya01wR1pLYXNjOFRVSzBSS2I3c0dWNm5nNW84ZkEwOGhxazRMN2FNOEZSTTUtamRUUzh1bVZVOTFlYw?oc=5"
-      },
-      {
-        "date": "2023-09-25",
-        "category": "basın bülteni",
-        "title": "Büyük şirketlerin sahiplendiği biyoteknoloji… Geç kalanlar bile ‘samimi’",
-        "summary": "Büyük şirketlerin sahiplendiği biyoteknoloji… Geç kalanlar bile ‘ciddi’ Bizworld",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5OUjhKSzBqSTcwZm5ReE9zV1RHR0Z3ZjA3eksyakh4VGdzSjZEa18xbnR0SVFDM21WZk1QTHFpeEF5QmxQUHJ6cGVydXdvbUtHUTFuRkYtaWpBYVFqTWxoc2YxeHNyWnZVYVE?oc=5"
-      },
-      {
-        "date": "2023-09-18",
-        "category": "basın bülteni",
-        "title": "Samba, Celltrion, Lotte “Biyotiğin TSMC'si olacağız”… SK, GS, LG ve CJ, gen terapisi gibi yeni ilaçlara meydan okuyor",
-        "summary": "Samba, Celltrion, Lotte “Biyotiğin TSMC'si olacağız”… SK, GS, LG ve CJ, gen terapisi gibi yeni ilaçlara meydan okuyor. Chosun Ilbo",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSWoxWC1JOXU4ZFg4RWM4Tm9nM3VsUUxPTmVmRV9sQ0EyUHVaeUZ3Y1pNRDE0c1BqV1hvZzhmWHpUZV9ZMjhmUDZJRWZvdEN1dmswTzA1YVJGUWZIVC1ud1lMbGpqYnNJbGpuUkdFUUd6TmwzdDBEUDhJTFFLa2xCRWE5UQ?oc=5"
-      },
-      {
-        "date": "2023-09-11",
-        "category": "basın bülteni",
-        "title": "Le Cashmere, 10. yıl marka yenilenmesiyle 'döngüsel moda'nın ön saflarına sıçradı! : Basın Bülteni │ Haber Odası",
-        "summary": "Le Cashmere, 10. yıl marka yenilenmesiyle 'döngüsel moda'nın ön saflarına sıçradı! : Basın Bülteni │ Haber Odası ​Kolon FnC",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBNWVgxaDdhX1hnRlVQWFVRUWNmWUx1Y1FWdVhBNVVQMFNDREFSV0tnQi05MUJraXBQV2pWN1ZQeFdyTC1laEt3YUh0NA?oc=5"
-      },
-      {
-        "date": "2023-09-11",
-        "category": "basın bülteni",
-        "title": "Kolon FnC çevre dostu boyama yöntemlerinde bir çağ açıyor",
-        "summary": "Kolon FnC çevre dostu boyama yöntemlerinde bir çağ açıyor Fashion Insight",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wVjNmLTZZRXJXWG1hekViUWx1clZXRTdCLW5jTTZNTUcwUHVobXNVc3FoeXpYVnB4SmQ2YkNoYVZBa3B0UVIxbWpxV05kcVZ0OEpDWlZ3?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiTWVSY2xJTFp3S0FSem9fWmREdnd3SXk0ZXJFMy1idmJpNnVBUjV5RzlOODZZb2hsMDFZQ2Z4S19JZ29iVDlnVGNabU5lQUJDSUZkSlNMOVJqSE4wYWFSMl9B?oc=5",
+        "sourceTitle": "다이텍연구원, 과학기술과 전통문화산업의 만남, 연구재단 사업 선정으로 기초연구 집중",
+        "sourceSummary": ""
       },
       {
         "date": "2023-09-08",
-        "category": "basın bülteni",
-        "title": "KOLON FnC │ KOLON Moda ve Kültür",
-        "summary": "KOLON FnC │ KOLON Moda ve Kültür ​ KOLON FnC",
+        "category": "Basın bülteni",
+        "title": "Kolon FnC, CutisBio ile iş birliği yaparak çevre dostu adımlarını hızlandırıyor",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5jNzZEcHJHelR4eUJtMndXYVlXZUtVTkFDUHBiVzhGSFhPUDlzcENhQk1aVUs5T0VKVEgxMjVZTTAtRUxQMU9GS0pR?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5nSjFFYU1iRXFCbEJDZ1FtSEQ4bTdSZWhOOS1oU3Jsd19nSjB6LThCeVZfUTJhd3J2eGJvWjgtbUlsaDJ6Y0MyMDZiN2d5VlFFRnhQS3VVYWFyd1pmTDEyRTYzcnpDQ00?oc=5",
+        "sourceTitle": "코오롱FnC, 큐티스바이오와 손잡고 친환경 행보 가속",
+        "sourceSummary": ""
       },
       {
         "date": "2023-09-08",
-        "category": "basın bülteni",
-        "title": "Kolon FnC 'çevre dostu boyama malzemeleri ve yöntemlerini' ticarileştiriyor",
-        "summary": "Kolon FnC, 'çevre dostu boyama malzemeleri ve yöntemleri' Shin-A Ilbo'yu ticarileştiriyor",
+        "category": "Basın bülteni",
+        "title": "Kolon FNC, CutisBio ile MOU... Döngüsel moda için bir adım daha",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBFcDloQmN3LWh4bzZmZEhrcHlWVlBjVGJ3amt3TUJueGJ3TmtFSjRtMHlEZFYyZmhDeklBRHdsRmNkb3JzeDlxUi1fYlpIX0lsWDhQTVoxYVIxeXNDaUhLWkFmNkcyUFlXUlpMNVdQZzA?oc=5"
-      },
-      {
-        "date": "2023-09-08",
-        "category": "basın bülteni",
-        "title": "Kolon FnC, Qtis Bio ile MOU‧‧‧Döngüsel modaya bir adım daha yakın",
-        "summary": "Kolon FnC, Qtis Bio ile MOU‧‧‧Döngüsel modaya bir adım daha yakın. Rapor",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vX056X0VxZjR5SjdOMi1TLW5RdHlBRENrOU5yZWFUNDF6R2pYVTY3aWU3LTlyckYwckdOT2JBSlVfZkNyajY4M2ROYzVFbW5pSEdBcENfbklRQ1pfRGZkbDhjWHFoY1Q0eUdzS1hn?oc=5"
-      },
-      {
-        "date": "2023-09-04",
-        "category": "basın bülteni",
-        "title": "Seul Ulusal Üniversitesi Tıp Fakültesi'nden 'İnekler' bir araya geldi… 'Gyeongui Şubesi' büyüyecek [Geeks]",
-        "summary": "Seul Ulusal Üniversitesi Tıp Fakültesi'nden 'Geek'ler bir araya geldi… 'Gyeongui Şubesi' büyüyor [Geeks] ​ Korea Economic Daily",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE93WEZ1N1FTN1ZJYnBhamVWd2dMekkyMUFjbkVlbGo3RmI4aWh4RXpMT2VoTDJqdUNsZlhpRGR1LTIwdFdUcjBkVFpjaHViWklFVWNXVU9oVm1zUQ?oc=5"
-      },
-      {
-        "date": "2023-09-01",
-        "category": "basın bülteni",
-        "title": "Seul Ulusal Üniversitesi Tıp Fakültesi mezunlarının mücadelesi “Girişimcilik yoluyla daha fazla hayat kurtarılabilir”",
-        "summary": "Seul Ulusal Üniversitesi Tıp Fakültesi Mobil Hankyung mezunlarının mücadelesi “Girişimcilik yoluyla daha fazla hayat kurtarılabilir”",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaE5vT1Z3ajlUTEh6amRqSHFZZmhlcGxGWW1idVhGNTFNYS03cE85d1VJZTFDWV9LclFkUVRibXZ1VlNmVHJ1YXVTakExS0ROTzRZenRNcUNyYWlibUYyclgzV1VaczFockdtT2w3ODctdm1WMzZVdzdIZHh6YUVnLUp5cmEyMG8?oc=5"
-      },
-      {
-        "date": "2023-08-08",
-        "category": "basın bülteni",
-        "title": "GS biyo konusunda ciddi… Hugel'in 2 yıllık satın alma karnesi 'A notu'",
-        "summary": "GS biyo konusunda ciddi… Hugel'in 2 yıllık satın alma karnesi 'A notu'. Guru",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE52ZkNxN0dHNnp4d011NWVhSWc5TUNjUFhUU3F6cVRyRzhmbWRKRmE2cW5TSXF6Smo0ZUxQUmVXMU02Ym5vSW1IQ0dGQVFqT1FFQ0RyZEpnNUgxVWd2dldGczZB?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vX056X0VxZjR5SjdOMi1TLW5RdHlBRENrOU5yZWFUNDF6R2pYVTY3aWU3LTlyckYwckdOT2JBSlVfZkNyajY4M2ROYzVFbW5pSEdBcENfbklRQ1pfRGZkbDhjWHFoY1Q0eUdzS1hn?oc=5",
+        "sourceTitle": "코오롱FnC, 큐티스바이오와 MOU‧‧‧순환 패션 한 발짝 더",
+        "sourceSummary": ""
       },
       {
         "date": "2023-07-25",
-        "category": "iş anlaşması",
+        "category": "İş birliği anlaşması",
         "title": "CutisBio, Kakao Healthcare ve L'Oreal, hassas güzellik çözümleri geliştirmek için bir Mutabakat Anlaşması imzaladı",
         "summary": "Biyoenformatik teknolojisini kullanarak hassas güzellik çözümleri geliştirmek ve cilt mikrobiyomu uzmanlığımızı birleştirmek için bir iş anlaşması imzaladık.",
         "thumbnailAlt": "MOU küçük resmi",
-        "link": "https://www.medigatenews.com/news/3760434771"
-      },
-      {
-        "date": "2023-07-04",
-        "category": "basın bülteni",
-        "title": "[Tıbbi Biyo Bülten Tahtası] Kakao Healthcare, hassas güzellik çözümleri geliştirmek için L'Oreal Group ile Mutabakat Anlaşması imzaladı",
-        "summary": "[Tıbbi Biyoloji Bülten Tahtası] Kakao Healthcare, hassas güzellik çözümleri geliştirmek için L'Oréal Group ile Mutabakat Anlaşması imzaladı | Donga Bilimi",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA2ZHhLYlJQT0NJTVI3aFlBV1JkMGRiakppSWRxZHQyWk9xWlRqbGpfSHRKSWk5X2tsLUJybEtka1ZBUXljRnUweHJ3d1dhMEtFSXU4Nw?oc=5"
+        "link": "https://www.medigatenews.com/news/3760434771",
+        "sourceTitle": "큐티스바이오-카카오헬스케어-로레알, 정밀 뷰티 솔루션 개발 MOU 체결",
+        "sourceSummary": "바이오인포매틱스 기술을 활용한 정밀 뷰티 솔루션 개발 업무협약을 맺고 피부 마이크로바이옴 전문성을 결합합니다."
       },
       {
         "date": "2023-07-03",
-        "category": "basın bülteni",
-        "title": "Biyoenformatik tabanlı hassas güzellik çözümleri geliştirmek için L'Oreal Group, Kakao Healthcare ve Qtis Bio ile bir iş anlaşması imzaladı",
-        "summary": "L'Oréal Group, Kakao Healthcare ve Qtis Bio, biyoinformatik tabanlı hassas güzellik çözümleri geliştirmek için bir iş anlaşması imzaladı L'Oréal",
+        "category": "Basın bülteni",
+        "title": "Kakao Healthcare, L'Oréal ve CutisBio ile hassas güzellik çözümü geliştirme iş birliği",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcktqZHZOdEVrMWV4SGwwXzhpY1RfUTRTSjgtUWxhcFd5NDRiTk0zTGU0OHlHVnFWNWJaMFByV2VLOUxMcTljQ2lPWVE0OG5WQnU2YlQwT3dJWERyc3ZneFptbVFaMGFWS25lbDJReWNESEZyZE5NSXJydFg5bTY5cWE5ZlVvOVAzYUVzeGo3T2E4Zw?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE03SDQxRU5tTUwxTlFCS1czNm1LbkRUamt4OGtPdUVHYUlCbThMOTFlYW94ekx0U21LWXgxQXFya01WemEwejVGckpvaDB2VW14Y3FQTFpMODVpLTNQbTBYcWlOLTYyV1BWb3FocHpKbEhET0xUeHFWTlE2UzQ?oc=5",
+        "sourceTitle": "카카오헬스케어, 로레알·큐티스바이오와 정밀 뷰티 솔루션 개발 협력",
+        "sourceSummary": ""
       },
       {
         "date": "2023-07-03",
-        "category": "basın bülteni",
-        "title": "Kakao Healthcare, L'Oréal ve CutisBio, hassas güzellik çözümleri geliştirmek için bir iş anlaşması imzaladı",
-        "summary": "Kakao Healthcare, L'Oréal ve CutisBio, hassas güzellik çözümleri geliştirmek için bir iş anlaşması imzaladı ​ newspim.com",
+        "category": "Basın bülteni",
+        "title": "L'Oréal Grubu, Kakao Healthcare, CutisBio ile biyoenformatik tabanlı hassas güzellik çözümü geliştirme iş birliği anlaşması imzaladı",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ZaWJBZDlTckJiWHZ4RzhmMUszN0xRRkdMMHFWd2wwZy1pZGQycjlPdHFKMXZ0ZjJSNjF5ckMwMjROSlJTYjlBcDBHa2FtYU83ckdueWFnR29qM29J?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcktqZHZOdEVrMWV4SGwwXzhpY1RfUTRTSjgtUWxhcFd5NDRiTk0zTGU0OHlHVnFWNWJaMFByV2VLOUxMcTljQ2lPWVE0OG5WQnU2YlQwT3dJWERyc3ZneFptbVFaMGFWS25lbDJReWNESEZyZE5NSXJydFg5bTY5cWE5ZlVvOVAzYUVzeGo3T2E4Zw?oc=5",
+        "sourceTitle": "로레알 그룹, 카카오헬스케어, 큐티스바이오와 바이오인포매틱스 기반 정밀 뷰티 솔루션 개발 업무협약 체결",
+        "sourceSummary": ""
       },
       {
         "date": "2023-07-03",
-        "category": "basın bülteni",
-        "title": "Kakao Health, L'Oréal ile hassas güzellik çözümü geliştiriyor",
-        "summary": "Kakao Health, L'Oréal ile hassas güzellik çözümü geliştiriyor ​ Korea Economic Daily TV",
+        "category": "Basın bülteni",
+        "title": "Kakao Healthcare, L'Oréal, CutisBio, hassas güzellik çözümü geliştirme iş birliği anlaşması imzaladı",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1zSTdoeUtaWHhzWDdMbUw0X2xxUGNxZkFNTGFGY0V4bi1LUnUtWm14T195RmNJWjdxU2pNUTdiOURLRFdGWnBkZWg0d3hMV0tpdXdpRkdLNExEbWF6Q3VWb1VaNjFKRktIeEVjZjBFWnJmU0FmeC1v?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ZaWJBZDlTckJiWHZ4RzhmMUszN0xRRkdMMHFWd2wwZy1pZGQycjlPdHFKMXZ0ZjJSNjF5ckMwMjROSlJTYjlBcDBHa2FtYU83ckdueWFnR29qM29J?oc=5",
+        "sourceTitle": "카카오헬스케어·로레알·큐티스바이오, 정밀 뷰티 솔루션 개발 업무협약 체결",
+        "sourceSummary": ""
       },
       {
         "date": "2023-07-03",
-        "category": "basın bülteni",
-        "title": "[Lisans Güzellik Seçimi] APR, B. Ready, LG Ev ve Sağlık Hizmetleri, L'Oreal Grubu",
-        "summary": "[Lisans Güzellik Seçimi] APR·Beready·LG Ev ve Sağlık Hizmetleri·L'Oréal Grubu ​ Lisans Haberleri",
+        "category": "Basın bülteni",
+        "title": "Kakao Healthcare, L'Oréal Grubu, CutisBio ile iş birliği anlaşması imzaladı",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5WRnlwOFFqa0hjX0wycGhnQlhISnVDWWtvZThlZmpITUlYR0s4Y2IxN1RNdlNmR2JidmlIeWxJZmdyQ3pHUnlzOVZwZFBVbXBna1Fvb1U3OG1UblprbEU3c1Y2RDJiOUN4c3c?oc=5"
-      },
-      {
-        "date": "2023-07-03",
-        "category": "basın bülteni",
-        "title": "Kakao Healthcare, L'Oréal Group CutisBio ile iş anlaşması imzaladı",
-        "summary": "Kakao Healthcare, L'Oréal Group CutisBio Medical Gazetesi ile iş anlaşması imzaladı",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBicXh0NDJUTU1jTGFiSW1XOHctYTZIYjFHa2hmcUVjOTMtUzdXbGg1eDN0TVBXN0k5QUZqcWxaMWR1SWFPSDlGajZLOUxoTXRGS0JfQnhsbFRlRXRoVjdEVk1xWDRwaDl5OVE?oc=5"
-      },
-      {
-        "date": "2023-07-03",
-        "category": "basın bülteni",
-        "title": "[Günlük BT Özeti] SKT Bulut Hizmeti, profesyonel personel olmasa bile \"Tamam\"",
-        "summary": "[Günlük BT Özeti] SKT Bulut Hizmeti, uzman personel olmasa bile \"Tamam\" ​ Yeni Günlük Ekonomi",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE84M0pPd1k0aVV2WnNHaHg2SlNvWmVWZjFNREZHQlVsOV9hOUpQWXRkSjNjblZyUFNfb1Z2Z1FlS2E1NXJ6bmFPbjE5N0RORi1sUlAzUXZQejlpMjM2Sm1ncEYzZmtReGoyTjVWVGJqMjdid1NyZkZkZ3FSUQ?oc=5"
-      },
-      {
-        "date": "2023-05-30",
-        "category": "basın bülteni",
-        "title": "Infinis, moda dışı lisanslamada rakipsiz bir konum oluşturuyor",
-        "summary": "Infinis, moda dışı lisanslamada rakipsiz bir konum oluşturuyor ​ apparelnews.co.kr",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9RVm1BcmFhdU1zLVFZbnBZb3hrNkFwblpMM0tUOTMwWlRGc3VMa2NSc2FRMFhDWm14WDhRVlNnSTJkdUZZQnU4Z2VoZUJPTUk4TUl5NGJFaFhNOU16Q1h1RTVxQQ?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBicXh0NDJUTU1jTGFiSW1XOHctYTZIYjFHa2hmcUVjOTMtUzdXbGg1eDN0TVBXN0k5QUZqcWxaMWR1SWFPSDlGajZLOUxoTXRGS0JfQnhsbFRlRXRoVjdEVk1xWDRwaDl5OVE?oc=5",
+        "sourceTitle": "카카오헬스케어, 로레알 그룹 큐티스바이오와 업무협약 체결",
+        "sourceSummary": ""
       },
       {
         "date": "2022-12-19",
-        "category": "ortak araştırma",
+        "category": "Ortak araştırma",
         "title": "CutisBio-Immunobiome, kanser için yeni nesil mikrobiyom immünoterapisini geliştiriyor",
         "summary": "Immunobiome ile işbirliği içinde, sentetik biyolojiye dayalı rekombinant suşlar kullanılarak yeni nesil mikrobiyom immün-antikanser ilaçlarının geliştirilmesine yönelik araştırmalar yürütüyoruz.",
         "thumbnailAlt": "Araştırma küçük resmi",
-        "link": "https://www.pharmnews.com/news/articleView.html?idxno=216348"
-      },
-      {
-        "date": "2022-12-07",
-        "category": "basın bülteni",
-        "title": "[Sağlık Kapsülü] Ajou Üniversite Hastanesi ana binanın birinci bodrum katında 'Robotik Cerrahi Merkezi' açılıyor vb.",
-        "summary": "[Sağlık Kapsülü] Ajou Üniversite Hastanesi ana binanın birinci bodrum katında 'Robotik Cerrahi Merkezi'ni açtı Diğer Dong-A Ilbo",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0tcTZKenBmeGlsaEM0Z0w1c0JydnFFME8wUkd1NkxKUkpyeTBoOGtXZ3NnLXFqY2l2Y055LUhTVGxFNWl0N0tmRzlaWTFHSTVEcHUwcHpiSS11UTFndlZlMDlidkRaazNrRjBySmQwb9IBZkFVX3lxTE5acHRmREVXMkNzN0lyYUw2bmpTVTVKdzA1MGRUaGdfS3dNQWpQQzFwZXFEdjE3V0NhV1UxZ1lGbExZdFlWSkNnLXZOTm05NTdUci1vVk02TjFaYXNLTkN2MFVtSk9oQQ?oc=5"
+        "link": "https://www.pharmnews.com/news/articleView.html?idxno=216348",
+        "sourceTitle": "큐티스바이오-이뮤노바이옴, 차세대 마이크로바이옴 면역항암제 개발",
+        "sourceSummary": "이뮤노바이옴과 협력하여 합성생물학 기반의 재조합 균주를 활용한 차세대 마이크로바이옴 면역항암제 개발 연구를 진행합니다."
       },
       {
         "date": "2022-12-05",
-        "category": "basın bülteni",
-        "title": "Cutis Bio - İmmünbiyom ve mikrobiyom immün anti-kanser tedavisi üzerine ortak araştırma",
-        "summary": "Cutis Biyo-İmmünobiyom, Mikrobiyom İmmünoantikanser Tedavisi Ortak Araştırma Eczacılık Haberleri",
+        "category": "Basın bülteni",
+        "title": "CutisBio ve Immunobioom, mikrobiyom bazlı immüno-onkoloji tedavisi ortak araştırması",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zbVMzQ0s3NVpxMG9HNUNiSFN2bG0yOTBRSk5ad01EUlNoSnNId1UxM1pYSkptbWNGcEJ4cHJRY3ZvR0tUTC01VmM5SVJVNlZqSVYxLTQ1YUNlWVFkT1UyVXMtTnBMenk4SHZvYg?oc=5"
-      },
-      {
-        "date": "2022-06-30",
-        "category": "basın bülteni",
-        "title": "İlaç sektörü çevre dostu oluyor",
-        "summary": "İlaç endüstrisi çevre dostu olmayı benimsiyor Sağlık Kore Haberleri",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8tVE4yR3I2eE1Zdjh5V0hRSHhJME5fc25GV2VWaEgySjFUWm81UUdnMUpyRW1Ia1hYcllmb2RGT3ptYi1XNnpaQUx4ZGNPUXM1S0hYOERuNTlQOVVfSWctUXVB?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zbVMzQ0s3NVpxMG9HNUNiSFN2bG0yOTBRSk5ad01EUlNoSnNId1UxM1pYSkptbWNGcEJ4cHJRY3ZvR0tUTC01VmM5SVJVNlZqSVYxLTQ1YUNlWVFkT1UyVXMtTnBMenk4SHZvYg?oc=5",
+        "sourceTitle": "큐티스바이오-이뮤노바이옴,마이크로바이옴 면역항암 치료제 공동연구",
+        "sourceSummary": ""
       },
       {
         "date": "2022-06-27",
-        "category": "basın bülteni",
-        "title": "Daewoong Pharmaceutical - Daewoong Bio - Qtis Bio, çevre dostu ilaç malzemesi geliştirme ve ticarileştirme anlaşması",
-        "summary": "Daewoong Pharmaceutical - Daewoong Bio - Qtis Bio, çevre dostu ilaç malzemesi geliştirme ve ticarileştirme anlaşması | Eczacılık Haberleri",
+        "category": "Basın bülteni",
+        "title": "Daewoong Pharma, Daewoong Bio, CutisBio, çevre dostu ilaç materyali geliştirme ve ticarileştirme iş birliği anlaşması",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5RNGRiRURDNjd4c0ZFSDg3bVY5ZXNBUFRMbjIwRFZDazZkWGpXdmhaUFMxa1lfS2pubzRFa3J5X1lMUDNxRm9WanZ3bDNobGpJamRidHFSSkJUOXlhazNDWFpQRElnYjVhYTlNcQ?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5RNGRiRURDNjd4c0ZFSDg3bVY5ZXNBUFRMbjIwRFZDazZkWGpXdmhaUFMxa1lfS2pubzRFa3J5X1lMUDNxRm9WanZ3bDNobGpJamRidHFSSkJUOXlhazNDWFpQRElnYjVhYTlNcQ?oc=5",
+        "sourceTitle": "대웅제약-대웅바이오-큐티스바이오,친환경 약물소재 개발∙상업화 협약",
+        "sourceSummary": ""
       },
       {
         "date": "2022-06-27",
-        "category": "basın bülteni",
-        "title": "Daewoong Pharmaceutical, Daewoong Bio ve Qtis Bio, çevre dostu ilaç malzemeleri geliştirmek için bir anlaşma imzaladı",
-        "summary": "Daewoong Pharmaceutical, Daewoong Bio ve CutisBio, çevre dostu ilaç malzemeleri geliştirmek için bir anlaşma imzaladı. İş İlanı",
+        "category": "Basın bülteni",
+        "title": "Daewoong Pharma, Daewoong Bio, CutisBio, çevre dostu ilaç materyali geliştirme iş birliği anlaşması imzaladı",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NdmpROGR2NTd2Z0cxMnI3bHRrZlE0LWhmcE1nMHdrQW9EMzRJeG5lWm4zSld1eG84OThaU0dhU1MyWFVnX0FiaHhrZXYyNnZpY2J0a2g4Q0lDamVqMXFFcFhnbDdYVUJDdk1qelc1LVREcWM?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NdmpROGR2NTd2Z0cxMnI3bHRrZlE0LWhmcE1nMHdrQW9EMzRJeG5lWm4zSld1eG84OThaU0dhU1MyWFVnX0FiaHhrZXYyNnZpY2J0a2g4Q0lDamVqMXFFcFhnbDdYVUJDdk1qelc1LVREcWM?oc=5",
+        "sourceTitle": "대웅제약 대웅바이오 큐티스바이오, 친환경 약물소재 개발 협약 맺어",
+        "sourceSummary": ""
       },
       {
         "date": "2022-06-27",
-        "category": "basın bülteni",
-        "title": "Kwangdong Pharmaceutical, GSK alerjik rinit tedavisi 'Avamis Burun Spreyi'nin dağıtımını yapıyor",
-        "summary": "Kwangdong Pharmaceutical, GSK alerjik rinit tedavisi 'Avamis Burun Spreyi' vb.'nin dağıtımını yapıyor. İlaç Haberleri",
+        "category": "Basın bülteni",
+        "title": "Daewoong Pharma, Daewoong Bio, CutisBio, çevre dostu ilaç materyali geliştirme iş birliği anlaşması",
+        "summary": "",
         "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MWHFfYk81YU82VUk4dy01OHZxUWtRdEk5WkRVbWQ5RkxWYjVIWGZwYzhCdDE5Q3RSSm11Yl9OSms4SHNXRDdLZXFGcUpIZFB2WWQ5dVpZZWNnTjlyamR1SFh1WWdoUk0?oc=5"
-      },
-      {
-        "date": "2022-06-27",
-        "category": "basın bülteni",
-        "title": "Daewoong Pharmaceutical - Daewoong Bio - Qtis Bio, çevre dostu ilaç malzemeleri geliştirme anlaşması",
-        "summary": "Daewoong Pharmaceutical - Daewoong Bio - Qtis Bio, çevre dostu ilaç malzemeleri geliştirme anlaşması | Isı Haberleri",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1qaFJ6ZnlzNUhEbWQ3TXJWNHdSWWhYVFF4cUpabWVBdVFZTXRqaXMySnJ6QXJPUlA0RGx3UkhmRUgwTVZEa3BpanhIVDJ5cFllZFdsYVJfOGtteFVVUGdvU0JZR3BGOHlCejlv?oc=5"
-      },
-      {
-        "date": "2022-06-27",
-        "category": "basın bülteni",
-        "title": "Gucci 'Güneşe Doğru' seçkisi Gucci'yi, Güneşe Doğru-Raffia etkisi-Sevgili-Cape Cod'u ortaya çıkardı",
-        "summary": "Gucci 'Güneşe Doğru' seçkisi Gucci'yi, Güneşe Doğru-Raffia etkisi-Sevgili-Cape Cod'u ortaya çıkardı Kore Duty Free Haberleri",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBCVEZlWnNVM01jcV9LNERyZnRaMnVXNzhMVHRRZDJKWno2NTc2d2s1S29MSWtORXhTR0JlUWlzYzRjemVJUG9RNVdpdFJFOVNmdG5GcjRtWm1mUm9aZk1GdU9fQ09hdEJM?oc=5"
-      },
-      {
-        "date": "2021-09-28",
-        "category": "basın bülteni",
-        "title": "GS yeni büyüme motoru arıyor… “Biyolojiden sonra şimdi enerji”",
-        "summary": "GS yeni büyüme motoru arıyor… “Biyolojiden sonra şimdi enerji” JoongAng Ilbo",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9mM1QzeG82RExld2pvanF5V2xtMktTTk02Y01DbDRsWHhxU09KOW9pWmFwckVGaHVfcjEtbWlEY0N5MW50bFJpbkZoUXV6c2FxdENEalNR?oc=5"
-      },
-      {
-        "date": "2021-08-26",
-        "category": "basın bülteni",
-        "title": "GS, Hugel'i satın alarak biyo endüstrisine girişinin başlangıcını işaret ediyor",
-        "summary": "GS'nin Hugel'i satın alması biyo endüstrisine girişinin başlangıcını işaret ediyor. BioTimes",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8xMVVHb3pXeUx0b2pvRW03dXVVQ1k1T1V6d0o3bVBuUTJ5ZnFXMzQ2MDlrejhBY1g3bkxiblNTb19MazdxcnluWHV1NXU5V2NObkwyekUzcUUtWnhrQXg1RjVjQ1dPaXNkZWJZ?oc=5"
-      },
-      {
-        "date": "2021-06-08",
-        "category": "basın bülteni",
-        "title": "KAIST, mikroorganizmaları kullanarak ilk doğal gökkuşağı pigmenti üretim teknolojisini geliştiriyor",
-        "summary": "KAIST, mikroorganizmaları kullanarak ilk doğal gökkuşağı pigmenti üretim teknolojisini geliştirdi Sejong Chungcheong Haberleri",
-        "thumbnailAlt": "Haber küçük resmi",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE14N2VtOWxvOEdlNmJuVUJVenVnZk5PbnE3VGhwWFdCQWVrSWZ5THhheHhCTHR6UWtZMkJmQ19XbzVnLUo3VllMblRVbVpCZ0QtZ0xGNGdJNUtnYTdKenk0N3ZoNnZGUkdJTGRj0gFvQVVfeXFMTmtBZ0swRkhRZ056M21TRURIdHFWSTBHSHpvWWxVNVZ6a1F5VWx6VEJoRnZObHZCZjZwVTVPYzVjdFMzSHBiWW1BV0JDRmZCME9OVUQzd1ctdXdVc3JFVXh4UlZ3QWZwM3RGMWpxWEZ3?oc=5"
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1qaFJ6ZnlzNUhEbWQ3TXJWNHdSWWhYVFF4cUpabWVBdVFZTXRqaXMySnJ6QXJPUlA0RGx3UkhmRUgwTVZEa3BpanhIVDJ5cFllZFdsYVJfOGtteFVVUGdvU0JZR3BGOHlCejlv?oc=5",
+        "sourceTitle": "대웅제약-대웅바이오-큐티스바이오, 친환경 약물소재 개발 협약",
+        "sourceSummary": ""
       }
-    ]
-  },
-  "Contact": {
-    "title": "İletişim",
-    "description": "CutisBio hakkında herhangi bir sorunuz varsa lütfen mesaj bırakın, size en kısa sürede dönüş yapacağız.",
-    "addressTitle": "Adres",
-    "addressDetail": "8F, Apgujeong Bldg, 842 Nonhyeon-ro, Gangnam-gu, Seul",
-    "emailTitle": "E-posta",
-    "emailAddress": "contact@cutisbio.com",
-    "mapTitle": "Konum Haritası"
-  },
-  "ProblemSolution": {
-    "problemTitle": "Girdiğimiz Denimlerin Gizli Bedeli",
-    "problemText": "Geleneksel boyama süreçleri petrokimyasallara dayanır, ciddi çevre kirliliği ve sağlık tehditleri bırakır. Özellikle 'anilin' en ölümcül sorunlardan biridir.",
-    "solutionTitle": "CutisBio'nun Yenilikçi Çözümü",
-    "solutionText": "Mikrobiyal fermantasyon yoluyla toksik maddeleri tamamen dışarıda bırakan %100 anilinsiz boya. Hem insan hem de doğa için güvenli, mükemmel sürdürülebilirlik sunar."
-  },
-  "Process": {
-    "title": "Biyolojik Üretim Süreci",
-    "subtitle": "Doğayı taklit eden gelişmiş sentetik biyoloji mekanizması",
-    "step1Title": "1. DNA Tasarımı",
-    "step1Text": "Mikroorganizmaların DNA'sı, doğada bulunan enzim yollarına dayanarak özel olarak yeniden tasarlanır.",
-    "step2Title": "2. Hassas Fermantasyon",
-    "step2Text": "Hassas bir fermantasyon ortamında, mikroplar tıpkı bitkiler gibi kendiliğinden indigo öncülleri üretir.",
-    "step3Title": "3. İndigo Saflaştırma",
-    "step3Text": "Çevre dostu bir saflaştırma süreciyle, %100 biyo-tabanlı boya tamamlanır.",
-    "step4Title": "4. Drop-in Boyama",
-    "step4Text": "Mevcut boya fabrikası altyapısını değiştirmeden, ek ekipman değişimi gerektirmeden anında uygulanabilir."
-  },
-  "Partners": {
-    "title": "Küresel Modanın Geleceğine Katılan Lider Markalar",
-    "testimonial": "\"CutisBio'nun mikrop tabanlı indigosu, çevre koruma ve iş rekabetini aynı anda karşılayan gerçek bir oyun değiştiricidir.\"",
-    "testimonialAuthor": "CEO interview"
+    ],
+    "listNote": "Bu listeye otomatik olarak eklenen yayınlanan basın bültenleri bulunmaktadır. Makale içeriği ve ifadeleri her medya kuruluşuna aittir, test sonuçları ve sertifikasyon bilgilerini lütfen veri · sertifikasyon ekranından kontrol edin."
   }
 }

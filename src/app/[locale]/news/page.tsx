@@ -1,63 +1,158 @@
-import React from 'react';
-import { getTranslations } from 'next-intl/server';
+import type { Metadata } from 'next';
+import Image from 'next/image';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import SchemaOrg, { buildOrganizationSchema } from '@/components/seo/SchemaOrg';
+import SectionHeading, { keepLastWords } from '@/components/blugene/SectionHeading';
+import SourceNote from '@/components/blugene/SourceNote';
+import NewsPostCard from '@/components/blugene/NewsPostCard';
+import { BRAND, LOCALES, SITE_URL, buildPageMetadata } from '@/data/blugene/site';
+import { pick, type NewsPost } from '@/data/blugene/newsPosts';
+import { readNewsPosts } from '@/data/blugene/newsPosts.server';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'News' });
-  return {
+  return buildPageMetadata({
+    locale,
+    path: '/news',
     title: t('title'),
     description: t('description'),
-  };
+  });
 }
+
+type Article = {
+  date: string;
+  category: string;
+  title: string;
+  summary: string;
+  thumbnailAlt: string;
+  link?: string;
+  /** 기사를 쓴 매체명. 고유명사라 번역하지 않고 모든 언어에서 원문 그대로 보여 준다 */
+  source?: string;
+};
+
+/** 목록에 함께 늘어놓기 위해, 직접 쓴 소식을 기사와 같은 모양으로 바꾼다 */
+type Entry = Article & { post?: NewsPost };
 
 export default async function NewsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'News' });
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cutisbioindigo.kr';
-  const orgSchema = buildOrganizationSchema('CutisBio', baseUrl, `${baseUrl}/logo.png`);
+  setRequestLocale(locale);
 
-  const articles = t.raw('articles') as { date: string; category: string; title: string; summary: string; thumbnailAlt: string; link?: string }[];
+  const t = await getTranslations({ locale, namespace: 'News' });
+  const articles = t.raw('articles') as Article[];
+  const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/brand/cutisbio-logo.png`);
+
+  // 직접 쓴 소식은 언어별 메시지 파일이 아니라 content/news-posts.json 에 있다.
+  // 자동 수집 스크립트가 News.articles 를 통째로 다시 쓰기 때문에 파일을 나눠 두었다.
+  const posts = readNewsPosts();
+  const entries: Entry[] = [
+    ...posts.map((post) => ({
+      date: post.date,
+      category:
+        pick(post.category, locale) ||
+        (post.type === 'youtube' ? t('categoryVideo') : t('categoryPost')),
+      title: pick(post.title, locale),
+      summary: pick(post.summary, locale),
+      thumbnailAlt: pick(post.imageAlt, locale),
+      link: post.link,
+      post,
+    })),
+    ...articles.map((article) => ({ ...article })),
+  ].sort((a, b) => b.date.localeCompare(a.date));
 
   return (
     <>
       <SchemaOrg schema={orgSchema} />
-      <div className="max-w-4xl mx-auto space-y-8 sm:space-y-12 py-8 sm:py-12 px-4 sm:px-6">
-        <section className="text-center mt-10 sm:mt-16">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-3 sm:mb-4">
-            {t('title')}
-          </h1>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 px-2 sm:px-0 leading-relaxed">{t('description')}</p>
-        </section>
 
-        <section className="space-y-6 sm:space-y-8">
-          {articles.map((article, index) => (
-            <article key={index} className="bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition p-5 sm:p-6 md:p-8 flex flex-col gap-2 sm:gap-3 mx-2 sm:mx-0">
-              <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm text-gray-500 mb-1 sm:mb-0">
-                <span className="bg-blue-100 text-blue-700 font-semibold px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full">{article.category}</span>
-                <time dateTime={article.date}>{article.date}</time>
-              </div>
-              <h2 className="text-lg sm:text-xl font-bold text-gray-900 leading-snug">{article.title}</h2>
-              <p className="text-sm sm:text-base text-gray-600 leading-relaxed mt-1 flex-1">{article.summary}</p>
-              {article.link && (
-                <div className="mt-4">
-                  <a 
-                    href={article.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors"
-                  >
-                    원문 기사 보기
-                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                  </a>
+      <section className="w-full border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
+        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+          <SectionHeading headingLevel="h1" title={t('title')} body={t('description')} size="hero" />
+          {/* 이 사이트의 다른 근거에는 모두 출처 표기가 붙는데 이 목록만 없었다.
+              언론 보도와 회사가 제시하는 시험 근거를 가르는 경계 표시다. */}
+          <SourceNote className="mt-6 max-w-3xl">{t('listNote')}</SourceNote>
+        </div>
+      </section>
+
+      <section className="w-full bg-white">
+        <div className="mx-auto max-w-[900px] px-4 py-14 sm:px-6 sm:py-16">
+          <ul className="divide-y divide-[color:var(--color-washed)]">
+            {entries.map((article, index) => (
+              <li key={article.post?.id ?? `${article.date}-${index}`} className="py-7 first:pt-0">
+                <div className="flex flex-wrap items-center gap-3 text-xs text-[var(--color-slate-muted)]">
+                  <span className="rounded-full bg-[var(--color-ivory)] px-3 py-1 font-semibold text-[var(--color-denim)]">
+                    {article.category}
+                  </span>
+                  {article.source && (
+                    <>
+                      <span className="break-keep">{article.source}</span>
+                      <span aria-hidden="true">·</span>
+                    </>
+                  )}
+                  <time dateTime={article.date}>{article.date}</time>
                 </div>
-              )}
-            </article>
-          ))}
-        </section>
-      </div>
+                {/*
+                  언론 목록에서 독자가 누르는 것은 제목이다. 제목 전체가 링크여야
+                  좁은 화면에서도 손가락이 닿는다. 같은 주소로 가는 링크를 한 행에
+                  두 개 두지 않으려고 아래의 '원본 자료 보기' 줄은 여기로 합쳤다.
+                */}
+                <h2 className="mt-3 text-lg leading-snug font-semibold break-keep text-[var(--color-indigo-deep)] sm:text-xl">
+                  {article.link ? (
+                    <a
+                      href={article.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline-offset-4 hover:text-[var(--color-denim)] hover:underline"
+                    >
+                      {keepLastWords(article.title)}
+                      {/* 화살표는 줄바꿈 없는 공백으로 마지막 단어에 붙인다 — 혼자 다음 줄로 떨어지지 않게 */}
+                      <span aria-hidden="true" className="text-[var(--color-denim)]">
+                        {'\u00A0'}↗
+                      </span>
+                    </a>
+                  ) : (
+                    keepLastWords(article.title)
+                  )}
+                </h2>
+
+                {article.post?.type === 'youtube' && article.post.youtubeId && (
+                  <NewsPostCard
+                    youtubeId={article.post.youtubeId}
+                    title={article.title}
+                    playLabel={t('playVideo')}
+                  />
+                )}
+
+                {article.post?.type === 'post' && article.post.image && (
+                  <Image
+                    src={article.post.image}
+                    alt={article.thumbnailAlt}
+                    width={article.post.imageWidth ?? 1600}
+                    height={article.post.imageHeight ?? 900}
+                    className="mt-4 h-auto w-full rounded-md"
+                    sizes="(max-width: 900px) 100vw, 900px"
+                  />
+                )}
+
+                {/* 자동 수집 기사는 요약이 없는 경우가 많다 — Google News 가 본문 대신
+                    제목을 되풀이해 주기 때문에 수집 단계에서 비운다. 빈 줄을 그리지 않는다. */}
+                {article.summary.trim() && (
+                  <p className="mt-3 text-base leading-relaxed break-keep whitespace-pre-line text-[var(--color-ink)]/80">
+                    {article.summary}
+                  </p>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
     </>
   );
 }
