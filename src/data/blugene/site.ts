@@ -80,11 +80,12 @@ export const PRIMARY_NAV = [
   { key: 'news', href: '/news' },
 ] as const;
 
-/** 푸터 전용 항목. 상단 메뉴와 중복되지 않게 유지한다 (푸터는 PRIMARY_NAV + FOOTER_NAV 를 이어 붙인다). */
-export const FOOTER_NAV = [
-  { key: 'blog', href: '/blog' },
-  { key: 'contact', href: '/contact' },
-] as const;
+/**
+ * 푸터 전용 항목. 상단 메뉴와 중복되지 않게 유지한다 (푸터는 PRIMARY_NAV + FOOTER_NAV 를 이어 붙인다).
+ * '인사이트'(/blog)는 2026-09-12 고객 요청으로 뺐다. 블로그 주소(/blog, /blog/sustainable-indigo)는 색인된 URL 이라
+ * 페이지와 sitemap 에는 그대로 두고 메뉴에서만 가리키지 않는다.
+ */
+export const FOOTER_NAV = [{ key: 'contact', href: '/contact' }] as const;
 
 /** 언어별 대체 URL — hreflang / alternates 생성용 */
 export function localeAlternates(path: string): Record<string, string> {

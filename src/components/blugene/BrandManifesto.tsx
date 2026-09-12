@@ -11,8 +11,9 @@ import { HEADING_SIZE, keepLastWords } from '@/components/blugene/SectionHeading
  * 장식은 데님 실 두 가닥을 연상시키는 추상 선(ThreadMotif)으로 제한한다.
  * 화학구조도나 인증마크처럼 보이는 요소를 쓰지 않는다.
  *
- * showCta 는 이 블록이 브랜드 페이지 안에서도 쓰이기 때문에 있다.
- * /brand 에서 켜 두면 지금 보고 있는 페이지로 되돌아오는 링크가 화면 중앙에 남는다.
+ * 세 질문 아래의 '질문에 답을 듣기' 버튼은 기술 페이지(/technology)로 보낸다 — 무엇으로 만들었는지(경로 · 탄소),
+ * 어떤 불순물이 남는지(아닐린)를 그 페이지가 답하고, 확인은 거기서 데이터 · 인증으로 이어진다.
+ * 전에는 '브랜드 이야기 읽기'(/brand) 링크였는데 /brand 자신에서도 켜져 있어 눌러도 아무 일이 없었다(2026-09-12 고객 요청으로 교체).
  *
  * portrait 는 오른쪽 열에 Blugene 기획자(피부과전문의 최원우)의 사진과 직함 두 줄을 놓는다
  * (2026-09-11 고객 요청). /brand 에서만 켠다. 사진은 고객이 준 인물 사진을 자르지 않고 축소한 것이며
@@ -21,11 +22,8 @@ import { HEADING_SIZE, keepLastWords } from '@/components/blugene/SectionHeading
 /** 기획자 사진 — 원본 3744×5616 JPEG 를 자르지 않고 960px 폭 WebP 로 축소한 것 */
 const PORTRAIT = { src: '/blugene/brand/dermatologist-choi-wonwoo.webp', width: 960, height: 1440 } as const;
 export default async function BrandManifesto({
-  showCta = true,
   portrait = false,
 }: {
-  /** '브랜드 이야기 읽기' 링크(/brand)를 표시할지 여부. /brand 자신에서는 false 로 부른다. */
-  showCta?: boolean;
   /** 오른쪽 열에 기획자 사진과 직함을 놓을지 여부. /brand 에서 켠다. */
   portrait?: boolean;
 }) {
@@ -72,15 +70,16 @@ export default async function BrandManifesto({
               ))}
             </ul>
 
-            {showCta && (
+            {/* FinalCta 의 짙은 면 위 보조 버튼과 같은 모양 — 흰 테두리, 흰 글자 */}
+            <div className="mt-10">
               <Link
-                href="/brand"
-                className="mt-10 inline-flex items-center gap-2 border-b border-white/45 pb-1 text-sm font-semibold text-white hover:border-white"
+                href="/technology"
+                className="inline-flex items-center gap-2 rounded-md border border-white/50 px-6 py-3.5 text-sm font-semibold break-keep text-white transition-colors hover:bg-white/10 sm:text-base"
               >
                 {t('cta')}
                 <span aria-hidden="true">→</span>
               </Link>
-            )}
+            </div>
           </div>
 
           {portrait ? (

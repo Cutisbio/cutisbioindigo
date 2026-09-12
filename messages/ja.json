@@ -7,7 +7,6 @@
     "sampleInquiry": "サンプルのお問い合わせ",
     "about": "会社概要",
     "news": "ニュース",
-    "blog": "インサイト",
     "contact": "お問い合わせ",
     "menu": "メニュー",
     "openMenu": "メニューを開く",
@@ -65,7 +64,7 @@
       "どんな不純物が残るのか",
       "その結果を確かめられるのか"
     ],
-    "cta": "ブランドストーリーを読む",
+    "cta": "質問への答えを聞く",
     "portraitAlt": "白衣を着て微笑む皮膚科専門医チェ・ウォヌ（医学博士）",
     "portraitName": "Blugene 企画者: 皮膚科専門医・医学博士 チェ・ウォヌ",
     "portraitCredential": "Blugene director: CHOI WONWOO M.D., Ph.D., Board Certified Dermatologist"
