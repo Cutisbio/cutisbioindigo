@@ -1889,22 +1889,6 @@
       "zh": "c0280ad2794f2591",
       "tr": "c0280ad2794f2591"
     },
-    "Certifications.validityLabel": {
-      "ja": "ad51eb794749ba32",
-      "en": "ad51eb794749ba32",
-      "fr": "ad51eb794749ba32",
-      "it": "ad51eb794749ba32",
-      "zh": "ad51eb794749ba32",
-      "tr": "ad51eb794749ba32"
-    },
-    "Certifications.issuedLabel": {
-      "ja": "e525d320a5220613",
-      "en": "e525d320a5220613",
-      "fr": "e525d320a5220613",
-      "it": "e525d320a5220613",
-      "zh": "e525d320a5220613",
-      "tr": "e525d320a5220613"
-    },
     "Certifications.pageLabel": {
       "ja": "e57f48a4337a4326",
       "en": "e57f48a4337a4326",
@@ -2978,12 +2962,12 @@
       "tr": "3c4ef564a16073f1"
     },
     "About.title": {
-      "ja": "8838931168ae9576",
-      "en": "8838931168ae9576",
-      "fr": "8838931168ae9576",
-      "it": "8838931168ae9576",
-      "zh": "8838931168ae9576",
-      "tr": "8838931168ae9576"
+      "ja": "c3d6bd112e9ce415",
+      "en": "c3d6bd112e9ce415",
+      "fr": "c3d6bd112e9ce415",
+      "it": "c3d6bd112e9ce415",
+      "zh": "c3d6bd112e9ce415",
+      "tr": "c3d6bd112e9ce415"
     },
     "About.missionTitle": {
       "ja": "15071e06f8176c5b",
@@ -3002,12 +2986,12 @@
       "tr": "cd4903482cc7b4d1"
     },
     "About.visionText": {
-      "ja": "ee177a6c454a4b8a",
-      "en": "ee177a6c454a4b8a",
-      "fr": "ee177a6c454a4b8a",
-      "it": "ee177a6c454a4b8a",
-      "zh": "ee177a6c454a4b8a",
-      "tr": "ee177a6c454a4b8a"
+      "ja": "67808add1d9edfb2",
+      "en": "67808add1d9edfb2",
+      "fr": "67808add1d9edfb2",
+      "it": "67808add1d9edfb2",
+      "zh": "67808add1d9edfb2",
+      "tr": "67808add1d9edfb2"
     },
     "About.aboutImageAlt": {
       "ja": "6c4251a4e7fdebbf",
@@ -3081,66 +3065,6 @@
       "zh": "61d3572bdf9a41ef",
       "tr": "61d3572bdf9a41ef"
     },
-    "About.historyList[0].year": {
-      "ja": "6557739a67283a8d",
-      "en": "6557739a67283a8d",
-      "zh": "6557739a67283a8d",
-      "tr": "6557739a67283a8d"
-    },
-    "About.historyList[0].event": {
-      "ja": "32749d10eaeac5c4",
-      "en": "32749d10eaeac5c4",
-      "zh": "32749d10eaeac5c4",
-      "tr": "32749d10eaeac5c4"
-    },
-    "About.historyList[1].year": {
-      "ja": "d398b29d3dbbb9bf",
-      "en": "d398b29d3dbbb9bf",
-      "zh": "d398b29d3dbbb9bf",
-      "tr": "d398b29d3dbbb9bf"
-    },
-    "About.historyList[1].event": {
-      "ja": "3a5c9be47174974a",
-      "en": "3a5c9be47174974a",
-      "zh": "3a5c9be47174974a",
-      "tr": "3a5c9be47174974a"
-    },
-    "About.historyList[2].year": {
-      "ja": "b1ab1e892617f210",
-      "en": "b1ab1e892617f210",
-      "zh": "b1ab1e892617f210",
-      "tr": "b1ab1e892617f210"
-    },
-    "About.historyList[2].event": {
-      "ja": "7bfc52828bb3d999",
-      "en": "7bfc52828bb3d999",
-      "zh": "7bfc52828bb3d999",
-      "tr": "7bfc52828bb3d999"
-    },
-    "About.historyList[3].year": {
-      "ja": "1bea20e1df19b120",
-      "en": "1bea20e1df19b120",
-      "zh": "1bea20e1df19b120",
-      "tr": "1bea20e1df19b120"
-    },
-    "About.historyList[3].event": {
-      "ja": "3c41cd06a91380a2",
-      "en": "3c41cd06a91380a2",
-      "zh": "3c41cd06a91380a2",
-      "tr": "3c41cd06a91380a2"
-    },
-    "About.historyList[4].year": {
-      "ja": "73a2af8864fc500f",
-      "en": "73a2af8864fc500f",
-      "zh": "73a2af8864fc500f",
-      "tr": "73a2af8864fc500f"
-    },
-    "About.historyList[4].event": {
-      "ja": "4d230fb051b4fcb9",
-      "en": "4d230fb051b4fcb9",
-      "zh": "4d230fb051b4fcb9",
-      "tr": "4d230fb051b4fcb9"
-    },
     "About.blugeneNoteTitle": {
       "ja": "18f50699e25bfcf6",
       "en": "18f50699e25bfcf6",
@@ -3148,14 +3072,6 @@
       "it": "18f50699e25bfcf6",
       "zh": "18f50699e25bfcf6",
       "tr": "18f50699e25bfcf6"
-    },
-    "About.blugeneNoteText": {
-      "ja": "f589791cf6866a09",
-      "en": "f589791cf6866a09",
-      "fr": "f589791cf6866a09",
-      "it": "f589791cf6866a09",
-      "zh": "f589791cf6866a09",
-      "tr": "f589791cf6866a09"
     },
     "About.metaDescription": {
       "ja": "9d3c4f066f97db97",
@@ -4362,6 +4278,118 @@
       "it": "7c4b04553802a194",
       "zh": "7c4b04553802a194",
       "tr": "7c4b04553802a194"
+    },
+    "About.corporateSiteCta": {
+      "ja": "24106cb93a5186d7",
+      "en": "24106cb93a5186d7",
+      "fr": "24106cb93a5186d7",
+      "it": "24106cb93a5186d7",
+      "zh": "24106cb93a5186d7",
+      "tr": "24106cb93a5186d7"
+    },
+    "About.corporateSiteNewTab": {
+      "ja": "25728c7bf2256713",
+      "en": "25728c7bf2256713",
+      "fr": "25728c7bf2256713",
+      "it": "25728c7bf2256713",
+      "zh": "25728c7bf2256713",
+      "tr": "25728c7bf2256713"
+    },
+    "About.historyList[0].year": {
+      "ja": "b2b2f104d32c6389",
+      "en": "b2b2f104d32c6389",
+      "fr": "b2b2f104d32c6389",
+      "it": "b2b2f104d32c6389",
+      "zh": "b2b2f104d32c6389",
+      "tr": "b2b2f104d32c6389"
+    },
+    "About.historyList[0].event": {
+      "ja": "4044bc152de84ce7",
+      "en": "4044bc152de84ce7",
+      "fr": "4044bc152de84ce7",
+      "it": "4044bc152de84ce7",
+      "zh": "4044bc152de84ce7",
+      "tr": "4044bc152de84ce7"
+    },
+    "About.historyList[1].year": {
+      "ja": "6557739a67283a8d",
+      "en": "6557739a67283a8d",
+      "fr": "6557739a67283a8d",
+      "it": "6557739a67283a8d",
+      "zh": "6557739a67283a8d",
+      "tr": "6557739a67283a8d"
+    },
+    "About.historyList[1].event": {
+      "ja": "32749d10eaeac5c4",
+      "en": "32749d10eaeac5c4",
+      "fr": "32749d10eaeac5c4",
+      "it": "32749d10eaeac5c4",
+      "zh": "32749d10eaeac5c4",
+      "tr": "32749d10eaeac5c4"
+    },
+    "About.historyList[2].year": {
+      "ja": "d398b29d3dbbb9bf",
+      "en": "d398b29d3dbbb9bf",
+      "fr": "d398b29d3dbbb9bf",
+      "it": "d398b29d3dbbb9bf",
+      "zh": "d398b29d3dbbb9bf",
+      "tr": "d398b29d3dbbb9bf"
+    },
+    "About.historyList[2].event": {
+      "ja": "3a5c9be47174974a",
+      "en": "3a5c9be47174974a",
+      "fr": "3a5c9be47174974a",
+      "it": "3a5c9be47174974a",
+      "zh": "3a5c9be47174974a",
+      "tr": "3a5c9be47174974a"
+    },
+    "About.historyList[3].year": {
+      "ja": "b1ab1e892617f210",
+      "en": "b1ab1e892617f210",
+      "fr": "b1ab1e892617f210",
+      "it": "b1ab1e892617f210",
+      "zh": "b1ab1e892617f210",
+      "tr": "b1ab1e892617f210"
+    },
+    "About.historyList[3].event": {
+      "ja": "7bfc52828bb3d999",
+      "en": "7bfc52828bb3d999",
+      "fr": "7bfc52828bb3d999",
+      "it": "7bfc52828bb3d999",
+      "zh": "7bfc52828bb3d999",
+      "tr": "7bfc52828bb3d999"
+    },
+    "About.historyList[4].year": {
+      "ja": "1bea20e1df19b120",
+      "en": "1bea20e1df19b120",
+      "fr": "1bea20e1df19b120",
+      "it": "1bea20e1df19b120",
+      "zh": "1bea20e1df19b120",
+      "tr": "1bea20e1df19b120"
+    },
+    "About.historyList[4].event": {
+      "ja": "3c41cd06a91380a2",
+      "en": "3c41cd06a91380a2",
+      "fr": "3c41cd06a91380a2",
+      "it": "3c41cd06a91380a2",
+      "zh": "3c41cd06a91380a2",
+      "tr": "3c41cd06a91380a2"
+    },
+    "About.historyList[5].year": {
+      "ja": "73a2af8864fc500f",
+      "en": "73a2af8864fc500f",
+      "fr": "73a2af8864fc500f",
+      "it": "73a2af8864fc500f",
+      "zh": "73a2af8864fc500f",
+      "tr": "73a2af8864fc500f"
+    },
+    "About.historyList[5].event": {
+      "ja": "4d230fb051b4fcb9",
+      "en": "4d230fb051b4fcb9",
+      "fr": "4d230fb051b4fcb9",
+      "it": "4d230fb051b4fcb9",
+      "zh": "4d230fb051b4fcb9",
+      "tr": "4d230fb051b4fcb9"
     }
   }
 }

@@ -303,8 +303,6 @@
     "numberLabel": "Certificate number",
     "issuerLabel": "Certification body",
     "productLabel": "Covered product",
-    "validityLabel": "Validity period stated in the document",
-    "issuedLabel": "Document issue date",
     "pageLabel": "Catalogue page",
     "certificateAlt": "Original image of the {name} certificate",
     "logoAlt": "{name} certification mark",
@@ -709,11 +707,11 @@
     "structureNMethylanilineDesc": "A skeletal formula showing a benzene ring bonded to a nitrogen that carries one hydrogen and a methyl group (CH3)."
   },
   "About": {
-    "title": "Designing everyday life to be more beautiful through synthetic biology",
+    "title": "Designing everyday life to be healthier and more beautiful through synthetic biology",
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "We design the biosynthetic capabilities of microorganisms to remake industrial materials. Blugene is one of the results: indigo for the fashion industry, produced by fermentation.",
+    "visionText": "Our vision is to become a global pioneer in innovative biomaterials that make human life more beautiful and healthier. Blugene bio indigo dye is a biomaterial created to reinvent denim and jeans, loved in common by all of humanity for so long, and to raise both human health and the sustainability of the global environment.",
     "aboutImageAlt": "CutisBio researchers engaged in in-depth bio research",
     "coreBusinessTitle": "Core business areas",
     "healthTitle": "Health",
@@ -724,6 +722,10 @@
     "fashionText": "We supply bio indigo produced by microbial fermentation for denim dyeing and digital printing.",
     "historyTitle": "History",
     "historyList": [
+      {
+        "year": "2025",
+        "event": "Completed dyeing validation of the bio-based indigo dye with multiple global premium denim companies"
+      },
       {
         "year": "2024",
         "event": "Established massive production system for Bio-Indigo bio dye and initiated full-scale commercialization"
@@ -746,7 +748,8 @@
       }
     ],
     "blugeneNoteTitle": "About this site",
-    "blugeneNoteText": "This site introduces the indigo business of CutisBio (Blugene). For the medical and cosmetics businesses and an overview of the company as a whole, please see the CutisBio corporate site.",
+    "corporateSiteCta": "Go to the official CutisBio corporate website",
+    "corporateSiteNewTab": "opens in a new window",
     "metaDescription": "CutisBio engineers the biosynthetic capability of microorganisms to make industrial materials. An overview of our business areas, including the bio indigo brand Blugene, and our history."
   },
   "Blog": {

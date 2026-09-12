@@ -79,18 +79,6 @@ function DetailRow({
   );
 }
 
-/**
- * 문서에 적힌 유효기간 문자열.
- * 시작일이 없는 인증서(OEKO-TEX)는 종료일만, 종료일이 없는 인증서(USDA)는 시작일만 적는다.
- * 없는 날짜를 지어내지 않는다.
- */
-function printedPeriod(cert: Certification): string | null {
-  if (cert.validFrom && cert.validUntil) return `${cert.validFrom} ~ ${cert.validUntil}`;
-  if (cert.validUntil) return `~ ${cert.validUntil}`;
-  if (cert.validFrom) return `${cert.validFrom} ~`;
-  return null;
-}
-
 async function CertificationCard({
   cert,
   compact,
@@ -109,7 +97,6 @@ async function CertificationCard({
         ? t('statusPastPeriod')
         : t('noExpiry');
 
-  const period = printedPeriod(cert);
   const certificateAlt = t('certificateAlt', { name: cert.displayName });
 
   return (
@@ -160,18 +147,9 @@ async function CertificationCard({
             </DetailRow>
             <DetailRow term={t('issuerLabel')}>{cert.issuer}</DetailRow>
             <DetailRow term={t('productLabel')}>{cert.productOnCertificate}</DetailRow>
-            {/* 만료일이 없다는 사실은 바로 위 상태 배지가 이미 말한다.
-                여기서 t('noExpiry') 를 한 번 더 쓰면 같은 문장이 한 카드 안에 두 번 나온다.
-                (period 가 아예 없는 인증서를 대비해 대체 표기로만 남긴다.) */}
-            <DetailRow term={t('validityLabel')} valueClassName="tabular-nums">
-              {period ?? t('noExpiry')}
-            </DetailRow>
-            {/* compact 에서는 발행일 · 카탈로그 쪽을 줄이고, 쪽 번호는 썸네일 캡션으로 옮긴다 */}
-            {!compact && cert.issuedOn && (
-              <DetailRow term={t('issuedLabel')} valueClassName="tabular-nums">
-                {cert.issuedOn}
-              </DetailRow>
-            )}
+            {/* '문서상 유효기간' · '문서 발행일' 줄은 2026-09-12 고객 요청으로 뺐다. 기간 판정은 위 상태 배지가,
+                만료 경고는 check-blugene-data 가 맡는다(데이터의 validFrom · validUntil · issuedOn 은 그대로).
+                compact 에서는 카탈로그 쪽을 줄이고, 쪽 번호는 썸네일 캡션으로 옮긴다 */}
             {!compact && (
               <DetailRow term={t('pageLabel')} valueClassName="tabular-nums">
                 {cert.page}
@@ -214,7 +192,7 @@ async function CertificationCard({
 
 /**
  * 홈용 카드 — 인증 마크 · 인증명 · 원본 인증서 이미지만 그린다.
- * 상태 배지 · 인증번호 · 기관 · 유효기간 · 적용 범위 · 출처 캡션은 full · compact 카드에만 있다.
+ * 상태 배지 · 인증번호 · 기관 · 적용 범위 · 출처 캡션은 full · compact 카드에만 있다.
  * 인증서는 세로 3장 · 가로 1장(USDA)이라 높이가 다르다. 자르지 않고 2:3 틀 안에서 세로 가운데 맞춤 해
  * 네 카드의 이미지 영역을 같은 크기로 맞춘다.
  */

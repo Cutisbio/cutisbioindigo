@@ -303,8 +303,6 @@
     "numberLabel": "인증번호",
     "issuerLabel": "인증기관",
     "productLabel": "적용 제품",
-    "validityLabel": "문서상 유효기간",
-    "issuedLabel": "문서 발행일",
     "pageLabel": "카탈로그 쪽",
     "certificateAlt": "{name} 인증서 원본 이미지",
     "logoAlt": "{name} 인증 마크",
@@ -709,11 +707,11 @@
     "structureNMethylanilineDesc": "벤젠 고리에 결합한 질소에 수소 하나와 메틸기(CH3)가 붙은 골격 구조식입니다."
   },
   "About": {
-    "title": "합성생물학으로 일상을 더 아름답게 디자인하다",
+    "title": "합성생물학으로 일상을 더 건강하게 <keep>더 아름답게 디자인하다</keep>",
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "미생물의 생합성 능력을 설계해 산업 소재를 다시 만듭니다. Blugene은 그 결과 가운데 하나로, 패션 산업의 인디고를 발효로 생산합니다.",
+    "visionText": "인간의 삶을 더 아름답고 건강하게 하기 위한 혁신적인 바이오소재의 글로벌 개척자가 되는 것이 우리의 비전입니다. Blugene 바이오 인디고 염료는 오랫동안 전 인류에게 공통으로 사랑받는 데님, 청바지를 혁신하여 인류의 건강과 지구환경의 지속가능성을 높이기 위한 바이오소재입니다.",
     "aboutImageAlt": "큐티스바이오 연구원들의 심도 있는 바이오 연구 전경",
     "coreBusinessTitle": "핵심 사업 영역",
     "healthTitle": "건강",
@@ -724,6 +722,10 @@
     "fashionText": "미생물 발효로 생산한 바이오 인디고를 데님 염색과 디지털 프린팅에 공급합니다.",
     "historyTitle": "연혁",
     "historyList": [
+      {
+        "year": "2025",
+        "event": "바이오 기반 인디고 염료의 다수 세계적 프리미엄 데님 회사와 염색 실증 완료"
+      },
       {
         "year": "2024",
         "event": "Bio-Indigo 바이오 염료 대량 생산 시스템 구축 및 본격적인 상용화 전개"
@@ -746,7 +748,8 @@
       }
     ],
     "blugeneNoteTitle": "이 사이트에 대하여",
-    "blugeneNoteText": "이 사이트는 큐티스바이오의 인디고 사업(Blugene)을 소개합니다. 의료 · 화장품 사업과 회사 전체 소개는 CutisBio 기업 사이트를 참고해 주세요.",
+    "corporateSiteCta": "큐티스바이오 회사 공식 홈페이지 바로가기",
+    "corporateSiteNewTab": "새 창에서 열림",
     "metaDescription": "큐티스바이오는 미생물의 생합성 능력을 설계해 산업 소재를 만듭니다. 바이오 인디고 브랜드 Blugene을 포함한 사업 영역과 연혁을 소개합니다."
   },
   "Blog": {

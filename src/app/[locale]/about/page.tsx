@@ -3,9 +3,7 @@ import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import SchemaOrg, { buildOrganizationSchema } from '@/components/seo/SchemaOrg';
 import SectionHeading from '@/components/blugene/SectionHeading';
-import SourceNote from '@/components/blugene/SourceNote';
-import { Link } from '@/i18n/routing';
-import { BRAND, LOCALES, SITE_URL, buildPageMetadata } from '@/data/blugene/site';
+import { BRAND, CORPORATE_SITE_URL, LOCALES, SITE_URL, buildPageMetadata } from '@/data/blugene/site';
 
 export function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -21,7 +19,8 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: '/about',
-    title: t('title'),
+    // 제목에 줄바꿈 묶음 태그(<keep>)가 있어 메타 제목은 태그를 뺀 문자열로 만든다.
+    title: t.markup('title', { keep: (chunks) => chunks }),
     // missionText 는 회사의 고정 영문 문구이므로 설명문은 언어별로 번역된 별도 키를 쓴다
     description: t('metaDescription'),
   });
@@ -32,7 +31,6 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'About' });
-  const tNav = await getTranslations({ locale, namespace: 'Nav' });
   const history = t.raw('historyList') as { year: string; event: string }[];
   const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/brand/cutisbio-logo.png`);
 
@@ -62,12 +60,17 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             아래 비전 문단에는 'OUR VISION' 라벨이 있다. 미션에도 같은 라벨을 붙여야
             영문 문장이 한국어 제목의 부제가 아니라 회사의 고정 미션 문구로 읽힌다.
           */}
+          {/* 2026-09-12 제목이 길어져(…더 건강하게 더 아름답게…) 기본 폭에서는 세 줄로 갈라지며 '더'가 줄 끝에 걸린다.
+              제목 상자를 넓히고, 문구의 <keep> 구간('더 아름답게 디자인하다')은 md 이상에서 한 줄에 둔다(브랜드 히어로와 같은 방식). */}
           <SectionHeading
             headingLevel="h1"
             eyebrow={t('missionTitle')}
-            title={t('title')}
+            title={t.rich('title', {
+              keep: (chunks) => <span className="md:whitespace-nowrap">{chunks}</span>,
+            })}
             body={t('missionText')}
             size="hero"
+            titleWidth="wide"
           />
         </div>
       </section>
@@ -110,14 +113,20 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             <h3 className="text-lg font-semibold break-keep text-[var(--color-indigo-deep)]">
               {t('blugeneNoteTitle')}
             </h3>
-            <SourceNote className="mt-3">{t('blugeneNoteText')}</SourceNote>
-            <Link
-              href="/brand"
-              className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
-            >
-              {tNav('brand')}
-              <span aria-hidden="true">→</span>
-            </Link>
+            {/* 2026-09-12 고객 요청: 설명문과 '브랜드 →' 링크 대신 회사 공식 홈페이지 바로가기 버튼. 외부 사이트라 새 창으로 열고,
+                보조기기에는 '새 창에서 열림'을 읽어 준다. 주소는 site.ts 의 CORPORATE_SITE_URL. */}
+            <div className="mt-5">
+              <a
+                href={CORPORATE_SITE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-md bg-[var(--color-indigo-deep)] px-6 py-3.5 text-sm font-semibold break-keep text-white transition-colors hover:bg-[var(--color-denim)] sm:text-base"
+              >
+                {t('corporateSiteCta')}
+                <span aria-hidden="true">↗</span>
+                <span className="sr-only"> ({t('corporateSiteNewTab')})</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

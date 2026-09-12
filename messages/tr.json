@@ -303,8 +303,6 @@
     "numberLabel": "Sertifika numarası",
     "issuerLabel": "Sertifika kuruluşu",
     "productLabel": "Kapsanan ürün",
-    "validityLabel": "Belgedeki geçerlilik süresi",
-    "issuedLabel": "Belge düzenlenme tarihi",
     "pageLabel": "Katalog sayfası",
     "certificateAlt": "{name} sertifikasının orijinal görseli",
     "logoAlt": "{name} sertifika logosu",
@@ -709,11 +707,11 @@
     "structureNMethylanilineDesc": "Benzen halkasına bağlı azot atomunda bir hidrojen ve bir metil grubu (CH3) bulunduğunu gösteren iskelet formülü."
   },
   "About": {
-    "title": "Sentetik biyolojiyle günlük hayatı daha güzel tasarlamak",
+    "title": "Sentetik biyolojiyle günlük hayatı daha sağlıklı ve daha güzel tasarlamak",
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "Mikroorganizmaların biyosentez kabiliyetini tasarlayarak endüstriyel malzemeleri yeniden üretiyoruz. Blugene bunun sonuçlarından biridir ve moda endüstrisinin indigosunu fermantasyonla üretir.",
+    "visionText": "Vizyonumuz, insan yaşamını daha güzel ve daha sağlıklı kılan yenilikçi biyomalzemelerin küresel öncüsü olmaktır. Blugene biyo indigo boyası, tüm insanlığın uzun süredir ortak olarak sevdiği denim ve kot pantolonu yenileyerek insan sağlığını ve dünya çevresinin sürdürülebilirliğini artırmak için geliştirilmiş bir biyomalzemedir.",
     "aboutImageAlt": "CutisBio araştırmacılarının derinlemesine biyoloji araştırmalarından bir görünüm",
     "coreBusinessTitle": "Temel iş alanları",
     "healthTitle": "Sağlık",
@@ -724,6 +722,10 @@
     "fashionText": "Mikrobiyal fermantasyonla ürettiğimiz biyo indigoyu denim boyama ve dijital baskı için tedarik ediyoruz.",
     "historyTitle": "Tarihçe",
     "historyList": [
+      {
+        "year": "2025",
+        "event": "Biyo bazlı indigo boyasının çok sayıda küresel premium denim şirketiyle boyama doğrulaması tamamlandı"
+      },
       {
         "year": "2024",
         "event": "Bio-Indigo biyo boya seri üretim sisteminin kurulması ve tam ölçekli ticarileştirmenin başlatılması"
@@ -746,7 +748,8 @@
       }
     ],
     "blugeneNoteTitle": "Bu site hakkında",
-    "blugeneNoteText": "Bu site, CutisBio'nun indigo işini (Blugene) tanıtır. Medikal ve kozmetik iş alanları ile şirketin genel tanıtımı için lütfen CutisBio kurumsal sitesine bakın.",
+    "corporateSiteCta": "CutisBio kurumsal resmi web sitesine gidin",
+    "corporateSiteNewTab": "yeni pencerede açılır",
     "metaDescription": "CutisBio, mikroorganizmaların biyosentez yeteneğini tasarlayarak endüstriyel malzemeler üretir. Biyo indigo markası Blugene dahil olmak üzere iş alanlarımızı ve tarihçemizi tanıtır."
   },
   "Blog": {

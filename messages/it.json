@@ -303,8 +303,6 @@
     "numberLabel": "N. certificato",
     "issuerLabel": "Ente certificatore",
     "productLabel": "Prodotto interessato",
-    "validityLabel": "Validità indicata sul documento",
-    "issuedLabel": "Data di emissione del documento",
     "pageLabel": "Pagina del catalogo",
     "certificateAlt": "Immagine originale del certificato {name}",
     "logoAlt": "Marchio di certificazione {name}",
@@ -709,11 +707,11 @@
     "structureNMethylanilineDesc": "Formula scheletrica in cui l'azoto legato all'anello benzenico porta un idrogeno e un gruppo metilico (CH3)."
   },
   "About": {
-    "title": "Progettare una quotidianità più bella con la biologia sintetica",
+    "title": "Progettare una quotidianità più sana e più bella con la biologia sintetica",
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "Progettiamo la capacità di biosintesi dei microrganismi per reinventare i materiali industriali. Blugene è uno dei risultati: un indaco per l'industria della moda, prodotto per fermentazione.",
+    "visionText": "La nostra visione è diventare un pioniere globale dei biomateriali innovativi che rendono la vita umana più bella e più sana. Il colorante bio-indaco Blugene è un biomateriale creato per rinnovare il denim e i jeans, amati da tutta l’umanità da così tanto tempo, e per accrescere la salute delle persone e la sostenibilità dell’ambiente del pianeta.",
     "aboutImageAlt": "Veduta di ricercatori di CutisBio impegnati in approfondite ricerche biologiche",
     "coreBusinessTitle": "Aree di business principali",
     "healthTitle": "Salute",
@@ -724,6 +722,10 @@
     "fashionText": "Forniamo bio-indaco prodotto per fermentazione microbica per la tintura del denim e la stampa digitale.",
     "historyTitle": "Storia",
     "historyList": [
+      {
+        "year": "2025",
+        "event": "Completata la validazione della tintura con il colorante indaco bio-based presso diverse aziende mondiali di denim premium"
+      },
       {
         "year": "2024",
         "event": "Realizzazione di un sistema di produzione su larga scala del colorante bio Bio-Indigo e avvio della commercializzazione"
@@ -746,7 +748,8 @@
       }
     ],
     "blugeneNoteTitle": "Informazioni su questo sito",
-    "blugeneNoteText": "Questo sito presenta l'attività indaco di CutisBio (Blugene). Per le attività medicali e cosmetiche e la presentazione generale dell'azienda, consulta il sito istituzionale di CutisBio.",
+    "corporateSiteCta": "Vai al sito ufficiale di CutisBio",
+    "corporateSiteNewTab": "si apre in una nuova finestra",
     "metaDescription": "CutisBio progetta la capacità di biosintesi dei microrganismi per creare materiali industriali. Presentazione delle aree di business, tra cui il brand di bio-indaco Blugene, e della storia dell'azienda."
   },
   "Blog": {

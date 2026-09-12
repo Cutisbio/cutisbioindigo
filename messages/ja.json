@@ -303,8 +303,6 @@
     "numberLabel": "認証番号",
     "issuerLabel": "認証機関",
     "productLabel": "対象製品",
-    "validityLabel": "文書上の有効期間",
-    "issuedLabel": "文書発行日",
     "pageLabel": "カタログのページ",
     "certificateAlt": "{name} 認証書の原本画像",
     "logoAlt": "{name} 認証マーク",
@@ -709,11 +707,11 @@
     "structureNMethylanilineDesc": "ベンゼン環に結合した窒素に水素 1 つとメチル基（CH3）が付いた骨格構造式です。"
   },
   "About": {
-    "title": "合成生物学で日常をより美しくデザインする",
+    "title": "合成生物学で日常をより健やかに、より美しくデザインする",
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "微生物の生合成能力を設計し、産業素材をつくり直します。Blugene はその成果の1つとして、ファッション産業のインディゴを発酵で生産します。",
+    "visionText": "人の暮らしをより美しく、より健やかにする革新的なバイオ素材のグローバルな開拓者になることが、私たちのビジョンです。Blugene バイオインディゴ染料は、長く全人類に共通して愛されてきたデニム、ジーンズを革新し、人類の健康と地球環境の持続可能性を高めるためのバイオ素材です。",
     "aboutImageAlt": "キューティスバイオの研究員による緻密なバイオ研究の様子",
     "coreBusinessTitle": "中核事業領域",
     "healthTitle": "健康",
@@ -724,6 +722,10 @@
     "fashionText": "微生物発酵で生産したバイオインディゴを、デニム染色とデジタルプリントに供給します。",
     "historyTitle": "沿革",
     "historyList": [
+      {
+        "year": "2025",
+        "event": "バイオ由来インディゴ染料について、世界的なプレミアムデニム企業複数社との染色実証を完了"
+      },
       {
         "year": "2024",
         "event": "Bio-Indigoバイオ染料の大量生産システムの構築および本格的な商用化の展開"
@@ -746,7 +748,8 @@
       }
     ],
     "blugeneNoteTitle": "本サイトについて",
-    "blugeneNoteText": "本サイトは、キューティスバイオのインディゴ事業(Blugene)をご紹介しています。医療・化粧品事業および会社全体のご紹介については、CutisBio の企業サイトをご参照ください。",
+    "corporateSiteCta": "CutisBio 会社公式ホームページへ",
+    "corporateSiteNewTab": "新しいウィンドウで開きます",
     "metaDescription": "キューティスバイオは微生物の生合成能力を設計し、産業素材をつくります。バイオインディゴブランド Blugene を含む事業領域と沿革をご紹介します。"
   },
   "Blog": {

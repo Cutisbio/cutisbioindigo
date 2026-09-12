@@ -303,8 +303,6 @@
     "numberLabel": "证书编号",
     "issuerLabel": "认证机构",
     "productLabel": "适用产品",
-    "validityLabel": "文件所载有效期",
-    "issuedLabel": "文件签发日",
     "pageLabel": "产品目录页码",
     "certificateAlt": "{name} 证书原件图片",
     "logoAlt": "{name} 认证标志",
@@ -709,11 +707,11 @@
     "structureNMethylanilineDesc": "苯环所连氮原子上带有一个氢和一个甲基（CH3）的骨架结构式。"
   },
   "About": {
-    "title": "以合成生物学，将日常设计得更美好",
+    "title": "以合成生物学，将日常设计得更健康、更美好",
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "我们设计微生物的生物合成能力，重新打造工业材料。Blugene 正是其成果之一，以发酵方式生产时尚产业所用的靛蓝。",
+    "visionText": "成为以创新生物材料让人类生活更美好、更健康的全球开拓者，是我们的愿景。Blugene 生物靛蓝染料是一种生物材料，旨在革新长期以来为全人类共同喜爱的丹宁与牛仔裤，提升人类健康与地球环境的可持续性。",
     "aboutImageAlt": "CutisBio 研究人员深入开展生物研究的场景",
     "coreBusinessTitle": "核心业务领域",
     "healthTitle": "健康",
@@ -724,6 +722,10 @@
     "fashionText": "将以微生物发酵生产的生物靛蓝，供应于丹宁染色与数码印花。",
     "historyTitle": "发展历程",
     "historyList": [
+      {
+        "year": "2025",
+        "event": "与多家全球高端丹宁企业完成生物基靛蓝染料的染色实证"
+      },
       {
         "year": "2024",
         "event": "建立 Bio-Indigo 生物染料的大规模生产系统并展开全面商业化"
@@ -746,7 +748,8 @@
       }
     ],
     "blugeneNoteTitle": "关于本网站",
-    "blugeneNoteText": "本网站介绍 CutisBio 的靛蓝业务（Blugene）。关于医疗 · 化妆品业务及公司整体介绍，请参阅 CutisBio 企业网站。",
+    "corporateSiteCta": "前往 CutisBio 公司官方网站",
+    "corporateSiteNewTab": "在新窗口中打开",
     "metaDescription": "CutisBio 通过设计微生物的生物合成能力来制造工业材料。本页介绍包括生物靛蓝品牌 Blugene 在内的业务领域与发展历程。"
   },
   "Blog": {

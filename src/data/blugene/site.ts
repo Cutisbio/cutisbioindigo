@@ -22,6 +22,9 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://blugene.co
 /** 이전 도메인. 기존 URL 은 그대로 살아 있어야 하며 canonical 만 새 도메인을 가리킨다. */
 export const LEGACY_DOMAINS = ['https://cutisbioindigo.kr'] as const;
 
+/** 큐티스바이오 회사 공식 홈페이지. 회사소개 페이지의 바로가기 버튼이 새 창으로 연다 (2026-09-12 고객 지정). */
+export const CORPORATE_SITE_URL = 'https://www.cutisbio.com';
+
 /** 순서가 곧 언어 선택기의 순서다 (2026-09-11 고객 지정: 한국어 · 일본어 · 영어 · 프랑스어 · 이탈리아어 · 중국어 · 터키어). 벵골어는 같은 날 뺐다. */
 export const LOCALES = ['ko', 'ja', 'en', 'fr', 'it', 'zh', 'tr'] as const;
 export type Locale = (typeof LOCALES)[number];

@@ -303,8 +303,6 @@
     "numberLabel": "N° de certificat",
     "issuerLabel": "Organisme certificateur",
     "productLabel": "Produit concerné",
-    "validityLabel": "Validité indiquée sur le document",
-    "issuedLabel": "Date d'émission du document",
     "pageLabel": "Page du catalogue",
     "certificateAlt": "Image originale du certificat {name}",
     "logoAlt": "Marque de certification {name}",
@@ -709,11 +707,11 @@
     "structureNMethylanilineDesc": "Formule topologique où l'azote lié au cycle benzénique porte un hydrogène et un groupe méthyle (CH3)."
   },
   "About": {
-    "title": "Concevoir un quotidien plus beau grâce à la biologie de synthèse",
+    "title": "Concevoir un quotidien plus sain et plus beau grâce à la biologie de synthèse",
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "Nous concevons la capacité de biosynthèse des micro-organismes pour réinventer les matériaux industriels. Blugene en est l'un des résultats : un indigo pour l'industrie de la mode, produit par fermentation.",
+    "visionText": "Notre vision est de devenir un pionnier mondial des biomatériaux innovants qui rendent la vie humaine plus belle et plus saine. Le colorant bio-indigo Blugene est un biomatériau conçu pour réinventer le denim et le jean, aimés de toute l’humanité depuis si longtemps, et pour renforcer la santé humaine ainsi que la durabilité de l’environnement planétaire.",
     "aboutImageAlt": "Vue de chercheurs de CutisBio menant des travaux de recherche approfondis en biologie",
     "coreBusinessTitle": "Domaines d'activité principaux",
     "healthTitle": "Santé",
@@ -724,6 +722,10 @@
     "fashionText": "Nous fournissons du bio-indigo produit par fermentation microbienne pour la teinture du denim et l'impression numérique.",
     "historyTitle": "Historique",
     "historyList": [
+      {
+        "year": "2025",
+        "event": "Validation de teinture du colorant indigo biosourcé achevée avec plusieurs entreprises mondiales de denim premium"
+      },
       {
         "year": "2024",
         "event": "Mise en place d'un système de production à grande échelle du colorant bio Bio-Indigo et lancement de la commercialisation"
@@ -746,7 +748,8 @@
       }
     ],
     "blugeneNoteTitle": "À propos de ce site",
-    "blugeneNoteText": "Ce site présente l'activité indigo de CutisBio (Blugene). Pour les activités médicales et cosmétiques et la présentation générale de l'entreprise, consultez le site institutionnel de CutisBio.",
+    "corporateSiteCta": "Accéder au site officiel de CutisBio",
+    "corporateSiteNewTab": "s’ouvre dans une nouvelle fenêtre",
     "metaDescription": "CutisBio conçoit la capacité de biosynthèse des micro-organismes pour créer des matériaux industriels. Présentation de ses domaines d'activité, dont la marque de bio-indigo Blugene, et de son historique."
   },
   "Blog": {
