@@ -177,15 +177,13 @@
     "title": "Markanıza özel bir mavi.",
     "body": "Boya konsantrasyonuna ve boyama sayısına göre rengin derinliği değişir. İndigo ile indirubin oranı ayarlanarak markaya özgü bir ton oluşturulabilir.",
     "gridTitle": "Katalogdaki konsantrasyona göre numuneler",
-    "gridHelp": "Bir numuneyi seçtiğinizde büyütülmüş halini görebilirsiniz. Katalogda numunelerin konsantrasyon değerleri verilmediği için konuma dayalı tanımlayıcılarla (A1~B6) gösterilmektedir.",
+    "gridHelp": "Katalogda numunelerin konsantrasyon değerleri verilmediği için konuma dayalı tanımlayıcılarla (A1~B6) gösterilmektedir.",
     "axisLow": "Low",
     "axisHigh": "High",
     "axisLabel": "Blugene konsantrasyonu",
     "rowA": "A satırı",
     "rowB": "B satırı",
-    "swatchLabel": "Katalog numunesi {code}",
     "swatchAlt": "Katalog s.7 Şekil 4-1'de yer alan, konsantrasyona göre boyama numunesi {code}",
-    "duplicateNote": "Orijinalde A6 ve B1 konumlarında aynı numune görseli kullanılmıştır. Görsellerin bulunduğu konumlar olduğu gibi korunmuştur.",
     "indirubinTitle": "İndirubinin yarattığı ton değişimi",
     "indirubinBody": "İndirubin, indigonun kırmızı izomeridir. Mikrobiyal fermantasyonla üretilen indigo ve indirubin bileşimi ayarlanarak markaya özgü bir mavi elde edilebilir.",
     "indirubinAltA": "%100 indigo ile boyanmış denim kumaş fotoğrafı (Katalog s.7 Şekil 4-2)",
@@ -195,9 +193,7 @@
     "indirubinToggle": "İki bileşimi karşılaştır",
     "indirubinNote": "Katalogda sunulan iki bileşimin fotoğraflarıdır. Aradaki karışım oranları verilmediği için ekranda renk üretilerek gösterilmemektedir.",
     "colorDisclaimer": "Gerçek renk; ekrana, kumaşa ve boyama koşullarına göre değişebilir. Lütfen kumaş numunesiyle doğrulayın.",
-    "inquiryCta": "Bu renk için numune talep edin",
-    "medicalNote": "İndirubinin farmakolojik etkinliği bu sitede ele alınmamaktadır. Yalnızca ton ayarı ve ürün geliştirme açısından açıklanmaktadır.",
-    "keyboardHint": "Numuneler arasında ok tuşları (← → ↑ ↓) ile Home · End tuşlarını kullanarak gezinebilirsiniz."
+    "medicalNote": "İndirubinin farmakolojik etkinliği bu sitede ele alınmamaktadır. Yalnızca ton ayarı ve ürün geliştirme açısından açıklanmaktadır."
   },
   "Products": {
     "eyebrow": "PRODUCT FORMS",
@@ -368,7 +364,6 @@
     "testPhoto": "Test fotoğrafı",
     "imageNoteConcept": "Kavramı anlatmak için hazırlanmış bir görseldir; gerçek tesis · müşteri · test sonuçlarının fotoğrafı değildir.",
     "imageNotePhoto": "Sağlanan katalogda yer alan fotoğraf, renk düzeltmesi yapılmadan yalnızca web için yeniden boyutlandırılarak kullanılmıştır.",
-    "imageNoteSwatch": "Katalog s.7 Figure 4-1'de basılı renk numuneleri, orijinal dosyalardan dönüştürülmeden alınmıştır. Bunlar gerçek kumaşın fotoğrafı değildir.",
     "scrollableRegion": "Yatay olarak kaydırılabilir alan",
     "catalogueFigure": "Katalog görseli"
   },

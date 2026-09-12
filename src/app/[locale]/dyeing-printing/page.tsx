@@ -69,10 +69,10 @@ export default async function DyeingPrintingPage({
         </div>
       </section>
 
-      {/* 염색성 */}
+      {/* 염색성 — 원본 스트립 + 안내 블록은 2026-09-12 고객 요청으로 뺐다(showStrip). 같은 안내는 아래 견뢰도 표에 남아 있다. */}
       <section id="dyeability" className="w-full bg-white scroll-mt-24">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-          <FabricComparison variant="bare" showCta={false} />
+          <FabricComparison variant="bare" showCta={false} showStrip={false} />
         </div>
       </section>
 

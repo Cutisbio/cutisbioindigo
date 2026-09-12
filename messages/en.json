@@ -177,15 +177,13 @@
     "title": "Your brand. Your blue.",
     "body": "Shade depth changes with dye concentration and the number of dyeing cycles. Adjusting the ratio of indigo to indirubin makes it possible to create a shade that belongs to your brand alone.",
     "gridTitle": "Catalogue swatches by concentration",
-    "gridHelp": "Select a swatch to view it enlarged. The catalogue does not give concentration values for the individual swatches, so they are identified by position (A1–B6).",
+    "gridHelp": "The catalogue does not give concentration values for the individual swatches, so they are identified by position (A1–B6).",
     "axisLow": "Low",
     "axisHigh": "High",
     "axisLabel": "Blugene concentration",
     "rowA": "Row A",
     "rowB": "Row B",
-    "swatchLabel": "Catalogue swatch {code}",
     "swatchAlt": "Dyed swatch {code} by concentration from catalogue p.7 Figure 4-1",
-    "duplicateNote": "In the source, the same swatch image is used at positions A6 and B1. The positions have been preserved as they appear.",
     "indirubinTitle": "How indirubin shifts the shade",
     "indirubinBody": "Indirubin is the red isomer of indigo. Adjusting the composition of indigo and indirubin produced by microbial fermentation makes it possible to create a blue that is unique to your brand.",
     "indirubinAltA": "Photograph of denim fabric dyed with 100% indigo (catalogue p.7 Figure 4-2)",
@@ -195,9 +193,7 @@
     "indirubinToggle": "Compare the two compositions",
     "indirubinNote": "These are photographs of the two compositions presented in the catalogue. Mixing ratios in between are not provided, so we do not generate those colors on screen.",
     "colorDisclaimer": "Actual color may differ depending on the screen, the fabric and the dyeing conditions. Please confirm with a fabric sample.",
-    "inquiryCta": "Request a sample in this shade",
-    "medicalNote": "The pharmacological activity of indirubin is not covered on this site. We describe it only from the perspective of shade control and product development.",
-    "keyboardHint": "Use the arrow keys (← → ↑ ↓) and Home · End to move between swatches."
+    "medicalNote": "The pharmacological activity of indirubin is not covered on this site. We describe it only from the perspective of shade control and product development."
   },
   "Products": {
     "eyebrow": "PRODUCT FORMS",
@@ -368,7 +364,6 @@
     "testPhoto": "Test photograph",
     "imageNoteConcept": "This image is used to illustrate a concept; it is not a photograph of an actual facility, customer or test result.",
     "imageNotePhoto": "Photographs from the supplied catalogue, resized for the web without any color correction.",
-    "imageNoteSwatch": "The colour swatches printed in Figure 4-1 on catalogue p.7, copied from the original files without conversion. These are not photographs of physical fabric.",
     "scrollableRegion": "Horizontally scrollable region",
     "catalogueFigure": "Catalogue figure"
   },

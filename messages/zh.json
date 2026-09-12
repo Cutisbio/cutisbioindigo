@@ -177,15 +177,13 @@
     "title": "属于你品牌的，专属蓝。",
     "body": "色彩的深浅随染料浓度与染色次数而变化。调整靛蓝与靛玉红的比例，即可打造品牌专属的色调。",
     "gridTitle": "产品目录按浓度呈现的色样",
-    "gridHelp": "点选色样即可放大查看。产品目录未标示各色样的浓度数值，故以位置基准的标识（A1~B6）表示。",
+    "gridHelp": "产品目录未标示各色样的浓度数值，故以位置基准的标识（A1~B6）表示。",
     "axisLow": "Low",
     "axisHigh": "High",
     "axisLabel": "Blugene 浓度",
     "rowA": "A行",
     "rowB": "B行",
-    "swatchLabel": "产品目录色样 {code}",
     "swatchAlt": "产品目录 p.7 Figure 4-1 按浓度呈现的染色色样 {code}",
-    "duplicateNote": "原件中 A6 与 B1 位置使用了相同的色样图片。我们保留了其原有的呈现位置。",
     "indirubinTitle": "靛玉红带来的色调变化",
     "indirubinBody": "靛玉红是靛蓝的红色异构体。调节以微生物发酵所得靛蓝与靛玉红的组成比例，即可打造品牌专属的蓝。",
     "indirubinAltA": "以靛蓝 100% 染制的丹宁面料照片（产品目录 p.7 Figure 4-2）",
@@ -195,9 +193,7 @@
     "indirubinToggle": "对比两种组成",
     "indirubinNote": "这是产品目录中给出的两种组成的照片。由于未提供两者之间的混合比例，我们不在屏幕上模拟生成中间色。",
     "colorDisclaimer": "实际颜色会因屏幕 · 面料 · 染色条件而有所不同，请以面料样品确认。",
-    "inquiryCta": "以此色咨询样品",
-    "medicalNote": "本网站不涉及靛玉红的药理活性，仅从色调调节与产品开发的角度加以说明。",
-    "keyboardHint": "可使用方向键（← → ↑ ↓）以及 Home · End 键切换色样。"
+    "medicalNote": "本网站不涉及靛玉红的药理活性，仅从色调调节与产品开发的角度加以说明。"
   },
   "Products": {
     "eyebrow": "PRODUCT FORMS",
@@ -368,7 +364,6 @@
     "testPhoto": "检测照片",
     "imageNoteConcept": "此为用于说明概念的图片，并非拍摄实际设施 · 客户 · 检测结果的照片。",
     "imageNotePhoto": "采用所提供产品目录中收录的照片，未作色彩调整，仅为网页用途调整了尺寸。",
-    "imageNoteSwatch": "目录第 7 页 Figure 4-1 中印刷的色样，按原始文件原样呈现，未做任何转换。这不是实物面料的照片。",
     "scrollableRegion": "可横向滚动的区域",
     "catalogueFigure": "目录图版"
   },

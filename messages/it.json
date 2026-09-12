@@ -177,15 +177,13 @@
     "title": "Al tuo brand, il suo blu.",
     "body": "La profondità del colore varia con la concentrazione del colorante e il numero di tinture. Regolando il rapporto tra indaco e indirubina, ogni brand può creare la propria tonalità.",
     "gridTitle": "Campioni del catalogo per concentrazione",
-    "gridHelp": "Seleziona un campione per ingrandirlo. Poiché il catalogo non indica la concentrazione di ciascun campione, usiamo identificatori di posizione (A1-B6).",
+    "gridHelp": "Poiché il catalogo non indica la concentrazione di ciascun campione, usiamo identificatori di posizione (A1-B6).",
     "axisLow": "Low",
     "axisHigh": "High",
     "axisLabel": "Concentrazione Blugene",
     "rowA": "Riga A",
     "rowB": "Riga B",
-    "swatchLabel": "Campione del catalogo {code}",
     "swatchAlt": "Campione tinto {code} per concentrazione, catalogo p.7, Figure 4-1",
-    "duplicateNote": "Nell'originale, nelle posizioni A6 e B1 è usata la stessa immagine di campione. Le posizioni sono state conservate così come sono.",
     "indirubinTitle": "Le variazioni di tonalità create dall'indirubina",
     "indirubinBody": "L'indirubina è l'isomero rosso dell'indaco. Regolando la composizione di indaco e indirubina prodotti per fermentazione microbica, si può creare un blu esclusivo del brand.",
     "indirubinAltA": "Foto di un tessuto denim tinto con indaco al 100% (catalogo p.7, Figure 4-2)",
@@ -195,9 +193,7 @@
     "indirubinToggle": "Confronta le due composizioni",
     "indirubinNote": "Foto delle due composizioni presentate nel catalogo. Poiché i rapporti intermedi non sono forniti, nessun colore viene simulato sullo schermo.",
     "colorDisclaimer": "Il colore reale può variare in base allo schermo, al tessuto e alle condizioni di tintura. Verifica su un campione di tessuto.",
-    "inquiryCta": "Richiedi un campione in questo colore",
-    "medicalNote": "L'attività farmacologica dell'indirubina non è trattata su questo sito. Si parla solo di regolazione della tonalità e di sviluppo del prodotto.",
-    "keyboardHint": "Usa le frecce (← → ↑ ↓) e i tasti Home · Fine per spostarti tra i campioni."
+    "medicalNote": "L'attività farmacologica dell'indirubina non è trattata su questo sito. Si parla solo di regolazione della tonalità e di sviluppo del prodotto."
   },
   "Products": {
     "eyebrow": "PRODUCT FORMS",
@@ -368,7 +364,6 @@
     "testPhoto": "Foto di prova",
     "imageNoteConcept": "Immagine destinata a illustrare un concetto; non è una foto reale di impianti, clienti o risultati di prova.",
     "imageNotePhoto": "Foto del catalogo fornito, solo ridimensionata per il web, senza correzione del colore.",
-    "imageNoteSwatch": "Campioni di colore stampati nella Figure 4-1, p.7 del catalogo, riprodotti così come sono dal file originale. Non sono foto di tessuto reale.",
     "scrollableRegion": "Area scorrevole in orizzontale",
     "catalogueFigure": "Figura del catalogo"
   },

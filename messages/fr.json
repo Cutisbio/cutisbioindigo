@@ -177,15 +177,13 @@
     "title": "À votre marque, son propre bleu.",
     "body": "La profondeur de la couleur varie selon la concentration du colorant et le nombre de teintures. En ajustant le rapport entre indigo et indirubine, chaque marque peut créer sa propre nuance.",
     "gridTitle": "Nuancier du catalogue par concentration",
-    "gridHelp": "Sélectionnez un échantillon pour l'agrandir. Le catalogue n'indiquant pas la concentration de chaque échantillon, nous utilisons des repères de position (A1 à B6).",
+    "gridHelp": "Le catalogue n'indiquant pas la concentration de chaque échantillon, nous utilisons des repères de position (A1 à B6).",
     "axisLow": "Low",
     "axisHigh": "High",
     "axisLabel": "Concentration Blugene",
     "rowA": "Rangée A",
     "rowB": "Rangée B",
-    "swatchLabel": "Échantillon du catalogue {code}",
     "swatchAlt": "Échantillon teint {code} par concentration, catalogue p.7, Figure 4-1",
-    "duplicateNote": "Dans l'original, la même image d'échantillon est utilisée aux positions A6 et B1. Les positions ont été conservées telles quelles.",
     "indirubinTitle": "Les variations de nuance créées par l'indirubine",
     "indirubinBody": "L'indirubine est l'isomère rouge de l'indigo. En réglant la composition d'indigo et d'indirubine issus de la fermentation microbienne, on peut créer un bleu propre à chaque marque.",
     "indirubinAltA": "Photo d'un tissu denim teint à 100 % d'indigo (catalogue p.7, Figure 4-2)",
@@ -195,9 +193,7 @@
     "indirubinToggle": "Comparer les deux compositions",
     "indirubinNote": "Photos des deux compositions présentées dans le catalogue. Les proportions intermédiaires n'étant pas fournies, aucune couleur n'est simulée à l'écran.",
     "colorDisclaimer": "La couleur réelle peut varier selon l'écran, le tissu et les conditions de teinture. Vérifiez sur un échantillon de tissu.",
-    "inquiryCta": "Demander un échantillon dans cette couleur",
-    "medicalNote": "L'activité pharmacologique de l'indirubine n'est pas traitée sur ce site. Seuls le réglage de la nuance et le développement produit sont abordés.",
-    "keyboardHint": "Utilisez les flèches (← → ↑ ↓) et les touches Début · Fin pour changer d'échantillon."
+    "medicalNote": "L'activité pharmacologique de l'indirubine n'est pas traitée sur ce site. Seuls le réglage de la nuance et le développement produit sont abordés."
   },
   "Products": {
     "eyebrow": "PRODUCT FORMS",
@@ -368,7 +364,6 @@
     "testPhoto": "Photo d'essai",
     "imageNoteConcept": "Image destinée à illustrer un concept ; il ne s'agit pas d'une photo réelle d'installations, de clients ou de résultats d'essai.",
     "imageNotePhoto": "Photo du catalogue fourni, simplement redimensionnée pour le web, sans correction de couleur.",
-    "imageNoteSwatch": "Échantillons de couleur imprimés dans la Figure 4-1, p.7 du catalogue, reproduits tels quels depuis le fichier original. Il ne s'agit pas de photos de tissu réel.",
     "scrollableRegion": "Zone défilable horizontalement",
     "catalogueFigure": "Figure du catalogue"
   },

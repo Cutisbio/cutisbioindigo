@@ -23,7 +23,7 @@
 | 4 | 작업 환경 삽화 (Figure 2-1) | 화면에서 사용 중지 — 2026-09-12 고객 요청으로 `/technology` 의 「작업 환경」 단락을 뺐다 (파일은 남김) | — | `technology/worker-safety.png` |
 | 4 | 규제·인증 허용한도 표 (Table 2-1, 2-2) | **미게재** — 아래 "공개하지 않은 항목" 참조 | — | — |
 | 5 | 아닐린·N-메틸아닐린 그래프·표 (Figure 2-2, Table 2-3) | `/` (요약 차트), `/data-certifications#test-results` (전체 표) | `ImpurityEvidence`, `ComparisonChart`, `EvidenceTables` | `evidence/aniline-results.png` |
-| 6 | 원단 9개 염색 사진 (Figure 3-1) | `/`, `/dyeing-printing#dyeability` | `FabricComparison` | `performance/fabric-comparison.webp`, `performance/fabric-strip.webp` |
+| 6 | 원단 9개 염색 사진 (Figure 3-1) | `/`, `/dyeing-printing#dyeability` | `FabricComparison` | `performance/fabric-comparison.webp`, `performance/fabric-strip.webp` (라벨 없는 스트립은 2026-09-12 고객 요청으로 `/dyeing-printing` 에서는 빼고 홈에만 남김) |
 | 6 | 견뢰도 표 4종 (Table 3-1 ~ 3-4) | `/dyeing-printing#colorfastness` | `FastnessTables` (HTML 표로 재구현) | `performance/fastness-tables.png` (원본 대조용) |
 | 7 | 농도별 견본 (Figure 4-1) | `/`, `/dyeing-printing#shades` | `ShadeLibrary` | `shades/swatch-A1…B6.png` (12개, 무변환 복사), `shades/concentration-shades.webp` |
 | 7 | 인디고/인디루빈 비교 (Figure 4-2) | `/`, `/dyeing-printing#shades` | `ShadeLibrary` | `shades/indirubin-indigo-100.webp`, `indirubin-indigo-94.webp` |

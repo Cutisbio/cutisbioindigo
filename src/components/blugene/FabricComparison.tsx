@@ -20,6 +20,8 @@ import {
  * - 샘플 대응은 표가 아니라 범례 목록으로 정리한다. 샘플 번호는 데이터의 id 를 그대로 `#{id}` 로 쓴다.
  * - 사진에는 어떤 색보정 · 필터 · 오버레이도 씌우지 않는다 (`swatch-true-color`).
  * - 견뢰도 등급 해석은 이 컴포넌트에서 하지 않는다. "모든 항목에서 우월"이 아니라는 안내(honestNote)를 반드시 함께 둔다.
+ *   단, /dyeing-printing 은 바로 아래 견뢰도 표(FastnessTables)가 같은 안내를 따로 두므로 showStrip={false} 로
+ *   원본 스트립과 안내 블록을 끈다(2026-09-12 고객 요청). 홈은 그대로 둔다.
  */
 
 interface FabricComparisonProps {
@@ -27,6 +29,8 @@ interface FabricComparisonProps {
   showCta?: boolean;
   /** 'section' 이면 배경·여백을 가진 독립 섹션, 'bare' 면 내부 콘텐츠만 반환한다 */
   variant?: 'section' | 'bare';
+  /** 라벨 없는 원본 스트립 + "모든 항목에서 우월하지 않다" 안내 블록을 표시할지 여부 (기본 true). showCta 링크도 이 블록 안에 있다. */
+  showStrip?: boolean;
 }
 
 /** 범례 한 그룹 = 인디고 유형 하나 */
@@ -41,6 +45,7 @@ interface LegendGroup {
 export default async function FabricComparison({
   showCta = true,
   variant = 'section',
+  showStrip = true,
 }: FabricComparisonProps) {
   const t = await getTranslations('Performance');
   const tc = await getTranslations('Common');
@@ -131,40 +136,42 @@ export default async function FabricComparison({
         </ul>
       </div>
 
-      {/* 라벨 없는 원본 스트립 + 정직한 단서 */}
-      <div className="mt-14 grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.82fr)] lg:items-start lg:gap-14">
-        <div>
-          <div className="mb-3 flex flex-wrap items-center gap-2">
-            <AssetKind>{tc('testPhoto')}</AssetKind>
+      {/* 라벨 없는 원본 스트립 + 정직한 단서 — /dyeing-printing 에서는 showStrip={false} 로 끈다 */}
+      {showStrip && (
+        <div className="mt-14 grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.82fr)] lg:items-start lg:gap-14">
+          <div>
+            <div className="mb-3 flex flex-wrap items-center gap-2">
+              <AssetKind>{tc('testPhoto')}</AssetKind>
+            </div>
+            <ZoomableImage
+              src={fabricStripImage}
+              alt={t('fabricAlt')}
+              width={1147}
+              height={193}
+              openLabel={tc('viewOriginal')}
+              closeLabel={tc('close')}
+              hint={tc('imageNotePhoto')}
+              caption={tc('imageNotePhoto')}
+              sizes="(max-width: 1024px) 92vw, 620px"
+              imgClassName="swatch-true-color"
+            />
           </div>
-          <ZoomableImage
-            src={fabricStripImage}
-            alt={t('fabricAlt')}
-            width={1147}
-            height={193}
-            openLabel={tc('viewOriginal')}
-            closeLabel={tc('close')}
-            hint={tc('imageNotePhoto')}
-            caption={tc('imageNotePhoto')}
-            sizes="(max-width: 1024px) 92vw, 620px"
-            imgClassName="swatch-true-color"
-          />
-        </div>
 
-        <div className="border-l-2 border-[color:var(--color-denim)] pl-5 sm:pl-6">
-          <SourceNote className="text-sm sm:text-[0.9375rem]">{t('honestNote')}</SourceNote>
+          <div className="border-l-2 border-[color:var(--color-denim)] pl-5 sm:pl-6">
+            <SourceNote className="text-sm sm:text-[0.9375rem]">{t('honestNote')}</SourceNote>
 
-          {showCta && (
-            <Link
-              href="/dyeing-printing"
-              className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
-            >
-              {t('cta')}
-              <span aria-hidden="true">→</span>
-            </Link>
-          )}
+            {showCta && (
+              <Link
+                href="/dyeing-printing"
+                className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
+              >
+                {t('cta')}
+                <span aria-hidden="true">→</span>
+              </Link>
+            )}
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 
