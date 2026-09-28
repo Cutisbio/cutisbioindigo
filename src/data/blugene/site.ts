@@ -19,8 +19,11 @@ export const BRAND = {
  */
 export const SITE_URL = (process.env.NEXT_PUBLIC_BASE_URL || 'https://blugene.co').replace(/\/$/, '');
 
-/** 이전 도메인. 기존 URL 은 그대로 살아 있어야 하며 canonical 만 새 도메인을 가리킨다. */
+/** 이전 도메인. 기존 URL 은 그대로 살아 있어야 하며(색인된 주소) 2026-09-28 부터 같은 경로의 새 도메인으로 301 이동시킨다. */
 export const LEGACY_DOMAINS = ['https://cutisbioindigo.kr'] as const;
+
+/** 이전 도메인의 호스트 이름 — src/proxy.ts 가 이 호스트로 들어온 요청을 SITE_URL 로 301 이동시킨다(netlify.toml 의 규칙과 이중). */
+export const LEGACY_HOSTS = ['cutisbioindigo.kr', 'www.cutisbioindigo.kr'] as const;
 
 /** 큐티스바이오 회사 공식 홈페이지. 회사소개 페이지의 바로가기 버튼이 새 창으로 연다 (2026-09-12 고객 지정). */
 export const CORPORATE_SITE_URL = 'https://www.cutisbio.com';
