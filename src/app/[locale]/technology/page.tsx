@@ -1,11 +1,9 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { Link } from '@/i18n/routing';
 import SectionHeading from '@/components/blugene/SectionHeading';
 import CarbonJourney from '@/components/blugene/CarbonJourney';
 import SourceNote, { AssetKind } from '@/components/blugene/SourceNote';
 import ZoomableImage from '@/components/blugene/ZoomableImage';
-import AnilineStructures from '@/components/blugene/AnilineStructures';
 import { LOCALES, buildPageMetadata } from '@/data/blugene/site';
 
 export function generateStaticParams() {
@@ -168,32 +166,8 @@ export default async function TechnologyPage({ params }: { params: Promise<{ loc
         더 자세한 내용을 기대하고 넘어온 독자가 방금 본 화면을 되풀이해 읽게 되므로 두지 않는다.
       */}
 
-      {/* 불순물 — 앞 섹션이 아이보리이므로 여기는 흰 배경이어야 경계가 보인다.
-          오른쪽 열에 있던 「작업 환경」 단락(카탈로그 p.4 Figure 2-1 삽화)은 2026-09-12 고객 요청으로 뺐고,
-          남은 불순물 단락은 한 열로 읽히도록 폭을 max-w-3xl 로 잡는다. */}
-      <section className="w-full bg-white">
-        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-          <div className="max-w-3xl">
-            <SectionHeading title={t('impurityTitle')} size="lg" />
-            <p className="mt-5 text-base leading-[1.9] break-keep text-[var(--color-ink)]/85">
-              {t('impurityBody')}
-            </p>
-            <Link
-              href="/data-certifications"
-              className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
-            >
-              {t('cta')}
-              <span aria-hidden="true">→</span>
-            </Link>
-            {/*
-              아닐린을 왜 확인하는지 글로만 설명하고 물질은 한 번도 보여 주지 않으면
-              독자는 데이터 · 인증 화면으로 넘어가야 실체를 본다. 코드로 그린 골격 구조식이라
-              이미지 생성 없이 두 물질의 차이를 그대로 보여 줄 수 있다.
-            */}
-            <AnilineStructures />
-          </div>
-        </div>
-      </section>
+      {/* 「왜 아닐린을 확인하는가」 단락(본문 + 골격 구조식)은 2026-09-28 고객 요청으로 데이터 · 인증 페이지의
+          「아닐린 · N-메틸아닐린 분석」 표 아래(EvidenceTables → AnilineEvidenceTable)로 옮겼다. */}
     </>
   );
 }
