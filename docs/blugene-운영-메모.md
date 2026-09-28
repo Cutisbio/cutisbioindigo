@@ -269,9 +269,9 @@ node scripts/update-news.js --dry-run
 현재 설정은 **`blugene.co`** 기준입니다 (`www.blugene.co` 는 자동으로 `blugene.co` 로 이동).
 
 - 도메인을 바꾸려면 Netlify 환경변수 `NEXT_PUBLIC_BASE_URL` 을 고치세요 (`netlify.toml` 에 기본값이 있습니다).
-- 이전 도메인 `cutisbioindigo.kr` → `blugene.co` 자동 이동은 **아직 꺼 두었습니다.**
-  준비되면 `netlify.toml` 아래쪽 주석을 풀어 주세요. 지금은 두 도메인이 같은 내용을 보여 주고,
-  검색엔진에는 `blugene.co` 가 원본이라고 알려 줍니다.
+- 이전 도메인 `cutisbioindigo.kr`(www 포함) → `blugene.co` 자동 이동(301)은 **2026-09-28 부터 켜 두었습니다**
+  (`netlify.toml` 의 redirects). 옛 주소로 들어오면 같은 경로의 새 주소로 넘어가며, 도메인 자체는 Netlify 에 alias 로
+  계속 붙어 있어야 합니다(떼면 옛 링크가 끊깁니다). 끄려면 그 두 블록을 주석 처리하세요.
 
 ### cutisbioindigo.com 이 열리지 않는 이유 (2026-09-12 확인)
 
@@ -301,7 +301,7 @@ node scripts/update-news.js --dry-run
   → 가비아에서 cutisbioindigo.com 네임서버를 p04.nsone.net 4개로 바꾼 뒤, Netlify → Domain management → "Add domain alias" 로
     cutisbioindigo.com 과 www.cutisbioindigo.com 을 다시 추가하고 "Renew certificate" 를 누른다(Netlify DNS 영역은 남아 있다).
 - canonical · hreflang · sitemap(`NEXT_PUBLIC_BASE_URL` = https://blugene.co)은 이제 실제 사이트를 가리킨다.
-  다음 단계로 `netlify.toml` 의 주석을 풀어 cutisbioindigo.kr 을 blugene.co 로 301 이동시키면 검색엔진 평가가 한곳에 모인다.
+  2026-09-28 에 `netlify.toml` 의 규칙을 켜서 cutisbioindigo.kr(www 포함)을 blugene.co 로 301 이동시켰다 — 검색엔진 평가가 한곳에 모인다.
 
 ---
 

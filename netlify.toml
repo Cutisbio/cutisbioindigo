@@ -19,18 +19,18 @@
   force = true
 
 # ---------------------------------------------------------------------------
-# 이전 도메인(cutisbioindigo.kr)을 새 도메인으로 넘길 준비가 되면 아래 주석을 해제한다.
-# 지금은 두 도메인이 같은 내용을 제공하고 canonical 태그가 blugene.co 를 가리킨다.
-# 실제 전환은 DNS·검색엔진 등록 상태를 확인한 뒤에 진행할 것.
-#
-# [[redirects]]
-#   from = "https://cutisbioindigo.kr/*"
-#   to = "https://blugene.co/:splat"
-#   status = 301
-#   force = true
-#
-# [[redirects]]
-#   from = "https://www.cutisbioindigo.kr/*"
-#   to = "https://blugene.co/:splat"
-#   status = 301
-#   force = true
+# 이전 도메인(cutisbioindigo.kr) → blugene.co 영구 이동. 2026-09-28 고객 요청으로 켰다.
+# blugene.co 가 Netlify 의 Primary domain 이고 canonical · hreflang · sitemap 이 blugene.co 를 가리키므로,
+# 옛 주소로 들어온 방문자와 검색엔진을 같은 경로의 새 주소로 보낸다(경로 · 쿼리 유지).
+# 옛 주소는 그대로 살아 있어야 하므로(색인된 URL) 도메인을 떼지 말고 이 규칙으로만 넘긴다.
+[[redirects]]
+  from = "https://cutisbioindigo.kr/*"
+  to = "https://blugene.co/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.cutisbioindigo.kr/*"
+  to = "https://blugene.co/:splat"
+  status = 301
+  force = true
