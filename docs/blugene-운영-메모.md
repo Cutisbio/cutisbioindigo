@@ -303,6 +303,18 @@ node scripts/update-news.js --dry-run
 - canonical · hreflang · sitemap(`NEXT_PUBLIC_BASE_URL` = https://blugene.co)은 이제 실제 사이트를 가리킨다.
   2026-09-28 에 `netlify.toml` 의 규칙을 켜서 cutisbioindigo.kr(www 포함)을 blugene.co 로 301 이동시켰다 — 검색엔진 평가가 한곳에 모인다.
 
+### 검색 · AI 노출 (2026-09-28)
+
+- Google Search Console: `blugene.co` 도메인 속성을 wonwooo@gmail.com 계정에 추가했다(DNS TXT `google-site-verification=…` 은 Netlify DNS 의
+  blugene.co 영역에 있다 — 지우면 소유권 확인이 풀린다). 사이트맵 `https://blugene.co/sitemap.xml` 을 제출했다.
+  이전 도메인 속성(cutisbioindigo.kr)의 「설정 → 주소 변경」으로 blugene.co 이전을 신고한다(두 속성 모두 같은 계정에서 인증돼야 한다).
+- `/llms.txt`(public/llms.txt): AI 크롤러 · 답변 엔진용 사이트 요약. 사실(시험값 · 인증 · 회사)과 페이지 목록만 적는다.
+  시험값이나 인증이 바뀌면 이 파일도 같이 고친다.
+- `/robots.txt`(src/app/robots.ts): 검색엔진과 주요 AI 크롤러(GPTBot · ClaudeBot · PerplexityBot · Google-Extended 등)를 허용하고
+  /admin · /api · /private 만 막는다. AI 학습 · 인용을 막고 싶으면 AI_CRAWLERS 규칙의 allow 를 disallow 로 바꾼다.
+- 구조화 데이터: 홈에 Organization(별칭 · 회사 사이트 sameAs) + WebSite, 블로그 글에 Article + FAQPage, 기술 페이지 탄소 단락에 FAQPage.
+  Search Console 의 「개선사항」 보고서에서 오류를 확인한다.
+
 ---
 
 ## 7. 배포 전 확인 명령

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
-import SchemaOrg, { buildOrganizationSchema } from '@/components/seo/SchemaOrg';
+import SchemaOrg, { buildOrganizationSchema, buildWebSiteSchema } from '@/components/seo/SchemaOrg';
 
 import BlugeneHero from '@/components/blugene/BlugeneHero';
 import EvidenceStrip from '@/components/blugene/EvidenceStrip';
@@ -16,7 +16,7 @@ import CertificationLibrary from '@/components/blugene/CertificationLibrary';
 import SectionHeading from '@/components/blugene/SectionHeading';
 import FinalCta from '@/components/blugene/FinalCta';
 
-import { BRAND, LOCALES, SITE_URL, canonicalUrl, localeAlternates } from '@/data/blugene/site';
+import { BRAND, CORPORATE_SITE_URL, LOCALES, SITE_URL, canonicalUrl, localeAlternates } from '@/data/blugene/site';
 
 export function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -50,15 +50,24 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'DataHub' });
-  const orgSchema = buildOrganizationSchema(
-    BRAND.company,
-    SITE_URL,
-    `${SITE_URL}/brand/cutisbio-logo.png`,
-  );
+  // 홈에서만 조직에 별칭과 회사 공식 사이트(sameAs)를 잇고, 사이트(WebSite) 스키마를 함께 낸다 — 2026-09-28 검색 · AI 노출 보강.
+  const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/brand/cutisbio-logo.png`, {
+    alternateName: [BRAND.companyKo, BRAND.companyLegal, BRAND.name],
+    sameAs: [CORPORATE_SITE_URL],
+  });
+  const siteSchema = buildWebSiteSchema({
+    name: BRAND.lockup,
+    alternateName: [BRAND.name],
+    url: SITE_URL,
+    inLanguage: [...LOCALES],
+    publisherName: BRAND.companyLegal,
+    publisherUrl: CORPORATE_SITE_URL,
+  });
 
   return (
     <>
       <SchemaOrg schema={orgSchema} />
+      <SchemaOrg schema={siteSchema} />
 
       {/* 01. 처음 만나는 Blugene */}
       <BlugeneHero />
