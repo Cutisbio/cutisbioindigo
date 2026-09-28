@@ -273,6 +273,36 @@ node scripts/update-news.js --dry-run
   준비되면 `netlify.toml` 아래쪽 주석을 풀어 주세요. 지금은 두 도메인이 같은 내용을 보여 주고,
   검색엔진에는 `blugene.co` 가 원본이라고 알려 줍니다.
 
+### cutisbioindigo.com 이 열리지 않는 이유 (2026-09-12 확인)
+
+- 도메인은 가비아에 등록되어 있고(2026-04-06 ~ 2028-04-06) Netlify 에는 이 도메인의 DNS 영역과 사이트 연결이 이미 있다
+  (Netlify DNS 가 `cutisbioindigo.com` · `www` 를 사이트 주소 52.74.6.109 · 13.215.239.219 로 답하고, Netlify 가 이 호스트 이름으로 사이트를 내보낸다).
+- 그런데 **레지스트리에 등록된 네임서버가 카페24(ns1·ns2.cafe24.co.kr / .com)** 로 되어 있고, 카페24 네임서버는 이 도메인 정보를 갖고 있지 않아
+  어디서도 주소를 찾지 못한다. 그래서 브라우저에서 "사이트에 연결할 수 없음"이 나온다.
+- 고치는 방법: **가비아 → My가비아 → 도메인 관리 → 네임서버 설정**에서 아래 4개로 바꾼다(Netlify 가 이 도메인에 배정한 네임서버).
+  `dns1.p04.nsone.net` · `dns2.p04.nsone.net` · `dns3.p04.nsone.net` · `dns4.p04.nsone.net`
+  전파(수 분 ~ 수 시간) 뒤 Netlify 가 인증서를 자동 발급한다. 안 되면 Netlify → Domain management → HTTPS 에서 "Verify DNS configuration".
+- 참고: `cutisbioindigo.kr` 은 Netlify DNS(dns1~4.p06.nsone.net)로 정상 동작하며 새 사이트가 이미 배포되어 있다.
+
+### blugene.co 연결 (2026-09-12 진행)
+
+- 도메인은 예스닉에 등록되어 있다(2026-08-28 ~ 2031-08-28). 전에는 예스닉 파킹 상태라 사이트가 없었다.
+- Netlify 프로젝트(cutisbioindigo)에 `blugene.co` 를 도메인으로 추가하고 Netlify DNS 영역을 만들었다.
+  `blugene.co` · `www.blugene.co` 가 사이트(cutisbioindigo.netlify.app)로 향하는 기록이 자동으로 들어갔다.
+- 예스닉 → 내 도메인 관리 → 네임서버 변경으로 dns1~4.yesnic.com 을 Netlify 배정 네임서버
+  `dns1.p04.nsone.net` · `dns2.p04.nsone.net` · `dns3.p04.nsone.net` · `dns4.p04.nsone.net` 로 바꿨다(신청 완료, 예스닉 안내는 최장 48시간).
+- 반영 확인: `nslookup -type=NS blugene.co 8.8.8.8` 에 p04.nsone.net 4개가 나오면 된 것. 그 뒤 Netlify → Domain management 에서
+  blugene.co 가 "Netlify DNS" 로 바뀌고 인증서(Let's Encrypt)가 자동 발급된다. 안 되면 HTTPS 칸의 "Verify DNS configuration" / "Renew certificate".
+- **연결 완료(2026-09-12 저녁)**: 레지스트리 위임이 p04.nsone.net 으로 바뀌었고 Netlify 가 blugene.co 를 확인했다.
+  Netlify 에서 **blugene.co 를 Primary domain** 으로 바꿨다(www.blugene.co 는 자동으로 blugene.co 로 301, www.cutisbioindigo.kr 도 이제 blugene.co 로 301).
+  cutisbioindigo.kr 은 alias 로 계속 같은 사이트를 보여 준다.
+- 인증서: Let's Encrypt 재발급이 한동안 안 됐는데, DNS 가 살아 있지 않은 alias(cutisbioindigo.com · www.cutisbioindigo.com)가 걸려 있던 것이 원인으로 보여
+  두 alias 를 **일시적으로 뺐다**. 그 직후 "Renew certificate" 로 `*.blugene.co, blugene.co, *.cutisbioindigo.kr, cutisbioindigo.kr` 인증서가 발급됐다.
+  → 가비아에서 cutisbioindigo.com 네임서버를 p04.nsone.net 4개로 바꾼 뒤, Netlify → Domain management → "Add domain alias" 로
+    cutisbioindigo.com 과 www.cutisbioindigo.com 을 다시 추가하고 "Renew certificate" 를 누른다(Netlify DNS 영역은 남아 있다).
+- canonical · hreflang · sitemap(`NEXT_PUBLIC_BASE_URL` = https://blugene.co)은 이제 실제 사이트를 가리킨다.
+  다음 단계로 `netlify.toml` 의 주석을 풀어 cutisbioindigo.kr 을 blugene.co 로 301 이동시키면 검색엔진 평가가 한곳에 모인다.
+
 ---
 
 ## 7. 배포 전 확인 명령

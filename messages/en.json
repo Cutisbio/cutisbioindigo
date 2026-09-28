@@ -264,6 +264,8 @@
     "carbonSectionBody": "This is the result of measuring the biobased (renewable) carbon ratio of commercially available indigo dye. This value is the biobased carbon content, not the purity of indigo or a reduction rate of carbon emissions.",
     "anilineSectionTitle": "Aniline and N-methylaniline analysis",
     "anilineSectionBody": "Results of analyzing the aniline and N-methylaniline remaining in commercial indigo dyes.",
+    "anilineWhyTitle": "Why we check for aniline",
+    "anilineWhyBody": "Aniline and N-methylaniline are starting materials or intermediates in chemical synthesis routes, and they can remain as unreacted residues in the final indigo powder. Because of their toxicity and possible carcinogenicity, a number of certification standards limit the permitted concentration in textile dyes and in finished products.",
     "tableLab": "Testing institute",
     "tableMethod": "Test method",
     "tableReport": "Test report number",
@@ -641,9 +643,6 @@
       }
     },
     "processTitle": "From feedstock to fabric",
-    "impurityTitle": "Why we check for aniline",
-    "impurityBody": "Aniline and N-methylaniline are starting materials or intermediates in chemical synthesis routes, and they can remain as unreacted residues in the final indigo powder. Because of their toxicity and possible carcinogenicity, a number of certification standards limit the permitted concentration in textile dyes and in finished products.",
-    "cta": "See all the test data",
     "routeOursLabel": "Our route · Blugene",
     "routesFigureBridge": "This catalogue diagram lays out the four routes above on a single sheet. The figure follows the same order as the cards."
   },

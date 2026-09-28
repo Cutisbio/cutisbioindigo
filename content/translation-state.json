@@ -2677,30 +2677,6 @@
       "zh": "b9753bb5a86b1132",
       "tr": "b9753bb5a86b1132"
     },
-    "Technology.impurityTitle": {
-      "ja": "df55abe433df2167",
-      "en": "df55abe433df2167",
-      "fr": "df55abe433df2167",
-      "it": "df55abe433df2167",
-      "zh": "df55abe433df2167",
-      "tr": "df55abe433df2167"
-    },
-    "Technology.impurityBody": {
-      "ja": "efb92db0ae927eaf",
-      "en": "efb92db0ae927eaf",
-      "fr": "efb92db0ae927eaf",
-      "it": "efb92db0ae927eaf",
-      "zh": "efb92db0ae927eaf",
-      "tr": "efb92db0ae927eaf"
-    },
-    "Technology.cta": {
-      "ja": "c2b30b96a1903b68",
-      "en": "c2b30b96a1903b68",
-      "fr": "c2b30b96a1903b68",
-      "it": "c2b30b96a1903b68",
-      "zh": "c2b30b96a1903b68",
-      "tr": "c2b30b96a1903b68"
-    },
     "DyeingPrinting.metaTitle": {
       "ja": "dc5ae7088a4ec648",
       "en": "dc5ae7088a4ec648",
@@ -4390,6 +4366,22 @@
       "it": "4d230fb051b4fcb9",
       "zh": "4d230fb051b4fcb9",
       "tr": "4d230fb051b4fcb9"
+    },
+    "DataHub.anilineWhyTitle": {
+      "ja": "df55abe433df2167",
+      "en": "df55abe433df2167",
+      "fr": "df55abe433df2167",
+      "it": "df55abe433df2167",
+      "zh": "df55abe433df2167",
+      "tr": "df55abe433df2167"
+    },
+    "DataHub.anilineWhyBody": {
+      "ja": "efb92db0ae927eaf",
+      "en": "efb92db0ae927eaf",
+      "fr": "efb92db0ae927eaf",
+      "it": "efb92db0ae927eaf",
+      "zh": "efb92db0ae927eaf",
+      "tr": "efb92db0ae927eaf"
     }
   }
 }

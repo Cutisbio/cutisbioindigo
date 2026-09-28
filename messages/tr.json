@@ -264,6 +264,8 @@
     "carbonSectionBody": "Piyasada bulunan indigo boyasının biyobazlı (yenilenebilir) karbon oranını ölçen bir sonuçtur. Bu değer biyobazlı karbon içeriğidir ve indigo saflığı veya karbon emisyonu azaltma oranı değildir.",
     "anilineSectionTitle": "Anilin · N-metilanilin analizi",
     "anilineSectionBody": "Piyasadaki indigo boyalarında kalan anilin ve N-metilanilinin analiz sonuçlarıdır.",
+    "anilineWhyTitle": "Anilin neden kontrol edilir",
+    "anilineWhyBody": "Anilin ve N-metilanilin, kimyasal sentez yolunun başlangıç maddesi veya ara ürünüdür ve nihai indigo tozunda tepkimeye girmemiş kalıntı olarak kalabilir. Toksisitesi ve kanserojen olma ihtimali nedeniyle çeşitli sertifikasyon standartları, tekstil boyalarında ve nihai üründe izin verilen konsantrasyonu sınırlar.",
     "tableLab": "Test kuruluşu",
     "tableMethod": "Test yöntemi",
     "tableReport": "Test raporu numarası",
@@ -641,9 +643,6 @@
       }
     },
     "processTitle": "Hammaddeden kumaşa",
-    "impurityTitle": "Anilin neden kontrol edilir",
-    "impurityBody": "Anilin ve N-metilanilin, kimyasal sentez yolunun başlangıç maddesi veya ara ürünüdür ve nihai indigo tozunda tepkimeye girmemiş kalıntı olarak kalabilir. Toksisitesi ve kanserojen olma ihtimali nedeniyle çeşitli sertifikasyon standartları, tekstil boyalarında ve nihai üründe izin verilen konsantrasyonu sınırlar.",
-    "cta": "Test verilerinin tamamını görün",
     "routeOursLabel": "Yolumuz · Blugene",
     "routesFigureBridge": "Yukarıdaki dört yolu tek sayfada toplayan katalog şemasıdır. Görseldeki sıra da kartlardakiyle aynıdır."
   },
