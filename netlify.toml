@@ -20,9 +20,10 @@
 
 # ---------------------------------------------------------------------------
 # 이전 도메인의 robots.txt 는 넘기지 않고 그 자리에서 200 으로 내준다(내용은 같은 파일).
-# Google 의 주소 변경 도구가 옛 홈페이지를 가져오지 못한다고 해서 넣었다 — 검색엔진은 각 호스트의 robots.txt 를
-# 먼저 읽는데, 다른 호스트로 넘어가는 robots.txt 를 못 읽는 것으로 취급하는 도구가 있다(2026-09-28).
+# 검색엔진은 호스트마다 robots.txt 를 먼저 읽으므로, 옛 호스트에서도 바로 읽히게 한다(2026-09-28).
 # 규칙은 위에서부터 먼저 맞는 것이 이기므로 아래 도메인 전체 이동 규칙보다 앞에 둔다.
+# http:// 규칙은 Netlify 가 https 로 먼저 넘기는 동안은 쓰이지 않지만, 규칙이 먼저 평가되는 경우를 위해 함께 둔다.
+# Netlify 는 domain alias 로 등록된 호스트에만 호스트별 규칙을 적용한다 — www.cutisbioindigo.kr 도 alias 로 넣어 두었다.
 [[redirects]]
   from = "https://cutisbioindigo.kr/robots.txt"
   to = "/robots.txt"
@@ -35,11 +36,52 @@
   status = 200
   force = true
 
+[[redirects]]
+  from = "http://cutisbioindigo.kr/robots.txt"
+  to = "/robots.txt"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "http://www.cutisbioindigo.kr/robots.txt"
+  to = "/robots.txt"
+  status = 200
+  force = true
+
 # ---------------------------------------------------------------------------
 # 이전 도메인(cutisbioindigo.kr) → blugene.co 영구 이동. 2026-09-28 고객 요청으로 켰다.
 # blugene.co 가 Netlify 의 Primary domain 이고 canonical · hreflang · sitemap 이 blugene.co 를 가리키므로,
 # 옛 주소로 들어온 방문자와 검색엔진을 같은 경로의 새 주소로 보낸다(경로 · 쿼리 유지).
 # 옛 주소는 그대로 살아 있어야 하므로(색인된 URL) 도메인을 떼지 말고 이 규칙으로만 넘긴다.
+#
+# 루트(/)만은 새 홈(https://blugene.co/)이 아니라 한국어 홈(/ko)으로 곧장 보낸다 — 새 홈은 언어 감지로 /ko 등으로
+# 한 번 더(307) 넘기는데, Google 주소 변경 도구는 옛 홈페이지가 새 사이트의 실제 페이지(200)로 한 번에 301 되는지 보고
+# "페이지를 가져올 수 없습니다" 로 실패했다(2026-09-28). 옛 도메인 방문자는 거의 한국어권이라 언어 감지를 잃어도 무방하다.
+# src/proxy.ts 의 옛 호스트 처리도 같은 목적지를 쓴다.
+[[redirects]]
+  from = "https://cutisbioindigo.kr/"
+  to = "https://blugene.co/ko"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.cutisbioindigo.kr/"
+  to = "https://blugene.co/ko"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://cutisbioindigo.kr/"
+  to = "https://blugene.co/ko"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.cutisbioindigo.kr/"
+  to = "https://blugene.co/ko"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "https://cutisbioindigo.kr/*"
   to = "https://blugene.co/:splat"
@@ -48,6 +90,18 @@
 
 [[redirects]]
   from = "https://www.cutisbioindigo.kr/*"
+  to = "https://blugene.co/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://cutisbioindigo.kr/*"
+  to = "https://blugene.co/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.cutisbioindigo.kr/*"
   to = "https://blugene.co/:splat"
   status = 301
   force = true
