@@ -1,0 +1,34 @@
+# Blugene by CutisBio
+
+> Blugene(블루진)은 한국의 합성생물학 기업 큐티스바이오(CutisBio Co., Ltd.)가 미생물 정밀 발효로 생산하는 바이오 인디고 염료 브랜드입니다. 데님 염색과 디지털 프린팅용 인디고를 공급하며, 원료 탄소의 출처(바이오 기반 탄소 함량)와 불순물(아닐린 · N-메틸아닐린) 시험 결과, 인증서 원본을 사이트에서 공개합니다.
+> Blugene is the bio-indigo dye brand of CutisBio Co., Ltd. (Seoul, Korea), produced by microbial precision fermentation for denim dyeing and digital printing. The site publishes bio-based carbon content, impurity (aniline · N-methylaniline) test results and the original certificates.
+
+이 사이트가 말하는 것은 시험 · 인증 문서로 확인된 사실에 한합니다. 안전성 · 효능 · 환경 성과를 문서 이상으로 주장하지 않습니다. / We state only what the cited test reports and certificates show.
+
+## 핵심 사실 · Key facts
+
+- 제품: 바이오 인디고 염료 분말 (인증서 표기 제품명 "CB Bio Indigo Dye Powder") 과 디지털 프린팅용 잉크. / Product: bio-indigo dye powder ("CB Bio Indigo Dye Powder" on certificates) and ink for digital printing.
+- 생산 방식: 미생물 정밀 발효. 석유 유래 합성 경로가 아니라 재생 가능한 바이오매스 유래 탄소를 씁니다. / Made by precision fermentation from renewable biomass carbon, not by petrochemical synthesis.
+- 바이오 기반 탄소 함량 98 % — ASTM D6866-24a Method B (AMS), KATRI 시험. / Bio-based carbon content 98 % (ASTM D6866-24a Method B, tested by KATRI).
+- 아닐린 · N-메틸아닐린 불검출 — KS K 0734:2019, KOTERI 시험, 방법 검출한계 5 mg/kg. 불검출은 0 이 아니라 검출한계 미만을 뜻합니다. / Aniline and N-methylaniline not detected (KS K 0734:2019, KOTERI, detection limit 5 mg/kg; "not detected" means below the limit, not zero).
+- 인증: ZDHC MRSL Level 1 (v3.1), OEKO-TEX® ECO PASSPORT, USDA BioPreferred®, TÜV AUSTRIA OK biobased (Class 5). 인증 범위는 각 인증서에 적힌 제품에 한정됩니다. / Certificates apply only to the products named on each certificate.
+- 회사: 큐티스바이오 (CutisBio Co., Ltd.), 서울. 회사 공식 사이트 https://www.cutisbio.com / Company: CutisBio Co., Ltd., Seoul, Korea.
+
+## 페이지 · Pages (한국어 / English)
+
+- [홈 / Home](https://blugene.co/ko) · [English](https://blugene.co/en): 브랜드 소개, 원료에서 원단까지 4단계, 인증 요약.
+- [브랜드 / Brand](https://blugene.co/ko/brand) · [English](https://blugene.co/en/brand): 브랜드 이야기와 기획자(피부과전문의) 소개, 약속하는 것.
+- [기술 / Technology](https://blugene.co/ko/technology) · [English](https://blugene.co/en/technology): 인디고 생산의 네 가지 경로, 탄소는 어디에서 오는가(바이오매스 vs 석유 경로 · FAQ · 근거).
+- [염색 · 프린팅 / Dyeing & printing](https://blugene.co/ko/dyeing-printing) · [English](https://blugene.co/en/dyeing-printing): 원단 염색 비교, 견뢰도 시험 표, 색상 견본, 제품 형태.
+- [데이터 · 인증 / Data & certifications](https://blugene.co/ko/data-certifications) · [English](https://blugene.co/en/data-certifications): 바이오 기반 탄소 · 아닐린 시험 표, 왜 아닐린을 확인하는가, 인증서 원본 이미지, 카탈로그 PDF.
+- [회사소개 / About](https://blugene.co/ko/about) · [English](https://blugene.co/en/about): 미션 · 비전 · 사업 영역 · 연혁.
+- [소식 / News](https://blugene.co/ko/news) · [English](https://blugene.co/en/news)
+- [문의 / Contact](https://blugene.co/ko/contact) · [English](https://blugene.co/en/contact): 샘플 · 기술자료 문의(메일).
+- [글: 미생물 발효로 만드는 인디고](https://blugene.co/ko/blog/sustainable-indigo) · [English](https://blugene.co/en/blog/sustainable-indigo)
+
+다른 언어 / Other languages: 일본어 https://blugene.co/ja · Français https://blugene.co/fr · Italiano https://blugene.co/it · 中文 https://blugene.co/zh · Türkçe https://blugene.co/tr
+
+## Optional
+
+- [사이트맵 / Sitemap](https://blugene.co/sitemap.xml)
+- [이전 도메인 / Former domain](https://cutisbioindigo.kr) — 2026-09 부터 blugene.co 로 영구 이동. / Permanently redirects to blugene.co since September 2026.

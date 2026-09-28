@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import SectionHeading, { HEADING_SIZE, keepLastWords } from '@/components/blugene/SectionHeading';
 import SourceNote from '@/components/blugene/SourceNote';
+import SchemaOrg, { buildFAQSchema } from '@/components/seo/SchemaOrg';
 
 /**
  * 탄소는 어디에서 오는가 — 기술 페이지의 탄소 경로 단락.
@@ -326,9 +327,14 @@ function RouteCard({ route, index }: { route: Route; index: number }) {
 export default async function CarbonJourney() {
   const t = await getTranslations('Technology');
   const c = t.raw('carbon') as CarbonCopy;
+  // 화면의 FAQ 문답을 그대로 FAQPage 구조화 데이터로도 낸다(검색 · AI 답변 엔진용, 2026-09-28). 답이 여러 문단이면 이어 붙인다.
+  const faqSchema = buildFAQSchema(
+    c.faq.items.map((item) => ({ question: item.question, answer: item.answers.join(' ') })),
+  );
 
   return (
     <section id="carbon" className="w-full bg-[var(--color-ivory)]">
+      <SchemaOrg schema={faqSchema} />
       <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <SectionHeading title={t('carbonTitle')} body={c.lead} size="lg" titleWidth="wide" />
 
