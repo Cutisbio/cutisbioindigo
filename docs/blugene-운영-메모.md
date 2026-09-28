@@ -302,12 +302,19 @@ node scripts/update-news.js --dry-run
     cutisbioindigo.com 과 www.cutisbioindigo.com 을 다시 추가하고 "Renew certificate" 를 누른다(Netlify DNS 영역은 남아 있다).
 - canonical · hreflang · sitemap(`NEXT_PUBLIC_BASE_URL` = https://blugene.co)은 이제 실제 사이트를 가리킨다.
   2026-09-28 에 `netlify.toml` 의 규칙을 켜서 cutisbioindigo.kr(www 포함)을 blugene.co 로 301 이동시켰다 — 검색엔진 평가가 한곳에 모인다.
+  옛 루트(/)만은 `https://blugene.co/ko` 로 곧장 보내고(새 홈의 언어 감지 307 을 한 번 더 거치지 않게), 옛 도메인의 robots.txt 는 제자리에서 200 으로 내준다.
+  Netlify 에는 `www.cutisbioindigo.kr` 도 domain alias 로 넣어 두었다 — alias 가 아닌 호스트에는 호스트별 규칙이 적용되지 않는다.
 
 ### 검색 · AI 노출 (2026-09-28)
 
 - Google Search Console: `blugene.co` 도메인 속성을 wonwooo@gmail.com 계정에 추가했다(DNS TXT `google-site-verification=…` 은 Netlify DNS 의
   blugene.co 영역에 있다 — 지우면 소유권 확인이 풀린다). 사이트맵 `https://blugene.co/sitemap.xml` 을 제출했다.
   이전 도메인 속성(cutisbioindigo.kr)의 「설정 → 주소 변경」으로 blugene.co 이전을 신고한다(두 속성 모두 같은 계정에서 인증돼야 한다).
+  2026-09-28 시도에서는 필수 검사 「홈페이지의 301 리디렉션」이 "페이지를 가져올 수 없습니다(http://cutisbioindigo.kr/)" 로 실패했다.
+  크롤링 통계의 호스트 상태는 정상이고 URL 검사 실시간 테스트도 성공하므로 접속 문제가 아니라, 옛 홈 → 새 홈이 한 번에 실제 페이지(200)로
+  끝나지 않는 것(http → https 한 번, blugene.co/ → /ko 언어 감지 307 한 번)을 도구가 받아들이지 않는 것으로 본다(커뮤니티의 같은 사례도 그렇다).
+  그래서 옛 루트를 /ko 로 곧장 301 하도록 바꿨다. 그래도 실패하면 Google 쪽 반영을 기다렸다가(같은 사례 답변 기준 최대 72시간) 「다시 시도」한다.
+  301 이 살아 있으면 신고 없이도 이전은 정상 처리되므로, 이 신고는 이전을 빨리 알리는 보조 수단이다.
 - `/llms.txt`(public/llms.txt): AI 크롤러 · 답변 엔진용 사이트 요약. 사실(시험값 · 인증 · 회사)과 페이지 목록만 적는다.
   시험값이나 인증이 바뀌면 이 파일도 같이 고친다.
 - `/robots.txt`(src/app/robots.ts): 검색엔진과 주요 AI 크롤러(GPTBot · ClaudeBot · PerplexityBot · Google-Extended 등)를 허용하고
