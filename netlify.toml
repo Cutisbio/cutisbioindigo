@@ -19,6 +19,23 @@
   force = true
 
 # ---------------------------------------------------------------------------
+# 이전 도메인의 robots.txt 는 넘기지 않고 그 자리에서 200 으로 내준다(내용은 같은 파일).
+# Google 의 주소 변경 도구가 옛 홈페이지를 가져오지 못한다고 해서 넣었다 — 검색엔진은 각 호스트의 robots.txt 를
+# 먼저 읽는데, 다른 호스트로 넘어가는 robots.txt 를 못 읽는 것으로 취급하는 도구가 있다(2026-09-28).
+# 규칙은 위에서부터 먼저 맞는 것이 이기므로 아래 도메인 전체 이동 규칙보다 앞에 둔다.
+[[redirects]]
+  from = "https://cutisbioindigo.kr/robots.txt"
+  to = "/robots.txt"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "https://www.cutisbioindigo.kr/robots.txt"
+  to = "/robots.txt"
+  status = 200
+  force = true
+
+# ---------------------------------------------------------------------------
 # 이전 도메인(cutisbioindigo.kr) → blugene.co 영구 이동. 2026-09-28 고객 요청으로 켰다.
 # blugene.co 가 Netlify 의 Primary domain 이고 canonical · hreflang · sitemap 이 blugene.co 를 가리키므로,
 # 옛 주소로 들어온 방문자와 검색엔진을 같은 경로의 새 주소로 보낸다(경로 · 쿼리 유지).
