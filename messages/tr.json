@@ -530,9 +530,21 @@
   },
   "Sdg": {
     "eyebrow": "BM Sürdürülebilir Kalkınma Amaçları",
-    "title": "Katkı sunmayı hedeflediğimiz iki amaç",
-    "body": "BM Sürdürülebilir Kalkınma Amaçları (SKA) arasında CutisBio'nun işine en doğrudan dokunan iki amaç.",
+    "title": "Katkı sunmayı hedeflediğimiz dört amaç",
+    "body": "BM Sürdürülebilir Kalkınma Amaçları (SKA) arasında CutisBio'nun biyo indigo üretimi ve ticarileştirmesine en doğrudan dokunan amaçlar.",
     "items": [
+      {
+        "number": "3",
+        "name": "Sağlık ve Kaliteli Yaşam",
+        "target": "3.9 2030'a kadar, tehlikeli kimyasallar ile hava, su ve toprak kirliliği ve kontaminasyonundan kaynaklanan ölüm ve hastalık sayısını önemli ölçüde azaltmak.",
+        "body": "CutisBio, boyada kalan zararlı kimyasalları azaltmayı sağlığa katkı olarak görür. Sentetik indigoda kalabilen anilin ve N-metilanilin deri yoluyla emilen maddelerdir ve Uluslararası Kanser Araştırma Ajansı (IARC) anilini insanlar için muhtemel kanserojen (Grup 2A) olarak sınıflandırır. Tanınmış testlerde biyo indigomuzda her iki madde de tespit edilmedi (tespit sınırı 5 mg/kg) ve ürün, tekstil kimyasallarını insan-ekolojik ve çevresel ölçütlere göre inceleyen OEKO-TEX® ECO PASSPORT sertifikasına sahiptir. Yön, boyahane çalışanları ve giysiyi giyenler için daha az maruziyettir."
+      },
+      {
+        "number": "6",
+        "name": "Temiz Su ve Sanitasyon",
+        "target": "6.3 2030'a kadar, kirliliği azaltarak, atık boşaltımını ortadan kaldırarak, tehlikeli kimyasal ve malzemelerin salımını en aza indirerek, arıtılmamış atık su oranını yarıya indirerek ve küresel ölçekte geri dönüşüm ile güvenli yeniden kullanımı önemli ölçüde artırarak su kalitesini iyileştirmek.",
+        "body": "Boyama süreçlerinden atık suyla çıkan tehlikeli kimyasalları azaltmaya katkıda bulunmayı amaçlıyoruz. Sentetik indigonun safsızlığı olan anilinin, indigo üretimi ve boyama sırasında atık suya da karıştığı bildirilmektedir. Biyo indigomuzda her iki madde de tespit edilmedi ve ürün, tekstil tedarik zincirlerinden tehlikeli kimyasal deşarjını ortadan kaldırmayı amaçlayan ZDHC programının Üretim Kısıtlı Maddeler Listesi (MRSL) kapsamında ZDHC MRSL Level 1 sertifikasına sahiptir."
+      },
       {
         "number": "9",
         "name": "Sanayi, Yenilikçilik ve Altyapı",
@@ -547,6 +559,7 @@
       }
     ],
     "note": "Amaç metinleri BM Sürdürülebilir Kalkınma Amaçları'nın (2015) hedef metinlerinden çevrilmiştir. Bu gösterim amaçlara desteğimizi ve katkı yönümüzü ifade eder; BM'nin sponsorluğunu veya onayını ima etmez.",
+    "scopeNote": "Su kullanımı, enerji ve sera gazı emisyonları gibi çevresel performans rakamları ölçülmüş verimiz olmadığı için bu sayfada belirtilmez; İklim Eylemi (SKA 13) gibi amaçlar da veriler doğrulanana kadar gösterilmez.",
     "unLinkLabel": "BM SKA resmi sayfası",
     "iconAlt": "Birleşmiş Milletler Sürdürülebilir Kalkınma Amacı {number} resmi simgesi",
     "unDisclaimer": "Bu yayının içeriği Birleşmiş Milletler tarafından onaylanmamıştır ve Birleşmiş Milletler'in, yetkililerinin veya Üye Devletlerin görüşlerini yansıtmaz.",

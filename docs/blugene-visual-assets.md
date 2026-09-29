@@ -173,14 +173,14 @@ C(정확한 SVG 개념도)와 D(근거를 읽는 차트·색상 도구)는 위 4
 
 ## 8. 외부 기관 공식 아이콘 — 유엔 SDG (2026-09-29)
 
-브랜드 페이지 「우리가 기여하려는 두 가지 목표」(`SdgSection`)에 쓰는 유엔 지속가능발전목표 아이콘. 카탈로그 자산이 아니므로
+브랜드 페이지 「우리가 기여하려는 네 가지 목표」(`SdgSection`, SDG 3 · 6 · 9 · 12)에 쓰는 유엔 지속가능발전목표 아이콘. 카탈로그 자산이 아니므로
 `asset-manifest.json` 에는 넣지 않고 여기에 출처와 사용 조건을 적는다. 파일은 유엔 원본 그대로다(파일명 · 크기 1500×1500 · 색 변경 없음).
 
 | 웹 경로 | 원본 (un.org/sustainabledevelopment/news/communications-material, 2026-09-29 내려받음) | 쓰는 화면 |
 |---|---|---|
-| `/sdg/E-WEB-Goal-09.png`, `/sdg/E-WEB-Goal-12.png` | 「17 SDG Icons (WEB)」 영어판 `E-SDG-Icons-WEB.zip` (2025-07 판) | 영어 · 한국어 · 일본어 · 이탈리아어 · 터키어 화면 |
-| `/sdg/F-WEB-Goal-09.png`, `/sdg/F-WEB-Goal-12.png` | 같은 페이지 프랑스어판 `F-SDG-Icons-2019-WEB.zip` | 프랑스어 화면 |
-| `/sdg/C-WEB-Goal-09.png`, `/sdg/C-WEB-Goal-12.png` | 같은 페이지 중국어판 `C-SDG-Icons-2019-WEB.zip` | 중국어 화면 |
+| `/sdg/E-WEB-Goal-{03,06,09,12}.png` | 「17 SDG Icons (WEB)」 영어판 `E-SDG-Icons-WEB.zip` (2025-07 판) | 영어 · 한국어 · 일본어 · 이탈리아어 · 터키어 화면 |
+| `/sdg/F-WEB-Goal-{03,06,09,12}.png` | 같은 페이지 프랑스어판 `F-SDG-Icons-2019-WEB.zip` | 프랑스어 화면 |
+| `/sdg/C-WEB-Goal-{03,06,09,12}.png` | 같은 페이지 중국어판 `C-SDG-Icons-2019-WEB.zip` | 중국어 화면 |
 
 유엔은 6개 공용어(아랍어 · 중국어 · 영어 · 프랑스어 · 러시아어 · 스페인어) 판만 제공한다. 다른 언어로 아이콘 문구를 번역하는 것은
 사용자 책임이라고 지침에 적혀 있어, 우리는 번역하지 않고 영어판을 쓴다.
