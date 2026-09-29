@@ -43,18 +43,6 @@
     "imageAlt": "身穿丹宁夹克的家长抱着孩子，眺望玉米田、草地与水畔风景的画面。取自所提供产品目录封面的品牌形象图。",
     "imageCredit": "目录 p.1 收录图片"
   },
-  "EvidenceStrip": {
-    "carbonValue": "98%",
-    "carbonLabel": "生物基碳含量",
-    "anilineValue": "未检出",
-    "anilineLabel": "苯胺",
-    "nMethylanilineValue": "未检出",
-    "nMethylanilineLabel": "N-甲基苯胺",
-    "note": "以上为所提供产品目录中的检测结果。未检出是指在所列检测方法下低于方法检出限 5 mg/kg，并不表示含量为 0。98% 为生物基碳含量，并非靛蓝纯度或排放削减率。",
-    "sourceCarbon": "出处：产品目录 p.3 Table 1-1（KATRI, ASTM D6866-24a Method B）",
-    "sourceAniline": "出处：产品目录 p.5 Table 2-3（KOTERI, KS K 0734 2019）",
-    "cta": "查看详细检测信息"
-  },
   "Manifesto": {
     "eyebrow": "ACROSS BORDERS. ACROSS GENERATIONS.",
     "title": "因为这是与我们的肌肤终生接触的衣服。",

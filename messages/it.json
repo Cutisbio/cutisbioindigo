@@ -43,18 +43,6 @@
     "imageAlt": "Un genitore in giacca di denim tiene in braccio un bambino e guarda un paesaggio con un campo di mais, un prato e un corso d'acqua. Immagine del brand dalla copertina del catalogo fornito.",
     "imageCredit": "Immagine a p.1 del catalogo"
   },
-  "EvidenceStrip": {
-    "carbonValue": "98%",
-    "carbonLabel": "Contenuto di carbonio biobased",
-    "anilineValue": "Non rilevata",
-    "anilineLabel": "Anilina",
-    "nMethylanilineValue": "Non rilevata",
-    "nMethylanilineLabel": "N-metilanilina",
-    "note": "Risultati di prova del catalogo fornito. «Non rilevato» significa inferiore al limite di rilevabilità del metodo (5 mg/kg) secondo il metodo di prova indicato, e non un contenuto pari a zero. Il 98% è il contenuto di carbonio biobased, non la purezza dell'indaco né una riduzione delle emissioni.",
-    "sourceCarbon": "Fonte: catalogo p.3, Table 1-1 (KATRI, ASTM D6866-24a Method B)",
-    "sourceAniline": "Fonte: catalogo p.5, Table 2-3 (KOTERI, KS K 0734 2019)",
-    "cta": "Vedi i dati di prova dettagliati"
-  },
   "Manifesto": {
     "eyebrow": "ACROSS BORDERS. ACROSS GENERATIONS.",
     "title": "Perché è un capo che tocca la nostra pelle per tutta la vita.",

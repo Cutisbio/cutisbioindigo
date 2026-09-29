@@ -43,18 +43,6 @@
     "imageAlt": "デニムジャケットを着た保護者が子どもを抱き、トウモロコシ畑と草原、水辺の広がる風景を眺めている場面。提供カタログ表紙のブランドイメージです。",
     "imageCredit": "カタログ p.1 掲載画像"
   },
-  "EvidenceStrip": {
-    "carbonValue": "98%",
-    "carbonLabel": "バイオベース炭素含有率",
-    "anilineValue": "不検出",
-    "anilineLabel": "アニリン",
-    "nMethylanilineValue": "不検出",
-    "nMethylanilineLabel": "N-メチルアニリン",
-    "note": "提供カタログの試験結果です。不検出とは、提示された試験法において方法検出限界5 mg/kg未満であることを意味し、含有量が0であることを示すものではありません。98%はバイオベース炭素含有率であり、インディゴの純度や排出削減率ではありません。",
-    "sourceCarbon": "出典:カタログ p.3 Table 1-1 (KATRI, ASTM D6866-24a Method B)",
-    "sourceAniline": "出典:カタログ p.5 Table 2-3 (KOTERI, KS K 0734 2019)",
-    "cta": "詳細な試験情報を見る"
-  },
   "Manifesto": {
     "eyebrow": "ACROSS BORDERS. ACROSS GENERATIONS.",
     "title": "私たちの肌に一生触れる服だからこそ。",

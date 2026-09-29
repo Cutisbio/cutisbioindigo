@@ -43,18 +43,6 @@
     "imageAlt": "Denim ceket giyen bir ebeveynin kucağındaki çocuğuyla birlikte mısır tarlalarının, çayırların ve su kıyısının göründüğü manzaraya baktığı sahne. Sağlanan kataloğun kapağında yer alan marka görselidir.",
     "imageCredit": "Katalog p.1 yer alan görüntü"
   },
-  "EvidenceStrip": {
-    "carbonValue": "98%",
-    "carbonLabel": "Biyobazlı karbon içeriği",
-    "anilineValue": "Tespit edilmedi",
-    "anilineLabel": "Anilin",
-    "nMethylanilineValue": "Tespit edilmedi",
-    "nMethylanilineLabel": "N-metilanilin",
-    "note": "Sağlanan katalogda yer alan test sonuçlarıdır. Tespit edilmedi ifadesi, belirtilen test yönteminde yöntem tespit limiti olan 5 mg/kg'ın altında kalındığı anlamına gelir; içerik miktarının 0 olduğu anlamına gelmez. %98 değeri biyobazlı karbon içeriğidir; indigo saflığı ya da emisyon azaltım oranı değildir.",
-    "sourceCarbon": "Kaynak: Katalog s.3 Tablo 1-1 (KATRI, ASTM D6866-24a Method B)",
-    "sourceAniline": "Kaynak: Katalog s.5 Tablo 2-3 (KOTERI, KS K 0734 2019)",
-    "cta": "Ayrıntılı test bilgilerini görün"
-  },
   "Manifesto": {
     "eyebrow": "ACROSS BORDERS. ACROSS GENERATIONS.",
     "title": "Ömür boyu tenimizle temas eden bir giysi olduğu için.",

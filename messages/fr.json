@@ -43,18 +43,6 @@
     "imageAlt": "Un parent en veste en denim tient un enfant dans ses bras et contemple un paysage de champ de maïs, de prairie et de rivière. Image de marque de la couverture du catalogue fourni.",
     "imageCredit": "Image de la p.1 du catalogue"
   },
-  "EvidenceStrip": {
-    "carbonValue": "98%",
-    "carbonLabel": "Teneur en carbone biosourcé",
-    "anilineValue": "Non détectée",
-    "anilineLabel": "Aniline",
-    "nMethylanilineValue": "Non détectée",
-    "nMethylanilineLabel": "N-méthylaniline",
-    "note": "Résultats d'essai du catalogue fourni. « Non détecté » signifie inférieur à la limite de détection de la méthode (5 mg/kg) selon la méthode d'essai indiquée, et non une teneur de zéro. 98 % correspond à la teneur en carbone biosourcé, et non à la pureté de l'indigo ni à une réduction des émissions.",
-    "sourceCarbon": "Source : catalogue p.3, Table 1-1 (KATRI, ASTM D6866-24a Method B)",
-    "sourceAniline": "Source : catalogue p.5, Table 2-3 (KOTERI, KS K 0734 2019)",
-    "cta": "Voir les données d'essai détaillées"
-  },
   "Manifesto": {
     "eyebrow": "ACROSS BORDERS. ACROSS GENERATIONS.",
     "title": "Parce que ce vêtement touche notre peau toute une vie.",

@@ -4,7 +4,7 @@ import { Link } from '@/i18n/routing';
 import SchemaOrg, { buildOrganizationSchema, buildWebSiteSchema } from '@/components/seo/SchemaOrg';
 
 import BlugeneHero from '@/components/blugene/BlugeneHero';
-import EvidenceStrip from '@/components/blugene/EvidenceStrip';
+import PromiseSection from '@/components/blugene/PromiseSection';
 import BrandManifesto from '@/components/blugene/BrandManifesto';
 import ImpurityEvidence from '@/components/blugene/ImpurityEvidence';
 import ScienceSection from '@/components/blugene/ScienceSection';
@@ -71,12 +71,14 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
       {/* 01. 처음 만나는 Blugene */}
       <BlugeneHero />
-      <EvidenceStrip />
+      {/* 히어로 바로 아래의 「우리가 약속하는 것」 — 2026-09-29 고객 요청으로 98% · 불검출 숫자 줄(EvidenceStrip)을
+          브랜드 페이지의 이 블록으로 바꿨다. 숫자의 근거와 읽는 조건은 아래 불순물 · 환경 섹션과 데이터 · 인증 페이지가 맡는다. */}
+      <PromiseSection />
 
       {/*
         02. 분말과 프린팅 잉크 — '무엇을 파는가'를 근거보다 먼저 밝힌다.
         이 블록이 뒤로 가면 제품명 · CAS · 규격 안내가 스크롤 60% 지점에서야 처음 나온다.
-        바탕은 흰 EvidenceStrip 과 붙지 않도록, 또 카드(bg-white)가 섹션 바탕에 묻히지 않도록 ivory 로 둔다.
+        바탕은 흰 PromiseSection 과 붙지 않도록, 또 카드(bg-white)가 섹션 바탕에 묻히지 않도록 ivory 로 둔다.
       */}
       <section className="w-full bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">

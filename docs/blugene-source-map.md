@@ -19,7 +19,7 @@
 | 2 | 네 가지 인디고 합성 경로 (Figure 1-1) | `/technology` | `technology/page.tsx` | `technology/four-production-routes.png` |
 | 2 | 탄소 순환 비교 (Figure 1-2) | 화면에서 사용 중지 — 2026-09-12 고객 요청으로 `/technology` 의 「카탈로그의 개념도」 블록을 뺐다 (파일은 남김) | — | `technology/carbon-pathways.png` |
 | 3 | C14 바이오 기반 탄소 그래프 (Figure 1-3) | `/data-certifications#test-results` | `EvidenceTables`, 원본 확대 | `evidence/biobased-carbon-chart.png` |
-| 3 | C14 표 (Table 1-1) | `/data-certifications#test-results`, 홈 증거 스트립 | `EvidenceStrip`, `EvidenceTables` | `evidence/biobased-carbon-table.png` |
+| 3 | C14 표 (Table 1-1) | `/data-certifications#test-results` (홈 상단의 98% · 불검출 숫자 줄은 2026-09-29 고객 요청으로 「우리가 약속하는 것」 블록 `PromiseSection` 으로 바꿨다) | `EvidenceTables` | `evidence/biobased-carbon-table.png` |
 | 4 | 작업 환경 삽화 (Figure 2-1) | 화면에서 사용 중지 — 2026-09-12 고객 요청으로 `/technology` 의 「작업 환경」 단락을 뺐다 (파일은 남김) | — | `technology/worker-safety.png` |
 | 4 | 규제·인증 허용한도 표 (Table 2-1, 2-2) | **미게재** — 아래 "공개하지 않은 항목" 참조 | — | — |
 | 5 | 아닐린·N-메틸아닐린 그래프·표 (Figure 2-2, Table 2-3) | `/` (요약 차트 · 표 — 원본 도판은 2026-09-29 부터 홈에서 뺌), `/data-certifications#test-results` (전체 표 · 원본 도판) | `ImpurityEvidence`, `ComparisonChart`, `EvidenceTables` | `evidence/aniline-results.png` |
