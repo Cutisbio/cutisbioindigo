@@ -365,6 +365,8 @@
     },
     "classification": {
       "title": "규제기관의 분류",
+      "eyebrow": "EU CLP · IARC",
+      "intro": "두 물질을 규제기관이 어떻게 분류하는지입니다. 아래 시험 결과가 이 두 물질을 재는 이유입니다.",
       "aniline": {
         "name": "아닐린",
         "items": [
@@ -385,7 +387,10 @@
           "반복 노출 시 장기 손상 가능 (H373)"
         ]
       },
-      "note": "EU CLP 규정(EC 1272/2008) 부속서 VI 조화 분류의 유해성 문구입니다. IARC 평가는 2020년 회의(제127권) 결과입니다."
+      "note": "EU CLP 규정(EC 1272/2008) 부속서 VI 조화 분류의 유해성 문구입니다. IARC 평가는 2020년 회의(제127권) 결과입니다.",
+      "linkClpAniline": "EU CLP 조화 분류 — 아닐린 (PubChem GHS)",
+      "linkClpNMethylaniline": "EU CLP 조화 분류 — N-메틸아닐린 (PubChem GHS)",
+      "linkIarc": "IARC Monographs 제127권"
     },
     "result": {
       "label": "Blugene 시험 결과",

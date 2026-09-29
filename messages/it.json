@@ -365,6 +365,8 @@
     },
     "classification": {
       "title": "Come le autorità le classificano",
+      "eyebrow": "CLP UE · IARC",
+      "intro": "Come le autorità classificano le due sostanze. È il motivo per cui i risultati dei test qui sotto le misurano.",
       "aniline": {
         "name": "Anilina",
         "items": [
@@ -385,7 +387,10 @@
           "Può provocare danni agli organi in caso di esposizione prolungata o ripetuta (H373)"
         ]
       },
-      "note": "Indicazioni di pericolo dalla classificazione armonizzata dell'allegato VI del regolamento CLP (CE) n. 1272/2008. La valutazione IARC proviene dalla riunione del 2020 (volume 127)."
+      "note": "Indicazioni di pericolo dalla classificazione armonizzata dell'allegato VI del regolamento CLP (CE) n. 1272/2008. La valutazione IARC proviene dalla riunione del 2020 (volume 127).",
+      "linkClpAniline": "Classificazione armonizzata CLP UE — anilina (PubChem GHS)",
+      "linkClpNMethylaniline": "Classificazione armonizzata CLP UE — N-metilanilina (PubChem GHS)",
+      "linkIarc": "Monografie IARC, volume 127"
     },
     "result": {
       "label": "Risultato del test Blugene",

@@ -365,6 +365,8 @@
     },
     "classification": {
       "title": "Comment les autorités les classent",
+      "eyebrow": "CLP UE · CIRC",
+      "intro": "Comment les autorités classent ces deux substances. C'est la raison pour laquelle les résultats d'essais ci-dessous les mesurent.",
       "aniline": {
         "name": "Aniline",
         "items": [
@@ -385,7 +387,10 @@
           "Risque présumé d'effets graves pour les organes à la suite d'expositions répétées ou d'une exposition prolongée (H373)"
         ]
       },
-      "note": "Mentions de danger issues de la classification harmonisée de l'annexe VI du règlement CLP (CE) n° 1272/2008. L'évaluation du CIRC provient de la réunion de 2020 (volume 127)."
+      "note": "Mentions de danger issues de la classification harmonisée de l'annexe VI du règlement CLP (CE) n° 1272/2008. L'évaluation du CIRC provient de la réunion de 2020 (volume 127).",
+      "linkClpAniline": "Classification harmonisée CLP de l'UE — aniline (PubChem GHS)",
+      "linkClpNMethylaniline": "Classification harmonisée CLP de l'UE — N-méthylaniline (PubChem GHS)",
+      "linkIarc": "Monographies du CIRC, volume 127"
     },
     "result": {
       "label": "Résultat d'essai Blugene",

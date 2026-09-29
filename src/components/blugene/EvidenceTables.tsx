@@ -3,6 +3,7 @@ import { HEADING_SIZE, keepLastWords } from '@/components/blugene/SectionHeading
 import SourceNote from '@/components/blugene/SourceNote';
 import AnilineStructures from '@/components/blugene/AnilineStructures';
 import AnilineHazardInfographic from '@/components/blugene/AnilineHazardInfographic';
+import AnilineClassification from '@/components/blugene/AnilineClassification';
 import { SOURCE_AS_OF, anilineTest, carbonTest, marketSamples } from '@/data/blugene/evidence';
 import type { IndigoType, MarketSample, Measurement } from '@/data/blugene/evidence';
 
@@ -265,6 +266,10 @@ export async function AnilineEvidenceTable({ className = '' }: { className?: str
           왜 이 두 물질을 재는지를 문헌으로 먼저 보여 준 뒤 결과 표를 읽게 한다. 근거는 컴포넌트 주석과
           docs/blugene-claims.md A-2 표에 있다. */}
       <AnilineHazardInfographic />
+
+      {/* 규제기관의 분류 — 2026-09-29 고객 요청으로 인포그래픽 안 패널에서 독립된 큰 상자로 뺐다.
+          홈 「보이지 않는 것까지」 단락에도 같은 상자를 둔다. */}
+      <AnilineClassification className="mt-6" />
 
       <TestMetaList items={meta} />
 
