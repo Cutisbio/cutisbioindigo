@@ -528,6 +528,28 @@
     "relationBody": "Blugene is the indigo business brand of CutisBio Co., Ltd. The corporate name and the wording used on certificates and test reports remain CutisBio.",
     "cta": "Inquire about samples and technical documents"
   },
+  "Sdg": {
+    "eyebrow": "UN Sustainable Development Goals",
+    "title": "Two goals we work towards",
+    "body": "The UN Sustainable Development Goals (SDGs) that touch CutisBio's work most directly.",
+    "items": [
+      {
+        "number": "9",
+        "name": "Industry, Innovation and Infrastructure",
+        "target": "9.4 By 2030, upgrade infrastructure and retrofit industries to make them sustainable, with increased resource-use efficiency and greater adoption of clean and environmentally sound technologies and industrial processes, with all countries taking action in accordance with their respective capabilities.",
+        "body": "CutisBio rewrites how indigo dye is made, using the biotechnology process of microbial precision fermentation. Instead of petroleum-derived feedstock it uses carbon from renewable biomass (98% bio-based carbon content, ASTM D6866-24a) and supplies this indigo to the denim industry, contributing to the transition of the dyeing industry."
+      },
+      {
+        "number": "12",
+        "name": "Responsible Consumption and Production",
+        "target": "12.4 By 2020, achieve the environmentally sound management of chemicals and all wastes throughout their life cycle, in accordance with agreed international frameworks, and significantly reduce their release to air, water and soil in order to minimize their adverse impacts on human health and the environment.",
+        "body": "CutisBio makes the sound management of chemicals the starting point of product design. The harmful impurities left in synthetic indigo, aniline and N-methylaniline, are checked by a recognised test method and kept at not detected (detection limit 5 mg/kg), and ZDHC MRSL Level 1 and OEKO-TEX® ECO PASSPORT certification hold us to recognised hazardous-chemical standards. Test results and original certificates are published on the Data & Certifications page."
+      }
+    ],
+    "note": "The target wording is quoted from the UN Sustainable Development Goals (2015). Showing these goals expresses our support and direction of contribution; it does not imply UN sponsorship or endorsement.",
+    "unLinkLabel": "Official UN SDG page",
+    "externalHint": "opens in a new tab"
+  },
   "Technology": {
     "metaTitle": "Technology — How bio indigo is made by microbial fermentation",
     "metaDescription": "An explanation of the four routes to indigo, production based on microbial fermentation, and the biobased carbon test results.",

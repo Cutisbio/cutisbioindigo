@@ -5056,6 +5056,118 @@
       "it": "4036276b188b128a",
       "zh": "4036276b188b128a",
       "tr": "4036276b188b128a"
+    },
+    "Sdg.eyebrow": {
+      "ja": "0b37ae81d355af65",
+      "en": "0b37ae81d355af65",
+      "fr": "0b37ae81d355af65",
+      "it": "0b37ae81d355af65",
+      "zh": "0b37ae81d355af65",
+      "tr": "0b37ae81d355af65"
+    },
+    "Sdg.title": {
+      "ja": "47bb887a03e30ae1",
+      "en": "47bb887a03e30ae1",
+      "fr": "47bb887a03e30ae1",
+      "it": "47bb887a03e30ae1",
+      "zh": "47bb887a03e30ae1",
+      "tr": "47bb887a03e30ae1"
+    },
+    "Sdg.body": {
+      "ja": "c3764c940336f0e9",
+      "en": "c3764c940336f0e9",
+      "fr": "c3764c940336f0e9",
+      "it": "c3764c940336f0e9",
+      "zh": "c3764c940336f0e9",
+      "tr": "c3764c940336f0e9"
+    },
+    "Sdg.items[0].number": {
+      "ja": "19581e27de7ced00",
+      "en": "19581e27de7ced00",
+      "fr": "19581e27de7ced00",
+      "it": "19581e27de7ced00",
+      "zh": "19581e27de7ced00",
+      "tr": "19581e27de7ced00"
+    },
+    "Sdg.items[0].name": {
+      "ja": "45bc3272be1ced1b",
+      "en": "45bc3272be1ced1b",
+      "fr": "45bc3272be1ced1b",
+      "it": "45bc3272be1ced1b",
+      "zh": "45bc3272be1ced1b",
+      "tr": "45bc3272be1ced1b"
+    },
+    "Sdg.items[0].target": {
+      "ja": "88b60560fd40a2a8",
+      "en": "88b60560fd40a2a8",
+      "fr": "88b60560fd40a2a8",
+      "it": "88b60560fd40a2a8",
+      "zh": "88b60560fd40a2a8",
+      "tr": "88b60560fd40a2a8"
+    },
+    "Sdg.items[0].body": {
+      "ja": "3efc55a6bf9d5773",
+      "en": "3efc55a6bf9d5773",
+      "fr": "3efc55a6bf9d5773",
+      "it": "3efc55a6bf9d5773",
+      "zh": "3efc55a6bf9d5773",
+      "tr": "3efc55a6bf9d5773"
+    },
+    "Sdg.items[1].number": {
+      "ja": "6b51d431df5d7f14",
+      "en": "6b51d431df5d7f14",
+      "fr": "6b51d431df5d7f14",
+      "it": "6b51d431df5d7f14",
+      "zh": "6b51d431df5d7f14",
+      "tr": "6b51d431df5d7f14"
+    },
+    "Sdg.items[1].name": {
+      "ja": "a05eba8ebe0ce725",
+      "en": "a05eba8ebe0ce725",
+      "fr": "a05eba8ebe0ce725",
+      "it": "a05eba8ebe0ce725",
+      "zh": "a05eba8ebe0ce725",
+      "tr": "a05eba8ebe0ce725"
+    },
+    "Sdg.items[1].target": {
+      "ja": "7f3b8bedbb8cf85a",
+      "en": "7f3b8bedbb8cf85a",
+      "fr": "7f3b8bedbb8cf85a",
+      "it": "7f3b8bedbb8cf85a",
+      "zh": "7f3b8bedbb8cf85a",
+      "tr": "7f3b8bedbb8cf85a"
+    },
+    "Sdg.items[1].body": {
+      "ja": "37f964d8aac067b4",
+      "en": "37f964d8aac067b4",
+      "fr": "37f964d8aac067b4",
+      "it": "37f964d8aac067b4",
+      "zh": "37f964d8aac067b4",
+      "tr": "37f964d8aac067b4"
+    },
+    "Sdg.note": {
+      "ja": "61176bb5aee2ef36",
+      "en": "61176bb5aee2ef36",
+      "fr": "61176bb5aee2ef36",
+      "it": "61176bb5aee2ef36",
+      "zh": "61176bb5aee2ef36",
+      "tr": "61176bb5aee2ef36"
+    },
+    "Sdg.unLinkLabel": {
+      "ja": "d518b5bcbf4d77f0",
+      "en": "d518b5bcbf4d77f0",
+      "fr": "d518b5bcbf4d77f0",
+      "it": "d518b5bcbf4d77f0",
+      "zh": "d518b5bcbf4d77f0",
+      "tr": "d518b5bcbf4d77f0"
+    },
+    "Sdg.externalHint": {
+      "ja": "25728c7bf2256713",
+      "en": "25728c7bf2256713",
+      "fr": "25728c7bf2256713",
+      "it": "25728c7bf2256713",
+      "zh": "25728c7bf2256713",
+      "tr": "25728c7bf2256713"
     }
   }
 }
