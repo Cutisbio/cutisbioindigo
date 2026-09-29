@@ -1,7 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import { HEADING_SIZE, keepLastWords } from '@/components/blugene/SectionHeading';
 import SourceNote from '@/components/blugene/SourceNote';
-import AnilineStructures from '@/components/blugene/AnilineStructures';
 import AnilineHazardInfographic from '@/components/blugene/AnilineHazardInfographic';
 import AnilineClassification from '@/components/blugene/AnilineClassification';
 import { SOURCE_AS_OF, anilineTest, carbonTest, marketSamples } from '@/data/blugene/evidence';
@@ -336,16 +335,7 @@ export async function AnilineEvidenceTable({ className = '' }: { className?: str
         <SourceNote>{t('notDetectedExplain')}</SourceNote>
       </div>
 
-      {/* 왜 아닐린을 확인하는가 — 2026-09-28 고객 요청으로 기술 페이지 끝에서 이 표 아래로 옮겼다.
-          물질이 무엇인지(합성 경로의 출발물질 · 중간체, 잔류 가능성, 인증 기준의 허용 농도)와 골격 구조식을
-          결과 바로 옆에서 읽게 한다. 구조식(AnilineStructures)은 블로그 글에서도 같은 컴포넌트를 쓴다. */}
-      <div className="mt-14 max-w-3xl border-t border-[color:var(--color-washed)] pt-10">
-        <h3 className="text-xl font-bold tracking-[-0.01em] break-keep text-[var(--color-indigo-deep)] sm:text-2xl">
-          {t('anilineWhyTitle')}
-        </h3>
-        <p className="mt-4 text-base leading-[1.9] break-keep text-[var(--color-ink)]/85">{t('anilineWhyBody')}</p>
-        <AnilineStructures />
-      </div>
+      {/* 「왜 아닐린을 확인하는가」 문단과 구조식 상자는 2026-09-29 고객 요청으로 뺐다. 구조식은 블로그 글(/blog/sustainable-indigo)에 남아 있다. */}
     </section>
   );
 }

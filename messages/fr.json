@@ -254,8 +254,6 @@
     "carbonSectionBody": "Résultats de mesure de la part de carbone biosourcé (renouvelable) de colorants indigo du commerce. Cette valeur est la teneur en carbone biosourcé, et non la pureté de l'indigo ni une réduction des émissions de carbone.",
     "anilineSectionTitle": "Analyse de l'aniline et de la N-méthylaniline",
     "anilineSectionBody": "Résultats d'analyse de l'aniline et de la N-méthylaniline résiduelles dans des colorants indigo du commerce.",
-    "anilineWhyTitle": "Pourquoi vérifier l'aniline",
-    "anilineWhyBody": "L'aniline et la N-méthylaniline sont des matières premières ou des intermédiaires de la voie de synthèse chimique et peuvent subsister, non réagies, dans la poudre d'indigo finale. En raison de leur toxicité et de leur cancérogénicité potentielle, plusieurs référentiels de certification limitent leur concentration admissible dans les colorants textiles et les produits finis.",
     "tableLab": "Laboratoire",
     "tableMethod": "Méthode d'essai",
     "tableReport": "N° de rapport d'essai",
