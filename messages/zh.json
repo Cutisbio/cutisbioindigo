@@ -299,6 +299,146 @@
     "carbonZeroNote": "Company Z 的生物基碳含量在目录 Table 1-1 中标为 0（pMC 0.30），在 Figure 1-3 中标为 N.D.。本表采用 Table 1-1 的数值。",
     "reportDateNote": "检测报告编号 SBED25-00000153-1 在目录 Table 1-1 中以不同的发布日期被标注了两次。已按照原本标注进行了翻译。"
   },
+  "AnilineHazard": {
+    "eyebrow": "研究视角下的皮肤危害",
+    "title": "苯胺与N-甲基苯胺对皮肤有何影响",
+    "intro": "合成靛蓝中残留的这两种杂质接触皮肤后会发生什么？我们以人体研究和监管机构的评估为依据进行了整理。在阅读下方检测结果表之前，这些是值得了解的背景。",
+    "scopeNote": "此处引用的研究描述的是工作场所事故和实验室条件等高暴露情形。穿着牛仔布时的暴露量取决于产品和穿着条件，本网站未对其进行测量。数值均按各文献刊载的原值引用。",
+    "steps": {
+      "ariaLabel": "从暴露到影响的五个步骤",
+      "items": [
+        {
+          "title": "残留在合成靛蓝之中",
+          "body": "市售合成靛蓝含有最高0.6%（6,000 mg/kg）的苯胺和最高0.4%（4,000 mg/kg）的N-甲基苯胺。它们被包裹在靛蓝晶体内部，酸洗或溶剂萃取都无法去除。",
+          "source": "Cordin 等, Sci Rep 2021"
+        },
+        {
+          "title": "从衣物转移到汗液",
+          "body": "将42条市售牛仔裤浸入人工汗液的实验中，靛蓝染料每克织物迁移3.2至7.8 mg，深色织物迁移更多。该研究仅测定了染料，未测定其中的苯胺含量。",
+          "source": "Herrero 等, Environ Res 2019"
+        },
+        {
+          "title": "可穿透完好的皮肤",
+          "body": "苯胺无论以液体还是蒸气形式，都能经完好皮肤吸收。在人体志愿者实验中，水溶液中的苯胺每小时每平方厘米皮肤吸收0.2至1.2 mg；在离体人皮肤中，24小时内有20%至38%的施加量穿透。皮肤有损伤的工人体内暴露量更高。",
+          "source": "Baranowska-Dutkiewicz 1982 · Wellner 等 2008 · Korinth 等 2007"
+        },
+        {
+          "title": "使血液无法运送氧气",
+          "body": "在体内，这两种物质会把血红蛋白变成高铁血红蛋白。高铁血红蛋白不能携带氧气，导致嘴唇和皮肤发青（发绀），出现头痛、眩晕和呼吸困难，严重时会失去意识。症状可能在暴露数小时后才出现。",
+          "source": "ATSDR · Lee 等 2013 · Bernasconi 等 2026"
+        },
+        {
+          "title": "皮肤反应与长期风险",
+          "body": "根据欧盟统一分类，苯胺可能引起皮肤过敏反应（皮肤致敏 类别1），且两种物质均被列为“皮肤接触有毒”。国际癌症研究机构（IARC）于2020年将苯胺评定为“可能对人类致癌”（2A组）。",
+          "source": "欧盟 CLP 统一分类 · IARC 专著第127卷"
+        }
+      ]
+    },
+    "cases": {
+      "title": "真实发生在人身上的事例",
+      "items": [
+        {
+          "value": "46.8%",
+          "label": "血中高铁血红蛋白",
+          "body": "一名25岁工人被约200 mL苯胺溅到面部和上半身。1小时30分钟后全身出现发绀，接受了亚甲蓝治疗，皮肤留下灼伤和接触性皮炎。",
+          "source": "Lee 等, Ann Occup Environ Med 2013（韩国）"
+        },
+        {
+          "value": "82人",
+          "label": "重度高铁血红蛋白血症",
+          "body": "皮肤长时间接触混有燃油的海水的移民。在接受检测的39人中有37人检出N-甲基苯胺或其代谢物，2人死亡。研究人员认定经皮吸收是可能的原因。",
+          "source": "Bernasconi 等, N Engl J Med 2026（意大利）"
+        }
+      ]
+    },
+    "thresholds": {
+      "title": "血中高铁血红蛋白比例与症状",
+      "items": [
+        {
+          "range": "低于1%",
+          "label": "正常范围"
+        },
+        {
+          "range": "15–30%",
+          "label": "皮肤和嘴唇发青"
+        },
+        {
+          "range": "30–50%",
+          "label": "头痛、乏力、眩晕、心率加快"
+        },
+        {
+          "range": "50–70%",
+          "label": "昏迷、呼吸抑制、心律失常，有心脏骤停风险"
+        }
+      ],
+      "source": "ATSDR（美国有毒物质与疾病登记署）苯胺医疗管理指南"
+    },
+    "classification": {
+      "title": "监管机构的分类",
+      "aniline": {
+        "name": "苯胺",
+        "items": [
+          "皮肤接触有毒（H311）",
+          "可能引起皮肤过敏反应（H317）",
+          "造成严重眼损伤（H318）",
+          "怀疑导致遗传性缺陷（H341）",
+          "怀疑致癌（H351）",
+          "长期或反复接触会对器官造成伤害（H372）",
+          "IARC 2A组 — 可能对人类致癌"
+        ]
+      },
+      "nMethylaniline": {
+        "name": "N-甲基苯胺",
+        "items": [
+          "皮肤接触有毒（H311）",
+          "吞咽或吸入有毒（H301 · H331）",
+          "长期或反复接触可能对器官造成伤害（H373）"
+        ]
+      },
+      "note": "危险说明来自欧盟 CLP 法规（EC 1272/2008）附件VI的统一分类。IARC 的评估来自2020年会议（第127卷）。"
+    },
+    "result": {
+      "label": "Blugene 检测结果",
+      "body": "苯胺与N-甲基苯胺均未检出 — 低于方法检出限 {limit}（KOTERI, KS K 0734 2019）。下表可与9个市售样品一同查看。",
+      "note": "未检出指低于检测方法的检出限，并不表示皮肤安全性已获证实。"
+    },
+    "paper": {
+      "kicker": "核心论文",
+      "journal": "Scientific Reports (Nature Portfolio)",
+      "title": "Quantification of aniline and N-methylaniline in indigo",
+      "authors": "Michael Cordin · Thomas Bechtold · Tung Pham",
+      "openAccess": "开放获取（CC BY 4.0）",
+      "titleTranslated": "靛蓝中苯胺与N-甲基苯胺的定量",
+      "affiliation": "因斯布鲁克大学纺织化学与纺织物理研究所（奥地利多恩比恩）",
+      "published": "2021年10月26日 · 第11卷，文章号21135",
+      "summaryTitle": "论文的发现",
+      "summary": [
+        "市售合成靛蓝含有最高0.6%的苯胺和最高0.4%的N-甲基苯胺（按重量计），这些杂质在靛蓝晶体形成时被包裹在晶体内部。",
+        "酸洗或溶剂萃取都无法去除它们，因此作者提出了新的分析方法：将靛蓝还原为隐色靛蓝使其溶解，再用酸萃取并以HPLC定量（定量限0.010%）。",
+        "用该方法测得的市售靛蓝样品含苯胺0.3%至0.6%、N-甲基苯胺0.1%至0.3%。二者同升同降，推测来自合成过程中的同一分解反应。",
+        "合成靛蓝表现出的微弱致突变性很可能源于这些杂质；它们还会在靛蓝生产和染色过程中随废水排放。",
+        "作者的结论是：考虑到对人体健康的影响，去除这些杂质的精制工艺十分重要。"
+      ],
+      "readLink": "阅读论文原文",
+      "externalHint": "在新标签页中打开"
+    },
+    "sources": {
+      "title": "参考资料",
+      "items": {
+        "cordin2021": "Cordin M, Bechtold T, Pham T. Quantification of aniline and N-methylaniline in indigo. Sci Rep. 2021;11:21135.",
+        "herrero2019": "Herrero M, Rovira J, Nadal M, Domingo JL. Risk assessment due to dermal exposure of trace elements and indigo dye in jeans: Migration to artificial sweat. Environ Res. 2019;172:310-318.",
+        "baranowska1982": "Baranowska-Dutkiewicz B. Skin absorption of aniline from aqueous solutions in man. Toxicol Lett. 1982;10(4):367-372.",
+        "wellner2008": "Wellner T 等. Percutaneous absorption of aromatic amines - a contribution for human health risk assessment. Food Chem Toxicol. 2008;46(6):1960-1968.",
+        "korinth2007": "Korinth G 等. Percutaneous absorption of aromatic amines in rubber industry workers: impact of impaired skin and skin barrier creams. Occup Environ Med. 2007;64(6):366-372.",
+        "lee2013": "Lee CH 等. Two cases of methemoglobinemia induced by the exposure to nitrobenzene and aniline. Ann Occup Environ Med. 2013;25:31.",
+        "bernasconi2026": "Bernasconi L 等. Outbreak of severe methemoglobinemia during maritime migration. N Engl J Med. 2026;395(10):983-991.",
+        "atsdr": "ATSDR. Medical Management Guidelines for Aniline（苯胺医疗管理指南）.",
+        "iarc2021": "IARC Monographs Vol. 127: Some Aromatic Amines and Related Compounds (2021) — 苯胺为2A组。",
+        "clpAniline": "欧盟 CLP 统一分类 — 苯胺（CAS 62-53-3），PubChem GHS 条目（引自 ECHA）。",
+        "clpNMethylaniline": "欧盟 CLP 统一分类 — N-甲基苯胺（CAS 100-61-8），PubChem GHS 条目（引自 ECHA）。"
+      }
+    }
+  },
   "Certifications": {
     "title": "全球认证",
     "body": "提供的目录中收录的证书。在每一项中可放大查看原始证书。",

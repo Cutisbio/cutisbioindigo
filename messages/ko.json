@@ -299,6 +299,146 @@
     "catalogueAnchorNote": "내려받는 PDF 는 카탈로그 원본 12쪽 전체이며, 위 썸네일의 쪽 번호와 같은 순서입니다.",
     "carbonZeroNote": "Company Z 의 바이오 기반 탄소 함량은 카탈로그 Table 1-1 에 0 (pMC 0.30)으로, Figure 1-3 에는 N.D. 로 표기되어 있습니다. 이 표는 Table 1-1 의 값을 옮긴 것입니다."
   },
+  "AnilineHazard": {
+    "eyebrow": "연구로 본 피부 유해성",
+    "title": "아닐린 · N-메틸아닐린은 피부에 어떤 영향을 주는가",
+    "intro": "합성 인디고에 남는 두 불순물이 피부에 닿으면 무슨 일이 일어나는지, 사람을 대상으로 한 연구와 규제기관의 평가로 정리했습니다. 아래 시험 결과 표를 읽기 전에 알아 두면 좋은 배경입니다.",
+    "scopeNote": "여기 소개한 연구는 작업장 사고와 실험실 조건처럼 노출 농도가 높은 상황의 결과입니다. 데님을 입을 때의 노출량은 제품과 착용 조건에 따라 다르며, 이 사이트는 그 값을 측정하지 않았습니다. 수치는 각 문헌에 실린 값을 그대로 옮겼습니다.",
+    "steps": {
+      "ariaLabel": "노출에서 영향까지 다섯 단계",
+      "items": [
+        {
+          "title": "합성 인디고 안에 남는다",
+          "body": "상업용 합성 인디고에는 아닐린이 최대 0.6%(6,000 mg/kg), N-메틸아닐린이 최대 0.4%(4,000 mg/kg) 남습니다. 인디고 결정 안에 갇혀 있어 산으로 씻거나 용매로 추출해도 빠지지 않습니다.",
+          "source": "Cordin 외, Sci Rep 2021"
+        },
+        {
+          "title": "옷에서 땀으로 옮겨 온다",
+          "body": "시판 청바지 42벌을 인공 땀에 담근 실험에서 인디고 염료가 원단 1 g당 3.2~7.8 mg 옮겨 나왔고, 진한 색일수록 많았습니다. 이 연구는 염료만 쟀고 그 안의 아닐린 양은 재지 않았습니다.",
+          "source": "Herrero 외, Environ Res 2019"
+        },
+        {
+          "title": "손상되지 않은 피부도 통과한다",
+          "body": "아닐린은 액체도 증기도 온전한 피부로 흡수됩니다. 사람 자원자 실험에서 수용액의 아닐린은 피부 1 cm²당 시간당 0.2~1.2 mg 흡수됐고, 떼어낸 사람 피부에서는 24시간 동안 바른 양의 20~38%가 통과했습니다. 피부가 헐어 있던 작업자는 몸 안 노출량이 더 높았습니다.",
+          "source": "Baranowska-Dutkiewicz 1982 · Wellner 외 2008 · Korinth 외 2007"
+        },
+        {
+          "title": "혈액이 산소를 나르지 못하게 한다",
+          "body": "몸 안에서 두 물질은 헤모글로빈을 메트헤모글로빈으로 바꿉니다. 메트헤모글로빈은 산소를 운반하지 못해 입술과 피부가 푸르게 변하고(청색증) 두통 · 어지럼 · 호흡곤란이 오며, 심하면 의식을 잃습니다. 증상은 노출 뒤 몇 시간 지나 나타나기도 합니다.",
+          "source": "ATSDR · Lee 외 2013 · Bernasconi 외 2026"
+        },
+        {
+          "title": "피부 반응과 장기적인 위험",
+          "body": "아닐린은 EU 조화 분류에서 알레르기성 피부 반응을 일으킬 수 있는 물질(피부 감작성 1)이고, 두 물질 모두 ‘피부 접촉 시 유독함’으로 분류됩니다. 국제암연구소(IARC)는 2020년 아닐린을 인체 발암 추정 물질(Group 2A)로 평가했습니다.",
+          "source": "EU CLP 조화 분류 · IARC Monographs 127"
+        }
+      ]
+    },
+    "cases": {
+      "title": "사람에게 실제로 일어난 일",
+      "items": [
+        {
+          "value": "46.8%",
+          "label": "혈중 메트헤모글로빈",
+          "body": "아닐린 약 200 mL가 얼굴과 상체에 튄 25세 작업자. 1시간 30분 뒤 온몸에 청색증이 나타나 메틸렌블루 치료를 받았고, 피부에는 화상과 접촉피부염이 남았습니다.",
+          "source": "Lee 외, Ann Occup Environ Med 2013 (한국)"
+        },
+        {
+          "value": "82명",
+          "label": "중증 메트헤모글로빈혈증",
+          "body": "연료가 섞인 바닷물에 피부가 오래 닿은 이주민들. 검사한 39명 중 37명에서 N-메틸아닐린 또는 그 대사물이 확인됐고, 2명이 숨졌습니다. 연구진은 피부 흡수를 원인으로 지목했습니다.",
+          "source": "Bernasconi 외, N Engl J Med 2026 (이탈리아)"
+        }
+      ]
+    },
+    "thresholds": {
+      "title": "혈중 메트헤모글로빈 비율과 증상",
+      "items": [
+        {
+          "range": "1% 미만",
+          "label": "정상 범위"
+        },
+        {
+          "range": "15~30%",
+          "label": "피부 · 입술이 푸르게"
+        },
+        {
+          "range": "30~50%",
+          "label": "두통 · 피로 · 어지럼 · 빠른 맥박"
+        },
+        {
+          "range": "50~70%",
+          "label": "혼미 · 호흡 저하 · 부정맥, 심정지 위험"
+        }
+      ],
+      "source": "ATSDR(미국 독성물질질병등록국) 아닐린 의료관리 지침"
+    },
+    "classification": {
+      "title": "규제기관의 분류",
+      "aniline": {
+        "name": "아닐린",
+        "items": [
+          "피부 접촉 시 유독함 (H311)",
+          "알레르기성 피부 반응 가능 (H317)",
+          "심한 눈 손상 (H318)",
+          "유전적 결함 의심 (H341)",
+          "발암 의심 (H351)",
+          "반복 노출 시 장기 손상 (H372)",
+          "IARC Group 2A — 인체 발암 추정 물질"
+        ]
+      },
+      "nMethylaniline": {
+        "name": "N-메틸아닐린",
+        "items": [
+          "피부 접촉 시 유독함 (H311)",
+          "삼키거나 흡입해도 유독함 (H301 · H331)",
+          "반복 노출 시 장기 손상 가능 (H373)"
+        ]
+      },
+      "note": "EU CLP 규정(EC 1272/2008) 부속서 VI 조화 분류의 유해성 문구입니다. IARC 평가는 2020년 회의(제127권) 결과입니다."
+    },
+    "result": {
+      "label": "Blugene 시험 결과",
+      "body": "아닐린 · N-메틸아닐린 모두 불검출 — 방법 검출한계 {limit} 미만(KOTERI, KS K 0734 2019). 아래 표에서 시판 9개 샘플과 함께 확인할 수 있습니다.",
+      "note": "불검출은 시험법의 검출한계 미만이라는 뜻이며, 피부 안전성이 입증됐다는 뜻은 아닙니다."
+    },
+    "paper": {
+      "kicker": "핵심 논문",
+      "journal": "Scientific Reports (Nature Portfolio)",
+      "title": "Quantification of aniline and N-methylaniline in indigo",
+      "authors": "Michael Cordin · Thomas Bechtold · Tung Pham",
+      "openAccess": "오픈 액세스 (CC BY 4.0)",
+      "titleTranslated": "인디고 속 아닐린과 N-메틸아닐린의 정량",
+      "affiliation": "인스브루크대학교 섬유화학 · 섬유물리 연구소 (오스트리아 도른비른)",
+      "published": "2021년 10월 26일 · 11권, 논문번호 21135",
+      "summaryTitle": "논문이 밝힌 것",
+      "summary": [
+        "상업용 합성 인디고에는 아닐린이 최대 0.6%, N-메틸아닐린이 최대 0.4%(무게 기준) 들어 있고, 이 불순물은 인디고 결정이 만들어질 때 그 안에 갇힙니다.",
+        "산으로 씻거나 용매로 추출해도 빠지지 않아, 인디고를 류코인디고로 환원해 녹인 뒤 산으로 추출하고 HPLC로 정량하는 새 분석법을 제시했습니다(정량 한계 0.010%).",
+        "이 방법으로 잰 시판 인디고 시료는 아닐린 0.3~0.6%, N-메틸아닐린 0.1~0.3%였습니다. 두 값은 함께 오르내려, 합성 과정의 같은 분해 반응에서 생기는 것으로 보입니다.",
+        "합성 인디고가 보이는 약한 변이원성은 이 불순물 때문일 가능성이 크며, 인디고 생산과 염색 과정에서 폐수로도 배출됩니다.",
+        "저자들은 사람 건강에 미치는 영향 때문에 이 불순물을 없애는 정제 공정이 중요하다고 결론지었습니다."
+      ],
+      "readLink": "논문 원문 보기",
+      "externalHint": "새 창에서 열림"
+    },
+    "sources": {
+      "title": "근거 자료",
+      "items": {
+        "cordin2021": "Cordin M, Bechtold T, Pham T. Quantification of aniline and N-methylaniline in indigo. Sci Rep. 2021;11:21135.",
+        "herrero2019": "Herrero M, Rovira J, Nadal M, Domingo JL. Risk assessment due to dermal exposure of trace elements and indigo dye in jeans: Migration to artificial sweat. Environ Res. 2019;172:310-318.",
+        "baranowska1982": "Baranowska-Dutkiewicz B. Skin absorption of aniline from aqueous solutions in man. Toxicol Lett. 1982;10(4):367-372.",
+        "wellner2008": "Wellner T 외. Percutaneous absorption of aromatic amines - a contribution for human health risk assessment. Food Chem Toxicol. 2008;46(6):1960-1968.",
+        "korinth2007": "Korinth G 외. Percutaneous absorption of aromatic amines in rubber industry workers: impact of impaired skin and skin barrier creams. Occup Environ Med. 2007;64(6):366-372.",
+        "lee2013": "Lee CH 외. Two cases of methemoglobinemia induced by the exposure to nitrobenzene and aniline. Ann Occup Environ Med. 2013;25:31.",
+        "bernasconi2026": "Bernasconi L 외. Outbreak of severe methemoglobinemia during maritime migration. N Engl J Med. 2026;395(10):983-991.",
+        "atsdr": "ATSDR. Medical Management Guidelines for Aniline (아닐린 의료관리 지침).",
+        "iarc2021": "IARC Monographs Vol. 127: Some Aromatic Amines and Related Compounds (2021) — 아닐린 Group 2A.",
+        "clpAniline": "EU CLP 조화 분류 — 아닐린 (CAS 62-53-3), PubChem GHS 항목 (ECHA 인용).",
+        "clpNMethylaniline": "EU CLP 조화 분류 — N-메틸아닐린 (CAS 100-61-8), PubChem GHS 항목 (ECHA 인용)."
+      }
+    }
+  },
   "Certifications": {
     "title": "글로벌 인증",
     "body": "제공 카탈로그에 수록된 인증서입니다. 각 항목에서 원본 인증서를 확대해 볼 수 있습니다.",

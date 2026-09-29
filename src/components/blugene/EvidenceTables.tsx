@@ -2,6 +2,7 @@ import { getTranslations } from 'next-intl/server';
 import { HEADING_SIZE, keepLastWords } from '@/components/blugene/SectionHeading';
 import SourceNote from '@/components/blugene/SourceNote';
 import AnilineStructures from '@/components/blugene/AnilineStructures';
+import AnilineHazardInfographic from '@/components/blugene/AnilineHazardInfographic';
 import { SOURCE_AS_OF, anilineTest, carbonTest, marketSamples } from '@/data/blugene/evidence';
 import type { IndigoType, MarketSample, Measurement } from '@/data/blugene/evidence';
 
@@ -259,6 +260,11 @@ export async function AnilineEvidenceTable({ className = '' }: { className?: str
       <p className="mt-4 max-w-3xl text-base leading-[1.85] break-keep text-[var(--color-ink)]/85">
         {t('anilineSectionBody')}
       </p>
+
+      {/* 피부 유해성 인포그래픽 — 2026-09-29 고객 요청으로 이 분석 부분의 맨 위(제목 아래 · 표 위)에 둔다.
+          왜 이 두 물질을 재는지를 문헌으로 먼저 보여 준 뒤 결과 표를 읽게 한다. 근거는 컴포넌트 주석과
+          docs/blugene-claims.md A-2 표에 있다. */}
+      <AnilineHazardInfographic />
 
       <TestMetaList items={meta} />
 

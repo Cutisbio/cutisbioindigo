@@ -299,6 +299,146 @@
     "carbonZeroNote": "Company Z's biobased carbon content is printed as 0 (pMC 0.30) in catalogue Table 1-1 and as N.D. in Figure 1-3. This table reproduces the Table 1-1 value.",
     "reportDateNote": "The test report number SBED25-00000153-1 is listed twice in Catalog Table 1-1 with different issue dates. The original listing has been transcribed as is."
   },
+  "AnilineHazard": {
+    "eyebrow": "What research says about skin",
+    "title": "How aniline and N-methylaniline affect the skin",
+    "intro": "What happens when these two impurities left in synthetic indigo reach the skin, summarised from human studies and regulatory assessments. Useful background before you read the test results table below.",
+    "scopeNote": "The studies cited here describe high-exposure situations such as workplace accidents and laboratory conditions. Exposure from wearing denim depends on the product and how it is worn, and this site has not measured it. Figures are quoted as published in each source.",
+    "steps": {
+      "ariaLabel": "Five steps from exposure to effect",
+      "items": [
+        {
+          "title": "It stays inside synthetic indigo",
+          "body": "Commercial synthetic indigo contains up to 0.6% aniline (6,000 mg/kg) and up to 0.4% N-methylaniline (4,000 mg/kg). Both are locked inside the indigo crystals and are not removed by acid washing or solvent extraction.",
+          "source": "Cordin et al., Sci Rep 2021"
+        },
+        {
+          "title": "It moves from fabric into sweat",
+          "body": "When 42 commercial pairs of jeans were soaked in artificial sweat, indigo dye migrated at 3.2 to 7.8 mg per gram of fabric, more from dark shades. The study measured the dye only, not the aniline within it.",
+          "source": "Herrero et al., Environ Res 2019"
+        },
+        {
+          "title": "It passes through intact skin",
+          "body": "Aniline is absorbed through unbroken skin as a liquid and as vapour. In human volunteers, aniline in water was absorbed at 0.2 to 1.2 mg per cm² of skin per hour; in excised human skin, 20 to 38% of the applied dose passed through within 24 hours. Workers with irritated skin carried higher internal doses.",
+          "source": "Baranowska-Dutkiewicz 1982 · Wellner et al. 2008 · Korinth et al. 2007"
+        },
+        {
+          "title": "It stops blood from carrying oxygen",
+          "body": "Inside the body both substances turn haemoglobin into methaemoglobin, which cannot carry oxygen. Lips and skin turn bluish (cyanosis), headache, dizziness and breathlessness follow, and severe cases lose consciousness. Symptoms can appear hours after exposure.",
+          "source": "ATSDR · Lee et al. 2013 · Bernasconi et al. 2026"
+        },
+        {
+          "title": "Skin reactions and long-term risk",
+          "body": "Under the EU harmonised classification aniline may cause an allergic skin reaction (Skin Sens. 1), and both substances are classed as toxic in contact with skin. In 2020 the International Agency for Research on Cancer (IARC) classified aniline as probably carcinogenic to humans (Group 2A).",
+          "source": "EU CLP harmonised classification · IARC Monographs 127"
+        }
+      ]
+    },
+    "cases": {
+      "title": "What has happened to people",
+      "items": [
+        {
+          "value": "46.8%",
+          "label": "blood methaemoglobin",
+          "body": "A 25-year-old worker splashed with about 200 mL of aniline on his face and upper body. Cyanosis spread over his whole body after 90 minutes and he was treated with methylene blue; burns and contact dermatitis remained on the skin.",
+          "source": "Lee et al., Ann Occup Environ Med 2013 (Korea)"
+        },
+        {
+          "value": "82 patients",
+          "label": "severe methaemoglobinaemia",
+          "body": "Migrants whose skin sat for hours in fuel-contaminated seawater. N-methylaniline or its metabolites were found in 37 of 39 patients tested, and two died. The investigators identified dermal absorption as the likely cause.",
+          "source": "Bernasconi et al., N Engl J Med 2026 (Italy)"
+        }
+      ]
+    },
+    "thresholds": {
+      "title": "Blood methaemoglobin level and symptoms",
+      "items": [
+        {
+          "range": "below 1%",
+          "label": "normal range"
+        },
+        {
+          "range": "15–30%",
+          "label": "skin and lips turn bluish"
+        },
+        {
+          "range": "30–50%",
+          "label": "headache, fatigue, dizziness, rapid pulse"
+        },
+        {
+          "range": "50–70%",
+          "label": "stupor, depressed breathing, arrhythmia, risk of cardiac arrest"
+        }
+      ],
+      "source": "ATSDR (US Agency for Toxic Substances and Disease Registry), Medical Management Guidelines for Aniline"
+    },
+    "classification": {
+      "title": "How regulators classify them",
+      "aniline": {
+        "name": "Aniline",
+        "items": [
+          "Toxic in contact with skin (H311)",
+          "May cause an allergic skin reaction (H317)",
+          "Causes serious eye damage (H318)",
+          "Suspected of causing genetic defects (H341)",
+          "Suspected of causing cancer (H351)",
+          "Causes damage to organs through prolonged or repeated exposure (H372)",
+          "IARC Group 2A — probably carcinogenic to humans"
+        ]
+      },
+      "nMethylaniline": {
+        "name": "N-methylaniline",
+        "items": [
+          "Toxic in contact with skin (H311)",
+          "Toxic if swallowed or inhaled (H301 · H331)",
+          "May cause damage to organs through prolonged or repeated exposure (H373)"
+        ]
+      },
+      "note": "Hazard statements from the harmonised classification in Annex VI of the EU CLP Regulation (EC) No 1272/2008. The IARC evaluation is from the 2020 meeting (Volume 127)."
+    },
+    "result": {
+      "label": "Blugene test result",
+      "body": "Aniline and N-methylaniline both not detected — below the method detection limit of {limit} (KOTERI, KS K 0734 2019). The table below shows the result alongside nine commercial samples.",
+      "note": "Not detected means below the detection limit of the test method. It does not mean that skin safety has been proven."
+    },
+    "paper": {
+      "kicker": "Key paper",
+      "journal": "Scientific Reports (Nature Portfolio)",
+      "title": "Quantification of aniline and N-methylaniline in indigo",
+      "authors": "Michael Cordin · Thomas Bechtold · Tung Pham",
+      "openAccess": "Open access (CC BY 4.0)",
+      "titleTranslated": "Quantification of aniline and N-methylaniline in indigo",
+      "affiliation": "Research Institute of Textile Chemistry and Textile Physics, University of Innsbruck (Dornbirn, Austria)",
+      "published": "26 October 2021 · Volume 11, article 21135",
+      "summaryTitle": "What the paper found",
+      "summary": [
+        "Commercial synthetic indigo contains up to 0.6% aniline and up to 0.4% N-methylaniline by weight, and these impurities are trapped inside the indigo crystals as they form.",
+        "Because neither acid washing nor solvent extraction removes them, the authors present a new method: reduce indigo to leuco-indigo to dissolve it, extract with acid and quantify by HPLC (quantitation limit 0.010%).",
+        "Commercial indigo samples measured with this method contained 0.3 to 0.6% aniline and 0.1 to 0.3% N-methylaniline. The two values rise and fall together, pointing to the same degradation reaction during synthesis.",
+        "The weak mutagenic effect seen in synthetic indigo is most probably due to these impurities, which are also released into waste water during indigo production and dyeing.",
+        "The authors conclude that, because of the effects on human health, an efficient purification process that removes these impurities is important."
+      ],
+      "readLink": "Read the paper",
+      "externalHint": "opens in a new tab"
+    },
+    "sources": {
+      "title": "Sources",
+      "items": {
+        "cordin2021": "Cordin M, Bechtold T, Pham T. Quantification of aniline and N-methylaniline in indigo. Sci Rep. 2021;11:21135.",
+        "herrero2019": "Herrero M, Rovira J, Nadal M, Domingo JL. Risk assessment due to dermal exposure of trace elements and indigo dye in jeans: Migration to artificial sweat. Environ Res. 2019;172:310-318.",
+        "baranowska1982": "Baranowska-Dutkiewicz B. Skin absorption of aniline from aqueous solutions in man. Toxicol Lett. 1982;10(4):367-372.",
+        "wellner2008": "Wellner T et al.. Percutaneous absorption of aromatic amines - a contribution for human health risk assessment. Food Chem Toxicol. 2008;46(6):1960-1968.",
+        "korinth2007": "Korinth G et al.. Percutaneous absorption of aromatic amines in rubber industry workers: impact of impaired skin and skin barrier creams. Occup Environ Med. 2007;64(6):366-372.",
+        "lee2013": "Lee CH et al.. Two cases of methemoglobinemia induced by the exposure to nitrobenzene and aniline. Ann Occup Environ Med. 2013;25:31.",
+        "bernasconi2026": "Bernasconi L et al.. Outbreak of severe methemoglobinemia during maritime migration. N Engl J Med. 2026;395(10):983-991.",
+        "atsdr": "ATSDR. Medical Management Guidelines for Aniline.",
+        "iarc2021": "IARC Monographs Vol. 127: Some Aromatic Amines and Related Compounds (2021) — aniline, Group 2A.",
+        "clpAniline": "EU CLP harmonised classification — aniline (CAS 62-53-3), PubChem GHS section (citing ECHA).",
+        "clpNMethylaniline": "EU CLP harmonised classification — N-methylaniline (CAS 100-61-8), PubChem GHS section (citing ECHA)."
+      }
+    }
+  },
   "Certifications": {
     "title": "Global certifications",
     "body": "The certificates included in the provided catalog. You can enlarge the original certificates for each item.",
