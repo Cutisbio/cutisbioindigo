@@ -548,6 +548,10 @@
     ],
     "note": "Amaç metinleri BM Sürdürülebilir Kalkınma Amaçları'nın (2015) hedef metinlerinden çevrilmiştir. Bu gösterim amaçlara desteğimizi ve katkı yönümüzü ifade eder; BM'nin sponsorluğunu veya onayını ima etmez.",
     "unLinkLabel": "BM SKA resmi sayfası",
+    "iconAlt": "Birleşmiş Milletler Sürdürülebilir Kalkınma Amacı {number} resmi simgesi",
+    "unDisclaimer": "Bu yayının içeriği Birleşmiş Milletler tarafından onaylanmamıştır ve Birleşmiş Milletler'in, yetkililerinin veya Üye Devletlerin görüşlerini yansıtmaz.",
+    "unSiteLabel": "Birleşmiş Milletler Sürdürülebilir Kalkınma Amaçları web sitesi",
+    "guidelinesLabel": "BM SKA logo ve simge kullanım kılavuzu (PDF)",
     "externalHint": "yeni sekmede açılır"
   },
   "Technology": {

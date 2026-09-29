@@ -5168,6 +5168,38 @@
       "it": "25728c7bf2256713",
       "zh": "25728c7bf2256713",
       "tr": "25728c7bf2256713"
+    },
+    "Sdg.iconAlt": {
+      "ja": "934cefcb7c4fd2b9",
+      "en": "934cefcb7c4fd2b9",
+      "fr": "934cefcb7c4fd2b9",
+      "it": "934cefcb7c4fd2b9",
+      "zh": "934cefcb7c4fd2b9",
+      "tr": "934cefcb7c4fd2b9"
+    },
+    "Sdg.unDisclaimer": {
+      "ja": "32a56c5932aefa29",
+      "en": "32a56c5932aefa29",
+      "fr": "32a56c5932aefa29",
+      "it": "32a56c5932aefa29",
+      "zh": "32a56c5932aefa29",
+      "tr": "32a56c5932aefa29"
+    },
+    "Sdg.unSiteLabel": {
+      "ja": "991245ab838ce8ac",
+      "en": "991245ab838ce8ac",
+      "fr": "991245ab838ce8ac",
+      "it": "991245ab838ce8ac",
+      "zh": "991245ab838ce8ac",
+      "tr": "991245ab838ce8ac"
+    },
+    "Sdg.guidelinesLabel": {
+      "ja": "c1caf5da8c1012ff",
+      "en": "c1caf5da8c1012ff",
+      "fr": "c1caf5da8c1012ff",
+      "it": "c1caf5da8c1012ff",
+      "zh": "c1caf5da8c1012ff",
+      "tr": "c1caf5da8c1012ff"
     }
   }
 }

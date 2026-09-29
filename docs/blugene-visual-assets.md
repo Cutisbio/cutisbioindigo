@@ -170,3 +170,38 @@ C(정확한 SVG 개념도)와 D(근거를 읽는 차트·색상 도구)는 위 4
 - 텍스트를 이미지에 굽지 않는다. 설명은 반드시 `messages/*.json` 을 거친다.
 - 사람 사진 위에 문구나 시험 완료 배지를 올리지 않는다.
 - `npm run check:blugene` 이 코드가 참조하는 이미지의 존재 여부를 검사한다.
+
+## 8. 외부 기관 공식 아이콘 — 유엔 SDG (2026-09-29)
+
+브랜드 페이지 「우리가 기여하려는 두 가지 목표」(`SdgSection`)에 쓰는 유엔 지속가능발전목표 아이콘. 카탈로그 자산이 아니므로
+`asset-manifest.json` 에는 넣지 않고 여기에 출처와 사용 조건을 적는다. 파일은 유엔 원본 그대로다(파일명 · 크기 1500×1500 · 색 변경 없음).
+
+| 웹 경로 | 원본 (un.org/sustainabledevelopment/news/communications-material, 2026-09-29 내려받음) | 쓰는 화면 |
+|---|---|---|
+| `/sdg/E-WEB-Goal-09.png`, `/sdg/E-WEB-Goal-12.png` | 「17 SDG Icons (WEB)」 영어판 `E-SDG-Icons-WEB.zip` (2025-07 판) | 영어 · 한국어 · 일본어 · 이탈리아어 · 터키어 화면 |
+| `/sdg/F-WEB-Goal-09.png`, `/sdg/F-WEB-Goal-12.png` | 같은 페이지 프랑스어판 `F-SDG-Icons-2019-WEB.zip` | 프랑스어 화면 |
+| `/sdg/C-WEB-Goal-09.png`, `/sdg/C-WEB-Goal-12.png` | 같은 페이지 중국어판 `C-SDG-Icons-2019-WEB.zip` | 중국어 화면 |
+
+유엔은 6개 공용어(아랍어 · 중국어 · 영어 · 프랑스어 · 러시아어 · 스페인어) 판만 제공한다. 다른 언어로 아이콘 문구를 번역하는 것은
+사용자 책임이라고 지침에 적혀 있어, 우리는 번역하지 않고 영어판을 쓴다.
+
+### 유엔 사용 지침 요약 (SDG Guidelines 2023-09 판 · 같은 페이지 FAQ)
+
+- 유엔 엠블럼이 든 로고(Version 1)는 유엔 기관 전용이다. 기업 등 외부 기관은 엠블럼 없는 로고(Version 2)와 17개 아이콘만 쓴다. 우리는 아이콘만 쓴다.
+- **정보성 용도**(주로 설명적이고 비상업적이며 모금 목적이 아닌 것)는 사전 허가 없이 쓸 수 있다. 유엔 FAQ: 영리 기업도 자기 조직의
+  SDG 관련 활동과 지지를 알리는 기업 자료(발표 · 뉴스레터 · 비재무 보고서 등)에는 허가가 필요 없다.
+- **모금 목적과 상업적 용도**(영리 기업의 사용, 판촉물 · 제품에 싣는 것)는 온라인 Permission Request Form 으로 사전 서면 허가와
+  라이선스 계약이 필요하다. 제품 · 서비스 광고 맥락, 유엔의 보증을 암시하는 사용, 자체 홍보 · 금전적 이득 목적, 자체 로고와의 결합은 금지.
+- 아이콘은 번호 · 이름 · 그림을 갖춘 **전체로만** 쓴다. 정사각 비율 유지. 자르기 · 정사각 외 형태(둥근 모서리 포함) · 그림자 · 입체 효과 ·
+  색 · 서체 변경 · 요소 재배치 · 늘리기 금지. 임의로 골라 무리 짓지 않는다(한 줄 또는 왼쪽 정렬).
+- 아이콘을 인터넷에 올릴 때는 **지침을 같은 페이지에** 둬야 한다 — 우리는 유엔 원본 PDF 링크로 둔다. 아이콘을 쓰는 온라인 · 인쇄물에는
+  유엔 SDG 사이트 링크(https://www.un.org/sustainabledevelopment)와 고지문 「The content of this publication has not been approved by
+  the United Nations and does not reflect the views of the United Nations or its officials or Member States」를 실어야 한다 — 화면 각주와
+  링크 목록이 이것이다(`Sdg.unDisclaimer` · `Sdg.unSiteLabel` · `Sdg.guidelinesLabel`).
+- 사용 기한은 2030-12-31 까지다(그 뒤에는 SDG 를 다루는 간행물의 참고용으로만).
+
+### 판단과 남은 일
+
+- 이 섹션은 회사의 SDG 관련 활동과 지지를 알리는 정보성 화면으로 보고 사전 허가 없이 실었다. 다만 영리 기업의 사이트인 만큼 유엔이
+  상업적 용도로 볼 여지가 있으므로, 온라인 Permission Request Form(https://shop.un.org/form/sdg-request-form, 화면 캡처 + 용도 설명)으로 서면 허가를 받아 두기를 권한다(고객 결정 사항).
+- 제품 판매 페이지 · 광고 · 판촉물 · 명함에는 쓰지 않는다. 아이콘 옆에 회사 로고를 나란히 두지 않는다(두려면 지침 17쪽의 구분선 규칙을 따른다).
