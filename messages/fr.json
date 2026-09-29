@@ -26,7 +26,7 @@
     "catalogueLink": "Télécharger le catalogue original (PDF)"
   },
   "Home": {
-    "metaTitle": "Un bleu né de l'ADN de l'indigo et de la fermentation.",
+    "metaTitle": "Teinture bio-indigo (Bio Indigo) — indigo pour denim issu de la fermentation microbienne",
     "metaDescription": "Blugene, bio-indigo produit par fermentation microbienne : carbone biosourcé 98 %, aniline et N-méthylaniline non détectées (limite de détection 5 mg/kg).",
     "ctaTitle": "Créons ensemble le bleu du prochain denim.",
     "ctaText": "Nous attendons les demandes des marques de denim, des fabricants de tissus, des ateliers de teinture et des imprimeurs.",
@@ -198,7 +198,9 @@
     "cyclesCaption": "Catalogue p.8, Figure 5-1. Comparaison de tissus de coton teints 1 à 4 fois avec de l'indigo chimique (poudre), du bio-indigo (poudre) et du bio-indigo (encre d'impression numérique).",
     "cyclesAlt": "Planche comparative de 3 rangées et 4 colonnes. Les rangées sont la poudre d'indigo chimique, la poudre de bio-indigo et l'encre d'impression numérique au bio-indigo ; les colonnes, 1 à 4 teintures.",
     "cyclesNote": "Dans cet exemple, le catalogue note l'intensité de couleur « encre d'impression numérique > indigo chimique ≈ poudre de bio-indigo ». Les nuances des photos n'ont pas été converties en valeurs K/S ni en écart de couleur ΔE, et cela ne signifie pas une supériorité de performance dans toutes les conditions.",
-    "cta": "Demander la documentation produit"
+    "cta": "Demander la documentation produit",
+    "powderSummary": "Poudre de colorant bio-indigo produite par fermentation microbienne, pour la teinture du denim, du coton, de la soie et du cachemire. 98 % de carbone biosourcé (ASTM D6866-24a, KATRI) ; aniline et N-méthylaniline non détectées (KS K 0734 2019, KOTERI, limite de détection 5 mg/kg).",
+    "inkSummary": "Bio-indigo produit par fermentation microbienne, formulé en encre pour l'impression numérique. Produit figurant p.9 du catalogue."
   },
   "Printing": {
     "eyebrow": "PRINTED IN BLUE",
@@ -245,6 +247,7 @@
   },
   "DataHub": {
     "eyebrow": "DATA & CERTIFICATIONS",
+    "metaTitle": "Données · Certifications — résultats d'essais et certificats originaux du bio-indigo",
     "title": "Une confiance vérifiée sur les originaux.",
     "body": "Résultats d'essai et certificats réunis en un seul endroit. Pour chaque élément, l'original est consultable avec le laboratoire, la méthode, le numéro de rapport et la date de référence des données.",
     "carbonSectionTitle": "Carbone biosourcé (C14)",
@@ -495,7 +498,7 @@
     "catalogueFigure": "Figure du catalogue"
   },
   "Brand": {
-    "metaTitle": "Histoire de la marque",
+    "metaTitle": "Histoire de la marque — Blugene, la marque de bio-indigo",
     "metaDescription": "Blugene est la marque de bio-indigo de CutisBio, qui réinvente l'indigo pour un denim qui accompagne toute une vie.",
     "heroEyebrow": "THE STORY",
     "heroTitle": "Le denim se porte tous les jours. Il faut donc examiner le colorant avec soin.",
@@ -523,7 +526,7 @@
     "cta": "Demander des échantillons et la documentation technique"
   },
   "Technology": {
-    "metaTitle": "Technologie",
+    "metaTitle": "Technologie — comment le bio-indigo est produit par fermentation microbienne",
     "metaDescription": "Les quatre voies de fabrication de l'indigo, la production par fermentation microbienne et les résultats d'essai de carbone biosourcé.",
     "heroEyebrow": "TECHNOLOGY",
     "heroTitle": "Quatre voies vers le bleu, et notre choix.",
@@ -807,6 +810,10 @@
       {
         "question": "Qu'est-ce que Blugene ?",
         "answer": "Blugene est le nom de marque du bio-indigo produit par fermentation microbienne par CutisBio Co., Ltd. Le catalogue et les certificats portent le nom de produit d'origine, « Bio Indigo Dye Powder (Microbial Fermentation) »."
+      },
+      {
+        "question": "Qu'est-ce que le bio-indigo (bio indigo) ?",
+        "answer": "Le bio-indigo est un colorant indigo produit par fermentation microbienne. C'est la même molécule que l'indigo de synthèse chimique ou l'indigo extrait de plantes (indigo, CAS 482-89-3), mais son carbone provient de biomasse renouvelable et non du pétrole. Le bio-indigo Blugene a été testé à 98 % de carbone biosourcé (ASTM D6866-24a, KATRI), aniline et N-méthylaniline non détectées (KS K 0734 2019, KOTERI, limite de détection 5 mg/kg)."
       },
       {
         "question": "Que signifie « teneur en carbone biosourcé de 98 % » ?",

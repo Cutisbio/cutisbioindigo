@@ -26,7 +26,7 @@
     "catalogueLink": "下载原版产品目录（PDF）"
   },
   "Home": {
-    "metaTitle": "由靛蓝DNA与发酵孕育的蓝。",
+    "metaTitle": "生物靛蓝染料 (Bio Indigo) — 微生物发酵制成的牛仔用靛蓝",
     "metaDescription": "由靛蓝DNA与发酵孕育的蓝。以微生物发酵生产的生物靛蓝 Blugene — 生物基碳含量 98%，苯胺 · N-甲基苯胺未检出（检出限 5 mg/kg）。",
     "ctaTitle": "下一条丹宁的蓝，与我们一同创造。",
     "ctaText": "我们期待丹宁品牌、面料企业、染厂与印花企业的咨询。",
@@ -198,7 +198,9 @@
     "cyclesCaption": "产品目录 p.8 Figure 5-1。对比化学靛蓝（粉末） · 生物靛蓝（粉末） · 生物靛蓝（数码印花墨水）染色 1~4 次的棉面料。",
     "cyclesAlt": "3 行 4 列对比图。行依次为化学靛蓝粉末、生物靛蓝粉末、生物靛蓝数码印花墨水，列为染色 1~4 次。",
     "cyclesNote": "产品目录在此示例中将色强度标示为 “数码印花墨水 > 化学靛蓝 ≈ 生物靛蓝粉末”。照片中的色彩深浅未换算为 K/S 值或色差 ΔE 测定值，也不表示在所有条件下均具性能优势。",
-    "cta": "产品资料咨询"
+    "cta": "产品资料咨询",
+    "powderSummary": "通过微生物发酵制成的生物靛蓝染料粉末，用于牛仔布、棉、丝绸和羊绒染色。生物基碳含量98%（ASTM D6866-24a，KATRI）；苯胺与N-甲基苯胺未检出（KS K 0734 2019，KOTERI，检出限5 mg/kg）。",
+    "inkSummary": "将微生物发酵制成的生物靛蓝配制成的数码印花墨水。产品目录第9页收录产品。"
   },
   "Printing": {
     "eyebrow": "PRINTED IN BLUE",
@@ -245,6 +247,7 @@
   },
   "DataHub": {
     "eyebrow": "DATA & CERTIFICATIONS",
+    "metaTitle": "数据 · 认证 — 生物靛蓝检测结果与证书原件",
     "title": "以原件验证的可信度。",
     "body": "我们将检测结果与证书汇集于一处。每一项均可连同检测机构 · 检测方法 · 报告编号 · 资料基准日一并查看原件。",
     "carbonSectionTitle": "生物基碳（C14）",
@@ -495,7 +498,7 @@
     "catalogueFigure": "目录图版"
   },
   "Brand": {
-    "metaTitle": "品牌故事",
+    "metaTitle": "品牌故事 — 生物靛蓝品牌 Blugene",
     "metaDescription": "Blugene 是 CutisBio 为相伴一生的丹宁而重新打造靛蓝的生物靛蓝品牌。",
     "heroEyebrow": "THE STORY",
     "heroTitle": "丹宁是每天都穿的衣服，所以必须从染料开始仔细确认。",
@@ -523,7 +526,7 @@
     "cta": "样品 · 技术资料咨询"
   },
   "Technology": {
-    "metaTitle": "技术",
+    "metaTitle": "技术 — 微生物发酵制造生物靛蓝的工艺",
     "metaDescription": "介绍制造靛蓝的四条路径、基于微生物发酵的生产方式，以及生物基碳含量的检测结果。",
     "heroEyebrow": "TECHNOLOGY",
     "heroTitle": "造蓝的四条路，以及我们的选择。",
@@ -807,6 +810,10 @@
       {
         "question": "Blugene 是什么？",
         "answer": "Blugene 是 CutisBio Co., Ltd. 以微生物发酵生产的生物靛蓝的品牌名称。产品目录与证书上记载的是原始产品名称 “Bio Indigo Dye Powder (Microbial Fermentation)”。"
+      },
+      {
+        "question": "什么是生物靛蓝（bio indigo）？",
+        "answer": "生物靛蓝是通过微生物发酵制成的靛蓝染料。它与化学合成靛蓝、植物提取靛蓝是同一种分子（靛蓝，CAS 482-89-3），但其碳来源于可再生生物质而非石油。Blugene 生物靛蓝经检测生物基碳含量为98%（ASTM D6866-24a，KATRI），苯胺与N-甲基苯胺均未检出（KS K 0734 2019，KOTERI，检出限5 mg/kg）。"
       },
       {
         "question": "“生物基碳含量 98%” 是什么意思？",

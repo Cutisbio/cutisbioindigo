@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
-import SchemaOrg, { buildOrganizationSchema, buildWebSiteSchema } from '@/components/seo/SchemaOrg';
+import SchemaOrg, { buildOrganizationSchema, buildProductSchema, buildWebSiteSchema } from '@/components/seo/SchemaOrg';
 
 import BlugeneHero from '@/components/blugene/BlugeneHero';
 import PromiseSection from '@/components/blugene/PromiseSection';
@@ -17,6 +17,8 @@ import SectionHeading from '@/components/blugene/SectionHeading';
 import FinalCta from '@/components/blugene/FinalCta';
 
 import { BRAND, CORPORATE_SITE_URL, LOCALES, SITE_URL, canonicalUrl, localeAlternates } from '@/data/blugene/site';
+import { productSummary } from '@/data/blugene/evidence';
+import { productForms } from '@/data/blugene/shades';
 
 export function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -36,7 +38,9 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Home' });
   const url = canonicalUrl(locale, '/');
-  const title = `${BRAND.lockup} | ${t('metaTitle')}`;
+  // 검색어(바이오 인디고 · bio indigo)가 앞에 오도록 홈만 '설명 | 브랜드' 순서다 — 2026-09-29 검색 노출 보강.
+  // 다른 페이지는 buildPageMetadata 의 '페이지 | 브랜드' 순서 그대로다.
+  const title = `${t('metaTitle')} | ${BRAND.lockup}`;
   return {
     title: { absolute: title },
     description: t('metaDescription'),
@@ -55,6 +59,23 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     alternateName: [BRAND.companyKo, BRAND.companyLegal, BRAND.name],
     sameAs: [CORPORATE_SITE_URL],
   });
+  // 제품(분말 · 잉크) 스키마 — 검색엔진과 AI 답변 엔진이 '바이오 인디고 염료' 라는 제품 실체를 브랜드 · 제조사와 함께 읽게 한다.
+  // 설명은 시험 · 인증 문서에 있는 사실만 담는다(Products.powderSummary · inkSummary). 가격 · 재고 · 평점은 없으므로 넣지 않는다.
+  const tProducts = await getTranslations({ locale, namespace: 'Products' });
+  const productSchemas = productForms.map((form) =>
+    buildProductSchema({
+      name: form.webName,
+      alternateName: form.catalogueName,
+      description: tProducts(form.id === 'powder' ? 'powderSummary' : 'inkSummary'),
+      image: `${SITE_URL}${form.image}`,
+      url: `${canonicalUrl(locale, '/dyeing-printing')}#products`,
+      brandName: BRAND.name,
+      manufacturerName: BRAND.companyLegal,
+      manufacturerUrl: CORPORATE_SITE_URL,
+      category: 'Indigo dye',
+      additionalProperty: form.id === 'powder' ? [{ name: 'CAS', value: productSummary.cas }] : undefined,
+    }),
+  );
   const siteSchema = buildWebSiteSchema({
     name: BRAND.lockup,
     alternateName: [BRAND.name],
@@ -68,6 +89,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     <>
       <SchemaOrg schema={orgSchema} />
       <SchemaOrg schema={siteSchema} />
+      {productSchemas.map((schema, index) => (
+        <SchemaOrg key={productForms[index].id} schema={schema} />
+      ))}
 
       {/* 01. 처음 만나는 Blugene */}
       <BlugeneHero />

@@ -319,8 +319,14 @@ node scripts/update-news.js --dry-run
   시험값이나 인증이 바뀌면 이 파일도 같이 고친다.
 - `/robots.txt`(src/app/robots.ts): 검색엔진과 주요 AI 크롤러(GPTBot · ClaudeBot · PerplexityBot · Google-Extended 등)를 허용하고
   /admin · /api · /private 만 막는다. AI 학습 · 인용을 막고 싶으면 AI_CRAWLERS 규칙의 allow 를 disallow 로 바꾼다.
-- 구조화 데이터: 홈에 Organization(별칭 · 회사 사이트 sameAs) + WebSite, 블로그 글에 Article + FAQPage, 기술 페이지 탄소 단락에 FAQPage.
+- 구조화 데이터: 홈에 Organization(별칭 · 회사 사이트 sameAs) + WebSite + Product(분말 · 잉크), 블로그 글에 Article + FAQPage, 기술 페이지 탄소 단락에 FAQPage.
   Search Console 의 「개선사항」 보고서에서 오류를 확인한다.
+- 검색어 'bio indigo' 대응(2026-09-29): 홈 · 기술 · 데이터 · 브랜드의 탭 제목에 '바이오 인디고 / Bio Indigo' 를 앞세웠다
+  (`Home.metaTitle` · `Technology.metaTitle` · `DataHub.metaTitle` · `Brand.metaTitle`, 홈만 '설명 | 브랜드' 순서). 홈에 Product 구조화 데이터
+  (`Products.powderSummary` · `inkSummary`), 블로그 FAQ 에 「바이오 인디고란?」(`Tech.faqList[1]`), llms.txt 에 정의 한 줄을 더했다.
+  언어 접두사 없는 옛 주소(/technology 등)는 netlify.toml 에서 /ko/… 로 301 한다. 주요 URL 은 Search Console 에서 색인 생성을 요청했다.
+  순위는 Google 이 정하며 반영에 몇 주 ~ 몇 달이 걸린다. 다음 단계는 사이트 밖의 링크다 — 회사 공식 사이트(cutisbio.com) · 보도자료 ·
+  협력사 · 인증기관 디렉터리에서 blugene.co 로 링크를 걸고, 네이버 서치어드바이저에도 사이트를 등록한다.
 
 ---
 

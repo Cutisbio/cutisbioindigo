@@ -59,6 +59,46 @@ export function buildWebSiteSchema(params: {
 }
 
 /**
+ * 빌더 헬퍼: Product 스키마 — 제품명 · 카탈로그 원문명(alternateName) · 설명 · 브랜드 · 제조사 · 사진.
+ * 가격 · 재고 · 평점 · 리뷰는 없으므로 넣지 않는다(없는 항목을 만들면 검색엔진 정책 위반이다).
+ * additionalProperty 는 CAS 번호처럼 문서로 확인된 식별값만 넣는다.
+ */
+export function buildProductSchema(params: {
+  name: string;
+  alternateName?: string;
+  description: string;
+  image: string;
+  url: string;
+  brandName: string;
+  manufacturerName: string;
+  manufacturerUrl: string;
+  category?: string;
+  additionalProperty?: { name: string; value: string }[];
+}): JsonLd {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: params.name,
+    ...(params.alternateName ? { alternateName: params.alternateName } : {}),
+    description: params.description,
+    image: params.image,
+    url: params.url,
+    brand: { '@type': 'Brand', name: params.brandName },
+    manufacturer: { '@type': 'Organization', name: params.manufacturerName, url: params.manufacturerUrl },
+    ...(params.category ? { category: params.category } : {}),
+    ...(params.additionalProperty
+      ? {
+          additionalProperty: params.additionalProperty.map((p) => ({
+            '@type': 'PropertyValue',
+            name: p.name,
+            value: p.value,
+          })),
+        }
+      : {}),
+  };
+}
+
+/**
  * 빌더 헬퍼: Article 스키마.
  *
  * author 는 팀·법인 명의이므로 Person 이 아니라 Organization 으로 내보낸다.

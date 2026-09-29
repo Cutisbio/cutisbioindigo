@@ -26,7 +26,7 @@
     "catalogueLink": "Scarica il catalogo originale (PDF)"
   },
   "Home": {
-    "metaTitle": "Un blu nato dal DNA dell'indaco e dalla fermentazione.",
+    "metaTitle": "Colorante bio-indaco (Bio Indigo) — indaco per denim da fermentazione microbica",
     "metaDescription": "Blugene, bio-indaco prodotto per fermentazione microbica: carbonio biobased 98%, anilina e N-metilanilina non rilevate (limite di rilevabilità 5 mg/kg).",
     "ctaTitle": "Creiamo insieme il blu del prossimo denim.",
     "ctaText": "Aspettiamo le richieste di brand di denim, produttori di tessuti, tintorie e aziende di stampa.",
@@ -198,7 +198,9 @@
     "cyclesCaption": "Catalogo p.8, Figure 5-1. Confronto di tessuti di cotone tinti da 1 a 4 volte con indaco chimico (polvere), bio-indaco (polvere) e bio-indaco (inchiostro per stampa digitale).",
     "cyclesAlt": "Tavola di confronto a 3 righe e 4 colonne. Le righe sono polvere di indaco chimico, polvere di bio-indaco e inchiostro per stampa digitale al bio-indaco; le colonne, da 1 a 4 tinture.",
     "cyclesNote": "In questo esempio il catalogo indica l'intensità del colore come «inchiostro per stampa digitale > indaco chimico ≈ polvere di bio-indaco». Le tonalità delle foto non sono state convertite in valori K/S né in differenza di colore ΔE, e ciò non significa una superiorità di prestazioni in tutte le condizioni.",
-    "cta": "Richiedi la documentazione di prodotto"
+    "cta": "Richiedi la documentazione di prodotto",
+    "powderSummary": "Polvere di colorante bio-indaco prodotta per fermentazione microbica, per la tintura di denim, cotone, seta e cashmere. Contenuto di carbonio biobased del 98% (ASTM D6866-24a, KATRI); anilina e N-metilanilina non rilevate (KS K 0734 2019, KOTERI, limite di rilevabilità 5 mg/kg).",
+    "inkSummary": "Bio-indaco prodotto per fermentazione microbica, formulato come inchiostro per la stampa digitale. Prodotto riportato a p.9 del catalogo."
   },
   "Printing": {
     "eyebrow": "PRINTED IN BLUE",
@@ -245,6 +247,7 @@
   },
   "DataHub": {
     "eyebrow": "DATA & CERTIFICATIONS",
+    "metaTitle": "Dati · Certificazioni — risultati dei test e certificati originali del bio-indaco",
     "title": "Fiducia verificata sugli originali.",
     "body": "Risultati di prova e certificati riuniti in un unico luogo. Per ogni voce l'originale è consultabile insieme a laboratorio, metodo di prova, numero di rapporto e data di riferimento dei dati.",
     "carbonSectionTitle": "Carbonio biobased (C14)",
@@ -495,7 +498,7 @@
     "catalogueFigure": "Figura del catalogo"
   },
   "Brand": {
-    "metaTitle": "Storia del brand",
+    "metaTitle": "Storia del brand — Blugene, il marchio del bio-indaco",
     "metaDescription": "Blugene è il brand di bio-indaco di CutisBio, che reinventa l'indaco per un denim che accompagna tutta la vita.",
     "heroEyebrow": "THE STORY",
     "heroTitle": "Il denim si indossa ogni giorno. Bisogna quindi esaminare con cura il colorante.",
@@ -523,7 +526,7 @@
     "cta": "Richiedi campioni e documentazione tecnica"
   },
   "Technology": {
-    "metaTitle": "Tecnologia",
+    "metaTitle": "Tecnologia — come nasce il bio-indaco dalla fermentazione microbica",
     "metaDescription": "Le quattro vie per produrre l'indaco, la produzione per fermentazione microbica e i risultati delle prove sul carbonio biobased.",
     "heroEyebrow": "TECHNOLOGY",
     "heroTitle": "Quattro vie verso il blu, e la nostra scelta.",
@@ -807,6 +810,10 @@
       {
         "question": "Che cos'è Blugene?",
         "answer": "Blugene è il nome del brand del bio-indaco prodotto per fermentazione microbica da CutisBio Co., Ltd. Il catalogo e i certificati riportano il nome originale del prodotto, «Bio Indigo Dye Powder (Microbial Fermentation)»."
+      },
+      {
+        "question": "Che cos'è il bio-indaco (bio indigo)?",
+        "answer": "Il bio-indaco è un colorante indaco prodotto per fermentazione microbica. È la stessa molecola dell'indaco di sintesi chimica o estratto dalle piante (indaco, CAS 482-89-3), ma il suo carbonio proviene da biomassa rinnovabile e non dal petrolio. Il bio-indaco Blugene è stato testato con un contenuto di carbonio biobased del 98% (ASTM D6866-24a, KATRI) e anilina e N-metilanilina non rilevate (KS K 0734 2019, KOTERI, limite di rilevabilità 5 mg/kg)."
       },
       {
         "question": "Che cosa significa «contenuto di carbonio biobased del 98%»?",

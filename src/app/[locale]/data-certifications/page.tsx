@@ -29,7 +29,8 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: '/data-certifications',
-    title: t('title'),
+    // 탭 제목만 검색어(바이오 인디고)를 앞세운 metaTitle 을 쓴다. 페이지 안 제목(H1)은 title 그대로다 — 2026-09-29.
+    title: t('metaTitle'),
     description: t('body'),
   });
 }

@@ -178,12 +178,12 @@
       "tr": "79ae68a1e425e289"
     },
     "Home.metaTitle": {
-      "ja": "77819498554c7e05",
-      "en": "77819498554c7e05",
-      "fr": "77819498554c7e05",
-      "it": "77819498554c7e05",
-      "zh": "77819498554c7e05",
-      "tr": "77819498554c7e05"
+      "ja": "03be857b32de59c2",
+      "en": "03be857b32de59c2",
+      "fr": "03be857b32de59c2",
+      "it": "03be857b32de59c2",
+      "zh": "03be857b32de59c2",
+      "tr": "03be857b32de59c2"
     },
     "Home.metaDescription": {
       "ja": "163fd12ee73c870a",
@@ -2258,12 +2258,12 @@
       "tr": "4c48c3477442e7a0"
     },
     "Brand.metaTitle": {
-      "ja": "9d259e27970bbab2",
-      "en": "9d259e27970bbab2",
-      "fr": "9d259e27970bbab2",
-      "it": "9d259e27970bbab2",
-      "zh": "9d259e27970bbab2",
-      "tr": "9d259e27970bbab2"
+      "ja": "af0c4476a8b0d2e2",
+      "en": "af0c4476a8b0d2e2",
+      "fr": "af0c4476a8b0d2e2",
+      "it": "af0c4476a8b0d2e2",
+      "zh": "af0c4476a8b0d2e2",
+      "tr": "af0c4476a8b0d2e2"
     },
     "Brand.metaDescription": {
       "ja": "18124fee30652283",
@@ -2396,12 +2396,12 @@
       "tr": "393ff15c3ff584a0"
     },
     "Technology.metaTitle": {
-      "ja": "a78cee47656be418",
-      "en": "a78cee47656be418",
-      "fr": "a78cee47656be418",
-      "it": "a78cee47656be418",
-      "zh": "a78cee47656be418",
-      "tr": "a78cee47656be418"
+      "ja": "e8d124aa0720538a",
+      "en": "e8d124aa0720538a",
+      "fr": "e8d124aa0720538a",
+      "it": "e8d124aa0720538a",
+      "zh": "e8d124aa0720538a",
+      "tr": "e8d124aa0720538a"
     },
     "Technology.metaDescription": {
       "ja": "fedc69e5cbc9b57d",
@@ -2750,62 +2750,82 @@
     "Tech.faqList[0].question": {
       "ja": "e7195d7a97ee9b58",
       "en": "e7195d7a97ee9b58",
+      "fr": "e7195d7a97ee9b58",
+      "it": "e7195d7a97ee9b58",
       "zh": "e7195d7a97ee9b58",
       "tr": "e7195d7a97ee9b58"
     },
     "Tech.faqList[0].answer": {
       "ja": "8f1ecbf1b50462fd",
       "en": "8f1ecbf1b50462fd",
+      "fr": "8f1ecbf1b50462fd",
+      "it": "8f1ecbf1b50462fd",
       "zh": "8f1ecbf1b50462fd",
       "tr": "8f1ecbf1b50462fd"
     },
     "Tech.faqList[1].question": {
+      "ja": "38bcc5bf67ef193f",
+      "en": "38bcc5bf67ef193f",
+      "fr": "38bcc5bf67ef193f",
+      "it": "38bcc5bf67ef193f",
+      "zh": "38bcc5bf67ef193f",
+      "tr": "38bcc5bf67ef193f"
+    },
+    "Tech.faqList[1].answer": {
+      "ja": "0cacd0c598eb7fd0",
+      "en": "0cacd0c598eb7fd0",
+      "fr": "0cacd0c598eb7fd0",
+      "it": "0cacd0c598eb7fd0",
+      "zh": "0cacd0c598eb7fd0",
+      "tr": "0cacd0c598eb7fd0"
+    },
+    "Tech.faqList[2].question": {
       "ja": "837db5f6e817abd1",
       "en": "837db5f6e817abd1",
+      "fr": "837db5f6e817abd1",
+      "it": "837db5f6e817abd1",
       "zh": "837db5f6e817abd1",
       "tr": "837db5f6e817abd1"
     },
-    "Tech.faqList[1].answer": {
+    "Tech.faqList[2].answer": {
       "ja": "d7e51eafe7c12e72",
       "en": "d7e51eafe7c12e72",
+      "fr": "d7e51eafe7c12e72",
+      "it": "d7e51eafe7c12e72",
       "zh": "d7e51eafe7c12e72",
       "tr": "d7e51eafe7c12e72"
     },
-    "Tech.faqList[2].question": {
+    "Tech.faqList[3].question": {
       "ja": "6fdcbf8c2e5732e1",
       "en": "6fdcbf8c2e5732e1",
+      "fr": "6fdcbf8c2e5732e1",
+      "it": "6fdcbf8c2e5732e1",
       "zh": "6fdcbf8c2e5732e1",
       "tr": "6fdcbf8c2e5732e1"
     },
-    "Tech.faqList[2].answer": {
+    "Tech.faqList[3].answer": {
       "ja": "cecd2ffee2981236",
       "en": "cecd2ffee2981236",
+      "fr": "cecd2ffee2981236",
+      "it": "cecd2ffee2981236",
       "zh": "cecd2ffee2981236",
       "tr": "cecd2ffee2981236"
     },
-    "Tech.faqList[3].question": {
+    "Tech.faqList[4].question": {
       "ja": "93cfd775e071e131",
       "en": "93cfd775e071e131",
+      "fr": "93cfd775e071e131",
+      "it": "93cfd775e071e131",
       "zh": "93cfd775e071e131",
       "tr": "93cfd775e071e131"
     },
-    "Tech.faqList[3].answer": {
+    "Tech.faqList[4].answer": {
       "ja": "d0e5418a1271f001",
       "en": "d0e5418a1271f001",
+      "fr": "d0e5418a1271f001",
+      "it": "d0e5418a1271f001",
       "zh": "d0e5418a1271f001",
       "tr": "d0e5418a1271f001"
-    },
-    "Tech.faqList[4].question": {
-      "ja": "7bb2feaacb2de04c",
-      "en": "7bb2feaacb2de04c",
-      "zh": "7bb2feaacb2de04c",
-      "tr": "7bb2feaacb2de04c"
-    },
-    "Tech.faqList[4].answer": {
-      "ja": "adaacf9ac7319eb1",
-      "en": "adaacf9ac7319eb1",
-      "zh": "adaacf9ac7319eb1",
-      "tr": "adaacf9ac7319eb1"
     },
     "Tech.structuresTitle": {
       "ja": "4da7b645c14f1df1",
@@ -4972,6 +4992,46 @@
       "it": "3037418f072537f6",
       "zh": "3037418f072537f6",
       "tr": "3037418f072537f6"
+    },
+    "DataHub.metaTitle": {
+      "ja": "a87380b2c75fe282",
+      "en": "a87380b2c75fe282",
+      "fr": "a87380b2c75fe282",
+      "it": "a87380b2c75fe282",
+      "zh": "a87380b2c75fe282",
+      "tr": "a87380b2c75fe282"
+    },
+    "Products.powderSummary": {
+      "ja": "7c6fd84b76e24a15",
+      "en": "7c6fd84b76e24a15",
+      "fr": "7c6fd84b76e24a15",
+      "it": "7c6fd84b76e24a15",
+      "zh": "7c6fd84b76e24a15",
+      "tr": "7c6fd84b76e24a15"
+    },
+    "Products.inkSummary": {
+      "ja": "c18c93a184eddf66",
+      "en": "c18c93a184eddf66",
+      "fr": "c18c93a184eddf66",
+      "it": "c18c93a184eddf66",
+      "zh": "c18c93a184eddf66",
+      "tr": "c18c93a184eddf66"
+    },
+    "Tech.faqList[5].question": {
+      "ja": "7bb2feaacb2de04c",
+      "en": "7bb2feaacb2de04c",
+      "fr": "7bb2feaacb2de04c",
+      "it": "7bb2feaacb2de04c",
+      "zh": "7bb2feaacb2de04c",
+      "tr": "7bb2feaacb2de04c"
+    },
+    "Tech.faqList[5].answer": {
+      "ja": "adaacf9ac7319eb1",
+      "en": "adaacf9ac7319eb1",
+      "fr": "adaacf9ac7319eb1",
+      "it": "adaacf9ac7319eb1",
+      "zh": "adaacf9ac7319eb1",
+      "tr": "adaacf9ac7319eb1"
     }
   }
 }

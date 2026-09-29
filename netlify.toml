@@ -105,3 +105,61 @@
   to = "https://blugene.co/:splat"
   status = 301
   force = true
+
+# ---------------------------------------------------------------------------
+# 언어 접두사 없는 옛 주소(구 사이트 시절 주소 · 검색 색인 잔재: /technology, /about …) → 기본 언어(ko)로 301.
+# Netlify 에서는 Next 미들웨어가 이 경로를 잡지 못해 404 가 났고, Google 색인에 옛 주소가 남아 있었다(2026-09-29).
+# 루트(/)는 언어 감지(307)를 그대로 둔다. 파일 확장자가 있는 경로(robots.txt · sitemap.xml · llms.txt)는 건드리지 않는다.
+[[redirects]]
+  from = "/blog/*"
+  to = "/ko/blog/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/brand"
+  to = "/ko/brand"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/technology"
+  to = "/ko/technology"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/dyeing-printing"
+  to = "/ko/dyeing-printing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/data-certifications"
+  to = "/ko/data-certifications"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact"
+  to = "/ko/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about"
+  to = "/ko/about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/news"
+  to = "/ko/news"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog"
+  to = "/ko/blog"
+  status = 301
+  force = true
