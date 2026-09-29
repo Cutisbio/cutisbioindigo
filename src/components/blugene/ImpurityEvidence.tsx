@@ -1,8 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import SectionHeading, { keepLastWords } from '@/components/blugene/SectionHeading';
-import SourceNote, { AssetKind } from '@/components/blugene/SourceNote';
-import ZoomableImage from '@/components/blugene/ZoomableImage';
+import SourceNote from '@/components/blugene/SourceNote';
 import ComparisonChart, {
   type ChartRow,
   type ChartSeries,
@@ -24,8 +23,9 @@ import {
  *   방법 검출한계(5 mg/kg)와 시험법 · 시험기관 · 보고서 번호를 같은 블록 안에서 함께 밝힌다.
  * - 큰 숫자 카드 대신 하나의 강조 블록 안에 두 항목을 나란히 세우고, 두 항목이 공유하는
  *   시험 조건은 그 아래에 한 번만 둔다(항목마다 블록을 두면 같은 4행이 두 번 반복된다).
- * - 시판 9개 샘플 비교는 ComparisonChart 가 그래프와 표를 함께 제공하고,
- *   원본 그래프 이미지(Figure 2-2)는 ZoomableImage 로 확인할 수 있게 둔다.
+ * - 시판 9개 샘플 비교는 ComparisonChart 가 그래프와 표를 함께 제공한다.
+ *   원본 그래프 이미지(Figure 2-2)는 2026-09-29 고객 요청으로 홈에서 뺐다 — 데이터 · 인증 페이지의
+ *   원본 도판 묶음(/data-certifications#test-results)에서 본다.
  */
 export default async function ImpurityEvidence() {
   const t = await getTranslations('Impurity');
@@ -164,48 +164,26 @@ export default async function ImpurityEvidence() {
           />
         </div>
 
-        {/* 원본 그래프 이미지와 인용 조건 */}
-        <div className="mt-12 grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,22rem)] lg:items-start lg:gap-12">
-          <div className="space-y-2.5">
-            <SourceNote>{tHub('anonymousNote')}</SourceNote>
-            <SourceNote>{tHub('sameLabelNote')}</SourceNote>
-            <SourceNote>{tHub('sampleScopeNote')}</SourceNote>
-            <SourceNote>
-              {tCommon('sourceLabel')} · {tCommon('cataloguePage', { page: anilineTest.page })}{' '}
-              Table {anilineTest.table} · Figure {anilineTest.figure} ·{' '}
-              {tCommon('asOf', { date: SOURCE_AS_OF })}
-            </SourceNote>
+        {/* 인용 조건 — 원본 그래프 이미지(Figure 2-2)는 2026-09-29 고객 요청으로 홈에서 뺐다. 데이터 · 인증 페이지에 남아 있다. */}
+        <div className="mt-12 max-w-3xl space-y-2.5">
+          <SourceNote>{tHub('anonymousNote')}</SourceNote>
+          <SourceNote>{tHub('sameLabelNote')}</SourceNote>
+          <SourceNote>{tHub('sampleScopeNote')}</SourceNote>
+          <SourceNote>
+            {tCommon('sourceLabel')} · {tCommon('cataloguePage', { page: anilineTest.page })}{' '}
+            Table {anilineTest.table} · Figure {anilineTest.figure} ·{' '}
+            {tCommon('asOf', { date: SOURCE_AS_OF })}
+          </SourceNote>
 
-            <div className="pt-4">
-              <Link
-                href="/data-certifications"
-                className="inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
-              >
-                {t('cta')}
-                <span aria-hidden="true">→</span>
-              </Link>
-            </div>
+          <div className="pt-4">
+            <Link
+              href="/data-certifications"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
+            >
+              {t('cta')}
+              <span aria-hidden="true">→</span>
+            </Link>
           </div>
-
-          <figure className="m-0">
-            <figcaption className="mb-2.5 flex flex-wrap items-center gap-2">
-              <AssetKind>{tCommon('testPhoto')}</AssetKind>
-              <span className="text-[0.8125rem] break-keep text-[var(--color-slate-muted)]">
-                {tCommon('cataloguePage', { page: anilineTest.page })} Figure {anilineTest.figure}
-              </span>
-            </figcaption>
-            <ZoomableImage
-              src={anilineTest.resultsImage}
-              alt={t('chartTitle')}
-              width={1163}
-              height={1545}
-              sizes="(max-width: 1024px) 90vw, 352px"
-              openLabel={tCommon('openImage')}
-              closeLabel={tCommon('close')}
-              hint={tCommon('imageNotePhoto')}
-              caption={tCommon('imageNotePhoto')}
-            />
-          </figure>
         </div>
       </div>
     </section>
