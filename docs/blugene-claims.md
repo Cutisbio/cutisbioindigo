@@ -60,7 +60,7 @@
 | 아닐린은 액체 · 증기 모두 피부로 흡수, 증상은 몇 시간 지연 가능, 메트헤모글로빈 비율별 증상(15~30% 청색증 · 30~50% 두통 등 · 50~70% 혼미 등 · 60~70% 심정지), 피부 자극 · 감작 · 피부염 보고 | ATSDR. Medical Management Guidelines for Aniline (wwwn.cdc.gov/TSP/MMG) | 4단계 카드 + 증상 단계 막대(4칸). ATSDR 문서의 IARC 서술은 옛 평가라 쓰지 않고 IARC 원자료를 따른다 |
 | 한국 사례: 아닐린 약 200 cc 가 얼굴 · 상체에 튄 25세 작업자, 1시간 30분 뒤 청색증, MetHb 최고 46.8%, 메틸렌블루 치료, 화상 · 접촉피부염 | Lee CH 외. Ann Occup Environ Med 2013;25:31 — 10.1186/2052-4374-25-31 | 사례 카드 "46.8%" |
 | 이탈리아 사례: 연료 섞인 바닷물에 피부 노출된 이주민 82명 중증 메트헤모글로빈혈증, 검사 39명 중 37명에서 N-메틸아닐린 · 대사물, 2명 사망, 피부 흡수가 원인 | Bernasconi L 외. N Engl J Med 2026;395:983-991 — 10.1056/NEJMoa2606487 | 사례 카드 "82명" |
-| EU CLP 조화 분류(부속서 VI): 아닐린 Acute Tox. 3(H301 · H311 · H331) · Skin Sens. 1(H317) · Eye Dam. 1(H318) · Muta. 2(H341) · Carc. 2(H351) · STOT RE 1(H372); N-메틸아닐린 Acute Tox. 3(H301 · H311 · H331) · STOT RE 2(H373) | PubChem GHS 항목(ECHA 인용) — CID 6115 (아닐린), CID 7515 (N-메틸아닐린) | 분류 칩. 수생 독성(H400 · H410)은 피부 주제가 아니라 뺐다 |
+| EU CLP 조화 분류(부속서 VI): 아닐린 Acute Tox. 3(H301 · H311 · H331) · Skin Sens. 1(H317) · Eye Dam. 1(H318) · Muta. 2(H341) · Carc. 2(H351) · STOT RE 1(H372); N-메틸아닐린 Acute Tox. 3(H301 · H311 · H331) · STOT RE 2(H373) | PubChem GHS 항목(ECHA 인용) — CID 6115 (아닐린), CID 7515 (N-메틸아닐린) | 규제기관 분류 상자(`AnilineClassification`, 2026-09-29 고객 요청으로 인포그래픽 안 패널에서 독립 · 확대) — 데이터 · 인증 페이지의 인포그래픽 아래와 홈 「보이지 않는 것까지」 단락에 같은 상자. 수생 독성(H400 · H410)은 피부 주제가 아니라 뺐다 |
 | IARC: 아닐린 · 염산아닐린 Group 2A(인체 발암 추정), 2020-05-25~06-12 회의, Lancet Oncol 2020-06-25 요약, 제127권 2021 출간. 사람 근거 불충분, 동물 근거 충분, 기전 근거 강함 | IARC Monographs Vol. 127 (publications.iarc.who.int/599) | 5단계 카드 · 분류 칩 "IARC Group 2A" |
 
 **표시 규칙**: 새 문헌을 더하거나 수치를 고칠 때는 원문(DOI)을 열어 확인하고, 이 표 · `AnilineHazard` 문구(7개 언어) · `SOURCE_LINKS` 를 함께 고친다.

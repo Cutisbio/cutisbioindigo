@@ -16,10 +16,11 @@ import { anilineTest } from '@/data/blugene/evidence';
  *
  * 하지 않는 것: "안전하다"는 단정, 데님 착용 시 노출량 추정, 인증 허용한도 수치(카탈로그 p.4 표는 계속 미게재).
  * 아이콘은 코드로 그린 SVG 이고 장식(aria-hidden)이다. 글자는 모두 HTML 이라 7개 언어로 번역된다.
- * 문헌 링크 주소는 여기 SOURCE_LINKS 에, 문구는 messages 의 AnilineHazard.sources.items 에 같은 키로 둔다.
+ * 문헌 링크 주소는 여기 HAZARD_SOURCE_LINKS 에, 문구는 messages 의 AnilineHazard.sources.items 에 같은 키로 둔다.
+ * 규제기관 분류(EU CLP · IARC)는 2026-09-29 고객 요청으로 별도 상자 AnilineClassification 으로 뺐다 — 링크 표를 같이 쓴다.
  */
 
-const SOURCE_LINKS = {
+export const HAZARD_SOURCE_LINKS = {
   cordin2021: 'https://doi.org/10.1038/s41598-021-00634-7',
   herrero2019: 'https://doi.org/10.1016/j.envres.2019.02.030',
   baranowska1982: 'https://doi.org/10.1016/0378-4274(82)90231-4',
@@ -32,8 +33,8 @@ const SOURCE_LINKS = {
   clpAniline: 'https://pubchem.ncbi.nlm.nih.gov/compound/Aniline#section=GHS-Classification',
   clpNMethylaniline: 'https://pubchem.ncbi.nlm.nih.gov/compound/N-Methylaniline#section=GHS-Classification',
 } as const;
-type SourceId = keyof typeof SOURCE_LINKS;
-const SOURCE_IDS = Object.keys(SOURCE_LINKS) as SourceId[];
+type SourceId = keyof typeof HAZARD_SOURCE_LINKS;
+const SOURCE_IDS = Object.keys(HAZARD_SOURCE_LINKS) as SourceId[];
 
 /** 핵심 논문의 DOI — 고유 표기이므로 번역하지 않는다. */
 const PAPER_DOI = '10.1038/s41598-021-00634-7';
@@ -41,7 +42,6 @@ const PAPER_DOI = '10.1038/s41598-021-00634-7';
 type Step = { title: string; body: string; source: string };
 type CaseItem = { value: string; label: string; body: string; source: string };
 type Threshold = { range: string; label: string };
-type Classification = { name: string; items: string[] };
 type PaperCopy = {
   kicker: string;
   journal: string;
@@ -148,10 +148,6 @@ export default async function AnilineHazardInfographic() {
   const steps = t.raw('steps.items') as Step[];
   const cases = t.raw('cases.items') as CaseItem[];
   const thresholds = t.raw('thresholds.items') as Threshold[];
-  const classes = [
-    t.raw('classification.aniline') as Classification,
-    t.raw('classification.nMethylaniline') as Classification,
-  ];
   const paper = t.raw('paper') as PaperCopy;
   const sourceLabels = t.raw('sources.items') as Record<SourceId, string>;
 
@@ -193,17 +189,16 @@ export default async function AnilineHazardInfographic() {
         ))}
       </ol>
 
-      {/* 2. 사람 사례 · 증상 단계 | 규제기관 분류 */}
-      <div className="mt-4 grid gap-4 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
-        <div className="grid gap-4 sm:grid-cols-2">
-          <h4 className="sr-only">{t('cases.title')}</h4>
-          {cases.map((item) => (
-            <div key={item.value} className="rounded-md bg-white p-5">
-              <p className="text-3xl font-bold tracking-[-0.02em] text-[var(--color-indigo-deep)]">{item.value}</p>
-              <p className="mt-1 text-sm font-semibold break-keep text-[var(--color-denim)]">{item.label}</p>
-              <p className="mt-3 text-[0.8125rem] leading-[1.75] break-keep text-[var(--color-ink)]/85">{item.body}</p>
-              <p className="mt-3 text-[0.7rem] leading-snug break-keep text-[var(--color-slate-muted)]">{item.source}</p>
-            </div>
+      {/* 2. 사람 사례 · 증상 단계 — 규제기관 분류는 2026-09-29 고객 요청으로 별도 상자(AnilineClassification)로 뺐다 */}
+      <div className="mt-4 grid gap-4 sm:grid-cols-2">
+        <h4 className="sr-only">{t('cases.title')}</h4>
+        {cases.map((item) => (
+          <div key={item.value} className="rounded-md bg-white p-5">
+            <p className="text-3xl font-bold tracking-[-0.02em] text-[var(--color-indigo-deep)]">{item.value}</p>
+            <p className="mt-1 text-sm font-semibold break-keep text-[var(--color-denim)]">{item.label}</p>
+            <p className="mt-3 text-[0.8125rem] leading-[1.75] break-keep text-[var(--color-ink)]/85">{item.body}</p>
+            <p className="mt-3 text-[0.7rem] leading-snug break-keep text-[var(--color-slate-muted)]">{item.source}</p>
+          </div>
           ))}
 
           <div className="rounded-md bg-white p-5 sm:col-span-2">
@@ -223,29 +218,6 @@ export default async function AnilineHazardInfographic() {
             </ol>
             <SourceNote className="mt-4">{t('thresholds.source')}</SourceNote>
           </div>
-        </div>
-
-        <div className="rounded-md bg-white p-5">
-          <h4 className="text-[0.95rem] font-bold break-keep text-[var(--color-indigo-deep)]">
-            {t('classification.title')}
-          </h4>
-          {classes.map((group) => (
-            <div key={group.name} className="mt-4">
-              <p className="text-sm font-semibold text-[var(--color-ink)]">{group.name}</p>
-              <ul className="mt-2 flex flex-wrap gap-1.5">
-                {group.items.map((item) => (
-                  <li
-                    key={item}
-                    className="rounded-full border border-[color:var(--color-washed)] bg-[var(--color-ivory)] px-2.5 py-1 text-[0.72rem] leading-snug break-keep text-[var(--color-ink)]/85"
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-          <SourceNote className="mt-4">{t('classification.note')}</SourceNote>
-        </div>
       </div>
 
       {/* 3. 핵심 논문 — 표지 요약 카드와 내용 요약 */}
@@ -269,7 +241,7 @@ export default async function AnilineHazardInfographic() {
           <p className="mt-1 text-[0.8125rem] text-[var(--color-slate-muted)]">{paper.published}</p>
           <p className="mt-1 font-mono text-[0.72rem] text-[var(--color-slate-muted)]">doi:{PAPER_DOI}</p>
           <ExternalLink
-            href={SOURCE_LINKS.cordin2021}
+            href={HAZARD_SOURCE_LINKS.cordin2021}
             hint={paper.externalHint}
             className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
           >
@@ -303,7 +275,7 @@ export default async function AnilineHazardInfographic() {
           {SOURCE_IDS.map((id) => (
             <li key={id}>
               <ExternalLink
-                href={SOURCE_LINKS[id]}
+                href={HAZARD_SOURCE_LINKS[id]}
                 hint={paper.externalHint}
                 className="underline underline-offset-2 hover:text-[var(--color-indigo-deep)]"
               >

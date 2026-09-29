@@ -48,6 +48,7 @@
 | 화면 | 위치 | 컴포넌트 | 근거 | 자산 |
 |---|---|---|---|---|
 | 아닐린 · N-메틸아닐린 피부 유해성 인포그래픽 (2026-09-29) | `/data-certifications#test-results` — 아닐린 표 제목 아래 · 표 위 | `AnilineHazardInfographic` | 외부 문헌 · 기관 자료 11건 (Sci Rep 2021 핵심 논문, 사람 피부 흡수 연구 3건, 사례 보고 2건, ATSDR, IARC 127권, EU CLP 조화 분류) — 목록과 표시 규칙은 `docs/blugene-claims.md` A-2 | 코드로 그린 SVG 아이콘 5개. 새 이미지 파일 없음. 논문 표지는 PDF 를 복사하지 않고 서지 정보 카드로 요약 |
+| 규제기관의 분류 상자 (2026-09-29) | `/data-certifications#test-results` — 인포그래픽 아래 · 시험 조건 목록 위; `/` — 「보이지 않는 것까지」 단락의 강조 블록 아래 · 그래프 위 | `AnilineClassification` | EU CLP 조화 분류(PubChem GHS, ECHA 인용) · IARC 127권 — `docs/blugene-claims.md` A-2 | 새 이미지 파일 없음 |
 
 ## 공개하지 않은 항목과 이유
 

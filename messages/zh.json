@@ -365,6 +365,8 @@
     },
     "classification": {
       "title": "监管机构的分类",
+      "eyebrow": "EU CLP · IARC",
+      "intro": "监管机构如何对这两种物质进行分类。这也是下方检测结果测定这两种物质的原因。",
       "aniline": {
         "name": "苯胺",
         "items": [
@@ -385,7 +387,10 @@
           "长期或反复接触可能对器官造成伤害（H373）"
         ]
       },
-      "note": "危险说明来自欧盟 CLP 法规（EC 1272/2008）附件VI的统一分类。IARC 的评估来自2020年会议（第127卷）。"
+      "note": "危险说明来自欧盟 CLP 法规（EC 1272/2008）附件VI的统一分类。IARC 的评估来自2020年会议（第127卷）。",
+      "linkClpAniline": "欧盟 CLP 统一分类 — 苯胺（PubChem GHS）",
+      "linkClpNMethylaniline": "欧盟 CLP 统一分类 — N-甲基苯胺（PubChem GHS）",
+      "linkIarc": "IARC 专著第127卷"
     },
     "result": {
       "label": "Blugene 检测结果",

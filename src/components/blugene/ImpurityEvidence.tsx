@@ -2,6 +2,7 @@ import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import SectionHeading, { keepLastWords } from '@/components/blugene/SectionHeading';
 import SourceNote from '@/components/blugene/SourceNote';
+import AnilineClassification from '@/components/blugene/AnilineClassification';
 import ComparisonChart, {
   type ChartRow,
   type ChartSeries,
@@ -144,6 +145,10 @@ export default async function ImpurityEvidence() {
             </SourceNote>
           </div>
         </div>
+
+        {/* 규제기관의 분류 — 2026-09-29 고객 요청으로 데이터 · 인증 페이지의 상자를 이 단락에도 둔다.
+            두 물질이 왜 시험 대상인지를 결과 바로 아래에서 보여 준다. */}
+        <AnilineClassification className="mt-12" />
 
         {/* 시판 9개 샘플 비교 — 그래프만 보인다. 표는 sr-only 텍스트 대안으로만 남는다(2026-09-29 고객 요청). */}
         <div className="mt-14 border-t border-[color:var(--color-washed)] pt-10 sm:mt-16 lg:mt-20">

@@ -365,6 +365,8 @@
     },
     "classification": {
       "title": "Düzenleyici kurumlar nasıl sınıflandırıyor",
+      "eyebrow": "AB CLP · IARC",
+      "intro": "Düzenleyici kurumların bu iki maddeyi nasıl sınıflandırdığı. Aşağıdaki test sonuçlarının bu iki maddeyi ölçmesinin nedeni budur.",
       "aniline": {
         "name": "Anilin",
         "items": [
@@ -385,7 +387,10 @@
           "Uzun süreli veya tekrarlı maruz kalma sonucu organlarda hasara yol açabilir (H373)"
         ]
       },
-      "note": "Zararlılık ifadeleri AB CLP Tüzüğü (EC) 1272/2008 Ek VI uyumlaştırılmış sınıflandırmasından alınmıştır. IARC değerlendirmesi 2020 toplantısına (Cilt 127) aittir."
+      "note": "Zararlılık ifadeleri AB CLP Tüzüğü (EC) 1272/2008 Ek VI uyumlaştırılmış sınıflandırmasından alınmıştır. IARC değerlendirmesi 2020 toplantısına (Cilt 127) aittir.",
+      "linkClpAniline": "AB CLP uyumlaştırılmış sınıflandırması — anilin (PubChem GHS)",
+      "linkClpNMethylaniline": "AB CLP uyumlaştırılmış sınıflandırması — N-metilanilin (PubChem GHS)",
+      "linkIarc": "IARC Monografları, Cilt 127"
     },
     "result": {
       "label": "Blugene test sonucu",

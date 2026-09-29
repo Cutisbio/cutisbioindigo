@@ -365,6 +365,8 @@
     },
     "classification": {
       "title": "規制機関による分類",
+      "eyebrow": "EU CLP · IARC",
+      "intro": "2つの物質を規制機関がどう分類しているかです。下の試験結果でこの2物質を測定する理由です。",
       "aniline": {
         "name": "アニリン",
         "items": [
@@ -385,7 +387,10 @@
           "長期または反復曝露による臓器の障害のおそれ(H373)"
         ]
       },
-      "note": "EU CLP規則(EC 1272/2008)附属書VIの調和分類による有害性情報です。IARCの評価は2020年の会議(第127巻)の結果です。"
+      "note": "EU CLP規則(EC 1272/2008)附属書VIの調和分類による有害性情報です。IARCの評価は2020年の会議(第127巻)の結果です。",
+      "linkClpAniline": "EU CLP 調和分類 — アニリン(PubChem GHS)",
+      "linkClpNMethylaniline": "EU CLP 調和分類 — N-メチルアニリン(PubChem GHS)",
+      "linkIarc": "IARC Monographs 第127巻"
     },
     "result": {
       "label": "Blugene 試験結果",

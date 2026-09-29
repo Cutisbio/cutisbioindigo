@@ -5032,6 +5032,46 @@
       "it": "adaacf9ac7319eb1",
       "zh": "adaacf9ac7319eb1",
       "tr": "adaacf9ac7319eb1"
+    },
+    "AnilineHazard.classification.eyebrow": {
+      "ja": "53d06a310bc54a5f",
+      "en": "53d06a310bc54a5f",
+      "fr": "53d06a310bc54a5f",
+      "it": "53d06a310bc54a5f",
+      "zh": "53d06a310bc54a5f",
+      "tr": "53d06a310bc54a5f"
+    },
+    "AnilineHazard.classification.intro": {
+      "ja": "c7403fbb34628a10",
+      "en": "c7403fbb34628a10",
+      "fr": "c7403fbb34628a10",
+      "it": "c7403fbb34628a10",
+      "zh": "c7403fbb34628a10",
+      "tr": "c7403fbb34628a10"
+    },
+    "AnilineHazard.classification.linkClpAniline": {
+      "ja": "28d6ffb35cc7ee77",
+      "en": "28d6ffb35cc7ee77",
+      "fr": "28d6ffb35cc7ee77",
+      "it": "28d6ffb35cc7ee77",
+      "zh": "28d6ffb35cc7ee77",
+      "tr": "28d6ffb35cc7ee77"
+    },
+    "AnilineHazard.classification.linkClpNMethylaniline": {
+      "ja": "9715550f3fcbabf2",
+      "en": "9715550f3fcbabf2",
+      "fr": "9715550f3fcbabf2",
+      "it": "9715550f3fcbabf2",
+      "zh": "9715550f3fcbabf2",
+      "tr": "9715550f3fcbabf2"
+    },
+    "AnilineHazard.classification.linkIarc": {
+      "ja": "4036276b188b128a",
+      "en": "4036276b188b128a",
+      "fr": "4036276b188b128a",
+      "it": "4036276b188b128a",
+      "zh": "4036276b188b128a",
+      "tr": "4036276b188b128a"
     }
   }
 }
