@@ -4,6 +4,7 @@ import SectionHeading from '@/components/blugene/SectionHeading';
 import SourceNote from '@/components/blugene/SourceNote';
 import BrandManifesto from '@/components/blugene/BrandManifesto';
 import PromiseSection from '@/components/blugene/PromiseSection';
+import SdgSection from '@/components/blugene/SdgSection';
 import Wordmark from '@/components/blugene/Wordmark';
 import { BRAND, LOCALES, buildPageMetadata } from '@/data/blugene/site';
 import { productSummary } from '@/data/blugene/evidence';
@@ -94,6 +95,9 @@ export default async function BrandPage({ params }: { params: Promise<{ locale: 
           2026-09-12 고객 요청으로 뺀 「우리가 말하지 않는 것」 상자(Brand.limits*)의 범위는
           docs/blugene-claims.md 와 check-blugene-data 의 금지어 검사가 계속 지킨다. */}
       <PromiseSection />
+
+      {/* 유엔 SDG 9 · 12 — 2026-09-29 고객 요청으로 「우리가 약속하는 것」 아래에 둔다(필리 구성 참고, 문구는 큐티스바이오 사실). */}
+      <SdgSection />
     </>
   );
 }

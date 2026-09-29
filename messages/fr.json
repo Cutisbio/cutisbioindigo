@@ -528,6 +528,28 @@
     "relationBody": "Blugene est la marque de l'activité indigo de CutisBio Co., Ltd. La raison sociale ainsi que les mentions des certificats et rapports d'essai conservent le nom CutisBio.",
     "cta": "Demander des échantillons et la documentation technique"
   },
+  "Sdg": {
+    "eyebrow": "Objectifs de développement durable de l'ONU",
+    "title": "Deux objectifs auxquels nous voulons contribuer",
+    "body": "Parmi les objectifs de développement durable (ODD) de l'ONU, les deux qui touchent le plus directement le travail de CutisBio.",
+    "items": [
+      {
+        "number": "9",
+        "name": "Industrie, innovation et infrastructure",
+        "target": "9.4 D'ici à 2030, moderniser l'infrastructure et adapter les industries afin de les rendre durables, par une utilisation plus rationnelle des ressources et un recours accru aux technologies et procédés industriels propres et respectueux de l'environnement, chaque pays agissant dans la mesure de ses moyens.",
+        "body": "CutisBio réécrit la façon de produire le colorant indigo grâce à un procédé biotechnologique : la fermentation microbienne de précision. À la place de matières premières issues du pétrole, elle utilise le carbone de biomasse renouvelable (98 % de carbone biosourcé, ASTM D6866-24a) et fournit cet indigo à l'industrie du denim, contribuant ainsi à la transition de l'industrie de la teinture."
+      },
+      {
+        "number": "12",
+        "name": "Consommation et production responsables",
+        "target": "12.4 D'ici à 2020, instaurer une gestion écologiquement rationnelle des produits chimiques et de tous les déchets tout au long de leur cycle de vie, conformément aux principes directeurs arrêtés à l'échelle internationale, et réduire considérablement leur déversement dans l'air, l'eau et le sol, afin de minimiser leurs effets négatifs sur la santé et l'environnement.",
+        "body": "CutisBio fait de la gestion rationnelle des produits chimiques le point de départ de la conception de ses produits. Les impuretés nocives présentes dans l'indigo de synthèse, l'aniline et la N-méthylaniline, sont vérifiées par une méthode d'essai reconnue et maintenues non détectées (limite de détection 5 mg/kg) ; les certifications ZDHC MRSL Level 1 et OEKO-TEX® ECO PASSPORT nous engagent à respecter des référentiels de gestion des substances dangereuses. Les résultats d'essais et les certificats originaux sont publiés sur la page Données · Certifications."
+      }
+    ],
+    "note": "Le libellé des cibles est repris des objectifs de développement durable de l'ONU (2015). Cet affichage exprime notre soutien à ces objectifs et notre direction de contribution ; il n'implique ni parrainage ni certification de l'ONU.",
+    "unLinkLabel": "Page officielle des ODD de l'ONU",
+    "externalHint": "s'ouvre dans un nouvel onglet"
+  },
   "Technology": {
     "metaTitle": "Technologie — comment le bio-indigo est produit par fermentation microbienne",
     "metaDescription": "Les quatre voies de fabrication de l'indigo, la production par fermentation microbienne et les résultats d'essai de carbone biosourcé.",

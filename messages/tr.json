@@ -528,6 +528,28 @@
     "relationBody": "Blugene, CutisBio Co., Ltd.'nin indigo işinin marka adıdır. Şirket unvanı ile sertifikalardaki ve test raporlarındaki gösterimde CutisBio adı olduğu gibi kullanılır.",
     "cta": "Numune · teknik belge talebi"
   },
+  "Sdg": {
+    "eyebrow": "BM Sürdürülebilir Kalkınma Amaçları",
+    "title": "Katkı sunmayı hedeflediğimiz iki amaç",
+    "body": "BM Sürdürülebilir Kalkınma Amaçları (SKA) arasında CutisBio'nun işine en doğrudan dokunan iki amaç.",
+    "items": [
+      {
+        "number": "9",
+        "name": "Sanayi, Yenilikçilik ve Altyapı",
+        "target": "9.4 2030'a kadar, her ülkenin kendi kapasitesine göre harekete geçmesiyle, kaynak kullanım verimliliğini artırarak ve temiz, çevreye duyarlı teknolojiler ile sanayi süreçlerinin benimsenmesini yaygınlaştırarak altyapıyı iyileştirmek ve sanayileri sürdürülebilir olacak şekilde dönüştürmek.",
+        "body": "CutisBio, mikrobiyal hassas fermantasyon adlı biyoteknolojik süreçle indigo boyasının üretim biçimini yeniden yazıyor. Petrol kaynaklı hammadde yerine yenilenebilir biyokütle karbonu kullanıyor (%98 biyo bazlı karbon içeriği, ASTM D6866-24a) ve bu indigoyu denim sektörüne sunarak boyama sektörünün dönüşümüne katkıda bulunmayı amaçlıyor."
+      },
+      {
+        "number": "12",
+        "name": "Sorumlu Üretim ve Tüketim",
+        "target": "12.4 2020'ye kadar, üzerinde anlaşılmış uluslararası çerçevelere uygun olarak kimyasalların ve tüm atıkların yaşam döngüleri boyunca çevreye duyarlı yönetimini sağlamak ve insan sağlığı ile çevre üzerindeki olumsuz etkilerini en aza indirmek için havaya, suya ve toprağa salımlarını önemli ölçüde azaltmak.",
+        "body": "CutisBio, kimyasalların sağlıklı yönetimini ürün tasarımının başlangıç noktası olarak alır. Sentetik indigoda kalan zararlı safsızlıklar olan anilin ve N-metilanilin, tanınmış bir test yöntemiyle kontrol edilir ve tespit edilmedi düzeyinde tutulur (tespit sınırı 5 mg/kg); ZDHC MRSL Level 1 ve OEKO-TEX® ECO PASSPORT sertifikaları bizi tehlikeli kimyasal yönetim standartlarına bağlar. Test sonuçları ve orijinal sertifikalar Veriler · Sertifikalar sayfasında yayımlanır."
+      }
+    ],
+    "note": "Amaç metinleri BM Sürdürülebilir Kalkınma Amaçları'nın (2015) hedef metinlerinden çevrilmiştir. Bu gösterim amaçlara desteğimizi ve katkı yönümüzü ifade eder; BM'nin sponsorluğunu veya onayını ima etmez.",
+    "unLinkLabel": "BM SKA resmi sayfası",
+    "externalHint": "yeni sekmede açılır"
+  },
   "Technology": {
     "metaTitle": "Teknoloji — biyo indigo mikrobiyal fermantasyonla nasıl üretilir",
     "metaDescription": "İndigo üretiminin dört yolunu, mikrobiyal fermantasyona dayalı üretimi ve biyobazlı karbon test sonuçlarını açıklıyoruz.",

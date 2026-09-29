@@ -528,6 +528,28 @@
     "relationBody": "Blugene è il brand dell'attività indaco di CutisBio Co., Ltd. La ragione sociale e le diciture di certificati e rapporti di prova mantengono il nome CutisBio.",
     "cta": "Richiedi campioni e documentazione tecnica"
   },
+  "Sdg": {
+    "eyebrow": "Obiettivi di sviluppo sostenibile dell'ONU",
+    "title": "Due obiettivi a cui vogliamo contribuire",
+    "body": "Tra gli Obiettivi di sviluppo sostenibile (SDG) dell'ONU, i due che toccano più direttamente il lavoro di CutisBio.",
+    "items": [
+      {
+        "number": "9",
+        "name": "Imprese, innovazione e infrastrutture",
+        "target": "9.4 Entro il 2030, ammodernare le infrastrutture e riconvertire le industrie per renderle sostenibili, con una maggiore efficienza nell'uso delle risorse e una più ampia adozione di tecnologie e processi industriali puliti e rispettosi dell'ambiente, con tutti i paesi che agiscono in base alle rispettive capacità.",
+        "body": "CutisBio riscrive il modo in cui si produce il colorante indaco con un processo biotecnologico: la fermentazione microbica di precisione. Al posto di materie prime derivate dal petrolio usa carbonio di biomassa rinnovabile (contenuto di carbonio biobased del 98%, ASTM D6866-24a) e fornisce questo indaco all'industria del denim, contribuendo alla transizione dell'industria della tintura."
+      },
+      {
+        "number": "12",
+        "name": "Consumo e produzione responsabili",
+        "target": "12.4 Entro il 2020, raggiungere una gestione ecologicamente corretta delle sostanze chimiche e di tutti i rifiuti durante l'intero ciclo di vita, in conformità con i quadri internazionali concordati, e ridurre in modo significativo il loro rilascio nell'aria, nell'acqua e nel suolo, al fine di ridurre al minimo i loro effetti negativi sulla salute umana e sull'ambiente.",
+        "body": "CutisBio pone la gestione corretta delle sostanze chimiche all'inizio della progettazione del prodotto. Le impurità nocive presenti nell'indaco sintetico, anilina e N-metilanilina, vengono verificate con un metodo di prova riconosciuto e mantenute non rilevate (limite di rilevabilità 5 mg/kg); le certificazioni ZDHC MRSL Level 1 e OEKO-TEX® ECO PASSPORT ci vincolano a standard di gestione delle sostanze pericolose. I risultati dei test e i certificati originali sono pubblicati nella pagina Dati · Certificazioni."
+      }
+    ],
+    "note": "Il testo degli obiettivi è tratto dai target degli Obiettivi di sviluppo sostenibile dell'ONU (2015). Questa presentazione esprime il nostro sostegno agli obiettivi e la direzione del nostro contributo; non implica patrocinio o certificazione da parte dell'ONU.",
+    "unLinkLabel": "Pagina ufficiale degli SDG dell'ONU",
+    "externalHint": "si apre in una nuova scheda"
+  },
   "Technology": {
     "metaTitle": "Tecnologia — come nasce il bio-indaco dalla fermentazione microbica",
     "metaDescription": "Le quattro vie per produrre l'indaco, la produzione per fermentazione microbica e i risultati delle prove sul carbonio biobased.",
