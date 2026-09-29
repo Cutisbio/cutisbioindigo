@@ -111,12 +111,6 @@
 # Netlify 에서는 Next 미들웨어가 이 경로를 잡지 못해 404 가 났고, Google 색인에 옛 주소가 남아 있었다(2026-09-29).
 # 루트(/)는 언어 감지(307)를 그대로 둔다. 파일 확장자가 있는 경로(robots.txt · sitemap.xml · llms.txt)는 건드리지 않는다.
 [[redirects]]
-  from = "/blog/*"
-  to = "/ko/blog/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/brand"
   to = "/ko/brand"
   status = 301
@@ -158,8 +152,15 @@
   status = 301
   force = true
 
+# /blog 는 /blog/* 보다 먼저 두어야 한다 — 뒤에 두면 /blog 가 /blog/* 에 잡혀 /ko/blog/ (끝 슬래시) 로 가서 한 번 더 넘어간다.
 [[redirects]]
   from = "/blog"
   to = "/ko/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/ko/blog/:splat"
   status = 301
   force = true
