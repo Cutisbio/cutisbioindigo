@@ -548,6 +548,10 @@
     ],
     "note": "The target wording is quoted from the UN Sustainable Development Goals (2015). Showing these goals expresses our support and direction of contribution; it does not imply UN sponsorship or endorsement.",
     "unLinkLabel": "Official UN SDG page",
+    "iconAlt": "Official United Nations Sustainable Development Goal {number} icon",
+    "unDisclaimer": "The content of this publication has not been approved by the United Nations and does not reflect the views of the United Nations or its officials or Member States.",
+    "unSiteLabel": "United Nations Sustainable Development Goals website",
+    "guidelinesLabel": "UN guidelines for the use of the SDG logo and icons (PDF)",
     "externalHint": "opens in a new tab"
   },
   "Technology": {

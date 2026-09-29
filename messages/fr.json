@@ -548,6 +548,10 @@
     ],
     "note": "Le libellé des cibles est repris des objectifs de développement durable de l'ONU (2015). Cet affichage exprime notre soutien à ces objectifs et notre direction de contribution ; il n'implique ni parrainage ni certification de l'ONU.",
     "unLinkLabel": "Page officielle des ODD de l'ONU",
+    "iconAlt": "Icône officielle de l'objectif de développement durable {number} des Nations Unies",
+    "unDisclaimer": "Le contenu de cette publication n'a pas été approuvé par les Nations Unies et ne reflète pas les vues des Nations Unies, de ses fonctionnaires ou de ses États Membres.",
+    "unSiteLabel": "Site des Nations Unies sur les objectifs de développement durable",
+    "guidelinesLabel": "Directives de l'ONU pour l'utilisation du logo et des icônes des ODD (PDF)",
     "externalHint": "s'ouvre dans un nouvel onglet"
   },
   "Technology": {

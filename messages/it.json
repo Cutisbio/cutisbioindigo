@@ -548,6 +548,10 @@
     ],
     "note": "Il testo degli obiettivi è tratto dai target degli Obiettivi di sviluppo sostenibile dell'ONU (2015). Questa presentazione esprime il nostro sostegno agli obiettivi e la direzione del nostro contributo; non implica patrocinio o certificazione da parte dell'ONU.",
     "unLinkLabel": "Pagina ufficiale degli SDG dell'ONU",
+    "iconAlt": "Icona ufficiale dell'Obiettivo di sviluppo sostenibile {number} delle Nazioni Unite",
+    "unDisclaimer": "Il contenuto di questa pubblicazione non è stato approvato dalle Nazioni Unite e non riflette le opinioni delle Nazioni Unite, dei suoi funzionari o degli Stati membri.",
+    "unSiteLabel": "Sito delle Nazioni Unite sugli Obiettivi di sviluppo sostenibile",
+    "guidelinesLabel": "Linee guida ONU per l'uso del logo e delle icone SDG (PDF)",
     "externalHint": "si apre in una nuova scheda"
   },
   "Technology": {

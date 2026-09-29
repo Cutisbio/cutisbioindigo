@@ -548,6 +548,10 @@
     ],
     "note": "目标文字引自联合国可持续发展目标（2015年）的具体目标原文。此处展示表示对目标的支持及我们的贡献方向，不代表联合国的赞助或认证。",
     "unLinkLabel": "联合国 SDGs 官方页面",
+    "iconAlt": "联合国可持续发展目标 {number} 官方图标",
+    "unDisclaimer": "本页面内容未经联合国批准，不代表联合国或其官员或会员国的观点。",
+    "unSiteLabel": "联合国可持续发展目标网站",
+    "guidelinesLabel": "联合国 SDG 标识与图标使用指南（PDF）",
     "externalHint": "在新标签页中打开"
   },
   "Technology": {
