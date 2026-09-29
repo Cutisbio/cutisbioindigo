@@ -42,9 +42,12 @@ const FORM_COPY: Record<
 
 export default async function ProductFormats({
   variant = 'section',
+  showCycles = true,
 }: {
   /** 'section' 이면 배경·여백을 가진 독립 섹션, 'bare' 면 내부 콘텐츠만 반환한다 */
   variant?: 'section' | 'bare';
+  /** false 면 「염색 횟수에 따른 발색 비교」 블록을 그리지 않는다 (홈, 2026-09-29 고객 요청). 기본 true. */
+  showCycles?: boolean;
 }) {
   const t = await getTranslations('Products');
   const tc = await getTranslations('Common');
@@ -117,7 +120,9 @@ export default async function ProductFormats({
         {t('specNote')}
       </SourceNote>
 
-      {/* 염색 횟수 비교 — 카드 격자와 리듬을 달리해 좌우 비대칭으로 놓는다 (모바일에서는 도판이 먼저) */}
+      {/* 염색 횟수 비교 — 카드 격자와 리듬을 달리해 좌우 비대칭으로 놓는다 (모바일에서는 도판이 먼저).
+          홈은 showCycles={false} 로 이 블록을 빼고(2026-09-29 고객 요청), /dyeing-printing 에만 보인다. */}
+      {showCycles && (
       <div className="mt-14 grid gap-8 border-t border-[color:var(--color-washed)] pt-12 lg:mt-20 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1fr)] lg:gap-14 lg:pt-16">
         <div className="order-2 lg:order-1">
           <div className="flex flex-wrap items-center gap-3">
@@ -165,6 +170,7 @@ export default async function ProductFormats({
           </figcaption>
         </figure>
       </div>
+      )}
     </>
   );
 

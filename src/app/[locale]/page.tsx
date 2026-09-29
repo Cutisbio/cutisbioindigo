@@ -82,7 +82,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       */}
       <section className="w-full bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
-          <ProductFormats variant="bare" />
+          {/* 「염색 횟수에 따른 발색 비교」 도판은 2026-09-29 고객 요청으로 홈에서 뺐다 — /dyeing-printing 에 있다 */}
+          <ProductFormats variant="bare" showCycles={false} />
         </div>
       </section>
 
@@ -108,7 +109,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       {/* 07. 당신만의 파랑 */}
       <section className="w-full bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
-          <ShadeLibrary variant="bare" />
+          {/* 「인디루빈이 만드는 색조 변화」 비교는 2026-09-29 고객 요청으로 홈에서 뺐다 — /dyeing-printing 에 있다 */}
+          <ShadeLibrary variant="bare" showIndirubin={false} />
         </div>
       </section>
 

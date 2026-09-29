@@ -33,9 +33,15 @@ const INDIRUBIN_IMAGE_HEIGHT = 386;
 
 export default function ShadeLibrary({
   variant = 'section',
+  showIndirubin = true,
 }: {
   /** 'section' 이면 배경·여백을 가진 독립 섹션, 'bare' 면 내부 콘텐츠만 반환한다 */
   variant?: 'section' | 'bare';
+  /**
+   * false 면 「인디루빈이 만드는 색조 변화」 블록과 인디루빈 약리 활성 고지(medicalNote)를 그리지 않는다
+   * (홈, 2026-09-29 고객 요청). 색상 조건 안내(colorDisclaimer)는 견본 격자에도 해당하므로 그대로 둔다. 기본 true.
+   */
+  showIndirubin?: boolean;
 }) {
   const t = useTranslations('ShadeLibrary');
   const tc = useTranslations('Common');
@@ -127,6 +133,7 @@ export default function ShadeLibrary({
       </div>
 
       {/* ── 인디루빈 조성 비교 ─────────────────────────────────── */}
+      {showIndirubin && (
       <div className="mt-16 border-t border-[color:var(--color-washed)] pt-12 sm:mt-20 sm:pt-14">
         {/* 표·비교 블록의 제목 단(md). 1.875rem 에서 멈추면 바로 아래 카드 제목(1.125rem)과 붙어 보인다. */}
         <h3
@@ -214,12 +221,14 @@ export default function ShadeLibrary({
 
         <SourceNote className="mt-6 max-w-3xl">{t('indirubinNote')}</SourceNote>
       </div>
+      )}
 
       {/* ── 조건 표기 ─────────────────────────────────────────── */}
-      {/* '이 색으로 샘플 문의하기' 버튼은 2026-09-12 고객 요청으로 뺐다. 여기에는 색상 조건 안내만 남긴다. */}
+      {/* '이 색으로 샘플 문의하기' 버튼은 2026-09-12 고객 요청으로 뺐다. 여기에는 색상 조건 안내만 남긴다.
+          인디루빈 약리 활성 고지는 인디루빈 블록이 있을 때만 뜻이 있으므로 함께 켜고 끈다. */}
       <div className="mt-12 max-w-2xl space-y-2 border-t border-[color:var(--color-washed)] pt-8 sm:mt-14">
         <SourceNote>{t('colorDisclaimer')}</SourceNote>
-        <SourceNote>{t('medicalNote')}</SourceNote>
+        {showIndirubin && <SourceNote>{t('medicalNote')}</SourceNote>}
       </div>
     </>
   );
