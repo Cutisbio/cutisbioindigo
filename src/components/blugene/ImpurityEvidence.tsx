@@ -7,7 +7,6 @@ import ComparisonChart, {
   type ChartSeries,
 } from '@/components/blugene/ComparisonChart';
 import {
-  SOURCE_AS_OF,
   anilineChartMax,
   anilineTest,
   marketSamples,
@@ -23,14 +22,15 @@ import {
  *   방법 검출한계(5 mg/kg)와 시험법 · 시험기관 · 보고서 번호를 같은 블록 안에서 함께 밝힌다.
  * - 큰 숫자 카드 대신 하나의 강조 블록 안에 두 항목을 나란히 세우고, 두 항목이 공유하는
  *   시험 조건은 그 아래에 한 번만 둔다(항목마다 블록을 두면 같은 4행이 두 번 반복된다).
- * - 시판 9개 샘플 비교는 ComparisonChart 가 그래프와 표를 함께 제공한다.
+ * - 시판 9개 샘플 비교는 ComparisonChart 의 그래프만 보여 준다. 표 · 캡션 · 각주(익명 표기 · Company M ·
+ *   표본 범위 · 출처)는 2026-09-29 고객 요청으로 홈에서 뺐다 — 데이터 · 인증 페이지에 그대로 있다.
+ *   표는 그래프의 텍스트 대안으로 sr-only 로만 남는다(ComparisonChart showTable={false}).
  *   원본 그래프 이미지(Figure 2-2)는 2026-09-29 고객 요청으로 홈에서 뺐다 — 데이터 · 인증 페이지의
  *   원본 도판 묶음(/data-certifications#test-results)에서 본다.
  */
 export default async function ImpurityEvidence() {
   const t = await getTranslations('Impurity');
   const tHub = await getTranslations('DataHub');
-  const tCommon = await getTranslations('Common');
 
   /** 인디고 유형 라벨 — Company M 은 화학 · 식물 두 유형에 모두 등장하므로 항상 함께 표시한다. */
   const typeLabel: Record<IndigoType, string> = {
@@ -145,7 +145,7 @@ export default async function ImpurityEvidence() {
           </div>
         </div>
 
-        {/* 시판 9개 샘플 비교 — 그래프와 표를 같이 제공한다 (JS 없이도 표로 읽힌다) */}
+        {/* 시판 9개 샘플 비교 — 그래프만 보인다. 표는 sr-only 텍스트 대안으로만 남는다(2026-09-29 고객 요청). */}
         <div className="mt-14 border-t border-[color:var(--color-washed)] pt-10 sm:mt-16 lg:mt-20">
           <ComparisonChart
             title={t('chartTitle')}
@@ -160,30 +160,20 @@ export default async function ImpurityEvidence() {
             sampleHeader={tHub('tableSample')}
             groupHeader={tHub('tableType')}
             accessibleNote={tHub('chartAccessibleNote')}
-            caption={t('chartCaption')}
+            showTable={false}
           />
         </div>
 
-        {/* 인용 조건 — 원본 그래프 이미지(Figure 2-2)는 2026-09-29 고객 요청으로 홈에서 뺐다. 데이터 · 인증 페이지에 남아 있다. */}
-        <div className="mt-12 max-w-3xl space-y-2.5">
-          <SourceNote>{tHub('anonymousNote')}</SourceNote>
-          <SourceNote>{tHub('sameLabelNote')}</SourceNote>
-          <SourceNote>{tHub('sampleScopeNote')}</SourceNote>
-          <SourceNote>
-            {tCommon('sourceLabel')} · {tCommon('cataloguePage', { page: anilineTest.page })}{' '}
-            Table {anilineTest.table} · Figure {anilineTest.figure} ·{' '}
-            {tCommon('asOf', { date: SOURCE_AS_OF })}
-          </SourceNote>
-
-          <div className="pt-4">
-            <Link
-              href="/data-certifications"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
-            >
-              {t('cta')}
-              <span aria-hidden="true">→</span>
-            </Link>
-          </div>
+        {/* 각주(익명 표기 · Company M · 표본 범위 · 출처)와 원본 그래프 이미지는 2026-09-29 고객 요청으로 홈에서 뺐다.
+            데이터 · 인증 페이지에 그대로 있다. 이 링크는 홈에서 전체 비교 데이터로 가는 유일한 길이라 남긴다. */}
+        <div className="mt-10">
+          <Link
+            href="/data-certifications"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
+          >
+            {t('cta')}
+            <span aria-hidden="true">→</span>
+          </Link>
         </div>
       </div>
     </section>

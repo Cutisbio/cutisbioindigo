@@ -12,7 +12,9 @@ import SourceNote from '@/components/blugene/SourceNote';
  * - 값 축은 언제나 0 에서 시작하고 눈금값(0, max/4, max/2, 3max/4, max)을 표시한다.
  * - 불검출(N.D.)은 막대를 그리지 않는다. 축 위 0 자리에 짧은 세로 점선 캡과 'N.D.' 표식만 둔다.
  *   실제 측정값 0(예: 바이오 기반 탄소 0%)은 축에 붙은 0 높이 막대로 그려 N.D. 와 구분한다.
- * - 그래프의 모든 값은 아래의 실제 HTML 표에서도 그대로 읽을 수 있어야 한다(sr-only 아님).
+ * - 그래프의 모든 값은 아래의 실제 HTML 표에서도 그대로 읽을 수 있어야 한다. 기본은 보이는 표이고,
+ *   showTable={false} 인 화면(홈, 2026-09-29 고객 요청)에서만 캡션 · 표 · 불검출 설명을 화면에서 빼고
+ *   표를 그래프의 텍스트 대안(sr-only)으로만 남긴다.
  * - 애니메이션 · hover 전용 정보를 쓰지 않는다.
  * - 가로 스크롤 영역(.table-scroll)은 키보드로도 스크롤할 수 있어야 하므로
  *   tabIndex={0} + role="region" + 접근 가능한 이름을 가진다.
@@ -52,6 +54,8 @@ export interface ComparisonChartProps {
   caption?: string;
   /** 가로 스크롤 영역의 접근 가능한 이름. 없으면 title 을 쓴다. */
   scrollRegionLabel?: string;
+  /** false 면 캡션 · 표 · 불검출 설명을 화면에서 빼고, 표만 sr-only 텍스트 대안으로 남긴다. 기본 true. */
+  showTable?: boolean;
 }
 
 /* ── 도면 좌표 상수 (viewBox 단위) ───────────────────────────── */
@@ -148,6 +152,7 @@ export default function ComparisonChart({
   accessibleNote,
   caption,
   scrollRegionLabel,
+  showTable = true,
 }: ComparisonChartProps) {
   const safeMax = max > 0 ? max : 1;
 
@@ -476,20 +481,9 @@ export default function ComparisonChart({
         </div>
       </div>
 
-      {caption ? <SourceNote className="mt-4">{caption}</SourceNote> : null}
-
-      {/* accessibleNote 는 "값은 아래 표에서도 읽을 수 있다"고 안내하는 문장이므로
-          반드시 표보다 **위**에 있어야 한다. 표 아래로 내려가면 '아래 표'가 가리키는 것이
-          사라져 그래프에서 표를 찾는 독자를 반대 방향으로 보낸다. */}
-      <SourceNote className={caption ? 'mt-2' : 'mt-4'}>{accessibleNote}</SourceNote>
-
-      {/* 그래프와 같은 값을 담은 실제 데이터 표 */}
-      <div
-        className="table-scroll mt-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--color-denim)]"
-        tabIndex={0}
-        role="region"
-        aria-labelledby={tableCaptionId}
-      >
+      {/* 그래프와 같은 값을 담은 실제 데이터 표 — 보이는 모드와 sr-only 모드가 같은 표를 쓴다 */}
+      {(() => {
+        const table = (
         <table className="w-full text-left text-sm" style={{ minWidth: `${tableMinWidth}px` }}>
           <caption
             id={tableCaptionId}
@@ -574,9 +568,42 @@ export default function ComparisonChart({
             ))}
           </tbody>
         </table>
-      </div>
+        );
 
-      <SourceNote className="mt-4">{notDetectedExplain}</SourceNote>
+        if (!showTable) {
+          /* 홈처럼 표를 보이지 않는 화면 — 캡션 · 불검출 설명도 함께 빼고, 그래프의 텍스트 대안으로 표만 sr-only 로 남긴다.
+             초점을 받는 스크롤 영역은 보이지 않는 탭 정지가 되므로 두지 않는다. */
+          return (
+            <div className="sr-only">
+              <p>{accessibleNote}</p>
+              {table}
+              <p>{notDetectedExplain}</p>
+            </div>
+          );
+        }
+
+        return (
+          <>
+            {caption ? <SourceNote className="mt-4">{caption}</SourceNote> : null}
+
+            {/* accessibleNote 는 "값은 아래 표에서도 읽을 수 있다"고 안내하는 문장이므로
+                반드시 표보다 **위**에 있어야 한다. 표 아래로 내려가면 '아래 표'가 가리키는 것이
+                사라져 그래프에서 표를 찾는 독자를 반대 방향으로 보낸다. */}
+            <SourceNote className={caption ? 'mt-2' : 'mt-4'}>{accessibleNote}</SourceNote>
+
+            <div
+              className="table-scroll mt-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--color-denim)]"
+              tabIndex={0}
+              role="region"
+              aria-labelledby={tableCaptionId}
+            >
+              {table}
+            </div>
+
+            <SourceNote className="mt-4">{notDetectedExplain}</SourceNote>
+          </>
+        );
+      })()}
     </div>
   );
 }
