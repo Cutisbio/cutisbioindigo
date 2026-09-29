@@ -43,18 +43,6 @@
     "imageAlt": "A caregiver in a denim jacket holds a child while looking out over cornfields, meadows and water. This is the brand image used on the cover of the supplied catalogue.",
     "imageCredit": "Image included on p.1 of the catalog"
   },
-  "EvidenceStrip": {
-    "carbonValue": "98%",
-    "carbonLabel": "Biobased carbon content",
-    "anilineValue": "Not detected",
-    "anilineLabel": "Aniline",
-    "nMethylanilineValue": "Not detected",
-    "nMethylanilineLabel": "N-methylaniline",
-    "note": "These are test results from the supplied catalogue. Not detected means below the method detection limit of 5 mg/kg under the stated test method; it does not mean a content of 0. The 98% figure is biobased carbon content, not indigo purity or an emissions reduction rate.",
-    "sourceCarbon": "Source: catalogue p.3 Table 1-1 (KATRI, ASTM D6866-24a Method B)",
-    "sourceAniline": "Source: catalogue p.5 Table 2-3 (KOTERI, KS K 0734 2019)",
-    "cta": "See the detailed test data"
-  },
   "Manifesto": {
     "eyebrow": "ACROSS BORDERS. ACROSS GENERATIONS.",
     "title": "Because it touches our skin for a lifetime.",

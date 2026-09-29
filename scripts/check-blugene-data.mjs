@@ -287,7 +287,6 @@ const DISCLAIMER_KEYS = [
   /^Performance\.(honestNote|additionalCaseProvenance)$/,
   /^Certifications\.(scopeNote|verificationNote|brandNameNote|oekoScope)$/,
   /^DataHub\.(notDetectedExplain|sampleScopeNote|regulatoryOmitted|carbonZeroNote)$/,
-  /^EvidenceStrip\.note$/,
   /^ShadeLibrary\.(indirubinNote|medicalNote)$/,
   // Science.diagramNote 는 2026-09 부터 고지문이 아니라 브랜드 서사라 면제하지 않는다. metaphorNote 는 지웠다.
   /^Technology\.routesNote$/,
