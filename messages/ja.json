@@ -299,6 +299,146 @@
     "carbonZeroNote": "Company Z のバイオベース炭素含有率は、カタログ Table 1-1 では 0（pMC 0.30）、Figure 1-3 では N.D. と表記されています。この表は Table 1-1 の値を掲載しています。",
     "reportDateNote": "試験成績書番号 SBED25-00000153-1 はカタログ Table 1-1 に異なる発行日で2回記載されています。原本の表記をそのまま引用しました。"
   },
+  "AnilineHazard": {
+    "eyebrow": "研究で見る皮膚への有害性",
+    "title": "アニリン・N-メチルアニリンは皮膚にどう影響するか",
+    "intro": "合成インディゴに残るこの2つの不純物が皮膚に触れると何が起きるのかを、ヒトを対象にした研究と規制機関の評価からまとめました。下の試験結果表を読む前に知っておきたい背景です。",
+    "scopeNote": "ここで紹介した研究は、作業現場の事故や実験室条件のように曝露濃度が高い状況の結果です。デニム着用時の曝露量は製品や着用条件によって異なり、当サイトはその値を測定していません。数値は各文献に掲載された値をそのまま引用しています。",
+    "steps": {
+      "ariaLabel": "曝露から影響までの5つの段階",
+      "items": [
+        {
+          "title": "合成インディゴの中に残る",
+          "body": "市販の合成インディゴにはアニリンが最大0.6%(6,000 mg/kg)、N-メチルアニリンが最大0.4%(4,000 mg/kg)残ります。インディゴ結晶の内部に閉じ込められているため、酸で洗っても溶媒で抽出しても取り除けません。",
+          "source": "Cordin ら, Sci Rep 2021"
+        },
+        {
+          "title": "衣服から汗へ移る",
+          "body": "市販ジーンズ42本を人工汗に浸した実験では、インディゴ染料が生地1 gあたり3.2〜7.8 mg移行し、濃い色ほど多く移りました。この研究は染料のみを測定し、その中のアニリン量は測定していません。",
+          "source": "Herrero ら, Environ Res 2019"
+        },
+        {
+          "title": "傷のない皮膚も通過する",
+          "body": "アニリンは液体でも蒸気でも健常な皮膚から吸収されます。ヒト志願者の実験では水溶液中のアニリンが皮膚1 cm²あたり毎時0.2〜1.2 mg吸収され、摘出ヒト皮膚では24時間で塗布量の20〜38%が通過しました。皮膚が荒れていた作業者は体内曝露量がより高くなりました。",
+          "source": "Baranowska-Dutkiewicz 1982 · Wellner ら 2008 · Korinth ら 2007"
+        },
+        {
+          "title": "血液が酸素を運べなくする",
+          "body": "体内で2つの物質はヘモグロビンをメトヘモグロビンに変えます。メトヘモグロビンは酸素を運べないため、唇や皮膚が青紫色になり(チアノーゼ)、頭痛・めまい・息苦しさが現れ、重症では意識を失います。症状は曝露から数時間後に現れることもあります。",
+          "source": "ATSDR · Lee ら 2013 · Bernasconi ら 2026"
+        },
+        {
+          "title": "皮膚反応と長期的なリスク",
+          "body": "EUの調和分類では、アニリンはアレルギー性皮膚反応を起こすおそれのある物質(皮膚感作性 区分1)であり、2物質とも「皮膚に接触すると有毒」に分類されています。国際がん研究機関(IARC)は2020年、アニリンを「ヒトに対しておそらく発がん性がある(グループ2A)」と評価しました。",
+          "source": "EU CLP 調和分類 · IARC Monographs 127"
+        }
+      ]
+    },
+    "cases": {
+      "title": "実際に人に起きたこと",
+      "items": [
+        {
+          "value": "46.8%",
+          "label": "血中メトヘモグロビン",
+          "body": "約200 mLのアニリンが顔と上半身にかかった25歳の作業者。1時間30分後に全身にチアノーゼが現れ、メチレンブルーによる治療を受けました。皮膚には熱傷と接触皮膚炎が残りました。",
+          "source": "Lee ら, Ann Occup Environ Med 2013(韓国)"
+        },
+        {
+          "value": "82人",
+          "label": "重症メトヘモグロビン血症",
+          "body": "燃料が混ざった海水に長時間皮膚が触れていた移民の人々。検査した39人中37人からN-メチルアニリンまたはその代謝物が検出され、2人が亡くなりました。研究チームは皮膚からの吸収を原因と特定しました。",
+          "source": "Bernasconi ら, N Engl J Med 2026(イタリア)"
+        }
+      ]
+    },
+    "thresholds": {
+      "title": "血中メトヘモグロビン比率と症状",
+      "items": [
+        {
+          "range": "1%未満",
+          "label": "正常範囲"
+        },
+        {
+          "range": "15〜30%",
+          "label": "皮膚や唇が青紫色に"
+        },
+        {
+          "range": "30〜50%",
+          "label": "頭痛・倦怠感・めまい・頻脈"
+        },
+        {
+          "range": "50〜70%",
+          "label": "昏迷・呼吸抑制・不整脈、心停止の危険"
+        }
+      ],
+      "source": "ATSDR(米国有害物質・疾病登録局)アニリン医療管理ガイドライン"
+    },
+    "classification": {
+      "title": "規制機関による分類",
+      "aniline": {
+        "name": "アニリン",
+        "items": [
+          "皮膚に接触すると有毒(H311)",
+          "アレルギー性皮膚反応を起こすおそれ(H317)",
+          "重篤な眼の損傷(H318)",
+          "遺伝性疾患のおそれの疑い(H341)",
+          "発がんのおそれの疑い(H351)",
+          "長期または反復曝露による臓器の障害(H372)",
+          "IARC グループ2A — ヒトに対しておそらく発がん性がある"
+        ]
+      },
+      "nMethylaniline": {
+        "name": "N-メチルアニリン",
+        "items": [
+          "皮膚に接触すると有毒(H311)",
+          "飲み込むと有毒・吸入すると有毒(H301 · H331)",
+          "長期または反復曝露による臓器の障害のおそれ(H373)"
+        ]
+      },
+      "note": "EU CLP規則(EC 1272/2008)附属書VIの調和分類による有害性情報です。IARCの評価は2020年の会議(第127巻)の結果です。"
+    },
+    "result": {
+      "label": "Blugene 試験結果",
+      "body": "アニリン・N-メチルアニリンとも不検出 — 方法検出限界 {limit} 未満(KOTERI, KS K 0734 2019)。下の表で市販9サンプルと並べて確認できます。",
+      "note": "不検出とは試験法の検出限界未満という意味であり、皮膚への安全性が証明されたという意味ではありません。"
+    },
+    "paper": {
+      "kicker": "主要論文",
+      "journal": "Scientific Reports (Nature Portfolio)",
+      "title": "Quantification of aniline and N-methylaniline in indigo",
+      "authors": "Michael Cordin · Thomas Bechtold · Tung Pham",
+      "openAccess": "オープンアクセス (CC BY 4.0)",
+      "titleTranslated": "インディゴ中のアニリンとN-メチルアニリンの定量",
+      "affiliation": "インスブルック大学 繊維化学・繊維物理研究所(オーストリア・ドルンビルン)",
+      "published": "2021年10月26日 · 第11巻 論文番号21135",
+      "summaryTitle": "論文が明らかにしたこと",
+      "summary": [
+        "市販の合成インディゴにはアニリンが最大0.6%、N-メチルアニリンが最大0.4%(重量比)含まれ、これらの不純物はインディゴ結晶が生成する際にその内部に取り込まれます。",
+        "酸洗浄や溶媒抽出では除去できないため、インディゴをロイコインディゴに還元して溶解し、酸で抽出してHPLCで定量する新しい分析法を提示しました(定量限界0.010%)。",
+        "この方法で測定した市販インディゴ試料は、アニリン0.3〜0.6%、N-メチルアニリン0.1〜0.3%でした。両者は連動して増減し、合成過程の同じ分解反応で生じると考えられます。",
+        "合成インディゴが示す弱い変異原性はこれらの不純物によるものである可能性が高く、インディゴの製造と染色の過程で排水にも放出されます。",
+        "著者らは、人の健康への影響を踏まえ、これらの不純物を除去する精製工程が重要だと結論づけました。"
+      ],
+      "readLink": "論文の原文を読む",
+      "externalHint": "新しいタブで開きます"
+    },
+    "sources": {
+      "title": "根拠資料",
+      "items": {
+        "cordin2021": "Cordin M, Bechtold T, Pham T. Quantification of aniline and N-methylaniline in indigo. Sci Rep. 2021;11:21135.",
+        "herrero2019": "Herrero M, Rovira J, Nadal M, Domingo JL. Risk assessment due to dermal exposure of trace elements and indigo dye in jeans: Migration to artificial sweat. Environ Res. 2019;172:310-318.",
+        "baranowska1982": "Baranowska-Dutkiewicz B. Skin absorption of aniline from aqueous solutions in man. Toxicol Lett. 1982;10(4):367-372.",
+        "wellner2008": "Wellner T ら. Percutaneous absorption of aromatic amines - a contribution for human health risk assessment. Food Chem Toxicol. 2008;46(6):1960-1968.",
+        "korinth2007": "Korinth G ら. Percutaneous absorption of aromatic amines in rubber industry workers: impact of impaired skin and skin barrier creams. Occup Environ Med. 2007;64(6):366-372.",
+        "lee2013": "Lee CH ら. Two cases of methemoglobinemia induced by the exposure to nitrobenzene and aniline. Ann Occup Environ Med. 2013;25:31.",
+        "bernasconi2026": "Bernasconi L ら. Outbreak of severe methemoglobinemia during maritime migration. N Engl J Med. 2026;395(10):983-991.",
+        "atsdr": "ATSDR. Medical Management Guidelines for Aniline(アニリン医療管理ガイドライン).",
+        "iarc2021": "IARC Monographs Vol. 127: Some Aromatic Amines and Related Compounds (2021) — アニリンはグループ2A。",
+        "clpAniline": "EU CLP 調和分類 — アニリン(CAS 62-53-3)、PubChem GHS項目(ECHA引用)。",
+        "clpNMethylaniline": "EU CLP 調和分類 — N-メチルアニリン(CAS 100-61-8)、PubChem GHS項目(ECHA引用)。"
+      }
+    }
+  },
   "Certifications": {
     "title": "グローバル認証",
     "body": "提供カタログに収録された認証書です。各項目で原本認証書を拡大して見ることができます。",

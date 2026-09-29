@@ -4382,6 +4382,678 @@
       "it": "efb92db0ae927eaf",
       "zh": "efb92db0ae927eaf",
       "tr": "efb92db0ae927eaf"
+    },
+    "AnilineHazard.eyebrow": {
+      "ja": "17c89da7c2b9704a",
+      "en": "17c89da7c2b9704a",
+      "fr": "17c89da7c2b9704a",
+      "it": "17c89da7c2b9704a",
+      "zh": "17c89da7c2b9704a",
+      "tr": "17c89da7c2b9704a"
+    },
+    "AnilineHazard.title": {
+      "ja": "618befe75bde7ced",
+      "en": "618befe75bde7ced",
+      "fr": "618befe75bde7ced",
+      "it": "618befe75bde7ced",
+      "zh": "618befe75bde7ced",
+      "tr": "618befe75bde7ced"
+    },
+    "AnilineHazard.intro": {
+      "ja": "9f982212efd161ee",
+      "en": "9f982212efd161ee",
+      "fr": "9f982212efd161ee",
+      "it": "9f982212efd161ee",
+      "zh": "9f982212efd161ee",
+      "tr": "9f982212efd161ee"
+    },
+    "AnilineHazard.scopeNote": {
+      "ja": "88d7f977b877010e",
+      "en": "88d7f977b877010e",
+      "fr": "88d7f977b877010e",
+      "it": "88d7f977b877010e",
+      "zh": "88d7f977b877010e",
+      "tr": "88d7f977b877010e"
+    },
+    "AnilineHazard.steps.ariaLabel": {
+      "ja": "2a3d00868f312b9b",
+      "en": "2a3d00868f312b9b",
+      "fr": "2a3d00868f312b9b",
+      "it": "2a3d00868f312b9b",
+      "zh": "2a3d00868f312b9b",
+      "tr": "2a3d00868f312b9b"
+    },
+    "AnilineHazard.steps.items[0].title": {
+      "ja": "941ff0d8fca7ae84",
+      "en": "941ff0d8fca7ae84",
+      "fr": "941ff0d8fca7ae84",
+      "it": "941ff0d8fca7ae84",
+      "zh": "941ff0d8fca7ae84",
+      "tr": "941ff0d8fca7ae84"
+    },
+    "AnilineHazard.steps.items[0].body": {
+      "ja": "63558ae4eeed60a9",
+      "en": "63558ae4eeed60a9",
+      "fr": "63558ae4eeed60a9",
+      "it": "63558ae4eeed60a9",
+      "zh": "63558ae4eeed60a9",
+      "tr": "63558ae4eeed60a9"
+    },
+    "AnilineHazard.steps.items[0].source": {
+      "ja": "c3899d928700341c",
+      "en": "c3899d928700341c",
+      "fr": "c3899d928700341c",
+      "it": "c3899d928700341c",
+      "zh": "c3899d928700341c",
+      "tr": "c3899d928700341c"
+    },
+    "AnilineHazard.steps.items[1].title": {
+      "ja": "8295ecc9d3e16825",
+      "en": "8295ecc9d3e16825",
+      "fr": "8295ecc9d3e16825",
+      "it": "8295ecc9d3e16825",
+      "zh": "8295ecc9d3e16825",
+      "tr": "8295ecc9d3e16825"
+    },
+    "AnilineHazard.steps.items[1].body": {
+      "ja": "113ff41b40d0bafd",
+      "en": "113ff41b40d0bafd",
+      "fr": "113ff41b40d0bafd",
+      "it": "113ff41b40d0bafd",
+      "zh": "113ff41b40d0bafd",
+      "tr": "113ff41b40d0bafd"
+    },
+    "AnilineHazard.steps.items[1].source": {
+      "ja": "bc0f8a4c02f52e05",
+      "en": "bc0f8a4c02f52e05",
+      "fr": "bc0f8a4c02f52e05",
+      "it": "bc0f8a4c02f52e05",
+      "zh": "bc0f8a4c02f52e05",
+      "tr": "bc0f8a4c02f52e05"
+    },
+    "AnilineHazard.steps.items[2].title": {
+      "ja": "3001dceaf1dee2fe",
+      "en": "3001dceaf1dee2fe",
+      "fr": "3001dceaf1dee2fe",
+      "it": "3001dceaf1dee2fe",
+      "zh": "3001dceaf1dee2fe",
+      "tr": "3001dceaf1dee2fe"
+    },
+    "AnilineHazard.steps.items[2].body": {
+      "ja": "19572fb78dcf1dba",
+      "en": "19572fb78dcf1dba",
+      "fr": "19572fb78dcf1dba",
+      "it": "19572fb78dcf1dba",
+      "zh": "19572fb78dcf1dba",
+      "tr": "19572fb78dcf1dba"
+    },
+    "AnilineHazard.steps.items[2].source": {
+      "ja": "6f452c5b2198fcf4",
+      "en": "6f452c5b2198fcf4",
+      "fr": "6f452c5b2198fcf4",
+      "it": "6f452c5b2198fcf4",
+      "zh": "6f452c5b2198fcf4",
+      "tr": "6f452c5b2198fcf4"
+    },
+    "AnilineHazard.steps.items[3].title": {
+      "ja": "9d7df97df109f1a8",
+      "en": "9d7df97df109f1a8",
+      "fr": "9d7df97df109f1a8",
+      "it": "9d7df97df109f1a8",
+      "zh": "9d7df97df109f1a8",
+      "tr": "9d7df97df109f1a8"
+    },
+    "AnilineHazard.steps.items[3].body": {
+      "ja": "80164a1fd5cdec9b",
+      "en": "80164a1fd5cdec9b",
+      "fr": "80164a1fd5cdec9b",
+      "it": "80164a1fd5cdec9b",
+      "zh": "80164a1fd5cdec9b",
+      "tr": "80164a1fd5cdec9b"
+    },
+    "AnilineHazard.steps.items[3].source": {
+      "ja": "e371c50c6f977dd4",
+      "en": "e371c50c6f977dd4",
+      "fr": "e371c50c6f977dd4",
+      "it": "e371c50c6f977dd4",
+      "zh": "e371c50c6f977dd4",
+      "tr": "e371c50c6f977dd4"
+    },
+    "AnilineHazard.steps.items[4].title": {
+      "ja": "9600de62b11e1445",
+      "en": "9600de62b11e1445",
+      "fr": "9600de62b11e1445",
+      "it": "9600de62b11e1445",
+      "zh": "9600de62b11e1445",
+      "tr": "9600de62b11e1445"
+    },
+    "AnilineHazard.steps.items[4].body": {
+      "ja": "2b7b6d8a5cc3c0ae",
+      "en": "2b7b6d8a5cc3c0ae",
+      "fr": "2b7b6d8a5cc3c0ae",
+      "it": "2b7b6d8a5cc3c0ae",
+      "zh": "2b7b6d8a5cc3c0ae",
+      "tr": "2b7b6d8a5cc3c0ae"
+    },
+    "AnilineHazard.steps.items[4].source": {
+      "ja": "4454598ab3289f1d",
+      "en": "4454598ab3289f1d",
+      "fr": "4454598ab3289f1d",
+      "it": "4454598ab3289f1d",
+      "zh": "4454598ab3289f1d",
+      "tr": "4454598ab3289f1d"
+    },
+    "AnilineHazard.cases.title": {
+      "ja": "183dd6ae46ff57b8",
+      "en": "183dd6ae46ff57b8",
+      "fr": "183dd6ae46ff57b8",
+      "it": "183dd6ae46ff57b8",
+      "zh": "183dd6ae46ff57b8",
+      "tr": "183dd6ae46ff57b8"
+    },
+    "AnilineHazard.cases.items[0].value": {
+      "ja": "dae344e0199da99a",
+      "en": "dae344e0199da99a",
+      "fr": "dae344e0199da99a",
+      "it": "dae344e0199da99a",
+      "zh": "dae344e0199da99a",
+      "tr": "dae344e0199da99a"
+    },
+    "AnilineHazard.cases.items[0].label": {
+      "ja": "b513c8fd124c8a9b",
+      "en": "b513c8fd124c8a9b",
+      "fr": "b513c8fd124c8a9b",
+      "it": "b513c8fd124c8a9b",
+      "zh": "b513c8fd124c8a9b",
+      "tr": "b513c8fd124c8a9b"
+    },
+    "AnilineHazard.cases.items[0].body": {
+      "ja": "a4da0f355d28e8bd",
+      "en": "a4da0f355d28e8bd",
+      "fr": "a4da0f355d28e8bd",
+      "it": "a4da0f355d28e8bd",
+      "zh": "a4da0f355d28e8bd",
+      "tr": "a4da0f355d28e8bd"
+    },
+    "AnilineHazard.cases.items[0].source": {
+      "ja": "5d4b70c1c26e8408",
+      "en": "5d4b70c1c26e8408",
+      "fr": "5d4b70c1c26e8408",
+      "it": "5d4b70c1c26e8408",
+      "zh": "5d4b70c1c26e8408",
+      "tr": "5d4b70c1c26e8408"
+    },
+    "AnilineHazard.cases.items[1].value": {
+      "ja": "9fe02e496a9e88d5",
+      "en": "9fe02e496a9e88d5",
+      "fr": "9fe02e496a9e88d5",
+      "it": "9fe02e496a9e88d5",
+      "zh": "9fe02e496a9e88d5",
+      "tr": "9fe02e496a9e88d5"
+    },
+    "AnilineHazard.cases.items[1].label": {
+      "ja": "5e2040cb86053a5c",
+      "en": "5e2040cb86053a5c",
+      "fr": "5e2040cb86053a5c",
+      "it": "5e2040cb86053a5c",
+      "zh": "5e2040cb86053a5c",
+      "tr": "5e2040cb86053a5c"
+    },
+    "AnilineHazard.cases.items[1].body": {
+      "ja": "2cb6f62d834bf2c2",
+      "en": "2cb6f62d834bf2c2",
+      "fr": "2cb6f62d834bf2c2",
+      "it": "2cb6f62d834bf2c2",
+      "zh": "2cb6f62d834bf2c2",
+      "tr": "2cb6f62d834bf2c2"
+    },
+    "AnilineHazard.cases.items[1].source": {
+      "ja": "4136d5c7c9ec9b18",
+      "en": "4136d5c7c9ec9b18",
+      "fr": "4136d5c7c9ec9b18",
+      "it": "4136d5c7c9ec9b18",
+      "zh": "4136d5c7c9ec9b18",
+      "tr": "4136d5c7c9ec9b18"
+    },
+    "AnilineHazard.thresholds.title": {
+      "ja": "fb63d094ca7c9b53",
+      "en": "fb63d094ca7c9b53",
+      "fr": "fb63d094ca7c9b53",
+      "it": "fb63d094ca7c9b53",
+      "zh": "fb63d094ca7c9b53",
+      "tr": "fb63d094ca7c9b53"
+    },
+    "AnilineHazard.thresholds.items[0].range": {
+      "ja": "1387f83f230c13a4",
+      "en": "1387f83f230c13a4",
+      "fr": "1387f83f230c13a4",
+      "it": "1387f83f230c13a4",
+      "zh": "1387f83f230c13a4",
+      "tr": "1387f83f230c13a4"
+    },
+    "AnilineHazard.thresholds.items[0].label": {
+      "ja": "7c421e8a67678064",
+      "en": "7c421e8a67678064",
+      "fr": "7c421e8a67678064",
+      "it": "7c421e8a67678064",
+      "zh": "7c421e8a67678064",
+      "tr": "7c421e8a67678064"
+    },
+    "AnilineHazard.thresholds.items[1].range": {
+      "ja": "62bb8049889c6f44",
+      "en": "62bb8049889c6f44",
+      "fr": "62bb8049889c6f44",
+      "it": "62bb8049889c6f44",
+      "zh": "62bb8049889c6f44",
+      "tr": "62bb8049889c6f44"
+    },
+    "AnilineHazard.thresholds.items[1].label": {
+      "ja": "f54752abf152b1e8",
+      "en": "f54752abf152b1e8",
+      "fr": "f54752abf152b1e8",
+      "it": "f54752abf152b1e8",
+      "zh": "f54752abf152b1e8",
+      "tr": "f54752abf152b1e8"
+    },
+    "AnilineHazard.thresholds.items[2].range": {
+      "ja": "5c0529166db2c160",
+      "en": "5c0529166db2c160",
+      "fr": "5c0529166db2c160",
+      "it": "5c0529166db2c160",
+      "zh": "5c0529166db2c160",
+      "tr": "5c0529166db2c160"
+    },
+    "AnilineHazard.thresholds.items[2].label": {
+      "ja": "9bc2a000a05aee40",
+      "en": "9bc2a000a05aee40",
+      "fr": "9bc2a000a05aee40",
+      "it": "9bc2a000a05aee40",
+      "zh": "9bc2a000a05aee40",
+      "tr": "9bc2a000a05aee40"
+    },
+    "AnilineHazard.thresholds.items[3].range": {
+      "ja": "5b4a50dab3595a54",
+      "en": "5b4a50dab3595a54",
+      "fr": "5b4a50dab3595a54",
+      "it": "5b4a50dab3595a54",
+      "zh": "5b4a50dab3595a54",
+      "tr": "5b4a50dab3595a54"
+    },
+    "AnilineHazard.thresholds.items[3].label": {
+      "ja": "ca86b0125fa97f9d",
+      "en": "ca86b0125fa97f9d",
+      "fr": "ca86b0125fa97f9d",
+      "it": "ca86b0125fa97f9d",
+      "zh": "ca86b0125fa97f9d",
+      "tr": "ca86b0125fa97f9d"
+    },
+    "AnilineHazard.thresholds.source": {
+      "ja": "3ac0bf4f8b82815d",
+      "en": "3ac0bf4f8b82815d",
+      "fr": "3ac0bf4f8b82815d",
+      "it": "3ac0bf4f8b82815d",
+      "zh": "3ac0bf4f8b82815d",
+      "tr": "3ac0bf4f8b82815d"
+    },
+    "AnilineHazard.classification.title": {
+      "ja": "4f431b9eb92df63b",
+      "en": "4f431b9eb92df63b",
+      "fr": "4f431b9eb92df63b",
+      "it": "4f431b9eb92df63b",
+      "zh": "4f431b9eb92df63b",
+      "tr": "4f431b9eb92df63b"
+    },
+    "AnilineHazard.classification.aniline.name": {
+      "ja": "ab34be9cbe2ef277",
+      "en": "ab34be9cbe2ef277",
+      "fr": "ab34be9cbe2ef277",
+      "it": "ab34be9cbe2ef277",
+      "zh": "ab34be9cbe2ef277",
+      "tr": "ab34be9cbe2ef277"
+    },
+    "AnilineHazard.classification.aniline.items[0]": {
+      "ja": "02aec8a6854c034f",
+      "en": "02aec8a6854c034f",
+      "fr": "02aec8a6854c034f",
+      "it": "02aec8a6854c034f",
+      "zh": "02aec8a6854c034f",
+      "tr": "02aec8a6854c034f"
+    },
+    "AnilineHazard.classification.aniline.items[1]": {
+      "ja": "6cd467ce8072caf1",
+      "en": "6cd467ce8072caf1",
+      "fr": "6cd467ce8072caf1",
+      "it": "6cd467ce8072caf1",
+      "zh": "6cd467ce8072caf1",
+      "tr": "6cd467ce8072caf1"
+    },
+    "AnilineHazard.classification.aniline.items[2]": {
+      "ja": "d6aec853f0c40e98",
+      "en": "d6aec853f0c40e98",
+      "fr": "d6aec853f0c40e98",
+      "it": "d6aec853f0c40e98",
+      "zh": "d6aec853f0c40e98",
+      "tr": "d6aec853f0c40e98"
+    },
+    "AnilineHazard.classification.aniline.items[3]": {
+      "ja": "dc0070241e92c853",
+      "en": "dc0070241e92c853",
+      "fr": "dc0070241e92c853",
+      "it": "dc0070241e92c853",
+      "zh": "dc0070241e92c853",
+      "tr": "dc0070241e92c853"
+    },
+    "AnilineHazard.classification.aniline.items[4]": {
+      "ja": "d33a06d804ead42d",
+      "en": "d33a06d804ead42d",
+      "fr": "d33a06d804ead42d",
+      "it": "d33a06d804ead42d",
+      "zh": "d33a06d804ead42d",
+      "tr": "d33a06d804ead42d"
+    },
+    "AnilineHazard.classification.aniline.items[5]": {
+      "ja": "adc6137bff8c5f04",
+      "en": "adc6137bff8c5f04",
+      "fr": "adc6137bff8c5f04",
+      "it": "adc6137bff8c5f04",
+      "zh": "adc6137bff8c5f04",
+      "tr": "adc6137bff8c5f04"
+    },
+    "AnilineHazard.classification.aniline.items[6]": {
+      "ja": "bda422f72f670016",
+      "en": "bda422f72f670016",
+      "fr": "bda422f72f670016",
+      "it": "bda422f72f670016",
+      "zh": "bda422f72f670016",
+      "tr": "bda422f72f670016"
+    },
+    "AnilineHazard.classification.nMethylaniline.name": {
+      "ja": "ae3a7caed84f7cc7",
+      "en": "ae3a7caed84f7cc7",
+      "fr": "ae3a7caed84f7cc7",
+      "it": "ae3a7caed84f7cc7",
+      "zh": "ae3a7caed84f7cc7",
+      "tr": "ae3a7caed84f7cc7"
+    },
+    "AnilineHazard.classification.nMethylaniline.items[0]": {
+      "ja": "02aec8a6854c034f",
+      "en": "02aec8a6854c034f",
+      "fr": "02aec8a6854c034f",
+      "it": "02aec8a6854c034f",
+      "zh": "02aec8a6854c034f",
+      "tr": "02aec8a6854c034f"
+    },
+    "AnilineHazard.classification.nMethylaniline.items[1]": {
+      "ja": "345df4cce67f30d6",
+      "en": "345df4cce67f30d6",
+      "fr": "345df4cce67f30d6",
+      "it": "345df4cce67f30d6",
+      "zh": "345df4cce67f30d6",
+      "tr": "345df4cce67f30d6"
+    },
+    "AnilineHazard.classification.nMethylaniline.items[2]": {
+      "ja": "b1460325d5d64345",
+      "en": "b1460325d5d64345",
+      "fr": "b1460325d5d64345",
+      "it": "b1460325d5d64345",
+      "zh": "b1460325d5d64345",
+      "tr": "b1460325d5d64345"
+    },
+    "AnilineHazard.classification.note": {
+      "ja": "00afd30bcebfe008",
+      "en": "00afd30bcebfe008",
+      "fr": "00afd30bcebfe008",
+      "it": "00afd30bcebfe008",
+      "zh": "00afd30bcebfe008",
+      "tr": "00afd30bcebfe008"
+    },
+    "AnilineHazard.result.label": {
+      "ja": "945dcefc8480447c",
+      "en": "945dcefc8480447c",
+      "fr": "945dcefc8480447c",
+      "it": "945dcefc8480447c",
+      "zh": "945dcefc8480447c",
+      "tr": "945dcefc8480447c"
+    },
+    "AnilineHazard.result.body": {
+      "ja": "1178fec7d0753d5b",
+      "en": "1178fec7d0753d5b",
+      "fr": "1178fec7d0753d5b",
+      "it": "1178fec7d0753d5b",
+      "zh": "1178fec7d0753d5b",
+      "tr": "1178fec7d0753d5b"
+    },
+    "AnilineHazard.result.note": {
+      "ja": "df0215d87171ee9d",
+      "en": "df0215d87171ee9d",
+      "fr": "df0215d87171ee9d",
+      "it": "df0215d87171ee9d",
+      "zh": "df0215d87171ee9d",
+      "tr": "df0215d87171ee9d"
+    },
+    "AnilineHazard.paper.kicker": {
+      "ja": "cd4a20c33dec349c",
+      "en": "cd4a20c33dec349c",
+      "fr": "cd4a20c33dec349c",
+      "it": "cd4a20c33dec349c",
+      "zh": "cd4a20c33dec349c",
+      "tr": "cd4a20c33dec349c"
+    },
+    "AnilineHazard.paper.journal": {
+      "ja": "2ec58fd8699753da",
+      "en": "2ec58fd8699753da",
+      "fr": "2ec58fd8699753da",
+      "it": "2ec58fd8699753da",
+      "zh": "2ec58fd8699753da",
+      "tr": "2ec58fd8699753da"
+    },
+    "AnilineHazard.paper.title": {
+      "ja": "98fbd711bceb3673",
+      "en": "98fbd711bceb3673",
+      "fr": "98fbd711bceb3673",
+      "it": "98fbd711bceb3673",
+      "zh": "98fbd711bceb3673",
+      "tr": "98fbd711bceb3673"
+    },
+    "AnilineHazard.paper.authors": {
+      "ja": "6c2b6df90a7c8e62",
+      "en": "6c2b6df90a7c8e62",
+      "fr": "6c2b6df90a7c8e62",
+      "it": "6c2b6df90a7c8e62",
+      "zh": "6c2b6df90a7c8e62",
+      "tr": "6c2b6df90a7c8e62"
+    },
+    "AnilineHazard.paper.openAccess": {
+      "ja": "83402e08a723972e",
+      "en": "83402e08a723972e",
+      "fr": "83402e08a723972e",
+      "it": "83402e08a723972e",
+      "zh": "83402e08a723972e",
+      "tr": "83402e08a723972e"
+    },
+    "AnilineHazard.paper.titleTranslated": {
+      "ja": "163fc1020ad4f6be",
+      "en": "163fc1020ad4f6be",
+      "fr": "163fc1020ad4f6be",
+      "it": "163fc1020ad4f6be",
+      "zh": "163fc1020ad4f6be",
+      "tr": "163fc1020ad4f6be"
+    },
+    "AnilineHazard.paper.affiliation": {
+      "ja": "65b947a629a56dfd",
+      "en": "65b947a629a56dfd",
+      "fr": "65b947a629a56dfd",
+      "it": "65b947a629a56dfd",
+      "zh": "65b947a629a56dfd",
+      "tr": "65b947a629a56dfd"
+    },
+    "AnilineHazard.paper.published": {
+      "ja": "8b6d1c7b6f659200",
+      "en": "8b6d1c7b6f659200",
+      "fr": "8b6d1c7b6f659200",
+      "it": "8b6d1c7b6f659200",
+      "zh": "8b6d1c7b6f659200",
+      "tr": "8b6d1c7b6f659200"
+    },
+    "AnilineHazard.paper.summaryTitle": {
+      "ja": "d1fc510d62463d9d",
+      "en": "d1fc510d62463d9d",
+      "fr": "d1fc510d62463d9d",
+      "it": "d1fc510d62463d9d",
+      "zh": "d1fc510d62463d9d",
+      "tr": "d1fc510d62463d9d"
+    },
+    "AnilineHazard.paper.summary[0]": {
+      "ja": "c9df0e4f06ffe235",
+      "en": "c9df0e4f06ffe235",
+      "fr": "c9df0e4f06ffe235",
+      "it": "c9df0e4f06ffe235",
+      "zh": "c9df0e4f06ffe235",
+      "tr": "c9df0e4f06ffe235"
+    },
+    "AnilineHazard.paper.summary[1]": {
+      "ja": "e527253d99c6e13e",
+      "en": "e527253d99c6e13e",
+      "fr": "e527253d99c6e13e",
+      "it": "e527253d99c6e13e",
+      "zh": "e527253d99c6e13e",
+      "tr": "e527253d99c6e13e"
+    },
+    "AnilineHazard.paper.summary[2]": {
+      "ja": "e673e9dfa5a1c7dc",
+      "en": "e673e9dfa5a1c7dc",
+      "fr": "e673e9dfa5a1c7dc",
+      "it": "e673e9dfa5a1c7dc",
+      "zh": "e673e9dfa5a1c7dc",
+      "tr": "e673e9dfa5a1c7dc"
+    },
+    "AnilineHazard.paper.summary[3]": {
+      "ja": "9d659ac23c9546e6",
+      "en": "9d659ac23c9546e6",
+      "fr": "9d659ac23c9546e6",
+      "it": "9d659ac23c9546e6",
+      "zh": "9d659ac23c9546e6",
+      "tr": "9d659ac23c9546e6"
+    },
+    "AnilineHazard.paper.summary[4]": {
+      "ja": "46d9ba2ab32ba8f2",
+      "en": "46d9ba2ab32ba8f2",
+      "fr": "46d9ba2ab32ba8f2",
+      "it": "46d9ba2ab32ba8f2",
+      "zh": "46d9ba2ab32ba8f2",
+      "tr": "46d9ba2ab32ba8f2"
+    },
+    "AnilineHazard.paper.readLink": {
+      "ja": "c4df43d19aaa741a",
+      "en": "c4df43d19aaa741a",
+      "fr": "c4df43d19aaa741a",
+      "it": "c4df43d19aaa741a",
+      "zh": "c4df43d19aaa741a",
+      "tr": "c4df43d19aaa741a"
+    },
+    "AnilineHazard.paper.externalHint": {
+      "ja": "25728c7bf2256713",
+      "en": "25728c7bf2256713",
+      "fr": "25728c7bf2256713",
+      "it": "25728c7bf2256713",
+      "zh": "25728c7bf2256713",
+      "tr": "25728c7bf2256713"
+    },
+    "AnilineHazard.sources.title": {
+      "ja": "094159cf7cfb899d",
+      "en": "094159cf7cfb899d",
+      "fr": "094159cf7cfb899d",
+      "it": "094159cf7cfb899d",
+      "zh": "094159cf7cfb899d",
+      "tr": "094159cf7cfb899d"
+    },
+    "AnilineHazard.sources.items.cordin2021": {
+      "ja": "031bd6aff014a50a",
+      "en": "031bd6aff014a50a",
+      "fr": "031bd6aff014a50a",
+      "it": "031bd6aff014a50a",
+      "zh": "031bd6aff014a50a",
+      "tr": "031bd6aff014a50a"
+    },
+    "AnilineHazard.sources.items.herrero2019": {
+      "ja": "8e7665435dc9a176",
+      "en": "8e7665435dc9a176",
+      "fr": "8e7665435dc9a176",
+      "it": "8e7665435dc9a176",
+      "zh": "8e7665435dc9a176",
+      "tr": "8e7665435dc9a176"
+    },
+    "AnilineHazard.sources.items.baranowska1982": {
+      "ja": "2cf21baf01e49bfe",
+      "en": "2cf21baf01e49bfe",
+      "fr": "2cf21baf01e49bfe",
+      "it": "2cf21baf01e49bfe",
+      "zh": "2cf21baf01e49bfe",
+      "tr": "2cf21baf01e49bfe"
+    },
+    "AnilineHazard.sources.items.wellner2008": {
+      "ja": "f0579f36736eb3a7",
+      "en": "f0579f36736eb3a7",
+      "fr": "f0579f36736eb3a7",
+      "it": "f0579f36736eb3a7",
+      "zh": "f0579f36736eb3a7",
+      "tr": "f0579f36736eb3a7"
+    },
+    "AnilineHazard.sources.items.korinth2007": {
+      "ja": "e019f63f3ae27af8",
+      "en": "e019f63f3ae27af8",
+      "fr": "e019f63f3ae27af8",
+      "it": "e019f63f3ae27af8",
+      "zh": "e019f63f3ae27af8",
+      "tr": "e019f63f3ae27af8"
+    },
+    "AnilineHazard.sources.items.lee2013": {
+      "ja": "2f07301acd2040a3",
+      "en": "2f07301acd2040a3",
+      "fr": "2f07301acd2040a3",
+      "it": "2f07301acd2040a3",
+      "zh": "2f07301acd2040a3",
+      "tr": "2f07301acd2040a3"
+    },
+    "AnilineHazard.sources.items.bernasconi2026": {
+      "ja": "de910bcfc40033c0",
+      "en": "de910bcfc40033c0",
+      "fr": "de910bcfc40033c0",
+      "it": "de910bcfc40033c0",
+      "zh": "de910bcfc40033c0",
+      "tr": "de910bcfc40033c0"
+    },
+    "AnilineHazard.sources.items.atsdr": {
+      "ja": "66e81dcc22967082",
+      "en": "66e81dcc22967082",
+      "fr": "66e81dcc22967082",
+      "it": "66e81dcc22967082",
+      "zh": "66e81dcc22967082",
+      "tr": "66e81dcc22967082"
+    },
+    "AnilineHazard.sources.items.iarc2021": {
+      "ja": "65a9b6ef8b28a236",
+      "en": "65a9b6ef8b28a236",
+      "fr": "65a9b6ef8b28a236",
+      "it": "65a9b6ef8b28a236",
+      "zh": "65a9b6ef8b28a236",
+      "tr": "65a9b6ef8b28a236"
+    },
+    "AnilineHazard.sources.items.clpAniline": {
+      "ja": "43954924f819aa0c",
+      "en": "43954924f819aa0c",
+      "fr": "43954924f819aa0c",
+      "it": "43954924f819aa0c",
+      "zh": "43954924f819aa0c",
+      "tr": "43954924f819aa0c"
+    },
+    "AnilineHazard.sources.items.clpNMethylaniline": {
+      "ja": "3037418f072537f6",
+      "en": "3037418f072537f6",
+      "fr": "3037418f072537f6",
+      "it": "3037418f072537f6",
+      "zh": "3037418f072537f6",
+      "tr": "3037418f072537f6"
     }
   }
 }

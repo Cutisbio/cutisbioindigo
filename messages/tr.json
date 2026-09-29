@@ -299,6 +299,146 @@
     "carbonZeroNote": "Company Z'nin biyobazlı karbon içeriği katalogda Table 1-1'de 0 (pMC 0.30), Figure 1-3'te ise N.D. olarak yazılıdır. Bu tablo Table 1-1'deki değeri aktarmaktadır.",
     "reportDateNote": "Test raporu numarası SBED25-00000153-1, katalog Tablo 1-1'de farklı yayımlanma tarihleriyle iki kez yer almaktadır. Orijinal yazımı aynen aktardık."
   },
+  "AnilineHazard": {
+    "eyebrow": "Araştırmaların cilt için söyledikleri",
+    "title": "Anilin ve N-metilanilin cildi nasıl etkiler",
+    "intro": "Sentetik indigoda kalan bu iki safsızlık cilde ulaştığında neler olduğunu, insan çalışmaları ve düzenleyici kurum değerlendirmelerine dayanarak özetledik. Aşağıdaki test sonuçları tablosunu okumadan önce bilinmesi yararlı bir arka plan.",
+    "scopeNote": "Burada anılan çalışmalar, iş kazaları ve laboratuvar koşulları gibi yüksek maruziyet durumlarını tanımlar. Denim giyerken oluşan maruziyet ürüne ve kullanım koşullarına bağlıdır ve bu site bunu ölçmemiştir. Sayılar her kaynakta yayımlandığı gibi aktarılmıştır.",
+    "steps": {
+      "ariaLabel": "Maruziyetten etkiye beş adım",
+      "items": [
+        {
+          "title": "Sentetik indigonun içinde kalır",
+          "body": "Piyasadaki sentetik indigo, %0,6'ya kadar anilin (6.000 mg/kg) ve %0,4'e kadar N-metilanilin (4.000 mg/kg) içerir. Her ikisi de indigo kristallerinin içinde hapsolmuştur; asitle yıkama veya çözücüyle ekstraksiyon bunları uzaklaştırmaz.",
+          "source": "Cordin ve ark., Sci Rep 2021"
+        },
+        {
+          "title": "Kumaştan tere geçer",
+          "body": "Piyasadan alınan 42 kot pantolon yapay tere daldırıldığında, indigo boyası kumaşın gramı başına 3,2–7,8 mg geçti; koyu tonlarda daha fazlaydı. Çalışma yalnızca boyayı ölçtü, içindeki anilini değil.",
+          "source": "Herrero ve ark., Environ Res 2019"
+        },
+        {
+          "title": "Sağlam ciltten de geçer",
+          "body": "Anilin hem sıvı hem buhar halinde sağlam ciltten emilir. İnsan gönüllülerde sudaki anilin, saatte cildin cm²'si başına 0,2–1,2 mg emildi; kesilmiş insan derisinde uygulanan dozun %20–38'i 24 saat içinde geçti. Cildi tahriş olmuş işçilerde vücut içi doz daha yüksekti.",
+          "source": "Baranowska-Dutkiewicz 1982 · Wellner ve ark. 2008 · Korinth ve ark. 2007"
+        },
+        {
+          "title": "Kanın oksijen taşımasını engeller",
+          "body": "Vücutta her iki madde de hemoglobini oksijen taşıyamayan methemoglobine çevirir. Dudaklar ve cilt morarır (siyanoz); baş ağrısı, baş dönmesi ve nefes darlığı gelir; ağır vakalarda bilinç kaybı olur. Belirtiler maruziyetten saatler sonra ortaya çıkabilir.",
+          "source": "ATSDR · Lee ve ark. 2013 · Bernasconi ve ark. 2026"
+        },
+        {
+          "title": "Cilt reaksiyonları ve uzun vadeli risk",
+          "body": "AB uyumlaştırılmış sınıflandırmasına göre anilin alerjik cilt reaksiyonuna yol açabilir (cilt hassaslaştırıcı, kategori 1) ve her iki madde de cilt ile temasında toksik olarak sınıflandırılır. Uluslararası Kanser Araştırma Ajansı (IARC) 2020'de anilini insanlar için muhtemelen kanserojen (Grup 2A) olarak değerlendirdi.",
+          "source": "AB CLP uyumlaştırılmış sınıflandırması · IARC Monografları 127"
+        }
+      ]
+    },
+    "cases": {
+      "title": "İnsanların başına gerçekten gelenler",
+      "items": [
+        {
+          "value": "%46,8",
+          "label": "kanda methemoglobin",
+          "body": "Yüzüne ve üst gövdesine yaklaşık 200 mL anilin sıçrayan 25 yaşında bir işçi. 90 dakika sonra tüm vücutta siyanoz gelişti; metilen mavisiyle tedavi edildi, ciltte yanık ve temas dermatiti kaldı.",
+          "source": "Lee ve ark., Ann Occup Environ Med 2013 (Kore)"
+        },
+        {
+          "value": "82 hasta",
+          "label": "ağır methemoglobinemi",
+          "body": "Cildi saatlerce yakıt bulaşmış deniz suyunda kalan göçmenler. Test edilen 39 hastanın 37'sinde N-metilanilin veya metabolitleri bulundu ve iki kişi öldü. Araştırmacılar olası neden olarak cilt yoluyla emilimi belirledi.",
+          "source": "Bernasconi ve ark., N Engl J Med 2026 (İtalya)"
+        }
+      ]
+    },
+    "thresholds": {
+      "title": "Kandaki methemoglobin düzeyi ve belirtiler",
+      "items": [
+        {
+          "range": "%1'in altı",
+          "label": "normal aralık"
+        },
+        {
+          "range": "%15–30",
+          "label": "cilt ve dudaklarda morarma"
+        },
+        {
+          "range": "%30–50",
+          "label": "baş ağrısı, yorgunluk, baş dönmesi, hızlı nabız"
+        },
+        {
+          "range": "%50–70",
+          "label": "uyuşukluk, baskılanmış solunum, aritmi, kalp durması riski"
+        }
+      ],
+      "source": "ATSDR (ABD Toksik Maddeler ve Hastalık Kayıt Ajansı), Medical Management Guidelines for Aniline"
+    },
+    "classification": {
+      "title": "Düzenleyici kurumlar nasıl sınıflandırıyor",
+      "aniline": {
+        "name": "Anilin",
+        "items": [
+          "Cilt ile temasında toksiktir (H311)",
+          "Alerjik cilt reaksiyonlarına yol açabilir (H317)",
+          "Ciddi göz hasarına yol açar (H318)",
+          "Genetik hasara yol açma şüphesi var (H341)",
+          "Kansere yol açma şüphesi var (H351)",
+          "Uzun süreli veya tekrarlı maruz kalma sonucu organlarda hasara yol açar (H372)",
+          "IARC Grup 2A — insanlar için muhtemelen kanserojen"
+        ]
+      },
+      "nMethylaniline": {
+        "name": "N-metilanilin",
+        "items": [
+          "Cilt ile temasında toksiktir (H311)",
+          "Yutulması veya solunması halinde toksiktir (H301 · H331)",
+          "Uzun süreli veya tekrarlı maruz kalma sonucu organlarda hasara yol açabilir (H373)"
+        ]
+      },
+      "note": "Zararlılık ifadeleri AB CLP Tüzüğü (EC) 1272/2008 Ek VI uyumlaştırılmış sınıflandırmasından alınmıştır. IARC değerlendirmesi 2020 toplantısına (Cilt 127) aittir."
+    },
+    "result": {
+      "label": "Blugene test sonucu",
+      "body": "Anilin ve N-metilanilin tespit edilmedi — yöntem tespit sınırı olan {limit} değerinin altında (KOTERI, KS K 0734 2019). Aşağıdaki tabloda sonucu dokuz ticari örnekle birlikte görebilirsiniz.",
+      "note": "Tespit edilmedi, test yönteminin tespit sınırının altında olduğu anlamına gelir; cilt güvenliğinin kanıtlandığı anlamına gelmez."
+    },
+    "paper": {
+      "kicker": "Temel makale",
+      "journal": "Scientific Reports (Nature Portfolio)",
+      "title": "Quantification of aniline and N-methylaniline in indigo",
+      "authors": "Michael Cordin · Thomas Bechtold · Tung Pham",
+      "openAccess": "Açık erişim (CC BY 4.0)",
+      "titleTranslated": "İndigoda anilin ve N-metilanilinin miktar tayini",
+      "affiliation": "Tekstil Kimyası ve Tekstil Fiziği Araştırma Enstitüsü, Innsbruck Üniversitesi (Dornbirn, Avusturya)",
+      "published": "26 Ekim 2021 · cilt 11, makale 21135",
+      "summaryTitle": "Makalenin ortaya koydukları",
+      "summary": [
+        "Piyasadaki sentetik indigo, ağırlıkça %0,6'ya kadar anilin ve %0,4'e kadar N-metilanilin içerir; bu safsızlıklar indigo kristalleri oluşurken içlerinde hapsolur.",
+        "Asitle yıkama ve çözücüyle ekstraksiyon bunları uzaklaştırmadığından yazarlar yeni bir yöntem önerdi: indigoyu lökoindigoya indirgeyerek çözmek, asitle ekstrakte etmek ve HPLC ile miktar tayini yapmak (miktar tayini sınırı %0,010).",
+        "Bu yöntemle ölçülen ticari indigo örnekleri %0,3–0,6 anilin ve %0,1–0,3 N-metilanilin içeriyordu. İki değer birlikte yükselip alçalıyor; bu da sentez sırasındaki aynı bozunma tepkimesine işaret ediyor.",
+        "Sentetik indigoda gözlenen zayıf mutajenite büyük olasılıkla bu safsızlıklardan kaynaklanır; bunlar üretim ve boyama sırasında atık suya da karışır.",
+        "Yazarlar, insan sağlığına etkileri nedeniyle bu safsızlıkları uzaklaştıran etkili bir saflaştırma sürecinin önemli olduğu sonucuna vardı."
+      ],
+      "readLink": "Makalenin tam metnini oku",
+      "externalHint": "yeni sekmede açılır"
+    },
+    "sources": {
+      "title": "Kaynaklar",
+      "items": {
+        "cordin2021": "Cordin M, Bechtold T, Pham T. Quantification of aniline and N-methylaniline in indigo. Sci Rep. 2021;11:21135.",
+        "herrero2019": "Herrero M, Rovira J, Nadal M, Domingo JL. Risk assessment due to dermal exposure of trace elements and indigo dye in jeans: Migration to artificial sweat. Environ Res. 2019;172:310-318.",
+        "baranowska1982": "Baranowska-Dutkiewicz B. Skin absorption of aniline from aqueous solutions in man. Toxicol Lett. 1982;10(4):367-372.",
+        "wellner2008": "Wellner T ve ark.. Percutaneous absorption of aromatic amines - a contribution for human health risk assessment. Food Chem Toxicol. 2008;46(6):1960-1968.",
+        "korinth2007": "Korinth G ve ark.. Percutaneous absorption of aromatic amines in rubber industry workers: impact of impaired skin and skin barrier creams. Occup Environ Med. 2007;64(6):366-372.",
+        "lee2013": "Lee CH ve ark.. Two cases of methemoglobinemia induced by the exposure to nitrobenzene and aniline. Ann Occup Environ Med. 2013;25:31.",
+        "bernasconi2026": "Bernasconi L ve ark.. Outbreak of severe methemoglobinemia during maritime migration. N Engl J Med. 2026;395(10):983-991.",
+        "atsdr": "ATSDR. Medical Management Guidelines for Aniline.",
+        "iarc2021": "IARC Monographs Vol. 127: Some Aromatic Amines and Related Compounds (2021) — anilin, Grup 2A.",
+        "clpAniline": "AB CLP uyumlaştırılmış sınıflandırması — anilin (CAS 62-53-3), PubChem GHS bölümü (ECHA kaynaklı).",
+        "clpNMethylaniline": "AB CLP uyumlaştırılmış sınıflandırması — N-metilanilin (CAS 100-61-8), PubChem GHS bölümü (ECHA kaynaklı)."
+      }
+    }
+  },
   "Certifications": {
     "title": "Küresel sertifikalar",
     "body": "Sağlanan katalogda yer alan sertifikadır. Her bir madde için orijinal sertifikayı büyüterek görmek mümkündür.",
