@@ -530,9 +530,21 @@
   },
   "Sdg": {
     "eyebrow": "Obiettivi di sviluppo sostenibile dell'ONU",
-    "title": "Due obiettivi a cui vogliamo contribuire",
-    "body": "Tra gli Obiettivi di sviluppo sostenibile (SDG) dell'ONU, i due che toccano più direttamente il lavoro di CutisBio.",
+    "title": "Quattro obiettivi a cui vogliamo contribuire",
+    "body": "Tra gli Obiettivi di sviluppo sostenibile (SDG) dell'ONU, quelli che la produzione e la commercializzazione del bio-indaco di CutisBio toccano più direttamente.",
     "items": [
+      {
+        "number": "3",
+        "name": "Salute e benessere",
+        "target": "3.9 Entro il 2030, ridurre in modo sostanziale il numero di decessi e malattie causati da sostanze chimiche pericolose e dall'inquinamento e contaminazione dell'aria, dell'acqua e del suolo.",
+        "body": "CutisBio considera la riduzione delle sostanze chimiche nocive residue in un colorante un contributo alla salute. L'anilina e la N-metilanilina, che possono restare nell'indaco sintetico, vengono assorbite attraverso la pelle e l'Agenzia internazionale per la ricerca sul cancro (IARC) classifica l'anilina come probabilmente cancerogena per l'uomo (gruppo 2A). In test riconosciuti il nostro bio-indaco ha mostrato entrambe le sostanze non rilevate (limite di rilevabilità 5 mg/kg) e possiede la certificazione OEKO-TEX® ECO PASSPORT, che esamina i prodotti chimici tessili secondo criteri umano-ecologici e ambientali. La direzione è meno esposizione per gli operai delle tintorie e per chi indossa i capi."
+      },
+      {
+        "number": "6",
+        "name": "Acqua pulita e servizi igienico-sanitari",
+        "target": "6.3 Entro il 2030, migliorare la qualità dell'acqua riducendo l'inquinamento, eliminando lo scarico di rifiuti e riducendo al minimo il rilascio di sostanze chimiche e materiali pericolosi, dimezzando la percentuale di acque reflue non trattate e aumentando in modo sostanziale il riciclo e il riutilizzo sicuro a livello globale.",
+        "body": "Vogliamo contribuire a ridurre le sostanze chimiche pericolose che lasciano i processi di tintura con le acque reflue. L'anilina, impurità dell'indaco sintetico, risulta rilasciata nelle acque reflue durante la produzione dell'indaco e la tintura. Il nostro bio-indaco ha mostrato entrambe le sostanze non rilevate e possiede la certificazione ZDHC MRSL Level 1 secondo la lista delle sostanze soggette a restrizione nella produzione del programma ZDHC, il cui obiettivo è eliminare lo scarico di sostanze chimiche pericolose dalle filiere tessili."
+      },
       {
         "number": "9",
         "name": "Imprese, innovazione e infrastrutture",
@@ -547,6 +559,7 @@
       }
     ],
     "note": "Il testo degli obiettivi è tratto dai target degli Obiettivi di sviluppo sostenibile dell'ONU (2015). Questa presentazione esprime il nostro sostegno agli obiettivi e la direzione del nostro contributo; non implica patrocinio o certificazione da parte dell'ONU.",
+    "scopeNote": "Dati ambientali come consumo d'acqua, energia ed emissioni di gas serra non sono riportati in questa pagina perché non disponiamo di misurazioni, e obiettivi come la lotta contro il cambiamento climatico (SDG 13) non vengono mostrati finché i dati non sono confermati.",
     "unLinkLabel": "Pagina ufficiale degli SDG dell'ONU",
     "iconAlt": "Icona ufficiale dell'Obiettivo di sviluppo sostenibile {number} delle Nazioni Unite",
     "unDisclaimer": "Il contenuto di questa pubblicazione non è stato approvato dalle Nazioni Unite e non riflette le opinioni delle Nazioni Unite, dei suoi funzionari o degli Stati membri.",

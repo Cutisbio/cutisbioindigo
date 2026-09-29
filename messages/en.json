@@ -530,9 +530,21 @@
   },
   "Sdg": {
     "eyebrow": "UN Sustainable Development Goals",
-    "title": "Two goals we work towards",
-    "body": "The UN Sustainable Development Goals (SDGs) that touch CutisBio's work most directly.",
+    "title": "Four goals we work towards",
+    "body": "The UN Sustainable Development Goals (SDGs) that CutisBio's production and commercialisation of bio indigo touch most directly.",
     "items": [
+      {
+        "number": "3",
+        "name": "Good Health and Well-being",
+        "target": "3.9 By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination.",
+        "body": "CutisBio treats reducing the harmful chemicals left in a dye as a contribution to health. Aniline and N-methylaniline, which can remain in synthetic indigo, are absorbed through the skin, and the International Agency for Research on Cancer (IARC) classifies aniline as probably carcinogenic to humans (Group 2A). In recognised testing our bio indigo showed both substances not detected (detection limit 5 mg/kg), and it holds OEKO-TEX® ECO PASSPORT certification, which examines textile chemicals against human-ecological and environmental criteria. The direction is less exposure for dyehouse workers and for the people who wear the clothes."
+      },
+      {
+        "number": "6",
+        "name": "Clean Water and Sanitation",
+        "target": "6.3 By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally.",
+        "body": "We aim to contribute to reducing the hazardous chemicals that leave dyeing processes in wastewater. Aniline, an impurity of synthetic indigo, is reported to be released into wastewater during indigo production and dyeing. Our bio indigo showed both substances not detected, and it holds ZDHC MRSL Level 1 certification under the Manufacturing Restricted Substances List of the ZDHC programme, whose goal is to eliminate the discharge of hazardous chemicals from textile supply chains."
+      },
       {
         "number": "9",
         "name": "Industry, Innovation and Infrastructure",
@@ -547,6 +559,7 @@
       }
     ],
     "note": "The target wording is quoted from the UN Sustainable Development Goals (2015). Showing these goals expresses our support and direction of contribution; it does not imply UN sponsorship or endorsement.",
+    "scopeNote": "Environmental figures such as water use, energy and greenhouse-gas emissions are not stated on this page because we have no measured data, and goals such as Climate Action (SDG 13) are not shown until the data is confirmed.",
     "unLinkLabel": "Official UN SDG page",
     "iconAlt": "Official United Nations Sustainable Development Goal {number} icon",
     "unDisclaimer": "The content of this publication has not been approved by the United Nations and does not reflect the views of the United Nations or its officials or Member States.",

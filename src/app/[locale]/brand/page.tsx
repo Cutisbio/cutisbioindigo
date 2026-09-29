@@ -96,7 +96,7 @@ export default async function BrandPage({ params }: { params: Promise<{ locale: 
           docs/blugene-claims.md 와 check-blugene-data 의 금지어 검사가 계속 지킨다. */}
       <PromiseSection />
 
-      {/* 유엔 SDG 9 · 12 — 2026-09-29 고객 요청으로 「우리가 약속하는 것」 아래에 둔다(필리 구성 참고, 문구는 큐티스바이오 사실). */}
+      {/* 유엔 SDG 3 · 6 · 9 · 12 — 2026-09-29 고객 요청으로 「우리가 약속하는 것」 아래에 둔다(필리 구성 참고, 문구는 큐티스바이오 사실). */}
       <SdgSection />
     </>
   );
