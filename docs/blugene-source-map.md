@@ -26,9 +26,9 @@
 | 6 | 원단 9개 염색 사진 (Figure 3-1) | `/`, `/dyeing-printing#dyeability` | `FabricComparison` | `performance/fabric-comparison.webp`, `performance/fabric-strip.webp` (라벨 없는 스트립은 2026-09-12 고객 요청으로 `/dyeing-printing` 에서는 빼고 홈에만 남김) |
 | 6 | 견뢰도 표 4종 (Table 3-1 ~ 3-4) | `/dyeing-printing#colorfastness` | `FastnessTables` (HTML 표로 재구현) | `performance/fastness-tables.png` (원본 대조용) |
 | 7 | 농도별 견본 (Figure 4-1) | `/`, `/dyeing-printing#shades` | `ShadeLibrary` | `shades/swatch-A1…B6.png` (12개, 무변환 복사), `shades/concentration-shades.webp` |
-| 7 | 인디고/인디루빈 비교 (Figure 4-2) | `/`, `/dyeing-printing#shades` | `ShadeLibrary` | `shades/indirubin-indigo-100.webp`, `indirubin-indigo-94.webp` |
+| 7 | 인디고/인디루빈 비교 (Figure 4-2) | `/dyeing-printing#shades` (홈에서는 2026-09-29 고객 요청으로 뺌 — `showIndirubin={false}`) | `ShadeLibrary` | `shades/indirubin-indigo-100.webp`, `indirubin-indigo-94.webp` |
 | 8 | 분말 제품 | `/`, `/dyeing-printing#products` | `ProductFormats` | `products/powder.png` |
-| 8 | 염색 횟수 3×4 비교 (Figure 5-1) | `/`, `/dyeing-printing#products` | `ProductFormats` | `products/powder-ink-cycles.png` |
+| 8 | 염색 횟수 3×4 비교 (Figure 5-1) | `/dyeing-printing#products` (홈에서는 2026-09-29 고객 요청으로 뺌 — `showCycles={false}`) | `ProductFormats` | `products/powder-ink-cycles.png` |
 | 9 | 디지털 프린팅 잉크 | `/`, `/dyeing-printing#products` | `ProductFormats` | `products/ink-jar.png` |
 | 9 | 잉크 제조 흐름 (Figure 6-1) | `/dyeing-printing#printing` | `PrintingGallery` (HTML 플로우 + 원본 이미지) | `printing/ink-process.png` |
 | 9 | 프린팅 결과 두 쌍 (Figure 6-2) | `/dyeing-printing#printing` | `PrintingGallery` | `printing/pair-a-original.webp`, `pair-a-printed.webp`, `pair-b-original.webp`, `pair-b-printed.webp` |
