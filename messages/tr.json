@@ -519,15 +519,15 @@
     "promiseBody": "Söz verebileceğimiz şey, doğrulanabilir materyallerdir.",
     "promiseItems": [
       {
-        "title": "Hammaddeyi açıklıyoruz",
+        "title": "Üretim sürecini şeffaf biçimde açıklıyoruz",
         "text": "Yenilenebilir karbondan yola çıkıyoruz. Biyobazlı karbon içeriğini test sonuçlarıyla paylaşıyoruz."
       },
       {
-        "title": "Safsızlıkları doğruluyoruz",
+        "title": "Eser miktardaki safsızlıklardan bile ödün vermiyoruz",
         "text": "Anilin ve N-metilanilini akredite test yöntemleriyle analiz ediyor, sonuçları tespit limitiyle birlikte paylaşıyoruz."
       },
       {
-        "title": "Orijinali gösteriyoruz",
+        "title": "Resmi sertifikalarla kanıtlıyoruz",
         "text": "Test raporu numaralarını, sertifika numaralarını ve orijinal sertifika görsellerini sitede doğrudan inceleyebilirsiniz."
       }
     ],
