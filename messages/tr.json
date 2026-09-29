@@ -26,7 +26,7 @@
     "catalogueLink": "Orijinal kataloğu (PDF) indirin"
   },
   "Home": {
-    "metaTitle": "İndigo DNA'sı ve fermantasyonla ortaya çıkan mavi.",
+    "metaTitle": "Biyo indigo boyası (Bio Indigo) — mikrobiyal fermantasyonla üretilen denim indigosu",
     "metaDescription": "Mikrobiyal fermantasyonla üretilen biyo indigo Blugene — %98 biyobazlı karbon, anilin ve N-metilanilin tespit edilmedi (tespit limiti 5 mg/kg).",
     "ctaTitle": "Bir sonraki denimin mavisini birlikte yaratalım.",
     "ctaText": "Denim markalarından, kumaş üreticilerinden, boyahanelerden ve baskı firmalarından gelecek talepleri bekliyoruz.",
@@ -198,7 +198,9 @@
     "cyclesCaption": "Katalog s.8 Şekil 5-1. Kimyasal indigo (toz) · biyo indigo (toz) · biyo indigo (dijital baskı mürekkebi) ile 1~4 kez boyanmış pamuklu kumaşların karşılaştırmasıdır.",
     "cyclesAlt": "3 satır 4 sütunluk karşılaştırma görseli. Satırlar kimyasal indigo tozu, biyo indigo tozu ve biyo indigo dijital baskı mürekkebi; sütunlar 1~4 kez boyamadır.",
     "cyclesNote": "Katalog bu örnekte renk yoğunluğunu \"dijital baskı mürekkebi > kimyasal indigo ≈ biyo indigo tozu\" şeklinde belirtir. Fotoğraftaki renk derinliği K/S değerine veya renk farkı ΔE ölçümüne dönüştürülmemiştir ve her koşulda performans üstünlüğü anlamına gelmez.",
-    "cta": "Ürün belgelerini talep edin"
+    "cta": "Ürün belgelerini talep edin",
+    "powderSummary": "Mikrobiyal fermantasyonla üretilen biyo indigo boya tozu; denim, pamuk, ipek ve kaşmir boyama için. %98 biyo bazlı karbon içeriği (ASTM D6866-24a, KATRI); anilin ve N-metilanilin tespit edilmedi (KS K 0734 2019, KOTERI, tespit sınırı 5 mg/kg).",
+    "inkSummary": "Mikrobiyal fermantasyonla üretilen biyo indigonun dijital baskı için formüle edilmiş mürekkebi. Katalog s.9'da yer alan ürün."
   },
   "Printing": {
     "eyebrow": "PRINTED IN BLUE",
@@ -245,6 +247,7 @@
   },
   "DataHub": {
     "eyebrow": "DATA & CERTIFICATIONS",
+    "metaTitle": "Veriler · Sertifikalar — biyo indigo test sonuçları ve orijinal sertifikalar",
     "title": "Orijinaliyle doğrulanan güven.",
     "body": "Test sonuçları ve sertifikalar tek bir yerde toplandı. Her kalemi; test kuruluşu · test yöntemi · rapor numarası · veri tarihiyle birlikte orijinalinden doğrulayabilirsiniz.",
     "carbonSectionTitle": "Biyobazlı karbon (C14)",
@@ -495,7 +498,7 @@
     "catalogueFigure": "Katalog görseli"
   },
   "Brand": {
-    "metaTitle": "Marka hikâyesi",
+    "metaTitle": "Marka hikâyesi — biyo indigo markası Blugene",
     "metaDescription": "Blugene, ömür boyu sürecek denim için indigoyu yeniden üreten CutisBio'nun biyo indigo markasıdır.",
     "heroEyebrow": "THE STORY",
     "heroTitle": "Denim her gün giyilen bir giysi olduğu için, önce boyayı titizlikle incelemek gerekir.",
@@ -523,7 +526,7 @@
     "cta": "Numune · teknik belge talebi"
   },
   "Technology": {
-    "metaTitle": "Teknoloji",
+    "metaTitle": "Teknoloji — biyo indigo mikrobiyal fermantasyonla nasıl üretilir",
     "metaDescription": "İndigo üretiminin dört yolunu, mikrobiyal fermantasyona dayalı üretimi ve biyobazlı karbon test sonuçlarını açıklıyoruz.",
     "heroEyebrow": "TECHNOLOGY",
     "heroTitle": "Maviyi üretmenin dört yolu ve bizim tercihimiz.",
@@ -807,6 +810,10 @@
       {
         "question": "Blugene nedir?",
         "answer": "Blugene, CutisBio Co., Ltd.'nin mikrobiyal fermantasyonla ürettiği biyo indigonun marka adıdır. Katalogda ve sertifikalarda orijinal ürün adı olan \"Bio Indigo Dye Powder (Microbial Fermentation)\" şeklinde yazılmıştır."
+      },
+      {
+        "question": "Biyo indigo (bio indigo) nedir?",
+        "answer": "Biyo indigo, mikrobiyal fermantasyonla üretilen indigo boyasıdır. Kimyasal sentez indigosu ve bitkiden ekstrakte edilen indigo ile aynı moleküldür (indigo, CAS 482-89-3); ancak karbonu petrolden değil yenilenebilir biyokütleden gelir. Blugene biyo indigo, %98 biyo bazlı karbon içeriği (ASTM D6866-24a, KATRI) ve tespit edilmeyen anilin · N-metilanilin (KS K 0734 2019, KOTERI, tespit sınırı 5 mg/kg) sonuçlarıyla test edilmiştir."
       },
       {
         "question": "'%98 biyobazlı karbon içeriği' ne anlama gelir?",

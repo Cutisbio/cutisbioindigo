@@ -26,7 +26,7 @@
     "catalogueLink": "Download the original catalogue (PDF)"
   },
   "Home": {
-    "metaTitle": "Blue, crafted through indigo DNA and fermentation.",
+    "metaTitle": "Bio Indigo Dye — Indigo for Denim Made by Microbial Fermentation",
     "metaDescription": "Blugene is a bio indigo made by microbial fermentation — 98% biobased carbon, aniline and N-methylaniline not detected (detection limit 5 mg/kg).",
     "ctaTitle": "Let's create your next blue.",
     "ctaText": "We welcome inquiries from denim brands, fabric mills, dye houses, and printing companies.",
@@ -198,7 +198,9 @@
     "cyclesCaption": "Catalogue p.8 Figure 5-1. A comparison of cotton fabric dyed 1 to 4 times with chemical indigo (powder), bio indigo (powder) and bio indigo (digital printing ink).",
     "cyclesAlt": "A three-row, four-column comparison plate. The rows are chemical indigo powder, bio indigo powder and bio indigo digital printing ink; the columns are 1 to 4 dyeing cycles.",
     "cyclesNote": "For this example the catalogue records color strength as “digital printing ink > chemical indigo ≈ bio indigo powder”. The shade depth in the photograph has not been converted into K/S values or ΔE color difference measurements, and it does not imply superior performance under all conditions.",
-    "cta": "Request product information"
+    "cta": "Request product information",
+    "powderSummary": "Bio indigo dye powder made by microbial fermentation, for denim, cotton, silk and cashmere dyeing. 98% bio-based carbon content (ASTM D6866-24a, KATRI); aniline and N-methylaniline not detected (KS K 0734 2019, KOTERI, detection limit 5 mg/kg).",
+    "inkSummary": "Bio indigo made by microbial fermentation, formulated as an ink for digital printing. Listed on catalogue p.9."
   },
   "Printing": {
     "eyebrow": "PRINTED IN BLUE",
@@ -245,6 +247,7 @@
   },
   "DataHub": {
     "eyebrow": "DATA & CERTIFICATIONS",
+    "metaTitle": "Data & Certifications — bio indigo test results and original certificates",
     "title": "Trust you can check against the source.",
     "body": "Test results and certificates are gathered in one place. Each item is shown with its testing institute, test method, report number and data as-of date, and the original can be viewed.",
     "carbonSectionTitle": "Biobased carbon (C14)",
@@ -495,7 +498,7 @@
     "catalogueFigure": "Catalogue figure"
   },
   "Brand": {
-    "metaTitle": "Brand story",
+    "metaTitle": "Brand story — Blugene, the bio indigo brand",
     "metaDescription": "Blugene is the CutisBio bio indigo brand, remaking indigo for denim that stays with you for a lifetime.",
     "heroEyebrow": "THE STORY",
     "heroTitle": "Denim is worn every day. So the dye must be checked with care.",
@@ -523,7 +526,7 @@
     "cta": "Inquire about samples and technical documents"
   },
   "Technology": {
-    "metaTitle": "Technology",
+    "metaTitle": "Technology — How bio indigo is made by microbial fermentation",
     "metaDescription": "An explanation of the four routes to indigo, production based on microbial fermentation, and the biobased carbon test results.",
     "heroEyebrow": "TECHNOLOGY",
     "heroTitle": "Four ways to make blue, and the one we chose.",
@@ -807,6 +810,10 @@
       {
         "question": "What is Blugene?",
         "answer": "Blugene is the brand name of the bio indigo that CutisBio Co., Ltd. produces by microbial fermentation. In the catalogue and the certificates it is recorded under its original product name, “Bio Indigo Dye Powder (Microbial Fermentation)”."
+      },
+      {
+        "question": "What is bio indigo?",
+        "answer": "Bio indigo is indigo dye made by microbial fermentation. It is the same molecule as chemically synthesised or plant-extracted indigo (indigo, CAS 482-89-3), but its carbon comes from renewable biomass rather than petroleum. Blugene bio indigo was tested at 98% bio-based carbon content (ASTM D6866-24a, KATRI), with aniline and N-methylaniline not detected (KS K 0734 2019, KOTERI, detection limit 5 mg/kg)."
       },
       {
         "question": "What does “98% biobased carbon content” mean?",
