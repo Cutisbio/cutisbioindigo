@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import SectionHeading from '@/components/blugene/SectionHeading';
-import SourceNote from '@/components/blugene/SourceNote';
 import EvidenceTables from '@/components/blugene/EvidenceTables';
 import CertificationLibrary from '@/components/blugene/CertificationLibrary';
 import CatalogueViewer from '@/components/blugene/CatalogueViewer';
@@ -57,20 +56,8 @@ export default async function DataCertificationsPage({
             body={t('body')}
             size="hero"
           />
-          {/* '원본 카탈로그 4쪽' 이 글자로만 있고 링크가 아니어서, 원문을 대조하려는 독자가
-              11,000px 을 스크롤해 내려가야 했다. 앵커(#catalogue)는 이미 있었다. */}
-          <SourceNote className="mt-8 max-w-3xl">
-            {t.rich('regulatoryOmitted', {
-              link: (chunks) => (
-                <a
-                  href="#catalogue"
-                  className="font-semibold text-[var(--color-denim)] underline underline-offset-2 hover:text-[var(--color-indigo-deep)]"
-                >
-                  {chunks}
-                </a>
-              ),
-            })}
-          </SourceNote>
+          {/* 카탈로그 p.4 허용한도 표를 싣지 않는다는 고지문(DataHub.regulatoryOmitted)은 2026-10-03 고객 요청으로 뺐다.
+              표를 싣지 않는 결정 자체는 그대로다 — docs/blugene-source-map.md 「공개하지 않은 항목」. */}
         </div>
       </section>
 

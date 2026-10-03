@@ -1649,30 +1649,6 @@
       "zh": "f713ab169a7ad610",
       "tr": "f713ab169a7ad610"
     },
-    "DataHub.sameLabelNote": {
-      "ja": "87dfb4799188a2a0",
-      "en": "87dfb4799188a2a0",
-      "fr": "87dfb4799188a2a0",
-      "it": "87dfb4799188a2a0",
-      "zh": "87dfb4799188a2a0",
-      "tr": "87dfb4799188a2a0"
-    },
-    "DataHub.anonymousNote": {
-      "ja": "9ec51496a185a8f3",
-      "en": "9ec51496a185a8f3",
-      "fr": "9ec51496a185a8f3",
-      "it": "9ec51496a185a8f3",
-      "zh": "9ec51496a185a8f3",
-      "tr": "9ec51496a185a8f3"
-    },
-    "DataHub.sampleScopeNote": {
-      "ja": "a0d4473ff7211114",
-      "en": "a0d4473ff7211114",
-      "fr": "a0d4473ff7211114",
-      "it": "a0d4473ff7211114",
-      "zh": "a0d4473ff7211114",
-      "tr": "a0d4473ff7211114"
-    },
     "DataHub.chartCarbonTitle": {
       "ja": "a9ddd1d574497150",
       "en": "a9ddd1d574497150",
@@ -1696,14 +1672,6 @@
       "it": "9e7225a9da6f7ba8",
       "zh": "9e7225a9da6f7ba8",
       "tr": "9e7225a9da6f7ba8"
-    },
-    "DataHub.regulatoryOmitted": {
-      "ja": "8d7a1eebc711c91b",
-      "en": "8d7a1eebc711c91b",
-      "fr": "8d7a1eebc711c91b",
-      "it": "8d7a1eebc711c91b",
-      "zh": "8d7a1eebc711c91b",
-      "tr": "8d7a1eebc711c91b"
     },
     "DataHub.catalogueTitle": {
       "ja": "c637ab63c97352e8",

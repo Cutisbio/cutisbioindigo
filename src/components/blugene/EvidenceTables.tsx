@@ -20,6 +20,7 @@ import type { IndigoType, MarketSample, Measurement } from '@/data/blugene/evide
  * 그것이 "방법 검출한계 미만"이라는 뜻임을 표 위(검출한계)와 표 아래(설명)에서 함께 밝힌다.
  * 회사명은 카탈로그의 익명 표기를 그대로 쓰고, 같은 이름이 두 유형에 등장하므로(Company M)
  * 유형 라벨을 언제나 샘플 라벨과 한 행에서 함께 보여 준다.
+ * 이 조건(익명 표기 · 같은 이름 · 표본 범위)을 글로 설명하던 도입부 각주 세 개는 2026-10-03 고객 요청으로 뺐다.
  */
 
 /** 카탈로그 표에서 자사 샘플에 해당하는 행. 시각적으로 강조한다. */
@@ -211,8 +212,7 @@ export async function CarbonEvidenceTable({ className = '' }: { className?: stri
         <SourceNote>
           {`${tCommon('sourceLabel')}: ${tCommon('cataloguePage', { page: carbonTest.page })} Table ${carbonTest.table} · ${tCommon('asOf', { date: SOURCE_AS_OF })}`}
         </SourceNote>
-        {/* 공통 조건(익명 표기 · 같은 이름 · 샘플 범위)은 섹션 도입부의 EvidenceReadingNotes 에 한 번만 있다.
-            여기는 이 표에만 걸리는 것만 남긴다 — 같은 샘플이 Table 1-1 과 Figure 1-3 에서 다르게 표기된 점. */}
+        {/* 이 표에만 걸리는 것만 둔다 — 같은 샘플이 Table 1-1 과 Figure 1-3 에서 다르게 표기된 점. */}
         <SourceNote>{t('carbonZeroNote')}</SourceNote>
         {/* 카탈로그 Table 1-1 원본을 다시 대조한 결과, 같은 성적서 번호 SBED25-00000153-1 이
             May 22 · July 11, 2025 두 발행일로 인쇄되어 있다. 원본이 그러하므로 값을 고치지 않고,
@@ -331,7 +331,7 @@ export async function AnilineEvidenceTable({ className = '' }: { className?: str
         <SourceNote>
           {`${tCommon('sourceLabel')}: ${tCommon('cataloguePage', { page: anilineTest.page })} Table ${anilineTest.table} · ${tCommon('asOf', { date: SOURCE_AS_OF })}`}
         </SourceNote>
-        {/* 공통 조건은 섹션 도입부에 한 번만 있다(EvidenceReadingNotes). 여기는 이 표 전용 설명만 둔다. */}
+        {/* 이 표 전용 설명만 둔다. */}
         <SourceNote>{t('notDetectedExplain')}</SourceNote>
       </div>
 
@@ -340,30 +340,14 @@ export async function AnilineEvidenceTable({ className = '' }: { className?: str
   );
 }
 
-/**
- * 두 표에 똑같이 걸리는 읽기 조건. 표마다 되풀이하지 않고 섹션 도입부에 한 번만 둔다.
- *
- * 특히 sampleScopeNote 는 두 표의 **관계**를 설명하는 문장이라, 첫 표 아래에 두면
- * 독자가 아직 보지도 않은 두 번째 표를 앞질러 언급하게 된다. 두 표보다 먼저 읽혀야 한다.
- */
-async function EvidenceReadingNotes() {
-  const t = await getTranslations('DataHub');
-
-  return (
-    <div className="max-w-4xl space-y-2.5 border-b border-[color:var(--color-washed)] pb-8">
-      <SourceNote>{t('anonymousNote')}</SourceNote>
-      <SourceNote>{t('sameLabelNote')}</SourceNote>
-      <SourceNote>{t('sampleScopeNote')}</SourceNote>
-    </div>
-  );
-}
+/* 두 표에 똑같이 걸리는 읽기 조건(익명 표기 · 같은 이름 · 표본 범위)을 섹션 도입부에 적던 EvidenceReadingNotes 는
+   2026-10-03 고객 요청으로 뺐다(DataHub.anonymousNote · sameLabelNote · sampleScopeNote 키도 지움). */
 
 /** 두 시험 표를 세로로 배치한다. 페이지가 이미 폭·여백 컨테이너를 갖고 있으므로 여기서는 리듬만 준다. */
 export default function EvidenceTables({ className = '' }: { className?: string }) {
   return (
     <div className={className}>
-      <EvidenceReadingNotes />
-      <CarbonEvidenceTable className="mt-12" />
+      <CarbonEvidenceTable />
       <AnilineEvidenceTable className="mt-14 border-t border-[color:var(--color-washed)] pt-14 sm:mt-16 sm:pt-16" />
     </div>
   );
