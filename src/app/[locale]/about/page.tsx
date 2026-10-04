@@ -3,11 +3,26 @@ import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import SchemaOrg, { buildOrganizationSchema } from '@/components/seo/SchemaOrg';
 import SectionHeading from '@/components/blugene/SectionHeading';
+import ZoomableImage from '@/components/blugene/ZoomableImage';
+import { AssetKind } from '@/components/blugene/SourceNote';
 import { BRAND, CORPORATE_SITE_URL, LOCALES, SITE_URL, buildPageMetadata } from '@/data/blugene/site';
 
 export function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
 }
+
+/**
+ * 「핵심 사업 영역」의 Blugene 사진 네 장 — 2026-10-03 고객이 채팅으로 보낸 촬영 사진(파일명 1~4) 순서 그대로.
+ * public/blugene/about/ 에 원본 JPEG 를 크기 · 색 무변환으로 두고 EXIF/XMP 만 제거했다(출처는 asset-manifest.json).
+ * 세로 사진 둘(옷걸이 · 전시 부스)과 가로 사진 둘(스카프)을 두 장 세로로 쌓아 세 열의 높이를 맞춘다(3:4 ≈ 3:2 + 3:2).
+ * alt · 캡션은 About.gallery 와 같은 순서다.
+ */
+const GALLERY = [
+  { src: '/blugene/about/rack-indigo-shirts.jpg', width: 960, height: 1280 },
+  { src: '/blugene/about/booth-coex-2024.jpg', width: 1500, height: 2000 },
+  { src: '/blugene/about/scarves-gradient.jpg', width: 1382, height: 922 },
+  { src: '/blugene/about/scarves-roses.jpg', width: 1382, height: 922 },
+] as const;
 
 export async function generateMetadata({
   params,
@@ -31,7 +46,24 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'About' });
+  const tCommon = await getTranslations({ locale, namespace: 'Common' });
   const history = t.raw('historyList') as { year: string; event: string }[];
+  const galleryText = t.raw('gallery') as { alt: string; caption: string }[];
+  const photo = (i: number) => (
+    <ZoomableImage
+      key={GALLERY[i].src}
+      src={GALLERY[i].src}
+      alt={galleryText[i].alt}
+      caption={galleryText[i].caption}
+      width={GALLERY[i].width}
+      height={GALLERY[i].height}
+      openLabel={tCommon('openImage')}
+      closeLabel={tCommon('close')}
+      hint={t('galleryNote')}
+      sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 400px"
+      originalOnZoom
+    />
+  );
   const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/brand/cutisbio-logo.png`);
 
   const areas = [
@@ -80,6 +112,8 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           <p className="text-xs font-semibold tracking-[0.22em] text-white/55 uppercase">
             {t('visionTitle')}
           </p>
+          {/* 2026-10-03 고객 요청: 둘째 문장(Blugene 바이오 인디고 염료는 … 바이오소재입니다)은
+              아래 「핵심 사업 영역」의 Blugene 사진 네 장 앞 도입문(coreBusinessLead)으로 옮겼다. */}
           <p className="mt-6 max-w-4xl text-xl leading-[1.7] break-keep sm:text-2xl lg:text-[2rem]">
             {t('visionText')}
           </p>
@@ -107,6 +141,26 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                 </p>
               </article>
             ))}
+          </div>
+
+          {/* Blugene 도입문과 사진 네 장 — 2026-10-03 고객 요청. 문장은 「Our Vision」에서 옮겨 온 것이고,
+              사진은 고객이 같은 날 보낸 촬영본(옷걸이 셔츠 · 전시 부스 · 스카프 두 장)이다.
+              확대 창은 원본 파일을 그대로 연다(originalOnZoom). 사람이 찍힌 부스 사진 위에는 어떤 문구도 올리지 않는다. */}
+          <div className="mt-14 border-t border-[color:var(--color-washed)] pt-12 sm:mt-16 sm:pt-14">
+            <p className="max-w-4xl text-xl leading-[1.7] break-keep text-[var(--color-indigo-deep)] sm:text-2xl">
+              {t('coreBusinessLead')}
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-2">
+              <AssetKind>{tCommon('brandImage')}</AssetKind>
+            </div>
+            <div className="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {photo(0)}
+              {photo(1)}
+              <div className="grid content-start gap-4">
+                {photo(2)}
+                {photo(3)}
+              </div>
+            </div>
           </div>
 
           <div className="mt-14 max-w-3xl rounded-md border border-[color:var(--color-washed)] bg-[var(--color-ivory)] p-7">

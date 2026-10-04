@@ -882,7 +882,7 @@
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "La nostra visione è diventare un pioniere globale dei biomateriali innovativi che rendono la vita umana più bella e più sana. Il colorante bio-indaco Blugene è un biomateriale creato per rinnovare il denim e i jeans, amati da tutta l’umanità da così tanto tempo, e per accrescere la salute delle persone e la sostenibilità dell’ambiente del pianeta.",
+    "visionText": "La nostra visione è diventare un pioniere globale dei biomateriali innovativi che rendono la vita umana più bella e più sana.",
     "aboutImageAlt": "Veduta di ricercatori di CutisBio impegnati in approfondite ricerche biologiche",
     "coreBusinessTitle": "Aree di business principali",
     "healthTitle": "Salute",
@@ -891,6 +891,26 @@
     "beautyText": "Sviluppiamo sostanze e prodotti che controllano l'invecchiamento di pelle e capelli.",
     "fashionTitle": "Moda (Blugene)",
     "fashionText": "Forniamo bio-indaco prodotto per fermentazione microbica per la tintura del denim e la stampa digitale.",
+    "coreBusinessLead": "Il colorante bio-indaco Blugene è un biomateriale creato per rinnovare il denim e i jeans, amati da tutta l’umanità da così tanto tempo, e per accrescere la salute delle persone e la sostenibilità dell’ambiente del pianeta.",
+    "galleryNote": "Fotografie scattate da CutisBio, mostrate in originale senza correzione del colore.",
+    "gallery": [
+      {
+        "alt": "Camicie e una giacca di denim tinte con bio-indaco in gradazioni dal celeste chiaro al blu navy profondo, appese una accanto all’altra su uno stender",
+        "caption": "Camicie e giacca di denim tinte in gradazione"
+      },
+      {
+        "alt": "Davanti allo stand CutisBio (D08) di una fiera, con una camicia tinta con bio-indaco; dietro, tessuti campione tinti e barattoli di polvere di indaco",
+        "caption": "Stand espositivo CutisBio — COEX, agosto 2024"
+      },
+      {
+        "alt": "Foulard leggeri tinti con bio-indaco in gradazione, disposti uno accanto all’altro dal più chiaro al più scuro",
+        "caption": "Foulard tinti in gradazione"
+      },
+      {
+        "alt": "Foulard tinti con bio-indaco in intensità diverse, arrotolati a forma di rosa e raccolti insieme",
+        "caption": "Foulard arrotolati a rosa"
+      }
+    ],
     "historyTitle": "Storia",
     "historyList": [
       {

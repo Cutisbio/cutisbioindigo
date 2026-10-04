@@ -882,7 +882,7 @@
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "成为以创新生物材料让人类生活更美好、更健康的全球开拓者，是我们的愿景。Blugene 生物靛蓝染料是一种生物材料，旨在革新长期以来为全人类共同喜爱的丹宁与牛仔裤，提升人类健康与地球环境的可持续性。",
+    "visionText": "成为以创新生物材料让人类生活更美好、更健康的全球开拓者，是我们的愿景。",
     "aboutImageAlt": "CutisBio 研究人员深入开展生物研究的场景",
     "coreBusinessTitle": "核心业务领域",
     "healthTitle": "健康",
@@ -891,6 +891,26 @@
     "beautyText": "开发用于调控皮肤与毛发衰老的物质和产品。",
     "fashionTitle": "时尚 (Blugene)",
     "fashionText": "将以微生物发酵生产的生物靛蓝，供应于丹宁染色与数码印花。",
+    "coreBusinessLead": "Blugene 生物靛蓝染料是一种生物材料，旨在革新长期以来为全人类共同喜爱的丹宁与牛仔裤，提升人类健康与地球环境的可持续性。",
+    "galleryNote": "由 CutisBio 拍摄的照片，未经色彩校正，按原片呈现。",
+    "gallery": [
+      {
+        "alt": "以生物靛蓝按不同浓度染色的衬衫与丹宁夹克，从浅天蓝到深藏青，并排挂在衣架上",
+        "caption": "按浓度染色的衬衫与丹宁夹克"
+      },
+      {
+        "alt": "在展会 CutisBio 展位（D08）前，身穿生物靛蓝染色衬衫；身后可见染色样布与靛蓝粉末瓶",
+        "caption": "CutisBio 展会展位 — COEX，2024 年 8 月"
+      },
+      {
+        "alt": "以生物靛蓝按不同浓度染色的薄纱围巾，由浅至深并排铺开",
+        "caption": "按浓度染色的围巾"
+      },
+      {
+        "alt": "不同浓度的生物靛蓝染色围巾卷成玫瑰形状聚在一起",
+        "caption": "卷成玫瑰形状的围巾"
+      }
+    ],
     "historyTitle": "发展历程",
     "historyList": [
       {

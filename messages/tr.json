@@ -882,7 +882,7 @@
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "Vizyonumuz, insan yaşamını daha güzel ve daha sağlıklı kılan yenilikçi biyomalzemelerin küresel öncüsü olmaktır. Blugene biyo indigo boyası, tüm insanlığın uzun süredir ortak olarak sevdiği denim ve kot pantolonu yenileyerek insan sağlığını ve dünya çevresinin sürdürülebilirliğini artırmak için geliştirilmiş bir biyomalzemedir.",
+    "visionText": "Vizyonumuz, insan yaşamını daha güzel ve daha sağlıklı kılan yenilikçi biyomalzemelerin küresel öncüsü olmaktır.",
     "aboutImageAlt": "CutisBio araştırmacılarının derinlemesine biyoloji araştırmalarından bir görünüm",
     "coreBusinessTitle": "Temel iş alanları",
     "healthTitle": "Sağlık",
@@ -891,6 +891,26 @@
     "beautyText": "Cilt ve saçın yaşlanmasını yöneten maddeler ve ürünler geliştiriyoruz.",
     "fashionTitle": "Moda (Blugene)",
     "fashionText": "Mikrobiyal fermantasyonla ürettiğimiz biyo indigoyu denim boyama ve dijital baskı için tedarik ediyoruz.",
+    "coreBusinessLead": "Blugene biyo indigo boyası, tüm insanlığın uzun süredir ortak olarak sevdiği denim ve kot pantolonu yenileyerek insan sağlığını ve dünya çevresinin sürdürülebilirliğini artırmak için geliştirilmiş bir biyomalzemedir.",
+    "galleryNote": "CutisBio tarafından çekilen fotoğraflar; renk düzeltmesi yapılmadan orijinal haliyle gösterilmektedir.",
+    "gallery": [
+      {
+        "alt": "Açık gök mavisinden koyu laciverte kadar farklı yoğunluklarda biyo indigo ile boyanmış gömlekler ve bir denim ceket, bir askılıkta yan yana asılı",
+        "caption": "Farklı yoğunluklarda boyanmış gömlekler ve denim ceket"
+      },
+      {
+        "alt": "Bir fuarda CutisBio standının (D08) önünde biyo indigo ile boyanmış bir gömlek giyilmiş hâlde; arkada boyanmış numune kumaşlar ve indigo tozu kavanozları görünüyor",
+        "caption": "CutisBio fuar standı — COEX, Ağustos 2024"
+      },
+      {
+        "alt": "Biyo indigo ile farklı yoğunluklarda boyanmış ince eşarplar, en açıktan en koyuya doğru yan yana dizilmiş",
+        "caption": "Farklı yoğunluklarda boyanmış eşarplar"
+      },
+      {
+        "alt": "Farklı yoğunluklarda biyo indigo ile boyanmış eşarplar gül biçiminde sarılıp bir araya getirilmiş",
+        "caption": "Gül biçiminde sarılmış eşarplar"
+      }
+    ],
     "historyTitle": "Tarihçe",
     "historyList": [
       {
