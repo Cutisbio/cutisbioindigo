@@ -619,6 +619,7 @@
       },
       "routes": [
         {
+          "badge": "Le voyage du carbone du colorant indigo Blugene",
           "eyebrow": "BIO-BASED INDIGO",
           "title": "Indigo biosourcé",
           "lede": "Un nouveau bleu fait du carbone que les plantes ont absorbé.",

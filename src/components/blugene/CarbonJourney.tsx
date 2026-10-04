@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import SectionHeading, { HEADING_SIZE, keepLastWords } from '@/components/blugene/SectionHeading';
 import SourceNote from '@/components/blugene/SourceNote';
+import BlugeneMark from '@/components/blugene/BlugeneMark';
 import SchemaOrg, { buildFAQSchema } from '@/components/seo/SchemaOrg';
 
 /**
@@ -14,6 +15,8 @@ import SchemaOrg, { buildFAQSchema } from '@/components/seo/SchemaOrg';
  *
  * 구성 (문구는 messages 의 Technology.carbon)
  *   01 탄소의 여정  — 바이오 기반 · 석유화학 두 경로를 같은 4단계(원료 → 생산 → 제품 → 사용 이후)로 위아래로 보여 준다.
+ *                    바이오 기반 카드는 Blugene 의 경로이므로 2026-10-04 고객 요청으로 머리에 'Blugene 인디고 염료의 탄소 여정'
+ *                    표찰(routes[0].badge)을 달고 데님색 두꺼운 테두리 · 그림자 · 머리 바탕색으로 강조한다. 석유화학 카드는 그대로다.
  *                    단계마다 원문의 삽화(나무 · 발효조 · 인디고와 데님 · 구름 / 채굴 펌프 · 화학 공장)를 그대로 쓴다.
  *                    삽화는 원문 HTML 의 스프라이트(3×2, 1536×1024)를 512px 타일로 잘라 둔 것이다
  *                    (public/blugene/technology/carbon/, 출처는 asset-manifest.json).
@@ -42,6 +45,8 @@ type Route = {
   eyebrow: string;
   title: string;
   lede: string;
+  /** 바이오 기반 카드에만 있는 'Blugene 인디고 염료의 탄소 여정' 표찰 */
+  badge?: string;
   chip?: string;
   steps: Step[];
   loop: string;
@@ -131,16 +136,23 @@ const ROUTE_ART = [
   ['fossil-oil-pump', 'refinery', 'indigo-denim', 'co2-cloud'],
 ] as const;
 
-/** 카드마다 다른 강조색 — 바이오 기반은 denim(우리 경로 = 파랑), 석유화학은 slate. 제목은 둘 다 indigo-deep. */
+/**
+ * 카드마다 다른 강조색 — 바이오 기반은 denim(우리 경로 = 파랑), 석유화학은 slate. 제목은 둘 다 indigo-deep.
+ * frame — 바이오 기반(Blugene 의 경로)은 데님색 2px 테두리와 아래로 떨어지는 그림자로 다른 카드보다 앞에 보이게 하고,
+ *         머리 띠(head)에 옅은 데님 바탕을 깐다. 석유화학은 기본 카드(1px washed 테두리)다. 2026-10-04 고객 요청.
+ */
 const ROUTE_TONE = {
   bio: {
     text: 'text-[var(--color-denim)]',
-    top: 'border-t-[var(--color-denim)]',
+    frame:
+      'rounded-lg bg-white border-2 border-[var(--color-denim)] border-t-4 border-t-[var(--color-denim)] shadow-[0_22px_48px_-26px_rgba(16,29,70,0.55)]',
+    head: 'bg-[color-mix(in_srgb,var(--color-washed)_30%,white)]',
     wash: 'bg-[color-mix(in_srgb,var(--color-washed)_30%,white)]',
   },
   fossil: {
     text: 'text-[var(--color-slate-muted)]',
-    top: 'border-t-[var(--color-slate-muted)]',
+    frame: `${CARD} border-t-4 border-t-[var(--color-slate-muted)]`,
+    head: '',
     wash: 'bg-[var(--color-ivory)]',
   },
 } as const;
@@ -201,9 +213,20 @@ function RouteCard({ route, index }: { route: Route; index: number }) {
   const art = ROUTE_ART[bio ? 0 : 1];
 
   return (
-    <article className={`${CARD} overflow-hidden border-t-4 ${tone.top}`}>
-      <header className="flex flex-col gap-3 border-b border-[color:var(--color-washed)] px-5 pt-6 pb-5 sm:px-7 sm:pt-7 lg:flex-row lg:items-center lg:justify-between lg:gap-8">
+    <article className={`overflow-hidden ${tone.frame}`}>
+      <header
+        className={`flex flex-col gap-3 border-b border-[color:var(--color-washed)] px-5 pt-6 pb-5 sm:px-7 sm:pt-7 lg:flex-row lg:items-center lg:justify-between lg:gap-8 ${tone.head}`}
+      >
         <div>
+          {/* Blugene 의 경로 표찰 — 바이오 기반 카드에만. 마크는 장식(aria-hidden)이고 글자가 'Blugene' 을 말한다. */}
+          {route.badge && (
+            <p className="mb-3">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--color-indigo-deep)] px-3.5 py-1.5 text-[0.8rem] font-semibold tracking-wide break-keep text-white sm:text-sm">
+                <BlugeneMark className="h-[1.1em] w-[1.1em] shrink-0" />
+                {route.badge}
+              </span>
+            </p>
+          )}
           <p className={`text-[0.72rem] font-semibold tracking-[0.22em] uppercase ${tone.text}`}>{route.eyebrow}</p>
           <h4 className="mt-2 text-xl font-bold tracking-[-0.01em] break-keep text-[var(--color-indigo-deep)] sm:text-2xl">
             {route.title}
