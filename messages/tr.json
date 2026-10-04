@@ -727,7 +727,7 @@
         "title": "İyi bir açıklama, açık bir dayanak ister.",
         "body": "Ham maddenin nereden geldiği ile çevreye ne kadar etki ettiği, birbirinden farklı iki sorudur.",
         "panel": {
-          "valueLabel": "Test numunesinin biyobazlı karbon içeriği",
+          "valueLabel": "Blugene'in biyobazlı karbon içeriği",
           "dotsAlt": "Nokta ızgarası: {total} noktadan {value} tanesi dolu — biyobazlı karbon %{value}",
           "headline": "Karbonun kaynağı testle doğrulandı.",
           "body": "Bu oran, test numunesinin organik karbonu esas alınarak hesaplanmıştır. Bir kot pantolonun bitkisel ham madde oranını, indigonun saflığını ya da karbon salımındaki bir azalmayı ifade etmez.",

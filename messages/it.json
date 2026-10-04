@@ -729,7 +729,7 @@
         "title": "Una buona spiegazione ha bisogno di prove chiare.",
         "body": "Da dove viene la materia prima e quanto incide sull’ambiente sono due domande diverse.",
         "panel": {
-          "valueLabel": "Contenuto di carbonio biobased del campione testato",
+          "valueLabel": "Contenuto di carbonio biobased di Blugene",
           "dotsAlt": "Griglia di punti: {value} punti su {total} riempiti — carbonio biobased {value}%",
           "headline": "L'origine del carbonio è stata confermata con un test.",
           "body": "È una percentuale calcolata sul carbonio organico del campione testato. Non indica la quota di materie vegetali di un paio di jeans, la purezza dell'indaco né una riduzione delle emissioni di carbonio.",
