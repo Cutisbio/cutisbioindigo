@@ -5258,22 +5258,6 @@
       "tr": "235cfe9d405195b0"
     },
     "About.gallery[0].alt": {
-      "ja": "93d8994713f9163e",
-      "en": "93d8994713f9163e",
-      "fr": "93d8994713f9163e",
-      "it": "93d8994713f9163e",
-      "zh": "93d8994713f9163e",
-      "tr": "93d8994713f9163e"
-    },
-    "About.gallery[0].caption": {
-      "ja": "fc2d8bd535bd94e5",
-      "en": "fc2d8bd535bd94e5",
-      "fr": "fc2d8bd535bd94e5",
-      "it": "fc2d8bd535bd94e5",
-      "zh": "fc2d8bd535bd94e5",
-      "tr": "fc2d8bd535bd94e5"
-    },
-    "About.gallery[1].alt": {
       "ja": "4f8e3bec13c9f27d",
       "en": "4f8e3bec13c9f27d",
       "fr": "4f8e3bec13c9f27d",
@@ -5281,7 +5265,7 @@
       "zh": "4f8e3bec13c9f27d",
       "tr": "4f8e3bec13c9f27d"
     },
-    "About.gallery[1].caption": {
+    "About.gallery[0].caption": {
       "ja": "2ab34cda77f0da9a",
       "en": "2ab34cda77f0da9a",
       "fr": "2ab34cda77f0da9a",
@@ -5289,7 +5273,7 @@
       "zh": "2ab34cda77f0da9a",
       "tr": "2ab34cda77f0da9a"
     },
-    "About.gallery[2].alt": {
+    "About.gallery[1].alt": {
       "ja": "03deb9c72737f42b",
       "en": "03deb9c72737f42b",
       "fr": "03deb9c72737f42b",
@@ -5297,7 +5281,7 @@
       "zh": "03deb9c72737f42b",
       "tr": "03deb9c72737f42b"
     },
-    "About.gallery[2].caption": {
+    "About.gallery[1].caption": {
       "ja": "edd0339802377539",
       "en": "edd0339802377539",
       "fr": "edd0339802377539",
@@ -5305,7 +5289,7 @@
       "zh": "edd0339802377539",
       "tr": "edd0339802377539"
     },
-    "About.gallery[3].alt": {
+    "About.gallery[2].alt": {
       "ja": "e49f4a7850f11acc",
       "en": "e49f4a7850f11acc",
       "fr": "e49f4a7850f11acc",
@@ -5313,7 +5297,7 @@
       "zh": "e49f4a7850f11acc",
       "tr": "e49f4a7850f11acc"
     },
-    "About.gallery[3].caption": {
+    "About.gallery[2].caption": {
       "ja": "1353ff239385673a",
       "en": "1353ff239385673a",
       "fr": "1353ff239385673a",
