@@ -19,7 +19,7 @@
 
 - [홈 / Home](https://blugene.co/ko) · [English](https://blugene.co/en): 브랜드 소개, 원료에서 원단까지 4단계, 인증 요약.
 - [브랜드 / Brand](https://blugene.co/ko/brand) · [English](https://blugene.co/en/brand): 브랜드 이야기와 기획자(피부과전문의) 소개, 약속하는 것.
-- [기술 / Technology](https://blugene.co/ko/technology) · [English](https://blugene.co/en/technology): 인디고 생산의 네 가지 경로, 탄소는 어디에서 오는가(바이오매스 vs 석유 경로 · FAQ · 근거).
+- [기술 / Technology](https://blugene.co/ko/technology) · [English](https://blugene.co/en/technology): 인디고 생산의 네 가지 경로, Blugene 염료를 만드는 탄소는 어디에서 왔을까? (바이오매스 vs 석유 경로 · FAQ · 근거).
 - [염색 · 프린팅 / Dyeing & printing](https://blugene.co/ko/dyeing-printing) · [English](https://blugene.co/en/dyeing-printing): 원단 염색 비교, 견뢰도 시험 표, 색상 견본, 제품 형태.
 - [데이터 · 인증 / Data & certifications](https://blugene.co/ko/data-certifications) · [English](https://blugene.co/en/data-certifications): 바이오 기반 탄소 · 아닐린 시험 표, 왜 아닐린을 확인하는가, 인증서 원본 이미지, 카탈로그 PDF.
 - [회사소개 / About](https://blugene.co/ko/about) · [English](https://blugene.co/en/about): 미션 · 비전 · 사업 영역 · 연혁.

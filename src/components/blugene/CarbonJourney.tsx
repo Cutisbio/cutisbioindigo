@@ -8,7 +8,7 @@ import BlugeneMark from '@/components/blugene/BlugeneMark';
 import SchemaOrg, { buildFAQSchema } from '@/components/seo/SchemaOrg';
 
 /**
- * 탄소는 어디에서 오는가 — 기술 페이지의 탄소 경로 단락.
+ * Blugene 염료를 만드는 탄소는 어디에서 왔을까? — 기술 페이지의 탄소 경로 단락. 제목(Technology.carbonTitle)은 2026-10-04 고객 지정이며 이전 제목은 「탄소는 어디에서 오는가」.
  *
  * 고객이 준 HTML(Blugene_Carbon_Comparison.html, 2026-09-11)의 내용을 이 사이트의 디자인 언어로 옮긴 것이다.
  * 원문의 맨 위 블록(청바지 사진 · 제목)은 고객 요청으로 뺐고, 그 도입 문장만 이 단락의 본문(carbon.lead)으로 썼다.

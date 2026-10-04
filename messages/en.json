@@ -601,7 +601,7 @@
     "routeFeedstockLabel": "Feedstock",
     "routeIntermediateLabel": "Key intermediate stage",
     "routesNote": "The anthranilic acid stage of the hybrid route differs from the tryptophan stage of the microbial route. We have not simplified the two routes into one.",
-    "carbonTitle": "Where the carbon comes from",
+    "carbonTitle": "Where did the carbon that makes Blugene dye come from?",
     "carbon": {
       "lead": "From oil underground to biomass that grows again. Blugene makes indigo by fermenting biomass, thinking from the very origin of the carbon that makes the color. So where does that blue come from?",
       "journey": {
