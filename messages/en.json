@@ -702,8 +702,8 @@
         "items": [
           {
             "label": "Oil-based carbon",
-            "title": "Carbon stored for ages",
-            "text": "Carbon stored underground over long ages is extracted and used. Oil is not replenished at the pace we use it.",
+            "title": "The path that draws on long-stored carbon",
+            "text": "Petroleum is a resource formed over geological time. The carbon stored in it is extracted and used as the raw material for indigo. Petroleum is not formed again at the pace we consume it.",
             "tags": [
               "Stored over geological time",
               "Extraction · use"
@@ -711,8 +711,9 @@
           },
           {
             "label": "Bio-based carbon",
-            "title": "Carbon from a resource that grows again",
-            "text": "It uses carbon that plants recently absorbed from the air. When biomass is regenerated, carbon uptake can continue as new plants grow.",
+            "badge": "Blugene's carbon",
+            "title": "The path that uses circulating carbon",
+            "text": "As plants grow, they absorb CO₂ from the air to build themselves. Blugene converts raw materials derived from plant biomass into indigo through microbial fermentation. Growing the raw material again and producing from it is linked to the recent biological carbon cycle.",
             "tags": [
               "Growth · uptake",
               "Use · regeneration"

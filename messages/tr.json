@@ -702,8 +702,8 @@
         "items": [
           {
             "label": "Petrol kaynaklı karbon",
-            "title": "Uzun süre depolanmış karbon",
-            "text": "Çağlar boyu yer altında depolanmış karbon çıkarılıp kullanılır. Petrol, bizim kullandığımız hızda yeniden oluşmaz.",
+            "title": "Uzun süredir depolanmış karbonu çıkarıp kullanan yol",
+            "text": "Petrol, jeolojik zaman boyunca oluşmuş bir kaynaktır. İçinde depolanan karbon çıkarılarak indigonun ham maddesi olarak kullanılır. Petrol, bizim tükettiğimiz hızda yeniden oluşmaz.",
             "tags": [
               "Jeolojik ölçekte depolama",
               "Çıkarma · kullanım"
@@ -711,8 +711,9 @@
           },
           {
             "label": "Biyobazlı karbon",
-            "title": "Yeniden büyüyen bir kaynağın karbonu",
-            "text": "Bitkilerin yakın zamanda havadan soğurduğu karbon kullanılır. Biyokütle yenilendiğinde karbon soğurulması yeni bitkilerin büyümesiyle sürebilir.",
+            "badge": "Blugene'in karbonu",
+            "title": "Döngüdeki karbonu kullanan yol",
+            "text": "Bitkiler büyürken havadaki CO₂'yi alarak gövdelerini oluşturur. Blugene, bitkisel biyokütle kaynaklı ham maddeleri mikrobiyal fermantasyonla dönüştürerek indigo üretir. Ham maddeyi yeniden yetiştirip üretme süreci, yakın dönemin biyolojik karbon döngüsüyle bağlantılıdır.",
             "tags": [
               "Büyüme · soğurma",
               "Kullanım · yenilenme"

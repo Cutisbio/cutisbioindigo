@@ -21,7 +21,8 @@ import SchemaOrg, { buildFAQSchema } from '@/components/seo/SchemaOrg';
  *                    삽화는 원문 HTML 의 스프라이트(3×2, 1536×1024)를 512px 타일로 잘라 둔 것이다
  *                    (public/blugene/technology/carbon/, 출처는 asset-manifest.json).
  *                    카탈로그 p.2 Figure 1-2 개념도(「카탈로그의 개념도」 블록)는 2026-09-12 고객 요청으로 뺐다. 파일은 남아 있다.
- *   02 출처가 중요한 이유 — 같은 탄소, 다른 시간 척도.
+ *   02 출처가 중요한 이유 — 같은 탄소, 다른 시간 척도. 두 카드 문구는 2026-10-04 고객 지정이고, 바이오 기반 카드에는
+ *                    'Blugene의 탄소' 표찰(origin.items[1].badge)과 「탄소의 여정」 카드와 같은 강조 틀을 준다.
  *   03 분명한 근거 — 바이오 기반 탄소 함량 시험(ASTM D6866)과 전과정평가(LCA)는 다른 질문에 답한다.
  *   FAQ · 맺음 · 근거 자료(외부 링크)
  *
@@ -74,7 +75,7 @@ type CarbonCopy = {
     eyebrow: string;
     title: string;
     body: string;
-    items: { label: string; title: string; text: string; tags: string[] }[];
+    items: { label: string; badge?: string; title: string; text: string; tags: string[] }[];
     closing: string;
   };
   evidence: {
@@ -105,6 +106,9 @@ const CARD = 'rounded-lg border border-[color:var(--color-washed)] bg-white';
 const TAG =
   'inline-block rounded-full border border-[color:var(--color-washed)] px-2.5 py-0.5 text-[0.7rem] font-medium tracking-wide break-keep text-[var(--color-slate-muted)]';
 const SMALL_LABEL = 'text-[0.7rem] font-semibold tracking-[0.18em] uppercase text-[var(--color-slate-muted)]';
+/** Blugene 귀속 표찰 — 남색 알약에 마크 + 글자. 「탄소의 여정」 바이오 카드와 「출처가 중요한 이유」 바이오 카드가 같이 쓴다. */
+const BADGE =
+  'inline-flex items-center gap-1.5 rounded-full bg-[var(--color-indigo-deep)] px-3.5 py-1.5 text-[0.8rem] font-semibold tracking-wide break-keep text-white sm:text-sm';
 
 /** 접이식 항목의 열림 표시 — 텍스트 '+' 를 45° 돌려 '×' 로 보이게 한다. 장식이라 aria-hidden. */
 function Toggle({ tone = 'ink' }: { tone?: 'ink' | 'inverse' }) {
@@ -221,7 +225,7 @@ function RouteCard({ route, index }: { route: Route; index: number }) {
           {/* Blugene 의 경로 표찰 — 바이오 기반 카드에만. 마크는 장식(aria-hidden)이고 글자가 'Blugene' 을 말한다. */}
           {route.badge && (
             <p className="mb-3">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--color-indigo-deep)] px-3.5 py-1.5 text-[0.8rem] font-semibold tracking-wide break-keep text-white sm:text-sm">
+              <span className={BADGE}>
                 <BlugeneMark className="h-[1.1em] w-[1.1em] shrink-0" />
                 {route.badge}
               </span>
@@ -409,11 +413,18 @@ export default async function CarbonJourney() {
               return (
                 <div
                   key={item.title}
-                  className={`${CARD} border-t-4 p-6 sm:p-7 ${
-                    bio ? 'border-t-[var(--color-denim)]' : 'border-t-[var(--color-slate-muted)]'
-                  }`}
+                  className={`p-6 sm:p-7 ${bio ? ROUTE_TONE.bio.frame : `${CARD} border-t-4 border-t-[var(--color-slate-muted)]`}`}
                 >
-                  <p className={bio ? EYEBROW : `${EYEBROW} text-[var(--color-slate-muted)]`}>{item.label}</p>
+                  {/* 바이오 기반 카드: 라벨 옆에 'Blugene의 탄소' 표찰 — 2026-10-04 고객 요청(눈에 띄게). 「탄소의 여정」 카드의 표찰과 같은 모양. */}
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+                    <p className={bio ? EYEBROW : `${EYEBROW} text-[var(--color-slate-muted)]`}>{item.label}</p>
+                    {item.badge && (
+                      <span className={BADGE}>
+                        <BlugeneMark className="h-[1.1em] w-[1.1em] shrink-0" />
+                        {item.badge}
+                      </span>
+                    )}
+                  </div>
                   <h4 className="mt-3 text-xl font-bold tracking-[-0.01em] break-keep text-[var(--color-indigo-deep)]">
                     {item.title}
                   </h4>
