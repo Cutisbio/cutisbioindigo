@@ -726,22 +726,20 @@
         "eyebrow": "03 / A CLEARER BLUE",
         "title": "A good explanation needs clear evidence.",
         "body": "Where the feedstock came from and how much it affects the environment are two different questions.",
-        "items": [
-          {
-            "label": "Origin of the carbon",
-            "title": "“Is it bio-based?”",
-            "text": "Radiocarbon analysis such as ASTM D6866 can determine the share of bio-based carbon in the organic carbon of a sample.",
-            "tag": "Biobased carbon content test"
-          },
-          {
-            "label": "Life-cycle impact",
-            "title": "“How much were carbon emissions reduced?”",
-            "text": "Every process and energy input within the comparison boundary, from feedstock cultivation to production, transport and disposal, must be counted together. A life cycle assessment (LCA) answers this question.",
-            "tag": "LCA comparison of the same function and scope"
-          }
-        ],
-        "calloutTitle": "Being bio-based does not automatically mean carbon neutral.",
-        "calloutBody": "Using feedstock from the carbon cycle is not the same as a product having zero net emissions. This section explains the feedstock route and does not present emission reduction figures for products. Blugene’s biobased carbon content test results are on the <link>Data · Certifications page</link>, together with the laboratory, method and report number."
+        "panel": {
+          "valueLabel": "Biobased carbon content of the test sample",
+          "dotsAlt": "Dot grid: {value} of {total} dots filled — biobased carbon {value}%",
+          "headline": "The origin of the carbon was confirmed by testing.",
+          "body": "This is a ratio based on the organic carbon of the test sample. It does not mean the plant-derived content of a pair of jeans, the purity of the indigo, or a reduction in carbon emissions.",
+          "reportLabel": "Report",
+          "sourceLabel": "Source",
+          "source": "CutisBio catalogue (2026.07) p.{page}, Table {table}",
+          "link": "See the evidence behind {value}%"
+        },
+        "split": {
+          "title": "The origin of the carbon and the carbon footprint are two different questions.",
+          "text": "Even with biobased feedstock, cultivation, fermentation, purification and transport all require resources and energy. A greenhouse-gas reduction rate must be confirmed by a life cycle assessment (LCA) based on the same function and the same assessment scope."
+        }
       },
       "faq": {
         "eyebrow": "A FEW GOOD QUESTIONS",

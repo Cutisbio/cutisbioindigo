@@ -726,22 +726,20 @@
         "eyebrow": "03 / A CLEARER BLUE",
         "title": "İyi bir açıklama, açık bir dayanak ister.",
         "body": "Ham maddenin nereden geldiği ile çevreye ne kadar etki ettiği, birbirinden farklı iki sorudur.",
-        "items": [
-          {
-            "label": "Karbonun kaynağı",
-            "title": "“Biyobazlı mı?”",
-            "text": "ASTM D6866 gibi bir radyokarbon analiziyle, numunenin organik karbonu içindeki biyobazlı karbon oranı belirlenebilir.",
-            "tag": "Biyobazlı karbon içeriği testi"
-          },
-          {
-            "label": "Yaşam döngüsü etkisi",
-            "title": "“Karbon emisyonu ne kadar azaldı?”",
-            "text": "Ham madde yetiştirme, üretim, taşıma ve bertaraf gibi karşılaştırma kapsamına giren tüm süreçler ve enerji birlikte hesaplanmalıdır. Bu soruyu yaşam döngüsü değerlendirmesi (LCA) yanıtlar.",
-            "tag": "Aynı işlev · aynı kapsamda LCA karşılaştırması"
-          }
-        ],
-        "calloutTitle": "Biyobazlı olmak, kendiliğinden karbon nötr olmak demek değildir.",
-        "calloutBody": "Karbon döngüsüne bağlı bir ham madde kullanmak ile bir ürünün net emisyonunun sıfır olması aynı şey değildir. Bu bölüm ham madde yolunu açıklar; ürün başına emisyon azaltım rakamı sunmaz. Blugene’in biyobazlı karbon içeriği test sonuçları, laboratuvar, yöntem ve rapor numarasıyla birlikte <link>Veri · Sertifikalar sayfasında</link> yer alır."
+        "panel": {
+          "valueLabel": "Test numunesinin biyobazlı karbon içeriği",
+          "dotsAlt": "Nokta ızgarası: {total} noktadan {value} tanesi dolu — biyobazlı karbon %{value}",
+          "headline": "Karbonun kaynağı testle doğrulandı.",
+          "body": "Bu oran, test numunesinin organik karbonu esas alınarak hesaplanmıştır. Bir kot pantolonun bitkisel ham madde oranını, indigonun saflığını ya da karbon salımındaki bir azalmayı ifade etmez.",
+          "reportLabel": "Rapor",
+          "sourceLabel": "Kaynak",
+          "source": "CutisBio kataloğu (2026.07) s.{page}, Tablo {table}",
+          "link": "%{value} oranının dayanağını görün"
+        },
+        "split": {
+          "title": "Karbonun kaynağı ile karbon ayak izi birbirinden farklı sorulardır.",
+          "text": "Biyobazlı ham madde kullanılsa da yetiştirme, fermantasyon, saflaştırma ve taşıma kaynak ve enerji gerektirir. Sera gazı azaltım oranı, aynı işlev ve aynı değerlendirme kapsamı esas alınarak yapılan bir yaşam döngüsü değerlendirmesiyle (LCA) doğrulanmalıdır."
+        }
       },
       "faq": {
         "eyebrow": "A FEW GOOD QUESTIONS",

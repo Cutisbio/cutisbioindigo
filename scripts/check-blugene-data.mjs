@@ -280,7 +280,7 @@ const DISCLAIMER_KEYS = [
   // 기술 페이지 탄소 단락(2026-09-11 고객 제공 원문). 각주 · 근거 설명 · FAQ · 자료 목록이
   // '탄소중립 · 생분해 · 배출 0' 같은 말을 "그렇지 않다"고 밝히는 문장이라 7개 언어 모두 면제한다.
   // 경로 카드와 제목(journey · routes · origin)은 면제하지 않는다.
-  /^Technology\.carbon\.(footnote|evidence\.callout|faq\.items|sources)/,
+  /^Technology\.carbon\.(footnote|evidence\.(panel|split)|faq\.items|sources)/,
   /^Environment\.scopeNote$/,
   /^Products\.(specNote|cyclesNote)$/,
   /^Printing\.(pairNote|advantagesNote|processNote)$/,

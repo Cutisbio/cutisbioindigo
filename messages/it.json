@@ -728,22 +728,20 @@
         "eyebrow": "03 / A CLEARER BLUE",
         "title": "Una buona spiegazione ha bisogno di prove chiare.",
         "body": "Da dove viene la materia prima e quanto incide sull’ambiente sono due domande diverse.",
-        "items": [
-          {
-            "label": "Origine del carbonio",
-            "title": "«È biobased?»",
-            "text": "Un’analisi al radiocarbonio come la ASTM D6866 permette di determinare la quota di carbonio biobased nel carbonio organico di un campione.",
-            "tag": "Prova del contenuto di carbonio biobased"
-          },
-          {
-            "label": "Impatto sul ciclo di vita",
-            "title": "«Di quanto sono diminuite le emissioni di carbonio?»",
-            "text": "Bisogna contare insieme tutti i processi e i consumi energetici compresi nell’ambito del confronto: coltivazione della materia prima, produzione, trasporto, fine vita. A questa domanda risponde la valutazione del ciclo di vita (LCA).",
-            "tag": "Confronto LCA a pari funzione e pari ambito"
-          }
-        ],
-        "calloutTitle": "Essere biobased non significa automaticamente essere a impatto climatico zero.",
-        "calloutBody": "Usare una materia prima che partecipa al ciclo del carbonio non è la stessa cosa di un prodotto con emissioni nette pari a zero. Questa parte spiega la via delle materie prime e non presenta cifre di riduzione delle emissioni per prodotto. I risultati della prova del contenuto di carbonio biobased di Blugene sono nella <link>pagina Dati · Certificazioni</link>, insieme a laboratorio, metodo e numero di rapporto."
+        "panel": {
+          "valueLabel": "Contenuto di carbonio biobased del campione testato",
+          "dotsAlt": "Griglia di punti: {value} punti su {total} riempiti — carbonio biobased {value}%",
+          "headline": "L'origine del carbonio è stata confermata con un test.",
+          "body": "È una percentuale calcolata sul carbonio organico del campione testato. Non indica la quota di materie vegetali di un paio di jeans, la purezza dell'indaco né una riduzione delle emissioni di carbonio.",
+          "reportLabel": "Rapporto",
+          "sourceLabel": "Fonte",
+          "source": "Catalogo CutisBio (2026.07) p.{page}, Table {table}",
+          "link": "Vedi i dati dietro il {value}%"
+        },
+        "split": {
+          "title": "L'origine del carbonio e l'impronta di carbonio sono due domande diverse.",
+          "text": "Anche con materie prime biobased, coltivazione, fermentazione, purificazione e trasporto richiedono risorse ed energia. Un tasso di riduzione dei gas serra va verificato con una valutazione del ciclo di vita (LCA) basata sulla stessa funzione e sullo stesso perimetro di valutazione."
+        }
       },
       "faq": {
         "eyebrow": "A FEW GOOD QUESTIONS",

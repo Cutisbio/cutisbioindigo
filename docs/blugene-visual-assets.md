@@ -112,6 +112,7 @@
 | `FastnessTables.tsx` | 견뢰도 4개 표를 2단 머리글 HTML 표로 재구현. 등급 문자열('4-5')을 그대로 출력 | p.6 Table 3-1~3-4 |
 | `PrintingGallery.tsx` 의 공정 플로우 | 잉크 제조 5단계. 한국어 설명과 원문 표기(`Raw Material Preparation` … `Formation`)를 나란히 표시 | p.9 Figure 6-1 |
 | `AnilineStructures.tsx` | 아닐린(C₆H₅NH₂) · N-메틸아닐린(C₆H₅NHCH₃) 골격 구조식. 검증된 구조를 좌표로 계산해 SVG 로 그렸다 | p.4 서술 |
+| `CarbonEvidencePanel.tsx` | 기술 페이지 「분명한 근거」의 98% 패널 — 큰 숫자 · 100개 중 98개를 칠한 점 격자(20×5, role="img") · 시험 메타 · 데이터 페이지 링크. 숫자와 메타는 evidence.ts 의 carbonTest, 글자는 messages. 고객 시안 `Blugene_Website_Brief/assets/mockups/2026-10-04-carbon-evidence-panel.svg`(2026-10-04)을 코드로 옮긴 것 — 시안 SVG 는 글자가 들어 있어 화면에 쓰지 않는다 | p.3 Table 1-1 |
 | `ThreadMotif.tsx` | 데님 실 두 가닥을 연상시키는 추상 선. **순수 장식**(aria-hidden)이며 DNA 이중나선·화학구조도·인증마크로 읽히지 않게 그렸다 | 브랜드 표현 |
 | `Wordmark.tsx` + `BlugeneMark.tsx` | Blugene 워드마크(텍스트)의 B 앞에 열두 갈래 마크를 붙인 락업. 마크는 고객의 로고 심벌 시트(`Blugene_Website_Brief/assets/brand/blugene-symbol-color-variations.jpg`) 「후보 01」에서 `scripts/extract-blugene-mark.mjs` 로 잘라낸 알파 마스크 PNG(`/brand/blugene-mark.png`)를 CSS mask 로 씌운 것이라 모양이 시트와 같다. 마크 색은 밝은 바탕에서 1초마다 파랑 일곱 가지를 순환(`.blugene-mark`, globals.css)하고 어두운 바탕(푸터)에서는 흰색 고정. 서체는 `.blugene-wordmark`(globals.css), 크기는 `SCALE` 한 곳에서 관리한다 | 브랜드 표현 + 고객 시트 |
 
