@@ -601,7 +601,7 @@
     "routeFeedstockLabel": "原料",
     "routeIntermediateLabel": "主要中间环节",
     "routesNote": "混合型路径的邻氨基苯甲酸环节与微生物路径的色氨酸环节并不相同。我们未将两条路径简化为同一路径。",
-    "carbonTitle": "碳从何而来",
+    "carbonTitle": "制造 Blugene 染料的碳从哪里来？",
     "carbon": {
       "lead": "从地下的石油，到重新生长的生物质。Blugene 通过发酵生物质来制造靛蓝，从制造颜色的碳的起点开始思考。那份蓝，究竟从哪里来？",
       "journey": {
