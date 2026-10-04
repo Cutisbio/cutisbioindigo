@@ -728,22 +728,20 @@
         "eyebrow": "03 / A CLEARER BLUE",
         "title": "Une bonne explication a besoin de preuves claires.",
         "body": "D’où vient la matière première et quel est son impact sur l’environnement sont deux questions différentes.",
-        "items": [
-          {
-            "label": "Origine du carbone",
-            "title": "« Est-ce biosourcé ? »",
-            "text": "Une analyse au radiocarbone telle que l’ASTM D6866 permet de déterminer la part de carbone biosourcé dans le carbone organique d’un échantillon.",
-            "tag": "Essai de teneur en carbone biosourcé"
-          },
-          {
-            "label": "Impact sur le cycle de vie",
-            "title": "« De combien les émissions de carbone ont-elles baissé ? »",
-            "text": "Il faut compter ensemble tous les procédés et énergies compris dans le périmètre de comparaison : culture de la matière première, production, transport, fin de vie. C’est l’analyse de cycle de vie (ACV) qui répond à cette question.",
-            "tag": "Comparaison ACV à fonction et périmètre identiques"
-          }
-        ],
-        "calloutTitle": "Être biosourcé ne signifie pas automatiquement être neutre en carbone.",
-        "calloutBody": "Utiliser une matière première issue du cycle du carbone n’est pas la même chose qu’un produit aux émissions nettes nulles. Cette partie explique la voie des matières premières et ne présente pas de chiffres de réduction des émissions par produit. Les résultats d’essai de teneur en carbone biosourcé de Blugene sont sur la <link>page Données · Certifications</link>, avec le laboratoire, la méthode et le numéro de rapport."
+        "panel": {
+          "valueLabel": "Teneur en carbone biosourcé de l'échantillon testé",
+          "dotsAlt": "Grille de points : {value} points sur {total} remplis — carbone biosourcé {value} %",
+          "headline": "L'origine du carbone a été confirmée par un essai.",
+          "body": "Ce taux est calculé sur le carbone organique de l'échantillon testé. Il ne désigne ni la part de matières végétales d'un jean, ni la pureté de l'indigo, ni une réduction des émissions de carbone.",
+          "reportLabel": "Rapport",
+          "sourceLabel": "Source",
+          "source": "Catalogue CutisBio (2026.07) p.{page}, Table {table}",
+          "link": "Voir les données derrière les {value} %"
+        },
+        "split": {
+          "title": "L'origine du carbone et l'empreinte carbone sont deux questions différentes.",
+          "text": "Même avec une matière première biosourcée, la culture, la fermentation, la purification et le transport demandent des ressources et de l'énergie. Un taux de réduction des gaz à effet de serre doit être vérifié par une analyse du cycle de vie (ACV) fondée sur la même fonction et le même périmètre d'évaluation."
+        }
       },
       "faq": {
         "eyebrow": "A FEW GOOD QUESTIONS",

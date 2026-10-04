@@ -3745,86 +3745,6 @@
       "zh": "3232a30b6c5aa9ee",
       "tr": "3232a30b6c5aa9ee"
     },
-    "Technology.carbon.evidence.items[0].label": {
-      "ja": "9e78dcf1b5ae0be2",
-      "en": "9e78dcf1b5ae0be2",
-      "fr": "9e78dcf1b5ae0be2",
-      "it": "9e78dcf1b5ae0be2",
-      "zh": "9e78dcf1b5ae0be2",
-      "tr": "9e78dcf1b5ae0be2"
-    },
-    "Technology.carbon.evidence.items[0].title": {
-      "ja": "bd58aa8a7f5db723",
-      "en": "bd58aa8a7f5db723",
-      "fr": "bd58aa8a7f5db723",
-      "it": "bd58aa8a7f5db723",
-      "zh": "bd58aa8a7f5db723",
-      "tr": "bd58aa8a7f5db723"
-    },
-    "Technology.carbon.evidence.items[0].text": {
-      "ja": "2ea5d23a19f1886c",
-      "en": "2ea5d23a19f1886c",
-      "fr": "2ea5d23a19f1886c",
-      "it": "2ea5d23a19f1886c",
-      "zh": "2ea5d23a19f1886c",
-      "tr": "2ea5d23a19f1886c"
-    },
-    "Technology.carbon.evidence.items[0].tag": {
-      "ja": "e2e96292b61958e1",
-      "en": "e2e96292b61958e1",
-      "fr": "e2e96292b61958e1",
-      "it": "e2e96292b61958e1",
-      "zh": "e2e96292b61958e1",
-      "tr": "e2e96292b61958e1"
-    },
-    "Technology.carbon.evidence.items[1].label": {
-      "ja": "97e668cd30e13381",
-      "en": "97e668cd30e13381",
-      "fr": "97e668cd30e13381",
-      "it": "97e668cd30e13381",
-      "zh": "97e668cd30e13381",
-      "tr": "97e668cd30e13381"
-    },
-    "Technology.carbon.evidence.items[1].title": {
-      "ja": "673bf2bf49a96811",
-      "en": "673bf2bf49a96811",
-      "fr": "673bf2bf49a96811",
-      "it": "673bf2bf49a96811",
-      "zh": "673bf2bf49a96811",
-      "tr": "673bf2bf49a96811"
-    },
-    "Technology.carbon.evidence.items[1].text": {
-      "ja": "a70bd2f5f3f01db2",
-      "en": "a70bd2f5f3f01db2",
-      "fr": "a70bd2f5f3f01db2",
-      "it": "a70bd2f5f3f01db2",
-      "zh": "a70bd2f5f3f01db2",
-      "tr": "a70bd2f5f3f01db2"
-    },
-    "Technology.carbon.evidence.items[1].tag": {
-      "ja": "0fa1c1c4491f5e3b",
-      "en": "0fa1c1c4491f5e3b",
-      "fr": "0fa1c1c4491f5e3b",
-      "it": "0fa1c1c4491f5e3b",
-      "zh": "0fa1c1c4491f5e3b",
-      "tr": "0fa1c1c4491f5e3b"
-    },
-    "Technology.carbon.evidence.calloutTitle": {
-      "ja": "1c78b888fae3e20c",
-      "en": "1c78b888fae3e20c",
-      "fr": "1c78b888fae3e20c",
-      "it": "1c78b888fae3e20c",
-      "zh": "1c78b888fae3e20c",
-      "tr": "1c78b888fae3e20c"
-    },
-    "Technology.carbon.evidence.calloutBody": {
-      "ja": "5015a0958b14e3ba",
-      "en": "5015a0958b14e3ba",
-      "fr": "5015a0958b14e3ba",
-      "it": "5015a0958b14e3ba",
-      "zh": "5015a0958b14e3ba",
-      "tr": "5015a0958b14e3ba"
-    },
     "Technology.carbon.faq.eyebrow": {
       "ja": "99f885bbc2c4abec",
       "en": "99f885bbc2c4abec",
@@ -5320,6 +5240,86 @@
       "it": "7535a13a09cd1ab5",
       "zh": "7535a13a09cd1ab5",
       "tr": "7535a13a09cd1ab5"
+    },
+    "Technology.carbon.evidence.panel.valueLabel": {
+      "ja": "62ae73bed0cb61a7",
+      "en": "62ae73bed0cb61a7",
+      "fr": "62ae73bed0cb61a7",
+      "it": "62ae73bed0cb61a7",
+      "zh": "62ae73bed0cb61a7",
+      "tr": "62ae73bed0cb61a7"
+    },
+    "Technology.carbon.evidence.panel.dotsAlt": {
+      "ja": "6be6096c903a6dd3",
+      "en": "6be6096c903a6dd3",
+      "fr": "6be6096c903a6dd3",
+      "it": "6be6096c903a6dd3",
+      "zh": "6be6096c903a6dd3",
+      "tr": "6be6096c903a6dd3"
+    },
+    "Technology.carbon.evidence.panel.headline": {
+      "ja": "50b327b5c0de9779",
+      "en": "50b327b5c0de9779",
+      "fr": "50b327b5c0de9779",
+      "it": "50b327b5c0de9779",
+      "zh": "50b327b5c0de9779",
+      "tr": "50b327b5c0de9779"
+    },
+    "Technology.carbon.evidence.panel.body": {
+      "ja": "77e8d143019b5653",
+      "en": "77e8d143019b5653",
+      "fr": "77e8d143019b5653",
+      "it": "77e8d143019b5653",
+      "zh": "77e8d143019b5653",
+      "tr": "77e8d143019b5653"
+    },
+    "Technology.carbon.evidence.panel.reportLabel": {
+      "ja": "9a30c02228f1a334",
+      "en": "9a30c02228f1a334",
+      "fr": "9a30c02228f1a334",
+      "it": "9a30c02228f1a334",
+      "zh": "9a30c02228f1a334",
+      "tr": "9a30c02228f1a334"
+    },
+    "Technology.carbon.evidence.panel.sourceLabel": {
+      "ja": "fa543a9d6cf32498",
+      "en": "fa543a9d6cf32498",
+      "fr": "fa543a9d6cf32498",
+      "it": "fa543a9d6cf32498",
+      "zh": "fa543a9d6cf32498",
+      "tr": "fa543a9d6cf32498"
+    },
+    "Technology.carbon.evidence.panel.source": {
+      "ja": "898e25c22e1cdf9b",
+      "en": "898e25c22e1cdf9b",
+      "fr": "898e25c22e1cdf9b",
+      "it": "898e25c22e1cdf9b",
+      "zh": "898e25c22e1cdf9b",
+      "tr": "898e25c22e1cdf9b"
+    },
+    "Technology.carbon.evidence.panel.link": {
+      "ja": "52242f291f49c52e",
+      "en": "52242f291f49c52e",
+      "fr": "52242f291f49c52e",
+      "it": "52242f291f49c52e",
+      "zh": "52242f291f49c52e",
+      "tr": "52242f291f49c52e"
+    },
+    "Technology.carbon.evidence.split.title": {
+      "ja": "148ea7ad8d4f556c",
+      "en": "148ea7ad8d4f556c",
+      "fr": "148ea7ad8d4f556c",
+      "it": "148ea7ad8d4f556c",
+      "zh": "148ea7ad8d4f556c",
+      "tr": "148ea7ad8d4f556c"
+    },
+    "Technology.carbon.evidence.split.text": {
+      "ja": "78863471370e089f",
+      "en": "78863471370e089f",
+      "fr": "78863471370e089f",
+      "it": "78863471370e089f",
+      "zh": "78863471370e089f",
+      "tr": "78863471370e089f"
     }
   }
 }

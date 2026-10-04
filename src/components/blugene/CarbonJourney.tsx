@@ -1,10 +1,10 @@
 import type { ReactNode } from 'react';
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
-import { Link } from '@/i18n/routing';
 import SectionHeading, { HEADING_SIZE, keepLastWords } from '@/components/blugene/SectionHeading';
 import SourceNote from '@/components/blugene/SourceNote';
 import BlugeneMark from '@/components/blugene/BlugeneMark';
+import CarbonEvidencePanel from '@/components/blugene/CarbonEvidencePanel';
 import SchemaOrg, { buildFAQSchema } from '@/components/seo/SchemaOrg';
 
 /**
@@ -23,7 +23,8 @@ import SchemaOrg, { buildFAQSchema } from '@/components/seo/SchemaOrg';
  *                    카탈로그 p.2 Figure 1-2 개념도(「카탈로그의 개념도」 블록)는 2026-09-12 고객 요청으로 뺐다. 파일은 남아 있다.
  *   02 출처가 중요한 이유 — 같은 탄소, 다른 시간 척도. 두 카드 문구는 2026-10-04 고객 지정이고, 바이오 기반 카드에는
  *                    'Blugene의 탄소' 표찰(origin.items[1].badge)과 「탄소의 여정」 카드와 같은 강조 틀을 준다.
- *   03 분명한 근거 — 바이오 기반 탄소 함량 시험(ASTM D6866)과 전과정평가(LCA)는 다른 질문에 답한다.
+ *   03 분명한 근거 — 98% 패널(CarbonEvidencePanel): 시험 시료의 바이오 기반 탄소 함량과 시험 메타, 그 아래 "출처와 탄소발자국은
+ *                    다른 질문"이라는 두 단 문장. 2026-10-04 고객 제공 시안대로 예전의 두 질문 카드 · 콜아웃을 대신한다.
  *   FAQ · 맺음 · 근거 자료(외부 링크)
  *
  * 근거와 한계
@@ -82,9 +83,18 @@ type CarbonCopy = {
     eyebrow: string;
     title: string;
     body: string;
-    items: { label: string; title: string; text: string; tag: string }[];
-    calloutTitle: string;
-    calloutBody: string;
+    /** 98% 패널 — 값 자리({value} · {total} · {page} · {table})는 CarbonEvidencePanel 이 evidence.ts 로 채운다 */
+    panel: {
+      valueLabel: string;
+      dotsAlt: string;
+      headline: string;
+      body: string;
+      reportLabel: string;
+      sourceLabel: string;
+      source: string;
+      link: string;
+    };
+    split: { title: string; text: string };
   };
   faq: { eyebrow: string; title: string; items: { question: string; answers: string[] }[] };
   closing: { eyebrow: string; text: string };
@@ -450,42 +460,8 @@ export default async function CarbonJourney() {
         {/* 03 · 분명한 근거 */}
         <div className="mt-20">
           <PartHeading eyebrow={c.evidence.eyebrow} title={c.evidence.title} body={c.evidence.body} />
-          <ol className="mt-10 grid gap-6 md:grid-cols-2 lg:gap-8">
-            {c.evidence.items.map((item, index) => (
-              <li key={item.title} className={`${CARD} p-6 sm:p-7`}>
-                <div className="flex items-center gap-3">
-                  <span
-                    aria-hidden="true"
-                    className="rounded bg-[var(--color-ivory)] px-1.5 py-0.5 text-[0.72rem] font-semibold tracking-[0.18em] text-[var(--color-slate-muted)]"
-                  >
-                    {`0${index + 1}`}
-                  </span>
-                  <p className={SMALL_LABEL}>{item.label}</p>
-                </div>
-                <h4 className="mt-4 text-xl font-bold tracking-[-0.01em] break-keep text-[var(--color-indigo-deep)]">
-                  {item.title}
-                </h4>
-                <p className="mt-3 text-sm leading-[1.85] break-keep text-[var(--color-ink)]/80 sm:text-base">
-                  {item.text}
-                </p>
-                <span className={`${TAG} mt-5`}>{item.tag}</span>
-              </li>
-            ))}
-          </ol>
-          <div className={`${CARD} mt-8 border-l-4 border-l-[var(--color-denim)] p-6 sm:p-7`}>
-            <p className="text-lg font-bold break-keep text-[var(--color-indigo-deep)]">{c.evidence.calloutTitle}</p>
-            <p className="mt-3 max-w-3xl text-sm leading-[1.85] break-keep text-[var(--color-ink)]/85 sm:text-base">
-              {t.rich('carbon.evidence.calloutBody', {
-                link: (chunks) => (
-                  <Link
-                    href="/data-certifications"
-                    className="font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
-                  >
-                    {chunks}
-                  </Link>
-                ),
-              })}
-            </p>
+          <div className="mt-10">
+            <CarbonEvidencePanel />
           </div>
         </div>
 
