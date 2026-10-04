@@ -727,7 +727,7 @@
         "title": "A good explanation needs clear evidence.",
         "body": "Where the feedstock came from and how much it affects the environment are two different questions.",
         "panel": {
-          "valueLabel": "Biobased carbon content of the test sample",
+          "valueLabel": "Biobased carbon content of Blugene",
           "dotsAlt": "Dot grid: {value} of {total} dots filled — biobased carbon {value}%",
           "headline": "The origin of the carbon was confirmed by testing.",
           "body": "This is a ratio based on the organic carbon of the test sample. It does not mean the plant-derived content of a pair of jeans, the purity of the indigo, or a reduction in carbon emissions.",

@@ -729,7 +729,7 @@
         "title": "Une bonne explication a besoin de preuves claires.",
         "body": "D’où vient la matière première et quel est son impact sur l’environnement sont deux questions différentes.",
         "panel": {
-          "valueLabel": "Teneur en carbone biosourcé de l'échantillon testé",
+          "valueLabel": "Teneur en carbone biosourcé de Blugene",
           "dotsAlt": "Grille de points : {value} points sur {total} remplis — carbone biosourcé {value} %",
           "headline": "L'origine du carbone a été confirmée par un essai.",
           "body": "Ce taux est calculé sur le carbone organique de l'échantillon testé. Il ne désigne ni la part de matières végétales d'un jean, ni la pureté de l'indigo, ni une réduction des émissions de carbone.",
