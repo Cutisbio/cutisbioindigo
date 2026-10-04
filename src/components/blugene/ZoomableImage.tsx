@@ -13,6 +13,10 @@ import SourceNote from '@/components/blugene/SourceNote';
  * - 닫으면 원래 버튼으로 포커스가 돌아온다 (native <dialog> 가 처리한다).
  * - hover 만으로 정보를 제공하지 않는다 — 안내 문구를 화면에 항상 표시한다.
  * - 원본은 클릭할 때 비로소 내려받는다 (초기 페이지에서 12쪽 전체를 받지 않는다).
+ *
+ * originalOnZoom — 썸네일은 next/image 가 최적화하되, 확대 창에서는 원본 파일을 그대로 연다.
+ * Next 16 은 quality 를 설정값(기본 [75])으로 강제하므로, 고객이 '고화질'로 요청한 사진(회사 소개 갤러리)은
+ * 이 옵션으로 원본 바이트를 그대로 보여 준다. unoptimized 와 달리 초기 로딩은 무거워지지 않는다.
  */
 export default function ZoomableImage({
   src,
@@ -28,6 +32,7 @@ export default function ZoomableImage({
   sizes = '(max-width: 768px) 90vw, 420px',
   preload = false,
   unoptimized = false,
+  originalOnZoom = false,
 }: {
   src: string;
   alt: string;
@@ -42,6 +47,7 @@ export default function ZoomableImage({
   sizes?: string;
   preload?: boolean;
   unoptimized?: boolean;
+  originalOnZoom?: boolean;
 }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [opened, setOpened] = useState(false);
@@ -121,7 +127,7 @@ export default function ZoomableImage({
                 width={width}
                 height={height}
                 sizes="(max-width: 1100px) 96vw, 1100px"
-                unoptimized={unoptimized}
+                unoptimized={unoptimized || originalOnZoom}
                 className="swatch-true-color mx-auto h-auto w-auto max-w-full"
               />
             )}

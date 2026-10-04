@@ -882,7 +882,7 @@
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "Notre vision est de devenir un pionnier mondial des biomatériaux innovants qui rendent la vie humaine plus belle et plus saine. Le colorant bio-indigo Blugene est un biomatériau conçu pour réinventer le denim et le jean, aimés de toute l’humanité depuis si longtemps, et pour renforcer la santé humaine ainsi que la durabilité de l’environnement planétaire.",
+    "visionText": "Notre vision est de devenir un pionnier mondial des biomatériaux innovants qui rendent la vie humaine plus belle et plus saine.",
     "aboutImageAlt": "Vue de chercheurs de CutisBio menant des travaux de recherche approfondis en biologie",
     "coreBusinessTitle": "Domaines d'activité principaux",
     "healthTitle": "Santé",
@@ -891,6 +891,26 @@
     "beautyText": "Nous développons des substances et des produits qui contrôlent le vieillissement de la peau et des cheveux.",
     "fashionTitle": "Mode (Blugene)",
     "fashionText": "Nous fournissons du bio-indigo produit par fermentation microbienne pour la teinture du denim et l'impression numérique.",
+    "coreBusinessLead": "Le colorant bio-indigo Blugene est un biomatériau conçu pour réinventer le denim et le jean, aimés de toute l’humanité depuis si longtemps, et pour renforcer la santé humaine ainsi que la durabilité de l’environnement planétaire.",
+    "galleryNote": "Photographies prises par CutisBio, présentées telles quelles, sans correction des couleurs.",
+    "gallery": [
+      {
+        "alt": "Chemises et veste en denim teintes au bio-indigo en dégradé, du bleu ciel pâle au bleu marine profond, suspendues côte à côte sur un portant",
+        "caption": "Chemises et veste en denim teintes en dégradé"
+      },
+      {
+        "alt": "Devant le stand CutisBio (D08) d’un salon, en chemise teinte au bio-indigo ; derrière, des tissus d’échantillon teints et des flacons de poudre d’indigo",
+        "caption": "Stand d’exposition CutisBio — COEX, août 2024"
+      },
+      {
+        "alt": "Foulards légers teints au bio-indigo en dégradé, disposés côte à côte du plus clair au plus foncé",
+        "caption": "Foulards teints en dégradé"
+      },
+      {
+        "alt": "Foulards teints au bio-indigo en différentes intensités, roulés en forme de roses et réunis",
+        "caption": "Foulards roulés en roses"
+      }
+    ],
     "historyTitle": "Historique",
     "historyList": [
       {

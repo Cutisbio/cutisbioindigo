@@ -2868,12 +2868,12 @@
       "tr": "cd4903482cc7b4d1"
     },
     "About.visionText": {
-      "ja": "67808add1d9edfb2",
-      "en": "67808add1d9edfb2",
-      "fr": "67808add1d9edfb2",
-      "it": "67808add1d9edfb2",
-      "zh": "67808add1d9edfb2",
-      "tr": "67808add1d9edfb2"
+      "ja": "fb2dc902e28eb6ff",
+      "en": "fb2dc902e28eb6ff",
+      "fr": "fb2dc902e28eb6ff",
+      "it": "fb2dc902e28eb6ff",
+      "zh": "fb2dc902e28eb6ff",
+      "tr": "fb2dc902e28eb6ff"
     },
     "About.aboutImageAlt": {
       "ja": "6c4251a4e7fdebbf",
@@ -5240,6 +5240,86 @@
       "it": "25728c7bf2256713",
       "zh": "25728c7bf2256713",
       "tr": "25728c7bf2256713"
+    },
+    "About.coreBusinessLead": {
+      "ja": "a0a7f6f058bbb026",
+      "en": "a0a7f6f058bbb026",
+      "fr": "a0a7f6f058bbb026",
+      "it": "a0a7f6f058bbb026",
+      "zh": "a0a7f6f058bbb026",
+      "tr": "a0a7f6f058bbb026"
+    },
+    "About.galleryNote": {
+      "ja": "235cfe9d405195b0",
+      "en": "235cfe9d405195b0",
+      "fr": "235cfe9d405195b0",
+      "it": "235cfe9d405195b0",
+      "zh": "235cfe9d405195b0",
+      "tr": "235cfe9d405195b0"
+    },
+    "About.gallery[0].alt": {
+      "ja": "93d8994713f9163e",
+      "en": "93d8994713f9163e",
+      "fr": "93d8994713f9163e",
+      "it": "93d8994713f9163e",
+      "zh": "93d8994713f9163e",
+      "tr": "93d8994713f9163e"
+    },
+    "About.gallery[0].caption": {
+      "ja": "fc2d8bd535bd94e5",
+      "en": "fc2d8bd535bd94e5",
+      "fr": "fc2d8bd535bd94e5",
+      "it": "fc2d8bd535bd94e5",
+      "zh": "fc2d8bd535bd94e5",
+      "tr": "fc2d8bd535bd94e5"
+    },
+    "About.gallery[1].alt": {
+      "ja": "4f8e3bec13c9f27d",
+      "en": "4f8e3bec13c9f27d",
+      "fr": "4f8e3bec13c9f27d",
+      "it": "4f8e3bec13c9f27d",
+      "zh": "4f8e3bec13c9f27d",
+      "tr": "4f8e3bec13c9f27d"
+    },
+    "About.gallery[1].caption": {
+      "ja": "2ab34cda77f0da9a",
+      "en": "2ab34cda77f0da9a",
+      "fr": "2ab34cda77f0da9a",
+      "it": "2ab34cda77f0da9a",
+      "zh": "2ab34cda77f0da9a",
+      "tr": "2ab34cda77f0da9a"
+    },
+    "About.gallery[2].alt": {
+      "ja": "03deb9c72737f42b",
+      "en": "03deb9c72737f42b",
+      "fr": "03deb9c72737f42b",
+      "it": "03deb9c72737f42b",
+      "zh": "03deb9c72737f42b",
+      "tr": "03deb9c72737f42b"
+    },
+    "About.gallery[2].caption": {
+      "ja": "edd0339802377539",
+      "en": "edd0339802377539",
+      "fr": "edd0339802377539",
+      "it": "edd0339802377539",
+      "zh": "edd0339802377539",
+      "tr": "edd0339802377539"
+    },
+    "About.gallery[3].alt": {
+      "ja": "e49f4a7850f11acc",
+      "en": "e49f4a7850f11acc",
+      "fr": "e49f4a7850f11acc",
+      "it": "e49f4a7850f11acc",
+      "zh": "e49f4a7850f11acc",
+      "tr": "e49f4a7850f11acc"
+    },
+    "About.gallery[3].caption": {
+      "ja": "1353ff239385673a",
+      "en": "1353ff239385673a",
+      "fr": "1353ff239385673a",
+      "it": "1353ff239385673a",
+      "zh": "1353ff239385673a",
+      "tr": "1353ff239385673a"
     }
   }
 }

@@ -882,7 +882,7 @@
     "missionTitle": "Our Mission",
     "missionText": "Design living cells to make everyday life more beautiful and better.",
     "visionTitle": "Our Vision",
-    "visionText": "Our vision is to become a global pioneer in innovative biomaterials that make human life more beautiful and healthier. Blugene bio indigo dye is a biomaterial created to reinvent denim and jeans, loved in common by all of humanity for so long, and to raise both human health and the sustainability of the global environment.",
+    "visionText": "Our vision is to become a global pioneer in innovative biomaterials that make human life more beautiful and healthier.",
     "aboutImageAlt": "CutisBio researchers engaged in in-depth bio research",
     "coreBusinessTitle": "Core business areas",
     "healthTitle": "Health",
@@ -891,6 +891,26 @@
     "beautyText": "We develop substances and products for managing the aging of skin and hair.",
     "fashionTitle": "Fashion (Blugene)",
     "fashionText": "We supply bio indigo produced by microbial fermentation for denim dyeing and digital printing.",
+    "coreBusinessLead": "Blugene bio indigo dye is a biomaterial created to reinvent denim and jeans, loved in common by all of humanity for so long, and to raise both human health and the sustainability of the global environment.",
+    "galleryNote": "Photographs taken by CutisBio, shown as originals without color correction.",
+    "gallery": [
+      {
+        "alt": "Shirts and a denim jacket dyed with bio indigo in graded depths from pale sky blue to deep navy, hung side by side on a rack",
+        "caption": "Shirts and a denim jacket dyed in graded depths"
+      },
+      {
+        "alt": "Wearing a bio-indigo-dyed shirt in front of the CutisBio booth (D08) at a trade fair, with dyed sample fabrics and jars of indigo powder behind",
+        "caption": "CutisBio exhibition booth — COEX, August 2024"
+      },
+      {
+        "alt": "Sheer scarves dyed with bio indigo in graded depths, laid side by side from the lightest to the darkest",
+        "caption": "Scarves dyed in graded depths"
+      },
+      {
+        "alt": "Bio-indigo-dyed scarves of different depths rolled into rose shapes and gathered together",
+        "caption": "Scarves rolled like roses"
+      }
+    ],
     "historyTitle": "History",
     "historyList": [
       {
