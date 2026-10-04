@@ -704,8 +704,8 @@
         "items": [
           {
             "label": "Carbonio di origine petrolifera",
-            "title": "Carbonio immagazzinato a lungo",
-            "text": "Si estrae e si usa carbonio immagazzinato sotto terra per ere intere. Il petrolio non si riforma al ritmo con cui lo usiamo.",
+            "title": "La via che attinge a un carbonio immagazzinato da tempo",
+            "text": "Il petrolio è una risorsa formatasi in tempi geologici. Il carbonio che vi è immagazzinato viene estratto e usato come materia prima dell'indaco. Il petrolio non si riforma al ritmo con cui lo consumiamo.",
             "tags": [
               "Stoccaggio su scala geologica",
               "Estrazione · uso"
@@ -713,8 +713,9 @@
           },
           {
             "label": "Carbonio biobased",
-            "title": "Il carbonio di una risorsa che ricresce",
-            "text": "Si usa il carbonio che le piante hanno assorbito di recente dall’aria. Se la biomassa viene rigenerata, l’assorbimento di carbonio può continuare con la crescita di nuove piante.",
+            "badge": "Il carbonio di Blugene",
+            "title": "La via che usa un carbonio in circolo",
+            "text": "Crescendo, le piante assorbono CO₂ dall'aria per costruire i propri tessuti. Blugene trasforma materie prime derivate da biomassa vegetale in indaco mediante fermentazione microbica. Coltivare di nuovo la materia prima e produrre a partire da essa si collega al recente ciclo biologico del carbonio.",
             "tags": [
               "Crescita · assorbimento",
               "Uso · rigenerazione"

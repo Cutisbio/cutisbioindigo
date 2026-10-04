@@ -704,8 +704,8 @@
         "items": [
           {
             "label": "Carbone d’origine pétrolière",
-            "title": "Un carbone stocké depuis très longtemps",
-            "text": "On extrait et utilise un carbone stocké sous terre pendant des âges. Le pétrole ne se reforme pas au rythme où nous l’utilisons.",
+            "title": "La voie qui puise dans un carbone stocké depuis longtemps",
+            "text": "Le pétrole est une ressource formée à l'échelle des temps géologiques. Le carbone qui y est stocké est extrait et utilisé comme matière première de l'indigo. Le pétrole ne se reforme pas au rythme où nous le consommons.",
             "tags": [
               "Stockage à l’échelle géologique",
               "Extraction · usage"
@@ -713,8 +713,9 @@
           },
           {
             "label": "Carbone biosourcé",
-            "title": "Le carbone d’une ressource qui repousse",
-            "text": "On utilise le carbone que les plantes ont récemment absorbé dans l’air. Si la biomasse est régénérée, l’absorption de carbone peut se poursuivre avec la croissance de nouvelles plantes.",
+            "badge": "Le carbone de Blugene",
+            "title": "La voie qui utilise un carbone en circulation",
+            "text": "En grandissant, les plantes absorbent le CO₂ de l'air pour constituer leurs tissus. Blugene transforme des matières premières issues de biomasse végétale en indigo par fermentation microbienne. Cultiver de nouveau la matière première et produire à partir d'elle s'inscrit dans le cycle biologique récent du carbone.",
             "tags": [
               "Croissance · absorption",
               "Usage · régénération"

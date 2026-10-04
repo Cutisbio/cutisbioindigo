@@ -3642,20 +3642,20 @@
       "tr": "688baf09d5cde308"
     },
     "Technology.carbon.origin.items[0].title": {
-      "ja": "3b3fbb7d4267c299",
-      "en": "3b3fbb7d4267c299",
-      "fr": "3b3fbb7d4267c299",
-      "it": "3b3fbb7d4267c299",
-      "zh": "3b3fbb7d4267c299",
-      "tr": "3b3fbb7d4267c299"
+      "ja": "07a9ebcc95106d0e",
+      "en": "07a9ebcc95106d0e",
+      "fr": "07a9ebcc95106d0e",
+      "it": "07a9ebcc95106d0e",
+      "zh": "07a9ebcc95106d0e",
+      "tr": "07a9ebcc95106d0e"
     },
     "Technology.carbon.origin.items[0].text": {
-      "ja": "e9ab80b79dde4e79",
-      "en": "e9ab80b79dde4e79",
-      "fr": "e9ab80b79dde4e79",
-      "it": "e9ab80b79dde4e79",
-      "zh": "e9ab80b79dde4e79",
-      "tr": "e9ab80b79dde4e79"
+      "ja": "0f88d4b88ee97c82",
+      "en": "0f88d4b88ee97c82",
+      "fr": "0f88d4b88ee97c82",
+      "it": "0f88d4b88ee97c82",
+      "zh": "0f88d4b88ee97c82",
+      "tr": "0f88d4b88ee97c82"
     },
     "Technology.carbon.origin.items[0].tags[0]": {
       "ja": "296fa78033d8fbb1",
@@ -3682,20 +3682,20 @@
       "tr": "2817cdd1993019d8"
     },
     "Technology.carbon.origin.items[1].title": {
-      "ja": "4be1067575f679bb",
-      "en": "4be1067575f679bb",
-      "fr": "4be1067575f679bb",
-      "it": "4be1067575f679bb",
-      "zh": "4be1067575f679bb",
-      "tr": "4be1067575f679bb"
+      "ja": "e1bba2c176a59f16",
+      "en": "e1bba2c176a59f16",
+      "fr": "e1bba2c176a59f16",
+      "it": "e1bba2c176a59f16",
+      "zh": "e1bba2c176a59f16",
+      "tr": "e1bba2c176a59f16"
     },
     "Technology.carbon.origin.items[1].text": {
-      "ja": "a4c51293c55d464e",
-      "en": "a4c51293c55d464e",
-      "fr": "a4c51293c55d464e",
-      "it": "a4c51293c55d464e",
-      "zh": "a4c51293c55d464e",
-      "tr": "a4c51293c55d464e"
+      "ja": "d788ec4fd9d4c6e6",
+      "en": "d788ec4fd9d4c6e6",
+      "fr": "d788ec4fd9d4c6e6",
+      "it": "d788ec4fd9d4c6e6",
+      "zh": "d788ec4fd9d4c6e6",
+      "tr": "d788ec4fd9d4c6e6"
     },
     "Technology.carbon.origin.items[1].tags[0]": {
       "ja": "93eb4db42ee677a5",
@@ -5312,6 +5312,14 @@
       "it": "09060ab0fcd73177",
       "zh": "09060ab0fcd73177",
       "tr": "09060ab0fcd73177"
+    },
+    "Technology.carbon.origin.items[1].badge": {
+      "ja": "7535a13a09cd1ab5",
+      "en": "7535a13a09cd1ab5",
+      "fr": "7535a13a09cd1ab5",
+      "it": "7535a13a09cd1ab5",
+      "zh": "7535a13a09cd1ab5",
+      "tr": "7535a13a09cd1ab5"
     }
   }
 }
