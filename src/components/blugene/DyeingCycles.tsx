@@ -17,7 +17,7 @@ import SkeinComparison from '@/components/blugene/SkeinComparison';
  * 표현 원칙
  * - 사진일 뿐이므로 색 농담을 K/S 나 ΔE 같은 수치로 환산하지 않는다(cyclesNote).
  * - <figure> 안에는 사진표와 그것을 설명하는 한 문장(cyclesCaption)만 둔다.
- *   제목 · 자료 종류 · 구조 설명 · 주석은 본문이므로 figure 바깥의 형제로 둔다.
+ *   제목 · 자료 종류 · 주석은 본문이므로 figure 바깥의 형제로 둔다.
  *   (figcaption 이 길어지면 figure 의 접근 가능한 이름이 문단 전체가 되어 버린다.)
  * - 표의 글자(표제 · 열 · 행 · 시료명)는 DyedYarnFigure 가 messages(DyedYarn.*)에서 읽으므로 언어마다 번역된다.
  */
@@ -45,12 +45,8 @@ export default async function DyeingCycles({ className = '' }: { className?: str
       </figure>
 
       <div className="max-w-3xl">
-        {/* 구조 설명 — 아래 염색사 사진표의 짜임을 사진을 보지 않아도 글로 읽을 수 있게 본문에 노출한다 */}
-        <p className="text-[0.95rem] leading-[1.85] break-keep text-[var(--color-ink)]/85 sm:text-base">
-          {t('cyclesAlt')}
-        </p>
-
-        <SourceNote className="mt-6">{t('cyclesNote')}</SourceNote>
+        {/* 염색사 사진표의 짜임을 적던 설명 문단(Products.cyclesAlt)은 2026-10-06 고객 요청으로 뺐다(키도 지움). 주석만 남긴다. */}
+        <SourceNote>{t('cyclesNote')}</SourceNote>
 
         {/* '제품 자료 문의 →' 링크는 2026-10-06 고객 요청으로 뺐다(Products.cta 키도 지움). */}
       </div>
