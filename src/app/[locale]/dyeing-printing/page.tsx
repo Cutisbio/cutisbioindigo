@@ -6,6 +6,7 @@ import FabricComparison from '@/components/blugene/FabricComparison';
 import FastnessTables from '@/components/blugene/FastnessTables';
 import AdditionalDyeingCase from '@/components/blugene/AdditionalDyeingCase';
 import ShadeLibrary from '@/components/blugene/ShadeLibrary';
+import DyeingCycles from '@/components/blugene/DyeingCycles';
 import ProductFormats from '@/components/blugene/ProductFormats';
 import PrintingGallery from '@/components/blugene/PrintingGallery';
 import { LOCALES, buildPageMetadata } from '@/data/blugene/site';
@@ -86,10 +87,11 @@ export default async function DyeingPrintingPage({
         </div>
       </section>
 
-      {/* 색상 라이브러리 */}
+      {/* 색상 라이브러리 — 「염색 횟수에 따른 발색 비교」(DyeingCycles)는 2026-10-05 고객 요청으로 제품군 섹션에서
+          「카탈로그 농도별 견본」 바로 위로 옮겼다. */}
       <section id="shades" className="w-full bg-white scroll-mt-24">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-          <ShadeLibrary variant="bare" />
+          <ShadeLibrary variant="bare" beforeGrid={<DyeingCycles />} />
         </div>
       </section>
 
