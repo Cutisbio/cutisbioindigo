@@ -84,6 +84,7 @@ export const productForms: ProductForm[] = [
 ];
 
 /** p.8 Figure 5-1. 3행(화학 분말 / 바이오 분말 / 바이오 잉크) × 4열(1~4회 염색) 비교 도판 */
+/** 2026-10-05 부터 화면에서 쓰지 않는다 — 염색 횟수 비교는 고객 제공 염색사 사진(data/blugene/dyedYarn.ts)으로 바꿨다. 파일은 남겨 둔다. */
 export const dyeingCycleImage = '/blugene/products/powder-ink-cycles.png';
 export const dyeingCycleRows = ['chemicalPowder', 'bioPowder', 'bioInk'] as const;
 export const dyeingCycles = [1, 2, 3, 4] as const;

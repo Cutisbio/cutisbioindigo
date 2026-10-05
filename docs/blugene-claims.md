@@ -21,7 +21,7 @@
 | 견뢰도 | 세탁 / 일광 / 마찰 / 땀 4개 표 | p.6 Table 3-1 ~ 3-4 · KS K ISO 105-C06:2010 A2S / B02:2014 A1 M5 / X12:2016 / E04:2013 | 등급 문자열('4-5')을 그대로 출력. 경사/위사, 건/습, 산성/알칼리성 구분 유지. **낮은 값(#6 건마찰 1·2, #9 건마찰 2·2-3, #8 알칼리 땀 색변화 3)을 포함해 전부 표시**. |
 | 견뢰도 종합 서술 | "comparable performance" | p.6 3-B | "식물성·화학 인디고와 견줄 만한 수준"으로 번역. "모든 항목에서 우월"로 강화하지 않는다. |
 | 색조 조절 | 농도별 견본 12위치, 인디고 100% vs 인디고 94%+인디루빈 6% | p.7 Figure 4-1, 4-2 | 농도 수치가 원본에 없으므로 위치 기준 구분자(A1~B6)만 사용. 두 조성 사이를 보간하지 않는다. |
-| 염색 횟수별 발색 | 화학 분말 / 바이오 분말 / 바이오 잉크 × 1~4회 | p.8 Figure 5-1 | 카탈로그 표기("Digital Printing Ink > Chemical Indigo ≈ Powder BioIndigo")를 그대로 인용하고, K/S·ΔE 로 환산하지 않는다. |
+| 염색 횟수별 발색 | Blugene②-1 / 석유화학 인디고 / Blugene②-2 염색사 × 4 · 6 · 8회 염색 × 염색사 · 1회 세탁 | 고객 제공 사진 6장(2026-10-05 채팅 첨부 SVG 에 내장된 PDF 5쪽 JPEG) — `DyedYarnFigure`, `DyedYarn.*` · `Products.cycles*` | 2026-10-05 고객 요청으로 카탈로그 p.8 Figure 5-1(화학 분말 / 바이오 분말 / 바이오 잉크 × 1~4회, "Digital Printing Ink > Chemical Indigo ≈ Powder BioIndigo" 인용)을 화면에서 빼고 이 사진표로 바꿨다(도판 파일은 남김). 시료 코드 · 조건은 고객 자료의 표기 그대로이며, 염색 조건 · 세탁 방법 · 측정값은 자료에 없어 적지 않는다. 사진의 색 농담을 K/S · ΔE 로 환산하지 않고 "모든 조건에서의 성능 우위를 뜻하지 않는다"를 cyclesNote 로 밝힌다. 표의 글자는 messages 에서 번역된다. |
 | 제품명 · CAS | Bio Indigo Dye Powder (Microbial Fermentation) · CAS 482-89-3 | p.11 | 웹 표시명(Blugene Indigo Powder)과 원문 제품명을 함께 표시 |
 | 연락처 | contact@cutisbio.com · +82-70-4914-2525 · 8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea | p.11–12 | 푸터·문의 화면에 그대로 |
 

@@ -195,12 +195,23 @@
     "nameNote": "The product names above are the web-facing names of the new brand. In the catalogue and the certificates the original product name is “{catalogueName}”.",
     "specNote": "Particle size, viscosity, shelf life, minimum order quantity, production capacity and pricing are not in the supplied material and are therefore not shown. Please contact us and we will confirm the specifications you need.",
     "cyclesTitle": "Color development by number of dyeing cycles",
-    "cyclesCaption": "Catalogue p.8 Figure 5-1. A comparison of cotton fabric dyed 1 to 4 times with chemical indigo (powder), bio indigo (powder) and bio indigo (digital printing ink).",
-    "cyclesAlt": "A three-row, four-column comparison plate. The rows are chemical indigo powder, bio indigo powder and bio indigo digital printing ink; the columns are 1 to 4 dyeing cycles.",
-    "cyclesNote": "For this example the catalogue records color strength as “digital printing ink > chemical indigo ≈ bio indigo powder”. The shade depth in the photograph has not been converted into K/S values or ΔE color difference measurements, and it does not imply superior performance under all conditions.",
+    "cyclesCaption": "Dyed yarn photos provided by CutisBio (October 2026). Yarn dyed with Blugene②-1, petrochemical indigo and Blugene②-2, compared after 4, 6 and 8 dyeing cycles and after one wash.",
+    "cyclesAlt": "Photo comparison table. The three blocks are 4, 6 and 8 dyeing cycles; in each block the photo shows, from top, yarn dyed with Blugene②-1, petrochemical indigo and Blugene②-2. The left column is the dyed yarn, the right column is after one wash.",
+    "cyclesNote": "Test photos provided by CutisBio, shown without colour correction. The colour depth in the photos was not converted into K/S values or ΔE colour-difference measurements, and the photos do not mean superiority under all conditions.",
     "cta": "Request product information",
     "powderSummary": "Bio indigo dye powder made by microbial fermentation, for denim, cotton, silk and cashmere dyeing. 98% bio-based carbon content (ASTM D6866-24a, KATRI); aniline and N-methylaniline not detected (KS K 0734 2019, KOTERI, detection limit 5 mg/kg).",
     "inkSummary": "Bio indigo made by microbial fermentation, formulated as an ink for digital printing. Listed on catalogue p.9."
+  },
+  "DyedYarn": {
+    "figureTitle": "Dyed yarn photos",
+    "colDyed": "Dyed yarn",
+    "colWashed": "After 1 wash",
+    "rowCycles": "Dyed {count} times",
+    "sampleA": "Blugene②-1",
+    "samplePetro": "Petrochemical indigo",
+    "sampleB": "Blugene②-2",
+    "sampleOrder": "In each photo, from top: {a} · {petro} · {b}.",
+    "photoAlt": "Dyed {count} times, {condition} — photo of dyed yarn, from top: {a}, {petro}, {b}"
   },
   "Printing": {
     "eyebrow": "PRINTED IN BLUE",
