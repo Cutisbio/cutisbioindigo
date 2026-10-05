@@ -135,14 +135,4 @@ export const fastnessSourceImage = '/blugene/performance/fastness-tables.png';
 export const fabricComparisonImage = '/blugene/performance/fabric-comparison.webp';
 export const fabricStripImage = '/blugene/performance/fabric-strip.webp';
 
-/**
- * 저장소에 원래 있던 추가 원단 평가 사진(`/test.png`).
- * 일본어 라벨: 4·6·8회 염색 × 바이오②-1 / 合成(합성) / 바이오②-2.
- * 시험기관·시험법·일자·의뢰처가 저장소에 없어 카탈로그 p.6 시험과 분리해 표시한다.
- */
-export const additionalDyeingCase = {
-  image: '/test.png',
-  cycles: [4, 6, 8],
-  rowsAsPrinted: ['バイオ②-1', '合成', 'バイオ②-2'],
-  provenance: 'unverified' as const,
-};
+/* 저장소에 원래 있던 추가 원단 평가 사진(/test.png)의 데이터(additionalDyeingCase)는 2026-10-05 고객 요청으로 화면 블록과 함께 지웠다. 파일은 남아 있다. */

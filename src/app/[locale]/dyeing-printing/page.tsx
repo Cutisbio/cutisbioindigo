@@ -4,7 +4,6 @@ import { Link } from '@/i18n/routing';
 import SectionHeading from '@/components/blugene/SectionHeading';
 import FabricComparison from '@/components/blugene/FabricComparison';
 import FastnessTables from '@/components/blugene/FastnessTables';
-import AdditionalDyeingCase from '@/components/blugene/AdditionalDyeingCase';
 import ShadeLibrary from '@/components/blugene/ShadeLibrary';
 import DyeingCycles from '@/components/blugene/DyeingCycles';
 import ProductFormats from '@/components/blugene/ProductFormats';
@@ -81,9 +80,7 @@ export default async function DyeingPrintingPage({
       <section id="colorfastness" className="w-full bg-[var(--color-ivory)] scroll-mt-24">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <FastnessTables variant="bare" />
-          <div className="mt-14">
-            <AdditionalDyeingCase />
-          </div>
+          {/* 「추가 원단 평가 사례」(/test.png, AdditionalDyeingCase)는 2026-10-05 고객 요청으로 뺐다 — 컴포넌트 · 문구 키 삭제, 파일은 남김. */}
         </div>
       </section>
 

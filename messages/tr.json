@@ -118,13 +118,7 @@
     "fiberSilk": "İpek",
     "fiberCashmere": "Kaşmir",
     "cta": "Haslık tablosunun tamamını görün",
-    "honestNote": "Bu, tüm kalemlerde üstün olduğu anlamına gelmez. Bazı sürtme haslığı kalemlerinde düşük dereceler de kaydedilmiştir ve tabloda olduğu gibi gösterilmiştir.",
-    "additionalCaseTitle": "Ek kumaş değerlendirme örneği",
-    "additionalCaseBody": "Depoda saklanan ayrı bir boyama değerlendirme fotoğrafıdır. Aşağıdaki değerler, orijinalde Japonca etiketle yazıldığı gibi aynen bırakılmıştır, '合成' birleşimi ifade eder.",
-    "additionalCaseAlt": "4 · 6 · 8 kez boyama koşullarında バイオ②-1, 合成 ve バイオ②-2 ile boyanmış kumaşları karşılaştıran fotoğraf",
-    "additionalCaseProvenance": "Test kuruluşu · test yöntemi · test tarihi · talep eden bilgileri doğrulanamadığı için katalog s.6'daki testten ayrı olarak gösterilmektedir. Yukarıdaki tabloda yer alan #1~#9 numunelerinden farklı bir kaynaktır.",
-    "additionalCaseCyclesLabel": "Boyama sayısı",
-    "additionalCaseRowsLabel": "Kategoriler"
+    "honestNote": "Bu, tüm kalemlerde üstün olduğu anlamına gelmez. Bazı sürtme haslığı kalemlerinde düşük dereceler de kaydedilmiştir ve tabloda olduğu gibi gösterilmiştir."
   },
   "Fastness": {
     "title": "Haslık test sonuçları",

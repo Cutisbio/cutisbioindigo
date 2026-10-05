@@ -118,13 +118,7 @@
     "fiberSilk": "真丝",
     "fiberCashmere": "羊绒",
     "cta": "查看色牢度完整表格",
-    "honestNote": "这并不表示在所有项目上均更优。部分耐摩擦色牢度项目也记录了较低等级，表中已如实呈现。",
-    "additionalCaseTitle": "追加面料评估案例",
-    "additionalCaseBody": "存储库中存放的独立染色评估照片。以下值是原件上介绍的日文标签，‘合成’意味着合成。",
-    "additionalCaseAlt": "对比在 4 回 · 6 回 · 8 回染色条件下，分别以 バイオ②-1、合成、バイオ②-2 染制的面料照片",
-    "additionalCaseProvenance": "因检测机构 · 检测方法 · 检测日期与委托方信息未能确认，故与产品目录 p.6 的检测分开呈现。这与上表的样品 #1~#9 并非同一组资料。",
-    "additionalCaseCyclesLabel": "染色次数",
-    "additionalCaseRowsLabel": "分类"
+    "honestNote": "这并不表示在所有项目上均更优。部分耐摩擦色牢度项目也记录了较低等级，表中已如实呈现。"
   },
   "Fastness": {
     "title": "色牢度检测结果",
