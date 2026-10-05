@@ -20,7 +20,7 @@ import { HEADING_SIZE, keepLastWords } from '@/components/blugene/SectionHeading
  * 전에는 '브랜드 이야기 읽기'(/brand) 링크였는데 /brand 자신에서도 켜져 있어 눌러도 아무 일이 없었다(2026-09-12 고객 요청으로 교체).
  *
  * portrait 는 오른쪽 열에 Blugene 기획자(피부과전문의 최원우)의 사진과 직함 두 줄을 놓는다
- * (2026-09-11 고객 요청). /brand 에서만 켠다. 사진은 고객이 준 인물 사진을 자르지 않고 축소한 것이며
+ * (2026-09-11 고객 요청). 처음엔 /brand 에서만 켰고, 2026-10-05 고객 요청으로 홈에서도 켠다. 사진은 고객이 준 인물 사진을 자르지 않고 축소한 것이며
  * (public/blugene/asset-manifest.json 참조), 사진에 시험 완료 배지나 의학적 보증 문구를 붙이지 않는다.
  */
 /** 기획자 사진 — 원본 3744×5616 JPEG 를 자르지 않고 960px 폭 WebP 로 축소한 것 */
@@ -28,7 +28,7 @@ const PORTRAIT = { src: '/blugene/brand/dermatologist-choi-wonwoo.webp', width: 
 export default async function BrandManifesto({
   portrait = false,
 }: {
-  /** 오른쪽 열에 기획자 사진과 직함을 놓을지 여부. /brand 에서 켠다. */
+  /** 오른쪽 열에 기획자 사진과 직함을 놓을지 여부. 홈과 /brand 에서 켠다. */
   portrait?: boolean;
 }) {
   const t = await getTranslations('Manifesto');
