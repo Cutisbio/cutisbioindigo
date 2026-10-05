@@ -9,7 +9,7 @@ import BrandManifesto from '@/components/blugene/BrandManifesto';
 import ImpurityEvidence from '@/components/blugene/ImpurityEvidence';
 import ScienceSection from '@/components/blugene/ScienceSection';
 import EnvironmentSection from '@/components/blugene/EnvironmentSection';
-import FabricComparison from '@/components/blugene/FabricComparison';
+import DyeingCycles from '@/components/blugene/DyeingCycles';
 import ProductFormats from '@/components/blugene/ProductFormats';
 import CertificationLibrary from '@/components/blugene/CertificationLibrary';
 import SectionHeading from '@/components/blugene/SectionHeading';
@@ -105,7 +105,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       */}
       <section className="w-full bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
-          {/* 「염색 횟수에 따른 발색 비교」 도판은 2026-09-29 고객 요청으로 홈에서 뺐다 — /dyeing-printing 의 색상 라이브러리(DyeingCycles)에 있다 */}
+          {/* 「염색 횟수에 따른 발색 비교」 도판은 2026-09-29 고객 요청으로 여기서 뺐다. 2026-10-06 부터는 아래 06 섹션에 사례 1만 둔다 */}
           <ProductFormats variant="bare" />
         </div>
       </section>
@@ -122,17 +122,19 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       {/* 05-b. 재생 가능한 탄소 */}
       <EnvironmentSection />
 
-      {/* 06. 실제 원단으로 보여주는 성능 */}
+      {/* 06. 염색 횟수에 따른 발색 비교 — 2026-10-06 고객 요청으로 원단 비교(FabricComparison, 카탈로그 Figure 3-1 · 범례 · 원본 스트립)를
+          홈에서 빼고, /dyeing-printing 의 「Blugene 염색실증 사례 1」(실타래 비교)만 두고 염색성능 페이지 링크를 단다.
+          원단 비교는 /dyeing-printing 에 그대로 있다. */}
       <section className="w-full bg-white">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
-          <FabricComparison variant="bare" />
+          <DyeingCycles cases={['skein']} titleAs="h2" cta />
         </div>
       </section>
 
       {/* 07. 당신만의 파랑(ShadeLibrary)은 2026-10-05 고객 요청으로 홈에서 뺐다 — 「카탈로그 농도별 견본」 격자를 빼고 나면
           제목만 남기 때문이다(인디루빈 비교는 2026-09-29 에 이미 뺐다). /dyeing-printing 에는 남아 있다. */}
 
-      {/* 08. 원본으로 확인하는 신뢰 — 앞의 06(원단 성능)이 흰 바탕이라 아이보리로 받는다 — 07 은 2026-10-05 에 뺐다
+      {/* 08. 원본으로 확인하는 신뢰 — 앞의 06(발색 비교)이 흰 바탕이라 아이보리로 받는다 — 07 은 2026-10-05 에 뺐다
           (2026-09-09 홈의 프린팅 섹션을 뺐다. 같은 내용이 /dyeing-printing 에 있다)
           (2026-09-11 인증 카드는 인증 마크 · 인증명 · 원본 이미지만 남긴다. 상세와 읽는 조건은 /data-certifications 에 있다) */}
       <section className="w-full bg-[var(--color-ivory)]">
