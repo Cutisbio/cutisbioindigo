@@ -16,9 +16,10 @@ import { DYED_YARN_BLOCKS } from '@/data/blugene/dyedYarn';
  * - 좁은 화면(sm 미만): 블록마다 행 이름 아래에 [시료명 3줄 | 사진]을 염색사 · 1회 세탁 순으로 쌓는다 — 시료명이 언제나
  *   사진 왼쪽에 같은 글자로 붙어 있어야 한다는 고객 요청(2026-10-05). 사진 alt 도 언제나 순서를 말한다.
  */
-const DESKTOP_COLS = 'grid-cols-[2.75rem_7.25rem_minmax(0,545fr)_minmax(0,725fr)]';
+const DESKTOP_COLS =
+  'grid-cols-[2.75rem_7.25rem_minmax(0,545fr)_minmax(0,725fr)] lg:grid-cols-[3.5rem_9rem_minmax(0,545fr)_minmax(0,725fr)]';
 const MOBILE_COLS = 'grid-cols-[5.6rem_minmax(0,1fr)]';
-const LABEL = 'text-[0.68rem] leading-snug font-semibold break-keep text-[var(--color-ink)] sm:text-[0.8rem]';
+const LABEL = 'text-[0.68rem] leading-snug font-semibold break-keep text-[var(--color-ink)] sm:text-[0.8rem] lg:text-[0.95rem]';
 const RULE = 'border-[color:var(--color-washed)]';
 /* 시료명 세 줄의 자리 — Tailwind 가 클래스를 찾을 수 있게 리터럴로 둔다 */
 const DESKTOP_LABEL_POS = ['col-start-2 row-start-1', 'col-start-2 row-start-2', 'col-start-2 row-start-3'] as const;

@@ -24,11 +24,10 @@ export default async function DyeingCycles({ className = '' }: { className?: str
   const tc = await getTranslations('Common');
 
   return (
-    <div
-      className={`grid gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1fr)] lg:gap-14 ${className}`}
-    >
-      {/* 좌우 비대칭 — 모바일에서는 도판이 먼저 */}
-      <div className="order-2 lg:order-1">
+    <div className={`flex flex-col gap-8 lg:gap-10 ${className}`}>
+      {/* 글이 먼저, 사진표는 아래에 컨테이너 전체 폭으로 — 사진이 최대한 크게 보이도록(2026-10-05 고객 요청).
+          전에는 PC 에서 글 오른쪽 열(약 절반 폭)에 두어 사진이 작았다. */}
+      <div className="max-w-3xl">
         <div className="flex flex-wrap items-center gap-3">
           <h3 className="text-xl font-bold tracking-[-0.01em] break-keep text-[var(--color-indigo-deep)] sm:text-2xl">
             {t('cyclesTitle')}
@@ -37,11 +36,11 @@ export default async function DyeingCycles({ className = '' }: { className?: str
         </div>
 
         {/* 구조 설명 — 사진을 보지 않아도 표의 짜임을 글로 읽을 수 있게 본문에 노출한다 */}
-        <p className="mt-4 max-w-xl text-[0.95rem] leading-[1.85] break-keep text-[var(--color-ink)]/85">
+        <p className="mt-4 text-[0.95rem] leading-[1.85] break-keep text-[var(--color-ink)]/85 sm:text-base">
           {t('cyclesAlt')}
         </p>
 
-        <SourceNote className="mt-6 max-w-xl">{t('cyclesNote')}</SourceNote>
+        <SourceNote className="mt-6">{t('cyclesNote')}</SourceNote>
 
         <Link
           href="/contact"
@@ -52,8 +51,8 @@ export default async function DyeingCycles({ className = '' }: { className?: str
         </Link>
       </div>
 
-      {/* figure 는 사진표와 그것을 설명하는 한 문장만 담는다 */}
-      <figure className="order-1 lg:order-2">
+      {/* figure 는 사진표와 그것을 설명하는 한 문장만 담는다. 전체 폭 */}
+      <figure>
         <DyedYarnFigure />
         <figcaption className="mt-2 text-[0.8125rem] leading-relaxed break-keep text-[var(--color-slate-muted)]">
           {t('cyclesCaption')}
