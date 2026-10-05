@@ -298,12 +298,12 @@
       "tr": "eb9bff8e1aed1a43"
     },
     "Manifesto.title": {
-      "ja": "e884a15481eb4eb9",
-      "en": "e884a15481eb4eb9",
-      "fr": "e884a15481eb4eb9",
-      "it": "e884a15481eb4eb9",
-      "zh": "e884a15481eb4eb9",
-      "tr": "e884a15481eb4eb9"
+      "ja": "a5c059604bc9fa45",
+      "en": "a5c059604bc9fa45",
+      "fr": "a5c059604bc9fa45",
+      "it": "a5c059604bc9fa45",
+      "zh": "a5c059604bc9fa45",
+      "tr": "a5c059604bc9fa45"
     },
     "Manifesto.body": {
       "ja": "37d4b63fcb2f1bdd",
@@ -314,22 +314,28 @@
       "tr": "37d4b63fcb2f1bdd"
     },
     "Manifesto.questions[0]": {
-      "ja": "8165b0e0686686d1",
-      "en": "8165b0e0686686d1",
-      "zh": "8165b0e0686686d1",
-      "tr": "8165b0e0686686d1"
+      "ja": "5969ba8607d252ff",
+      "en": "5969ba8607d252ff",
+      "fr": "5969ba8607d252ff",
+      "it": "5969ba8607d252ff",
+      "zh": "5969ba8607d252ff",
+      "tr": "5969ba8607d252ff"
     },
     "Manifesto.questions[1]": {
-      "ja": "33c47795a53c4a76",
-      "en": "33c47795a53c4a76",
-      "zh": "33c47795a53c4a76",
-      "tr": "33c47795a53c4a76"
+      "ja": "94a37e131a766506",
+      "en": "94a37e131a766506",
+      "fr": "94a37e131a766506",
+      "it": "94a37e131a766506",
+      "zh": "94a37e131a766506",
+      "tr": "94a37e131a766506"
     },
     "Manifesto.questions[2]": {
-      "ja": "cabdea058f4fa074",
-      "en": "cabdea058f4fa074",
-      "zh": "cabdea058f4fa074",
-      "tr": "cabdea058f4fa074"
+      "ja": "4f0c1ff17ee7e68b",
+      "en": "4f0c1ff17ee7e68b",
+      "fr": "4f0c1ff17ee7e68b",
+      "it": "4f0c1ff17ee7e68b",
+      "zh": "4f0c1ff17ee7e68b",
+      "tr": "4f0c1ff17ee7e68b"
     },
     "Manifesto.cta": {
       "ja": "f7c986c0107a9d80",

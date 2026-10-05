@@ -7,6 +7,10 @@ import { HEADING_SIZE, keepLastWords } from '@/components/blugene/SectionHeading
 /**
  * 브랜드 선언 — 국경과 세대를 잇는 옷.
  *
+ * 2026-10-05 고객 지정: 제목을 "우리 피부와 평생 접촉하는 옷이기에, 피부과전문의가 안전을 확인합니다."로, 세 질문을
+ * "천연유래 원료를 사용하였는가 · 유해물질이 남아있는가 · 피부에 안전한지 확인할 수 있는가"로 바꾸고, 질문 알약을 흰 바탕 ·
+ * 번호 · 큰 글자로 강조했다(홈과 /brand 가 같은 컴포넌트를 쓴다). 문구의 범위는 docs/blugene-claims.md 에 있다.
+ *
  * 사람 사진 위에 문구를 올리지 않고, 깊은 인디고 면과 여백으로 문장을 세운다.
  * 장식은 데님 실 두 가닥을 연상시키는 추상 선(ThreadMotif)으로 제한한다.
  * 화학구조도나 인증마크처럼 보이는 요소를 쓰지 않는다.
@@ -59,16 +63,21 @@ export default async function BrandManifesto({
               {t('body')}
             </p>
 
-            <ul className="mt-9 flex flex-wrap gap-x-3 gap-y-3">
-              {questions.map((q) => (
+            {/* 세 질문 — 본문이 "아래 세 질문에서 시작됐습니다"라고 가리키는 순서 있는 목록. 흰 알약에 번호와 큰 글자로
+                눈에 띄게 한다(2026-10-05 고객 요청). 번호는 ol 이 이미 순서를 전하므로 장식(aria-hidden). */}
+            <ol className="mt-9 flex flex-wrap gap-x-3 gap-y-3">
+              {questions.map((q, i) => (
                 <li
                   key={q}
-                  className="rounded-full border border-white/25 px-4 py-2 text-sm font-medium break-keep text-white/85"
+                  className="inline-flex items-center gap-2.5 rounded-full bg-white px-5 py-2.5 text-base font-semibold break-keep text-[var(--color-indigo-deep)] shadow-[0_12px_32px_-14px_rgba(0,0,0,0.65)] sm:text-lg"
                 >
+                  <span aria-hidden="true" className="text-[0.72rem] font-semibold tracking-[0.18em] text-[var(--color-denim)]">
+                    {`0${i + 1}`}
+                  </span>
                   {q}
                 </li>
               ))}
-            </ul>
+            </ol>
 
             {/* FinalCta 의 짙은 면 위 보조 버튼과 같은 모양 — 흰 테두리, 흰 글자 */}
             <div className="mt-10">
