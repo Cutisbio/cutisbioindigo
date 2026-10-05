@@ -182,7 +182,8 @@
     "specNote": "Partikül boyutu · viskozite · raf ömrü · minimum sipariş miktarı · üretim kapasitesi ve fiyat bilgileri sağlanan kaynaklarda bulunmadığı için gösterilmemektedir. İhtiyaç duyduğunuz spesifikasyonlar için bize ulaşın; kontrol ederek bilgi verelim.",
     "cyclesTitle": "Boyama sayısına göre renk oluşumu karşılaştırması",
     "cyclesCaption": "CutisBio tarafından sağlanan boyalı iplik fotoğrafları (Ekim 2026). Blugene1, petrokimyasal indigo ve Blugene2 ile boyanan ipliğin 4, 6 ve 8 boyama çevrimi sonrası ile bir yıkama sonrası karşılaştırması.",
-    "cyclesAlt": "Fotoğraflı karşılaştırma tablosu. Üç blok 4, 6 ve 8 boyama çevrimidir; her bloktaki fotoğraf yukarıdan aşağıya Blugene1, petrokimyasal indigo ve Blugene2 ile boyanmış ipliği gösterir. Sol sütun boyalı iplik, sağ sütun bir yıkama sonrasıdır.",
+    "skeinCaption": "CutisBio tarafından sağlanan boyama karşılaştırma fotoğrafı (Ekim 2026). Petrokimyasal indigo, Blugene 1 ve Blugene 2 ile boyanan çileler 1, 3 ve 5 daldırma sonrasında yan yana fotoğraflanmıştır.",
+    "cyclesAlt": "Aşağıdaki fotoğraflı karşılaştırma tablosunda üç blok 4, 6 ve 8 boyama çevrimidir; her bloktaki fotoğraf yukarıdan aşağıya Blugene1, petrokimyasal indigo ve Blugene2 ile boyanmış ipliği gösterir. Sol sütun boyalı iplik, sağ sütun bir yıkama sonrasıdır.",
     "cyclesNote": "CutisBio tarafından sağlanan test fotoğrafları renk düzeltmesi yapılmadan gösterilmektedir. Fotoğraflardaki renk koyuluğu K/S değerlerine ya da ΔE renk farkı ölçümlerine dönüştürülmemiştir ve fotoğraflar her koşulda üstünlük anlamına gelmez.",
     "cta": "Ürün belgelerini talep edin",
     "powderSummary": "Mikrobiyal fermantasyonla üretilen biyo indigo boya tozu; denim, pamuk, ipek ve kaşmir boyama için. %98 biyo bazlı karbon içeriği (ASTM D6866-24a, KATRI); anilin ve N-metilanilin tespit edilmedi (KS K 0734 2019, KOTERI, tespit sınırı 5 mg/kg).",
@@ -197,6 +198,15 @@
     "samplePetro": "Petrokimyasal indigo",
     "sampleB": "Blugene2",
     "photoAlt": "{count} kez boyama, {condition} — boyalı iplik fotoğrafı, yukarıdan aşağıya: {a}, {petro}, {b}"
+  },
+  "SkeinComparison": {
+    "dip1": "1 daldırma",
+    "dip3": "3 daldırma",
+    "dip5": "5 daldırma",
+    "samplePetro": "Petrokimyasal indigo",
+    "sampleA": "Blugene 1",
+    "sampleB": "Blugene 2",
+    "photoAlt": "Petrokimyasal indigo, Blugene 1 ve Blugene 2 ile boyanmış çilelerin 1, 3 ve 5 daldırma sonrasında üç satır üç sütun hâlinde dizildiği fotoğraf"
   },
   "Printing": {
     "eyebrow": "PRINTED IN BLUE",

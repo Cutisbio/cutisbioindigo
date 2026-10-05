@@ -28,7 +28,7 @@
 | 7 | 농도별 견본 (Figure 4-1) | 화면에서 사용 중지 — 2026-10-05 고객 요청으로 홈과 `/dyeing-printing#shades` 의 「카탈로그 농도별 견본」 격자를 뺐다(홈은 섹션째, 파일은 남김) | `ShadeLibrary`(격자 코드 제거) | `shades/swatch-A1…B6.png` (12개, 무변환 복사), `shades/concentration-shades.webp` |
 | 7 | 인디고/인디루빈 비교 (Figure 4-2) | `/dyeing-printing#shades` (홈에서는 2026-09-29 고객 요청으로 뺌 — `showIndirubin={false}`) | `ShadeLibrary` | `shades/indirubin-indigo-100.webp`, `indirubin-indigo-94.webp` |
 | 8 | 분말 제품 | `/`, `/dyeing-printing#products` | `ProductFormats` | `products/powder.png` |
-| 8 | 염색 횟수 3×4 비교 (Figure 5-1) | 화면에서 사용 중지 — 2026-10-05 고객 요청으로 같은 자리(`/dyeing-printing#shades` 「카탈로그 농도별 견본」 위, `DyeingCycles`)를 고객 제공 염색사 사진 6장(`DyedYarnFigure`, `public/blugene/performance/dyed-yarn/`)으로 바꿨다 (파일은 남김; 홈에서는 2026-09-29 부터 뺌) | `DyeingCycles` → `DyedYarnFigure` | `products/powder-ink-cycles.png` |
+| 8 | 염색 횟수 3×4 비교 (Figure 5-1) | 화면에서 사용 중지 — 2026-10-05 고객 요청으로 같은 자리(`/dyeing-printing#shades` 「카탈로그 농도별 견본」 위, `DyeingCycles`)를 고객 제공 염색사 사진 6장(`DyedYarnFigure`, `public/blugene/performance/dyed-yarn/`)으로 바꿨고, 같은 날 그 위에 고객 제공 실타래 비교 사진(`SkeinComparison`, 1 · 3 · 5회 침염)을 더했다 (파일은 남김; 홈에서는 2026-09-29 부터 뺌) | `DyeingCycles` → `DyedYarnFigure` | `products/powder-ink-cycles.png` |
 | 9 | 디지털 프린팅 잉크 | `/`, `/dyeing-printing#products` | `ProductFormats` | `products/ink-jar.png` |
 | 9 | 잉크 제조 흐름 (Figure 6-1) | `/dyeing-printing#printing` | `PrintingGallery` (HTML 플로우 + 원본 이미지) | `printing/ink-process.png` |
 | 9 | 프린팅 결과 두 쌍 (Figure 6-2) | `/dyeing-printing#printing` | `PrintingGallery` | `printing/pair-a-original.webp`, `pair-a-printed.webp`, `pair-b-original.webp`, `pair-b-printed.webp` |
