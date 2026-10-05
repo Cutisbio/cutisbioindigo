@@ -1,5 +1,4 @@
 import { getTranslations } from 'next-intl/server';
-import { Link } from '@/i18n/routing';
 import SourceNote, { AssetKind } from '@/components/blugene/SourceNote';
 import DyedYarnFigure from '@/components/blugene/DyedYarnFigure';
 import SkeinComparison from '@/components/blugene/SkeinComparison';
@@ -18,7 +17,7 @@ import SkeinComparison from '@/components/blugene/SkeinComparison';
  * 표현 원칙
  * - 사진일 뿐이므로 색 농담을 K/S 나 ΔE 같은 수치로 환산하지 않는다(cyclesNote).
  * - <figure> 안에는 사진표와 그것을 설명하는 한 문장(cyclesCaption)만 둔다.
- *   제목 · 자료 종류 · 구조 설명 · 주석 · 문의 링크는 본문이므로 figure 바깥의 형제로 둔다.
+ *   제목 · 자료 종류 · 구조 설명 · 주석은 본문이므로 figure 바깥의 형제로 둔다.
  *   (figcaption 이 길어지면 figure 의 접근 가능한 이름이 문단 전체가 되어 버린다.)
  * - 표의 글자(표제 · 열 · 행 · 시료명)는 DyedYarnFigure 가 messages(DyedYarn.*)에서 읽으므로 언어마다 번역된다.
  */
@@ -53,13 +52,7 @@ export default async function DyeingCycles({ className = '' }: { className?: str
 
         <SourceNote className="mt-6">{t('cyclesNote')}</SourceNote>
 
-        <Link
-          href="/contact"
-          className="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
-        >
-          {t('cta')}
-          <span aria-hidden="true">→</span>
-        </Link>
+        {/* '제품 자료 문의 →' 링크는 2026-10-06 고객 요청으로 뺐다(Products.cta 키도 지움). */}
       </div>
 
       {/* figure 는 사진표와 그것을 설명하는 한 문장만 담는다. 전체 폭 */}
