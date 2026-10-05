@@ -284,7 +284,7 @@ const DISCLAIMER_KEYS = [
   /^Environment\.scopeNote$/,
   /^Products\.(specNote|cyclesNote)$/,
   /^Printing\.(pairNote|processNote)$/,
-  /^Performance\.(honestNote|additionalCaseProvenance)$/,
+  /^Performance\.honestNote$/,
   /^Certifications\.(scopeNote|verificationNote|brandNameNote|oekoScope)$/,
   // sampleScopeNote · regulatoryOmitted 는 2026-10-03 고객 요청으로 키째 지웠다.
   /^DataHub\.(notDetectedExplain|carbonZeroNote)$/,

@@ -118,13 +118,7 @@
     "fiberSilk": "실크",
     "fiberCashmere": "캐시미어",
     "cta": "견뢰도 전체 표 보기",
-    "honestNote": "모든 항목에서 우월하다는 뜻이 아닙니다. 일부 마찰 견뢰도 항목에서는 낮은 등급도 함께 기록되어 있으며, 표에 그대로 표시했습니다.",
-    "additionalCaseTitle": "추가 원단 평가 사례",
-    "additionalCaseBody": "저장소에 보관되어 있던 별도의 염색 평가 사진입니다. 아래 값은 원본에 인쇄된 일본어 라벨 그대로이며, ‘合成’ 은 합성을 뜻합니다.",
-    "additionalCaseAlt": "4회 · 6회 · 8회 염색 조건에서 바이오②-1, 합성, 바이오②-2 로 염색한 원단을 비교한 사진",
-    "additionalCaseProvenance": "시험기관 · 시험법 · 시험일자 · 의뢰처 정보가 확인되지 않아 카탈로그 p.6 시험과 분리해 표시합니다. 위 표의 샘플 #1~#9 와는 다른 자료입니다.",
-    "additionalCaseCyclesLabel": "염색 횟수",
-    "additionalCaseRowsLabel": "구분"
+    "honestNote": "모든 항목에서 우월하다는 뜻이 아닙니다. 일부 마찰 견뢰도 항목에서는 낮은 등급도 함께 기록되어 있으며, 표에 그대로 표시했습니다."
   },
   "Fastness": {
     "title": "견뢰도 시험 결과",

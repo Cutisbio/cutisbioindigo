@@ -118,13 +118,7 @@
     "fiberSilk": "Soie",
     "fiberCashmere": "Cachemire",
     "cta": "Voir tous les tableaux de solidité",
-    "honestNote": "Cela ne signifie pas une supériorité sur tous les critères. Certaines lignes de solidité au frottement comportent aussi des notes plus basses, reproduites telles quelles dans les tableaux.",
-    "additionalCaseTitle": "Cas d'évaluation supplémentaire sur tissu",
-    "additionalCaseBody": "Photo d'une évaluation de teinture distincte, conservée dans le dépôt. Les valeurs ci-dessous reprennent telles quelles les étiquettes japonaises imprimées sur l'original ; « 合成 » signifie « synthétique ».",
-    "additionalCaseAlt": "Photo comparant des tissus teints en Bio ②-1, synthétique et Bio ②-2 après 4, 6 et 8 cycles de teinture",
-    "additionalCaseProvenance": "Le laboratoire, la méthode, la date et le commanditaire de l'essai n'étant pas confirmés, ce cas est présenté séparément des essais de la p.6 du catalogue. Il s'agit de données différentes des échantillons #1 à #9 du tableau ci-dessus.",
-    "additionalCaseCyclesLabel": "Nombre de teintures",
-    "additionalCaseRowsLabel": "Catégorie"
+    "honestNote": "Cela ne signifie pas une supériorité sur tous les critères. Certaines lignes de solidité au frottement comportent aussi des notes plus basses, reproduites telles quelles dans les tableaux."
   },
   "Fastness": {
     "title": "Résultats des essais de solidité des couleurs",

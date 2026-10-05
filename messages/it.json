@@ -118,13 +118,7 @@
     "fiberSilk": "Seta",
     "fiberCashmere": "Cashmere",
     "cta": "Vedi tutte le tabelle di solidità",
-    "honestNote": "Non significa superiorità in tutte le voci. In alcune voci di solidità allo sfregamento sono registrati anche gradi più bassi, riportati così come sono nelle tabelle.",
-    "additionalCaseTitle": "Ulteriore caso di valutazione su tessuto",
-    "additionalCaseBody": "Foto di una valutazione di tintura distinta, conservata nel repository. I valori qui sotto riportano così come sono le etichette giapponesi stampate sull'originale; «合成» significa «sintetico».",
-    "additionalCaseAlt": "Foto che confronta tessuti tinti con Bio ②-1, sintetico e Bio ②-2 dopo 4, 6 e 8 cicli di tintura",
-    "additionalCaseProvenance": "Poiché laboratorio, metodo, data e committente della prova non sono confermati, questo caso è presentato separatamente dalle prove di p.6 del catalogo. Sono dati diversi dai campioni #1-#9 della tabella qui sopra.",
-    "additionalCaseCyclesLabel": "Numero di tinture",
-    "additionalCaseRowsLabel": "Categoria"
+    "honestNote": "Non significa superiorità in tutte le voci. In alcune voci di solidità allo sfregamento sono registrati anche gradi più bassi, riportati così come sono nelle tabelle."
   },
   "Fastness": {
     "title": "Risultati delle prove di solidità del colore",

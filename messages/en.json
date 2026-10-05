@@ -118,13 +118,7 @@
     "fiberSilk": "Silk",
     "fiberCashmere": "Cashmere",
     "cta": "See the full colorfastness tables",
-    "honestNote": "This does not mean superiority in every category. Lower grades are also recorded for some colorfastness to rubbing items, and they appear in the tables exactly as recorded.",
-    "additionalCaseTitle": "Additional fabric evaluation case",
-    "additionalCaseBody": "This is a separate dyeing evaluation photo stored in the repository. The value below is exactly as printed on the original Japanese label, with ‘合成’ meaning synthesis.",
-    "additionalCaseAlt": "Photograph comparing fabrics dyed with バイオ②-1, 合成 and バイオ②-2 under 4, 6 and 8 dyeing cycles",
-    "additionalCaseProvenance": "The testing institute, test method, test date and client are not confirmed, so this is shown separately from the tests on catalogue p.6. It is different material from samples #1–#9 in the table above.",
-    "additionalCaseCyclesLabel": "Dyeing cycles",
-    "additionalCaseRowsLabel": "Categories"
+    "honestNote": "This does not mean superiority in every category. Lower grades are also recorded for some colorfastness to rubbing items, and they appear in the tables exactly as recorded."
   },
   "Fastness": {
     "title": "Colorfastness test results",
