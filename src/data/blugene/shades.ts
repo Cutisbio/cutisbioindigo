@@ -29,6 +29,7 @@ const swatch = (code: string, xref: string): ShadeSwatch => ({
   xref,
 });
 
+/** 2026-10-05 부터 화면에서 쓰지 않는다 — 「카탈로그 농도별 견본」 격자를 고객 요청으로 뺐다. 파일(public/blugene/shades/swatch-*.png)은 남겨 둔다. */
 export const shadeSwatches: ShadeSwatch[] = [
   swatch('A1', 'p07-xref121'),
   swatch('A2', 'p07-xref120'),

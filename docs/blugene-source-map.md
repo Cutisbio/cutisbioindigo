@@ -25,7 +25,7 @@
 | 5 | 아닐린·N-메틸아닐린 그래프·표 (Figure 2-2, Table 2-3) | `/` (요약 그래프만 — 표 · 캡션 · 각주 · 원본 도판은 2026-09-29 고객 요청으로 홈에서 뺌; 표는 sr-only 텍스트 대안으로만 남음), `/data-certifications#test-results` (전체 표 · 표별 각주 · 원본 도판 — 익명 표기 · Company M · 표본 범위를 설명하던 도입부 각주와 p.4 허용한도 고지문은 2026-10-03 고객 요청으로 뺌) | `ImpurityEvidence`, `ComparisonChart`, `EvidenceTables` | `evidence/aniline-results.png` |
 | 6 | 원단 9개 염색 사진 (Figure 3-1) | `/`, `/dyeing-printing#dyeability` | `FabricComparison` | `performance/fabric-comparison.webp`, `performance/fabric-strip.webp` (라벨 없는 스트립은 2026-09-12 고객 요청으로 `/dyeing-printing` 에서는 빼고 홈에만 남김) |
 | 6 | 견뢰도 표 4종 (Table 3-1 ~ 3-4) | `/dyeing-printing#colorfastness` | `FastnessTables` (HTML 표로 재구현) | `performance/fastness-tables.png` (원본 대조용) |
-| 7 | 농도별 견본 (Figure 4-1) | `/`, `/dyeing-printing#shades` | `ShadeLibrary` | `shades/swatch-A1…B6.png` (12개, 무변환 복사), `shades/concentration-shades.webp` |
+| 7 | 농도별 견본 (Figure 4-1) | 화면에서 사용 중지 — 2026-10-05 고객 요청으로 홈과 `/dyeing-printing#shades` 의 「카탈로그 농도별 견본」 격자를 뺐다(홈은 섹션째, 파일은 남김) | `ShadeLibrary`(격자 코드 제거) | `shades/swatch-A1…B6.png` (12개, 무변환 복사), `shades/concentration-shades.webp` |
 | 7 | 인디고/인디루빈 비교 (Figure 4-2) | `/dyeing-printing#shades` (홈에서는 2026-09-29 고객 요청으로 뺌 — `showIndirubin={false}`) | `ShadeLibrary` | `shades/indirubin-indigo-100.webp`, `indirubin-indigo-94.webp` |
 | 8 | 분말 제품 | `/`, `/dyeing-printing#products` | `ProductFormats` | `products/powder.png` |
 | 8 | 염색 횟수 3×4 비교 (Figure 5-1) | 화면에서 사용 중지 — 2026-10-05 고객 요청으로 같은 자리(`/dyeing-printing#shades` 「카탈로그 농도별 견본」 위, `DyeingCycles`)를 고객 제공 염색사 사진 6장(`DyedYarnFigure`, `public/blugene/performance/dyed-yarn/`)으로 바꿨다 (파일은 남김; 홈에서는 2026-09-29 부터 뺌) | `DyeingCycles` → `DyedYarnFigure` | `products/powder-ink-cycles.png` |

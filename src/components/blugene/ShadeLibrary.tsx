@@ -1,31 +1,25 @@
 'use client';
 
-import { Fragment, useState, type ReactNode } from 'react';
-import Image from 'next/image';
+import { useState, type ReactNode } from 'react';
 import { useTranslations } from 'next-intl';
-import { indirubinPair, shadeSwatches } from '@/data/blugene/shades';
+import { indirubinPair } from '@/data/blugene/shades';
 import SectionHeading, { HEADING_SIZE, keepLastWords } from '@/components/blugene/SectionHeading';
-import SourceNote, { AssetKind } from '@/components/blugene/SourceNote';
+import SourceNote from '@/components/blugene/SourceNote';
 import ZoomableImage from '@/components/blugene/ZoomableImage';
 
 /**
  * 색상 라이브러리 — 카탈로그 p.7 Figure 4-1 / Figure 4-2 기반.
  *
  * 근거와 표현 원칙
- * - 카탈로그에는 각 견본의 **농도 수치가 없다.** 그래서 슬라이더로 값을 보간하지 않고
- *   등장 위치 기준 구분자(A1~B6)를 붙인 2행 6열 도판으로 그대로 보여 준다.
- * - 원본에서 A6 과 B1 은 같은 내장 이미지를 두 위치에 쓴다. 위치를 합치지 않고 그대로 보존한다.
- * - 견본을 골라 크게 보고 그 코드로 문의하던 선택기(radiogroup + 결과 패널 + '이 색으로 샘플 문의하기')와
- *   A6/B1 중복 안내는 2026-09-12 고객 요청으로 뺐다. 격자는 이제 조작하지 않는 도판이다.
- *   (/contact 의 shade 쿼리 처리는 남아 있어 주소로 들어오면 여전히 동작한다.)
+ * - 「카탈로그 농도별 견본」 2행 6열 격자(A1~B6, p.7 Figure 4-1)는 2026-10-05 고객 요청으로 홈과 /dyeing-printing 에서 뺐다.
+ *   (그 전에는 농도 수치가 없어 위치 기준 구분자만 붙였고, 선택기 · A6/B1 중복 안내는 2026-09-12 에 뺐다.)
+ *   견본 파일과 데이터(shadeSwatches)는 남아 있고, /contact 의 shade 쿼리 처리도 주소로 들어오면 여전히 동작한다.
+ *   홈에서는 격자를 빼면 제목만 남아 섹션 자체를 뺐다. /dyeing-printing 에는 제목 · beforeGrid(염색 횟수 비교) · 인디루빈 블록이 남는다.
  * - 인디고/인디루빈 비교는 카탈로그가 제공한 사진 두 장만 쓴다.
  *   그 사이의 혼합비 색을 CSS 로 만들어 보여 주지 않는다.
  * - 견본·원단 사진에는 색보정을 하지 않는다 (`unoptimized` + `.swatch-true-color`).
  * - 이 화면에서 어떤 정보도 외부로 전송하지 않는다.
  */
-
-/** 2행(A · B) — 카탈로그 도판의 배열을 그대로 따른다. 열 수(6)는 격자 className 에 있다. */
-const ROW_KEYS = ['A', 'B'] as const;
 
 /** public/blugene/asset-manifest.json 의 원본 픽셀 크기 (p.7 Figure 4-2, 517×386) */
 const INDIRUBIN_IMAGE_WIDTH = 517;
@@ -44,7 +38,7 @@ export default function ShadeLibrary({
    */
   showIndirubin?: boolean;
   /**
-   * 섹션 제목과 「카탈로그 농도별 견본」 격자 사이에 끼울 블록. /dyeing-printing 은 여기에 「염색 횟수에 따른 발색 비교」
+   * 섹션 제목 바로 아래에 끼울 블록. /dyeing-printing 은 여기에 「염색 횟수에 따른 발색 비교」
    * (DyeingCycles, 서버 컴포넌트)를 넣는다 — 2026-10-05 고객 요청으로 제품군 섹션에서 옮김. 클라이언트 컴포넌트라
    * 서버 컴포넌트를 직접 그릴 수 없으므로 페이지가 ReactNode 로 넘긴다.
    */
@@ -57,13 +51,6 @@ export default function ShadeLibrary({
   const [comparing, setComparing] = useState(true);
   const [singleIndex, setSingleIndex] = useState(0);
 
-  /** 행 라벨과 그 행의 견본 */
-  const rows = ROW_KEYS.map((rowKey) => ({
-    key: rowKey,
-    label: rowKey === 'A' ? t('rowA') : t('rowB'),
-    entries: shadeSwatches.filter((swatch) => swatch.row === rowKey),
-  }));
-
   /** 인디루빈 두 조성 — 카탈로그가 제공한 사진 그대로 */
   const indirubinViews = [
     { item: indirubinPair[0], label: t('indirubinLabelA'), alt: t('indirubinAltA') },
@@ -75,74 +62,8 @@ export default function ShadeLibrary({
     <>
       <SectionHeading eyebrow={t('eyebrow')} title={t('title')} body={t('body')} size="hero" />
 
-      {/* 「염색 횟수에 따른 발색 비교」 등 — 견본 격자보다 먼저 읽힌다 */}
-      {beforeGrid && (
-        <div className="mt-12 border-b border-[color:var(--color-washed)] pb-12 sm:mt-16 lg:pb-16">{beforeGrid}</div>
-      )}
-
-      {/* ── 농도별 견본 도판 ───────────────────────────────── */}
-      <div className="mt-12 sm:mt-16">
-        <h3 className="text-[1.25rem] leading-snug font-bold tracking-[-0.015em] break-keep text-[var(--color-indigo-deep)] sm:text-[1.5rem]">
-          {t('gridTitle')}
-        </h3>
-        <p className="mt-3 max-w-2xl text-sm leading-relaxed break-keep text-[var(--color-slate-muted)]">
-          {t('gridHelp')}
-        </p>
-
-        {/*
-          2행 6열 격자 + Low → High 축. 2026-09-12 고객 요청으로 선택 · 확대 · 문의 버튼을 뺐으므로
-          조작하지 않는 도판이다. 폭을 제한해 데스크톱에서 칸이 지나치게 커지지 않게 한다.
-        */}
-        <div className="mt-8 max-w-[54rem]">
-          <AssetKind>{tc('catalogueFigure')}</AssetKind>
-          <div className="mt-4 grid grid-cols-[auto_repeat(6,minmax(0,1fr))] items-start gap-x-1.5 gap-y-3 sm:gap-x-2.5 sm:gap-y-4">
-            {rows.map((row) => (
-              <Fragment key={row.key}>
-                <span className="self-center pr-1 text-[0.7rem] font-medium whitespace-nowrap text-[var(--color-slate-muted)] sm:pr-2 sm:text-xs">
-                  {row.label}
-                </span>
-                {row.entries.map((swatch) => (
-                  <figure key={swatch.code} className="m-0 min-w-0">
-                    <div className="relative aspect-[193/182] w-full overflow-hidden rounded-md border border-[color:var(--color-washed)] bg-white">
-                      <Image
-                        src={swatch.image}
-                        alt={t('swatchAlt', { code: swatch.code })}
-                        fill
-                        unoptimized
-                        sizes="(max-width: 640px) 14vw, (max-width: 1024px) 12vw, 130px"
-                        className="swatch-true-color object-cover"
-                      />
-                    </div>
-                    <figcaption className="mt-1.5 block text-center text-[0.65rem] tracking-wide text-[var(--color-slate-muted)] sm:text-[0.7rem]">
-                      {swatch.code}
-                    </figcaption>
-                  </figure>
-                ))}
-              </Fragment>
-            ))}
-
-            {/* 축: 그라디언트 막대가 아니라 얇은 선 + 양끝 라벨 */}
-            <span aria-hidden="true" />
-            <div className="col-span-6 mt-2">
-              <div className="flex items-center gap-2">
-                <span className="text-[0.7rem] font-medium tracking-wide text-[var(--color-slate-muted)]">
-                  {t('axisLow')}
-                </span>
-                <span aria-hidden="true" className="h-px flex-1 bg-[color:var(--color-washed)]" />
-                <span aria-hidden="true" className="text-[0.7rem] text-[var(--color-slate-muted)]">
-                  →
-                </span>
-                <span className="text-[0.7rem] font-medium tracking-wide text-[var(--color-slate-muted)]">
-                  {t('axisHigh')}
-                </span>
-              </div>
-              <p className="mt-2 text-center text-[0.7rem] tracking-wide break-keep text-[var(--color-slate-muted)]">
-                {t('axisLabel')}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* 「염색 횟수에 따른 발색 비교」 등 — 섹션 제목 바로 아래 */}
+      {beforeGrid && <div className="mt-12 sm:mt-16">{beforeGrid}</div>}
 
       {/* ── 인디루빈 조성 비교 ─────────────────────────────────── */}
       {showIndirubin && (

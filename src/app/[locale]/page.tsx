@@ -10,7 +10,6 @@ import ImpurityEvidence from '@/components/blugene/ImpurityEvidence';
 import ScienceSection from '@/components/blugene/ScienceSection';
 import EnvironmentSection from '@/components/blugene/EnvironmentSection';
 import FabricComparison from '@/components/blugene/FabricComparison';
-import ShadeLibrary from '@/components/blugene/ShadeLibrary';
 import ProductFormats from '@/components/blugene/ProductFormats';
 import CertificationLibrary from '@/components/blugene/CertificationLibrary';
 import SectionHeading from '@/components/blugene/SectionHeading';
@@ -130,18 +129,13 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </section>
 
-      {/* 07. 당신만의 파랑 */}
-      <section className="w-full bg-[var(--color-ivory)]">
-        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
-          {/* 「인디루빈이 만드는 색조 변화」 비교는 2026-09-29 고객 요청으로 홈에서 뺐다 — /dyeing-printing 에 있다 */}
-          <ShadeLibrary variant="bare" showIndirubin={false} />
-        </div>
-      </section>
+      {/* 07. 당신만의 파랑(ShadeLibrary)은 2026-10-05 고객 요청으로 홈에서 뺐다 — 「카탈로그 농도별 견본」 격자를 빼고 나면
+          제목만 남기 때문이다(인디루빈 비교는 2026-09-29 에 이미 뺐다). /dyeing-printing 에는 남아 있다. */}
 
-      {/* 08. 원본으로 확인하는 신뢰 — 앞의 07 이 아이보리라 흰 바탕으로 받는다
+      {/* 08. 원본으로 확인하는 신뢰 — 앞의 06(원단 성능)이 흰 바탕이라 아이보리로 받는다 — 07 은 2026-10-05 에 뺐다
           (2026-09-09 홈의 프린팅 섹션을 뺐다. 같은 내용이 /dyeing-printing 에 있다)
           (2026-09-11 인증 카드는 인증 마크 · 인증명 · 원본 이미지만 남긴다. 상세와 읽는 조건은 /data-certifications 에 있다) */}
-      <section className="w-full bg-white">
+      <section className="w-full bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
           <SectionHeading eyebrow={t('eyebrow')} title={t('title')} body={t('body')} size="hero" />
           <div className="mt-12">

@@ -37,7 +37,7 @@
 | `/blugene/performance/fabric-comparison.webp` | 시험 사진 | 1075×376 · 53KB | p.6 Figure 3-1 (라벨 포함) | 9개 원단 견본 사진. 식물성 #1~#3, 화학 #4~#6, 바이오 #7~#9 (`Performance.fabricAlt`) |
 | `/blugene/performance/fabric-strip.webp` | 시험 사진 | 1147×193 · 28KB | p.6 `embedded/p06-xref106.png` | 라벨 없는 원단 견본 원본 |
 | `/blugene/performance/fastness-tables.png` | 시험 사진 | 1198×943 · 163KB | p.6 Table 3-1~3-4 | 견뢰도 표 원본 (HTML 표와 대조용) |
-| `/blugene/shades/swatch-A1…B6.png` (12개) | 카탈로그 도판 | 각 193×182 전후 · 0.5KB | p.7 Figure 4-1 `embedded/p07-xref111~121` | 카탈로그 p.7 Figure 4-1 의 농도별 염색 견본 {code} (`ShadeLibrary.swatchAlt`) |
+| `/blugene/shades/swatch-A1…B6.png` (12개) | 카탈로그 도판 | 각 193×182 전후 · 0.5KB | p.7 Figure 4-1 `embedded/p07-xref111~121` | 카탈로그 p.7 Figure 4-1 의 농도별 염색 견본 {code} (`ShadeLibrary.swatchAlt`) **현재 미사용** — 2026-10-05 고객 요청으로 「카탈로그 농도별 견본」 격자를 뺐다(파일은 남김) |
 | `/blugene/shades/concentration-shades.webp` | 카탈로그 도판 | 1128×570 · 14KB | p.7 Figure 4-1 (전체) | 농도별 견본 도판 원본 |
 | `/blugene/shades/indirubin-indigo-100.webp` | 시험 사진 | 517×386 · 48KB | p.7 Figure 4-2 | 인디고 100% 로 염색한 데님 원단 사진 (`ShadeLibrary.indirubinAltA`) |
 | `/blugene/shades/indirubin-indigo-94.webp` | 시험 사진 | 517×386 · 54KB | p.7 Figure 4-2 | 인디고 94% · 인디루빈 6% 로 염색한 데님 원단 사진 (`ShadeLibrary.indirubinAltB`) |
