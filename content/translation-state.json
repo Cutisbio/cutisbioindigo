@@ -1242,20 +1242,20 @@
       "tr": "9b1151e318091d14"
     },
     "Products.cyclesCaption": {
-      "ja": "f2e581611b66f923",
-      "en": "f2e581611b66f923",
-      "fr": "f2e581611b66f923",
-      "it": "f2e581611b66f923",
-      "zh": "f2e581611b66f923",
-      "tr": "f2e581611b66f923"
+      "ja": "f90e7214968ba49d",
+      "en": "f90e7214968ba49d",
+      "fr": "f90e7214968ba49d",
+      "it": "f90e7214968ba49d",
+      "zh": "f90e7214968ba49d",
+      "tr": "f90e7214968ba49d"
     },
     "Products.cyclesAlt": {
-      "ja": "1fe971fb0c4257a9",
-      "en": "1fe971fb0c4257a9",
-      "fr": "1fe971fb0c4257a9",
-      "it": "1fe971fb0c4257a9",
-      "zh": "1fe971fb0c4257a9",
-      "tr": "1fe971fb0c4257a9"
+      "ja": "38ef3d70002869a4",
+      "en": "38ef3d70002869a4",
+      "fr": "38ef3d70002869a4",
+      "it": "38ef3d70002869a4",
+      "zh": "38ef3d70002869a4",
+      "tr": "38ef3d70002869a4"
     },
     "Products.cyclesNote": {
       "ja": "f108d0f466662c32",
@@ -5352,12 +5352,12 @@
       "tr": "532d191f9905355c"
     },
     "DyedYarn.sampleA": {
-      "ja": "73445ec5aead7857",
-      "en": "73445ec5aead7857",
-      "fr": "73445ec5aead7857",
-      "it": "73445ec5aead7857",
-      "zh": "73445ec5aead7857",
-      "tr": "73445ec5aead7857"
+      "ja": "e9a12cca52721dd7",
+      "en": "e9a12cca52721dd7",
+      "fr": "e9a12cca52721dd7",
+      "it": "e9a12cca52721dd7",
+      "zh": "e9a12cca52721dd7",
+      "tr": "e9a12cca52721dd7"
     },
     "DyedYarn.samplePetro": {
       "ja": "73b011ca919d78db",
@@ -5368,20 +5368,12 @@
       "tr": "73b011ca919d78db"
     },
     "DyedYarn.sampleB": {
-      "ja": "c354220b1d33ada3",
-      "en": "c354220b1d33ada3",
-      "fr": "c354220b1d33ada3",
-      "it": "c354220b1d33ada3",
-      "zh": "c354220b1d33ada3",
-      "tr": "c354220b1d33ada3"
-    },
-    "DyedYarn.sampleOrder": {
-      "ja": "2e7ad52b0ad655ac",
-      "en": "2e7ad52b0ad655ac",
-      "fr": "2e7ad52b0ad655ac",
-      "it": "2e7ad52b0ad655ac",
-      "zh": "2e7ad52b0ad655ac",
-      "tr": "2e7ad52b0ad655ac"
+      "ja": "227c3f92b9fc9320",
+      "en": "227c3f92b9fc9320",
+      "fr": "227c3f92b9fc9320",
+      "it": "227c3f92b9fc9320",
+      "zh": "227c3f92b9fc9320",
+      "tr": "227c3f92b9fc9320"
     },
     "DyedYarn.photoAlt": {
       "ja": "8263bd78ae857934",

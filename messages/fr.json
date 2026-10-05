@@ -195,8 +195,8 @@
     "nameNote": "Les noms de produit ci-dessus sont la présentation web de la nouvelle marque. Le nom d'origine figurant dans le catalogue et les certificats est « {catalogueName} ».",
     "specNote": "Granulométrie, viscosité, durée de conservation, quantité minimale de commande, capacité de production et prix ne figurent pas dans les documents fournis et ne sont donc pas indiqués. Contactez-nous pour toute spécification nécessaire.",
     "cyclesTitle": "Comparaison de la coloration selon le nombre de teintures",
-    "cyclesCaption": "Photos de fils teints fournies par CutisBio (octobre 2026). Fil teint avec Blugene②-1, de l’indigo pétrochimique et Blugene②-2, comparé après 4, 6 et 8 cycles de teinture et après un lavage.",
-    "cyclesAlt": "Tableau de comparaison photographique. Les trois blocs correspondent à 4, 6 et 8 cycles de teinture ; dans chaque bloc, la photo montre de haut en bas le fil teint avec Blugene②-1, avec de l’indigo pétrochimique et avec Blugene②-2. La colonne de gauche est le fil teint, celle de droite après un lavage.",
+    "cyclesCaption": "Photos de fils teints fournies par CutisBio (octobre 2026). Fil teint avec Blugene1, de l’indigo pétrochimique et Blugene2, comparé après 4, 6 et 8 cycles de teinture et après un lavage.",
+    "cyclesAlt": "Tableau de comparaison photographique. Les trois blocs correspondent à 4, 6 et 8 cycles de teinture ; dans chaque bloc, la photo montre de haut en bas le fil teint avec Blugene1, avec de l’indigo pétrochimique et avec Blugene2. La colonne de gauche est le fil teint, celle de droite après un lavage.",
     "cyclesNote": "Photos d’essai fournies par CutisBio, présentées sans correction des couleurs. L’intensité des couleurs n’a pas été convertie en valeurs K/S ni en écarts de couleur ΔE, et les photos ne signifient pas une supériorité dans toutes les conditions.",
     "cta": "Demander la documentation produit",
     "powderSummary": "Poudre de colorant bio-indigo produite par fermentation microbienne, pour la teinture du denim, du coton, de la soie et du cachemire. 98 % de carbone biosourcé (ASTM D6866-24a, KATRI) ; aniline et N-méthylaniline non détectées (KS K 0734 2019, KOTERI, limite de détection 5 mg/kg).",
@@ -207,10 +207,9 @@
     "colDyed": "Fil teint",
     "colWashed": "Après 1 lavage",
     "rowCycles": "Teint {count} fois",
-    "sampleA": "Blugene②-1",
+    "sampleA": "Blugene1",
     "samplePetro": "Indigo pétrochimique",
-    "sampleB": "Blugene②-2",
-    "sampleOrder": "Sur chaque photo, de haut en bas : {a} · {petro} · {b}.",
+    "sampleB": "Blugene2",
     "photoAlt": "Teint {count} fois, {condition} — photo de fils teints, de haut en bas : {a}, {petro}, {b}"
   },
   "Printing": {
