@@ -1138,12 +1138,12 @@
       "tr": "f90e7214968ba49d"
     },
     "Products.cyclesAlt": {
-      "ja": "38ef3d70002869a4",
-      "en": "38ef3d70002869a4",
-      "fr": "38ef3d70002869a4",
-      "it": "38ef3d70002869a4",
-      "zh": "38ef3d70002869a4",
-      "tr": "38ef3d70002869a4"
+      "ja": "590a470e9c07c0a3",
+      "en": "590a470e9c07c0a3",
+      "fr": "590a470e9c07c0a3",
+      "it": "590a470e9c07c0a3",
+      "zh": "590a470e9c07c0a3",
+      "tr": "590a470e9c07c0a3"
     },
     "Products.cyclesNote": {
       "ja": "f108d0f466662c32",
@@ -5270,6 +5270,70 @@
       "it": "8263bd78ae857934",
       "zh": "8263bd78ae857934",
       "tr": "8263bd78ae857934"
+    },
+    "Products.skeinCaption": {
+      "ja": "51d0de39f7cc6cfe",
+      "en": "51d0de39f7cc6cfe",
+      "fr": "51d0de39f7cc6cfe",
+      "it": "51d0de39f7cc6cfe",
+      "zh": "51d0de39f7cc6cfe",
+      "tr": "51d0de39f7cc6cfe"
+    },
+    "SkeinComparison.samplePetro": {
+      "ja": "73b011ca919d78db",
+      "en": "73b011ca919d78db",
+      "fr": "73b011ca919d78db",
+      "it": "73b011ca919d78db",
+      "zh": "73b011ca919d78db",
+      "tr": "73b011ca919d78db"
+    },
+    "SkeinComparison.sampleA": {
+      "ja": "8683a0f513f68903",
+      "en": "8683a0f513f68903",
+      "fr": "8683a0f513f68903",
+      "it": "8683a0f513f68903",
+      "zh": "8683a0f513f68903",
+      "tr": "8683a0f513f68903"
+    },
+    "SkeinComparison.sampleB": {
+      "ja": "fea662d90be7a9cf",
+      "en": "fea662d90be7a9cf",
+      "fr": "fea662d90be7a9cf",
+      "it": "fea662d90be7a9cf",
+      "zh": "fea662d90be7a9cf",
+      "tr": "fea662d90be7a9cf"
+    },
+    "SkeinComparison.photoAlt": {
+      "ja": "4bb628214de8c8b6",
+      "en": "4bb628214de8c8b6",
+      "fr": "4bb628214de8c8b6",
+      "it": "4bb628214de8c8b6",
+      "zh": "4bb628214de8c8b6",
+      "tr": "4bb628214de8c8b6"
+    },
+    "SkeinComparison.dip1": {
+      "ja": "4da4b59cbfd66518",
+      "en": "4da4b59cbfd66518",
+      "fr": "4da4b59cbfd66518",
+      "it": "4da4b59cbfd66518",
+      "zh": "4da4b59cbfd66518",
+      "tr": "4da4b59cbfd66518"
+    },
+    "SkeinComparison.dip3": {
+      "ja": "cfe5ecf17362a926",
+      "en": "cfe5ecf17362a926",
+      "fr": "cfe5ecf17362a926",
+      "it": "cfe5ecf17362a926",
+      "zh": "cfe5ecf17362a926",
+      "tr": "cfe5ecf17362a926"
+    },
+    "SkeinComparison.dip5": {
+      "ja": "b222e9ceb888f620",
+      "en": "b222e9ceb888f620",
+      "fr": "b222e9ceb888f620",
+      "it": "b222e9ceb888f620",
+      "zh": "b222e9ceb888f620",
+      "tr": "b222e9ceb888f620"
     }
   }
 }

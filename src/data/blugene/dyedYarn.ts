@@ -23,3 +23,17 @@ export const DYED_YARN_BLOCKS = [
     washed: { src: '/blugene/performance/dyed-yarn/cycles-8-washed.jpg', width: 728, height: 336 },
   },
 ] as const satisfies readonly { cycles: number; dyed: DyedYarnPhoto; washed: DyedYarnPhoto }[];
+
+/**
+ * 실타래 염색 비교 사진 — 고객 제공(2026-10-05, Blugene_SVG_Package.zip). 석유화학 인디고 · Blugene 1 · Blugene 2 (행) ×
+ * 1 · 3 · 5회 침염(열)의 3행 3열이 한 장에 담겨 있고, 칸은 가로 · 세로 모두 3등분이다. 꾸러미 SVG 에 내장된 무손실 PNG(1952×1244)를
+ * WebP 로 바꾼 것이며 색 · 크기는 손대지 않았다. 원본 PNG 와 꾸러미 설명은 Blugene_Website_Brief/assets/mockups/2026-10-05-dyeing-comparison/ 에 있다.
+ * 열 · 행 이름은 messages 의 SkeinComparison.* 가 맡는다.
+ */
+export const SKEIN_COMPARISON = {
+  src: '/blugene/performance/dyed-yarn/skeins-1-3-5-dips.webp',
+  width: 1952,
+  height: 1244,
+  /** 열 — 침염 횟수 */
+  dips: [1, 3, 5],
+} as const;

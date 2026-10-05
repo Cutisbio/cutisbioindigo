@@ -114,6 +114,7 @@
 | `AnilineStructures.tsx` | 아닐린(C₆H₅NH₂) · N-메틸아닐린(C₆H₅NHCH₃) 골격 구조식. 검증된 구조를 좌표로 계산해 SVG 로 그렸다 | p.4 서술 |
 | `CarbonEvidencePanel.tsx` | 기술 페이지 「분명한 근거」의 98% 패널 — 큰 숫자 · 100개 중 98개를 칠한 점 격자(20×5, role="img") · 시험 메타 · 데이터 페이지 링크. 숫자와 메타는 evidence.ts 의 carbonTest, 글자는 messages. 고객 시안 `Blugene_Website_Brief/assets/mockups/2026-10-04-carbon-evidence-panel.svg`(2026-10-04)을 코드로 옮긴 것 — 시안 SVG 는 글자가 들어 있어 화면에 쓰지 않는다 | p.3 Table 1-1 |
 | `DyedYarnFigure.tsx` | 염색 · 프린팅 페이지 「염색 횟수에 따른 발색 비교」의 염색사 사진표 — 4 · 6 · 8회 염색 × 염색사 · 1회 세탁 사진 6장(10절)을 CSS 격자에 놓고 표제 · 열 · 행 · 시료명을 messages(`DyedYarn.*`)에서 읽어 일곱 언어로 번역한다. 고객 SVG 의 글자는 쓰지 않는다 | 고객 제공 SVG(2026-10-05) |
+| `SkeinComparison.tsx` | 염색 · 프린팅 페이지 「염색 횟수에 따른 발색 비교」 맨 위의 실타래 비교 — 3행 3열 사진 한 장(11절) 둘레에 열 이름(1 · 3 · 5회 침염)과 행 이름(석유화학 인디고 · Blugene 1 · Blugene 2)을 CSS 격자로 놓고 messages(`SkeinComparison.*`)에서 읽어 일곱 언어로 번역한다. 고객 SVG 의 글자는 쓰지 않는다 | 고객 제공 SVG 꾸러미(2026-10-05) |
 | `ThreadMotif.tsx` | 데님 실 두 가닥을 연상시키는 추상 선. **순수 장식**(aria-hidden)이며 DNA 이중나선·화학구조도·인증마크로 읽히지 않게 그렸다 | 브랜드 표현 |
 | `Wordmark.tsx` + `BlugeneMark.tsx` | Blugene 워드마크(텍스트)의 B 앞에 열두 갈래 마크를 붙인 락업. 마크는 고객의 로고 심벌 시트(`Blugene_Website_Brief/assets/brand/blugene-symbol-color-variations.jpg`) 「후보 01」에서 `scripts/extract-blugene-mark.mjs` 로 잘라낸 알파 마스크 PNG(`/brand/blugene-mark.png`)를 CSS mask 로 씌운 것이라 모양이 시트와 같다. 마크 색은 밝은 바탕에서 1초마다 파랑 일곱 가지를 순환(`.blugene-mark`, globals.css)하고 어두운 바탕(푸터)에서는 흰색 고정. 서체는 `.blugene-wordmark`(globals.css), 크기는 `SCALE` 한 곳에서 관리한다 | 브랜드 표현 + 고객 시트 |
 
@@ -248,3 +249,21 @@ SVG 는 글자가 들어 있어 화면에 그대로 쓰지 않는다. 사진 6�
 - 좁은 화면(sm 미만)에서도 시료명이 사진 왼쪽에 같은 글자로 붙는다 — 블록마다 행 이름 아래에 [시료명 | 사진]을 염색사 · 1회 세탁 순으로 쌓는다(2026-10-05 고객 요청).
 - 사진의 색 농담을 K/S · ΔE 로 환산하지 않으며, "모든 조건에서의 성능 우위를 뜻하지 않는다"를 `Products.cyclesNote` 로 밝힌다.
 - 바꾸기 전의 카탈로그 p.8 Figure 5-1 도판(`/blugene/products/powder-ink-cycles.png`)은 파일만 남아 있다(1절).
+
+## 11. 고객 제공 사진 — 염색 · 프린팅 「염색 횟수에 따른 발색 비교」 실타래 비교 (2026-10-05)
+
+고객이 2026-10-05 채팅으로 보낸 SVG 꾸러미(`Blugene_SVG_Package.zip`: `Blugene_Dyeing_Comparison_KO/EN/JA.svg`, `Blugene_Label_Editor.html`, PNG 미리보기, `README_KO.md`, `Source_Download_Index.md`).
+세 SVG 는 같은 사진 한 장(무손실 PNG 1952×1244) 위에 열 이름(1 · 3 · 5회)과 행 이름(석유화학 인디고 · Blugene 1 · Blugene 2)을 언어별 벡터 글자로 얹은 것이다.
+꾸러미 설명에 따르면 사진은 고객 보고서 `CutisBio_Japan_Denim_Evaluation_20261005.pdf` 7쪽 그림 5의 위쪽 3행을 자른 것이며 색 · 밝기 · 대비를 바꾸지 않았다.
+SVG 는 글자가 들어 있어 화면에 그대로 쓰지 않는다. 사진만 꺼내 WebP q92 로 바꿔(크기 무변환) `public/blugene/performance/dyed-yarn/` 에 두고,
+열 · 행 이름은 `SkeinComparison.tsx` 가 다시 그려 messages 에서 읽는다(일곱 언어 — 꾸러미의 KO · EN · JA 표기를 그대로 따르고 나머지는 번역).
+색 비교 사진이라 next/image 재인코딩 없이 보여 준다. 무손실 원본 PNG 와 꾸러미 설명 두 파일은 `Blugene_Website_Brief/assets/mockups/2026-10-05-dyeing-comparison/` 에 있다.
+출처는 `scripts/build-blugene-assets.py` 의 `CLIENT_IMAGES` 와 `asset-manifest.json` 에 있다.
+
+| 웹 경로 | 성격 | 크기 | 내용 |
+|---|---|---|---|
+| `/blugene/performance/dyed-yarn/skeins-1-3-5-dips.webp` | 시험 사진 (고객 제공) | 1952×1244 · 624KB | 석유화학 인디고 · Blugene 1 · Blugene 2 (행) × 1 · 3 · 5회 침염 (열). 바탕(실타래 주변의 어두운 판)만 채널당 +30 밝게 조정(2026-10-05 고객 요청), 실 영역은 무변환 |
+
+- 바탕 밝기: 2026-10-05 고객 요청("실타래 배경을 약간 밝게")으로 `scripts/brighten-skein-background.mjs` 가 실타래 덩어리(채도>10 픽셀을 5px 팽창 · 구멍 메움 · 3px 침식)를 뺀 바탕만 채널당 +30 밝혔다(평균 밝기 31 → 61). 실타래 표본 구역의 변화는 채널당 1 미만이다. 캡션(`Products.skeinCaption`)이 바탕만 조정했고 실의 색은 손대지 않았음을 밝힌다.
+- 시료 표기(Blugene 1 · Blugene 2, 띄어쓰기 있음)와 조건(1 · 3 · 5회 침염)은 꾸러미 표기 그대로다. 염색 조건 · 측정값은 자료에 없어 적지 않는다.
+- 아래 염색사 사진표(10절)와는 다른 시험이며 시료 표기도 다르다(Blugene1 · Blugene2). 두 사진 모두 `Products.cyclesNote` 가 "색보정 없음 · 측정값 아님 · 성능 우위 아님"을 밝힌다.

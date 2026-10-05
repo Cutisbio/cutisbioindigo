@@ -129,6 +129,9 @@ CLIENT_IMAGES: list[tuple[str, str]] = [
      "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: 원유 채굴 펌프와 석유통. 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임"),
     ("technology/carbon/refinery.webp",
      "고객 제공 — 2026-09-11 채팅 첨부 HTML(Blugene_Carbon_Comparison.html)의 CSS 스프라이트(WebP 1536×1024, 3×2)에서 512px 정사각으로 잘라낸 타일: 화학 공장. 기술 페이지 「탄소의 여정」 카드 삽화. 카탈로그 자료가 아니며 생성 이미지로 보임"),
+    # --- 염색 · 프린팅 「염색 횟수에 따른 발색 비교」 실타래 비교 사진 (2026-10-05, SVG 꾸러미 내장 PNG → WebP) ---
+    ("performance/dyed-yarn/skeins-1-3-5-dips.webp",
+     "고객 제공 — 2026-10-05 채팅 첨부 SVG 꾸러미(Blugene_SVG_Package.zip)의 Blugene_Dyeing_Comparison_KO.svg 에 내장된 무손실 PNG(1952×1244)를 꺼내 WebP q92 로 바꾼 것(크기 무변환). 2026-10-05 고객 요청으로 실타래 주변의 어두운 무채색 바탕만 채널당 +30 밝게 조정했고 실타래 영역(색이 있는 픽셀을 모아 채운 덩어리)은 무변환이다(scripts/brighten-skein-background.mjs). 꾸러미 설명에 따르면 고객 보고서 CutisBio_Japan_Denim_Evaluation_20261005.pdf 7쪽 그림 5의 위쪽 3행을 자른 사진이다. 석유화학 인디고 · Blugene 1 · Blugene 2 × 1 · 3 · 5회 침염 3행 3열. 염색 · 프린팅 페이지 「염색 횟수에 따른 발색 비교」 맨 위(SkeinComparison). 원본 PNG 는 Blugene_Website_Brief/assets/mockups/2026-10-05-dyeing-comparison/"),
     # --- 염색 · 프린팅 「염색 횟수에 따른 발색 비교」 염색사 사진 6장 (2026-10-05, SVG 내장 JPEG 를 90° 회전) ---
     ("performance/dyed-yarn/cycles-4-dyed.jpg",
      "고객 제공 — 2026-10-05 채팅 첨부 SVG(CutisBio_Dyed_Yarn_Korean_Editable.svg, Blugene_Website_Brief/assets/mockups/2026-10-05-dyed-yarn-figure.svg)에 내장된 PDF 5쪽 원본 JPEG 를 꺼내 SVG 의 배치대로 90° 돌린 것(크기 · 색 무변환, JPEG q95). 4회 염색 · 염색사 — 위에서부터 Blugene②-1 · 석유화학 인디고 · Blugene②-2. 염색 · 프린팅 페이지 「염색 횟수에 따른 발색 비교」(DyedYarnFigure)"),
