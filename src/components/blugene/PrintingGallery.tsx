@@ -19,7 +19,7 @@ import { inkProcessImage, inkProcessSteps, printingPairs } from '@/data/blugene/
  *      확정된 공정 전문용어로 덮어쓰지 않는다(processNote).
  *    - 원본 도판은 ZoomableImage 로 언제든 확인할 수 있게 한다.
  * 3) 디지털 프린팅의 특징 3가지. 카탈로그에 있는 일반론적 절감 범위는 Blugene 제품 측정값이 아니므로
- *    수치로 쓰지 않고 advantagesNote 로 그 이유를 밝힌다.
+ *    수치로 쓰지 않는다. 그 이유를 적던 화면 고지문(advantagesNote)은 2026-10-05 고객 요청으로 뺐다(키도 지움). 수치는 여전히 싣지 않는다.
  *
  * 이 컴포넌트는 페이지 쪽에서 이미 섹션 · 컨테이너 안에 놓이므로 자체 배경과 좌우 여백을 만들지 않는다.
  */
@@ -276,8 +276,6 @@ export default async function PrintingGallery() {
             </li>
           ))}
         </ul>
-
-        <SourceNote className="mt-9 max-w-3xl">{t('advantagesNote')}</SourceNote>
       </div>
     </>
   );
