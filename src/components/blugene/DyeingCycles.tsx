@@ -6,7 +6,9 @@ import SkeinComparison from '@/components/blugene/SkeinComparison';
 /**
  * 「염색 횟수에 따른 발색 비교」 — 고객 제공 사진 두 가지(2026-10-05).
  *   위: 실타래 비교(SkeinComparison) — 석유화학 인디고 · Blugene 1 · Blugene 2 × 1 · 3 · 5회 침염, 사진 한 장. 블록 맨 위(고객 요청).
+ *       소제목 「Blugene 염색실증 사례 1」(skeinCaseTitle, 2026-10-06 고객 요청).
  *   아래: 염색사 사진표(DyedYarnFigure) — Blugene1 · 석유화학 인디고 · Blugene2 × 4 · 6 · 8회 염색 × 염색사 · 1회 세탁, 사진 여섯 장.
+ *       소제목 「Blugene 염색실증 사례 2」(yarnCaseTitle, 2026-10-06 고객 요청).
  * 전에는 카탈로그 p.8 Figure 5-1(`dyeingCycleImage`, 3행 × 4열)을 ZoomableImage 로 보여 줬는데, 2026-10-05 고객 요청으로
  * 고객이 준 SVG(4 · 6 · 8회 염색 × 염색사 · 1회 세탁 사진 6장)로 바꿨다. 카탈로그 도판 파일은 남아 있고 화면에서만 뺐다.
  *
@@ -36,13 +38,19 @@ export default async function DyeingCycles({ className = '' }: { className?: str
         <AssetKind>{tc('testPhoto')}</AssetKind>
       </div>
 
-      {/* 실타래 비교(1 · 3 · 5회 침염) — 2026-10-05 고객 제공 SVG 꾸러미. 블록 맨 위에 둔다(고객 요청). */}
-      <figure>
-        <SkeinComparison />
-        <figcaption className="mt-2 text-[0.8125rem] leading-relaxed break-keep text-[var(--color-slate-muted)]">
-          {t('skeinCaption')}
-        </figcaption>
-      </figure>
+      {/* 실타래 비교(1 · 3 · 5회 침염) — 2026-10-05 고객 제공 SVG 꾸러미. 블록 맨 위에 둔다(고객 요청).
+          사진표 위의 「Blugene 염색실증 사례 1」 소제목은 2026-10-06 고객 요청. 제목은 본문이므로 figure 바깥에 둔다. */}
+      <div className="flex flex-col gap-3">
+        <h4 className="text-base font-bold tracking-[-0.01em] break-keep text-[var(--color-indigo-deep)] sm:text-lg">
+          {t('skeinCaseTitle')}
+        </h4>
+        <figure>
+          <SkeinComparison />
+          <figcaption className="mt-2 text-[0.8125rem] leading-relaxed break-keep text-[var(--color-slate-muted)]">
+            {t('skeinCaption')}
+          </figcaption>
+        </figure>
+      </div>
 
       <div className="max-w-3xl">
         {/* 염색사 사진표의 짜임을 적던 설명 문단(Products.cyclesAlt)은 2026-10-06 고객 요청으로 뺐다(키도 지움). 주석만 남긴다. */}
@@ -51,13 +59,19 @@ export default async function DyeingCycles({ className = '' }: { className?: str
         {/* '제품 자료 문의 →' 링크는 2026-10-06 고객 요청으로 뺐다(Products.cta 키도 지움). */}
       </div>
 
-      {/* figure 는 사진표와 그것을 설명하는 한 문장만 담는다. 전체 폭 */}
-      <figure>
-        <DyedYarnFigure />
-        <figcaption className="mt-2 text-[0.8125rem] leading-relaxed break-keep text-[var(--color-slate-muted)]">
-          {t('cyclesCaption')}
-        </figcaption>
-      </figure>
+      {/* figure 는 사진표와 그것을 설명하는 한 문장만 담는다. 전체 폭.
+          사진표 위의 「Blugene 염색실증 사례 2」 소제목은 2026-10-06 고객 요청. */}
+      <div className="flex flex-col gap-3">
+        <h4 className="text-base font-bold tracking-[-0.01em] break-keep text-[var(--color-indigo-deep)] sm:text-lg">
+          {t('yarnCaseTitle')}
+        </h4>
+        <figure>
+          <DyedYarnFigure />
+          <figcaption className="mt-2 text-[0.8125rem] leading-relaxed break-keep text-[var(--color-slate-muted)]">
+            {t('cyclesCaption')}
+          </figcaption>
+        </figure>
+      </div>
     </div>
   );
 }
