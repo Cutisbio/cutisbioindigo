@@ -106,8 +106,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       */}
       <section className="w-full bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
-          {/* 「염색 횟수에 따른 발색 비교」 도판은 2026-09-29 고객 요청으로 홈에서 뺐다 — /dyeing-printing 에 있다 */}
-          <ProductFormats variant="bare" showCycles={false} />
+          {/* 「염색 횟수에 따른 발색 비교」 도판은 2026-09-29 고객 요청으로 홈에서 뺐다 — /dyeing-printing 의 색상 라이브러리(DyeingCycles)에 있다 */}
+          <ProductFormats variant="bare" />
         </div>
       </section>
 

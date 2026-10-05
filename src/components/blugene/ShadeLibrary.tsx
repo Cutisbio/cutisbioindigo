@@ -1,6 +1,6 @@
 'use client';
 
-import { Fragment, useState } from 'react';
+import { Fragment, useState, type ReactNode } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { indirubinPair, shadeSwatches } from '@/data/blugene/shades';
@@ -34,6 +34,7 @@ const INDIRUBIN_IMAGE_HEIGHT = 386;
 export default function ShadeLibrary({
   variant = 'section',
   showIndirubin = true,
+  beforeGrid,
 }: {
   /** 'section' 이면 배경·여백을 가진 독립 섹션, 'bare' 면 내부 콘텐츠만 반환한다 */
   variant?: 'section' | 'bare';
@@ -42,6 +43,12 @@ export default function ShadeLibrary({
    * (홈, 2026-09-29 고객 요청). 색상 조건 안내(colorDisclaimer)는 견본 격자에도 해당하므로 그대로 둔다. 기본 true.
    */
   showIndirubin?: boolean;
+  /**
+   * 섹션 제목과 「카탈로그 농도별 견본」 격자 사이에 끼울 블록. /dyeing-printing 은 여기에 「염색 횟수에 따른 발색 비교」
+   * (DyeingCycles, 서버 컴포넌트)를 넣는다 — 2026-10-05 고객 요청으로 제품군 섹션에서 옮김. 클라이언트 컴포넌트라
+   * 서버 컴포넌트를 직접 그릴 수 없으므로 페이지가 ReactNode 로 넘긴다.
+   */
+  beforeGrid?: ReactNode;
 }) {
   const t = useTranslations('ShadeLibrary');
   const tc = useTranslations('Common');
@@ -67,6 +74,11 @@ export default function ShadeLibrary({
   const content = (
     <>
       <SectionHeading eyebrow={t('eyebrow')} title={t('title')} body={t('body')} size="hero" />
+
+      {/* 「염색 횟수에 따른 발색 비교」 등 — 견본 격자보다 먼저 읽힌다 */}
+      {beforeGrid && (
+        <div className="mt-12 border-b border-[color:var(--color-washed)] pb-12 sm:mt-16 lg:pb-16">{beforeGrid}</div>
+      )}
 
       {/* ── 농도별 견본 도판 ───────────────────────────────── */}
       <div className="mt-12 sm:mt-16">
