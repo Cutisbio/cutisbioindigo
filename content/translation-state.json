@@ -1242,28 +1242,28 @@
       "tr": "9b1151e318091d14"
     },
     "Products.cyclesCaption": {
-      "ja": "180e9e72a46e2a18",
-      "en": "180e9e72a46e2a18",
-      "fr": "180e9e72a46e2a18",
-      "it": "180e9e72a46e2a18",
-      "zh": "180e9e72a46e2a18",
-      "tr": "180e9e72a46e2a18"
+      "ja": "f90e7214968ba49d",
+      "en": "f90e7214968ba49d",
+      "fr": "f90e7214968ba49d",
+      "it": "f90e7214968ba49d",
+      "zh": "f90e7214968ba49d",
+      "tr": "f90e7214968ba49d"
     },
     "Products.cyclesAlt": {
-      "ja": "b82a502f54acd131",
-      "en": "b82a502f54acd131",
-      "fr": "b82a502f54acd131",
-      "it": "b82a502f54acd131",
-      "zh": "b82a502f54acd131",
-      "tr": "b82a502f54acd131"
+      "ja": "38ef3d70002869a4",
+      "en": "38ef3d70002869a4",
+      "fr": "38ef3d70002869a4",
+      "it": "38ef3d70002869a4",
+      "zh": "38ef3d70002869a4",
+      "tr": "38ef3d70002869a4"
     },
     "Products.cyclesNote": {
-      "ja": "da86227d695d6634",
-      "en": "da86227d695d6634",
-      "fr": "da86227d695d6634",
-      "it": "da86227d695d6634",
-      "zh": "da86227d695d6634",
-      "tr": "da86227d695d6634"
+      "ja": "f108d0f466662c32",
+      "en": "f108d0f466662c32",
+      "fr": "f108d0f466662c32",
+      "it": "f108d0f466662c32",
+      "zh": "f108d0f466662c32",
+      "tr": "f108d0f466662c32"
     },
     "Products.cta": {
       "ja": "cd755ed6ae6bfb2c",
@@ -5318,6 +5318,70 @@
       "it": "78863471370e089f",
       "zh": "78863471370e089f",
       "tr": "78863471370e089f"
+    },
+    "DyedYarn.figureTitle": {
+      "ja": "b863ec348d02166d",
+      "en": "b863ec348d02166d",
+      "fr": "b863ec348d02166d",
+      "it": "b863ec348d02166d",
+      "zh": "b863ec348d02166d",
+      "tr": "b863ec348d02166d"
+    },
+    "DyedYarn.colDyed": {
+      "ja": "fd05bb0fa9c53979",
+      "en": "fd05bb0fa9c53979",
+      "fr": "fd05bb0fa9c53979",
+      "it": "fd05bb0fa9c53979",
+      "zh": "fd05bb0fa9c53979",
+      "tr": "fd05bb0fa9c53979"
+    },
+    "DyedYarn.colWashed": {
+      "ja": "3e745b2da78a9ce0",
+      "en": "3e745b2da78a9ce0",
+      "fr": "3e745b2da78a9ce0",
+      "it": "3e745b2da78a9ce0",
+      "zh": "3e745b2da78a9ce0",
+      "tr": "3e745b2da78a9ce0"
+    },
+    "DyedYarn.rowCycles": {
+      "ja": "532d191f9905355c",
+      "en": "532d191f9905355c",
+      "fr": "532d191f9905355c",
+      "it": "532d191f9905355c",
+      "zh": "532d191f9905355c",
+      "tr": "532d191f9905355c"
+    },
+    "DyedYarn.sampleA": {
+      "ja": "e9a12cca52721dd7",
+      "en": "e9a12cca52721dd7",
+      "fr": "e9a12cca52721dd7",
+      "it": "e9a12cca52721dd7",
+      "zh": "e9a12cca52721dd7",
+      "tr": "e9a12cca52721dd7"
+    },
+    "DyedYarn.samplePetro": {
+      "ja": "73b011ca919d78db",
+      "en": "73b011ca919d78db",
+      "fr": "73b011ca919d78db",
+      "it": "73b011ca919d78db",
+      "zh": "73b011ca919d78db",
+      "tr": "73b011ca919d78db"
+    },
+    "DyedYarn.sampleB": {
+      "ja": "227c3f92b9fc9320",
+      "en": "227c3f92b9fc9320",
+      "fr": "227c3f92b9fc9320",
+      "it": "227c3f92b9fc9320",
+      "zh": "227c3f92b9fc9320",
+      "tr": "227c3f92b9fc9320"
+    },
+    "DyedYarn.photoAlt": {
+      "ja": "8263bd78ae857934",
+      "en": "8263bd78ae857934",
+      "fr": "8263bd78ae857934",
+      "it": "8263bd78ae857934",
+      "zh": "8263bd78ae857934",
+      "tr": "8263bd78ae857934"
     }
   }
 }

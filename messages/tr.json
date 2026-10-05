@@ -195,12 +195,22 @@
     "nameNote": "Yukarıdaki ürün adları yeni markanın web gösterimidir. Katalogda ve sertifikalarda geçen orijinal ürün adı: \"{catalogueName}\".",
     "specNote": "Partikül boyutu · viskozite · raf ömrü · minimum sipariş miktarı · üretim kapasitesi ve fiyat bilgileri sağlanan kaynaklarda bulunmadığı için gösterilmemektedir. İhtiyaç duyduğunuz spesifikasyonlar için bize ulaşın; kontrol ederek bilgi verelim.",
     "cyclesTitle": "Boyama sayısına göre renk oluşumu karşılaştırması",
-    "cyclesCaption": "Katalog s.8 Şekil 5-1. Kimyasal indigo (toz) · biyo indigo (toz) · biyo indigo (dijital baskı mürekkebi) ile 1~4 kez boyanmış pamuklu kumaşların karşılaştırmasıdır.",
-    "cyclesAlt": "3 satır 4 sütunluk karşılaştırma görseli. Satırlar kimyasal indigo tozu, biyo indigo tozu ve biyo indigo dijital baskı mürekkebi; sütunlar 1~4 kez boyamadır.",
-    "cyclesNote": "Katalog bu örnekte renk yoğunluğunu \"dijital baskı mürekkebi > kimyasal indigo ≈ biyo indigo tozu\" şeklinde belirtir. Fotoğraftaki renk derinliği K/S değerine veya renk farkı ΔE ölçümüne dönüştürülmemiştir ve her koşulda performans üstünlüğü anlamına gelmez.",
+    "cyclesCaption": "CutisBio tarafından sağlanan boyalı iplik fotoğrafları (Ekim 2026). Blugene1, petrokimyasal indigo ve Blugene2 ile boyanan ipliğin 4, 6 ve 8 boyama çevrimi sonrası ile bir yıkama sonrası karşılaştırması.",
+    "cyclesAlt": "Fotoğraflı karşılaştırma tablosu. Üç blok 4, 6 ve 8 boyama çevrimidir; her bloktaki fotoğraf yukarıdan aşağıya Blugene1, petrokimyasal indigo ve Blugene2 ile boyanmış ipliği gösterir. Sol sütun boyalı iplik, sağ sütun bir yıkama sonrasıdır.",
+    "cyclesNote": "CutisBio tarafından sağlanan test fotoğrafları renk düzeltmesi yapılmadan gösterilmektedir. Fotoğraflardaki renk koyuluğu K/S değerlerine ya da ΔE renk farkı ölçümlerine dönüştürülmemiştir ve fotoğraflar her koşulda üstünlük anlamına gelmez.",
     "cta": "Ürün belgelerini talep edin",
     "powderSummary": "Mikrobiyal fermantasyonla üretilen biyo indigo boya tozu; denim, pamuk, ipek ve kaşmir boyama için. %98 biyo bazlı karbon içeriği (ASTM D6866-24a, KATRI); anilin ve N-metilanilin tespit edilmedi (KS K 0734 2019, KOTERI, tespit sınırı 5 mg/kg).",
     "inkSummary": "Mikrobiyal fermantasyonla üretilen biyo indigonun dijital baskı için formüle edilmiş mürekkebi. Katalog s.9'da yer alan ürün."
+  },
+  "DyedYarn": {
+    "figureTitle": "Boyalı iplik fotoğrafları",
+    "colDyed": "Boyalı iplik",
+    "colWashed": "1 yıkama sonrası",
+    "rowCycles": "{count} kez boyama",
+    "sampleA": "Blugene1",
+    "samplePetro": "Petrokimyasal indigo",
+    "sampleB": "Blugene2",
+    "photoAlt": "{count} kez boyama, {condition} — boyalı iplik fotoğrafı, yukarıdan aşağıya: {a}, {petro}, {b}"
   },
   "Printing": {
     "eyebrow": "PRINTED IN BLUE",

@@ -195,12 +195,22 @@
     "nameNote": "上述产品名称为新品牌的网站标示方案。产品目录与证书上的原始产品名称为 “{catalogueName}”。",
     "specNote": "粒径 · 黏度 · 保质期 · 最小起订量 · 产能与价格未见于所提供资料，故不予标示。如需相关规格，请向我们咨询，我们将确认后回复。",
     "cyclesTitle": "染色次数与显色对比",
-    "cyclesCaption": "产品目录 p.8 Figure 5-1。对比化学靛蓝（粉末） · 生物靛蓝（粉末） · 生物靛蓝（数码印花墨水）染色 1~4 次的棉面料。",
-    "cyclesAlt": "3 行 4 列对比图。行依次为化学靛蓝粉末、生物靛蓝粉末、生物靛蓝数码印花墨水，列为染色 1~4 次。",
-    "cyclesNote": "产品目录在此示例中将色强度标示为 “数码印花墨水 > 化学靛蓝 ≈ 生物靛蓝粉末”。照片中的色彩深浅未换算为 K/S 值或色差 ΔE 测定值，也不表示在所有条件下均具性能优势。",
+    "cyclesCaption": "CutisBio 提供的染色纱线照片（2026 年 10 月）。以 Blugene1、石化靛蓝和 Blugene2 染色的纱线，在染色 4、6、8 次后以及洗涤 1 次后的对比。",
+    "cyclesAlt": "照片对比表。三个区块分别为染色 4 次、6 次和 8 次；每个区块的照片自上而下为以 Blugene1、石化靛蓝、Blugene2 染色的纱线。左列为染色纱线，右列为洗涤 1 次后。",
+    "cyclesNote": "由 CutisBio 提供的试验照片，未经色彩校正。照片中的颜色深浅未换算为 K/S 值或 ΔE 色差测量值，也不代表在所有条件下的性能优势。",
     "cta": "产品资料咨询",
     "powderSummary": "通过微生物发酵制成的生物靛蓝染料粉末，用于牛仔布、棉、丝绸和羊绒染色。生物基碳含量98%（ASTM D6866-24a，KATRI）；苯胺与N-甲基苯胺未检出（KS K 0734 2019，KOTERI，检出限5 mg/kg）。",
     "inkSummary": "将微生物发酵制成的生物靛蓝配制成的数码印花墨水。产品目录第9页收录产品。"
+  },
+  "DyedYarn": {
+    "figureTitle": "染色纱线照片",
+    "colDyed": "染色纱线",
+    "colWashed": "洗涤 1 次后",
+    "rowCycles": "染色 {count} 次",
+    "sampleA": "Blugene1",
+    "samplePetro": "石化靛蓝",
+    "sampleB": "Blugene2",
+    "photoAlt": "染色 {count} 次，{condition} — 染色纱线照片，自上而下：{a}、{petro}、{b}"
   },
   "Printing": {
     "eyebrow": "PRINTED IN BLUE",

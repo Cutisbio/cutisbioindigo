@@ -195,12 +195,22 @@
     "nameNote": "I nomi dei prodotti qui sopra sono la presentazione web del nuovo brand. Il nome originale che compare nel catalogo e nei certificati è «{catalogueName}».",
     "specNote": "Granulometria, viscosità, durata di conservazione, quantità minima d'ordine, capacità produttiva e prezzo non compaiono nei documenti forniti e quindi non sono indicati. Contattaci per le specifiche di cui hai bisogno.",
     "cyclesTitle": "Confronto della resa cromatica in base al numero di tinture",
-    "cyclesCaption": "Catalogo p.8, Figure 5-1. Confronto di tessuti di cotone tinti da 1 a 4 volte con indaco chimico (polvere), bio-indaco (polvere) e bio-indaco (inchiostro per stampa digitale).",
-    "cyclesAlt": "Tavola di confronto a 3 righe e 4 colonne. Le righe sono polvere di indaco chimico, polvere di bio-indaco e inchiostro per stampa digitale al bio-indaco; le colonne, da 1 a 4 tinture.",
-    "cyclesNote": "In questo esempio il catalogo indica l'intensità del colore come «inchiostro per stampa digitale > indaco chimico ≈ polvere di bio-indaco». Le tonalità delle foto non sono state convertite in valori K/S né in differenza di colore ΔE, e ciò non significa una superiorità di prestazioni in tutte le condizioni.",
+    "cyclesCaption": "Foto dei filati tinti fornite da CutisBio (ottobre 2026). Filato tinto con Blugene1, indaco petrolchimico e Blugene2, confrontato dopo 4, 6 e 8 cicli di tintura e dopo un lavaggio.",
+    "cyclesAlt": "Tabella di confronto fotografico. I tre blocchi corrispondono a 4, 6 e 8 cicli di tintura; in ogni blocco la foto mostra, dall’alto, il filato tinto con Blugene1, con indaco petrolchimico e con Blugene2. La colonna sinistra è il filato tinto, quella destra dopo un lavaggio.",
+    "cyclesNote": "Foto di prova fornite da CutisBio, mostrate senza correzione del colore. L’intensità del colore nelle foto non è stata convertita in valori K/S né in differenze di colore ΔE, e le foto non indicano una superiorità in tutte le condizioni.",
     "cta": "Richiedi la documentazione di prodotto",
     "powderSummary": "Polvere di colorante bio-indaco prodotta per fermentazione microbica, per la tintura di denim, cotone, seta e cashmere. Contenuto di carbonio biobased del 98% (ASTM D6866-24a, KATRI); anilina e N-metilanilina non rilevate (KS K 0734 2019, KOTERI, limite di rilevabilità 5 mg/kg).",
     "inkSummary": "Bio-indaco prodotto per fermentazione microbica, formulato come inchiostro per la stampa digitale. Prodotto riportato a p.9 del catalogo."
+  },
+  "DyedYarn": {
+    "figureTitle": "Foto dei filati tinti",
+    "colDyed": "Filato tinto",
+    "colWashed": "Dopo 1 lavaggio",
+    "rowCycles": "Tinto {count} volte",
+    "sampleA": "Blugene1",
+    "samplePetro": "Indaco petrolchimico",
+    "sampleB": "Blugene2",
+    "photoAlt": "Tinto {count} volte, {condition} — foto di filati tinti, dall’alto: {a}, {petro}, {b}"
   },
   "Printing": {
     "eyebrow": "PRINTED IN BLUE",

@@ -43,7 +43,7 @@
 | `/blugene/shades/indirubin-indigo-94.webp` | 시험 사진 | 517×386 · 54KB | p.7 Figure 4-2 | 인디고 94% · 인디루빈 6% 로 염색한 데님 원단 사진 (`ShadeLibrary.indirubinAltB`) |
 | `/blugene/products/powder.png` | 시험 사진 | 290×208 · 35KB | p.9 `embedded/p09-xref164.png` | 접시에 담긴 짙은 청색 바이오 인디고 분말 (`Products.powderAlt`) |
 | `/blugene/products/ink-jar.png` | 시험 사진 | 176×264 · 21KB | p.9 `embedded/p09-xref161.png` | 짙은 청색 바이오 인디고 디지털 프린팅 잉크가 담긴 유리병 (`Products.inkAlt`) |
-| `/blugene/products/powder-ink-cycles.png` | 시험 사진 | 1235×1175 · 81KB | p.8 Figure 5-1 | 3행 4열 비교 도판 (화학 분말 / 바이오 분말 / 바이오 잉크 × 1~4회 염색) (`Products.cyclesAlt`) |
+| `/blugene/products/powder-ink-cycles.png` | 시험 사진 | 1235×1175 · 81KB | p.8 Figure 5-1 | **현재 미사용** — 2026-10-05 고객 요청으로 고객 제공 염색사 사진표(10절)로 바꿨다. 파일은 남김 |
 | `/blugene/printing/ink-process.png` | 개념 이미지 | 1363×390 · 122KB | p.9 Figure 6-1 | 원료 준비 → 프리믹싱 → 밀링 → 여과 → 제형 완성 흐름 도식 (`Printing.processAlt`) |
 | `/blugene/printing/pair-a-original.webp` | 시험 사진 | 184×265 · 19KB | p.9 `embedded/p09-xref155.png` | 디지털 프린팅에 사용한 원작 이미지 1 (`Printing.pairAltOriginal`) |
 | `/blugene/printing/pair-a-printed.webp` | 시험 사진 | 285×458 · 27KB | p.9 `embedded/p09-xref156.png` | 같은 이미지를 바이오 인디고 잉크로 프린팅한 결과 1 |
@@ -113,6 +113,7 @@
 | `PrintingGallery.tsx` 의 공정 플로우 | 잉크 제조 5단계. 한국어 설명과 원문 표기(`Raw Material Preparation` … `Formation`)를 나란히 표시 | p.9 Figure 6-1 |
 | `AnilineStructures.tsx` | 아닐린(C₆H₅NH₂) · N-메틸아닐린(C₆H₅NHCH₃) 골격 구조식. 검증된 구조를 좌표로 계산해 SVG 로 그렸다 | p.4 서술 |
 | `CarbonEvidencePanel.tsx` | 기술 페이지 「분명한 근거」의 98% 패널 — 큰 숫자 · 100개 중 98개를 칠한 점 격자(20×5, role="img") · 시험 메타 · 데이터 페이지 링크. 숫자와 메타는 evidence.ts 의 carbonTest, 글자는 messages. 고객 시안 `Blugene_Website_Brief/assets/mockups/2026-10-04-carbon-evidence-panel.svg`(2026-10-04)을 코드로 옮긴 것 — 시안 SVG 는 글자가 들어 있어 화면에 쓰지 않는다 | p.3 Table 1-1 |
+| `DyedYarnFigure.tsx` | 염색 · 프린팅 페이지 「염색 횟수에 따른 발색 비교」의 염색사 사진표 — 4 · 6 · 8회 염색 × 염색사 · 1회 세탁 사진 6장(10절)을 CSS 격자에 놓고 표제 · 열 · 행 · 시료명을 messages(`DyedYarn.*`)에서 읽어 일곱 언어로 번역한다. 고객 SVG 의 글자는 쓰지 않는다 | 고객 제공 SVG(2026-10-05) |
 | `ThreadMotif.tsx` | 데님 실 두 가닥을 연상시키는 추상 선. **순수 장식**(aria-hidden)이며 DNA 이중나선·화학구조도·인증마크로 읽히지 않게 그렸다 | 브랜드 표현 |
 | `Wordmark.tsx` + `BlugeneMark.tsx` | Blugene 워드마크(텍스트)의 B 앞에 열두 갈래 마크를 붙인 락업. 마크는 고객의 로고 심벌 시트(`Blugene_Website_Brief/assets/brand/blugene-symbol-color-variations.jpg`) 「후보 01」에서 `scripts/extract-blugene-mark.mjs` 로 잘라낸 알파 마스크 PNG(`/brand/blugene-mark.png`)를 CSS mask 로 씌운 것이라 모양이 시트와 같다. 마크 색은 밝은 바탕에서 1초마다 파랑 일곱 가지를 순환(`.blugene-mark`, globals.css)하고 어두운 바탕(푸터)에서는 흰색 고정. 서체는 `.blugene-wordmark`(globals.css), 크기는 `SCALE` 한 곳에서 관리한다 | 브랜드 표현 + 고객 시트 |
 
@@ -224,3 +225,26 @@ EXIF/XMP 메타데이터만 무손실 제거 — 위치 정보는 원래 없었�
   인물 이름은 화면에 적지 않고 사진 위에 문구 · 배지를 올리지 않는다(7절 규칙).
 - alt · 캡션은 사진에 보이는 것만 적고("농도별 염색", "전시 부스"), 염색 성능 · 견뢰도 · 안전성을 주장하지 않는다.
 - 화면 배지는 `Common.brandImage`(브랜드 이미지)를 쓰고, 확대 창 안내문(`About.galleryNote`)이 큐티스바이오가 촬영한 원본임을 밝힌다.
+
+## 10. 고객 제공 사진 — 염색 · 프린팅 「염색 횟수에 따른 발색 비교」 염색사 사진 (2026-10-05)
+
+고객이 2026-10-05 채팅으로 보낸 SVG(`CutisBio_Dyed_Yarn_Korean_Editable.svg`, 512×306 뷰박스 — PDF 5쪽의 JPEG 6장을 90° 돌려 내장하고
+한국어 표제 · 표선을 벡터로 얹은 것)를 `Blugene_Website_Brief/assets/mockups/2026-10-05-dyed-yarn-figure.svg` 에 출처로 보관했다.
+SVG 는 글자가 들어 있어 화면에 그대로 쓰지 않는다. 사진 6장만 꺼내 SVG 의 배치대로 **90° 회전만**(크기 · 색 무변환, JPEG q95) 해
+`public/blugene/performance/dyed-yarn/` 에 두고, 표와 글자는 `DyedYarnFigure.tsx` 가 다시 그려 messages 에서 읽는다(일곱 언어).
+색 비교 사진이라 next/image 재인코딩 없이(`unoptimized` + `.swatch-true-color`) 그대로 보여 준다.
+출처는 `scripts/build-blugene-assets.py` 의 `CLIENT_IMAGES` 와 `asset-manifest.json` 에 있다(매니페스트 항목은 같은 형식으로 손으로 넣었다).
+
+| 웹 경로 | 성격 | 크기 | 내용 |
+|---|---|---|---|
+| `/blugene/performance/dyed-yarn/cycles-4-dyed.jpg` | 시험 사진 (고객 제공) | 545×330 · 110KB | 4회 염색 · 염색사 — 위에서부터 Blugene②-1 · 석유화학 인디고 · Blugene②-2 |
+| `/blugene/performance/dyed-yarn/cycles-4-washed.jpg` | 시험 사진 (고객 제공) | 725×331 · 150KB | 4회 염색 · 1회 세탁 — 위에서부터 Blugene②-1 · 석유화학 인디고 · Blugene②-2 |
+| `/blugene/performance/dyed-yarn/cycles-6-dyed.jpg` | 시험 사진 (고객 제공) | 547×337 · 124KB | 6회 염색 · 염색사 — 위에서부터 Blugene②-1 · 석유화학 인디고 · Blugene②-2 |
+| `/blugene/performance/dyed-yarn/cycles-6-washed.jpg` | 시험 사진 (고객 제공) | 724×338 · 174KB | 6회 염색 · 1회 세탁 — 위에서부터 Blugene②-1 · 석유화학 인디고 · Blugene②-2 |
+| `/blugene/performance/dyed-yarn/cycles-8-dyed.jpg` | 시험 사진 (고객 제공) | 549×337 · 96KB | 8회 염색 · 염색사 — 위에서부터 Blugene②-1 · 석유화학 인디고 · Blugene②-2 |
+| `/blugene/performance/dyed-yarn/cycles-8-washed.jpg` | 시험 사진 (고객 제공) | 728×336 · 104KB | 8회 염색 · 1회 세탁 — 위에서부터 Blugene②-1 · 석유화학 인디고 · Blugene②-2 |
+
+- 조건(4 · 6 · 8회 염색, 1회 세탁)은 고객 자료의 표기 그대로다. 시료 표기는 2026-10-05 고객 지정으로 화면에서 Blugene1 · Blugene2 로 쓴다(자료의 원표기 Blugene②-1 · ②-2). 염색 조건 · 세탁 방법 · 측정값은 자료에 없어 적지 않는다.
+- 좁은 화면(sm 미만)에서도 시료명이 사진 왼쪽에 같은 글자로 붙는다 — 블록마다 행 이름 아래에 [시료명 | 사진]을 염색사 · 1회 세탁 순으로 쌓는다(2026-10-05 고객 요청).
+- 사진의 색 농담을 K/S · ΔE 로 환산하지 않으며, "모든 조건에서의 성능 우위를 뜻하지 않는다"를 `Products.cyclesNote` 로 밝힌다.
+- 바꾸기 전의 카탈로그 p.8 Figure 5-1 도판(`/blugene/products/powder-ink-cycles.png`)은 파일만 남아 있다(1절).
