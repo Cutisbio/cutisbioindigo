@@ -111,8 +111,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </section>
 
-      {/* 03. 국경과 세대를 잇는 옷 */}
-      <BrandManifesto />
+      {/* 03. 국경과 세대를 잇는 옷 — 기획자(피부과전문의) 사진은 2026-10-05 고객 요청으로 홈에서도 켠다(/brand 와 같은 자리). */}
+      <BrandManifesto portrait />
 
       {/* 04. 보이지 않는 것까지 확인 */}
       <ImpurityEvidence />
