@@ -255,15 +255,15 @@ SVG 는 글자가 들어 있어 화면에 그대로 쓰지 않는다. 사진 6�
 고객이 2026-10-05 채팅으로 보낸 SVG 꾸러미(`Blugene_SVG_Package.zip`: `Blugene_Dyeing_Comparison_KO/EN/JA.svg`, `Blugene_Label_Editor.html`, PNG 미리보기, `README_KO.md`, `Source_Download_Index.md`).
 세 SVG 는 같은 사진 한 장(무손실 PNG 1952×1244) 위에 열 이름(1 · 3 · 5회)과 행 이름(석유화학 인디고 · Blugene 1 · Blugene 2)을 언어별 벡터 글자로 얹은 것이다.
 꾸러미 설명에 따르면 사진은 고객 보고서 `CutisBio_Japan_Denim_Evaluation_20261005.pdf` 7쪽 그림 5의 위쪽 3행을 자른 것이며 색 · 밝기 · 대비를 바꾸지 않았다.
-SVG 는 글자가 들어 있어 화면에 그대로 쓰지 않는다. 사진만 꺼내 WebP q92 로 바꿔(크기 무변환) `public/blugene/performance/dyed-yarn/` 에 두고,
+SVG 는 글자가 들어 있어 화면에 그대로 쓰지 않는다. 사진만 꺼내 WebP q92 로 바꿔(크기 · 색 무변환) `public/blugene/performance/dyed-yarn/` 에 두고,
 열 · 행 이름은 `SkeinComparison.tsx` 가 다시 그려 messages 에서 읽는다(일곱 언어 — 꾸러미의 KO · EN · JA 표기를 그대로 따르고 나머지는 번역).
 색 비교 사진이라 next/image 재인코딩 없이 보여 준다. 무손실 원본 PNG 와 꾸러미 설명 두 파일은 `Blugene_Website_Brief/assets/mockups/2026-10-05-dyeing-comparison/` 에 있다.
 출처는 `scripts/build-blugene-assets.py` 의 `CLIENT_IMAGES` 와 `asset-manifest.json` 에 있다.
 
 | 웹 경로 | 성격 | 크기 | 내용 |
 |---|---|---|---|
-| `/blugene/performance/dyed-yarn/skeins-1-3-5-dips.webp` | 시험 사진 (고객 제공) | 1952×1244 · 624KB | 석유화학 인디고 · Blugene 1 · Blugene 2 (행) × 1 · 3 · 5회 침염 (열). 바탕(실타래 주변의 어두운 판)만 채널당 +30 밝게 조정(2026-10-05 고객 요청), 실 영역은 무변환 |
+| `/blugene/performance/dyed-yarn/skeins-1-3-5-dips.webp` | 시험 사진 (고객 제공) | 1952×1244 · 624KB | 석유화학 인디고 · Blugene 1 · Blugene 2 (행) × 1 · 3 · 5회 침염 (열). 어두운 바탕은 원본 그대로(2026-10-05 바탕만 밝게 조정했다가 2026-10-06 고객 요청으로 원본으로 되돌림) |
 
-- 바탕 밝기: 2026-10-05 고객 요청("실타래 배경을 약간 밝게")으로 `scripts/brighten-skein-background.mjs` 가 실타래 덩어리(채도>10 픽셀을 5px 팽창 · 구멍 메움 · 3px 침식)를 뺀 바탕만 채널당 +30 밝혔다(평균 밝기 31 → 61). 실타래 표본 구역의 변화는 채널당 1 미만이다. 캡션(`Products.skeinCaption`)이 바탕만 조정했고 실의 색은 손대지 않았음을 밝힌다.
+- 바탕 밝기: 2026-10-05 고객 요청으로 바탕만 채널당 +30 밝힌 판을 잠시 썼다가(`scripts/brighten-skein-background.mjs`, 실 영역 제외), 2026-10-06 고객 요청으로 원본 바탕으로 되돌렸다. 스크립트는 방법 기록으로 남겨 두며 현재 결과에는 적용하지 않는다.
 - 시료 표기(Blugene 1 · Blugene 2, 띄어쓰기 있음)와 조건(1 · 3 · 5회 침염)은 꾸러미 표기 그대로다. 염색 조건 · 측정값은 자료에 없어 적지 않는다.
 - 아래 염색사 사진표(10절)와는 다른 시험이며 시료 표기도 다르다(Blugene1 · Blugene2). 두 사진 모두 `Products.cyclesNote` 가 "색보정 없음 · 측정값 아님 · 성능 우위 아님"을 밝힌다.
