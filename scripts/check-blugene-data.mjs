@@ -288,7 +288,7 @@ const DISCLAIMER_KEYS = [
   /^Certifications\.(scopeNote|verificationNote|brandNameNote|oekoScope)$/,
   // sampleScopeNote · regulatoryOmitted 는 2026-10-03 고객 요청으로 키째 지웠다.
   /^DataHub\.(notDetectedExplain|carbonZeroNote)$/,
-  /^ShadeLibrary\.(indirubinNote|medicalNote)$/,
+  // ShadeLibrary.indirubinNote · medicalNote 는 2026-10-06 고객 요청으로 키째 지웠다(인디루빈 블록 삭제).
   // Science.diagramNote 는 2026-09 부터 고지문이 아니라 브랜드 서사라 면제하지 않는다. metaphorNote 는 지웠다.
   /^Technology\.routesNote$/,
   /^Tech\.(faqList|structuresNote|comparisonCaption)/,
