@@ -14,7 +14,6 @@ import { Link } from '@/i18n/routing';
  */
 export default async function BlugeneHero() {
   const t = await getTranslations('Hero');
-  const tCommon = await getTranslations('Common');
 
   return (
     <section className="relative w-full border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
@@ -76,10 +75,8 @@ export default async function BlugeneHero() {
             sizes="(max-width: 1024px) 100vw, 54vw"
             className="object-cover object-[62%_center] lg:object-center"
           />
-          {/* 이미지 성격 표기 — 밝은 하늘 위에서도 읽히도록 어두운 배경 위에 올린다 */}
-          <p className="absolute right-3 bottom-3 max-w-[90%] rounded bg-[var(--color-indigo-deep)]/80 px-2.5 py-1.5 text-right text-[0.7rem] leading-snug break-keep text-white">
-            {tCommon('brandImage')} · {t('imageCredit')}
-          </p>
+          {/* 이미지 오른쪽 아래의 성격 표기("브랜드 이미지 · 카탈로그 p.1 수록 이미지")는 2026-10-06 고객 요청으로 뺐다
+              (Hero.imageCredit 키도 지움. Common.brandImage 는 /about 에서 계속 쓴다). */}
         </div>
       </div>
     </section>
