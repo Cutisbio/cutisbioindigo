@@ -156,17 +156,7 @@
   "ShadeLibrary": {
     "eyebrow": "SHADE LIBRARY",
     "title": "Markanıza özel bir mavi.",
-    "body": "Boya konsantrasyonuna ve boyama sayısına göre rengin derinliği değişir. İndigo ile indirubin oranı ayarlanarak markaya özgü bir ton oluşturulabilir.",
-    "indirubinTitle": "İndirubinin yarattığı ton değişimi",
-    "indirubinBody": "İndirubin, indigonun kırmızı izomeridir. Mikrobiyal fermantasyonla üretilen indigo ve indirubin bileşimi ayarlanarak markaya özgü bir mavi elde edilebilir.",
-    "indirubinAltA": "%100 indigo ile boyanmış denim kumaş fotoğrafı (Katalog s.7 Şekil 4-2)",
-    "indirubinAltB": "%94 indigo · %6 indirubin ile boyanmış denim kumaş fotoğrafı (Katalog s.7 Şekil 4-2)",
-    "indirubinLabelA": "İndigo %100",
-    "indirubinLabelB": "İndigo %94, indirubin %6",
-    "indirubinToggle": "İki bileşimi karşılaştır",
-    "indirubinNote": "Katalogda sunulan iki bileşimin fotoğraflarıdır. Aradaki karışım oranları verilmediği için ekranda renk üretilerek gösterilmemektedir.",
-    "colorDisclaimer": "Gerçek renk; ekrana, kumaşa ve boyama koşullarına göre değişebilir. Lütfen kumaş numunesiyle doğrulayın.",
-    "medicalNote": "İndirubinin farmakolojik etkinliği bu sitede ele alınmamaktadır. Yalnızca ton ayarı ve ürün geliştirme açısından açıklanmaktadır."
+    "body": "Boya konsantrasyonuna ve boyama sayısına göre rengin derinliği değişir. İndigo ile indirubin oranı ayarlanarak markaya özgü bir ton oluşturulabilir."
   },
   "Products": {
     "eyebrow": "PRODUCT FORMS",

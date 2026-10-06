@@ -48,6 +48,7 @@ export const shadeSwatches: ShadeSwatch[] = [
 export const shadeSourceImage = '/blugene/shades/concentration-shades.webp';
 
 /** p.7 Figure 4-2. 인디고 100% vs 인디고 94% + 인디루빈 6% */
+/** 2026-10-06 고객 요청으로 「인디루빈이 만드는 색조 변화」 블록을 /dyeing-printing 에서 뺐다. 화면에서는 쓰지 않고 데이터만 남긴다. */
 export const indirubinPair = [
   { id: 'indigo-100', ratio: { indigo: 100, indirubin: 0 }, image: '/blugene/shades/indirubin-indigo-100.webp' },
   { id: 'indigo-94', ratio: { indigo: 94, indirubin: 6 }, image: '/blugene/shades/indirubin-indigo-94.webp' },

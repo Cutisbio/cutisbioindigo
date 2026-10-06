@@ -156,17 +156,7 @@
   "ShadeLibrary": {
     "eyebrow": "SHADE LIBRARY",
     "title": "Your brand. Your blue.",
-    "body": "Shade depth changes with dye concentration and the number of dyeing cycles. Adjusting the ratio of indigo to indirubin makes it possible to create a shade that belongs to your brand alone.",
-    "indirubinTitle": "How indirubin shifts the shade",
-    "indirubinBody": "Indirubin is the red isomer of indigo. Adjusting the composition of indigo and indirubin produced by microbial fermentation makes it possible to create a blue that is unique to your brand.",
-    "indirubinAltA": "Photograph of denim fabric dyed with 100% indigo (catalogue p.7 Figure 4-2)",
-    "indirubinAltB": "Photograph of denim fabric dyed with 94% indigo and 6% indirubin (catalogue p.7 Figure 4-2)",
-    "indirubinLabelA": "Indigo 100%",
-    "indirubinLabelB": "Indigo 94%, indirubin 6%",
-    "indirubinToggle": "Compare the two compositions",
-    "indirubinNote": "These are photographs of the two compositions presented in the catalogue. Mixing ratios in between are not provided, so we do not generate those colors on screen.",
-    "colorDisclaimer": "Actual color may differ depending on the screen, the fabric and the dyeing conditions. Please confirm with a fabric sample.",
-    "medicalNote": "The pharmacological activity of indirubin is not covered on this site. We describe it only from the perspective of shade control and product development."
+    "body": "Shade depth changes with dye concentration and the number of dyeing cycles. Adjusting the ratio of indigo to indirubin makes it possible to create a shade that belongs to your brand alone."
   },
   "Products": {
     "eyebrow": "PRODUCT FORMS",
