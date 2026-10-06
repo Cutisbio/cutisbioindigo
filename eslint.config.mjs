@@ -15,6 +15,7 @@ const eslintConfig = defineConfig([
     'dist/**', // 이전 Vite 템플릿의 빌드 산출물 (미니파이된 번들)
     'geo-template/**', // 템플릿 잔재
     'Blugene_Website_Brief/**', // 참고 자료 패키지 (원본 보존)
+    'content/animation/**', // 고객 제공 애니메이션 소스와 렌더 스크립트(CommonJS · 브라우저 전역) — 원본 보존
     '**/*.ps1', // PowerShell 스크립트
   ]),
   {

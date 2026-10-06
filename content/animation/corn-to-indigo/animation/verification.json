@@ -1,0 +1,24 @@
+{
+  "width": 3840,
+  "height": 2160,
+  "duration": 22,
+  "readyState": 4,
+  "graph": {
+    "carbon": 16,
+    "nitrogen": 2,
+    "oxygen": 2,
+    "hydrogen": 10,
+    "edges": 23,
+    "doubleBonds": 9,
+    "lastCarbonLands": 13.06
+  },
+  "bytes": 13616609,
+  "decodedSampleTimes": [
+    1.6,
+    6.5,
+    10.8,
+    13.4,
+    18,
+    21.9
+  ]
+}

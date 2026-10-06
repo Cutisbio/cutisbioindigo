@@ -1,0 +1,12 @@
+const fs=require('fs'),path=require('path');
+const {chromium}=require('C:/Users/wonwo/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+(async()=>{
+ const root=path.resolve(__dirname,'..'),file=path.join(root,'outputs','Blugene_Corn_to_Indigo_4K.mp4');
+ const b=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',args:['--allow-file-access-from-files']});
+ const p=await b.newPage();await p.goto('file:///'+path.join(__dirname,'index.html').replace(/\\/g,'/'));
+ const graph=await p.evaluate(()=>{const s=window.scene;let val=new Array(20).fill(0);s.edgeSpec.forEach(([a,b,n])=>{val[a]+=n;val[b]+=n});const ch=val.slice(0,16).map(v=>4-v);const nh=val.slice(16,18).map(v=>3-v);if(ch.some(x=>x<0)||nh.some(x=>x!==1)||val[18]!==2||val[19]!==2)throw new Error('Invalid valence');return {carbon:16,nitrogen:2,oxygen:2,hydrogen:ch.reduce((a,b)=>a+b,0)+nh.reduce((a,b)=>a+b,0),edges:s.edgeSpec.length,doubleBonds:s.edgeSpec.filter(e=>e[2]===2).length,lastCarbonLands:s.land.at(-1)}});
+ const metadata=await p.evaluate(async()=>{let v=document.createElement('video');v.src='../outputs/Blugene_Corn_to_Indigo_4K.mp4';v.muted=true;v.preload='auto';document.body.append(v);window.v=v;await new Promise((r,j)=>{v.onloadeddata=r;v.onerror=()=>j(new Error(v.error?.message||'Video decode failure'))});return {width:v.videoWidth,height:v.videoHeight,duration:v.duration,readyState:v.readyState}});
+ if(metadata.width!==3840||metadata.height!==2160||Math.abs(metadata.duration-22)>.01)throw new Error('Metadata mismatch');
+ for(const t of [1.6,6.5,10.8,13.4,18,21.9]){const data=await p.evaluate(async(t)=>{let v=window.v;v.currentTime=t;await new Promise(r=>v.onseeked=r);await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));let c=document.createElement('canvas');c.width=1920;c.height=1080;c.getContext('2d').drawImage(v,0,0,1920,1080);return c.toDataURL('image/png')},t);fs.writeFileSync(path.join(root,'outputs',`decoded_${String(t).replace('.','_')}.png`),Buffer.from(data.split(',')[1],'base64'))}
+ const report={...metadata,graph,bytes:fs.statSync(file).size,decodedSampleTimes:[1.6,6.5,10.8,13.4,18,21.9]};fs.writeFileSync(path.join(root,'outputs','verification.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report));await b.close();
+})().catch(e=>{console.error(e);process.exit(1)});
