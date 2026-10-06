@@ -5,7 +5,7 @@ import AnilineStructures from '@/components/blugene/AnilineStructures';
 import QnaSection from '@/components/ui/QnaSection';
 import CertificationLibrary from '@/components/blugene/CertificationLibrary';
 import SectionHeading from '@/components/blugene/SectionHeading';
-import { Link } from '@/i18n/routing';
+import { Link } from '@/i18n/navigation';
 import { BRAND, LOCALES, SITE_URL, buildPageMetadata, canonicalUrl } from '@/data/blugene/site';
 
 export function generateStaticParams() {

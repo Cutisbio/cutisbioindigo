@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { Link } from '@/i18n/routing';
+import { Link } from '@/i18n/navigation';
 import { HEADING_SIZE } from '@/components/blugene/SectionHeading';
 import SourceNote, { AssetKind } from '@/components/blugene/SourceNote';
 import DyedYarnFigure from '@/components/blugene/DyedYarnFigure';
