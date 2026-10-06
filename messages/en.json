@@ -563,6 +563,8 @@
     "heroEyebrow": "TECHNOLOGY",
     "heroTitle": "Four ways to make blue, and the one we chose.",
     "heroBody": "There are four ways to produce indigo dye. Blugene chose a precision fermentation process that follows the carbon cycle. Our choice raises sustainability for the environment and for our lives.",
+    "heroImageAlt": "Diagram of the indigo molecule: sixteen carbon atoms marked as yellow circles, with a legend noting they are plant-derived carbon.",
+    "heroImageCaption": "Blugene structure — plant-derived carbon indigo (provided by CutisBio)",
     "routesTitle": "Four routes to indigo synthesis",
     "routesCaption": "Catalogue p.2 Figure 1-1. Chemical routes are marked in red and biological routes in yellow.",
     "routesAlt": "Diagram of four indigo synthesis routes starting from crude oil, biomass and indigo plants (catalogue p.2)",

@@ -42,15 +42,34 @@ export default async function TechnologyPage({ params }: { params: Promise<{ loc
 
   return (
     <>
+      {/* 히어로 — 왼쪽 카피, 오른쪽 인디고 구조식 도해(2026-10-06 고객 제공 · 요청).
+          가로 그림(1600×893)이라 PC 에서는 오른쪽 열(약 46%)에, 좁은 화면에서는 카피 아래에 둔다. 글자가 작아 확대 창을 연다.
+          그림 안의 제목 · 범례는 한국어 · 영어로 그려져 있어 언어별로 바뀌지 않는다. 첫 화면이라 지연 로딩하지 않는다. */}
       <section className="w-full border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-          <SectionHeading
-            headingLevel="h1"
-            eyebrow={t('heroEyebrow')}
-            title={t('heroTitle')}
-            body={t('heroBody')}
-            size="hero"
-          />
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,46%)] lg:items-center lg:gap-14">
+            <SectionHeading
+              headingLevel="h1"
+              eyebrow={t('heroEyebrow')}
+              title={t('heroTitle')}
+              body={t('heroBody')}
+              size="hero"
+            />
+            <div className="mx-auto w-full max-w-[640px] lg:max-w-none">
+              <ZoomableImage
+                src="/blugene/technology/blugene-structure.webp"
+                alt={t('heroImageAlt')}
+                width={1600}
+                height={893}
+                openLabel={tCommon('openImage')}
+                closeLabel={tCommon('close')}
+                caption={t('heroImageCaption')}
+                sizes="(max-width: 640px) 92vw, (max-width: 1024px) 640px, 560px"
+                preload
+                thumbClassName="rounded-md border border-[color:var(--color-washed)] bg-white"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
