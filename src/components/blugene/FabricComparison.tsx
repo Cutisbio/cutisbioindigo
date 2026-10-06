@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { Link } from '@/i18n/routing';
+import { Link } from '@/i18n/navigation';
 import SectionHeading from '@/components/blugene/SectionHeading';
 import SourceNote, { AssetKind } from '@/components/blugene/SourceNote';
 import ZoomableImage from '@/components/blugene/ZoomableImage';

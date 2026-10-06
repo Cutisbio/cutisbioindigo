@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
-import { Link } from '@/i18n/routing';
+import { Link } from '@/i18n/navigation';
 import SectionHeading from '@/components/blugene/SectionHeading';
 import { PRIMARY_NAV } from '@/data/blugene/site';
 

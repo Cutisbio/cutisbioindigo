@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { Link } from '@/i18n/routing';
+import { Link } from '@/i18n/navigation';
 import SectionHeading from '@/components/blugene/SectionHeading';
 import FabricComparison from '@/components/blugene/FabricComparison';
 import FastnessTables from '@/components/blugene/FastnessTables';

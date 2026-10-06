@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { Geist, Geist_Mono } from 'next/font/google';
 import '../globals.css';
 import Header from '@/components/ui/Header';
+import NavProgress from '@/components/ui/NavProgress';
 import SiteFooter from '@/components/blugene/SiteFooter';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
@@ -114,6 +115,8 @@ export default async function RootLayout({
           <a href="#main" className="skip-link">
             {tNav('skipToContent')}
           </a>
+          {/* 화면 전환을 기다리는 동안 보이는 상단 진행 막대(2026-10-06). 링크(LinkPending) · 언어 전환기가 켠다 */}
+          <NavProgress />
           <Header />
           <main id="main" className="w-full flex-grow">
             {children}

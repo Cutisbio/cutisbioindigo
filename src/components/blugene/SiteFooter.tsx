@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { Link } from '@/i18n/routing';
+import { Link } from '@/i18n/navigation';
 import Wordmark from '@/components/blugene/Wordmark';
 import { FOOTER_NAV, PRIMARY_NAV } from '@/data/blugene/site';
 import { CATALOGUE, SOURCE_AS_OF, contact } from '@/data/blugene/evidence';

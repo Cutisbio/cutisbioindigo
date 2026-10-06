@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
-import { Link } from '@/i18n/routing';
+import { Link } from '@/i18n/navigation';
 import SectionHeading from '@/components/blugene/SectionHeading';
 import SourceNote from '@/components/blugene/SourceNote';
 import ZoomableImage from '@/components/blugene/ZoomableImage';

@@ -242,3 +242,61 @@ body {
   mix-blend-mode: normal !important;
   image-rendering: auto;
 }
+
+/* ---------------------------------------------------------------------------
+ * 화면 전환 대기 표시 (2026-10-06, "클릭하면 반응이 느리다"는 고객 지적)
+ * - .nav-progress: 상단 진행 막대. NavProgress 가 data-active 를 켜는 동안만 보인다. 헤더(z-50)보다 위에 둔다.
+ * - .link-pending: 모든 내부 링크 안에 들어 있는 크기 0 표지(LinkPending). 눌린 동안 data-link-pending 이 켜지고,
+ *   그 링크를 흐리게 + 진행 커서로 바꾼다. 배치는 바뀌지 않는다.
+ * ------------------------------------------------------------------------- */
+.nav-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 120;
+  height: 3px;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  background: linear-gradient(90deg, var(--color-denim), var(--color-indigo-deep));
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: opacity 150ms ease-out;
+}
+
+.nav-progress[data-active] {
+  opacity: 1;
+  animation: nav-progress-grow 1.6s cubic-bezier(0.2, 0.7, 0.3, 1) forwards;
+}
+
+@keyframes nav-progress-grow {
+  0% {
+    transform: scaleX(0);
+  }
+  60% {
+    transform: scaleX(0.7);
+  }
+  100% {
+    transform: scaleX(0.92);
+  }
+}
+
+.link-pending {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+a:has(> .link-pending[data-link-pending]) {
+  opacity: 0.65;
+  cursor: progress;
+  transition: opacity 120ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-progress[data-active] {
+    animation: none;
+    transform: scaleX(0.92);
+  }
+}

@@ -1,9 +1,10 @@
 'use client';
 
-import { useId, useTransition } from 'react';
-import { usePathname, useRouter } from '@/i18n/routing';
+import { useEffect, useId, useTransition } from 'react';
+import { usePathname, useRouter } from '@/i18n/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 import { LOCALES, LOCALE_LABELS, type Locale } from '@/data/blugene/site';
+import { navPending } from '@/components/ui/navPendingStore';
 
 /**
  * 언어 선택기.
@@ -18,6 +19,13 @@ export default function LanguageSwitcher() {
   const t = useTranslations('Nav');
   const selectId = useId();
   const [isPending, startTransition] = useTransition();
+
+  // 언어를 바꾸는 동안(다음 언어의 화면 데이터를 받는 동안) 상단 진행 막대(NavProgress)를 켠다 — 2026-10-06.
+  useEffect(() => {
+    if (!isPending) return;
+    navPending.begin();
+    return () => navPending.end();
+  }, [isPending]);
 
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const next = e.target.value as Locale;
