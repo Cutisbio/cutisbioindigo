@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import SchemaOrg, { buildOrganizationSchema } from '@/components/seo/SchemaOrg';
 import SectionHeading from '@/components/blugene/SectionHeading';
+import Directions from '@/components/blugene/Directions';
 import ZoomableImage from '@/components/blugene/ZoomableImage';
 import { AssetKind } from '@/components/blugene/SourceNote';
 import { BRAND, CORPORATE_SITE_URL, LOCALES, SITE_URL, buildPageMetadata } from '@/data/blugene/site';
@@ -201,6 +202,14 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* 「찾아오시는 길」 — 2026-10-06 고객 요청으로 /contact 의 블록을 회사소개 맨 아래에도 둔다.
+          앞의 연혁 섹션이 아이보리라 흰 바탕으로 받는다. 지도와 연락처는 /contact 와 같은 컴포넌트(Directions)다. */}
+      <section className="w-full bg-white">
+        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+          <Directions locale={locale} className="max-w-3xl" />
         </div>
       </section>
     </>

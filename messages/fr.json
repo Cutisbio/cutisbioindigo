@@ -945,7 +945,9 @@
     "title": "Contact",
     "description": "Demandes d'échantillons et de documentation technique et de certification pour le bio-indigo Blugene.",
     "addressDetail": "8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Corée du Sud",
-    "mapTitle": "Accès"
+    "mapTitle": "Accès",
+    "mapOpen": "Ouvrir dans Google Maps",
+    "mapNewTab": "s’ouvre dans un nouvel onglet"
   },
   "NotFound": {
     "title": "Page introuvable.",
