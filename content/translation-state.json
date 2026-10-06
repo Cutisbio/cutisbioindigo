@@ -5375,21 +5375,37 @@
       "zh": "25728c7bf2256713",
       "tr": "25728c7bf2256713"
     },
-    "Technology.heroImageAlt": {
-      "ja": "b1d8ebec4f86baab",
-      "en": "b1d8ebec4f86baab",
-      "fr": "b1d8ebec4f86baab",
-      "it": "b1d8ebec4f86baab",
-      "zh": "b1d8ebec4f86baab",
-      "tr": "b1d8ebec4f86baab"
+    "Technology.heroVideoLabel": {
+      "ja": "d4a5ba84c678bc38",
+      "en": "d4a5ba84c678bc38",
+      "fr": "d4a5ba84c678bc38",
+      "it": "d4a5ba84c678bc38",
+      "zh": "d4a5ba84c678bc38",
+      "tr": "d4a5ba84c678bc38"
     },
-    "Technology.heroImageCaption": {
-      "ja": "2abbc5f71f2b1cf4",
-      "en": "2abbc5f71f2b1cf4",
-      "fr": "2abbc5f71f2b1cf4",
-      "it": "2abbc5f71f2b1cf4",
-      "zh": "2abbc5f71f2b1cf4",
-      "tr": "2abbc5f71f2b1cf4"
+    "Technology.heroVideoCaption": {
+      "ja": "6e04664086f6b1f9",
+      "en": "6e04664086f6b1f9",
+      "fr": "6e04664086f6b1f9",
+      "it": "6e04664086f6b1f9",
+      "zh": "6e04664086f6b1f9",
+      "tr": "6e04664086f6b1f9"
+    },
+    "Common.playVideo": {
+      "ja": "d4f644528f0b9f9a",
+      "en": "d4f644528f0b9f9a",
+      "fr": "d4f644528f0b9f9a",
+      "it": "d4f644528f0b9f9a",
+      "zh": "d4f644528f0b9f9a",
+      "tr": "d4f644528f0b9f9a"
+    },
+    "Common.pauseVideo": {
+      "ja": "7c6b077c64b31535",
+      "en": "7c6b077c64b31535",
+      "fr": "7c6b077c64b31535",
+      "it": "7c6b077c64b31535",
+      "zh": "7c6b077c64b31535",
+      "tr": "7c6b077c64b31535"
     }
   }
 }
