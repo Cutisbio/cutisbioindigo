@@ -283,7 +283,8 @@ const DISCLAIMER_KEYS = [
   /^Technology\.carbon\.(footnote|evidence\.(panel|split)|faq\.items|sources)/,
   /^Environment\.scopeNote$/,
   /^Products\.(specNote|cyclesNote)$/,
-  /^Printing\.(pairNote|processNote)$/,
+  // Printing.pairNote 는 2026-10-06 고객 요청으로 키째 지웠다.
+  /^Printing\.processNote$/,
   /^Performance\.honestNote$/,
   /^Certifications\.(scopeNote|verificationNote|brandNameNote|oekoScope)$/,
   // sampleScopeNote · regulatoryOmitted 는 2026-10-03 고객 요청으로 키째 지웠다.

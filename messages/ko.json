@@ -207,7 +207,6 @@
     "pairPrinted": "바이오 인디고 잉크 프린팅 결과",
     "pairAltOriginal": "디지털 프린팅에 사용한 원작 이미지 {index} (카탈로그 p.9 Figure 6-2)",
     "pairAltPrinted": "같은 이미지를 바이오 인디고 잉크로 디지털 프린팅한 결과 {index} (카탈로그 p.9 Figure 6-2)",
-    "pairNote": "제품 사용 전후의 성능 개선을 나타내는 사진이 아니며, 원작자 · 고객 · 납품처 정보는 제공 자료에 없습니다.",
     "processTitle": "잉크 제조 흐름",
     "processCaption": "카탈로그 p.9 Figure 6-1 의 단계입니다. 원문 표기를 함께 적었습니다.",
     "processAlt": "원료 준비, 프리믹싱, 밀링, 여과, 제형 완성으로 이어지는 잉크 제조 흐름 도식 (카탈로그 p.9)",

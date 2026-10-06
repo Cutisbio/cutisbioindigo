@@ -11,9 +11,10 @@ import { inkProcessImage, inkProcessSteps, printingPairs } from '@/data/blugene/
  * 1) 원작 이미지 / 바이오 인디고 잉크 프린팅 결과 두 쌍 (Figure 6-2).
  *    - 원작은 PDF 내장 원본이 184~203px 로 작다. 컨테이너 폭을 제한하고 `object-contain` 으로 두어
  *      과도하게 확대된 저해상도 이미지를 보여주지 않는다.
- *    - 두 칸은 **같은 폭 프레임**을 쓴다. 결과만 크게 그리면 pairNote 가 아니라고 적어 둔
- *      '전 · 후 성능 개선' 사진으로 읽힌다. 네 장의 가로세로비가 비슷해 폭을 맞추면 그려지는 크기도 맞는다.
- *    - "전 · 후 성능 개선" 사진이 아니고 원작자 · 고객 정보도 제공 자료에 없다는 점을 pairNote 로 반드시 밝힌다.
+ *    - 두 칸은 **같은 폭 프레임**을 쓴다. 결과만 크게 그리면 '전 · 후 성능 개선' 사진으로 읽힌다.
+ *      네 장의 가로세로비가 비슷해 폭을 맞추면 그려지는 크기도 맞는다.
+ *    - "전 · 후 성능 개선 사진이 아니고 원작자 · 고객 정보도 제공 자료에 없다"는 고지문(pairNote)은
+ *      2026-10-05 advantagesNote 와 마찬가지로 2026-10-06 고객 요청으로 뺐다(키도 지움).
  * 2) 잉크 제조 5단계 흐름 (Figure 6-1). 도판을 그대로 키우지 않고 SVG 레일 · 화살표로 직접 그린다.
  *    - 각 단계에는 카탈로그 원문 표기(sourceLabel)를 함께 적는다. 특히 마지막 단계의 원문은 'Formation' 이며
  *      확정된 공정 전문용어로 덮어쓰지 않는다(processNote).
@@ -171,10 +172,8 @@ export default async function PrintingGallery() {
         ))}
       </ul>
 
-      {/* 전 · 후 성능 비교가 아니라는 점과 원작자 정보 부재를 본문 흐름 안에서 밝힌다 */}
-      <div className="mt-10 max-w-3xl border-l-2 border-[color:var(--color-denim)] pl-5 sm:pl-6">
-        <SourceNote className="text-sm sm:text-[0.9375rem]">{t('pairNote')}</SourceNote>
-      </div>
+      {/* "전 · 후 성능 개선 사진이 아니며 원작자 · 고객 · 납품처 정보는 제공 자료에 없다"는 고지(Printing.pairNote)는
+          2026-10-06 고객 요청으로 뺐다(키도 지움). 두 칸을 같은 폭 프레임으로 그리는 원칙은 그대로다. */}
 
       {/* 잉크 제조 흐름 — 카탈로그 p.9 Figure 6-1 */}
       <div className="mt-16 border-t border-[color:var(--color-washed)] pt-12 sm:mt-20 sm:pt-14">
