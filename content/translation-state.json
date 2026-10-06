@@ -5374,6 +5374,22 @@
       "it": "25728c7bf2256713",
       "zh": "25728c7bf2256713",
       "tr": "25728c7bf2256713"
+    },
+    "Technology.heroImageAlt": {
+      "ja": "b1d8ebec4f86baab",
+      "en": "b1d8ebec4f86baab",
+      "fr": "b1d8ebec4f86baab",
+      "it": "b1d8ebec4f86baab",
+      "zh": "b1d8ebec4f86baab",
+      "tr": "b1d8ebec4f86baab"
+    },
+    "Technology.heroImageCaption": {
+      "ja": "2abbc5f71f2b1cf4",
+      "en": "2abbc5f71f2b1cf4",
+      "fr": "2abbc5f71f2b1cf4",
+      "it": "2abbc5f71f2b1cf4",
+      "zh": "2abbc5f71f2b1cf4",
+      "tr": "2abbc5f71f2b1cf4"
     }
   }
 }
