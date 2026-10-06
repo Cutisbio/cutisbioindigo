@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import SectionHeading from '@/components/blugene/SectionHeading';
@@ -41,31 +42,54 @@ export default async function DyeingPrintingPage({
 
   return (
     <>
+      {/* 히어로 — 왼쪽 카피 · 이동 메뉴, 오른쪽 전시 설치 사진(2026-10-06 고객 제공 · 요청).
+          사진은 세로(1400×1992)라 PC 에서는 오른쪽 열(약 42%)에 세워 크게, 좁은 화면에서는 카피 아래에 폭을 채워 둔다.
+          첫 화면이라 지연 로딩하지 않는다. 사진 위에 문구를 올리지 않는다. */}
       <section className="w-full border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-          <SectionHeading
-            headingLevel="h1"
-            eyebrow={t('heroEyebrow')}
-            title={t('heroTitle')}
-            body={t('heroBody')}
-            size="hero"
-          />
-          {/* 이 페이지는 11,000px 이 넘는데 앵커 다섯 개가 정의만 되어 있고 링크가 없었다.
-              장식이 아니라 이동 수단이라 히어로 바로 아래에 둔다. */}
-          <nav aria-label={t('jumpNavLabel')} className="mt-10">
-            <ul className="-mx-1 flex flex-wrap gap-2">
-              {(t.raw('jumpNav') as string[]).map((label, index) => (
-                <li key={label}>
-                  <a
-                    href={`#${['dyeability', 'colorfastness', 'shades', 'products', 'printing'][index]}`}
-                    className="inline-block rounded-full border border-[color:var(--color-washed)] bg-white px-4 py-1.5 text-sm font-semibold break-keep text-[var(--color-indigo-deep)] transition-colors hover:border-[var(--color-denim)] hover:text-[var(--color-denim)]"
-                  >
-                    {label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,42%)] lg:items-center lg:gap-16">
+            <div>
+              <SectionHeading
+                headingLevel="h1"
+                eyebrow={t('heroEyebrow')}
+                title={t('heroTitle')}
+                body={t('heroBody')}
+                size="hero"
+              />
+              {/* 이 페이지는 11,000px 이 넘는데 앵커 다섯 개가 정의만 되어 있고 링크가 없었다.
+                  장식이 아니라 이동 수단이라 히어로 바로 아래에 둔다. */}
+              <nav aria-label={t('jumpNavLabel')} className="mt-10">
+                <ul className="-mx-1 flex flex-wrap gap-2">
+                  {(t.raw('jumpNav') as string[]).map((label, index) => (
+                    <li key={label}>
+                      <a
+                        href={`#${['dyeability', 'colorfastness', 'shades', 'products', 'printing'][index]}`}
+                        className="inline-block rounded-full border border-[color:var(--color-washed)] bg-white px-4 py-1.5 text-sm font-semibold break-keep text-[var(--color-indigo-deep)] transition-colors hover:border-[var(--color-denim)] hover:text-[var(--color-denim)]"
+                      >
+                        {label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
+
+            <figure className="mx-auto w-full max-w-[560px] lg:max-w-none">
+              <Image
+                src="/blugene/performance/exhibition-indigo-installation.webp"
+                alt={t('heroImageAlt')}
+                width={1400}
+                height={1992}
+                preload
+                fetchPriority="high"
+                sizes="(max-width: 640px) 92vw, (max-width: 1024px) 560px, 520px"
+                className="h-auto w-full rounded-md border border-[color:var(--color-washed)] bg-white"
+              />
+              <figcaption className="mt-2.5 text-[0.8125rem] leading-relaxed break-keep text-[var(--color-slate-muted)]">
+                {t('heroImageCaption')}
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
