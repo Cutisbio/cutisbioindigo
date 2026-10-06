@@ -98,17 +98,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           브랜드 페이지의 이 블록으로 바꿨다. 숫자의 근거와 읽는 조건은 아래 불순물 · 환경 섹션과 데이터 · 인증 페이지가 맡는다. */}
       <PromiseSection />
 
-      {/*
-        02. 분말과 프린팅 잉크 — '무엇을 파는가'를 근거보다 먼저 밝힌다.
-        이 블록이 뒤로 가면 제품명 · CAS · 규격 안내가 스크롤 60% 지점에서야 처음 나온다.
-        바탕은 흰 PromiseSection 과 붙지 않도록, 또 카드(bg-white)가 섹션 바탕에 묻히지 않도록 ivory 로 둔다.
-      */}
-      <section className="w-full bg-[var(--color-ivory)]">
-        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
-          {/* 「염색 횟수에 따른 발색 비교」 도판은 2026-09-29 고객 요청으로 여기서 뺐다. 2026-10-06 부터는 아래 06 섹션에 사례 1만 둔다 */}
-          <ProductFormats variant="bare" />
-        </div>
-      </section>
+      {/* 02. 분말과 프린팅 잉크(ProductFormats)는 2026-10-06 고객 요청으로 맨 아래(인증 섹션 다음, 문의 CTA 앞)로 옮겼다.
+          전에는 '무엇을 파는가'를 근거보다 먼저 밝히려고 여기 두었다. 흰 PromiseSection 다음에 바로 짙은 남색 BrandManifesto 가 온다. */}
 
       {/* 03. 국경과 세대를 잇는 옷 — 기획자(피부과전문의) 사진은 2026-10-05 고객 요청으로 홈에서도 켠다(/brand 와 같은 자리). */}
       <BrandManifesto portrait />
@@ -150,6 +141,15 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             {t('catalogueTitle')}
             <span aria-hidden="true">→</span>
           </Link>
+        </div>
+      </section>
+
+      {/* 08-b. 분말과 프린팅 잉크 — 2026-10-06 고객 요청으로 02 에서 여기(맨 아래, 문의 CTA 바로 앞)로 옮겼다.
+          앞의 08(인증)이 아이보리라 흰 바탕으로 받는다. 카드는 테두리가 있어 흰 바탕에서도 구분된다.
+          「염색 횟수에 따른 발색 비교」 도판은 2026-09-29 고객 요청으로 이 블록에서 뺐고, 2026-10-06 부터 06 섹션에 사례 1만 둔다. */}
+      <section className="w-full bg-white">
+        <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
+          <ProductFormats variant="bare" />
         </div>
       </section>
 
