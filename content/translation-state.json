@@ -2466,12 +2466,12 @@
       "tr": "d4efe5df6e5f5ac6"
     },
     "DyeingPrinting.heroBody": {
-      "ja": "7d8849cacb58063e",
-      "en": "7d8849cacb58063e",
-      "fr": "7d8849cacb58063e",
-      "it": "7d8849cacb58063e",
-      "zh": "7d8849cacb58063e",
-      "tr": "7d8849cacb58063e"
+      "ja": "24ffd9d1ee3cfcf4",
+      "en": "24ffd9d1ee3cfcf4",
+      "fr": "24ffd9d1ee3cfcf4",
+      "it": "24ffd9d1ee3cfcf4",
+      "zh": "24ffd9d1ee3cfcf4",
+      "tr": "24ffd9d1ee3cfcf4"
     },
     "DyeingPrinting.cta": {
       "ja": "a5307f003a12cf70",
@@ -5318,6 +5318,62 @@
       "it": "b222e9ceb888f620",
       "zh": "b222e9ceb888f620",
       "tr": "b222e9ceb888f620"
+    },
+    "DyeingPrinting.heroImageAlt": {
+      "ja": "815a6ae5444e05d8",
+      "en": "815a6ae5444e05d8",
+      "fr": "815a6ae5444e05d8",
+      "it": "815a6ae5444e05d8",
+      "zh": "815a6ae5444e05d8",
+      "tr": "815a6ae5444e05d8"
+    },
+    "DyeingPrinting.heroImageCaption": {
+      "ja": "a1fd71ccc47f4724",
+      "en": "a1fd71ccc47f4724",
+      "fr": "a1fd71ccc47f4724",
+      "it": "a1fd71ccc47f4724",
+      "zh": "a1fd71ccc47f4724",
+      "tr": "a1fd71ccc47f4724"
+    },
+    "Products.skeinCaseTitle": {
+      "ja": "be3c04caa35d9cd4",
+      "en": "be3c04caa35d9cd4",
+      "fr": "be3c04caa35d9cd4",
+      "it": "be3c04caa35d9cd4",
+      "zh": "be3c04caa35d9cd4",
+      "tr": "be3c04caa35d9cd4"
+    },
+    "Products.yarnCaseTitle": {
+      "ja": "c6807556bf4e0b9d",
+      "en": "c6807556bf4e0b9d",
+      "fr": "c6807556bf4e0b9d",
+      "it": "c6807556bf4e0b9d",
+      "zh": "c6807556bf4e0b9d",
+      "tr": "c6807556bf4e0b9d"
+    },
+    "Products.cyclesLink": {
+      "ja": "1473b9e6058d2d47",
+      "en": "1473b9e6058d2d47",
+      "fr": "1473b9e6058d2d47",
+      "it": "1473b9e6058d2d47",
+      "zh": "1473b9e6058d2d47",
+      "tr": "1473b9e6058d2d47"
+    },
+    "Contact.mapOpen": {
+      "ja": "9722b5794ec36af2",
+      "en": "9722b5794ec36af2",
+      "fr": "9722b5794ec36af2",
+      "it": "9722b5794ec36af2",
+      "zh": "9722b5794ec36af2",
+      "tr": "9722b5794ec36af2"
+    },
+    "Contact.mapNewTab": {
+      "ja": "25728c7bf2256713",
+      "en": "25728c7bf2256713",
+      "fr": "25728c7bf2256713",
+      "it": "25728c7bf2256713",
+      "zh": "25728c7bf2256713",
+      "tr": "25728c7bf2256713"
     }
   }
 }
