@@ -945,7 +945,9 @@
     "title": "문의하기",
     "description": "Blugene 바이오 인디고의 샘플과 기술 · 인증자료 문의를 받습니다.",
     "addressDetail": "서울특별시 강남구 논현로 842 압구정빌딩 8층 (우 06025)\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
-    "mapTitle": "찾아오시는 길"
+    "mapTitle": "찾아오시는 길",
+    "mapOpen": "Google 지도에서 열기",
+    "mapNewTab": "새 창에서 열림"
   },
   "NotFound": {
     "title": "찾으시는 페이지가 없습니다.",

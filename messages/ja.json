@@ -945,7 +945,9 @@
     "title": "お問い合わせ",
     "description": "Blugene バイオインディゴのサンプルと技術・認証資料の問い合わせを受け付けています。",
     "addressDetail": "ソウル特別市江南区論峴路842 狎鴎亭ビル8階 (06025)\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
-    "mapTitle": "アクセス"
+    "mapTitle": "アクセス",
+    "mapOpen": "Google マップで開く",
+    "mapNewTab": "新しいタブで開きます"
   },
   "NotFound": {
     "title": "お探しのページが見つかりません。",

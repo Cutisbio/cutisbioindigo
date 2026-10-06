@@ -945,7 +945,9 @@
     "title": "İletişim",
     "description": "Blugene biyo indigo örnekleri ve teknik · sertifikasyon materyalleri hakkında sorular kabul edilmektedir.",
     "addressDetail": "Apgujeong Binası 8. kat, Nonhyeon-ro 842, Gangnam-gu, Seul 06025, Kore\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
-    "mapTitle": "Yol tarifi"
+    "mapTitle": "Yol tarifi",
+    "mapOpen": "Google Haritalar’da aç",
+    "mapNewTab": "yeni sekmede açılır"
   },
   "NotFound": {
     "title": "Aradığınız sayfa bulunamadı.",

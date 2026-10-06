@@ -945,7 +945,9 @@
     "title": "联系我们",
     "description": "接受关于Blugene生物靛蓝的样品和技术·认证资料的咨询。",
     "addressDetail": "韩国首尔特别市江南区论岘路 842 号 狎鸥亭大厦 8 层（邮编 06025）\n8F Apgujeong B/D, 842 Nonhyeon-ro, Gangnam-gu, Seoul 06025, Korea",
-    "mapTitle": "交通指引"
+    "mapTitle": "交通指引",
+    "mapOpen": "在 Google 地图中打开",
+    "mapNewTab": "在新标签页中打开"
   },
   "NotFound": {
     "title": "未找到您访问的页面。",
