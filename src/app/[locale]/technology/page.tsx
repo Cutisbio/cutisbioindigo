@@ -46,11 +46,13 @@ export default async function TechnologyPage({ params }: { params: Promise<{ loc
       {/* 히어로 — 왼쪽 카피, 오른쪽 「옥수수에서 인디고로」 개념 애니메이션(2026-10-06 고객 제공 · 요청).
           같은 날 먼저 넣었던 구조식 도해(blugene-structure.webp)를 이 영상으로 바꿨다(파일은 남김).
           영상은 1280×720 · 22초 · 무음 · 반복이고 바탕을 히어로와 같은 아이보리로 렌더해 테두리 없이 바탕에 녹아든다.
-          PC 에서는 오른쪽 열(약 46%), 좁은 화면에서는 카피 아래. 영상 안의 제목 · 범례는 한국어 · 영어로 그려져 있어 언어별로 바뀌지 않는다.
+          PC 에서는 오른쪽 열(약 50%, 2026-10-07 고객 요청으로 46% 에서 넓힘 — 더 넓히면 제목이 세 줄로 갈린다), 좁은 화면에서는 카피 아래.
+          영상 안의 머리글 · 범례 · 바닥글은 2026-10-07 고객 요청으로 빼고 내용을 조금 키워 다시 렌더했다(scene-web.js).
+          남은 글자(옥수수 · 인디고 분자식)는 한국어 · 영어로 그려져 있어 언어별로 바뀌지 않는다.
           캡션은 영상이 탄소 출처를 설명하는 개념 시각화이지 반응 기전이 아니라는 점을 밝힌다(제공 README 의 단서). */}
       <section className="w-full border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,46%)] lg:items-center lg:gap-14">
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,50%)] lg:items-center lg:gap-10">
             <SectionHeading
               headingLevel="h1"
               eyebrow={t('heroEyebrow')}
@@ -58,7 +60,7 @@ export default async function TechnologyPage({ params }: { params: Promise<{ loc
               body={t('heroBody')}
               size="hero"
             />
-            <figure className="mx-auto w-full max-w-[640px] lg:max-w-none">
+            <figure className="mx-auto w-full max-w-[720px] lg:max-w-none">
               <HeroVideo
                 src="/blugene/technology/corn-to-indigo-720p.mp4"
                 poster="/blugene/technology/corn-to-indigo-poster.webp"

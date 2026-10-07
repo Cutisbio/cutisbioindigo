@@ -1,4 +1,9 @@
-/* 웹용: 바탕을 사이트 히어로의 아이보리(#f6f3ec)로 바꾼 것 외에는 고객 제공 scene.js 와 같다(2026-10-06) */
+/* 웹용 — 고객 제공 scene.js 와 다른 점(2026-10-06 · 10-07 고객 요청)
+ * - 바탕을 사이트 히어로의 아이보리(#f6f3ec)로 그린다.
+ * - 머리글(BLUGENE · 제목 · 영문 부제 · 구분선), 오른쪽 위의 '분자구조 개념 애니메이션' · 단계 표시 · 'C = 식물유래 탄소' 범례,
+ *   조립 중 '탄소 위치 n / 16' 카운터, 바닥의 구분선 · 개념 시각화 단서 두 줄을 그리지 않는다(단서는 페이지 캡션이 맡는다).
+ *   옥수수 아래 '옥수수 · 식물유래 탄소'와 완성 뒤 '인디고 · C₁₆H₁₀N₂O₂' 표기는 남긴다.
+ * - 글이 빠져 비는 위아래 여백만큼 내용을 1.06배 키워 그린다(ZOOM). 옥수수 왼쪽 가장자리가 잘리지 않는 최대치다. */
 (() => {
   const W=1920,H=1080,D=22,FPS=30;
   const ink='#101f4b',muted='#687485',bond='#424955',gold='#d7a437';
@@ -40,22 +45,12 @@
     txt('옥수수 · 식물유래 탄소',294,910,24,ink,600,'center');
     txt('Maize · plant-derived carbon',294,945,18,muted,400,'center');
   })}
-  function drawTop(t){ctx.fillStyle=ink;ctx.fillRect(83,70,5,24);txt('BLUGENE',104,82,23,ink,700);txt('분자구조 개념 애니메이션',1838,82,21,muted,400,'right');
-    txt('식물유래 탄소와 인디고 분자구조',82,145,43,ink,600);
-    txt('Plant-derived carbon in the indigo molecular structure',83,197,24,muted,400);
-    line(84,233,1838,233,1,'#e8ebef');
-    let st=stage(t);const label=st===0?'01   식물유래 탄소':st===1?'02   탄소 골격의 조립':'03   인디고 구조 완성';
-    txt(label,1838,196,22,ink,600,'right');
-  }
-  function drawLegend(t){withAlpha(ease((t-1.6)/.6),()=>{drawKernel(1580,288,28);txt('C = 식물유래 탄소',1610,288,21,muted);})}
-  function drawLower(t){let st=stage(t),n=land.filter(x=>t>=x).length;
-    if(st===1){withAlpha(ease((t-2.3)/.45)*(1-ease((t-14)/.6)),()=>{txt('탄소 위치',1738,819,19,muted,400,'right');txt(`${String(n).padStart(2,'0')} / 16`,1738,861,34,ink,600,'right')})}
+  /* 머리글 · 범례 · 단계 표시 · 카운터 · 바닥글은 2026-10-07 고객 요청으로 그리지 않는다 */
+  function drawLower(t){
     withAlpha(ease((t-15.7)/.6),()=>{txt('인디고',960,898,32,ink,600,'center');txt('C₁₆H₁₀N₂O₂',960,942,32,ink,400,'center')});
-    line(84,983,1838,983,1,'#e4e8ec');
-    txt('개념 시각화: 옥수수 알갱이는 탄소의 기원을 상징하며, 실제 생합성 경로를 나타내지 않습니다.',960,1019,18,muted,400,'center');
-    txt('Conceptual illustration of carbon origin; not a biosynthetic reaction sequence.',960,1048,16,'#8b949f',400,'center');
   }
-  function draw(t,scale=2){c.width=W*scale;c.height=H*scale;ctx.setTransform(scale,0,0,scale,0,0);ctx.fillStyle='#f6f3ec';ctx.fillRect(0,0,W,H);drawTop(t);drawCorn(t);drawGuides(t);drawBonds(t);drawHetero(t);for(let i=0;i<16;i++)drawCarbon(i,t);drawLegend(t);drawLower(t);return c;}
+  const ZOOM=1.06,ZOOM_CY=588; /* 내용의 세로 중심(약 217~960px)을 기준으로 키운다 */
+  function draw(t,scale=2){c.width=W*scale;c.height=H*scale;ctx.setTransform(scale,0,0,scale,0,0);ctx.fillStyle='#f6f3ec';ctx.fillRect(0,0,W,H);ctx.translate(W/2,H/2);ctx.scale(ZOOM,ZOOM);ctx.translate(-W/2,-ZOOM_CY);drawCorn(t);drawGuides(t);drawBonds(t);drawHetero(t);for(let i=0;i<16;i++)drawCarbon(i,t);drawLower(t);return c;}
   async function init(){[corn,ref]=await Promise.all(['../image_inputs/corn.png','../image_inputs/refined.jpg'].map(src=>new Promise((resolve,reject)=>{let im=new Image();im.onload=()=>resolve(im);im.onerror=reject;im.src=src})));kernel=document.createElement('canvas');kernel.width=100;kernel.height=110;const k=kernel.getContext('2d');k.drawImage(ref,268,235,100,110,0,0,100,110);let dat=k.getImageData(0,0,100,110),d=dat.data,seen=new Uint8Array(11000),q=[];for(let x=0;x<100;x++){q.push(x,10900+x)}for(let y=0;y<110;y++){q.push(y*100,y*100+99)}while(q.length){let i=q.pop();if(i<0||i>=11000||seen[i])continue;seen[i]=1;let j=i*4,r=d[j],g=d[j+1],b=d[j+2];if(Math.min(r,g,b)<190||Math.max(r,g,b)-Math.min(r,g,b)>27)continue;d[j+3]=0;let x=i%100;if(x>0)q.push(i-1);if(x<99)q.push(i+1);if(i>=100)q.push(i-100);if(i<10900)q.push(i+100)}let marked=new Uint8Array(11000),largest=[];for(let a=0;a<11000;a++){if(marked[a]||!d[a*4+3])continue;let stack=[a],comp=[];marked[a]=1;while(stack.length){let z=stack.pop();comp.push(z);let x=z%100;for(let nb of [x>0?z-1:-1,x<99?z+1:-1,z-100,z+100])if(nb>=0&&nb<11000&&!marked[nb]&&d[nb*4+3]){marked[nb]=1;stack.push(nb)}}if(comp.length>largest.length)largest=comp}let keep=new Uint8Array(11000);for(let i of largest)keep[i]=1;for(let i=0;i<11000;i++)if(!keep[i])d[i*4+3]=0;k.putImageData(dat,0,0);draw(0);return true}
   window.scene={init,draw,duration:D,fps:FPS,pts,edgeSpec,launch,land,appear};
 })();
