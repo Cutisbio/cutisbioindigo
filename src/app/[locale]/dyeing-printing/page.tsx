@@ -43,7 +43,7 @@ export default async function DyeingPrintingPage({
   return (
     <>
       {/* 히어로 — 왼쪽 카피 · 이동 메뉴, 오른쪽 전시 설치 사진(2026-10-06 고객 제공 · 요청).
-          사진은 세로(1341×1892 — 2026-10-07 가장자리 여백을 잘라 낸 뒤 크기)라 PC 에서는 오른쪽 열(약 42%)에 세워 크게, 좁은 화면에서는 카피 아래에 폭을 채워 둔다.
+          사진은 세로(1341×1670 — 2026-10-07 가장자리 여백과 고객이 표시한 위아래 부분을 잘라 낸 뒤 크기)라 PC 에서는 오른쪽 열(약 42%)에 세워 크게, 좁은 화면에서는 카피 아래에 폭을 채워 둔다.
           첫 화면이라 지연 로딩하지 않는다. 사진 위에 문구를 올리지 않는다.
           2026-10-07 고객 요청으로 테두리 대신 남색 기운의 그림자와 옅은 링을 둬 사진이 떠 보이게 한다. */}
       <section className="w-full border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
@@ -80,7 +80,7 @@ export default async function DyeingPrintingPage({
                 src="/blugene/performance/exhibition-indigo-installation.webp"
                 alt={t('heroImageAlt')}
                 width={1341}
-                height={1892}
+                height={1670}
                 preload
                 fetchPriority="high"
                 sizes="(max-width: 640px) 92vw, (max-width: 1024px) 560px, 520px"
