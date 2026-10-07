@@ -97,11 +97,7 @@
   "Environment": {
     "eyebrow": "FROM RENEWABLE CARBON",
     "title": "Thinking of the wearer. And of how it is made.",
-    "body": "An indigo that starts from renewable carbon. From the origin of the feedstock through to compositional analysis, we explain our approach with material you can verify.",
-    "carbonCardTitle": "Biobased carbon content",
-    "carbonCardText": "This is the share of the carbon in the product that comes from renewable feedstock. It is based on the measured value in catalogue p.3 Table 1-1 (pMC 97.73), and it is not indigo purity or a carbon emissions reduction rate.",
-    "scopeNote": "Product-level life cycle assessment (LCA), water use, energy and carbon emissions data are not included in this catalogue. Environmental performance figures outside the verified scope are not shown on this site.",
-    "cta": "See the supporting material"
+    "body": "An indigo that starts from renewable carbon. From the origin of the feedstock through to compositional analysis, we explain our approach with material you can verify."
   },
   "Performance": {
     "eyebrow": "PERFORMANCE",

@@ -97,11 +97,7 @@
   "Environment": {
     "eyebrow": "FROM RENEWABLE CARBON",
     "title": "Penser à celui qui porte. Penser aussi à la façon de fabriquer.",
-    "body": "Un indigo qui part du carbone renouvelable. De l'origine des matières premières à l'analyse de composition, nous expliquons notre démarche avec des données vérifiables.",
-    "carbonCardTitle": "Teneur en carbone biosourcé",
-    "carbonCardText": "Part du carbone contenu dans le produit qui provient de matières premières renouvelables. Fondée sur la mesure de la Table 1-1, p.3 du catalogue (pMC 97.73) ; il ne s'agit ni de la pureté de l'indigo ni d'une réduction des émissions de carbone.",
-    "scopeNote": "Les analyses de cycle de vie (ACV) par produit, la consommation d'eau, l'énergie et les émissions de carbone ne figurent pas dans ce catalogue. Aucun chiffre de performance environnementale hors du périmètre vérifié n'est affiché sur ce site.",
-    "cta": "Voir les pièces justificatives"
+    "body": "Un indigo qui part du carbone renouvelable. De l'origine des matières premières à l'analyse de composition, nous expliquons notre démarche avec des données vérifiables."
   },
   "Performance": {
     "eyebrow": "PERFORMANCE",

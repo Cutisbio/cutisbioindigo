@@ -281,7 +281,7 @@ const DISCLAIMER_KEYS = [
   // '탄소중립 · 생분해 · 배출 0' 같은 말을 "그렇지 않다"고 밝히는 문장이라 7개 언어 모두 면제한다.
   // 경로 카드와 제목(journey · routes · origin)은 면제하지 않는다.
   /^Technology\.carbon\.(footnote|evidence\.(panel|split)|faq\.items|sources)/,
-  /^Environment\.scopeNote$/,
+  // Environment.scopeNote 는 2026-10-07 고객 요청으로 키째 지웠다(홈 환경 섹션의 작은 98% 카드 삭제).
   /^Products\.(specNote|cyclesNote)$/,
   // Printing.pairNote 는 2026-10-06 고객 요청으로 키째 지웠다.
   /^Printing\.processNote$/,

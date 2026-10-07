@@ -97,11 +97,7 @@
   "Environment": {
     "eyebrow": "FROM RENEWABLE CARBON",
     "title": "Pensando a chi indossa. Pensando anche a come si produce.",
-    "body": "Un indaco che parte dal carbonio rinnovabile. Dall'origine delle materie prime all'analisi della composizione, spieghiamo il nostro approccio con dati verificabili.",
-    "carbonCardTitle": "Contenuto di carbonio biobased",
-    "carbonCardText": "Quota del carbonio contenuto nel prodotto che proviene da materie prime rinnovabili. Si basa sulla misura della Table 1-1, p.3 del catalogo (pMC 97.73); non è la purezza dell'indaco né una riduzione delle emissioni di carbonio.",
-    "scopeNote": "Le analisi del ciclo di vita (LCA) per prodotto, il consumo di acqua, l'energia e le emissioni di carbonio non sono incluse in questo catalogo. Nessun valore di prestazione ambientale al di fuori dell'ambito verificato è mostrato su questo sito.",
-    "cta": "Vedi la documentazione"
+    "body": "Un indaco che parte dal carbonio rinnovabile. Dall'origine delle materie prime all'analisi della composizione, spieghiamo il nostro approccio con dati verificabili."
   },
   "Performance": {
     "eyebrow": "PERFORMANCE",
