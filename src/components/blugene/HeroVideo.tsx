@@ -1,6 +1,20 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useSyncExternalStore } from 'react';
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
+
+/**
+ * 영상 위에 겹치는 글자 한 덩어리 — 재생 시간 [from, until) 동안 보인다. 위치는 영상 폭 · 높이의 백분율.
+ * 영상 자체에는 글자가 없고(언어별로 바꿀 수 없으므로), 페이지가 번역된 문구를 여기로 넘긴다(2026-10-07 고객 요청).
+ */
+export interface VideoOverlay {
+  key: string;
+  from: number;
+  until?: number;
+  /** 덩어리의 가운데가 놓일 자리(%) */
+  x: number;
+  y: number;
+  lines: { text: ReactNode; className?: string }[];
+}
 
 /**
  * 히어로의 무음 개념 애니메이션(2026-10-06, /technology 「옥수수에서 인디고로」).
@@ -9,6 +23,8 @@ import { useCallback, useEffect, useRef, useSyncExternalStore } from 'react';
  * - 움직임 줄이기 설정(prefers-reduced-motion)에서는 자동 재생하지 않고 마지막 프레임에 멈춰 둔다 — 정지 화면만으로도 뜻이 통한다.
  * - 5초 넘게 움직이는 콘텐츠이므로 멈춤 · 재생 단추를 둔다(WCAG 2.2.2). 단추는 영상 오른쪽 아래에 작게.
  *   재생 중인지는 <video> 의 play · pause 이벤트를 useSyncExternalStore 로 구독해 읽는다(effect 안에서 setState 하지 않는다).
+ * - 글자(옥수수 · 인디고 표기)는 영상에 굽지 않고 overlays 로 겹친다. timeupdate(약 4 Hz)로 현재 시간을 읽어 보일 덩어리를 고르고
+ *   300 ms 로 서서히 나타난다. 영상의 자리(1920×1080 좌표 → 1.06배 확대)에 맞춘 백분율은 페이지가 넘긴다.
  * - 영상 파일은 public 의 정적 파일(1280×720 · 2 MB · fast start)이라 CDN 이 그대로 내준다. 렌더 방법은
  *   content/animation/corn-to-indigo/animation/render-web.cjs.
  */
@@ -18,6 +34,7 @@ export default function HeroVideo({
   label,
   playLabel,
   pauseLabel,
+  overlays = [],
   className = '',
 }: {
   src: string;
@@ -26,9 +43,11 @@ export default function HeroVideo({
   label: string;
   playLabel: string;
   pauseLabel: string;
+  overlays?: VideoOverlay[];
   className?: string;
 }) {
   const ref = useRef<HTMLVideoElement>(null);
+  const [time, setTime] = useState(0);
 
   const subscribe = useCallback((onChange: () => void) => {
     const video = ref.current;
@@ -46,6 +65,18 @@ export default function HeroVideo({
     () => !(ref.current?.paused ?? true),
     () => true,
   );
+
+  useEffect(() => {
+    const video = ref.current;
+    if (!video) return;
+    const onTime = () => setTime(video.currentTime);
+    video.addEventListener('timeupdate', onTime);
+    video.addEventListener('seeked', onTime);
+    return () => {
+      video.removeEventListener('timeupdate', onTime);
+      video.removeEventListener('seeked', onTime);
+    };
+  }, []);
 
   useEffect(() => {
     const video = ref.current;
@@ -81,6 +112,25 @@ export default function HeroVideo({
         aria-label={label}
         className="block h-auto w-full"
       />
+      {/* 겹치는 글자 — 영상의 접근 가능한 이름(label)이 내용을 설명하므로 보조기기에는 숨긴다 */}
+      {overlays.map((o) => {
+        const visible = time >= o.from && (o.until === undefined || time < o.until);
+        return (
+          <div
+            key={o.key}
+            aria-hidden="true"
+            data-visible={visible ? '' : undefined}
+            className="pointer-events-none absolute flex -translate-x-1/2 -translate-y-1/2 flex-col items-center text-center whitespace-nowrap opacity-0 transition-opacity duration-300 data-visible:opacity-100"
+            style={{ left: `${o.x}%`, top: `${o.y}%` }}
+          >
+            {o.lines.map((line, i) => (
+              <span key={i} className={line.className}>
+                {line.text}
+              </span>
+            ))}
+          </div>
+        );
+      })}
       <button
         type="button"
         onClick={toggle}
