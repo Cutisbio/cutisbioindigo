@@ -48,7 +48,8 @@ export default async function TechnologyPage({ params }: { params: Promise<{ loc
           영상은 1280×720 · 22초 · 무음 · 반복이고 바탕을 히어로와 같은 아이보리로 렌더해 테두리 없이 바탕에 녹아든다.
           PC 에서는 오른쪽 열(약 50%, 2026-10-07 고객 요청으로 46% 에서 넓힘 — 더 넓히면 제목이 세 줄로 갈린다), 좁은 화면에서는 카피 아래.
           영상 안의 머리글 · 범례 · 바닥글은 2026-10-07 고객 요청으로 빼고 내용을 조금 키워 다시 렌더했다(scene-web.js).
-          남은 글자(옥수수 · 인디고 분자식)는 한국어 · 영어로 그려져 있어 언어별로 바뀌지 않는다.
+          옥수수 · 인디고 표기는 2026-10-07 고객 요청으로 영상에서 빼고 번역 문구(heroVideoCornLabel · heroVideoIndigoLabel)를
+          영상 위에 겹친다 — 언어 설정을 따라가고 글자도 더 크다. 자리는 scene 좌표(1920×1080, 1.06배 확대)를 백분율로 옮긴 값이다.
           캡션은 영상이 탄소 출처를 설명하는 개념 시각화이지 반응 기전이 아니라는 점을 밝힌다(제공 README 의 단서). */}
       <section className="w-full border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
@@ -67,6 +68,39 @@ export default async function TechnologyPage({ params }: { params: Promise<{ loc
                 label={t('heroVideoLabel')}
                 playLabel={tCommon('playVideo')}
                 pauseLabel={tCommon('pauseVideo')}
+                overlays={[
+                  {
+                    // 옥수수 아래. scene (294, 910~945) → 확대 뒤 (254, 881~918) / 1920×1080. 옥수수는 14.5~15.6초에 사라진다
+                    key: 'corn',
+                    from: 0.6,
+                    until: 14.8,
+                    x: 13.2,
+                    y: 83.3,
+                    lines: [
+                      {
+                        text: t('heroVideoCornLabel'),
+                        className: 'text-[0.72rem] font-semibold text-[var(--color-indigo-deep)] sm:text-sm lg:text-base',
+                      },
+                    ],
+                  },
+                  {
+                    // 완성된 구조식 아래. scene (960, 898~942) → 확대 뒤 (960, 869~915). 15.7초부터
+                    key: 'indigo',
+                    from: 15.7,
+                    x: 50,
+                    y: 82.6,
+                    lines: [
+                      {
+                        text: t('heroVideoIndigoLabel'),
+                        className: 'text-sm font-semibold text-[var(--color-indigo-deep)] sm:text-base lg:text-lg',
+                      },
+                      {
+                        text: 'C₁₆H₁₀N₂O₂',
+                        className: 'text-[0.72rem] text-[var(--color-indigo-deep)] sm:text-sm lg:text-base',
+                      },
+                    ],
+                  },
+                ]}
                 className="aspect-video"
               />
               <figcaption className="mt-2.5 text-[0.8125rem] leading-relaxed break-keep text-[var(--color-slate-muted)]">
