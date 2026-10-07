@@ -53,6 +53,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'DataHub' });
+  const tHome = await getTranslations({ locale, namespace: 'Home' });
   // 홈에서만 조직에 별칭과 회사 공식 사이트(sameAs)를 잇고, 사이트(WebSite) 스키마를 함께 낸다 — 2026-09-28 검색 · AI 노출 보강.
   const orgSchema = buildOrganizationSchema(BRAND.company, SITE_URL, `${SITE_URL}/brand/cutisbio-logo.png`, {
     alternateName: [BRAND.companyKo, BRAND.companyLegal, BRAND.name],
@@ -115,10 +116,20 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
       {/* 06. 염색 횟수에 따른 발색 비교 — 2026-10-06 고객 요청으로 원단 비교(FabricComparison, 카탈로그 Figure 3-1 · 범례 · 원본 스트립)를
           홈에서 빼고, /dyeing-printing 의 「Blugene 염색실증 사례 1」(실타래 비교)만 두고 염색성능 페이지 링크를 단다.
-          원단 비교는 /dyeing-printing 에 그대로 있다. */}
+          원단 비교는 /dyeing-printing 에 그대로 있다.
+          2026-10-07 고객 요청으로 다른 섹션과 같은 눈썹 문구 · 큰 제목 · 한 줄 설명(Home.dyeing*)을 블록 위에 두고,
+          「염색 횟수에 따른 발색 비교」는 그 아래 h3 블록 제목으로 내린다. */}
       <section className="w-full bg-white">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
-          <DyeingCycles cases={['skein']} titleAs="h2" cta />
+          <SectionHeading
+            eyebrow={tHome('dyeingEyebrow')}
+            title={tHome('dyeingTitle')}
+            body={tHome('dyeingBody')}
+            size="hero"
+          />
+          <div className="mt-12 sm:mt-16">
+            <DyeingCycles cases={['skein']} titleAs="h3" cta />
+          </div>
         </div>
       </section>
 
