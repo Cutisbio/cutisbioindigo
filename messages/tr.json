@@ -101,8 +101,7 @@
     "carbonCardTitle": "Biyobazlı karbon içeriği",
     "carbonCardText": "Üründe bulunan karbonun yenilenebilir hammaddeden gelen oranıdır. Katalog s.3 Tablo 1-1'deki ölçüm değerine (pMC 97.73) dayanır; indigo saflığı ya da karbon emisyonu azaltım oranı değildir.",
     "scopeNote": "Ürün bazlı yaşam döngüsü değerlendirmesi (LCA), su kullanımı, enerji ve karbon emisyonu verileri bu katalogda yer almamaktadır. Doğrulanmış kapsamın dışında kalan çevresel performans değerleri bu sitede gösterilmez.",
-    "cta": "Kanıt belgelerini görün",
-    "imageAlt": "Hammadde bitkilerinden fermantasyon tesisine, mavi kumaşa ve denim giyen insanlara uzanan değer zincirini anlatan kavramsal görsel. Gerçek CutisBio fabrikasının veya çalışanlarının fotoğrafı değildir."
+    "cta": "Kanıt belgelerini görün"
   },
   "Performance": {
     "eyebrow": "PERFORMANCE",
