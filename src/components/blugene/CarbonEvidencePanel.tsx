@@ -16,13 +16,23 @@ import { carbonTest } from '@/data/blugene/evidence';
  * - 큰 숫자는 'Blugene의 바이오 기반 탄소 함량'(2026-10-04 고객 지정, 이전 '시험 시료의 바이오 기반 탄소 함량')이라는 이름과 함께 두고, 본문이 데님 한 벌의 식물 원료 함량 ·
  *   인디고 순도 · 탄소배출 감축률을 뜻하지 않음을 밝힌다(docs/blugene-claims.md A 표). 링크는 데이터 · 인증 페이지의
  *   시험 결과 표로 간다. 아래 두 단 문장이 '출처'와 '탄소발자국'이 다른 질문임을 말한다.
+ * - 2026-10-07 부터 홈의 환경 섹션(EnvironmentSection)에서도 쓴다 — 거기서는 카탈로그 p.12 개념 이미지를 이 패널로 바꿨고(고객 요청),
+ *   섹션 제목이 h2 라 제목은 h3, 아래 두 단은 보이지 않는다(headingAs · showSplit).
  */
 const COLS = 20;
 const ROWS = 5;
 const STEP = 20;
 const RADIUS = 6.5;
 
-export default async function CarbonEvidencePanel() {
+export default async function CarbonEvidencePanel({
+  headingAs: Heading = 'h4',
+  showSplit = true,
+}: {
+  /** 패널 제목의 요소 — /technology 의 CarbonJourney 안에서는 h4, 홈 환경 섹션에서는 h3 */
+  headingAs?: 'h3' | 'h4';
+  /** 패널 아래 '출처와 탄소발자국은 다른 질문' 두 단을 보일지 */
+  showSplit?: boolean;
+}) {
   const t = await getTranslations('Technology');
   const value = carbonTest.biobasedCarbonPercent;
   const total = COLS * ROWS;
@@ -70,9 +80,9 @@ export default async function CarbonEvidencePanel() {
 
         {/* 오른쪽 — 제목 · 본문 · 시험 메타 · 링크 */}
         <div className="flex flex-col justify-center">
-          <h4 className="text-2xl leading-[1.3] font-bold tracking-[-0.01em] text-pretty break-keep sm:text-3xl lg:text-[2.25rem]">
+          <Heading className="text-2xl leading-[1.3] font-bold tracking-[-0.01em] text-pretty break-keep sm:text-3xl lg:text-[2.25rem]">
             {t('carbon.evidence.panel.headline')}
-          </h4>
+          </Heading>
           <p className="mt-5 max-w-2xl text-base leading-[1.85] break-keep text-white/85 sm:text-lg">
             {t('carbon.evidence.panel.body')}
           </p>
@@ -94,14 +104,16 @@ export default async function CarbonEvidencePanel() {
       </div>
 
       {/* 출처와 탄소발자국은 다른 질문 — 패널 아래 두 단 */}
-      <div className="mt-10 grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] md:gap-10 lg:gap-14">
-        <p className="text-xl leading-snug font-bold tracking-[-0.01em] break-keep text-[var(--color-indigo-deep)] sm:text-2xl">
-          {t('carbon.evidence.split.title')}
-        </p>
-        <p className="text-base leading-[1.85] break-keep text-[var(--color-ink)]/85 sm:text-lg">
-          {t('carbon.evidence.split.text')}
-        </p>
-      </div>
+      {showSplit && (
+        <div className="mt-10 grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] md:gap-10 lg:gap-14">
+          <p className="text-xl leading-snug font-bold tracking-[-0.01em] break-keep text-[var(--color-indigo-deep)] sm:text-2xl">
+            {t('carbon.evidence.split.title')}
+          </p>
+          <p className="text-base leading-[1.85] break-keep text-[var(--color-ink)]/85 sm:text-lg">
+            {t('carbon.evidence.split.text')}
+          </p>
+        </div>
+      )}
     </div>
   );
 }

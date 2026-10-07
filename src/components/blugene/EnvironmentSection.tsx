@@ -1,8 +1,8 @@
-import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import SectionHeading from '@/components/blugene/SectionHeading';
-import SourceNote, { AssetKind } from '@/components/blugene/SourceNote';
+import SourceNote from '@/components/blugene/SourceNote';
+import CarbonEvidencePanel from '@/components/blugene/CarbonEvidencePanel';
 import { carbonTest } from '@/data/blugene/evidence';
 
 /**
@@ -10,11 +10,11 @@ import { carbonTest } from '@/data/blugene/evidence';
  *
  * 확인된 수치(바이오 기반 탄소 함량 98%)만 정량 표시하고,
  * 제공 자료에 없는 물·에너지·배출 절감 수치는 쓰지 않는다는 사실을 화면에 밝힌다.
- * p.12 이미지는 실제 공장·직원 사진이 아니라 가치사슬 '개념 이미지'로 다룬다.
+ * 섹션 아래의 카탈로그 p.12 가치사슬 '개념 이미지'(value-chain.webp)는 2026-10-07 고객 요청으로 /technology 의 98% 패널
+ * (CarbonEvidencePanel)로 바꿨다. 이미지 파일은 남긴다. 패널 제목은 h3, 아래 두 단은 보이지 않는다.
  */
 export default async function EnvironmentSection() {
   const t = await getTranslations('Environment');
-  const tCommon = await getTranslations('Common');
 
   return (
     <section className="w-full bg-[var(--color-ivory)]">
@@ -47,23 +47,10 @@ export default async function EnvironmentSection() {
           </div>
         </div>
 
-        <figure className="mt-14">
-          <div className="relative aspect-[784/258] w-full overflow-hidden rounded-md border border-[color:var(--color-washed)] bg-white">
-            <Image
-              src="/blugene/brand/value-chain.webp"
-              alt={t('imageAlt')}
-              fill
-              sizes="(max-width: 1280px) 100vw, 1216px"
-              className="object-cover"
-            />
-          </div>
-          <figcaption className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-2">
-            <AssetKind>{tCommon('conceptImage')}</AssetKind>
-            <SourceNote className="flex-1">
-              {tCommon('imageNoteConcept')} {tCommon('cataloguePage', { page: 12 })}
-            </SourceNote>
-          </figcaption>
-        </figure>
+        {/* 98% 패널 — 2026-10-07 고객 요청으로 p.12 개념 이미지 자리에 둔다. 숫자 · 시험 메타는 evidence.ts 하나에서 온다 */}
+        <div className="mt-14">
+          <CarbonEvidencePanel headingAs="h3" showSplit={false} />
+        </div>
       </div>
     </section>
   );
