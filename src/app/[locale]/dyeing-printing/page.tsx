@@ -43,8 +43,9 @@ export default async function DyeingPrintingPage({
   return (
     <>
       {/* 히어로 — 왼쪽 카피 · 이동 메뉴, 오른쪽 전시 설치 사진(2026-10-06 고객 제공 · 요청).
-          사진은 세로(1400×1992)라 PC 에서는 오른쪽 열(약 42%)에 세워 크게, 좁은 화면에서는 카피 아래에 폭을 채워 둔다.
-          첫 화면이라 지연 로딩하지 않는다. 사진 위에 문구를 올리지 않는다. */}
+          사진은 세로(1341×1892 — 2026-10-07 가장자리 여백을 잘라 낸 뒤 크기)라 PC 에서는 오른쪽 열(약 42%)에 세워 크게, 좁은 화면에서는 카피 아래에 폭을 채워 둔다.
+          첫 화면이라 지연 로딩하지 않는다. 사진 위에 문구를 올리지 않는다.
+          2026-10-07 고객 요청으로 테두리 대신 남색 기운의 그림자와 옅은 링을 둬 사진이 떠 보이게 한다. */}
       <section className="w-full border-b border-[color:var(--color-washed)] bg-[var(--color-ivory)]">
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,42%)] lg:items-center lg:gap-16">
@@ -78,12 +79,12 @@ export default async function DyeingPrintingPage({
               <Image
                 src="/blugene/performance/exhibition-indigo-installation.webp"
                 alt={t('heroImageAlt')}
-                width={1400}
-                height={1992}
+                width={1341}
+                height={1892}
                 preload
                 fetchPriority="high"
                 sizes="(max-width: 640px) 92vw, (max-width: 1024px) 560px, 520px"
-                className="h-auto w-full rounded-md border border-[color:var(--color-washed)] bg-white"
+                className="h-auto w-full rounded-lg bg-white shadow-[0_28px_56px_-24px_rgba(16,29,70,0.55),0_10px_20px_-10px_rgba(16,29,70,0.25)] ring-1 ring-[color:var(--color-indigo-deep)]/10"
               />
               <figcaption className="mt-2.5 text-[0.8125rem] leading-relaxed break-keep text-[var(--color-slate-muted)]">
                 {t('heroImageCaption')}
