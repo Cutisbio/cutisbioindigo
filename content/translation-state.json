@@ -1512,12 +1512,12 @@
       "tr": "c637ab63c97352e8"
     },
     "DataHub.catalogueBody": {
-      "ja": "b43203ccfca356ec",
-      "en": "b43203ccfca356ec",
-      "fr": "b43203ccfca356ec",
-      "it": "b43203ccfca356ec",
-      "zh": "b43203ccfca356ec",
-      "tr": "b43203ccfca356ec"
+      "ja": "0c57f28f57b003ea",
+      "en": "0c57f28f57b003ea",
+      "fr": "0c57f28f57b003ea",
+      "it": "0c57f28f57b003ea",
+      "zh": "0c57f28f57b003ea",
+      "tr": "0c57f28f57b003ea"
     },
     "DataHub.cataloguePage": {
       "ja": "f1448aaa464b237a",
@@ -1528,12 +1528,12 @@
       "tr": "f1448aaa464b237a"
     },
     "DataHub.cataloguePageAlt": {
-      "ja": "2f732c7210dfb063",
-      "en": "2f732c7210dfb063",
-      "fr": "2f732c7210dfb063",
-      "it": "2f732c7210dfb063",
-      "zh": "2f732c7210dfb063",
-      "tr": "2f732c7210dfb063"
+      "ja": "f811860700a2042d",
+      "en": "f811860700a2042d",
+      "fr": "f811860700a2042d",
+      "it": "f811860700a2042d",
+      "zh": "f811860700a2042d",
+      "tr": "f811860700a2042d"
     },
     "DataHub.catalogueDownload": {
       "ja": "fafdd7678132d956",
@@ -5406,6 +5406,22 @@
       "it": "524244103feaa770",
       "zh": "524244103feaa770",
       "tr": "524244103feaa770"
+    },
+    "DataHub.catalogueSourceNote": {
+      "ja": "c06814767c3f15d2",
+      "en": "c06814767c3f15d2",
+      "fr": "c06814767c3f15d2",
+      "it": "c06814767c3f15d2",
+      "zh": "c06814767c3f15d2",
+      "tr": "c06814767c3f15d2"
+    },
+    "DataHub.catalogueSourceDownload": {
+      "ja": "68a7bdc49a61d34f",
+      "en": "68a7bdc49a61d34f",
+      "fr": "68a7bdc49a61d34f",
+      "it": "68a7bdc49a61d34f",
+      "zh": "68a7bdc49a61d34f",
+      "tr": "68a7bdc49a61d34f"
     }
   }
 }

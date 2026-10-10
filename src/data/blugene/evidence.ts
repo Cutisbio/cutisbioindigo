@@ -13,14 +13,30 @@
 export const SOURCE_AS_OF = '2026-09-06';
 
 /** 제공 카탈로그 자체의 발행 기준 */
+/**
+ * 데이터 · 인증 「원본 카탈로그」와 푸터에서 내려받는 문서 — 2026-10-11 고객 요청으로 Blugene Material Book(Designer Edition 25,
+ * 2026-10-09 판, 12쪽)으로 바꿨다. 썸네일(page-01..12.webp)도 이 문서의 쪽이다.
+ * 사이트 곳곳의 '카탈로그 p.N' 표기(시험 결과 · 인증 문서의 출처)는 이 문서가 아니라 아래 SOURCE_CATALOGUE 를 가리킨다.
+ */
 export const CATALOGUE = {
+  title: 'Blugene Material Book (EN) — Designer Edition 25',
+  issued: '2026-10',
+  pdfHref: '/blugene/catalogue/Blugene-Material-Book-EN-2026-10.pdf',
+  /** 내려받기 버튼에 표시할 파일 크기 (public/blugene/asset-manifest.json 의 bytes 기준) */
+  pdfSizeLabel: '10.8 MB',
+  pageImage: (page: number) => `/blugene/catalogue/page-${String(page).padStart(2, '0')}.webp`,
+  pageCount: 12,
+} as const;
+
+/**
+ * 시험 자료의 출처 카탈로그 — CutisBio CB Bioindigo Catalogue (EN), 2026-07. 사이트의 '카탈로그 p.N, Table N-N' 표기와
+ * Material Book 의 각주([1] Catalogue p.3, Table 1-1 …)가 가리키는 문서다. 「원본 카탈로그」 블록의 보조 링크로 내려받는다.
+ */
+export const SOURCE_CATALOGUE = {
   title: 'CutisBio CB Bioindigo Catalogue (EN)',
   issued: '2026-07',
   pdfHref: '/blugene/catalogue/CutisBio-CB-Bioindigo-Catalogue-EN-2026-07.pdf',
-  /** 내려받기 버튼에 표시할 파일 크기 (scripts/build-blugene-assets.py 실행 결과 기준) */
   pdfSizeLabel: '1.9 MB',
-  pageImage: (page: number) => `/blugene/catalogue/page-${String(page).padStart(2, '0')}.webp`,
-  pageCount: 12,
 } as const;
 
 /** 시험 결과의 상태. 측정값과 불검출을 타입 수준에서 구분한다. */
