@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import SectionHeading from '@/components/blugene/SectionHeading';
 import SourceNote from '@/components/blugene/SourceNote';
-import { CATALOGUE, SOURCE_CATALOGUE } from '@/data/blugene/evidence';
+import { CATALOGUE } from '@/data/blugene/evidence';
 
 /**
  * 원본 카탈로그 12쪽 뷰어.
@@ -13,8 +13,8 @@ import { CATALOGUE, SOURCE_CATALOGUE } from '@/data/blugene/evidence';
  * 보여 주는 문서: Blugene Material Book (EN), Designer Edition 25, 2026-10 (CATALOGUE) — 2026-10-11 고객 요청으로
  * CB Bioindigo Catalogue (2026-07)에서 바꿨다. 쪽 이미지는 public/blugene/catalogue/page-01..12.webp 이며 원본 픽셀 936 × 1300
  * (public/blugene/asset-manifest.json 기준). PDF 원본도 같은 폴더에 있다.
- * 시험 결과 · 인증의 출처인 2026-07 카탈로그(SOURCE_CATALOGUE)는 내려받기 아래 보조 링크로 남긴다 — 사이트의 '카탈로그 p.N'
- * 표기와 Material Book 의 각주가 그 문서를 가리키기 때문이다.
+ * 시험 결과 · 인증의 출처인 2026-07 카탈로그(SOURCE_CATALOGUE)의 안내문 · 보조 링크는 2026-10-11 고객 요청으로 화면에서 뺐다.
+ * 파일은 남아 있다.
  *
  * 지켜야 할 규칙
  * - 썸네일 12장은 모두 지연 로딩하고, 작은 sizes 로만 내려받는다.
@@ -172,17 +172,8 @@ export default function CatalogueViewer({ className = '' }: CatalogueViewerProps
           <span aria-hidden="true">↓</span>
         </a>
         <SourceNote className="mt-4 max-w-3xl">{t('catalogueAnchorNote')}</SourceNote>
-
-        {/* 시험 자료의 출처 카탈로그(2026-07) — 사이트의 '카탈로그 p.N' 표기가 가리키는 문서. 보조 링크로 둔다 */}
-        <SourceNote className="mt-6 max-w-3xl">{t('catalogueSourceNote')}</SourceNote>
-        <a
-          href={SOURCE_CATALOGUE.pdfHref}
-          download
-          className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-denim)] underline underline-offset-4 hover:text-[var(--color-indigo-deep)]"
-        >
-          {t('catalogueSourceDownload', { size: SOURCE_CATALOGUE.pdfSizeLabel })}
-          <span aria-hidden="true">↓</span>
-        </a>
+        {/* 출처 카탈로그(2026-07) 안내문과 보조 내려받기 링크는 2026-10-11 고객 요청으로 화면에서 뺐다(키도 지움).
+            파일과 SOURCE_CATALOGUE 데이터는 남아 있어 주소로 직접 들어오면 여전히 받을 수 있다. */}
       </div>
 
       {/* 확대 보기 — 열렸을 때만 큰 이미지를 렌더링한다 */}
