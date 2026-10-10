@@ -268,11 +268,13 @@
     "chartAnilineTitle": "Confronto anilina · N-metilanilina (mg/kg)",
     "chartAccessibleNote": "Tutti i valori del grafico compaiono anche nella tabella qui sotto.",
     "catalogueTitle": "Catalogo originale",
-    "catalogueBody": "Sono consultabili tutte le 12 pagine del catalogo fornito.",
+    "catalogueBody": "Sono consultabili tutte le 12 pagine del Blugene Material Book (Designer Edition 25, ottobre 2026, in inglese).",
     "cataloguePage": "p.{page}",
-    "cataloguePageAlt": "Catalogo bio-indaco CutisBio, pagina {page}",
+    "cataloguePageAlt": "Blugene Material Book, pagina {page}",
     "catalogueDownload": "Scarica il PDF ({size})",
     "catalogueAnchorNote": "Il PDF scaricato contiene tutte le 12 pagine originali del catalogo, nello stesso ordine delle miniature qui sopra.",
+    "catalogueSourceNote": "I riferimenti “Catalogo p.N” presenti nel sito e le note del Material Book rimandano al catalogo CB Bioindigo di luglio 2026, che contiene i risultati dei test e i documenti di certificazione.",
+    "catalogueSourceDownload": "Scarica il catalogo di origine (luglio 2026) in PDF ({size})",
     "carbonZeroNote": "Il contenuto di carbonio biobased di Company Z è indicato come 0 (pMC 0.30) nella Table 1-1 del catalogo e come N.D. nella Figure 1-3. Questa tabella riporta il valore della Table 1-1."
   },
   "AnilineHazard": {
