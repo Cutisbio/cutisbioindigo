@@ -911,11 +911,10 @@
     "historyList": [
       {
         "year": "2025",
-        "event": "ITOCHU CHEMICAL FRONTIER Corporation（伊藤忠ケミカルフロンティア）とMOUを締結"
-      },
-      {
-        "year": "2025",
-        "event": "バイオ由来インディゴ染料について、世界的なプレミアムデニム企業複数社との染色実証を完了"
+        "events": [
+          "バイオ由来インディゴ染料について、世界的なプレミアムデニム企業複数社との染色実証を完了",
+          "ITOCHU CHEMICAL FRONTIER Corporation（伊藤忠ケミカルフロンティア）とMOUを締結"
+        ]
       },
       {
         "year": "2024",
