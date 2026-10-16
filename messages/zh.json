@@ -911,11 +911,10 @@
     "historyList": [
       {
         "year": "2025",
-        "event": "与 ITOCHU CHEMICAL FRONTIER Corporation 签署 MOU"
-      },
-      {
-        "year": "2025",
-        "event": "与多家全球高端丹宁企业完成生物基靛蓝染料的染色实证"
+        "events": [
+          "与多家全球高端丹宁企业完成生物基靛蓝染料的染色实证",
+          "与 ITOCHU CHEMICAL FRONTIER Corporation 签署 MOU"
+        ]
       },
       {
         "year": "2024",

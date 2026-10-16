@@ -911,11 +911,10 @@
     "historyList": [
       {
         "year": "2025",
-        "event": "Firmato un memorandum d’intesa (MOU) con ITOCHU CHEMICAL FRONTIER Corporation"
-      },
-      {
-        "year": "2025",
-        "event": "Completata la validazione della tintura con il colorante indaco bio-based presso diverse aziende mondiali di denim premium"
+        "events": [
+          "Completata la validazione della tintura con il colorante indaco bio-based presso diverse aziende mondiali di denim premium",
+          "Firmato un memorandum d’intesa (MOU) con ITOCHU CHEMICAL FRONTIER Corporation"
+        ]
       },
       {
         "year": "2024",

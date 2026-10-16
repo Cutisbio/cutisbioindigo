@@ -911,11 +911,10 @@
     "historyList": [
       {
         "year": "2025",
-        "event": "ITOCHU CHEMICAL FRONTIER Corporation ile mutabakat zaptı (MOU) imzalandı"
-      },
-      {
-        "year": "2025",
-        "event": "Biyo bazlı indigo boyasının çok sayıda küresel premium denim şirketiyle boyama doğrulaması tamamlandı"
+        "events": [
+          "Biyo bazlı indigo boyasının çok sayıda küresel premium denim şirketiyle boyama doğrulaması tamamlandı",
+          "ITOCHU CHEMICAL FRONTIER Corporation ile mutabakat zaptı (MOU) imzalandı"
+        ]
       },
       {
         "year": "2024",

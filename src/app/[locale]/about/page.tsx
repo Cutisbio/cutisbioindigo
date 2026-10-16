@@ -48,7 +48,8 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 
   const t = await getTranslations({ locale, namespace: 'About' });
   const tCommon = await getTranslations({ locale, namespace: 'Common' });
-  const history = t.raw('historyList') as { year: string; event: string }[];
+  // 한 해에 일이 둘 이상이면 events 로 적는다(2025 — 염색 실증 · ITOCHU MOU, 2026-10-16). 연도 표기는 한 번만 그린다
+  const history = t.raw('historyList') as { year: string; event?: string; events?: string[] }[];
   const galleryText = t.raw('gallery') as { alt: string; caption: string }[];
   const photo = (i: number) => (
     <ZoomableImage
@@ -189,17 +190,18 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <SectionHeading title={t('historyTitle')} size="lg" />
           <ol className="mt-10 border-l-2 border-[color:var(--color-washed)] pl-6 sm:pl-8">
-            {/* 같은 해에 항목이 둘일 수 있어(2025 — ITOCHU MOU · 염색 실증, 2026-10-16) key 에 순번을 붙인다 */}
-            {history.map((item, index) => (
-              <li key={`${item.year}-${index}`} className="relative pb-8 last:pb-0">
+            {history.map((item) => (
+              <li key={item.year} className="relative pb-8 last:pb-0">
                 <span
                   aria-hidden="true"
                   className="absolute -left-[1.9rem] mt-1.5 h-3 w-3 rounded-full bg-[var(--color-denim)] ring-4 ring-[var(--color-ivory)] sm:-left-[2.4rem]"
                 />
                 <p className="text-lg font-bold text-[var(--color-denim)]">{item.year}</p>
-                <p className="mt-2 text-base leading-relaxed break-keep text-[var(--color-ink)]/85">
-                  {item.event}
-                </p>
+                {(item.events ?? [item.event ?? '']).map((event) => (
+                  <p key={event} className="mt-2 text-base leading-relaxed break-keep text-[var(--color-ink)]/85">
+                    {event}
+                  </p>
+                ))}
               </li>
             ))}
           </ol>
