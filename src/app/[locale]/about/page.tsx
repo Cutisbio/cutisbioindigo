@@ -189,8 +189,9 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <div className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <SectionHeading title={t('historyTitle')} size="lg" />
           <ol className="mt-10 border-l-2 border-[color:var(--color-washed)] pl-6 sm:pl-8">
-            {history.map((item) => (
-              <li key={item.year} className="relative pb-8 last:pb-0">
+            {/* 같은 해에 항목이 둘일 수 있어(2025 — ITOCHU MOU · 염색 실증, 2026-10-16) key 에 순번을 붙인다 */}
+            {history.map((item, index) => (
+              <li key={`${item.year}-${index}`} className="relative pb-8 last:pb-0">
                 <span
                   aria-hidden="true"
                   className="absolute -left-[1.9rem] mt-1.5 h-3 w-3 rounded-full bg-[var(--color-denim)] ring-4 ring-[var(--color-ivory)] sm:-left-[2.4rem]"
