@@ -14,12 +14,12 @@ export const SOURCE_AS_OF = '2026-09-06';
 
 /** 제공 카탈로그 자체의 발행 기준 */
 /**
- * 데이터 · 인증 「원본 카탈로그」와 푸터에서 내려받는 문서 — 2026-10-11 고객 요청으로 Blugene Material Book(Designer Edition 25,
- * 2026-10-09 판, 12쪽)으로 바꿨다. 썸네일(page-01..12.webp)도 이 문서의 쪽이다.
+ * 데이터 · 인증 「원본 카탈로그」와 푸터에서 내려받는 문서 — 2026-10-11 고객 요청으로 Blugene Material Book 으로 바꿨고,
+ * 2026-10-18 에 Designer Edition 27(2026-10-13 판, 12쪽)로 갱신했다. 썸네일(page-01..12.webp)도 이 문서의 쪽이다.
  * 사이트 곳곳의 '카탈로그 p.N' 표기(시험 결과 · 인증 문서의 출처)는 이 문서가 아니라 아래 SOURCE_CATALOGUE 를 가리킨다.
  */
 export const CATALOGUE = {
-  title: 'Blugene Material Book (EN) — Designer Edition 25',
+  title: 'Blugene Material Book (EN) — Designer Edition 27',
   issued: '2026-10',
   pdfHref: '/blugene/catalogue/Blugene-Material-Book-EN-2026-10.pdf',
   /** 내려받기 버튼에 표시할 파일 크기 (public/blugene/asset-manifest.json 의 bytes 기준) */
