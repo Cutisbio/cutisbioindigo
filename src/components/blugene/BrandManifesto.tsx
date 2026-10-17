@@ -133,7 +133,8 @@ export default async function BrandManifesto({
         {/* Skin Safety First Program — Material Book 7쪽의 카드. 두 열 아래 전체 폭 흰 카드, 배지는 오른쪽(모바일은 아래) */}
         <div className="mt-14 grid gap-8 rounded-lg bg-white p-7 text-[var(--color-ink)] sm:p-10 lg:mt-16 lg:grid-cols-[minmax(0,1fr)_14rem] lg:items-center lg:gap-14">
           <div>
-            <p className="text-[0.72rem] font-semibold tracking-[0.18em] text-[var(--color-denim)] uppercase">
+            {/* 프로그램 이름 — 2026-10-18 고객 지정: 딥 민트, 더 굵고 크게, 글자 그림자 세 겹으로 살짝 떠 보이게 */}
+            <p className="text-base font-extrabold tracking-[0.12em] text-[var(--color-mint-deep)] uppercase [text-shadow:0_1px_0_#ffffff,0_2px_0_rgba(15,107,92,0.32),0_5px_12px_rgba(15,107,92,0.28)] sm:text-lg lg:text-xl">
               {t('skinSafetyEyebrow')}
             </p>
             <h3 className="mt-4 text-xl leading-snug font-bold tracking-[-0.01em] break-keep text-[var(--color-indigo-deep)] sm:text-2xl">
