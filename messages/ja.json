@@ -57,7 +57,12 @@
     "cta": "質問への答えを聞く",
     "portraitAlt": "白衣を着て微笑む皮膚科専門医チェ・ウォヌ（医学博士）",
     "portraitName": "Blugene 企画者: 皮膚科専門医・医学博士 チェ・ウォヌ",
-    "portraitCredential": "Blugene director: CHOI WONWOO M.D., Ph.D., Board Certified Dermatologist"
+    "portraitCredential": "Blugene director: CHOI WONWOO M.D., Ph.D., Board Certified Dermatologist",
+    "skinSafetyEyebrow": "Blugene Skin Safety First Program",
+    "skinSafetyTitle": "Blugene インディゴで染めた生地の肌への安全性を、第三者試験でともに確認します。",
+    "skinSafetyBody": "デニム・ジーンズブランドと協力し、Blugene インディゴで染めた生地の人工汗抽出物について、単回適用および累積皮膚刺激試験を含む第三者試験を手配します。参加ブランドには試験機関の報告書と生地ごとの試験要約を提供し、明確で根拠に基づく製品コミュニケーションを支えます。",
+    "skinSafetyNote": "結果は試験した生地抽出物と試験条件に限られます。",
+    "skinSafetyBadgeAlt": "Blugene Dermatologically Tested · Denim Fabric Extract バッジ"
   },
   "Impurity": {
     "eyebrow": "WHAT REMAINS MATTERS",

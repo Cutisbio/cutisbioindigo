@@ -5414,6 +5414,46 @@
       "it": "4d230fb051b4fcb9",
       "zh": "4d230fb051b4fcb9",
       "tr": "4d230fb051b4fcb9"
+    },
+    "Manifesto.skinSafetyEyebrow": {
+      "ja": "041eaf2885aaa124",
+      "en": "041eaf2885aaa124",
+      "fr": "041eaf2885aaa124",
+      "it": "041eaf2885aaa124",
+      "zh": "041eaf2885aaa124",
+      "tr": "041eaf2885aaa124"
+    },
+    "Manifesto.skinSafetyTitle": {
+      "ja": "f2756fb8ae3fc562",
+      "en": "f2756fb8ae3fc562",
+      "fr": "f2756fb8ae3fc562",
+      "it": "f2756fb8ae3fc562",
+      "zh": "f2756fb8ae3fc562",
+      "tr": "f2756fb8ae3fc562"
+    },
+    "Manifesto.skinSafetyBody": {
+      "ja": "b914a4865bd16ad9",
+      "en": "b914a4865bd16ad9",
+      "fr": "b914a4865bd16ad9",
+      "it": "b914a4865bd16ad9",
+      "zh": "b914a4865bd16ad9",
+      "tr": "b914a4865bd16ad9"
+    },
+    "Manifesto.skinSafetyNote": {
+      "ja": "799e1a04c9f39ce5",
+      "en": "799e1a04c9f39ce5",
+      "fr": "799e1a04c9f39ce5",
+      "it": "799e1a04c9f39ce5",
+      "zh": "799e1a04c9f39ce5",
+      "tr": "799e1a04c9f39ce5"
+    },
+    "Manifesto.skinSafetyBadgeAlt": {
+      "ja": "e113d7ccff62d76f",
+      "en": "e113d7ccff62d76f",
+      "fr": "e113d7ccff62d76f",
+      "it": "e113d7ccff62d76f",
+      "zh": "e113d7ccff62d76f",
+      "tr": "e113d7ccff62d76f"
     }
   }
 }

@@ -57,7 +57,12 @@
     "cta": "听听问题的答案",
     "portraitAlt": "身穿白大褂微笑的皮肤科专科医生 Choi Wonwoo（医学博士）",
     "portraitName": "Blugene 策划人：皮肤科专科医生、医学博士 Choi Wonwoo",
-    "portraitCredential": "Blugene director: CHOI WONWOO M.D., Ph.D., Board Certified Dermatologist"
+    "portraitCredential": "Blugene director: CHOI WONWOO M.D., Ph.D., Board Certified Dermatologist",
+    "skinSafetyEyebrow": "Blugene Skin Safety First Program",
+    "skinSafetyTitle": "以 Blugene 靛蓝染色面料的皮肤安全性，通过第三方测试共同确认。",
+    "skinSafetyBody": "我们可与牛仔品牌合作，安排对 Blugene 靛蓝染色面料的人工汗液提取物进行第三方测试，包括单次涂敷与累积皮肤刺激研究。我们可向参与品牌提供实验室报告和各面料的测试摘要，支持清晰、有依据的产品沟通。",
+    "skinSafetyNote": "结果仅适用于所测试的面料提取物和研究条件。",
+    "skinSafetyBadgeAlt": "Blugene Dermatologically Tested · Denim Fabric Extract 标识"
   },
   "Impurity": {
     "eyebrow": "WHAT REMAINS MATTERS",
