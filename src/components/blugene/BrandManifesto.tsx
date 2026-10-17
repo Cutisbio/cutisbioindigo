@@ -13,7 +13,13 @@ import { HEADING_SIZE, keepLastWords } from '@/components/blugene/SectionHeading
  *
  * 사람 사진 위에 문구를 올리지 않고, 깊은 인디고 면과 여백으로 문장을 세운다.
  * 장식은 데님 실 두 가닥을 연상시키는 추상 선(ThreadMotif)으로 제한한다.
- * 화학구조도나 인증마크처럼 보이는 요소를 쓰지 않는다.
+ * 화학구조도나 인증마크처럼 보이는 요소를 쓰지 않는다 — 단 하나의 예외가 아래 「Skin Safety First Program」 카드의 배지다.
+ *
+ * Skin Safety First Program 카드(2026-10-18 고객 요청): 고객의 Material Book(Designer Edition 27) 7쪽의 카드를 옮긴 것.
+ * 두 열 아래에 전체 폭의 흰 카드로 두어 사진 · 질문과 섞이지 않게 하고, 오른쪽에 브로슈어의
+ * 'Blugene Dermatologically Tested · Denim Fabric Extract' 배지를 놓는다. 배지는 브로슈어에서 잘라 낸 그림(SKIN_SAFETY_BADGE)이며
+ * 문구는 Manifesto.skinSafety* — 제3자 시험을 '주선'하고 보고서를 '제공'한다는 범위, 결과가 시험한 추출물 · 조건에
+ * 한한다는 단서를 브로슈어 그대로 담는다. 배지는 사진 위가 아니라 카드 안에만 둔다.
  *
  * 세 질문 아래의 '질문에 답을 듣기' 버튼은 기술 페이지(/technology)로 보낸다 — 무엇으로 만들었는지(경로 · 탄소),
  * 어떤 불순물이 남는지(아닐린)를 그 페이지가 답하고, 확인은 거기서 데이터 · 인증으로 이어진다.
@@ -25,6 +31,8 @@ import { HEADING_SIZE, keepLastWords } from '@/components/blugene/SectionHeading
  */
 /** 기획자 사진 — 원본 3744×5616 JPEG 를 자르지 않고 960px 폭 WebP 로 축소한 것 */
 const PORTRAIT = { src: '/blugene/brand/dermatologist-choi-wonwoo.webp', width: 960, height: 1440 } as const;
+/** Skin Safety First Program 배지 — Material Book(REV27) 7쪽에서 잘라 낸 그림(asset-manifest.json). 흰 카드 위에만 놓는다 */
+const SKIN_SAFETY_BADGE = { src: '/blugene/brand/skin-safety-badge.webp', width: 540, height: 633 } as const;
 export default async function BrandManifesto({
   portrait = false,
 }: {
@@ -120,6 +128,34 @@ export default async function BrandManifesto({
               <span aria-hidden="true" className="mt-4 ml-auto block h-px w-10 bg-white/35" />
             </p>
           )}
+        </div>
+
+        {/* Skin Safety First Program — Material Book 7쪽의 카드. 두 열 아래 전체 폭 흰 카드, 배지는 오른쪽(모바일은 아래) */}
+        <div className="mt-14 grid gap-8 rounded-lg bg-white p-7 text-[var(--color-ink)] sm:p-10 lg:mt-16 lg:grid-cols-[minmax(0,1fr)_14rem] lg:items-center lg:gap-14">
+          <div>
+            <p className="text-[0.72rem] font-semibold tracking-[0.18em] text-[var(--color-denim)] uppercase">
+              {t('skinSafetyEyebrow')}
+            </p>
+            <h3 className="mt-4 text-xl leading-snug font-bold tracking-[-0.01em] break-keep text-[var(--color-indigo-deep)] sm:text-2xl">
+              {t('skinSafetyTitle')}
+            </h3>
+            <p className="mt-4 max-w-2xl text-base leading-[1.85] break-keep text-[var(--color-ink)]/85">
+              {t('skinSafetyBody')}
+            </p>
+            <p className="mt-4 text-[0.8125rem] leading-relaxed break-keep text-[var(--color-slate-muted)]">
+              {t('skinSafetyNote')}
+            </p>
+          </div>
+          <div className="mx-auto w-full max-w-[11rem] lg:max-w-none">
+            <Image
+              src={SKIN_SAFETY_BADGE.src}
+              alt={t('skinSafetyBadgeAlt')}
+              width={SKIN_SAFETY_BADGE.width}
+              height={SKIN_SAFETY_BADGE.height}
+              sizes="(max-width: 1023px) 11rem, 14rem"
+              className="h-auto w-full"
+            />
+          </div>
         </div>
       </div>
     </section>

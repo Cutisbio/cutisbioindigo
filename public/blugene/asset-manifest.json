@@ -474,5 +474,11 @@
   "/blugene/catalogue/Blugene-Material-Book-EN-2026-10.pdf": {
     "source": "고객 제공 — 2026-10-18 채팅 첨부 Blugene_Brochure_EN_View_REV27_20261013.pdf 그대로(무변환). 2026-10-11 의 REV25 를 바꾼 것(7 · 9 · 12쪽 문구 개정). 데이터 · 인증 「원본 카탈로그」와 푸터의 내려받기 파일",
     "bytes": 11329657
+  },
+  "/blugene/brand/skin-safety-badge.webp": {
+    "source": "고객 제공 — 2026-10-18 Blugene_Brochure_EN_View_REV27_20261013.pdf 7쪽 「Blugene Skin Safety First Program」 카드의 배지(Blugene · Dermatologically Tested · Denim Fabric Extract)를 pdf.js 6배 렌더에서 잘라 낸 것(흰 바탕, WebP q90). 홈 · /brand 의 BrandManifesto 아래 카드에서만 쓴다",
+    "width": 540,
+    "height": 633,
+    "bytes": 28252
   }
 }
