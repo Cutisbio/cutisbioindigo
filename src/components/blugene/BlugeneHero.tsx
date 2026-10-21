@@ -47,8 +47,9 @@ export default async function BlugeneHero() {
               >
                 {t('ctaPrimary')}
               </Link>
+              {/* 보조 버튼 — 2026-10-21 고객 요청으로 '데이터와 인증 보기'(/data-certifications)에서 '염색성능 보기'(/dyeing-printing)로 */}
               <Link
-                href="/data-certifications"
+                href="/dyeing-printing"
                 className="inline-flex items-center justify-center rounded-md border border-[color:var(--color-indigo-deep)] px-7 py-4 text-base font-semibold break-keep text-[var(--color-indigo-deep)] transition-colors hover:bg-[var(--color-indigo-deep)] hover:text-white"
               >
                 {t('ctaSecondary')}
