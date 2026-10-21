@@ -31,8 +31,9 @@ export default async function FinalCta() {
             >
               {t('ctaButton')}
             </Link>
+            {/* 히어로와 같은 문구(Hero.ctaSecondary '염색성능 보기')를 쓰므로 목적지도 같아야 한다 — 2026-10-21 /data-certifications 에서 바로잡음 */}
             <Link
-              href="/data-certifications"
+              href="/dyeing-printing"
               className="inline-flex items-center justify-center rounded-md border border-white/50 px-7 py-4 text-base font-semibold break-keep text-white transition-colors hover:bg-white/10"
             >
               {tHero('ctaSecondary')}
