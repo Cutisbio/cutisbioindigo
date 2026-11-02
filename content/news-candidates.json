@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-05-07",
+    "category": "보도자료",
+    "title": "[혁신사업]박테리아 염색공방",
+    "summary": "",
+    "thumbnailAlt": "News thumbnail",
+    "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFA4NTFmR2RFajFBaFJhbU5pYXdjSGJVdUN0Rzh6Mzg3N1RXZEZjN3NTbHdyMjkzNzZWU3BYR3RXN01ZOWh5Z0VSY0llTQ?oc=5",
+    "source": "브런치",
+    "approved": true,
+    "onTopic": true
+  },
+  {
     "date": "2024-08-27",
     "category": "보도자료",
     "title": "인디고 염색의 ‘표준화 및 상용화’",
@@ -22,6 +33,17 @@
     "onTopic": true
   },
   {
+    "date": "2024-08-20",
+    "category": "보도자료",
+    "title": "코오롱 FnC 르캐시미어, 프리뷰인서울에서 친환경 염색 상품 선보여",
+    "summary": "",
+    "thumbnailAlt": "News thumbnail",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5fZ1h1N0xZTjJIOWJQQWZJQVFHenRaU2JGOTdwWVc5Y2k3eGNEcEF6bjJ6ajRQTkVpS3BldHVXR21qaVh2ZWQxci1kSW9GMno0WEpxc2ZoaXVSd0VnVXc?oc=5",
+    "source": "스마트투데이",
+    "approved": true,
+    "onTopic": true
+  },
+  {
     "date": "2024-08-14",
     "category": "보도자료",
     "title": "쪽빛 천연염색, 지속가능 친환경 패션산업 앞당긴다",
@@ -29,6 +51,28 @@
     "thumbnailAlt": "News thumbnail",
     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4ZDFhTmVpd1pZWUxWanFfY0g1c3B6QXRIQ29zRDgzOW4tX2xlVGlnYW1xM2xOdnh6S3VPd1hIa2VoRzgtaGFuWnE0NkRHRmxuSThEOHk3TXNNNG5zN2I0VFhNWE4zX21y?oc=5",
     "source": "한국섬유신문",
+    "approved": true,
+    "onTopic": true
+  },
+  {
+    "date": "2023-09-11",
+    "category": "보도자료",
+    "title": "코오롱FnC, 친환경 염색 공법 시대를 열다",
+    "summary": "",
+    "thumbnailAlt": "News thumbnail",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wVjNmLTZZRXJXWG1hekViUWx1clZXRTdCLW5jTTZNTUcwUHVobXNVc3FoeXpYVnB4SmQ2YkNoYVZBa3B0UVIxbWpxV05kcVZ0OEpDWlZ3?oc=5",
+    "source": "Fashion Insight",
+    "approved": true,
+    "onTopic": true
+  },
+  {
+    "date": "2023-09-08",
+    "category": "보도자료",
+    "title": "코오롱FnC, '친환경 염색 소재·공법' 사업화",
+    "summary": "",
+    "thumbnailAlt": "News thumbnail",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBFcDloQmN3LWh4bzZmZEhrcHlWVlBjVGJ3amt3TUJueGJ3TmtFSjRtMHlEZFYyZmhDeklBRHdsRmNkb3JzeDlxUi1fYlpIX0lsWDhQTVoxYVIxeXNDaUhLWkFmNkcyUFlXUlpMNVdQZzA?oc=5",
+    "source": "신아일보",
     "approved": true,
     "onTopic": true
   },
@@ -53,50 +97,6 @@
     "source": "매일신문",
     "approved": true,
     "onTopic": false
-  },
-  {
-    "date": "2026-05-07",
-    "category": "보도자료",
-    "title": "[혁신사업]박테리아 염색공방",
-    "summary": "",
-    "thumbnailAlt": "News thumbnail",
-    "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFA4NTFmR2RFajFBaFJhbU5pYXdjSGJVdUN0Rzh6Mzg3N1RXZEZjN3NTbHdyMjkzNzZWU3BYR3RXN01ZOWh5Z0VSY0llTQ?oc=5",
-    "source": "브런치",
-    "approved": false,
-    "onTopic": true
-  },
-  {
-    "date": "2024-08-20",
-    "category": "보도자료",
-    "title": "코오롱 FnC 르캐시미어, 프리뷰인서울에서 친환경 염색 상품 선보여",
-    "summary": "",
-    "thumbnailAlt": "News thumbnail",
-    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5fZ1h1N0xZTjJIOWJQQWZJQVFHenRaU2JGOTdwWVc5Y2k3eGNEcEF6bjJ6ajRQTkVpS3BldHVXR21qaVh2ZWQxci1kSW9GMno0WEpxc2ZoaXVSd0VnVXc?oc=5",
-    "source": "스마트투데이",
-    "approved": false,
-    "onTopic": true
-  },
-  {
-    "date": "2023-09-11",
-    "category": "보도자료",
-    "title": "코오롱FnC, 친환경 염색 공법 시대를 열다",
-    "summary": "",
-    "thumbnailAlt": "News thumbnail",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wVjNmLTZZRXJXWG1hekViUWx1clZXRTdCLW5jTTZNTUcwUHVobXNVc3FoeXpYVnB4SmQ2YkNoYVZBa3B0UVIxbWpxV05kcVZ0OEpDWlZ3?oc=5",
-    "source": "Fashion Insight",
-    "approved": false,
-    "onTopic": true
-  },
-  {
-    "date": "2023-09-08",
-    "category": "보도자료",
-    "title": "코오롱FnC, '친환경 염색 소재·공법' 사업화",
-    "summary": "",
-    "thumbnailAlt": "News thumbnail",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBFcDloQmN3LWh4bzZmZEhrcHlWVlBjVGJ3amt3TUJueGJ3TmtFSjRtMHlEZFYyZmhDeklBRHdsRmNkb3JzeDlxUi1fYlpIX0lsWDhQTVoxYVIxeXNDaUhLWkFmNkcyUFlXUlpMNVdQZzA?oc=5",
-    "source": "신아일보",
-    "approved": false,
-    "onTopic": true
   },
   {
     "date": "2025-05-06",
