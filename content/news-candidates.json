@@ -39,6 +39,7 @@
     "summary": "",
     "thumbnailAlt": "News thumbnail",
     "link": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE5lcjJ4SDZFaVJuS1RSSkoteFNSQ3kySm44NkdEckpUY2xuMHJ3dEtfVkxtQ0xBZUZkbjhMSHVSZw?oc=5",
+    "source": "heyPOP",
     "approved": true,
     "onTopic": false
   },
@@ -76,17 +77,6 @@
     "onTopic": true
   },
   {
-    "date": "2023-09-08",
-    "category": "보도자료",
-    "title": "코오롱FnC, '친환경 염색 소재·공법' 사업화",
-    "summary": "",
-    "thumbnailAlt": "News thumbnail",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBFcDloQmN3LWh4bzZmZEhrcHlWVlBjVGJ3amt3TUJueGJ3TmtFSjRtMHlEZFYyZmhDeklBRHdsRmNkb3JzeDlxUi1fYlpIX0lsWDhQTVoxYVIxeXNDaUhLWkFmNkcyUFlXUlpMNVdQZzA?oc=5",
-    "source": "신아일보",
-    "approved": false,
-    "onTopic": true
-  },
-  {
     "date": "2025-05-06",
     "category": "보도자료",
     "title": "[기고]\"합성생물학, 첨단바이오제조 실증허브부터 구축해야\"",
@@ -94,6 +84,17 @@
     "thumbnailAlt": "News thumbnail",
     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5xeC1RWVJiSmJtZjh4NExKR2xzN29hQUdNXzZNYmNWRGI5MG1JWHFORDFPcGY1dlBvNU84TmI0T254cUh4QkhmbWs5cEwxRUdydnJ4XzlR?oc=5",
     "source": "지디넷코리아",
+    "approved": false,
+    "onTopic": false
+  },
+  {
+    "date": "2024-07-31",
+    "category": "보도자료",
+    "title": "[이지 사이언스] 과학기술로 재탄생한 전통문화, 디지털로 도약 꿈꾼다",
+    "summary": "",
+    "thumbnailAlt": "News thumbnail",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hYkF4NW9WUkYyWmlUSXJhTUlkM3ozQzlNSHBVdlpDRVFxNW9STVZ4ZjgxOGwtUl9NY010MEVaY3FVeDRMTHNKWkxFaDVLVVJUTklBZU1weHJSWW_SAWBBVV95cUxNcjNoZ19ZSU0wZnhFaVhjcWlsdUV6dnl2WENvQkFfWURYSDJMNFhXN1pPOW1DNnNBcVdLN2E1QXUtV244d2VHV21GaURoazloTlMzUGpwUGR2aGtzYXBIZEs?oc=5",
+    "source": "연합뉴스",
     "approved": false,
     "onTopic": false
   },
@@ -149,6 +150,17 @@
     "thumbnailAlt": "News thumbnail",
     "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5jNzZEcHJHelR4eUJtMndXYVlXZUtVTkFDUHBiVzhGSFhPUDlzcENhQk1aVUs5T0VKVEgxMjVZTTAtRUxQMU9GS0pR?oc=5",
     "source": "코오롱FnC",
+    "approved": false,
+    "onTopic": false
+  },
+  {
+    "date": "2023-09-07",
+    "category": "보도자료",
+    "title": "[르포] 코오롱FnC 쿠론, 로고·컬러·디자인 다 바꿨다...\"가성비로 2534 공략\"",
+    "summary": "",
+    "thumbnailAlt": "News thumbnail",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5NSjh2UTZjY3JTUThJbF92QXkzRzVTaUsxVFhsNG9KeGIzd3l1Y2dKZFVoQ1NycTQ1LUpPUmhFa1EweTVsY1NiOXhpdk5xR3pVdUc1emttTkwyZ0pYWFp1dllXb1JRZ3RWZDdlT0pGLUY?oc=5",
+    "source": "포인트데일리",
     "approved": false,
     "onTopic": false
   },
