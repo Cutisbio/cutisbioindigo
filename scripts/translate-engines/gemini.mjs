@@ -16,7 +16,7 @@ export const label = 'Gemini';
 export const envKey = 'GEMINI_API_KEY';
 export const model = () => process.env.GEMINI_MODEL || 'gemini-2.5-pro';
 
-export async function translate({ strings, locale, glossary }) {
+export async function translate({ strings, locale, glossary, from = 'ko' }) {
   const url =
     `https://generativelanguage.googleapis.com/v1beta/models/${model()}:generateContent`;
 
@@ -27,7 +27,7 @@ export async function translate({ strings, locale, glossary }) {
       'x-goog-api-key': process.env.GEMINI_API_KEY,
     },
     body: JSON.stringify({
-      systemInstruction: { parts: [{ text: buildSystemPrompt(glossary, locale) }] },
+      systemInstruction: { parts: [{ text: buildSystemPrompt(glossary, locale, from) }] },
       contents: [{ role: 'user', parts: [{ text: JSON.stringify(strings, null, 2) }] }],
       generationConfig: { responseMimeType: 'application/json' },
     }),

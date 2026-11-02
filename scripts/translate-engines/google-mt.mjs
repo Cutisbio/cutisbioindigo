@@ -38,7 +38,7 @@ export const capabilities = {
 };
 
 /** next-intl 로케일 → Cloud Translation 언어 코드 */
-const TARGET_CODE = { en: 'en', ja: 'ja', zh: 'zh-CN', fr: 'fr', it: 'it', tr: 'tr' };
+const TARGET_CODE = { ko: 'ko', en: 'en', ja: 'ja', zh: 'zh-CN', fr: 'fr', it: 'it', tr: 'tr' };
 
 let cachedToken = null;
 
@@ -57,7 +57,7 @@ async function accessToken() {
   return value;
 }
 
-export async function translate({ strings, locale }) {
+export async function translate({ strings, locale, from = 'ko' }) {
   const project = process.env.GOOGLE_CLOUD_PROJECT;
   if (!project) throw new Error('GOOGLE_CLOUD_PROJECT 가 필요합니다.');
   const target = TARGET_CODE[locale];
@@ -76,10 +76,11 @@ export async function translate({ strings, locale }) {
   const body = {
     contents: strings,
     mimeType: 'text/plain',
-    sourceLanguageCode: 'ko',
+    sourceLanguageCode: from,
     targetLanguageCode: target,
   };
-  if (glossaryId) {
+  // GCP glossary 리소스는 한국어 → 대상 언어로 만들어 둔 것이라 영어 원문에는 걸지 않는다
+  if (glossaryId && from === 'ko') {
     body.glossaryConfig = {
       glossary: glossaryId.startsWith('projects/')
         ? glossaryId
