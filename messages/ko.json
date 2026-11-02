@@ -977,6 +977,15 @@
     "playVideo": "영상 재생",
     "articles": [
       {
+        "date": "2026-05-07",
+        "category": "보도자료",
+        "title": "[혁신사업]박테리아 염색공방",
+        "summary": "",
+        "thumbnailAlt": "News thumbnail",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFA4NTFmR2RFajFBaFJhbU5pYXdjSGJVdUN0Rzh6Mzg3N1RXZEZjN3NTbHdyMjkzNzZWU3BYR3RXN01ZOWh5Z0VSY0llTQ?oc=5",
+        "source": "브런치"
+      },
+      {
         "date": "2025-11-19",
         "category": "보도자료",
         "title": "㈜에스스킨×큐티스바이오, 스킨부스터용 융합폴리펩타이드 소재 사업화 MOU 체결",
@@ -1001,6 +1010,15 @@
         "thumbnailAlt": "News thumbnail",
         "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9WU1FJWW92UEpSX09GTkpMZTRVNjlKblpXVGRiRXV5Ull2WUdoVFNIOEx1cTBGeV9RNlRWTHJIb0NlbHNTems0c3psczU3QXV5MXg1R3k2cDJGYTVnZHNaNTRucmpVaGJBemktV0g2bTbSAXRBVV95cUxOZmhEdFFGaUxvemlfMkR5LTNZOUVad0hOZlM1Q3JCeWRlWW9ZT3k0V3NaTi1fbEVXUlF2MXlMLUVXMkhMeGhNOUFzN09qa1BKdDB6TXpzN25nLUdRdUthQ2k1WlNuZ0VsckFwSGRNLUpSSWNtcg?oc=5",
         "source": "포인트데일리"
+      },
+      {
+        "date": "2024-08-20",
+        "category": "보도자료",
+        "title": "코오롱 FnC 르캐시미어, 프리뷰인서울에서 친환경 염색 상품 선보여",
+        "summary": "",
+        "thumbnailAlt": "News thumbnail",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5fZ1h1N0xZTjJIOWJQQWZJQVFHenRaU2JGOTdwWVc5Y2k3eGNEcEF6bjJ6ajRQTkVpS3BldHVXR21qaVh2ZWQxci1kSW9GMno0WEpxc2ZoaXVSd0VnVXc?oc=5",
+        "source": "스마트투데이"
       },
       {
         "date": "2024-08-14",
@@ -1036,6 +1054,24 @@
         "thumbnailAlt": "News thumbnail",
         "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiTWVSY2xJTFp3S0FSem9fWmREdnd3SXk0ZXJFMy1idmJpNnVBUjV5RzlOODZZb2hsMDFZQ2Z4S19JZ29iVDlnVGNabU5lQUJDSUZkSlNMOVJqSE4wYWFSMl9B?oc=5",
         "source": "매일신문"
+      },
+      {
+        "date": "2023-09-11",
+        "category": "보도자료",
+        "title": "코오롱FnC, 친환경 염색 공법 시대를 열다",
+        "summary": "",
+        "thumbnailAlt": "News thumbnail",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wVjNmLTZZRXJXWG1hekViUWx1clZXRTdCLW5jTTZNTUcwUHVobXNVc3FoeXpYVnB4SmQ2YkNoYVZBa3B0UVIxbWpxV05kcVZ0OEpDWlZ3?oc=5",
+        "source": "Fashion Insight"
+      },
+      {
+        "date": "2023-09-08",
+        "category": "보도자료",
+        "title": "코오롱FnC, '친환경 염색 소재·공법' 사업화",
+        "summary": "",
+        "thumbnailAlt": "News thumbnail",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBFcDloQmN3LWh4bzZmZEhrcHlWVlBjVGJ3amt3TUJueGJ3TmtFSjRtMHlEZFYyZmhDeklBRHdsRmNkb3JzeDlxUi1fYlpIX0lsWDhQTVoxYVIxeXNDaUhLWkFmNkcyUFlXUlpMNVdQZzA?oc=5",
+        "source": "신아일보"
       },
       {
         "date": "2023-09-08",
