@@ -320,7 +320,12 @@ for (const locale of LOCALES) {
     // (화면에는 나오지 않는다). 여기서 걸러내지 않으면 정상 동작이 오류로 잡힌다.
     const isTranslationMarker = /\.(sourceTitle|sourceSummary)$/.test(key);
 
-    if (locale !== 'ko' && !isTranslationMarker && HANGUL.test(value)) {
+    // 뉴스 기사의 `source`(매체명)는 고유명사라 update-news.js 가 **번역하지 않고** 한국어
+    // 그대로 복사한다 ("TIN뉴스", "매일신문" 등 — 화면에도 그대로 나온다). 뉴스 기사에 한해서만
+    // 면제한다: AnilineHazard.*.source 같은 다른 '.source' 키는 계속 검사해야 한다.
+    const isNewsOutlet = isNewsValue && /\.source$/.test(key);
+
+    if (locale !== 'ko' && !isTranslationMarker && !isNewsOutlet && HANGUL.test(value)) {
       const where = isNewsValue ? '뉴스 자동 번역' : '메시지';
       errors.push(`[i18n] ${locale} ${key}: ${where}에 한국어 원문이 그대로 남아 있습니다 → "${value.slice(0, 50)}…"`);
     }

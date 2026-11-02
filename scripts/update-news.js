@@ -389,9 +389,9 @@ async function updateNews() {
        * 매체명은 고유명사라 **번역하지 않고** 한국어 원문을 그대로 복사한다.
        * (아래 FIELDS 에 넣지 않는 이유이기도 하다.)
        *
-       * ⚠ scripts/check-blugene-data.mjs 의 한국어 잔류 검사가 비-한국어 파일의 한글을
-       *   전부 오류로 잡으므로, 그쪽에서 뉴스 값에 한해 `isNewsValue && /\.source$/` 를
-       *   면제 조건에 더해야 한다. (전체 키로 넓히면 다른 '.source' 키까지 검사에서 빠진다.)
+       * ⚠ scripts/check-blugene-data.mjs 의 한국어 잔류 검사는 이 필드만 면제한다
+       *   (`isNewsOutlet` — 뉴스 기사의 `.source` 에 한정. 전체 키로 넓히면 다른 '.source'
+       *   키까지 검사에서 빠진다). 한쪽만 바꾸면 매달 자동 수집이 검사 단계에서 멈춘다.
        */
       const withSource = (entry, article) => {
         const next = { ...entry };
