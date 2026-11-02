@@ -211,10 +211,14 @@ function CandidateReview({
         const failedLines = (state.log ?? []).filter((l: string) =>
           /Translation error|skipping|failed/.test(l)
         );
+        // 키가 없으면 다시 눌러도 같다 — 언어 파일은 그대로이니 승인 표시만 커밋하면 된다
+        const keyMissing = (state.log ?? []).some((l: string) => l.includes('Translation key missing'));
         setStatus(
-          state.exitCode === 0 && failedLines.length === 0
-            ? '반영을 마쳤습니다. 소식 페이지를 확인하세요.'
-            : '일부 기사가 번역되지 않았습니다. 아래 기록을 확인하고 한 번 더 눌러 주세요 (실패한 것만 다시 시도합니다).'
+          keyMissing
+            ? '이 컴퓨터에는 번역 키(.env.local)가 없어 소식란에 싣지 못했습니다. 언어 파일은 바뀌지 않았고 승인 상태는 저장돼 있습니다. 승인 상태를 GitHub 에 커밋한 뒤 뉴스 워크플로를 실행하면 7개 언어로 실립니다.'
+            : state.exitCode === 0 && failedLines.length === 0
+              ? '반영을 마쳤습니다. 소식 페이지를 확인하세요.'
+              : '일부 기사가 번역되지 않았습니다. 아래 기록을 확인하고 한 번 더 눌러 주세요 (실패한 것만 다시 시도합니다).'
         );
         break;
       }

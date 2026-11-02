@@ -148,9 +148,11 @@ async function loadTranslator() {
   lib.loadEnvLocal();
   const engine = await lib.loadEngine(TRANSLATE_ENGINE);
   if (!process.env[engine.envKey]) {
-    throw new Error(
+    const error = new Error(
       `${engine.envKey} 가 없습니다. 로컬은 .env.local, GitHub Actions 는 저장소 시크릿에 넣어 주세요.`
     );
+    error.code = 'NO_TRANSLATION_KEY';
+    throw error;
   }
   const glossary = lib.readJson(lib.GLOSSARY_PATH);
   console.log(`Translating with ${engine.label} (${engine.model()})`);
@@ -468,6 +470,16 @@ async function updateNews() {
   };
   await koreanizeEnglish();
 
+  /*
+   * 언어 파일은 모든 언어의 번역이 끝난 뒤 한꺼번에 쓴다.
+   *
+   * 언어마다 바로 쓰던 때에는 번역 키가 없으면(관리자 화면을 키 없는 컴퓨터에서 누를 때)
+   * ko.json 만 새 기사로 바뀐 채 다음 언어에서 멈췄다. 그 상태를 커밋하면 언어별 기사 수가
+   * 어긋난다 (2026-11-02: ko 15건 · 나머지 11건). 키가 없어 멈추면 이제 어떤 언어 파일도
+   * 바뀌지 않는다. 승인 표시가 든 후보 장부는 위에서 이미 저장했다.
+   */
+  const outputs = [];
+
   // Update logic for all locales
   for (const locale of locales) {
     console.log(`Processing locale: ${locale}`);
@@ -606,6 +618,10 @@ async function updateNews() {
       fileJson.News.articles = slots.filter(Boolean);
     }
 
+    outputs.push({ locale, filePath, fileJson });
+  }
+
+  for (const { locale, filePath, fileJson } of outputs) {
     fs.writeFileSync(filePath, JSON.stringify(fileJson, null, 2) + "\n");
     console.log(`Updated ${locale}.json`);
   }
@@ -621,6 +637,11 @@ updateNews()
     }
   })
   .catch((e) => {
-    console.error(e);
+    // 관리자 화면이 이 줄을 알아보고 "키가 없어 반영하지 못했다"고 안내한다
+    if (e.code === 'NO_TRANSLATION_KEY') {
+      console.error(`Translation key missing: ${e.message} (messages/*.json left unchanged)`);
+    } else {
+      console.error(e);
+    }
     process.exitCode = 1;
   });
