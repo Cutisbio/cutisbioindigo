@@ -234,7 +234,8 @@ async function updateNews() {
     console.error('Could not read existing ko.json articles:', e.message);
   }
 
-  // Merge: new RSS items first, then previously stored, then hardcoded history.
+  // Merge: new RSS items first, then previously stored, then candidates still awaiting
+  // review, then hardcoded history.
   // De-duplicate by link or title.
   const mergedArticles = [];
   const normTitle = (t) => (t || '').toLowerCase().replace(/[\s\p{P}\p{S}]/gu, '');
@@ -308,16 +309,6 @@ async function updateNews() {
     }
     mergedArticles.push(article);
   };
-  newKoArticles.forEach(pushUnique);
-  existingKoArticles.forEach(pushUnique);
-  hardcodedNews.forEach(pushUnique);
-
-  // Filter out any articles before June 2020 and sort by date
-  mergedArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
-  const datedArticles = mergedArticles
-    .filter(a => new Date(a.date) >= new Date('2020-06-01'))
-    .map(normalizeSummary);
-
   // Previously reviewed candidates. `approved: true` publishes the article; the flag is the
   // only thing a person edits, so it must survive every run.
   let previousCandidates = [];
@@ -327,6 +318,21 @@ async function updateNews() {
     if (e.code !== 'ENOENT') console.error('Could not read news-candidates.json:', e.message);
   }
   const approvedByLink = new Map(previousCandidates.map((c) => [c.link, c.approved === true]));
+
+  newKoArticles.forEach(pushUnique);
+  existingKoArticles.forEach(pushUnique);
+  // 승인을 기다리는 후보도 실린 기사와 같은 이유로 다시 넣는다. 피드에서 밀려난 후보를
+  // 여기서 빼면 장부에서 지워져, 사람이 보기도 전에 사라진다 (2026-11 코오롱FnC 2023-09-08 기사).
+  previousCandidates.forEach(({ approved: _approved, onTopic: _onTopic, ...article }) =>
+    pushUnique(article)
+  );
+  hardcodedNews.forEach(pushUnique);
+
+  // Filter out any articles before June 2020 and sort by date
+  mergedArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
+  const datedArticles = mergedArticles
+    .filter(a => new Date(a.date) >= new Date('2020-06-01'))
+    .map(normalizeSummary);
 
   // Two lanes: the company is named -> publish automatically. Everything else is written to
   // the candidates ledger and published only while its `approved` flag is true. Approved
