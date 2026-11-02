@@ -43,6 +43,12 @@ const DRY_RUN = process.argv.includes('--dry-run');
 
 const locales = ['ko', 'ja', 'en', 'fr', 'it', 'zh', 'tr'];
 
+/*
+ * RSS 로 잡히지 않는 기사만 손으로 적어 둔다. RSS 에도 있는 사건을 여기 다른 날짜로 적으면
+ * 같은 날(±1일) 묶음에 걸리지 않아 중복으로 실린다 — 2026-11 에 대웅 협약(06-20 ↔ 06-27),
+ * 카카오헬스케어·로레알 MOU(07-25 ↔ 07-03), 이뮤노바이옴(12-19 ↔ 12-05)이 그렇게 겹쳐 있었고,
+ * 세 링크 모두 없는 기사이거나 다른 기사로 열려 지웠다. 링크는 직접 열어 본 것만 쓴다.
+ */
 const hardcodedNews = [
   {
     date: "2024-08-12",
@@ -51,30 +57,6 @@ const hardcodedNews = [
     summary: "합성생물학 기술을 활용해 미생물 발효로 인디고 염색법을 구현한 '아쿠아인디고(AquaIndigo)'를 개발하여 친환경 패션 소재 시장에 진출했습니다.",
     thumbnailAlt: "AquaIndigo thumbnail",
     link: "https://www.tinnews.co.kr/26601"
-  },
-  {
-    date: "2023-07-25",
-    category: "업무협약",
-    title: "큐티스바이오-카카오헬스케어-로레알, 정밀 뷰티 솔루션 개발 MOU 체결",
-    summary: "바이오인포매틱스 기술을 활용한 정밀 뷰티 솔루션 개발 업무협약을 맺고 피부 마이크로바이옴 전문성을 결합합니다.",
-    thumbnailAlt: "MOU thumbnail",
-    link: "https://www.medigatenews.com/news/3760434771"
-  },
-  {
-    date: "2022-12-19",
-    category: "공동연구",
-    title: "큐티스바이오-이뮤노바이옴, 차세대 마이크로바이옴 면역항암제 개발",
-    summary: "이뮤노바이옴과 협력하여 합성생물학 기반의 재조합 균주를 활용한 차세대 마이크로바이옴 면역항암제 개발 연구를 진행합니다.",
-    thumbnailAlt: "Research thumbnail",
-    link: "https://www.pharmnews.com/news/articleView.html?idxno=216348"
-  },
-  {
-    date: "2022-06-20",
-    category: "업무협약",
-    title: "대웅제약·대웅바이오·큐티스바이오, 친환경 약물소재 개발 협약",
-    summary: "대웅그룹과 파트너십을 맺고 생촉매 기술을 활용해 친환경적이고 경쟁력 있는 의약품 원료 및 약물 소재 개발에 협력합니다.",
-    thumbnailAlt: "Partner thumbnail",
-    link: "https://www.hitnews.co.kr/news/articleView.html?idxno=39906"
   }
 ];
 
