@@ -19,10 +19,33 @@ const TRANSLATE_ENGINE = process.env.TRANSLATE_ENGINE || 'openai';
 // cosmetics coverage; these four pairs keep the newsroom on the indigo business.
 const NEWS_COMPANY = '큐티스바이오';
 const NEWS_TOPICS = ['인디고', '염료', '데님', '패션'];
-const searchUrls = NEWS_TOPICS.map(
-  (topic) =>
-    `https://news.google.com/rss/search?q=${encodeURIComponent(`${NEWS_COMPANY} ${topic}`)}&hl=ko&gl=KR&ceid=KR:ko`
-);
+const KO_EDITION = 'hl=ko&gl=KR&ceid=KR:ko';
+const EN_EDITION = 'hl=en-US&gl=US&ceid=US:en';
+const googleNews = (query, edition) =>
+  `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&${edition}`;
+
+/*
+ * 영어권 기사도 찾는다 (2026-11 추가). 한국판 Google 뉴스만 보면 해외 매체 기사는
+ * 하나도 들어오지 않는다. 영어판에서는 회사명과 브랜드명으로 찾는다 — 영어 기사는
+ * 회사를 CutisBio 와 Cutis Bio 두 가지로 쓴다. 'Blugene' 만으로 찾으면 같은 이름의
+ * 금관 5중주단 기사가 걸려서 인디고 · 염료 · 데님과 짝지었다.
+ * 'Blugene' 은 한국판에서도 따로 찾는다 (한국 기사가 브랜드명만 쓸 수 있다).
+ * `lang` 은 원문 언어다. 영어 기사를 한국어 목록에 싣는 방법은 아래 koreanizeEnglish 참고.
+ */
+const FEEDS = [
+  ...NEWS_TOPICS.map((topic) => ({
+    label: `${NEWS_COMPANY} ${topic}`,
+    lang: 'ko',
+    url: googleNews(`${NEWS_COMPANY} ${topic}`, KO_EDITION),
+  })),
+  { label: 'Blugene (ko)', lang: 'ko', url: googleNews('"Blugene"', KO_EDITION) },
+  { label: 'CutisBio (en)', lang: 'en', url: googleNews('"CutisBio" OR "Cutis Bio"', EN_EDITION) },
+  {
+    label: 'Blugene indigo/dye/denim (en)',
+    lang: 'en',
+    url: googleNews('"Blugene" (indigo OR dye OR denim)', EN_EDITION),
+  },
+];
 
 // An article is published automatically only when the company is named in it. Everything
 // else goes to content/news-candidates.json for a human to approve.
@@ -34,8 +57,16 @@ const searchUrls = NEWS_TOPICS.map(
 // and 1 of 49 published ones: real coverage names the partner brand (르캐시미어, 코오롱FnC)
 // rather than CutisBio. So the machine publishes what it can verify, and a person decides
 // the rest. See docs/blugene-운영-메모.md §4.
-const COMPANY_RE = /큐티스바이오|cutisbio/i;
-const TOPIC_RE = /인디고|염료|데님|염색/i;
+//
+// English coverage writes the company as "CutisBio" or "Cutis Bio"; the leading \b keeps
+// "Arcutis Bio…" out. The brand name alone is not enough ("The Blugene Brass Quintet"), so
+// Blugene counts only next to a subject word.
+const COMPANY_RE = /큐티스바이오|\bcutis\s?bio\b/i;
+const BRAND_RE = /blugene/i;
+const TOPIC_RE = /인디고|염료|데님|염색|indigo|\bdye|denim/i;
+const namesCompany = (text) => COMPANY_RE.test(text) || (BRAND_RE.test(text) && TOPIC_RE.test(text));
+// 이름이 비슷한 미국 제약사(Arcutis Biotherapeutics) 기사는 수집 단계에서 버린다
+const ARCUTIS_RE = /아르큐티스|arcutis/i;
 const CANDIDATES_PATH = path.join(__dirname, '../content/news-candidates.json');
 
 /** `--dry-run` 이면 수집 결과만 출력하고 messages/*.json 을 건드리지 않는다 */
@@ -131,19 +162,18 @@ async function updateNews() {
   // fail we simply keep whatever is already published (see the merge step below).
   const rssItems = [];
   let feedFailures = 0;
-  for (let i = 0; i < searchUrls.length; i++) {
-    const label = `${NEWS_COMPANY} ${NEWS_TOPICS[i]}`;
+  for (const { label, lang, url } of FEEDS) {
     try {
-      const feed = await parser.parseURL(searchUrls[i]);
+      const feed = await parser.parseURL(url);
       const items = feed.items || [];
       console.log(`Fetched "${label}": ${items.length} items`);
-      rssItems.push(...items);
+      rssItems.push(...items.map((item) => ({ ...item, lang })));
     } catch (err) {
       feedFailures++;
       console.error(`Error fetching "${label}":`, err.message);
     }
   }
-  if (feedFailures === searchUrls.length) {
+  if (feedFailures === FEEDS.length) {
     console.error('All news searches failed; keeping the previously published articles.');
     process.exitCode = 1;
   }
@@ -158,7 +188,7 @@ async function updateNews() {
     const source = titleMatch > -1 ? item.title.substring(titleMatch + 3).trim() : '';
     
     // Filter out articles about "아르큐티스" (Arcutis)
-    if (cleanTitle.includes('아르큐티스') || (item.contentSnippet && item.contentSnippet.includes('아르큐티스'))) {
+    if (ARCUTIS_RE.test(cleanTitle) || (item.contentSnippet && ARCUTIS_RE.test(item.contentSnippet))) {
       continue;
     }
 
@@ -171,8 +201,10 @@ async function updateNews() {
     const pubDate = new Date(item.pubDate);
     const dateStr = pubDate.toISOString().split('T')[0];
 
-    // Use the actual rss snippet if available, up to 120 characters to keep it brief
-    let snippet = item.contentSnippet || item.content || "상세 내용은 원문 기사를 확인해 주세요.";
+    // Use the actual rss snippet if available, up to 120 characters to keep it brief.
+    // 영어 기사에는 한국어 안내문을 넣지 않는다 — 요약 자리가 영어 원문으로 남기 때문이다.
+    const fallback = item.lang === 'en' ? '' : "상세 내용은 원문 기사를 확인해 주세요.";
+    let snippet = item.contentSnippet || item.content || fallback;
     if (snippet.length > 130) {
       snippet = snippet.substring(0, 130) + "...";
     }
@@ -184,7 +216,9 @@ async function updateNews() {
       summary: snippet,
       thumbnailAlt: "News thumbnail",
       link: item.link,
-      source
+      source,
+      // 영어 기사만 표시한다. 이 단계의 title · summary 는 아직 영어 원문이다.
+      ...(item.lang === 'en' ? { lang: 'en' } : {}),
     });
   }
 
@@ -226,12 +260,23 @@ async function updateNews() {
     '상업화', '출시', '진출', '참가', '공개', '선정', '수상', '맺어', '그룹', '기반',
     '손잡고', '가속', '행보', '눈길', '투자', '유치', '공급', '설립', '계약', '파트너십',
     '맞손', '소재', '기술', '기업', '대표', '최초', '국내', '바이오', '올해',
+    // 영어 기사: 관사 · 전치사와 보도 기사에 늘 나오는 동사 · 명사 (위 한국어 목록과 같은 이유)
+    'the', 'an', 'and', 'or', 'of', 'for', 'to', 'in', 'on', 'at', 'by', 'with', 'from', 'as',
+    'its', 'into', 'is', 'are', 'be', 'will', 'has', 'new', 'how', 'why', 'says', 'announces',
+    'launches', 'launch', 'unveils', 'signs', 'partners', 'partner', 'partnership', 'agreement',
+    'deal', 'collaboration', 'develops', 'development', 'joint', 'research', 'company', 'startup',
+    'korean', 'korea', 'south', 'first', 'global', 'sustainable', 'eco', 'friendly', 'based',
+    // 영어 기사는 거의 모두 회사명과 이 주제어를 함께 쓴다. 남겨 두면 '회사명 + indigo' 두 개만으로
+    // 이웃한 날의 서로 다른 기사가 한 건으로 접힌다 (시험: 리바이스 시범 사업 ↔ 프리미에르 비종 공개)
+    'bio', 'indigo', 'dye', 'dyes', 'dyeing', 'denim', 'fashion', 'textile', 'textiles',
   ]);
   const orgTokens = (title) =>
     new Set(
       String(title || '')
         // ㈜ · (주) 는 같은 회사를 다르게 적은 것뿐이라 이름에서 떼어 낸다
         .replace(/㈜|\(주\)|\(株\)/g, ' ')
+        // 영어 기사는 회사명을 띄어 쓰기도 한다 — 한 토큰으로 모아야 두 토큰으로 세지 않는다
+        .replace(/\bcutis\s+bio\b/gi, 'CutisBio')
         // 제목에서 기관을 잇는 기호는 매체마다 제각각이다 (A×B · A-B · A‧‧‧B)
         .split(/[\s,，.·ㆍ‧・×✕&\/\-–—…‥]+/)
         .map((w) => w.replace(/[^\p{L}\p{N}]/gu, '').toLowerCase())
@@ -241,9 +286,11 @@ async function updateNews() {
   const sameEvent = (a, b) => {
     const gap = Math.abs(new Date(a.date) - new Date(b.date));
     if (!(gap <= ONE_DAY)) return false;
-    const tokens = orgTokens(a.title);
+    // 이미 실린 영어 기사는 title 이 한국어 번역이다. 번역문에는 '인디고' 처럼 매번 들어가는
+    // 말이 남아 서로 다른 기사가 접히므로, 영어 원문(위 영어 불용어가 걸리는 쪽)으로 비교한다.
+    const tokens = orgTokens(a.originalTitle || a.title);
     let shared = 0;
-    for (const token of orgTokens(b.title)) {
+    for (const token of orgTokens(b.originalTitle || b.title)) {
       if (tokens.has(token)) shared++;
     }
     return shared >= 2;
@@ -289,8 +336,9 @@ async function updateNews() {
   const candidates = [];
   let approvedCount = 0;
   for (const article of datedArticles) {
-    const text = `${article.title} ${article.summary || ''}`;
-    if (COMPANY_RE.test(text)) {
+    // 이미 실린 영어 기사는 title 이 한국어 번역이라 영어 원문도 함께 본다
+    const text = `${article.originalTitle || ''} ${article.title} ${article.summary || ''}`;
+    if (namesCompany(text)) {
       finalArticles.push(article);
       continue;
     }
@@ -345,6 +393,75 @@ async function updateNews() {
   let engine;
   let glossary;
 
+  /*
+   * 영어 기사는 한국어 목록(ko.json)에 **한국어로 옮겨** 싣고, 영어 원문은
+   * originalTitle · originalSummary 에 남긴다. 영어 페이지는 번역하지 않고 이 원문을
+   * 그대로 쓴다. 다른 언어는 한국어 기사와 똑같이 한국어에서 옮긴다 (아래 루프).
+   *
+   * 원문이 지난번과 같으면 지난번 한국어를 다시 쓴다 — 매달 번역 문구가 흔들리면
+   * 그 기사의 다른 언어 번역까지 모두 다시 돈다. 번역에 실패한 새 기사는 이번에는
+   * 모든 언어에서 뺀다: 한국어 목록에 영어가 섞이지 않고, 언어별 기사 수도 맞는다.
+   */
+  const koreanizeEnglish = async () => {
+    const previousKo = new Map(existingKoArticles.filter((a) => a.link).map((a) => [a.link, a]));
+    const pending = [];
+    for (const article of finalArticles) {
+      if (article.lang !== 'en') continue;
+      // 새로 수집한 기사는 title 이 영어 원문이고, 이미 실린 기사는 originalTitle 에 원문이 있다
+      article.originalTitle = article.originalTitle ?? article.title;
+      article.originalSummary = article.originalSummary ?? article.summary ?? '';
+      const prev = previousKo.get(article.link);
+      if (
+        prev &&
+        prev.originalTitle === article.originalTitle &&
+        (prev.originalSummary ?? '') === article.originalSummary
+      ) {
+        article.title = prev.title;
+        article.summary = prev.summary;
+      } else {
+        pending.push({ article, prev });
+      }
+    }
+    if (!pending.length) return;
+
+    if (!engine) ({ engine, glossary } = await loadTranslator());
+    const dropped = new Set();
+    for (let i = 0; i < pending.length; i += 10) {
+      const group = pending.slice(i, i + 10);
+      console.log(`Translating ${group.length} English article(s) into Korean...`);
+      const strings = group.flatMap(({ article }) =>
+        article.originalSummary ? [article.originalTitle, article.originalSummary] : [article.originalTitle]
+      );
+      try {
+        const { translations } = await engine.translate({ strings, locale: 'ko', glossary, from: 'en' });
+        let index = 0;
+        for (const { article } of group) {
+          article.title = translations[index++];
+          article.summary = article.originalSummary ? translations[index++] : '';
+        }
+      } catch (e) {
+        console.error('Translation error for English -> ko:', e.message);
+        translationFailed = true;
+        for (const { article, prev } of group) {
+          if (prev) {
+            // 원문이 바뀌었지만 번역에 실패했다 — 지난번 한국어를 그대로 둔다
+            article.title = prev.title;
+            article.summary = prev.summary;
+          } else {
+            console.error(`  -> skipping "${article.originalTitle}" (no Korean translation yet)`);
+            dropped.add(article);
+          }
+        }
+      }
+    }
+    if (dropped.size) {
+      const kept = finalArticles.filter((a) => !dropped.has(a));
+      finalArticles.length = 0;
+      finalArticles.push(...kept);
+    }
+  };
+  await koreanizeEnglish();
+
   // Update logic for all locales
   for (const locale of locales) {
     console.log(`Processing locale: ${locale}`);
@@ -389,6 +506,20 @@ async function updateNews() {
       const pending = [];
       for (const article of finalArticles) {
         const prev = existingByLink.get(article.link);
+        // 영어 기사의 영어 페이지는 번역하지 않고 원문을 그대로 싣는다
+        if (article.lang === 'en' && locale === 'en') {
+          slots.push(withSource({
+            date: article.date,
+            category: CATEGORY_LABELS[article.category]?.en || article.category,
+            title: article.originalTitle,
+            summary: article.originalSummary,
+            thumbnailAlt: article.thumbnailAlt,
+            link: article.link,
+            sourceTitle: article.title,
+            sourceSummary: article.summary,
+          }, article));
+          continue;
+        }
         const sourceUnchanged =
           prev &&
           prev.sourceTitle === article.title &&

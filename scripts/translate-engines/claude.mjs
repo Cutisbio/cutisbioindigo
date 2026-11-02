@@ -11,7 +11,7 @@ export const label = 'Claude';
 export const envKey = 'ANTHROPIC_API_KEY';
 export const model = () => process.env.ANTHROPIC_MODEL || 'claude-opus-5';
 
-export async function translate({ strings, locale, glossary }) {
+export async function translate({ strings, locale, glossary, from = 'ko' }) {
   const client = new Anthropic();
 
   const response = await client.messages.create({
@@ -20,7 +20,7 @@ export async function translate({ strings, locale, glossary }) {
     // 규칙이 여럿 걸린 번역이라 적응형 사고를 켠다. 분량이 짧아 effort 는 medium 으로 둔다.
     thinking: { type: 'adaptive' },
     output_config: { effort: 'medium' },
-    system: buildSystemPrompt(glossary, locale),
+    system: buildSystemPrompt(glossary, locale, from),
     messages: [{ role: 'user', content: JSON.stringify(strings, null, 2) }],
   });
 

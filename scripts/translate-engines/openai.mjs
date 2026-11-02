@@ -16,7 +16,7 @@ export const label = 'OpenAI';
 export const envKey = 'OPENAI_API_KEY';
 export const model = () => process.env.OPENAI_MODEL || 'gpt-4o';
 
-export async function translate({ strings, locale, glossary }) {
+export async function translate({ strings, locale, glossary, from = 'ko' }) {
   const response = await fetch('https://api.openai.com/v1/chat/completions', {
     method: 'POST',
     headers: {
@@ -26,7 +26,7 @@ export async function translate({ strings, locale, glossary }) {
     body: JSON.stringify({
       model: model(),
       messages: [
-        { role: 'system', content: buildSystemPrompt(glossary, locale) },
+        { role: 'system', content: buildSystemPrompt(glossary, locale, from) },
         { role: 'user', content: JSON.stringify(strings, null, 2) },
       ],
     }),
