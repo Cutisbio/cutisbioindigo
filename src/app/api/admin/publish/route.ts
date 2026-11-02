@@ -33,7 +33,7 @@ const denied = () => NextResponse.json({ error: 'not found' }, { status: 404 });
 
 /** 화면에 보여 줄 만한 줄만 남긴다 */
 const isInteresting = (line: string) =>
-  /^(Fetched|Publishing|Updated|Processing|Translation error|All news searches failed|\s+-> skipping|Done)/.test(line);
+  /^(Fetched|Publishing|Updated|Processing|Translation error|Translation key missing|All news searches failed|\s+-> skipping|Done)/.test(line);
 
 function snapshot() {
   if (!job) return { running: false, log: [], exitCode: null, seconds: 0 };
@@ -70,7 +70,12 @@ export async function POST() {
     { cwd: process.cwd(), maxBuffer: 16 * 1024 * 1024 },
     (error) => {
       if (job) job.exitCode = error ? 1 : 0;
-      if (error && !log.some((l) => l.includes(error.message))) log.push(error.message);
+      // error.message 는 "Command failed: …" 뒤에 stderr 를 통째로 붙인다. 그 줄을 이미
+      // 위 collect 가 담았으면 같은 오류가 두 번 찍히므로 붙이지 않는다.
+      const alreadyLogged = error?.message
+        .split(/\r?\n/)
+        .some((l) => l.trim() && log.includes(l.trim()));
+      if (error && !alreadyLogged) log.push(error.message);
     }
   );
 
