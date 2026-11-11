@@ -88,6 +88,15 @@ const hardcodedNews = [
     summary: "합성생물학 기술을 활용해 미생물 발효로 인디고 염색법을 구현한 '아쿠아인디고(AquaIndigo)'를 개발하여 친환경 패션 소재 시장에 진출했습니다.",
     thumbnailAlt: "AquaIndigo thumbnail",
     link: "https://www.tinnews.co.kr/26601"
+  },
+  {
+    date: "2026-11-26",
+    category: "행사",
+    title: "큐티스바이오 최원우 대표, Première Vision Denim 토크 'REDEFINING BLUE' 연사로 참여",
+    summary: "11월 26일 오후 2시~2시 45분(현지 시각) Première Vision Denim 토크 구역에서 열리는 'REDEFINING BLUE: Beyond Indigo. Rethinking Colour at Its Source.'에 Li Li(Chloris 최고 브랜드·전략 책임자), Pierre-Yves Bolle(PILI 창업자)와 함께 연사로 참여합니다. 바이오 기반 대안과 새로운 색 생산 방식이 기존 인디고를 넘어 세계 데님 산업에 자리 잡으려면 무엇이 필요한지 논의합니다. 토크는 영어로 진행됩니다.",
+    thumbnailAlt: "News thumbnail",
+    link: "https://denim.premierevision.com/en/session/f09cf203-44d8-f111-bf5b-000d3a2087ae/redefining-blue-beyond-indigo-rethinking-colour-at-its-source-",
+    source: "Première Vision Denim"
   }
 ];
 
@@ -119,6 +128,10 @@ const CATEGORY_LABELS = {
   공동연구: {
     en: 'Joint research', ja: '共同研究', zh: '联合研究',
     fr: 'Recherche conjointe', it: 'Ricerca congiunta', tr: 'Ortak araştırma',
+  },
+  행사: {
+    en: 'Event', ja: 'イベント', zh: '活动',
+    fr: 'Événement', it: 'Evento', tr: 'Etkinlik',
   },
 };
 
