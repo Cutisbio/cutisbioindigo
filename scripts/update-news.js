@@ -236,8 +236,8 @@ async function updateNews() {
     console.error('Could not read existing ko.json articles:', e.message);
   }
 
-  // Merge: new RSS items first, then previously stored, then candidates still awaiting
-  // review, then hardcoded history.
+  // Merge: published articles first (refreshed from the feed when the link matches), then
+  // new RSS items, then candidates still awaiting review, then hardcoded history.
   // De-duplicate by link or title.
   const mergedArticles = [];
   const normTitle = (t) => (t || '').toLowerCase().replace(/[\s\p{P}\p{S}]/gu, '');
@@ -321,8 +321,13 @@ async function updateNews() {
   }
   const approvedByLink = new Map(previousCandidates.map((c) => [c.link, c.approved === true]));
 
+  // 이미 실린 기사를 새 검색 결과보다 먼저 넣는다. 같은 사건의 새 기사가 먼저 들어가면
+  // 실린 기사가 중복으로 버려지는데, 새 기사는 승인 전 후보라 실리지 않아 승인한 기사가
+  // 사이트에서 사라진다 (2026-11-11 시험 실행: 승인한 2024-08-20 르캐시미어 기사).
+  // 링크가 같은 검색 결과는 매체명 같은 최신 정보를 담고 있어 그 자리에 대신 넣는다.
+  const feedByLink = new Map(newKoArticles.map((a) => [a.link, a]));
+  existingKoArticles.forEach((a) => pushUnique(feedByLink.get(a.link) ?? a));
   newKoArticles.forEach(pushUnique);
-  existingKoArticles.forEach(pushUnique);
   // 승인을 기다리는 후보도 실린 기사와 같은 이유로 다시 넣는다. 피드에서 밀려난 후보를
   // 여기서 빼면 장부에서 지워져, 사람이 보기도 전에 사라진다 (2026-11 코오롱FnC 2023-09-08 기사).
   previousCandidates.forEach(({ approved: _approved, onTopic: _onTopic, ...article }) =>
